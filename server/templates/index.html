@@ -336,8 +336,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                         </svg>
                         <p>Drag & drop Cherokee document image here</p>
-                        <span>Only PNG files are processed</span>
-                        <input type="file" id="file-input" name="file" accept="image/png">
+                        <span>PNG, JPG, JPEG, WEBP, TIFF, BMP files are supported</span>
+                        <input type="file" id="file-input" name="file" accept="image/png, image/jpeg, image/jpg, image/webp, image/tiff, image/bmp">
                     </div>
                 </form>
             </div>
@@ -434,8 +434,11 @@
 
         function handleUpload() {
             const file = fileInput.files[0];
-            if (!file.name.toLowerCase().endswith && !file.name.toLowerCase().endsWith('.png')) {
-                alert('Please upload a PNG file only.');
+            const allowedExtensions = ['.png', '.jpg', '.jpeg', '.webp', '.tiff', '.tif', '.bmp'];
+            const fileNameLower = file.name.toLowerCase();
+            const isValid = allowedExtensions.some(ext => fileNameLower.endsWith(ext));
+            if (!isValid) {
+                alert('Please upload a supported image file (PNG, JPG, JPEG, WEBP, TIFF, BMP).');
                 return;
             }
             loader.classList.add('active');

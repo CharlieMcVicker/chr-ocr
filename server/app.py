@@ -51,42 +51,56 @@ def upload_file():
     if file.filename == '':
         return "No selected file", 400
 
-    if not file.filename.lower().endswith('.png'):
-        return "Only PNG files are allowed", 400
+    ALLOWED_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.webp', '.tiff', '.tif', '.bmp'}
+    filename = file.filename.lower()
+    ext = os.path.splitext(filename)[1]
+    if ext not in ALLOWED_EXTENSIONS:
+        return f"Only {', '.join(sorted(ALLOWED_EXTENSIONS))} files are allowed", 400
 
     # Generate UUID and create directories
     file_id = str(uuid.uuid4())
     item_dir = os.path.join(UPLOAD_DIR, file_id)
     os.makedirs(item_dir, exist_ok=True)
 
-    original_path = os.path.join(item_dir, 'original.png')
-    file.save(original_path)
+    # Save original uploaded file with its original extension
+    original_uploaded_path = os.path.join(item_dir, f'original{ext}')
+    file.save(original_uploaded_path)
 
     # Resolve executable scripts absolute paths
     clean_script_path = os.path.join(PROJECT_ROOT, 'scripts', 'clean-img')
     tesseract_script_path = os.path.join(PROJECT_ROOT, 'scripts', 'call-tesseract')
 
-    # 1. Downscale to max 2400px on longest side using ImageMagick
+    original_path = os.path.join(item_dir, 'original.png')
+
+    # Transcode and downscale to max 2400px on longest side using ImageMagick
     try:
         subprocess.run(
-            ['magick', 'convert', original_path, '-resize', '2400x2400>', original_path],
+            ['magick', 'convert', original_uploaded_path, '-resize', '2400x2400>', original_path],
             check=True
         )
     except Exception as e:
         # Fallback to convert
         try:
             subprocess.run(
-                ['convert', original_path, '-resize', '2400x2400>', original_path],
+                ['convert', original_uploaded_path, '-resize', '2400x2400>', original_path],
                 check=True
             )
         except Exception as e2:
-            return f"Image resize failed: {str(e2)}", 500
+            return f"Image transcode/resize failed: {str(e2)}", 500
+
+    # Clean up original uploaded file if it was transcoded (i.e. not already .png)
+    if ext != '.png':
+        try:
+            os.remove(original_uploaded_path)
+        except Exception:
+            pass
 
     # 2. Run clean script (creates original.png-out.png, original.png-tmp.png, etc.)
     # Note: clean-img expects to be run with project root as working directory to find textcleaner.
+    original_path_rel = os.path.relpath(original_path, PROJECT_ROOT)
     try:
         subprocess.run(
-            [clean_script_path, original_path],
+            [clean_script_path, original_path_rel],
             cwd=PROJECT_ROOT,
             check=True
         )
@@ -116,9 +130,10 @@ def upload_file():
     out_uploads_item_dir = os.path.join(PROJECT_ROOT, 'out-uploads', file_id)
     os.makedirs(out_uploads_item_dir, exist_ok=True)
 
+    cleaned_path_rel = os.path.relpath(cleaned_path, PROJECT_ROOT)
     try:
         subprocess.run(
-            [tesseract_script_path, cleaned_path],
+            [tesseract_script_path, cleaned_path_rel],
             cwd=PROJECT_ROOT,
             check=True
         )

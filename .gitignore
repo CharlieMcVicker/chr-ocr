@@ -1,0 +1,7 @@
+# standard macos python project gitignore
+__pycache__/
+*.pyc
+.venv/
+uploads/
+out-uploads/
+.DS_Store
