@@ -124,9 +124,7 @@ def upload_file():
             except Exception:
                 pass
 
-    # 3. Run tesseract using script
-    # The script uses out-$1, which resolves to out-uploads/<uuid>/cleaned.png.
-    # Therefore, we need the out-uploads/<uuid> path to exist first.
+    # 3. Run tesseract on cleaned.png
     out_uploads_item_dir = os.path.join(PROJECT_ROOT, 'out-uploads', file_id)
     os.makedirs(out_uploads_item_dir, exist_ok=True)
 
@@ -138,28 +136,59 @@ def upload_file():
             check=True
         )
     except Exception as e:
-        return f"OCR processing failed: {str(e)}", 500
+        return f"OCR processing on cleaned image failed: {str(e)}", 500
 
-    # Locate and copy/rename the resulting .hocr file (stored as out.html)
-    tesseract_output = os.path.join(out_uploads_item_dir, 'cleaned.png.hocr')
-    if not os.path.exists(tesseract_output):
-        tesseract_output_alt = os.path.join(out_uploads_item_dir, 'cleaned.hocr')
-        if os.path.exists(tesseract_output_alt):
-            tesseract_output = tesseract_output_alt
+    # Locate and copy/rename the resulting .hocr file (stored as cleaned.html)
+    tesseract_output_cleaned = os.path.join(out_uploads_item_dir, 'cleaned.png.hocr')
+    if not os.path.exists(tesseract_output_cleaned):
+        tesseract_output_cleaned_alt = os.path.join(out_uploads_item_dir, 'cleaned.hocr')
+        if os.path.exists(tesseract_output_cleaned_alt):
+            tesseract_output_cleaned = tesseract_output_cleaned_alt
 
-    dest_hocr_path = os.path.join(item_dir, 'out.html')
-    if os.path.exists(tesseract_output):
+    dest_cleaned_hocr_path = os.path.join(item_dir, 'cleaned.html')
+    if os.path.exists(tesseract_output_cleaned):
         # Read content and rewrite the image title path to just "cleaned.png"
-        with open(tesseract_output, 'r', encoding='utf-8') as f:
+        with open(tesseract_output_cleaned, 'r', encoding='utf-8') as f:
             hocr_content = f.read()
         
         import re
         hocr_content = re.sub(r'image\s+"[^"]+"', 'image "cleaned.png"', hocr_content)
         
-        with open(dest_hocr_path, 'w', encoding='utf-8') as f:
+        with open(dest_cleaned_hocr_path, 'w', encoding='utf-8') as f:
             f.write(hocr_content)
     else:
-        return "hOCR output file not found", 500
+        return "hOCR output file for cleaned image not found", 500
+
+    # 4. Run tesseract on original.png
+    original_path_rel = os.path.relpath(original_path, PROJECT_ROOT)
+    try:
+        subprocess.run(
+            [tesseract_script_path, original_path_rel],
+            cwd=PROJECT_ROOT,
+            check=True
+        )
+    except Exception as e:
+        return f"OCR processing on original image failed: {str(e)}", 500
+
+    tesseract_output_original = os.path.join(out_uploads_item_dir, 'original.png.hocr')
+    if not os.path.exists(tesseract_output_original):
+        tesseract_output_original_alt = os.path.join(out_uploads_item_dir, 'original.hocr')
+        if os.path.exists(tesseract_output_original_alt):
+            tesseract_output_original = tesseract_output_original_alt
+
+    dest_original_hocr_path = os.path.join(item_dir, 'original.html')
+    if os.path.exists(tesseract_output_original):
+        # Read content and rewrite the image title path to just "original.png"
+        with open(tesseract_output_original, 'r', encoding='utf-8') as f:
+            hocr_content = f.read()
+        
+        import re
+        hocr_content = re.sub(r'image\s+"[^"]+"', 'image "original.png"', hocr_content)
+        
+        with open(dest_original_hocr_path, 'w', encoding='utf-8') as f:
+            f.write(hocr_content)
+    else:
+        return "hOCR output file for original image not found", 500
 
     # Clean up out-uploads structure
     try:
@@ -191,30 +220,37 @@ def view_result(file_id):
         abort(404)
     return render_template('view.html', item=item)
 
-@app.route('/uploads/<file_id>/cleaned.png')
-def serve_cleaned_image(file_id):
-    return send_from_directory(os.path.join(UPLOAD_DIR, file_id), 'cleaned.png')
-
-@app.route('/uploads/<file_id>/out.html')
-def serve_hocr(file_id):
-    hocr_path = os.path.join(UPLOAD_DIR, file_id, 'out.html')
-    if not os.path.exists(hocr_path):
+@app.route('/uploads/<file_id>/<filename>')
+def serve_upload_file(file_id, filename):
+    allowed_files = {'cleaned.png', 'original.png', 'cleaned.html', 'original.html', 'out.html'}
+    if filename not in allowed_files:
         abort(404)
-    with open(hocr_path, 'r', encoding='utf-8') as f:
-        content = f.read()
 
-    # Inject hocr.js viewer script if it isn't already there
-    if 'hocrjs' not in content:
-        script_tag = '\n<script defer src="https://unpkg.com/hocrjs"></script>\n'
-        if '</body>' in content:
-            content = content.replace('</body>', f'{script_tag}</body>')
-        else:
-            content += script_tag
+    file_path = os.path.join(UPLOAD_DIR, file_id, filename)
+    # Support backward compatibility for out.html
+    if filename == 'out.html' and not os.path.exists(file_path):
+        file_path = os.path.join(UPLOAD_DIR, file_id, 'cleaned.html')
 
-    # Serve as text/html
-    response = make_response(content)
-    response.headers['Content-Type'] = 'text/html; charset=utf-8'
-    return response
+    if not os.path.exists(file_path):
+        abort(404)
+
+    if filename.endswith('.html'):
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Inject hocr.js viewer script if it isn't already there
+        if 'hocrjs' not in content:
+            script_tag = '\n<script defer src="https://unpkg.com/hocrjs"></script>\n'
+            if '</body>' in content:
+                content = content.replace('</body>', f'{script_tag}</body>')
+            else:
+                content += script_tag
+
+        response = make_response(content)
+        response.headers['Content-Type'] = 'text/html; charset=utf-8'
+        return response
+    else:
+        return send_from_directory(os.path.join(UPLOAD_DIR, file_id), filename)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=PORT, debug=True)

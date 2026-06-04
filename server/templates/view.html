@@ -287,6 +287,39 @@
             transform: translateY(0);
             opacity: 1;
         }
+
+        .ocr-toggle-container {
+            display: flex;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-card);
+            padding: 3px;
+            border-radius: 14px;
+            backdrop-filter: blur(8px);
+        }
+
+        .toggle-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            padding: 0.5rem 1.25rem;
+            border-radius: 11px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .toggle-btn:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .toggle-btn.active {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
+        }
     </style>
 </head>
 <body>
@@ -304,9 +337,15 @@
             </a>
             <h1>{{ item.original_filename }}</h1>
         </div>
+        
+        <div class="ocr-toggle-container">
+            <button class="toggle-btn active" id="toggle-cleaned" onclick="switchVersion('cleaned')">Preprocessed</button>
+            <button class="toggle-btn" id="toggle-original" onclick="switchVersion('original')">Original</button>
+        </div>
+
         <div class="header-actions">
             <button class="btn-action btn-secondary" onclick="copyTranscription()">Copy Text</button>
-            <a href="/uploads/{{ item.id }}/out.html" class="btn-action" target="_blank">View Raw hOCR</a>
+            <a id="raw-hocr-link" href="/uploads/{{ item.id }}/cleaned.html" class="btn-action" target="_blank">View Raw hOCR</a>
         </div>
     </header>
 
@@ -347,87 +386,133 @@
         const toggleOverlay = document.getElementById('toggle-overlay');
         const tooltip = document.getElementById('tooltip');
         const toast = document.getElementById('toast');
+        const rawHocrLink = document.getElementById('raw-hocr-link');
 
+        let currentVersion = 'cleaned';
         let originalBBox = [0, 0, 1000, 1000]; // fallback bounding box [x1, y1, x2, y2]
         let wordList = [];
 
-        // Fetch and parse the hOCR HTML file
-        fetch(`/uploads/${fileId}/out.html`)
-            .then(res => res.text())
-            .then(html => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, 'text/html');
-                
-                // Parse page boundary
-                const pageDiv = doc.querySelector('.ocr_page');
-                if (pageDiv && pageDiv.getAttribute('title')) {
-                    const bboxMatch = pageDiv.getAttribute('title').match(/bbox\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)/);
-                    if (bboxMatch) {
-                        originalBBox = [
-                            parseInt(bboxMatch[1]),
-                            parseInt(bboxMatch[2]),
-                            parseInt(bboxMatch[3]),
-                            parseInt(bboxMatch[4])
-                        ];
+        function switchVersion(version) {
+            if (version === currentVersion) return;
+            currentVersion = version;
+
+            // Update UI tabs
+            document.getElementById('toggle-cleaned').classList.toggle('active', version === 'cleaned');
+            document.getElementById('toggle-original').classList.toggle('active', version === 'original');
+
+            // Update raw hOCR link
+            rawHocrLink.href = `/uploads/${fileId}/${version}.html`;
+
+            // Update image source
+            docImage.src = `/uploads/${fileId}/${version}.png`;
+
+            // Clear old overlay and text
+            overlayLayer.innerHTML = '';
+            transcriptionText.innerHTML = "Loading OCR text...";
+
+            // Load new OCR data
+            loadOCR(version);
+        }
+
+        function loadOCR(version) {
+            fetch(`/uploads/${fileId}/${version}.html`)
+                .then(res => {
+                    if (!res.ok) {
+                        // Fallback to out.html or handle error gracefully (especially for older documents)
+                        if (version === 'cleaned') {
+                            return fetch(`/uploads/${fileId}/out.html`).then(r => {
+                                if (!r.ok) throw new Error("Not found");
+                                return r.text();
+                            });
+                        }
+                        throw new Error("OCR not found");
                     }
-                }
+                    return res.text();
+                })
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    
+                    // Parse page boundary
+                    const pageDiv = doc.querySelector('.ocr_page');
+                    if (pageDiv && pageDiv.getAttribute('title')) {
+                        const bboxMatch = pageDiv.getAttribute('title').match(/bbox\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)/);
+                        if (bboxMatch) {
+                            originalBBox = [
+                                parseInt(bboxMatch[1]),
+                                parseInt(bboxMatch[2]),
+                                parseInt(bboxMatch[3]),
+                                parseInt(bboxMatch[4])
+                            ];
+                        }
+                    }
 
-                // Parse words
-                const words = doc.querySelectorAll('.ocrx_word');
-                const parsedWords = [];
-                let fullText = "";
-                let currentLine = null;
+                    // Parse words
+                    const words = doc.querySelectorAll('.ocrx_word');
+                    const parsedWords = [];
+                    let fullText = "";
 
-                // Collect paragraphs/lines
-                const pars = doc.querySelectorAll('.ocr_par');
-                pars.forEach(par => {
-                    const lines = par.querySelectorAll('.ocr_line');
-                    lines.forEach(line => {
-                        const lineWords = line.querySelectorAll('.ocrx_word');
-                        let lineText = [];
-                        lineWords.forEach(word => {
-                            const title = word.getAttribute('title') || '';
-                            const bboxMatch = title.match(/bbox\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)/);
-                            const confMatch = title.match(/x_wconf\s+(\d+)/);
-                            
-                            const text = word.textContent.trim();
-                            if (text) {
-                                lineText.push(text);
-                                if (bboxMatch) {
-                                    parsedWords.push({
-                                        text: text,
-                                        bbox: [
-                                            parseInt(bboxMatch[1]),
-                                            parseInt(bboxMatch[2]),
-                                            parseInt(bboxMatch[3]),
-                                            parseInt(bboxMatch[4])
-                                        ],
-                                        confidence: confMatch ? parseInt(confMatch[1]) : null
-                                    });
+                    // Collect paragraphs/lines
+                    const pars = doc.querySelectorAll('.ocr_par');
+                    pars.forEach(par => {
+                        const lines = par.querySelectorAll('.ocr_line');
+                        lines.forEach(line => {
+                            const lineWords = line.querySelectorAll('.ocrx_word');
+                            let lineText = [];
+                            lineWords.forEach(word => {
+                                const title = word.getAttribute('title') || '';
+                                const bboxMatch = title.match(/bbox\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)/);
+                                const confMatch = title.match(/x_wconf\s+(\d+)/);
+                                
+                                const text = word.textContent.trim();
+                                if (text) {
+                                    lineText.push(text);
+                                    if (bboxMatch) {
+                                        parsedWords.push({
+                                            text: text,
+                                            bbox: [
+                                                parseInt(bboxMatch[1]),
+                                                parseInt(bboxMatch[2]),
+                                                parseInt(bboxMatch[3]),
+                                                parseInt(bboxMatch[4])
+                                            ],
+                                            confidence: confMatch ? parseInt(confMatch[1]) : null
+                                        });
+                                    }
                                 }
+                            });
+                            if (lineText.length > 0) {
+                                fullText += lineText.join(' ') + '\n';
                             }
                         });
-                        if (lineText.length > 0) {
-                            fullText += lineText.join(' ') + '\n';
-                        }
+                        fullText += '\n';
                     });
-                    fullText += '\n';
-                });
 
-                wordList = parsedWords;
-                transcriptionText.innerHTML = fullText.trim() ? fullText.trim() : "No text detected.";
-                
-                // Once image is loaded, render boxes
-                if (docImage.complete) {
-                    renderOverlayBoxes();
-                } else {
-                    docImage.addEventListener('load', renderOverlayBoxes);
-                }
-            })
-            .catch(err => {
-                console.error("Error loading hOCR:", err);
-                transcriptionText.innerHTML = "Error loading OCR data.";
-            });
+                    wordList = parsedWords;
+                    transcriptionText.innerHTML = fullText.trim() ? fullText.trim() : "No text detected.";
+                    
+                    // Once image is loaded, render boxes
+                    if (docImage.complete) {
+                        renderOverlayBoxes();
+                    } else {
+                        docImage.removeEventListener('load', renderOverlayBoxes);
+                        docImage.addEventListener('load', renderOverlayBoxes);
+                    }
+                })
+                .catch(err => {
+                    console.error("Error loading hOCR:", err);
+                    transcriptionText.innerHTML = "OCR data not available for this version.";
+                    overlayLayer.innerHTML = '';
+                    if (version === 'original') {
+                        toast.innerText = "Original OCR not available.";
+                        toast.classList.add('show');
+                        setTimeout(() => toast.classList.remove('show'), 3000);
+                    }
+                });
+        }
+
+        // Initialize
+        loadOCR('cleaned');
 
         // Render visual overlay of word boxes
         function renderOverlayBoxes() {
