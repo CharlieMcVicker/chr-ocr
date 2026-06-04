@@ -54,8 +54,8 @@ CMD ["python", "server/app.py"]
 ---
 
 ## 1. Web OCR Server & Dashboard
-
-The web app provides a visual UI to upload PNG files, clean them automatically, perform OCR, and view the results in an interactive overlay.
+ 
+The web app provides a visual UI to upload document images (PNG, JPG, etc.), preprocess them using multiple thresholding and cleaning methods (including legacy Textcleaner, Doxa - Su, Doxa - Sauvola, and Doxa - Wolf), run Tesseract OCR on each version, and compare/view the results in an interactive tabbed hOCR overlay viewer.
 
 ### Setup and Running Local Server
 
