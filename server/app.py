@@ -5,6 +5,7 @@ import subprocess
 from datetime import datetime, timezone
 from flask import Flask, request, render_template, redirect, url_for, send_from_directory, abort, make_response
 from dotenv import load_dotenv
+from binarizer import binarize_image
 
 load_dotenv()
 
@@ -124,6 +125,15 @@ def upload_file():
             except Exception:
                 pass
 
+    # 2.5 Run Doxa binarization algorithms (Su, Sauvola, Wolf)
+    doxa_algos = ['su', 'sauvola', 'wolf']
+    for algo in doxa_algos:
+        doxa_png_path = os.path.join(item_dir, f'doxa_{algo}.png')
+        try:
+            binarize_image(original_path, doxa_png_path, algo)
+        except Exception as e:
+            return f"Doxa binarization ({algo}) failed: {str(e)}", 500
+
     # 3. Run tesseract on cleaned.png
     out_uploads_item_dir = os.path.join(PROJECT_ROOT, 'out-uploads', file_id)
     os.makedirs(out_uploads_item_dir, exist_ok=True)
@@ -190,6 +200,38 @@ def upload_file():
     else:
         return "hOCR output file for original image not found", 500
 
+    # 5. Run tesseract on Doxa images
+    for algo in doxa_algos:
+        doxa_png_path = os.path.join(item_dir, f'doxa_{algo}.png')
+        doxa_png_path_rel = os.path.relpath(doxa_png_path, PROJECT_ROOT)
+        try:
+            subprocess.run(
+                [tesseract_script_path, doxa_png_path_rel],
+                cwd=PROJECT_ROOT,
+                check=True
+            )
+        except Exception as e:
+            return f"OCR processing on Doxa {algo} image failed: {str(e)}", 500
+
+        tesseract_output_doxa = os.path.join(out_uploads_item_dir, f'doxa_{algo}.png.hocr')
+        if not os.path.exists(tesseract_output_doxa):
+            tesseract_output_doxa_alt = os.path.join(out_uploads_item_dir, f'doxa_{algo}.hocr')
+            if os.path.exists(tesseract_output_doxa_alt):
+                tesseract_output_doxa = tesseract_output_doxa_alt
+
+        dest_doxa_hocr_path = os.path.join(item_dir, f'doxa_{algo}.html')
+        if os.path.exists(tesseract_output_doxa):
+            with open(tesseract_output_doxa, 'r', encoding='utf-8') as f:
+                hocr_content = f.read()
+            
+            import re
+            hocr_content = re.sub(r'image\s+"[^"]+"', f'image "doxa_{algo}.png"', hocr_content)
+            
+            with open(dest_doxa_hocr_path, 'w', encoding='utf-8') as f:
+                f.write(hocr_content)
+        else:
+            return f"hOCR output file for Doxa {algo} image not found", 500
+
     # Clean up out-uploads structure
     try:
         if os.path.exists(out_uploads_item_dir):
@@ -222,7 +264,11 @@ def view_result(file_id):
 
 @app.route('/uploads/<file_id>/<filename>')
 def serve_upload_file(file_id, filename):
-    allowed_files = {'cleaned.png', 'original.png', 'cleaned.html', 'original.html', 'out.html'}
+    allowed_files = {
+        'cleaned.png', 'original.png', 'cleaned.html', 'original.html', 'out.html',
+        'doxa_su.png', 'doxa_sauvola.png', 'doxa_wolf.png',
+        'doxa_su.html', 'doxa_sauvola.html', 'doxa_wolf.html'
+    }
     if filename not in allowed_files:
         abort(404)
 

@@ -339,8 +339,11 @@
         </div>
         
         <div class="ocr-toggle-container">
-            <button class="toggle-btn active" id="toggle-cleaned" onclick="switchVersion('cleaned')">Preprocessed</button>
             <button class="toggle-btn" id="toggle-original" onclick="switchVersion('original')">Original</button>
+            <button class="toggle-btn active" id="toggle-cleaned" onclick="switchVersion('cleaned')">Textcleaner</button>
+            <button class="toggle-btn" id="toggle-doxa_su" onclick="switchVersion('doxa_su')">Doxa - Su</button>
+            <button class="toggle-btn" id="toggle-doxa_sauvola" onclick="switchVersion('doxa_sauvola')">Doxa - Sauvola</button>
+            <button class="toggle-btn" id="toggle-doxa_wolf" onclick="switchVersion('doxa_wolf')">Doxa - Wolf</button>
         </div>
 
         <div class="header-actions">
@@ -397,8 +400,13 @@
             currentVersion = version;
 
             // Update UI tabs
-            document.getElementById('toggle-cleaned').classList.toggle('active', version === 'cleaned');
-            document.getElementById('toggle-original').classList.toggle('active', version === 'original');
+            const versions = ['original', 'cleaned', 'doxa_su', 'doxa_sauvola', 'doxa_wolf'];
+            versions.forEach(v => {
+                const btn = document.getElementById(`toggle-${v}`);
+                if (btn) {
+                    btn.classList.toggle('active', v === version);
+                }
+            });
 
             // Update raw hOCR link
             rawHocrLink.href = `/uploads/${fileId}/${version}.html`;
