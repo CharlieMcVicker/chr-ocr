@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Viewer - {{ item.original_filename }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --border-card: rgba(255, 255, 255, 0.08);
+            --accent-glow: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --primary-color: #8b5cf6;
+            --primary-hover: #7c3aed;
+            --overlay-bg: rgba(139, 92, 246, 0.15);
+            --overlay-border: rgba(139, 92, 246, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: var(--accent-glow);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            padding: 1.5rem 2rem;
+            background: rgba(10, 10, 15, 0.5);
+            border-bottom: 1px solid var(--border-card);
+            backdrop-filter: blur(12px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .back-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            color: var(--text-primary);
+            padding: 0.6rem 1.2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .back-btn:hover {
+            border-color: var(--primary-color);
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 400px;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .btn-action {
+            background: var(--primary-color);
+            border: none;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .btn-action:hover {
+            background: var(--primary-hover);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-color);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .viewer-container {
+            flex-grow: 1;
+            display: flex;
+            overflow: hidden;
+            height: calc(100vh - 75px);
+        }
+
+        /* Image viewport pane */
+        .image-pane {
+            flex: 1.2;
+            position: relative;
+            background: #050508;
+            overflow: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .canvas-container {
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #doc-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            user-select: none;
+        }
+
+        .hocr-overlay-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .ocr-word-box {
+            position: absolute;
+            background: var(--overlay-bg);
+            border: 1px solid var(--overlay-border);
+            border-radius: 2px;
+            pointer-events: auto;
+            cursor: help;
+            transition: background-color 0.15s ease;
+        }
+
+        .ocr-word-box:hover {
+            background: rgba(139, 92, 246, 0.35);
+            border-color: #a78bfa;
+            box-shadow: 0 0 8px rgba(139, 92, 246, 0.5);
+        }
+
+        /* Text transcript pane */
+        .text-pane {
+            flex: 0.8;
+            border-left: 1px solid var(--border-card);
+            background: rgba(10, 10, 15, 0.6);
+            backdrop-filter: blur(20px);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .text-pane-header {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border-card);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .text-pane-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .transcription-content {
+            flex-grow: 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            font-family: 'Outfit', sans-serif;
+            white-space: pre-wrap;
+            color: #e2e8f0;
+        }
+
+        .word-highlight {
+            background: rgba(139, 92, 246, 0.25);
+            border-radius: 4px;
+            padding: 0 2px;
+        }
+
+        /* Controls bar */
+        .controls-bar {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(15, 15, 25, 0.85);
+            border: 1px solid var(--border-card);
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            backdrop-filter: blur(12px);
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            z-index: 10;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .control-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .control-item input[type="range"] {
+            accent-color: var(--primary-color);
+            cursor: pointer;
+            width: 100px;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(10, 10, 15, 0.95);
+            border: 1px solid var(--primary-color);
+            color: var(--text-primary);
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.15s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            max-width: 250px;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--success-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 9999;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toast" id="toast">Copied to clipboard!</div>
+    <div class="tooltip" id="tooltip"></div>
+
+    <header>
+        <div class="header-left">
+            <a href="/" class="back-btn">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Dashboard
+            </a>
+            <h1>{{ item.original_filename }}</h1>
+        </div>
+        <div class="header-actions">
+            <button class="btn-action btn-secondary" onclick="copyTranscription()">Copy Text</button>
+            <a href="/uploads/{{ item.id }}/out.html" class="btn-action" target="_blank">View Raw hOCR</a>
+        </div>
+    </header>
+
+    <div class="viewer-container">
+        <div class="image-pane">
+            <div class="canvas-container" id="canvas-container">
+                <img id="doc-image" src="/uploads/{{ item.id }}/cleaned.png" alt="Document image">
+                <div class="hocr-overlay-layer" id="overlay-layer"></div>
+            </div>
+
+            <div class="controls-bar">
+                <div class="control-item">
+                    <span>Opacity:</span>
+                    <input type="range" id="opacity-slider" min="0" max="1" step="0.1" value="0.2">
+                </div>
+                <div class="control-item">
+                    <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+                        <input type="checkbox" id="toggle-overlay" checked style="accent-color: var(--primary-color);"> Show Boxes
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-pane">
+            <div class="text-pane-header">
+                <span class="text-pane-title">OCR Text Result</span>
+            </div>
+            <div class="transcription-content" id="transcription-text">Loading OCR text...</div>
+        </div>
+    </div>
+
+    <script>
+        const fileId = "{{ item.id }}";
+        const overlayLayer = document.getElementById('overlay-layer');
+        const docImage = document.getElementById('doc-image');
+        const transcriptionText = document.getElementById('transcription-text');
+        const opacitySlider = document.getElementById('opacity-slider');
+        const toggleOverlay = document.getElementById('toggle-overlay');
+        const tooltip = document.getElementById('tooltip');
+        const toast = document.getElementById('toast');
+
+        let originalBBox = [0, 0, 1000, 1000]; // fallback bounding box [x1, y1, x2, y2]
+        let wordList = [];
+
+        // Fetch and parse the hOCR HTML file
+        fetch(`/uploads/${fileId}/out.html`)
+            .then(res => res.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Parse page boundary
+                const pageDiv = doc.querySelector('.ocr_page');
+                if (pageDiv && pageDiv.getAttribute('title')) {
+                    const bboxMatch = pageDiv.getAttribute('title').match(/bbox\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)/);
+                    if (bboxMatch) {
+                        originalBBox = [
+                            parseInt(bboxMatch[1]),
+                            parseInt(bboxMatch[2]),
+                            parseInt(bboxMatch[3]),
+                            parseInt(bboxMatch[4])
+                        ];
+                    }
+                }
+
+                // Parse words
+                const words = doc.querySelectorAll('.ocrx_word');
+                const parsedWords = [];
+                let fullText = "";
+                let currentLine = null;
+
+                // Collect paragraphs/lines
+                const pars = doc.querySelectorAll('.ocr_par');
+                pars.forEach(par => {
+                    const lines = par.querySelectorAll('.ocr_line');
+                    lines.forEach(line => {
+                        const lineWords = line.querySelectorAll('.ocrx_word');
+                        let lineText = [];
+                        lineWords.forEach(word => {
+                            const title = word.getAttribute('title') || '';
+                            const bboxMatch = title.match(/bbox\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)/);
+                            const confMatch = title.match(/x_wconf\s+(\d+)/);
+                            
+                            const text = word.textContent.trim();
+                            if (text) {
+                                lineText.push(text);
+                                if (bboxMatch) {
+                                    parsedWords.push({
+                                        text: text,
+                                        bbox: [
+                                            parseInt(bboxMatch[1]),
+                                            parseInt(bboxMatch[2]),
+                                            parseInt(bboxMatch[3]),
+                                            parseInt(bboxMatch[4])
+                                        ],
+                                        confidence: confMatch ? parseInt(confMatch[1]) : null
+                                    });
+                                }
+                            }
+                        });
+                        if (lineText.length > 0) {
+                            fullText += lineText.join(' ') + '\n';
+                        }
+                    });
+                    fullText += '\n';
+                });
+
+                wordList = parsedWords;
+                transcriptionText.innerHTML = fullText.trim() ? fullText.trim() : "No text detected.";
+                
+                // Once image is loaded, render boxes
+                if (docImage.complete) {
+                    renderOverlayBoxes();
+                } else {
+                    docImage.addEventListener('load', renderOverlayBoxes);
+                }
+            })
+            .catch(err => {
+                console.error("Error loading hOCR:", err);
+                transcriptionText.innerHTML = "Error loading OCR data.";
+            });
+
+        // Render visual overlay of word boxes
+        function renderOverlayBoxes() {
+            overlayLayer.innerHTML = '';
+            
+            // Scaled sizes vs original BBox size
+            const imgWidth = docImage.clientWidth;
+            const imgHeight = docImage.clientHeight;
+            const origWidth = originalBBox[2] - originalBBox[1] === 0 ? imgWidth : (originalBBox[2] - originalBBox[0]);
+            const origHeight = originalBBox[3] - originalBBox[0] === 0 ? imgHeight : (originalBBox[3] - originalBBox[1]);
+
+            const scaleX = imgWidth / origWidth;
+            const scaleY = imgHeight / origHeight;
+
+            wordList.forEach((word, idx) => {
+                const box = document.createElement('div');
+                box.className = 'ocr-word-box';
+                
+                const left = word.bbox[0] * scaleX;
+                const top = word.bbox[1] * scaleY;
+                const width = (word.bbox[2] - word.bbox[0]) * scaleX;
+                const height = (word.bbox[3] - word.bbox[1]) * scaleY;
+
+                box.style.left = `${left}px`;
+                box.style.top = `${top}px`;
+                box.style.width = `${width}px`;
+                box.style.height = `${height}px`;
+                box.style.opacity = toggleOverlay.checked ? opacitySlider.value : 0;
+
+                // Tooltip info
+                box.addEventListener('mouseenter', (e) => {
+                    tooltip.style.opacity = '1';
+                    tooltip.innerHTML = `<strong>${word.text}</strong><br>Confidence: ${word.confidence ? word.confidence + '%' : 'N/A'}`;
+                    moveTooltip(e);
+                });
+
+                box.addEventListener('mousemove', moveTooltip);
+
+                box.addEventListener('mouseleave', () => {
+                    tooltip.style.opacity = '0';
+                });
+
+                overlayLayer.appendChild(box);
+            });
+        }
+
+        function moveTooltip(e) {
+            tooltip.style.left = `${e.pageX + 15}px`;
+            tooltip.style.top = `${e.pageY + 15}px`;
+        }
+
+        // Adjust overlays based on controls
+        opacitySlider.addEventListener('input', () => {
+            document.querySelectorAll('.ocr-word-box').forEach(box => {
+                box.style.opacity = toggleOverlay.checked ? opacitySlider.value : 0;
+            });
+        });
+
+        toggleOverlay.addEventListener('change', () => {
+            document.querySelectorAll('.ocr-word-box').forEach(box => {
+                box.style.opacity = toggleOverlay.checked ? opacitySlider.value : 0;
+            });
+        });
+
+        // Handle resize of viewport
+        window.addEventListener('resize', renderOverlayBoxes);
+
+        // Copy transcription helper
+        function copyTranscription() {
+            const text = transcriptionText.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
