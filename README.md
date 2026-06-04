@@ -12,6 +12,47 @@ Before running the scripts or server, ensure you have the following system packa
 
 ---
 
+## Docker Setup & Requirements
+
+If you want to containerize this application, here is a brief overview of how and where to install the required system libraries, language data, and Python dependencies:
+
+### 1. Base Image and System Libraries
+Use a Python base image (such as `python:3.11-slim`) and install `tesseract-ocr` and `imagemagick` via `apt`:
+```dockerfile
+FROM python:3.11-slim
+
+RUN apt-get update && apt-get install -y \
+    imagemagick \
+    tesseract-ocr \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+### 2. Cherokee Language Data (`chr.traineddata`)
+Tesseract needs the `chr.traineddata` file to perform Cherokee OCR. Download it and place it into the `tessdata` folder of the image. For standard Debian-based slim images, this path is typically `/usr/share/tesseract-ocr/5/tessdata/` (or `/usr/share/tesseract-ocr/4.00/tessdata/` depending on the Tesseract version):
+```dockerfile
+RUN mkdir -p /usr/share/tesseract-ocr/5/tessdata/ \
+    && curl -L -o /usr/share/tesseract-ocr/5/tessdata/chr.traineddata \
+    https://github.com/tesseract-ocr/tessdata/raw/main/chr.traineddata
+```
+
+### 3. Application Dependencies & Run
+Copy the application source code, install Python packages, and set up the startup command:
+```dockerfile
+WORKDIR /app
+COPY server/requirements.txt ./server/requirements.txt
+RUN pip install --no-cache-dir -r server/requirements.txt
+
+COPY . .
+
+ENV PORT=5001
+EXPOSE 5001
+
+CMD ["python", "server/app.py"]
+```
+
+---
+
 ## 1. Web OCR Server & Dashboard
 
 The web app provides a visual UI to upload PNG files, clean them automatically, perform OCR, and view the results in an interactive overlay.
