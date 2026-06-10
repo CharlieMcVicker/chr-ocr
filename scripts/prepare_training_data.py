@@ -8,7 +8,7 @@ from PIL import Image
 # Ensure server package can be imported
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from server.layout import extract_columns, crop_pad_skew_correct
+from server.layout import extract_columns
 from server.process_file import ocr_image_to_text
 from scripts.classify_layout import analyze_text
 from surya.detection import DetectionPredictor
@@ -151,11 +151,19 @@ def main():
 
         cherokee_col_count = 0
         for col_idx, col in enumerate(columns):
-            # Crop & skew correct column
+            # Crop and pad column (NO skew correction to avoid clipping wavy text)
             try:
-                col_crop = crop_pad_skew_correct(pil_img, col["bbox"], margin_x=20, margin_y=20)
+                margin_x = 20
+                margin_y = 20
+                c_xmin, c_ymin, c_xmax, c_ymax = col["bbox"]
+                c_xmin = max(0, c_xmin - margin_x)
+                c_ymin = max(0, c_ymin - margin_y)
+                c_xmax = min(pil_img.width, c_xmax + margin_x)
+                c_ymax = min(pil_img.height, c_ymax + margin_y)
+                
+                col_crop = pil_img.crop((c_xmin, c_ymin, c_xmax, c_ymax))
             except Exception as e:
-                print(f"    Failed to crop/skew-correct Column {col_idx:02d}: {e}", file=sys.stderr)
+                print(f"    Failed to crop Column {col_idx:02d}: {e}", file=sys.stderr)
                 continue
 
             # Classify column language content via OCR

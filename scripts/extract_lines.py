@@ -8,7 +8,7 @@ from PIL import Image
 # Ensure server package can be imported
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from server.layout import extract_columns, crop_pad_skew_correct
+from server.layout import extract_columns
 from surya.inference import SuryaInferenceManager
 from surya.detection import DetectionPredictor
 
@@ -77,8 +77,16 @@ def main():
         
         for col_idx, col in enumerate(columns):
             print(f"\nProcessing Column {col_idx:02d} (bbox: {col['bbox']})...")
-            # Crop, pad, and skew-correct the column
-            col_crop = crop_pad_skew_correct(pil_img, col["bbox"], margin_x=20, margin_y=20)
+            # Crop and pad the column (NO skew correction)
+            margin_x = 20
+            margin_y = 20
+            c_xmin, c_ymin, c_xmax, c_ymax = col["bbox"]
+            c_xmin = max(0, c_xmin - margin_x)
+            c_ymin = max(0, c_ymin - margin_y)
+            c_xmax = min(pil_img.width, c_xmax + margin_x)
+            c_ymax = min(pil_img.height, c_ymax + margin_y)
+            
+            col_crop = pil_img.crop((c_xmin, c_ymin, c_xmax, c_ymax))
             
             # Save column crop for reference
             col_crop_filename = f"column_{col_idx:02d}.png"
