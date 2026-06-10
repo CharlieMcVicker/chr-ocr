@@ -226,7 +226,8 @@ def get_layout_predictor():
 
 def extract_columns(pil_img: Image.Image) -> list:
     """
-    Runs Surya layout detection on the image and crops/returns the text/list columns.
+    Runs Surya layout detection on the image, groups the blocks fuzzily into columns,
+    filters out noise, and crops/returns the combined text/list columns.
     
     Returns:
         A list of dicts containing the cropped PIL.Image and its bounding box details:
@@ -236,15 +237,68 @@ def extract_columns(pil_img: Image.Image) -> list:
 
     print("Analyzing document layout...")
     predictions = layout_predictor([pil_img])[0]
+    
+    width, height = pil_img.size
+    tolerance = width * 0.08
+    min_blocks = 3
+    min_height = height * 0.05
 
-    extracted_blocks = []
+    # 1. Extract raw Text/List blocks
+    blocks = []
     for block in predictions.bboxes:
         if block.label in ["Text", "List"]:
-            bbox = block.bbox  # [xmin, ymin, xmax, ymax]
-            cropped = pil_img.crop((bbox[0], bbox[1], bbox[2], bbox[3]))
-            extracted_blocks.append({
-                "image": cropped,
-                "bbox": bbox,
+            blocks.append({
+                "bbox": block.bbox,
                 "label": block.label
             })
-    return extracted_blocks
+            
+    if not blocks:
+        return []
+
+    # 2. Fuzzy grouping by xmin/xmax
+    groups = []
+    for block in blocks:
+        xmin, ymin, xmax, ymax = block["bbox"]
+        matched_group = None
+        for gp in groups:
+            gp_xmin = sum(b["bbox"][0] for b in gp) / len(gp)
+            gp_xmax = sum(b["bbox"][2] for b in gp) / len(gp)
+            if abs(xmin - gp_xmin) <= tolerance and abs(xmax - gp_xmax) <= tolerance:
+                matched_group = gp
+                break
+        
+        if matched_group is not None:
+            matched_group.append(block)
+        else:
+            groups.append([block])
+            
+    # 3. Filter small/noisy groups and merge
+    extracted_columns = []
+    for gp in groups:
+        gp_ymins = [b["bbox"][1] for b in gp]
+        gp_ymaxs = [b["bbox"][3] for b in gp]
+        gp_height = max(gp_ymaxs) - min(gp_ymins)
+        
+        if len(gp) >= min_blocks or gp_height >= min_height:
+            gp_xmins = [b["bbox"][0] for b in gp]
+            gp_xmaxs = [b["bbox"][2] for b in gp]
+            
+            merged_bbox = [
+                min(gp_xmins),
+                min(gp_ymins),
+                max(gp_xmaxs),
+                max(gp_ymaxs)
+            ]
+            
+            # Crop to the merged bounding box to maintain same return signature
+            cropped = pil_img.crop(tuple(merged_bbox))
+            extracted_columns.append({
+                "image": cropped,
+                "bbox": merged_bbox,
+                "label": "Column"
+            })
+            
+    # Sort columns left-to-right
+    extracted_columns.sort(key=lambda c: c["bbox"][0])
+    
+    return extracted_columns
