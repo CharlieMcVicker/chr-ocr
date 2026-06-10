@@ -7,4 +7,5 @@ out-uploads/
 .DS_Store
 .ember
 scans
-training_data
+training_data*.log
+*_backup.json
