@@ -12,6 +12,7 @@ from server.layout import extract_columns, crop_pad_skew_correct
 from server.process_file import ocr_image_to_text
 from scripts.classify_layout import analyze_text
 from surya.detection import DetectionPredictor
+from surya.inference import SuryaInferenceManager
 
 def find_scans(base_dir):
     supported = (".jp2", ".png", ".jpg", ".jpeg", ".tiff", ".bmp")
@@ -109,6 +110,9 @@ def main():
     from server.layout import get_layout_predictor
 
     layout_predictor = get_layout_predictor()
+    
+    print("Initializing Surya detection models...")
+    line_detector = DetectionPredictor()
 
     print(f"Processing {len(scans_to_process)} scans starting from sequence index {start_idx + 1}...")
 
@@ -170,17 +174,17 @@ def main():
                 
                 # Detect lines inside the column crop
                 try:
-                    from server.process_file import get_tesseract_line_bboxes
-                    detected_lines = get_tesseract_line_bboxes(col_crop, lang="chr+eng")
-                    detected_lines = sorted(detected_lines, key=lambda bbox: bbox[1])
+                    predictions = line_detector([col_crop])
+                    pred = predictions[0]
+                    detected_lines = sorted(pred.bboxes, key=lambda b: b.bbox[1])
                 except Exception as e:
                     print(f"      Line detection failed for Column {col_idx:02d}: {e}", file=sys.stderr)
                     continue
 
                 print(f"      Detected {len(detected_lines)} lines in Column {col_idx:02d}.")
 
-                for line_idx, bbox in enumerate(detected_lines):
-                    lx1, ly1, lx2, ly2 = bbox
+                for line_idx, line_obj in enumerate(detected_lines):
+                    lx1, ly1, lx2, ly2 = line_obj.bbox
                     # Add padding
                     lx1_pad = max(0, int(lx1) - args.padding_x)
                     ly1_pad = max(0, int(ly1) - args.padding_y)
