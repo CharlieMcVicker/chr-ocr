@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherokee OCR Training Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --border-card: rgba(255, 255, 255, 0.08);
+            --accent-glow: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 60%);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --primary-color: #8b5cf6;
+            --primary-hover: #7c3aed;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            height: 100vh;
+            max-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background-image: var(--accent-glow);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Top Navigation Bar */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: rgba(10, 10, 15, 0.7);
+            border-bottom: 1px solid var(--border-card);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .header-title-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title-container h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.2s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-card);
+            background: var(--bg-card);
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+            border-color: var(--primary-color);
+        }
+
+        /* Stats Badge Row */
+        .stats-row {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .stat-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            border: 1px solid var(--border-card);
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .stat-badge .count {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.05rem 0.35rem;
+            border-radius: 10px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .stat-total { color: #f8fafc; border-color: rgba(255,255,255,0.2); }
+        .stat-unlabeled { color: #94a3b8; border-color: rgba(148,163,184,0.3); }
+        .stat-labeled { color: var(--success-color); border-color: rgba(16,185,129,0.3); }
+        .stat-not-cherokee { color: var(--danger-color); border-color: rgba(239,68,68,0.3); }
+        .stat-nasty-crop { color: var(--warning-color); border-color: rgba(245,158,11,0.3); }
+
+        /* Main Workspace Panel */
+        .main-container {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        /* Sidebar: Line list */
+        .sidebar {
+            width: 320px;
+            border-right: 1px solid var(--border-card);
+            background: rgba(10, 10, 15, 0.4);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .sidebar-search-container {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-card);
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .search-input {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-card);
+            color: var(--text-primary);
+            padding: 0.6rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .filter-tabs {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.25rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.2rem;
+            border-radius: 8px;
+        }
+
+        .filter-tab {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.4rem 0.1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .filter-tab.active {
+            background: var(--primary-color);
+            color: #fff;
+        }
+
+        .line-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0.5rem;
+        }
+
+        .line-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin-bottom: 0.25rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .line-item:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .line-item.active {
+            background: rgba(139, 92, 246, 0.08);
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+
+        .line-item-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .line-item-id {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 180px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #94a3b8;
+        }
+
+        .status-dot.unlabeled { background: #94a3b8; }
+        .status-dot.labeled { background: var(--success-color); }
+        .status-dot.not_cherokee { background: var(--danger-color); }
+        .status-dot.nasty_crop { background: var(--warning-color); }
+
+        .line-item-ocr {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Workspace Layout */
+        .workspace {
+            flex: 1;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-y: auto;
+            background: rgba(255,255,255,0.01);
+        }
+
+        .workspace-top {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-card);
+            padding-bottom: 0.75rem;
+        }
+
+        .meta-info-left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .meta-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Image Display Grid Container */
+        .crop-display-container {
+            background: #111;
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 180px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 4px 20px rgba(0,0,0,0.5);
+            /* Checkerboard pattern for crop inspection visibility */
+            background-image: 
+                linear-gradient(45deg, #18181f 25%, transparent 25%), 
+                linear-gradient(-45deg, #18181f 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #18181f 75%), 
+                linear-gradient(-45deg, transparent 75%, #18181f 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+
+        .crop-image {
+            max-width: 90%;
+            max-height: 120px;
+            object-fit: contain;
+            image-rendering: auto; /* high quality scaling */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Reference block and editor inputs */
+        .editor-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .reference-block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .reference-title {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        .reference-content {
+            font-size: 1.1rem;
+            padding: 0.75rem;
+            background: rgba(0,0,0,0.25);
+            border-radius: 8px;
+            border-left: 3px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 48px;
+        }
+
+        .copy-btn {
+            background: transparent;
+            border: none;
+            color: var(--primary-color);
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        .input-block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .transcription-input {
+            width: 100%;
+            background: rgba(0,0,0,0.4);
+            border: 2px solid var(--border-card);
+            border-radius: 10px;
+            color: var(--text-primary);
+            padding: 1rem;
+            font-size: 1.5rem; /* Larger font for Cherokee glyphs */
+            outline: none;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .transcription-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 12px rgba(139, 92, 246, 0.2);
+        }
+
+        /* Buttons Row */
+        .actions-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-danger {
+            background: rgba(239, 68, 68, 0.08);
+            border-color: rgba(239, 68, 68, 0.3);
+            color: #fca5a5;
+        }
+
+        .btn-danger:hover {
+            background: var(--danger-color);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-warning {
+            background: rgba(245, 158, 11, 0.08);
+            border-color: rgba(245, 158, 11, 0.3);
+            color: #fde047;
+        }
+
+        .btn-warning:hover {
+            background: var(--warning-color);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: #fff;
+            margin-left: auto;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+        }
+
+        .navigation-btns {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.03);
+            border-color: var(--border-card);
+            color: var(--text-secondary);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-primary);
+        }
+
+        /* Keyboard Shortcut Footer */
+        .workspace-footer {
+            margin-top: 1.5rem;
+            padding: 0.75rem 1rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            border: 1px solid var(--border-card);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .shortcuts-list {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .shortcut {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .key-badge {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 0.05rem 0.35rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* Scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .class-badge {
+            font-size: 0.65rem;
+            font-weight: 600;
+            padding: 0.1rem 0.35rem;
+            border-radius: 4px;
+            border: 1px solid transparent;
+        }
+        .class-cherokee {
+            background: rgba(139, 92, 246, 0.1);
+            border-color: rgba(139, 92, 246, 0.3);
+            color: #a78bfa;
+        }
+        .class-english {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.3);
+            color: #60a5fa;
+        }
+        .class-mixed {
+            background: rgba(236, 72, 153, 0.1);
+            border-color: rgba(236, 72, 153, 0.3);
+            color: #f472b6;
+        }
+        .class-empty {
+            background: rgba(148, 163, 184, 0.1);
+            border-color: rgba(148, 163, 184, 0.3);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-title-container">
+            <a href="/" class="nav-link">← Dashboard</a>
+            <h1>Training Data Correction</h1>
+        </div>
+        
+        <div class="stats-row" id="stats-container">
+            <div class="stat-badge stat-total">Total <span class="count" id="stat-total">{{ stats.total }}</span></div>
+            <div class="stat-badge stat-unlabeled">Unlabeled <span class="count" id="stat-unlabeled">{{ stats.unlabeled }}</span></div>
+            <div class="stat-badge stat-labeled">Labeled <span class="count" id="stat-labeled">{{ stats.labeled }}</span></div>
+            <div class="stat-badge stat-not-cherokee">Not Cherokee <span class="count" id="stat-not-cherokee">{{ stats.not_cherokee }}</span></div>
+            <div class="stat-badge stat-nasty-crop">Nasty Crop <span class="count" id="stat-nasty-crop">{{ stats.nasty_crop }}</span></div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Search by OCR / ID / scan...">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="unlabeled">Unlabeled</button>
+                    <button class="filter-tab" data-filter="labeled">Labeled</button>
+                    <button class="filter-tab" data-filter="not_cherokee">Not Chr</button>
+                    <button class="filter-tab" data-filter="nasty_crop">Bad Crop</button>
+                </div>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.825rem; color: var(--text-secondary); cursor: pointer; margin-top: 0.5rem; user-select: none;">
+                    <input type="checkbox" id="cherokee-only-checkbox" checked style="accent-color: var(--primary-color); cursor: pointer;">
+                    Cherokee lines only
+                </label>
+            </div>
+            <div class="line-list" id="line-list-container">
+                <!-- Javascript populated -->
+            </div>
+        </div>
+
+        <!-- Workspace -->
+        <div class="workspace" id="workspace-container">
+            <div class="workspace-top">
+                <div class="meta-info">
+                    <div class="meta-info-left">
+                        <span class="meta-title" id="active-id">Select a line crop</span>
+                        <span id="active-scan-info">No line selected</span>
+                    </div>
+                    <div>
+                        <span id="active-bbox"></span>
+                    </div>
+                </div>
+
+                <div class="crop-display-container">
+                    <img id="active-image" class="crop-image" src="" alt="Line crop image preview" style="display: none;">
+                    <div id="no-image-selected" style="color: var(--text-secondary);">Select a crop from the sidebar to inspect.</div>
+                </div>
+
+                <div class="editor-container">
+                    <div class="reference-block">
+                        <div class="reference-title">Initial OCR Guess</div>
+                        <div class="reference-content">
+                            <span id="active-ocr" style="font-family: monospace; white-space: pre-wrap;">-</span>
+                            <button id="copy-ocr-btn" class="copy-btn">Use This Guess</button>
+                        </div>
+                    </div>
+
+                    <div class="input-block">
+                        <div class="reference-title">Corrected Cherokee Transcription</div>
+                        <input type="text" id="transcription-input" class="transcription-input" placeholder="Type Cherokee transcription..." autocomplete="off">
+                    </div>
+
+                    <div class="actions-row">
+                        <button id="not-cherokee-btn" class="btn btn-danger">
+                            <span>Not Cherokee</span>
+                        </button>
+                        <button id="nasty-crop-btn" class="btn btn-warning">
+                            <span>Nasty Crop</span>
+                        </button>
+                        
+                        <button id="save-btn" class="btn btn-primary">
+                            <span>Save & Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workspace-footer">
+                <div class="navigation-btns">
+                    <button id="prev-btn" class="btn btn-secondary btn-sm" style="padding: 0.5rem 1rem;">← Prev</button>
+                    <button id="next-btn" class="btn btn-secondary btn-sm" style="padding: 0.5rem 1rem;">Next →</button>
+                    <button id="skip-doc-btn" class="btn btn-secondary btn-sm" style="padding: 0.5rem 1rem; border-color: rgba(239, 68, 68, 0.45);" title="Skip all remaining lines in this document/scan">Skip Document →</button>
+                </div>
+                <div class="shortcuts-list">
+                    <div class="shortcut"><span class="key-badge">Enter</span> Save & Next</div>
+                    <div class="shortcut"><span class="key-badge">Alt</span> + <span class="key-badge">N</span> Not Cherokee</div>
+                    <div class="shortcut"><span class="key-badge">Alt</span> + <span class="key-badge">C</span> Nasty Crop</div>
+                    <div class="shortcut"><span class="key-badge">Alt</span> + <span class="key-badge">S</span> Skip Document</div>
+                    <div class="shortcut"><span class="key-badge">↑</span>/<span class="key-badge">↓</span> Prev/Next</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Inject training manifest items directly
+        const items = {{ items | tojson }};
+        let activeFilter = 'all';
+        let searchQuery = '';
+        let currentIndex = -1;
+        let filteredItems = [];
+
+        // DOM elements
+        const lineListContainer = document.getElementById('line-list-container');
+        const searchInput = document.getElementById('search-input');
+        const cherokeeOnlyCheckbox = document.getElementById('cherokee-only-checkbox');
+        const activeIdEl = document.getElementById('active-id');
+        const activeScanInfoEl = document.getElementById('active-scan-info');
+        const activeBboxEl = document.getElementById('active-bbox');
+        const activeImageEl = document.getElementById('active-image');
+        const noImageSelectedEl = document.getElementById('no-image-selected');
+        const activeOcrEl = document.getElementById('active-ocr');
+        const transcriptionInput = document.getElementById('transcription-input');
+        const copyOcrBtn = document.getElementById('copy-ocr-btn');
+        
+        // Buttons
+        const saveBtn = document.getElementById('save-btn');
+        const notCherokeeBtn = document.getElementById('not-cherokee-btn');
+        const nastyCropBtn = document.getElementById('nasty-crop-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const skipDocBtn = document.getElementById('skip-doc-btn');
+
+        // Initial setup
+        filterAndRenderList();
+        
+        // Select first unlabeled line if exists, otherwise first item
+        const firstUnlabeledIdx = filteredItems.findIndex(item => item.status === 'unlabeled');
+        if (firstUnlabeledIdx !== -1) {
+            selectItem(firstUnlabeledIdx);
+        } else if (filteredItems.length > 0) {
+            selectItem(0);
+        }
+
+        // Search and filtering
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase();
+            filterAndRenderList();
+        });
+
+        cherokeeOnlyCheckbox.addEventListener('change', () => {
+            filterAndRenderList();
+            if (filteredItems.length > 0) {
+                selectItem(0);
+            } else {
+                clearWorkspace();
+            }
+        });
+
+        document.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                activeFilter = tab.dataset.filter;
+                filterAndRenderList();
+                
+                // Select first in new list
+                if (filteredItems.length > 0) {
+                    selectItem(0);
+                } else {
+                    clearWorkspace();
+                }
+            });
+        });
+
+        function filterAndRenderList() {
+            const cherokeeOnly = cherokeeOnlyCheckbox.checked;
+            // Filter
+            filteredItems = items.filter(item => {
+                const matchesFilter = activeFilter === 'all' || item.status === activeFilter;
+                const matchesCherokeeOnly = !cherokeeOnly || item.classification === 'Cherokee';
+                const matchesSearch = !searchQuery || 
+                    item.id.toLowerCase().includes(searchQuery) ||
+                    (item.initial_ocr && item.initial_ocr.toLowerCase().includes(searchQuery)) ||
+                    (item.label && item.label.toLowerCase().includes(searchQuery)) ||
+                    item.source_scan.toLowerCase().includes(searchQuery);
+                return matchesFilter && matchesCherokeeOnly && matchesSearch;
+            });
+
+            // Render
+            lineListContainer.innerHTML = '';
+            filteredItems.forEach((item, idx) => {
+                const el = document.createElement('div');
+                el.className = `line-item ${idx === currentIndex ? 'active' : ''}`;
+                
+                let classBadge = '';
+                if (item.classification) {
+                    const cls = item.classification.toLowerCase();
+                    classBadge = `<span class="class-badge class-${cls}">${item.classification}</span>`;
+                }
+
+                el.innerHTML = `
+                    <div class="line-item-header">
+                        <span class="line-item-id" title="${item.id}">${item.id}</span>
+                        <div style="display: flex; align-items: center; gap: 0.35rem;">
+                            ${classBadge}
+                            <span class="status-dot ${item.status}"></span>
+                        </div>
+                    </div>
+                    <div class="line-item-ocr">${item.label || item.initial_ocr || '<i>[No OCR]</i>'}</div>
+                `;
+                el.addEventListener('click', () => selectItem(idx));
+                lineListContainer.appendChild(el);
+            });
+        }
+
+        function selectItem(index) {
+            if (index < 0 || index >= filteredItems.length) return;
+            currentIndex = index;
+            
+            // Update active state in sidebar
+            const itemsList = lineListContainer.querySelectorAll('.line-item');
+            itemsList.forEach((el, idx) => {
+                if (idx === index) el.classList.add('active');
+                else el.classList.remove('active');
+            });
+            
+            // Scroll active sidebar item into view
+            const activeEl = itemsList[index];
+            if (activeEl) {
+                activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            }
+
+            const item = filteredItems[index];
+
+            // Render workspace details
+            activeIdEl.innerText = item.id;
+            activeScanInfoEl.innerText = `Scan: ${item.source_scan} | Col ${item.column_index} Line ${item.line_index}`;
+            activeBboxEl.innerText = `BBox: [${item.line_bbox.join(', ')}]`;
+            
+            activeImageEl.src = `/training_data/${item.image_path}`;
+            activeImageEl.style.display = 'block';
+            noImageSelectedEl.style.display = 'none';
+            
+            activeOcrEl.innerText = item.initial_ocr || '[Empty OCR]';
+            transcriptionInput.value = item.label !== undefined ? item.label : item.initial_ocr;
+            
+            transcriptionInput.focus();
+            transcriptionInput.select();
+        }
+
+        function clearWorkspace() {
+            currentIndex = -1;
+            activeIdEl.innerText = 'Select a line crop';
+            activeScanInfoEl.innerText = 'No line selected';
+            activeBboxEl.innerText = '';
+            activeImageEl.style.display = 'none';
+            noImageSelectedEl.style.display = 'block';
+            activeOcrEl.innerText = '-';
+            transcriptionInput.value = '';
+        }
+
+        copyOcrBtn.addEventListener('click', () => {
+            if (currentIndex !== -1) {
+                transcriptionInput.value = filteredItems[currentIndex].initial_ocr;
+                transcriptionInput.focus();
+            }
+        });
+
+        // Save and update
+        function saveItem(status, value = null) {
+            if (currentIndex === -1) return;
+            const item = filteredItems[currentIndex];
+            
+            const payload = {
+                id: item.id,
+                status: status
+            };
+            if (value !== null) {
+                payload.label = value;
+            } else if (status === 'labeled') {
+                payload.label = transcriptionInput.value;
+            }
+
+            // Optimistic update locally
+            item.status = status;
+            if (payload.label !== undefined) {
+                item.label = payload.label;
+            }
+
+            // Send to backend
+            fetch('/training/update', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (!data.success) {
+                    console.error("Failed to save:", data.error);
+                }
+            })
+            .catch(err => console.error("Error saving:", err));
+
+            // Recalculate stats display
+            updateStatsBadge();
+            
+            // Re-render item in sidebar
+            filterAndRenderList();
+
+            // Advance to next item
+            setTimeout(() => {
+                if (currentIndex < filteredItems.length - 1) {
+                    selectItem(currentIndex + 1);
+                } else if (filteredItems.length > 0) {
+                    // loop back or do nothing
+                    selectItem(0);
+                }
+            }, 50);
+        }
+
+        function updateStatsBadge() {
+            const counts = { total: items.length, unlabeled: 0, labeled: 0, not_cherokee: 0, nasty_crop: 0 };
+            items.forEach(item => {
+                if (counts[item.status] !== undefined) {
+                    counts[item.status]++;
+                }
+            });
+            for (const key in counts) {
+                const el = document.getElementById(`stat-${key.replace('_', '-')}`);
+                if (el) el.innerText = counts[key];
+            }
+        }
+
+        // Action Handlers
+        saveBtn.addEventListener('click', () => saveItem('labeled'));
+        notCherokeeBtn.addEventListener('click', () => saveItem('not_cherokee'));
+        nastyCropBtn.addEventListener('click', () => saveItem('nasty_crop'));
+        
+        prevBtn.addEventListener('click', () => {
+             if (currentIndex > 0) selectItem(currentIndex - 1);
+        });
+        nextBtn.addEventListener('click', () => {
+             if (currentIndex < filteredItems.length - 1) selectItem(currentIndex + 1);
+        });
+        skipDocBtn.addEventListener('click', skipDocument);
+
+        function skipDocument() {
+            if (currentIndex === -1 || filteredItems.length === 0) return;
+            const currentItem = filteredItems[currentIndex];
+            const currentScan = currentItem.source_scan;
+            
+            // Find the next item that has a different source scan
+            let targetIndex = -1;
+            for (let i = currentIndex + 1; i < filteredItems.length; i++) {
+                if (filteredItems[i].source_scan !== currentScan) {
+                    targetIndex = i;
+                    break;
+                }
+            }
+            // If not found in the remainder of the list, wrap around to the beginning
+            if (targetIndex === -1) {
+                for (let i = 0; i < currentIndex; i++) {
+                    if (filteredItems[i].source_scan !== currentScan) {
+                        targetIndex = i;
+                        break;
+                    }
+                }
+            }
+            
+            if (targetIndex !== -1) {
+                selectItem(targetIndex);
+            } else {
+                alert("No other document scans found in the current list.");
+            }
+        }
+
+        // Key bindings
+        transcriptionInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                saveItem('labeled');
+            }
+        });
+
+        window.addEventListener('keydown', (e) => {
+            // Skip shortcuts if user is typing in the search bar
+            if (document.activeElement === searchInput) return;
+
+            // Alt + N for Not Cherokee
+            if (e.altKey && e.key.toLowerCase() === 'n') {
+                e.preventDefault();
+                saveItem('not_cherokee');
+            }
+            
+            // Alt + C for Nasty Crop
+            if (e.altKey && e.key.toLowerCase() === 'c') {
+                e.preventDefault();
+                saveItem('nasty_crop');
+            }
+
+            // Alt + S for Skip Document
+            if (e.altKey && e.key.toLowerCase() === 's') {
+                e.preventDefault();
+                skipDocument();
+            }
+
+            // Arrow Up/Down navigation (when input field is not active, or simple Ctrl+Arrow keys)
+            if (document.activeElement !== transcriptionInput) {
+                if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    if (currentIndex > 0) selectItem(currentIndex - 1);
+                }
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    if (currentIndex < filteredItems.length - 1) selectItem(currentIndex + 1);
+                }
+            } else {
+                // Inside input: support Alt + ArrowUp/ArrowDown to navigate without losing focus
+                if (e.altKey && e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    if (currentIndex > 0) selectItem(currentIndex - 1);
+                }
+                if (e.altKey && e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    if (currentIndex < filteredItems.length - 1) selectItem(currentIndex + 1);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

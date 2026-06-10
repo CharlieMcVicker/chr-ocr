@@ -5,3 +5,6 @@ __pycache__/
 uploads/
 out-uploads/
 .DS_Store
+.ember
+scans
+training_data
