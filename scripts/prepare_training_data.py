@@ -18,6 +18,8 @@ def find_scans(base_dir):
     scan_files = []
     for root, _, files in os.walk(base_dir):
         for f in files:
+            if f.startswith("bbox_overlay_"):
+                continue
             if f.lower().endswith(supported):
                 scan_files.append(os.path.join(root, f))
     return sorted(scan_files)
@@ -27,7 +29,8 @@ def main():
         description="Extract Cherokee text lines from scans to prepare training dataset."
     )
     parser.add_argument("--input-dir", default="scans", help="Directory containing scanned issues")
-    parser.add_argument("--output-dir", default="training_data", help="Output folder for training data")
+    parser.add_argument("--output-dir", type=str, default="training_data_v2",
+                        help="Output directory for manifests and line crops (default: training_data_v2)")
     parser.add_argument("--limit", type=int, default=0, help="Maximum number of scans to process (0 = all)")
     parser.add_argument("--padding-y", type=int, default=3, help="Top/bottom padding in pixels for line crops")
     parser.add_argument("--padding-x", type=int, default=5, help="Left/right padding in pixels for line crops")
@@ -101,9 +104,11 @@ def main():
         print("No new scans to process.")
         sys.exit(0)
 
-    # Initialize line detector
-    print("Initializing Surya DetectionPredictor...")
-    detector = DetectionPredictor()
+    # Initialize layout models
+    print("Initializing Surya layout models...")
+    from server.layout import get_layout_predictor
+
+    layout_predictor = get_layout_predictor()
 
     print(f"Processing {len(scans_to_process)} scans starting from sequence index {start_idx + 1}...")
 
@@ -165,17 +170,17 @@ def main():
                 
                 # Detect lines inside the column crop
                 try:
-                    predictions = detector([col_crop])
-                    pred = predictions[0]
-                    detected_lines = sorted(pred.bboxes, key=lambda b: b.bbox[1])
+                    from server.process_file import get_tesseract_line_bboxes
+                    detected_lines = get_tesseract_line_bboxes(col_crop, lang="chr+eng")
+                    detected_lines = sorted(detected_lines, key=lambda bbox: bbox[1])
                 except Exception as e:
                     print(f"      Line detection failed for Column {col_idx:02d}: {e}", file=sys.stderr)
                     continue
 
                 print(f"      Detected {len(detected_lines)} lines in Column {col_idx:02d}.")
 
-                for line_idx, line in enumerate(detected_lines):
-                    lx1, ly1, lx2, ly2 = line.bbox
+                for line_idx, bbox in enumerate(detected_lines):
+                    lx1, ly1, lx2, ly2 = bbox
                     # Add padding
                     lx1_pad = max(0, int(lx1) - args.padding_x)
                     ly1_pad = max(0, int(ly1) - args.padding_y)

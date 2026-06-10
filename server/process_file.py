@@ -132,6 +132,49 @@ def ocr_image_to_text(pil_img, lang: str = "chr+eng", binarize: bool = True) -> 
                 pass
 
 
+def get_tesseract_line_bboxes(pil_img, lang: str = "chr+eng") -> list:
+    """
+    Runs Tesseract OCR on a PIL image and extracts bounding boxes for each detected line.
+    Returns a list of tuples: (xmin, ymin, xmax, ymax)
+    """
+    import tempfile
+    import csv
+    
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+        temp_img_path = tmp.name
+        
+    try:
+        pil_img.save(temp_img_path)
+        result = subprocess.run(
+            ["tesseract", "--dpi", "300", "-l", lang, temp_img_path, "stdout", "tsv"],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+        
+        bboxes = []
+        reader = csv.DictReader(result.stdout.splitlines(), delimiter='\t')
+        for row in reader:
+            if row.get("level") == "4":  # Line level
+                left = int(row["left"])
+                top = int(row["top"])
+                width = int(row["width"])
+                height = int(row["height"])
+                if width > 0 and height > 0:
+                    bboxes.append((left, top, left + width, top + height))
+                    
+        return bboxes
+    except Exception as e:
+        print(f"Error during Tesseract TSV extraction: {e}")
+        return []
+    finally:
+        if os.path.exists(temp_img_path):
+            try:
+                os.remove(temp_img_path)
+            except Exception:
+                pass
+
+
 def run_tesseract_ocr(input_path: str, output_html_path: str, image_title: str) -> None:
 
     """

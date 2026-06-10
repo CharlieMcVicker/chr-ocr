@@ -9,7 +9,7 @@ from PIL import Image
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from server.layout import extract_columns, crop_pad_skew_correct
-from surya.detection import DetectionPredictor
+from server.process_file import get_tesseract_line_bboxes
 
 def main():
     parser = argparse.ArgumentParser(
@@ -56,8 +56,7 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
 
     # Initialize line detector
-    print("Initializing Surya DetectionPredictor...")
-    detector = DetectionPredictor()
+    print("Using Tesseract for line detection.")
 
     # Step 1: Detect columns
     print("Step 1: Running layout detection...")
@@ -84,16 +83,15 @@ def main():
             col_crop.save(os.path.join(args.output_dir, col_crop_filename))
             
             # Run line detection on the column crop
-            predictions = detector([col_crop])
-            pred = predictions[0]
+            detected_lines = get_tesseract_line_bboxes(col_crop, lang="chr+eng")
             
             # Sort lines within column top-to-bottom by ymin
-            detected_lines = sorted(pred.bboxes, key=lambda b: b.bbox[1])
+            detected_lines = sorted(detected_lines, key=lambda bbox: bbox[1])
             print(f"  Detected {len(detected_lines)} lines in Column {col_idx:02d}.")
             
             col_lines = []
-            for line_idx, line in enumerate(detected_lines):
-                lx1, ly1, lx2, ly2 = line.bbox
+            for line_idx, bbox in enumerate(detected_lines):
+                lx1, ly1, lx2, ly2 = bbox
                 # Add padding
                 lx1_pad = max(0, int(lx1) - args.padding_x)
                 ly1_pad = max(0, int(ly1) - args.padding_y)
