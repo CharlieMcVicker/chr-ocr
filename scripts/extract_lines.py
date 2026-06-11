@@ -11,6 +11,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 from server.layout import extract_columns
 from surya.inference import SuryaInferenceManager
 from surya.detection import DetectionPredictor
+from server.line_utils import crop_pad_normalize_line
 
 def main():
     parser = argparse.ArgumentParser(
@@ -102,15 +103,11 @@ def main():
             
             col_lines = []
             for line_idx, line in enumerate(detected_lines):
-                lx1, ly1, lx2, ly2 = line.bbox
-                # Add padding
-                lx1_pad = max(0, int(lx1) - args.padding_x)
-                ly1_pad = max(0, int(ly1) - args.padding_y)
-                lx2_pad = min(col_crop.width, int(lx2) + args.padding_x)
-                ly2_pad = min(col_crop.height, int(ly2) + args.padding_y)
-                
-                # Crop line
-                line_crop = col_crop.crop((lx1_pad, ly1_pad, lx2_pad, ly2_pad))
+                # Crop, pad, and normalize line
+                line_crop, padded_bbox = crop_pad_normalize_line(
+                    col_crop, line.bbox, args.padding_x, args.padding_y
+                )
+                lx1_pad, ly1_pad, lx2_pad, ly2_pad = padded_bbox
                 
                 line_filename = f"col_{col_idx:02d}_line_{line_idx:03d}.png"
                 line_crop.save(os.path.join(args.output_dir, line_filename))
@@ -139,13 +136,11 @@ def main():
         
         col_lines = []
         for line_idx, line in enumerate(detected_lines):
-            lx1, ly1, lx2, ly2 = line.bbox
-            lx1_pad = max(0, int(lx1) - args.padding_x)
-            ly1_pad = max(0, int(ly1) - args.padding_y)
-            lx2_pad = min(pil_img.width, int(lx2) + args.padding_x)
-            ly2_pad = min(pil_img.height, int(ly2) + args.padding_y)
-            
-            line_crop = pil_img.crop((lx1_pad, ly1_pad, lx2_pad, ly2_pad))
+            # Crop, pad, and normalize line
+            line_crop, padded_bbox = crop_pad_normalize_line(
+                pil_img, line.bbox, args.padding_x, args.padding_y
+            )
+            lx1_pad, ly1_pad, lx2_pad, ly2_pad = padded_bbox
             line_filename = f"line_{line_idx:03d}.png"
             line_crop.save(os.path.join(args.output_dir, line_filename))
             

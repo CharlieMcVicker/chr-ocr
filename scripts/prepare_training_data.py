@@ -13,6 +13,7 @@ from server.process_file import ocr_image_to_text
 from scripts.classify_layout import analyze_text
 from surya.detection import DetectionPredictor
 from surya.inference import SuryaInferenceManager
+from server.line_utils import crop_pad_normalize_line
 
 def find_scans(base_dir):
     supported = (".jp2", ".png", ".jpg", ".jpeg", ".tiff", ".bmp")
@@ -192,20 +193,20 @@ def main():
                 print(f"      Detected {len(detected_lines)} lines in Column {col_idx:02d}.")
 
                 for line_idx, line_obj in enumerate(detected_lines):
-                    lx1, ly1, lx2, ly2 = line_obj.bbox
-                    # Add padding
-                    lx1_pad = max(0, int(lx1) - args.padding_x)
-                    ly1_pad = max(0, int(ly1) - args.padding_y)
-                    lx2_pad = min(col_crop.width, int(lx2) + args.padding_x)
-                    ly2_pad = min(col_crop.height, int(ly2) + args.padding_y)
-
-                    # Crop line
-                    line_crop = col_crop.crop((lx1_pad, ly1_pad, lx2_pad, ly2_pad))
+                    # Crop, pad, and normalize line
+                    line_crop, padded_bbox = crop_pad_normalize_line(
+                        col_crop, line_obj.bbox, args.padding_x, args.padding_y
+                    )
+                    lx1_pad, ly1_pad, lx2_pad, ly2_pad = padded_bbox
                     line_id = f"{prefix}_col_{col_idx:02d}_line_{line_idx:03d}"
                     filename = f"{line_id}.png"
                     
                     # Run line OCR to get an initial transcription guess
                     line_ocr_text = ocr_image_to_text(line_crop, lang="chr")
+                    
+                    analysis = analyze_text(line_ocr_text)
+                    if analysis["cherokee_count"] < 5:
+                        continue
 
                     # Save crop
                     line_crop_path = os.path.join(crops_dir, filename)
@@ -223,6 +224,12 @@ def main():
                         "label": "",
                         "status": "unlabeled"
                     }
+                    if len(manifest) >= 5:
+                        break
+                if len(manifest) >= 5:
+                    break
+            if len(manifest) >= 5:
+                break
 
         print(f"  Finished scan {rel_path}. Processed {cherokee_col_count} Cherokee/Mixed columns.")
 
