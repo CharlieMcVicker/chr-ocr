@@ -617,6 +617,14 @@
                         </div>
                     </div>
 
+                    <div class="reference-block" id="ftm-block" style="display: none;">
+                        <div class="reference-title" id="ftm-title">Fine-Tuned LSTM Guess (0.0%)</div>
+                        <div class="reference-content" style="border-left-color: var(--success-color);">
+                            <span id="active-ftm-ocr" style="font-family: monospace; white-space: pre-wrap;">-</span>
+                            <button id="copy-ftm-ocr-btn" class="copy-btn" style="color: var(--success-color);">Use This Guess</button>
+                        </div>
+                    </div>
+
                     <div class="input-block">
                         <div class="reference-title">Corrected Cherokee Transcription</div>
                         <input type="text" id="transcription-input" class="transcription-input" placeholder="Type Cherokee transcription..." autocomplete="off">
@@ -675,6 +683,12 @@
         const activeOcrEl = document.getElementById('active-ocr');
         const transcriptionInput = document.getElementById('transcription-input');
         const copyOcrBtn = document.getElementById('copy-ocr-btn');
+        
+        // Fine-tuned model elements
+        const ftmBlock = document.getElementById('ftm-block');
+        const ftmTitle = document.getElementById('ftm-title');
+        const activeFtmOcrEl = document.getElementById('active-ftm-ocr');
+        const copyFtmOcrBtn = document.getElementById('copy-ftm-ocr-btn');
         
         // Buttons
         const saveBtn = document.getElementById('save-btn');
@@ -801,7 +815,24 @@
             noImageSelectedEl.style.display = 'none';
             
             activeOcrEl.innerText = item.initial_ocr || '[Empty OCR]';
-            transcriptionInput.value = item.label !== undefined ? item.label : item.initial_ocr;
+            
+            // Render Fine-Tuned Model OCR Guess and confidence
+            if (item.ftm_ocr !== undefined && item.ftm_ocr !== null) {
+                ftmBlock.style.display = 'block';
+                activeFtmOcrEl.innerText = item.ftm_ocr || '[Empty OCR]';
+                ftmTitle.innerText = `Fine-Tuned LSTM Guess (${item.ftm_confidence}%)`;
+            } else {
+                ftmBlock.style.display = 'none';
+            }
+            
+            // Set transcription input (defaulting to FTM OCR if unlabeled and available)
+            if (item.label !== undefined) {
+                transcriptionInput.value = item.label;
+            } else if (item.ftm_ocr !== undefined && item.ftm_ocr !== null && item.ftm_ocr !== "Error") {
+                transcriptionInput.value = item.ftm_ocr;
+            } else {
+                transcriptionInput.value = item.initial_ocr || '';
+            }
             
             transcriptionInput.focus();
             transcriptionInput.select();
@@ -816,12 +847,20 @@
             activeImageEl.style.display = 'none';
             noImageSelectedEl.style.display = 'block';
             activeOcrEl.innerText = '-';
+            ftmBlock.style.display = 'none';
             transcriptionInput.value = '';
         }
 
         copyOcrBtn.addEventListener('click', () => {
             if (currentIndex !== -1) {
                 transcriptionInput.value = filteredItems[currentIndex].initial_ocr;
+                transcriptionInput.focus();
+            }
+        });
+
+        copyFtmOcrBtn.addEventListener('click', () => {
+            if (currentIndex !== -1 && filteredItems[currentIndex].ftm_ocr) {
+                transcriptionInput.value = filteredItems[currentIndex].ftm_ocr;
                 transcriptionInput.focus();
             }
         });
