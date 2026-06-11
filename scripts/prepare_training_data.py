@@ -224,12 +224,7 @@ def main():
                         "label": "",
                         "status": "unlabeled"
                     }
-                    if len(manifest) >= 5:
-                        break
-                if len(manifest) >= 5:
-                    break
-            if len(manifest) >= 5:
-                break
+
 
         print(f"  Finished scan {rel_path}. Processed {cherokee_col_count} Cherokee/Mixed columns.")
 
