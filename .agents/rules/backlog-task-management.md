@@ -63,6 +63,7 @@ remains fully synchronized and up-to-date.
 - Markdown task files live under **`backlog/tasks/`** (drafts under **`backlog/drafts/`**)
 - Files are named: `task-<id> - <title>.md` (e.g., `task-42 - Add GraphQL resolver.md`)
 - Project documentation is in **`backlog/docs/`**
+  - You can read a doc by name using `find backlog/docs -name '*<DOC_NAME>*' -exec cat {} \;`
 - Project decisions are in **`backlog/decisions/`**
 
 ### 🔧 **ACTING** (How to change things)

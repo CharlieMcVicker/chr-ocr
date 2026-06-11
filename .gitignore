@@ -10,3 +10,14 @@ scans
 training_data*.log
 *_backup.json
 training_data*/
+
+.DS_Store
+dataset/
+foo
+line_crops_spike/
+output/
+package-lock.json
+package.json
+spike_line_classification_output/
+test_good/
+test_struggled/
