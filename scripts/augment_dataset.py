@@ -30,6 +30,96 @@ def generate_box_file(box_path, text, width, height):
         f.write(f"WordStr 0 0 {width} {height} 0 #{text}\n")
         f.write(f"\t 0 0 {width} {height} 0\n")
 
+def augment_elastic_distortion(image):
+    """Simulate paper warp/curl by applying a smooth random displacement field.
+
+    Uses a low-frequency sinusoidal component combined with a blurred random
+    field so the resulting warp looks like gentle paper curl rather than noise.
+    Amplitude is kept between 3-6 px to avoid scrambling text.
+
+    Returns a list of (name, image) tuples with 2-3 elastic variants.
+    """
+    variations = []
+    height, width = image.shape[:2]
+
+    for i in range(3):
+        amplitude = random.uniform(3.0, 6.0)
+        # Phase shifts make each variant unique
+        phase_x = random.uniform(0, 2 * np.pi)
+        phase_y = random.uniform(0, 2 * np.pi)
+        freq = random.uniform(0.5, 1.5)  # spatial frequency (cycles across image)
+
+        # Build coordinate grids
+        xs = np.linspace(0, 2 * np.pi * freq, width, dtype=np.float32)
+        ys = np.linspace(0, 2 * np.pi * freq, height, dtype=np.float32)
+        grid_x, grid_y = np.meshgrid(xs, ys)
+
+        # Sinusoidal base displacement
+        dx_sin = amplitude * np.sin(grid_y + phase_x)
+        dy_sin = amplitude * np.sin(grid_x + phase_y)
+
+        # Small random perturbation blurred to low frequency
+        rand_dx = np.random.randn(height, width).astype(np.float32) * (amplitude * 0.5)
+        rand_dy = np.random.randn(height, width).astype(np.float32) * (amplitude * 0.5)
+        blur_k = max(3, (min(height, width) // 8) | 1)  # odd kernel
+        rand_dx = cv2.GaussianBlur(rand_dx, (blur_k, blur_k), 0)
+        rand_dy = cv2.GaussianBlur(rand_dy, (blur_k, blur_k), 0)
+
+        dx = (dx_sin + rand_dx).astype(np.float32)
+        dy = (dy_sin + rand_dy).astype(np.float32)
+
+        # Build remap maps: map_x(y,x) = x + dx, map_y(y,x) = y + dy
+        base_x, base_y = np.meshgrid(
+            np.arange(width, dtype=np.float32),
+            np.arange(height, dtype=np.float32),
+        )
+        map_x = (base_x + dx).clip(0, width - 1)
+        map_y = (base_y + dy).clip(0, height - 1)
+
+        warped = cv2.remap(
+            image, map_x, map_y,
+            interpolation=cv2.INTER_CUBIC,
+            borderMode=cv2.BORDER_REPLICATE,
+        )
+        variations.append((f"elastic_{i}", warped))
+
+    return variations
+
+
+def augment_morphological_ink(image):
+    """Simulate ink bleed (erode) and ink fade (dilate) on a binarized image.
+
+    Only applied when the image is already binarized (binary pixel distribution).
+    Produces 1-2 erode and 1-2 dilate variants with randomised kernel sizes.
+
+    Returns a list of (name, image) tuples, or an empty list if image is not binary.
+    """
+    variations = []
+
+    # Detect binary image: >90% of pixels are either 0 or 255
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) if len(image.shape) == 3 else image
+    binary_count = int(np.sum((gray == 0) | (gray == 255)))
+    total_pixels = gray.size
+    if total_pixels == 0 or binary_count / total_pixels < 0.90:
+        return variations  # Not a binary image — skip morphological augmentation
+
+    # Ink bleed: erode (dark ink strokes grow thicker)
+    for i in range(2):
+        k_size = random.choice([2, 3])
+        kernel = np.ones((k_size, k_size), np.uint8)
+        eroded = cv2.erode(image, kernel, iterations=1)
+        variations.append((f"erode_{i}", eroded))
+
+    # Ink fade: dilate (dark ink strokes thin out)
+    for i in range(2):
+        k_size = random.choice([2, 3])
+        kernel = np.ones((k_size, k_size), np.uint8)
+        dilated = cv2.dilate(image, kernel, iterations=1)
+        variations.append((f"dilate_{i}", dilated))
+
+    return variations
+
+
 def augment_geometry_and_noise(image):
     variations = []
     height, width = image.shape[:2]
@@ -49,6 +139,19 @@ def augment_geometry_and_noise(image):
     cv2.randn(noise, 0, 15)
     noisy_base = cv2.add(image, noise, dtype=cv2.CV_8U)
     variations.append(("noise", noisy_base))
+
+    # 4. Elastic distortion (paper warp/curl simulation)
+    variations.extend(augment_elastic_distortion(image))
+
+    # 5. Morphological ink simulation (applied post-binarization so we pass
+    #    binarized versions inline). We generate them here on the raw image
+    #    for non-binary cases; the binarize() step downstream will handle the
+    #    actual thresholding. For the morphological variants we pre-binarize
+    #    with Otsu so the erode/dilate operate on a proper binary image.
+    gray_for_morph = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) if len(image.shape) == 3 else image
+    _, bin_for_morph = cv2.threshold(gray_for_morph, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+    morph_variants = augment_morphological_ink(bin_for_morph)
+    variations.extend(morph_variants)
     
     return variations
 
