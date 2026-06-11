@@ -1,0 +1,3197 @@
+
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᎠᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦ ᏧᏁᎳᎩᎭᎾ ᏚᎪᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵᏢ ᎢᏯᏅᎪᏁ ᎢᏢ ᎠᎾᏱᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᏚᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏕᏘᎸᏛ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏫᏎᏍᎩ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᎳᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ,  ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᏎᎿ; ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᏢ ᏕᎦᎳᏫ,,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᏅᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏲᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :9. ᏦᏓᏂᏃ ᎦᎤᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎴᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᏤᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᎤᏈᏓᎵᏢ ᎢᏯᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :Ᏸ. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦ ᏧᏁᎳᎩᎭᎾ ᏚᎪᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵᏢ ᎢᏯᏅᎪᏁ ᎢᏢ ᎠᎾᏱᏱᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᏚᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏕᏘᎸᏛ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏫᏎᏍᎩ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᎳᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ,  ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᏎᎿ; ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=22.441, BWER eval=49.683
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮫ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ Ꭿ.ᎸᎸᎯᏃ ᎠᎭᎸᎯ ᏄᏄᏁᏴᎡᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏰᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᎿ; ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏲᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᎠᏛᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᏊᎵᎯᏍᏗᏍᎬᎢ:;
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ"-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ᏹ. ᏦᏖᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ"
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᏢᏁᎬᎢ.
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵᏢ ᎧᎷᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᏃ.
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮫ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᏒᎨᎦᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ Ꭿ.ᏧᎸᎸᎯᏃ ᎠᎭᎸᎯ ᏫᏄᏁᏴᎡᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᏲᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏰᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᎿ; ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=22.312, BWER eval=52.656
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᎠᎿ., ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦ  ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵᏢ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏃᏱᏍᏂᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᏚᎦᏍᎸᎯᏃ ᎠᏎᎸᎯ ᎧᏕᏘᎸᏛ ᎠᎦᎫᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏫᏎᏍᏗ, ᎢᏨᏃ ᎢᏥᏔᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏗᏱᏍᎵᏫᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏠᏗᏒᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏄᎦᏚᏎᎥ ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ"Ꭲ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ). ᎢᏳᏃ,  ᎤᏣᏘᏒᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᎦᏬᏁᏔᏅ; ᎥᎤᏂ ᎢᏥᏰᎸᎾ,. ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :.ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927:
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  :ᏗᎨᏐᏴᏛᏉ ᏓᏰᏥᏍᎦᎲ  ᏩᏌᏏ..- ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:;
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ; .ᎦᏅᏅ ᏗᏥ"-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ. -ᏦᏖᏂᏃ ᏕᎤᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏚᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎹᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏘᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ,ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᎤᏓᏢ ᎢᏯᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :8,. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᏂᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᏴᎨᏎᏍᏗ ᎠᏴ,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᎠᎿ., ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏃᏱᏍᏂᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᏚᎦᏍᎸᎯᏃ ᎠᏎᎸᎯ ᎧᏕᏘᎸᏛ ᎠᎦᎫᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏕᏎᏍᏗ, ᎢᏨᏃ ᎢᏥᏔᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏗᏱᏍᎵᏫᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏠᏗᏒᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏄᎦᏚᏎᎥ ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ). ᎢᏳᏃ, Ꭾ ᎤᏣᏘᏒᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=27.143, BWER eval=56.935
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᎠᏓᏜ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᎪᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᎢ ᎯᏄᎸᏍᎸᎯᏃ ᎠᏎᎸᎯ ᎤᎧᏕᏁᎸ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏄᎮᎢ ᎢᏳᏃ ᎢᏂᎳᏅᏛ ᎯᎠᎾᏱᎸᏓᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎤᎪᎸᏂᏒᏗ. ᏥᎢᏁᏃ ᎠᏰᎵ ᎩᎭ ᏱᏂ ᎤᎸᏘᏚᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏚᏅᏨᎯ ᎯᏳᎩᏚᏚ ᏂᏓᏂᏥᎵᎸᏂᎮᏍᏗ, ᎤᎪᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵᏢ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᎯᎩ ᎢᎦᏗ ᎠᏁᎯ ᏓᏂᎳᎾ ᎠᏃᏪᎵᏍᎩᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ) ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927.
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᎨᎠᏉ ᏓᏚᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ, .ᏦᏖᏂᏃ ᏕᎤᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎹᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᏤᎦᏱ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏭᎵᏢ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᏃ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏱᏑᏓᏢ ᎢᏯᏍᏅᎪ ᎢᏴ ᎠᎾᏱᏘᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᎠᏓᏜ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᎪᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᎢ ᎯᏄᎸᏍᎸᎯᏃ ᎠᏎᎸᎯ ᎤᎧᏕᏁᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎮᎢ ᎢᏳᏃ ᎢᏂᎳᏅᏛ ᎯᎠᎾᏱᎸᏓᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎤᎪᎸᏂᎦᏗ. ᏥᎢᏁᏃ ᎠᏰᎵ ᎩᎭ ᏱᏂ ᎤᎸᏘᏚᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏚᏅᏨᎯ ᎯᏳᎩᏚᏚ ᏂᏓᏂᏥᎵᎸᏂᎮᏍᏗ, ᎤᎪᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᎯᎩ ᎢᎦᏗ ᎠᏁᎯ ᏓᏂᎳᎾ ᎠᏃᏪᎵᏍᎩᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ) ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=31.761, BWER eval=59.304
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦᎦ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᎾᏕᏂᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᎢ ᎯᏓᎸᎸᎸᎯᏃ ᎠᎸᎯ ᏙᏕᏘᏴᏛ ᎠᎦᏘᎸ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏫᏚᎵᏒ ᎤᎳᏃ ᎤᎾᏅᎵᏢ ᎡᏫᏂᎵᏍᎬ
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎤᏂᎾᎾᏓ ᎢᏁᏃᎾᎵ Ꭹ ᎤᏂᎵᎩ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏚᏅᏨᎯ ᎾᎩᏃᎸ ᏂᎦᎦᎩᎸᏂᏗ, Ꮾ ᏱᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᎾᏃᎩ ᎠᎾᏓᏅᎢᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᎠᎾᏁ ᏂᎾᎾᏅᏂ ᎾᏤ Ꭲ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927.
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᎨᏐᎠᏉ ᏓᏚᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᏚᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :8, ᏦᏖᏂᏃ ᏕᎤᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᏤᎦᏱ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏭᏢ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ. ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᏃ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᎢᏖᎵ ᎢᏱᏅᎪ ᎢᏴ ᎠᎾᏁᏘᎵᎸᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5Ᏸ, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᏂᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦᎦ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᎾᏕᏂᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᎢ ᎯᏓᎸᎸᎸᎯᏃ ᎠᎸᎯ ᏙᏕᏘᏴᏛ ᎠᎦᏘᎾ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏫᏚᎵᏒ ᎤᎳᏃ ᎤᎾᏅᎵᏢ ᎡᏫᏂᎵᏍᎬ
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎤᏂᎾᎳᎢ ᎢᏁᏃᎾᎵ Ꭹ ᎤᏂᎵᎩ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏚᏅᏨᎯ ᏁᎩᏃᎸ ᏂᎦᎦᎩᎸᏂᏗ, Ꮾ ᏱᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᎾᏃᏢ ᎠᎾᏓᏅᎢᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᎠᎾᏁ ᏂᎾᎾᏅᏂ Ꮎ Ꭲ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=39.354, BWER eval=62.161
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ, ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦᎦᎥ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏅᎪ ᎢᎠ ᎠᎾᏃᏱᏱᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈᏈ ᎯᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᎦᏁᎸᏛ ᎠᎦᏘᏰ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏃ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᎸᏗᏒᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᎮᎦᏚᏲ ᎠᏁᎯ ᏓᏂᎳᏫ ᎠᏃᏪᎵᏍᎨ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ (ᎤᏂ ᎢᏥᏰᎸᎾ. ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927:
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᎠᏉ "ᏓᏰᏥᏍᎦᎲ  ᏩᏌᏏ. - ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏍᎵᎯᏍᏗᏍᎬᎢ:;
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᏂᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ; .ᎦᏚᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ, ᎬᏓᏂᏃ ᏚᏅᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏰᎵ- ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎥᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ,ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᎾᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏝ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ, ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎥ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏅᎪ ᎢᎠ ᎠᎾᏃᏱᏱᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈᏈ ᎯᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᎦᏁᎸᏛ ᎠᎦᏘᏰ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏃ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏯᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᎸᏗᏒᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᎮᎦᏚᏲ ᎠᏁᎯ ᏓᏂᎳᏫ ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=26.287, BWER eval=55.678
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢ ᎯᎠ ᎾᏍᎩ ᏦᏣᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏎᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᏚᎸᏍᎸᎸᎯᏃ ᎠᏎᎸᎯ ᏑᏕᏘᎸᎵ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎸᎸ ᎢᏳᏃ ᎢᏂᎿᏅᏛ ᎠᎾᏎᏍᏓᎲᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏗᎪᏍᎵᏫᏗ. ᎡᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᎸᏗᎵᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᏃᏚ ᏂᏓᏂᎬᎸᏂᎮᏍᏗ, ᏅᎤᏍᏔᎯ
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᎯᎩ "ᎦᎦᏂ ᎠᏁᎯ ᏓᏂᎳᎴ: ᎠᏃᏪᎵᏍᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, Ꭸ827:
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᎠᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᎯᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ"-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ, .ᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᏍᎦᏰᎮ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᏭᏢ ᎧᎷᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ,ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᎾᏫᏃ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏈᏑᏓᏢ ᎢᏯᏅᎪ ᎢᏴ ᎠᎾᎾᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5.. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᏂᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏎᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᏚᎸᏍᎸᏍᎸᎯᏃ ᎠᏎᎸᎯ ᏑᏕᏘᎸᏛ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎸᎸ ᎢᏳᏃ ᎢᏂᎿᏅᏛ ᎠᎾᏎᏍᏓᎲᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎤᎪᎸᎵᏫᏗ. ᎡᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᎸᏗᎵᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᏃᏚ ᏂᏓᏂᎬᎸᏂᎮᏍᏗ, ᎤᏅᏍᏔᎯ
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᎯᎩ "ᎦᎦᏂ ᎠᏁᎯ ᏓᏂᎳᎴ ᎠᏃᏪᎵᏍᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=30.234, BWER eval=55.775
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦᎦᎥ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᎾᏕᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᏓᏍᎸᎯᏃ ᎠᎸᎯ ᏫᏁᏴᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᎵᎵᏂ ᎤᎳᏒ ᎤᎾᏅᎵ ᎯᎸᏂᎵᎵᏍᏗ
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏂᏍᏂ ᎢᏁᏃ ᎠᏳᏛ Ꭹ ᏂᏛᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏅᏨᎯ ᎯᎩᏚᎦ ᏂᏓᏂᎦᎸᏂᏍᏗ, ᏫᎾᏱᎪᏔᏃ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᎢᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏂᎾᏁᎩ ᏂᎠᎾᎸ ᎠᏂᎢ ᎠᎩᎢ Ꭲ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, Ꭸ8Ꮢ2,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᎠᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᏊᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ, ᏦᏓᏂᏃ ᎦᏅᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎦᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᏭᏢ ᎧᎷᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ. ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᏃ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏱᏈᏖᎵ ᎢᏯᏅᎪ ᎢᏴ ᎠᎾᏁᏘᏢᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5.. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏝ.
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᏕᎨᎦᎥ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᎾᏕᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᏓᏍᎸᎯᏃ ᎠᎸᎯ ᏫᏄᏁᏴᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎵᎵᏂ ᎤᎳᏒ ᎤᎾᏅᎵ ᎯᎸᏂᎵᎵᏍᏗ
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏂᏍᏂ ᎢᏁᏃ ᎠᏳᏛ ᎩᎭ ᎤᏂᎵᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏅᏨᎯ ᎯᎩᏚᎦ ᏂᏓᏂᎦᎸᏂᏍᏗ, ᎾᏱᎪᏔᏎᏃ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᎢᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏂᎾᏁᎩ ᏂᎠᎾᎸ ᎠᏂᎢ ᎠᎩ Ꭲ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=36.617, BWER eval=62.759
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ., ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᎪᏁ ᎢᎠ ᎠᎾᏃᏱᎪᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᏯᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏃ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏯᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᏎ; ᎠᏁᎯ ᏓᏂᎳᏫ ᎠᏃᏪᎵᏍᎨ"
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ. ᎢᏥᏍᎦᏅᏅᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, Ꭸ8ᏒᏃ27:
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  :ᏗᏐᏴᏉ, ᏓᏰᏥᏍᎦᎲ  ᏩᏌᏏ. - ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :9, ᏚᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎦ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ, ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᏑᏓᎵ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᏁᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ, ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᎪᏁ ᎢᎠ ᎠᎾᏃᏱᎪᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏃ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏰᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᏎ; ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=25.387, BWER eval=56.697
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏮ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᏕᎦ ᏧᏁᎳᎩᎭᏤᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪᏁ ᎢᏴ ᎠᎾᏱᏎᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᎦᎸᏍᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᏴᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᎸᎸ ᎢᏳᏃ ᎢᎦᎵᏅᏛ ᎠᎾᏱᏍᏓᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏗᎪᎦᎵᏫᏗ. ᎡᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᎸᏗᎵᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᎴᎩ ᎦᎦᎦᏎ ᎠᏁᎯ ᏓᏖᏂᎳᎴ ᎠᏃᏪᎵᏍᎢᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 18927,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :8, ᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᏭᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ. ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏈᏓᏢ ᎢᏯᏅᎪ ᎢᏴ ᎠᎾᎾᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᏂᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᏁᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏮ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᏕᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪᏁ ᎢᏢᏴ ᎠᎾᏱᏎᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᎦᎸᏍᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᏴᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᎸᎸ ᎢᏳᏃ ᎢᏂᎵᏅᏛ ᎠᎾᏱᏍᏓᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎤᎪᎦᎵᏫᏗ. ᎡᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᎸᏗᎵᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᎴᎩ ᎦᎦᎦᏎ ᎠᏁᎯ ᏓᏂᎳ ᎠᏃᏪᎵᏍᎢᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=28.309, BWER eval=54.090
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓᏜ ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᎾᎪᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᎢ Ꭿ.ᏓᎦᎸᎸᎯᏃ ᎠᎭᎸᎯ ᏄᏁᎸᎵ ᎠᎦᎫᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎵᎵᏂ ᎤᎳᏒ ᎤᎾᏅᎵ ᎯᎦᎸᎵᏓᏍᏗ
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᎾᏍᏂᎸ ᎢᏁᏃ ᎠᏳᏛ ᎩᎭ ᎤᏂᏘᎵᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏅᏨᏳᎯ ᎯᏳᎩᏃᎦ ᏂᏓᏂᎵᎸᏍᏗ, ᎤᎪᏔᏃ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᎾᏰᏢ ᎠᎾᏖᏅᎢᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᎾᎾᏁᎩ ᏂᎠᎾᎯ ᎠᎾᏛ ᎾᎩᎳ Ꭲ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᎠᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏊᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ, ᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᎬᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎨᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏭᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ. ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏈᏖᎵ ᎢᏯᏅᎪ ᎢᏴ ᎠᎾᏁᏱᏘᏴᏢᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5,. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᏘᎭ ᏗᏂᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᏁᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓᏜ ᎯᎠ ᎾᏍᎩ ᏦᏣᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᎾᎪᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᎢ Ꭿ.ᏓᎦᎸᎸᎯᏃ ᎠᎸᎯ ᏫᏁᎸᎵ ᎠᎦᎫᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎵᎵᏂ ᎤᎳᏒ ᎤᎾᏅᎵ ᎯᎦᎸᎵᎲᏍᏗ
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᎾᏍᏂᎵᎢ ᎢᏁᏃ ᎠᏳᏛ ᎩᎭ ᎤᏂᏘᎵᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏅᏨᏳᎯ ᎯᏳᎩᏃᎦ ᏂᏓᏂᎵᎸᏍᏗ, ᎤᎪᏔᏎᏃ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᎢᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᎾᎾᏁᎩ ᏂᎠᎾᎯ ᎠᎾᏛ ᎧᎩᎳ Ꭲ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=37.538, BWER eval=64.768
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮉ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ, ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᎪᏁ ᎢᎠ ᎠᎾᏃᏱᎪᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᏯᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᎢ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᎴᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᏎ ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ;) ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᎦᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏅᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 18927,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. - ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :9, ᏚᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᎦᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎦ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᎵᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᏜᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᏑᏓᎵᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮉ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ, ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ  ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᎪᏁ ᎢᎠ ᎠᎾᏃᏱᎪᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᎸ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᎴᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᏎ ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ"-.
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ;) ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=25.349, BWER eval=58.492
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᏕᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪᏁ ᎢᏴ ᎠᎾᏱᏎᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᎦᎸᏍᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᏴᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏫᏎᎸᎸ ᎢᏳᏃ ᎢᎦᏂᎵᏅᏛ ᎠᎾᏱᏍᏓᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏗᎪᎦᎵᏫᏗ. ᎡᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᎸᏗᎵᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᏅᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᎦᎦᎦᏎᏗ ᎠᏁᎯ ᏓᏂᎳ: ᎠᏃᏪᎵᏍᎢᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏅᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :8, ᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᏭᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ. ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏈᏓᏢ ᎢᏯᏅᎪ ᎢᏴ ᎠᎾᎾᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᏁᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᏕᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪᏁ ᎢᏢᏴ ᎠᎾᏱᏎᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᎦᎸᏍᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᏴᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᎸᎸ ᎢᏳᏃ ᎢᏂᎵᏅᏛ ᎠᎾᏱᏍᏓᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎤᎪᎦᎵᏫᏗ. ᎡᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᎸᏗᎵᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᏅᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᎦᎦᎦᏎᏗ ᎠᏁᎯ ᏓᏂᎳ ᎠᏃᏪᎵᏍᎩᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=28.209, BWER eval=54.902
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓᏜ  ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᎾᎪᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᎢ Ꭿ.ᏓᎦᎸᎸᎯᏃ ᎠᎭᎸᎯ ᏄᏁᎸᎵ ᎠᎦᎫᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎵᎵᏂ ᎤᎳᏒ ᎤᎾᏅᎵ ᎯᎦᎸᎵᏓᏍᏗ
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏂᏍᏂᎸ ᎢᏁᏃ ᎠᏛ ᎩᎭ ᎤᏂᏘᎵᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏚᏅᏨᎯ ᏁᎩᏚᎦ ᏂᏓᏂᎵᎸᏍᏂᏍᏗ, ᎤᎪᏔᏎ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᎢᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏂᏗᏁᎩ ᎤᎾᏂᎠᎾᎯ ᎠᏂᎢ ᎧᎩᏃᏔᏏ Ꭲ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᏊᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ, ᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎨᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏭᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ. ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏈᏖᎵ ᎢᏯᏅᎪ ᎢᏴ ᎠᎾᏱᏘᏴᏢᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5,. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᏂᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓᏜ  ᎯᎠ ᎾᏍᎩ ᏦᏳᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᎾᎪᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᎢ Ꭿ.ᏓᎦᎸᎸᎯᏃ ᎠᎸᎯ ᏫᏁᎸᎵ ᎠᎦᎫᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎵᎵᏂ ᎤᎳᏒ ᎤᎾᏅᎵ ᎯᎦᎸᎵᎲᏍᏗ
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᎾᏍᏂᎵᎢ ᎢᏁᏃ ᎠᏛ ᎩᎭ ᎤᏂᏘᎵᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᏚᏅᏨᎯ ᏁᎩᏚᎦ ᏂᏓᏂᎵᎸᏂᏍᏗ, ᎤᎪᏔᏎ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᎢᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏂᏗᏁᎩ ᎤᎾᏂᎠᎾᎯ ᎠᏂ ᎧᎩᏔᏏ ᎤᎢ
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=36.568, BWER eval=63.126
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓᏜ  ᎯᎠ ᎾᏍᎩ ᎬᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ., ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏂ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎸᏈ ᎯᏓᏄᏐᎸᎯᏃ ᎠᎴᎸ,, ᏙᎦᏘᏛᎵ ᎠᎸᏘᏛ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏁᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᎦᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ 9ᎦᏚᎿ ᎠᏁᎯ ᏓᏂᎳᏫ: ᎠᏃᏪᎵᏍᎨ"Ꭲ.
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927.
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏚᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎯᏍᎪᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :5, ᏦᏖᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᏉᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᎵᏁᎬᎢ.,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ.,. ᎨᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᏭᎵ ᎧᎻᎯ.,
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ 1Ꮭ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᏃ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :Ᏸ. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓᎸᏜ.  ᎯᎠ ᎾᏍᎩ ᎬᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎮᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ, ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏂ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎸᏈ ᎯᏓᏄᏐᎸᎯᏃ ᎠᎴᎸ,, ᏙᎦᏘᏛᎵ ᎠᎸᏗᏛ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏕᏎᏍᏗ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏁᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᎦᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ 9ᎦᏚᎿ ᎠᏁᎯ ᏓᏂᎳᏫ ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=24.990, BWER eval=50.171
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓᎸᏲ ᎯᎠ ᎾᏍᎩ ᎬᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᏄᎸᏍᎩ ᏂᎨᎦ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎨᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏎᏂᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏤ ᎯᏓᏄᎸᎸᎯᏃ ᎠᎧᎸᏱ ᎤᎦᏁᏴ ᎠᎦᏘᏒ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏗ, ᎢᏳᏃ ᎢᎯᏪᏅᏛ ᎠᎾᏁᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᎦᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᎿ; ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᎠᏉ ᏓᏭᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎯᏍᎪᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :8, ᏦᏖᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᎬᏢᏎ ᎫᎴ ᏗᏍᎪᏂ"
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᏢᏁᎬᎢ.,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ! ᎨᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᏭᎵ ᎧᎥᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :Ᏸ. ᏗᏂᏴᏫ ᎠᏂᎪᏩᏗᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓᎸᏲ. ᎯᎠ ᎾᏍᎩ ᎬᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᏄᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎨᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏎᏂᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᏏᏍᎪᎸᎯᏤ ᎯᏓᏄᎸᎸᎯᏃ ᎠᎧᎸᏱ ᎤᎦᏁᎸ ᎠᎦᏘᏒ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏗ, ᎢᏳᏃ ᎢᎯᏪᏅᏛ ᎠᎾᏁᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᎦᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᎿ; ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"-.
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=26.376, BWER eval=53.932
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᎸ.  ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᏕᎦ  ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎨᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏂᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᏏᏍᎪᎯᏤ ᎯᏓᏚᏄᎸᎸᎯᏃ ᎠᏎᎸᏱ ᎤᏕᏘᏴ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏗ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᏎ; ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927.
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  :ᏗᏐᎠᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ, ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎯᏍᎪᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :5. ᏦᏖᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᎬᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ! ᎨᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎷᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫ.
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :Ᏸ,. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᎸ.  ᎯᎠ ᎾᏍᎩ ᏦᎬᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎨᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏂᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᏏᏍᎪᎯᏤ ᎯᏓᏚᏄᎸᎸᎯᏃ ᎠᎸᏱ ᎤᏕᏘᏁᏴᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏗ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᏎ; ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"-.
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=24.195, BWER eval=50.940
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᎸ.  ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᏄᎸᏍᎩ ᏂᎨᎦ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏂᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᏏᏍᎪᎯᏤ ᎯᏓᏚᏄᎸᎸᎯᏃ ᎠᏎᎸᏱ ᎤᏕᏘᏴ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏗ, ᎢᏳᏃ ᎢᏥᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᎿ; ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  :ᏗᏐᎠᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎯᏍᎪᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :5. ᏦᏖᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ"
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ ᎨᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎷᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎦᎳᏫ.
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :Ᏸ,. ᏗᏂᎨᏴᏫ ᎠᏂᎪᏩᏘᎭ ᏗᏂᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏴᎨᏎᏍᏗ ᎠᏴ,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᎸ.  ᎯᎠ ᎾᏍᎩ ᎬᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᏄᎸᏍᎩ ᏂᎨᎦ  ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᎤᏓᎵ ᎢᏯᏅᎪ ᎢᏢ ᎠᎾᏱᏂᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᏏᏍᎪᎯᏤ ᎯᏓᏚᏄᎸᎸᎯᏃ ᎠᎸᏱ ᎤᏕᏘᏁᏴᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏗ, ᎢᏳᏃ ᎢᏥᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎧᎤᏂᏁᏨᎯ ᎠᏰᏢ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏣᎦᏚᎿ; ᎠᏁᎯ ᏓᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ"-.
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=25.601, BWER eval=55.128
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮉ ᎣᏣᎴᏅ ᎪᏥᎴᎠ., ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᏕᎦᎦ  ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏅᏁ ᎢᏴ ᎠᎾᏃᏱᏁᏂᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᏚᎦᏍᎪᎯᏃ ᎠᏎᎸᎯ ᎧᎸᏘᎸᏛ ᎠᎦᎫᏘᏰ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ ᎢᏳᏃ ᎢᎦᏪᏅᏛ - ᎠᎾᎫᏱᏍᎨᏍᏗ,
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎦᏍᏗ.:. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᎳᎯᎩ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :"ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ ᏕᎦᏚ8) ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ). ᎢᏳᏃ  ᎤᏣᏘᏒᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ  ᎦᏬᏁᏔᏅ ᎥᎤᏂ ᎢᏥᏰᎸᎾ,. ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏘᏔᏂᏎᎰᎢ, ᎠᎴ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927;
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  :ᏗᏐᏴᏛᏉ ᏓᏰᏥᏍᎦᎲ  ᏩᏌᏏ..- ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ; .ᎦᏅᏅ ᏗᏥ"-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ. ᏦᏖᏂᏃ ᏕᎤᎾᏬᏒᎢ; ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏚᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎨᎸ, ᏧᏬᏣᎴᏍᏗ, ᎨᏎᏍᏗ
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏘᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ.ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏑᏖᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᎥᏦᎢ.
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :Ᏸ,.. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᏂᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᏴᎬᏎᏍᏗ ᎠᏴ,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮉ ᎣᏣᎴᏅ ᎪᏥᎴᎠ., ᎯᎠ ᎾᏍᎩ ᎬᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᏕᎦ  ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏃᏱᏁᏂᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᏚᎦᏍᎪᎯᏃ ᎠᏎᎸᎯ ᎧᏑᎸᏘᎸᏛ ᎠᎦᎫᏰ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ ᎢᏳᏃ ᎢᎦᏪᏅᏛ - ᎠᎾᎫᏱᏍᎨᏍᏗ,
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎦᏍᏗ:. ᎡᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᎳᎯᎩ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :"ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ ᏕᎦᏚᎿ) ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ). ᎢᏳᏃ  ᎤᏣᏘᏒᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=28.079, BWER eval=60.269
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮉ ᎣᏣᎴᏅ ᎪᏥᎴᎠᏓᏜ  ᎯᎠ ᎾᏍᎩ ᏦᎬᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪᏁ ᎢᏢ ᎠᎾᏃᏱᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᏚᎸᏍᎸᎯᏃ ᎠᏎᎸᎯ ᏫᏄᏘᎸᎵ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎦᏲᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏱᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᎦᎦᏚᎿ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ) ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927.
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᎨᏴᏉ ᏓᏚᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ, .ᏦᏖᏂᏃ ᏕᎤᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎨᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᎵᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏭᎵᏢ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᏃ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :8, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮉ ᎣᏣᎴᏅ ᎪᏥᎴᎠᏓᏜ  ᎯᎠ ᎾᏍᎩ ᎬᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᎪᏁ ᎢᏢ ᎠᎾᏃᏱᎸᎪᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᏚᎸᏍᎸᎯᏃ ᎠᏎᎸᎯ ᏫᏄᏁᎸᏛ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᏲᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᎦᎦᏚᎿ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ) ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=25.003, BWER eval=54.176
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᎠᏮᏜ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏱᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏚᎪᎯᎸᎢᎢ ᎯᎸᎸᎸᎯᏃ ᎠᎸᎯ ᏫᏘᎡᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏃ, ᎢᏳᏃ ᎢᏚᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏰᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᎮᎦᏚᏎ ᎠᏁᎯ ᏓᏂᎳᏫ ᎠᏃᏪᎵᏍᎨ"
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ;, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927.
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᎨᏴᎠᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :8, ᏦᏖᏂᏃ ᏕᎤᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᏢᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏭᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᏃ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏑᏓᎵᏢ ᎢᏯᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏲᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᎠᏮᏜ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏱᎪᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏚᎪᎯᎸᎢᎢ ᎯᏓᎸᎸᎸᎯᏃ ᎠᎸᎯ ᏫᏘᎡᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏃ, ᎢᏳᏃ ᎢᏲᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏰᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘᏗ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᎮᎦᏚᏎ; ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=25.133, BWER eval=51.441
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ., ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦᎦᎥ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᎪ ᎢᎠ ᎠᎾᏃᏱᏁᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᏍᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ ᎢᏳᏃ ᎦᎵᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ,
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏍᎨᏍᏗ,  ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :"ᎤᏂᏁᏨᎯ .ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏖᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"-.
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ Ꭵ(ᎤᏂ ᎢᏥᏰᎸᎾ. ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :.ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927:
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᎠᏉ "ᏓᏰᏥᏍᎦᎲ  ᏩᏌᏏ. - ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᎯᎵᎯᏍᏗᏍᎬᎢ:;
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᏂᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ; .ᎦᏚᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ ᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ; ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏚᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ. ᏧᏬᏣᎴᏍᏗ. ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᏢᏁᎬᎢ.,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᏭᎵ ᎧᎥᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ,ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᎾᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  "ᎤᏖᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, .ᏦᎢ.
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :Ꮬ, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏝ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ  ᎪᏥᎴᏝᏓ., ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎨᎦᎥ ᏧᏁᎳᎩᎭᏤᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᎪ ᎢᎠ ᎠᎾᏃᏱᏁᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᏍᎦᏍᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᎸᏛ ᎠᎦᎫᏘᏴᏰ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏍᏗ ᎢᏳᏃ ᎦᎵᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ,
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏍᎨᏍᏗ,  ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :"ᎤᏂᏁᏨᎯ .ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏖᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=26.961, BWER eval=61.490
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :ᏉᎹ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏅᏁ ᎢᎠ ᎠᎾᏱᎪᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈᏈ ᎯᎦᎦᏍᎸᎸᎯᏃ ᎠᏠᎸᎸᎯ ᏑᏄᏁᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᏥᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᎬᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ. ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᏎ) ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927.
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᎠᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏍᎵᎯᏍᏗᏍᎬᎢ:;
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭰ, ᏚᎬᏓᏂᏃ ᎦᏅᎾᏬᎡᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᏭᎵ ᎧᎥᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ,ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᎾᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏑᏓᎵᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5. ᏗᏂᎨᏴᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏝ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᏁ ᎢᎠ ᎠᎾᏱᎪᏂᏍᏗ, ᏂᎩ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈᏈ ᎯᏚᎦᏍᎸᎸᎯᏃ ᎠᏠᎸᎸᎯ ᏑᏄᏁᎸᏛ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᏥᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᎡᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ. ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᏎᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=24.527, BWER eval=55.519
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏃᏱᏍᎨᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᎸᏍᎸᎯᏃ ᎠᏎᎸᎯ ᎤᏑᏕᏘᎡᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎭᏎᏍᏳ, ᎢᏳᏃ ᎢᎵᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏘᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᎠᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏚᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᏍᎵᎯᏍᏗᏍᎬᎢ:;
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ"-
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭿ, .ᎬᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵᏢ ᎧᎷᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ. ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᎾᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ ᏑᏓᎵᏢ ᎢᏯᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏝ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏃᏱᏍᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᏚᎸᏍᎸᎯᏃ ᎠᏎᎸᎯ ᎤᏑᏕᏘᎡᎵ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎭᏎᏍᏳ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ.. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏂᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ"-.
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=21.346, BWER eval=50.861
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ.,. ᎯᎠ  ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏅᎪ ᎢᎠ ᎠᎾᏃᏱᏁᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᏍᎪᎯᏃ ᎠᏠᎸᎯ ᏑᎦᏘᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏎᏍᏗ  ᏳᏃ  ᎦᎶᏅᏛᎠᎾᎴᏱᏍᎨᏍᏗ,
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏍᏗ,  ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏖᏂᎳᎾᎥ ᎠᏃᏪᎵᏍᎦ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᎦᏬᏁᏔᏅ ᎥᎤᏂ ᎢᏥᏰᎸᎾ. ᎢᏥᏍᎦᏅᏅᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ;, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᎯᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927:
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  :ᏗᏐᏴᏉ "ᏓᏰᏥᏍᎦᎲ  ᏩᏌᏏ. - ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭰ ᏂᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏚᎵ ᎯᏍᎩᏧᏈᏃ ᎠᏛ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵ ᎠᎵᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᏤᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ, ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ, ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲᎩ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᎤᏓᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, .ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏰ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ.,. ᎯᎠ  ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᎪ ᎢᎠ ᎠᎾᏃᏱᏁᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᎦᏍᎪᎯᏃ ᎠᏠᎸᎯ ᏑᎦᏘᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏎᏍᏗ  ᏳᏃ  ᏄᎶᏅᏛ ᎠᎾᎴᏱᏍᎨᏍᏗ,
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏍᏗ,  ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏖᏂᎳᏫᎾᎥ ᎠᏃᏪᎵᏍᎨᎦ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=26.676, BWER eval=59.689
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᏁ ᎢᎠ ᎠᎾᏃᏱᎪᎨᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᏍᎸᎯᏃ ᎠᏄᎸᎯ ᏑᎦᏘᎸᏛ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᎭᏎᏍᏗ, ᎢᏳᏃ ᎢᎯᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏘᏍᎩ ᏕᎦᏚᏎᎥ ᎠᏁᎯ ᏖᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏅᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ;, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927.
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :9, ᎥᏦᏓᏂᏃ ᎦᏅᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᏍᎦᏚᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎦᏛ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵ ᎠᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ. ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᎤᏓᎵᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᏁᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᏁ ᎢᎠ ᎠᎾᏃᏱᎪᎨᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᏍᎸᎯᏃ ᎠᏄᎸᎯ ᏑᎦᏘᎸᏛ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎯᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏘᏍᎩ ᏕᎦᏚᏎᎥ ᎠᏁᎯ ᏖᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=23.889, BWER eval=56.697
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏃᏱᏎᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᎦᎸᎸᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᏴᎵ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏱᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ ᏕᎦᏚᎿ ᎠᏁᎯ ᏖᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ"-
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᎦᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏅᏨᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :8, .ᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏚᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵ ᎠᎵᏢᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᏈᏓᎵ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᏁᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ  ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏃᏱᏎᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᎦᎸᎸᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᏴᎵ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎦᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎭᏱᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ ᏕᎦᏚᎿ ᎠᏁᎯ ᏖᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=23.022, BWER eval=53.407
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ, ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᏢ ᎢᏯᏅᎪ ᎢᎠ ᎠᎾᏃᏱᏁᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᏍᎪᎯᏃ ᎠᏠᎸᎯ ᏑᎦᏘᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏍᏗ  ᏳᏃ  ᎦᏅᏛᎠᎾᎴᏱᏍᎨᏍᏗ,
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏍᏗ,  ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎲ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏘᏍᎩ ᏕᎾᏚᏎᎥ ᎠᏁᎯ ᏖᏂᎳᏫᎾ ᎠᏃᏪᎵᏍᎨ"-.
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ. ᎢᏥᏍᎦᏅᏅᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ;, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᎯᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ.
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1927,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  :.ᏗᏐᏴᏉ, ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. - ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :Ꭰ ᏂᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏚᎵ ᎯᏍᎩᏧᏈᏃ ᎠᏛ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵ ᎠᎵᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ, ᏣᏘᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ - ᎤᏓᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏝᏓ, ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᎪ ᎢᎠ ᎠᎾᏃᏱᏁᎨᏍᏗ, ᏂᎢ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᎦᏍᎪᎯᏃ ᎠᏠᎸᎯ ᏑᎦᏘᎸᏛ ᎠᎦᏘᏴ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᏍᏗ  ᏳᏃ  ᎦᏅᏛᎠᎾᎴᏱᏍᎨᏍᏗ,
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᎦᏱᏍᎨᏍᏗ,  ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎲ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏘᏍᎩ ᏕᎾᏚᏎᎥ ᎠᏁᎯ ᏖᏂᎳᎾ ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᎦᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ, ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=25.638, BWER eval=59.432
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᏁ ᎢᎠ ᎠᎾᏃᏱᎪᎨᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᏍᎸᎯᏃ ᎠᏄᎸᎯ ᏑᎦᏘᎸᏛ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎵᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏖᏂᎳᏫ ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᎦᏬᏁᏔᏅ ᎤᏲ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏅᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ;, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 18927,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅᎢ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :9, ᎥᏦᏓᏂᏃ ᎦᏅᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏯᏍᎦᏚᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎦᏛ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵ ᎠᎵᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᏜᎭ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᏈᏓᎵᏢ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ ᎯᎠ ᎾᏍᎩ ᏦᏳᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ  ᏑᏓᏢ ᎢᏯᏅᏁ ᎢᎠ ᎠᎾᏃᏱᎪᎨᏍᏗ, Ꮒ
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᏈᏈ ᎯᎦᏍᎸᎯᏃ ᎠᏄᎸᎯ ᏑᎦᏘᎸᏛ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎵᏪᏅᏛ ᎠᎾᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᏦᎮᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᏕᏘᎡᎯ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, "ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏖᏂᎳᏫ ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=22.901, BWER eval=54.304
+training_data_v2/dataset/output_600_20260611_120159/chr_43.258_577_600.checkpoint is not a recognition model, trying training checkpoint...
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏃᏱᏎᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᎦᎸᎸᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᏴᎵ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎡᏪᏅᏛ ᎠᎾᏁᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏂᏓᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ 2ᎦᏚᏎᎿ ᎠᏁᎯ ᏖᏂᎳᏫ! ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+Truth:ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,
+OCR  :ᎠᏢᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫ,
+Truth:ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ
+OCR  :ᎤᎴᏅᎲ ᎦᏚᏬᏁᏔᏅ ᎤᏲᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏅᎢ.
+Truth:ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ
+OCR  :ᏳᏍᏗ; ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏘᏔᏂᏎᎰᎢ, ᎠᎴ
+Truth:ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.
+OCR  :ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 18927,
+Truth:ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-
+OCR  : ᏗᏐᏴᏉ ᏓᏰᏥᏍᎦᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ
+Truth:ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;
+OCR  :ᎠᏇᎵᎯᏍᏗᏍᎬᎢ:
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8e af e1 8f b3 20 e1 8e a4 e1 8e b7 e1 8f a4 20 e1 8f a3 e1 8f 82 20 e1 8f 97 e1 8f 93 e1 8f ac e1 8f 8d e1 8e a9 20 e1 8e a0 e1 8e b5 e1 8f a5 e1 8f 99 e1 8e b2 e1 8f 8d e1 8e a8
+Can't encode transcription: '1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ' in language ''
+Truth:ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-
+OCR  :ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎨᏩ ᎤᎶᎯᏍᏗᏱ, ᎦᏅᏅ ᏗᏥ"
+Truth:5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-
+OCR  :8, .ᏦᏓᏂᏃ ᎦᏅᎾᏬᏒᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ"
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Truth:ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-
+OCR  :ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᎪ ᏗᎦᏃᎯᏢᏎ ᎫᎴ ᏗᏍᎪᏂ-
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8e a3 e1 8f 8d e1 8f 9b 20 e1 8e a0 e1 8f 83 e1 8f aa e1 8e b5 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 2c 20 e1 8f 80 2d
+Can't encode transcription: 'ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-' in language ''
+Truth:ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+OCR  :ᎢᏍᎦᏚᎵ ᎯᏍᎩᏧᏈᏃ ᎠᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ
+Truth:ᎠᏰᎵ ᎠᎵᏁᎬᎢ.
+OCR  :ᎠᏰᎵᏢ ᎠᎵᏁᎬᎢ,
+Truth:Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.
+OCR  :Ꭱ, ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᎯ.
+Truth:ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.
+OCR  :ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᎯ ᎬᏩᎷᏤᎴᎢ.
+Truth:ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+OCR  :ᎠᏃᎯᏍᏗᏍᎩ ᏣᏘᏜ ᎥᏝ ᎪᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-
+Truth:ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.
+OCR  :ᎦᎳᎩᎾ, ᏗᎪᏪᏢᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎲᏚ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+OCR  :ᎢᏳᏃ  ᏈᏓᎵ ᎢᏍᏅᎪ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ
+Empty truth string!
+Can't encode transcription: '' in language ''
+Truth:5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,
+OCR  :5, ᏗᏂᎨᏫ ᎠᏂᎪᏩᏘᎭ ᏗᎥᏂᎤᎵᏃ ᎠᏁᎪᎭ,
+Truth:ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.
+OCR  :ᏁᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.,
+Truth:Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ
+OCR  :Ꮙ ᎣᏣᎴᏅ ᎪᏥᎴᏢᏓ ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9 20 e1 8f 99 e1 8f 8d e1 8f 97 e1 8f 8d e1 8f 86 e1 8f 93
+Can't encode transcription: 'ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ' in language ''
+Truth:ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ
+OCR  :ᎯᎸᏍᎩ ᏂᎦᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᎪᏁᎠᏗ. ᎢᎬᏱᏱ
+Truth:ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, 
+OCR  :ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏁ ᎢᏢ ᎠᎾᏃᏱᏎᏂᏍᏗ, 
+Truth:ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-
+OCR  :ᎠᏍᎪᎯᎢᏈ ᎯᎦᎸᎸᎸᎯᏃ ᎠᏠᎸᎯ ᏑᏄᏘᏴᎵ ᎠᎦᏘᏴ-
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8e a0 e1 8e be e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e a9 20 e1 8f 94 e1 8e b5 20 e1 8e a0 e1 8f 95 e1 8e b8 e1 8e af 20 e1 8f 8f e1 8e a6
+Can't encode transcription: 'ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ' in language ''
+Truth:ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ
+OCR  :ᎦᏎᏍᏗ, ᎢᏳᏃ ᎢᎡᏪᏅᏛ ᎠᎾᏁᏱᏍᎨᏍᏗ.
+Truth:ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-
+OCR  :ᏧᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᏱᏂ ᎤᏕᏘᎡᎯ"
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 9d e1 8e a2 20 e1 8e a3 e1 8f 8d e1 8f 8f e1 8f b3 20 e1 8e a4 e1 8f b0 e1 8e b8 e1 8f 85 e1 8e af 20 e1 8f 82 e1 8e a8 e1 8f 92 e1 8e be 20 e1 8e a2 e1 8e a8 e1 8f 8e e1 8f 8d e1 8f 97 2c
+Can't encode transcription: 'Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8f 89 20 e1 8e a3 e1 8f a5 e1 8f 81 e1 8e a9 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8e a2 e1 8e a7 e1 8f 81 e1 8f a4 e1 8e ae e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ' in language ''
+Encoding of string failed! Failure bytes: e1 8f 80 e1 8f 8d e1 8e a9
+Can't encode transcription: 'ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ' in language ''
+Truth:ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ
+OCR  :ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ" ᏂᏓᏂᏓᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᎯ
+Truth:ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,
+OCR  :ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏖᏅᏖᏍᎩ,
+Truth:ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-
+OCR  :ᏗᏄᎪᏘᏍᎩ 2ᎦᏚᏎᎿ! ᎠᏁᎯ ᏖᏂᎳᏫ; ᎠᏃᏪᎵᏍᎨ".
+Truth:ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ
+OCR  :ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ, ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ
+BCER eval=24.944, BWER eval=55.757
