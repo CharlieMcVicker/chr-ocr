@@ -106,12 +106,18 @@ def main():
         print("No Cherokee labeled items found.")
         sys.exit(1)
 
-    random.seed(42)
-    random.shuffle(labeled_items)
+    # We want to split like "every nth is test" to ensure even distribution across documents
+    train_items = []
+    test_items = []
     
-    split_idx = int(len(labeled_items) * args.split)
-    train_items = labeled_items[:split_idx]
-    test_items = labeled_items[split_idx:]
+    accumulator = 0.0
+    for item in labeled_items:
+        accumulator += (1.0 - args.split)
+        if accumulator >= 1.0:
+            test_items.append(item)
+            accumulator -= 1.0
+        else:
+            train_items.append(item)
 
     print(f"Found {len(labeled_items)} items. Train: {len(train_items)}, Test: {len(test_items)}")
 
