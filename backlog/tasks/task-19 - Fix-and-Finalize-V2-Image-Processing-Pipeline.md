@@ -4,6 +4,7 @@ title: Fix and Finalize V2 Image Processing Pipeline
 status: To Do
 assignee: []
 created_date: '2026-06-10 20:01'
+updated_date: '2026-06-11 00:44'
 labels:
   - backend
   - pipeline
@@ -25,4 +26,6 @@ The next agent needs to execute the final fixes before launching the image pipel
 - [ ] #4 Revert get_tesseract_line_bboxes to Surya DetectionPredictor in pipeline scripts
 - [ ] #5 Launch prepare_training_data.py in the background
 - [ ] #6 Run reconsolidate_labels.py after generation completes to port labels
+- [ ] #7 Update crop_pad_normalize_line to support skipping normalization and returning high-res crop
+- [ ] #8 Implement and formalize the Cherokee language filter heuristic (>= 5 characters) in prepare_training_data.py to skip English lines.
 <!-- AC:END -->

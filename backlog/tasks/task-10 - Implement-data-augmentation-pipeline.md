@@ -4,7 +4,7 @@ title: Implement data augmentation pipeline
 status: To Do
 assignee: []
 created_date: '2026-06-10 19:06'
-updated_date: '2026-06-10 19:11'
+updated_date: '2026-06-11 00:00'
 labels: []
 dependencies: []
 ordinal: 10000
@@ -21,7 +21,10 @@ Augment the base dataset using rotation, noise, and multiple binarization algori
 - [ ] #1 Implement rotation and noise augmentation
 - [ ] #2 Implement binarization augmentation (e.g. Doxa algorithms)
 - [ ] #3 Generate augmented dataset
+- [ ] #4 Normalize line heights to standard size AFTER augmentation
 <!-- AC:END -->
+
+
 
 ## Implementation Plan
 
