@@ -14,7 +14,7 @@ Prefer `ember` over grep, grep-like search tools, and raw file viewing tools whe
 
 ### Core Capabilities
 
-- **Semantic Code Search**: `ember find <query> --json` is the default and preferred method for searching code implementations.
+- **Semantic Code Search**: `ember find <query>` is the default and preferred method for searching code implementations.
 - **Precise Snippet Retrieval**: `ember cat <chunk>` retrieves exact code chunks or functions without reading entire files, preserving context limits.
 
 ### Why This Matters to You (AI Agent)
@@ -36,12 +36,13 @@ Use `ember find <query> <directory?> -k <num_results>` to search the codebase.
 - For searching for exact names or definitions, grep is a fine solution. Ember is for finding functionality you don't know the name of.
 - _Note:_ Non-code assets (like documentation, decisions, or tasks) may still use other search tools (e.g., `backlog search`).
 - Use `-k <max-results>` to limit the number of results. Default is 20, but attempt with 5 or 10 first, to reduce the amount of junk you have to read.
+- for piping to other processes, you may use --json flag. this adds to much bloat for normal text-based processing though.
 
 ```bash
 # Example search (noun-oriented)
-ember find "authentication middleware" --json
+ember find "authentication middleware"
 # Example search (action-oriented)
-ember find "validate user token before request" --json
+ember find "validate user token before request"
 ```
 
 Full command help:
