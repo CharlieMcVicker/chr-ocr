@@ -8,11 +8,7 @@ def preprocess_and_binarize_cv2(img, algorithm_name, parameters=None, use_bg_sub
     Core function to preprocess and binarize a grayscale OpenCV image (numpy array).
     """
     # For small images (like individual line crops), local thresholding with large windows
-    # is prone to edge-effect noise and memory/segmentation crashes in doxapy.
-    # We fall back to OpenCV Otsu thresholding for these images.
-    if img.shape[0] < 60 or img.shape[1] < 60:
-        _, otsu = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-        return otsu
+    # can crash doxapy if the window exceeds image dimensions. We will clamp the window below.
 
     # 1. Background subtraction/normalization (illumination correction)
     if use_bg_sub:
@@ -42,6 +38,16 @@ def preprocess_and_binarize_cv2(img, algorithm_name, parameters=None, use_bg_sub
 
     if parameters:
         default_params.update(parameters)
+
+    # Ensure window size is odd and does not exceed image dimensions
+    if "window" in default_params:
+        max_win = min(img.shape[0], img.shape[1])
+        if max_win % 2 == 0:
+            max_win -= 1
+        if max_win < 3:
+            max_win = 3
+        if default_params["window"] > max_win:
+            default_params["window"] = max_win
 
     # Run thresholding
     binary_output = doxapy.to_binary(algo, denoised, default_params)
