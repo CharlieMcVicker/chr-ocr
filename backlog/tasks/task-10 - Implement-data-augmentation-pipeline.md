@@ -1,10 +1,10 @@
 ---
 id: TASK-10
 title: Implement data augmentation pipeline
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-10 19:06'
-updated_date: '2026-06-11 00:00'
+updated_date: '2026-06-11 12:39'
 labels: []
 dependencies: []
 ordinal: 10000
@@ -18,13 +18,11 @@ Augment the base dataset using rotation, noise, and multiple binarization algori
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Implement rotation and noise augmentation
-- [ ] #2 Implement binarization augmentation (e.g. Doxa algorithms)
-- [ ] #3 Generate augmented dataset
-- [ ] #4 Normalize line heights to standard size AFTER augmentation
+- [x] #1 Implement rotation and noise augmentation
+- [x] #2 Implement binarization augmentation (e.g. Doxa algorithms)
+- [x] #3 Generate augmented dataset
+- [x] #4 Normalize line heights to standard size AFTER augmentation
 <!-- AC:END -->
-
-
 
 ## Implementation Plan
 
@@ -62,3 +60,9 @@ This script will:
 - Verify `dataset/train/` contains heavily augmented examples.
 - Verify `dataset/test/` contains subdirectories for each binarization method, containing clean test examples for precise evaluation.
 <!-- SECTION:PLAN:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Created dataset generation pipeline using doxapy and geometric augmentations, applied 60/40 train/test split to the V2 manifest labeled data.
+<!-- SECTION:FINAL_SUMMARY:END -->
