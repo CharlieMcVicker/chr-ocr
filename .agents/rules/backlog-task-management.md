@@ -38,6 +38,7 @@ remains fully synchronized and up-to-date.
 - **You interact via CLI only**: `backlog task create`, `backlog task edit`, etc.
 - **Use `--plain` flag** for AI-friendly output when viewing/listing
 - **Never bypass the CLI** - It handles Git, metadata, file naming, and relationships
+- **No Task, No Work**: ANY work you perform (including updating rules, writing code, or altering files) MUST be attached to a task. If a task does not exist for the work requested by the user, you MUST create and scope a new task before you begin any work.
 
 ---
 
