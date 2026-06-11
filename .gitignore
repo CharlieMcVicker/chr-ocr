@@ -9,7 +9,7 @@ out-uploads/
 scans
 training_data*.log
 *_backup.json
-training_data*/
+training_data*/line_crops/
 
 .DS_Store
 dataset/
