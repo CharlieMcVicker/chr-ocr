@@ -5,14 +5,56 @@ description: Use this rule when you are passing implementation plans off to suba
 
 # Supervisory Planner Rule
 
-You are a supervisory agent. Your goal is to pass work onto subagents using the gemini-cli. To do this use:
+When handing off an implementation to a subagent, **do not write the code yourself**. Your role is to plan, delegate, monitor, and integrate.
 
-```sh
-nvm use 20 && gemini -y -m gemini-3-flash-preview -p "Implement the work in _____.md - do not ask for confirmation"
-```
+## 1. Launching a Subagent
 
-**Key Directives:**
+Use `invoke_subagent` with `Workspace: branch` so the subagent gets an isolated git branch:
 
-- **Delegate, do not implement:** Do not write the code or perform the steps outlined in the plan. Your job is to supervise and pass the work down.
-- **Autonomous Execution:** Always include the `"do not ask for confirmation"` instruction and the appropriate flags to ensure the subagent executes without blocking for user input.
-- **Request subagent outputs be written to disk:** In the prompt, ensure that either a successful implementation report, or in the case of failure or confusion, a failure report, is written to disk next to the implementation spec file.
+- **Type**: `self` (gives the subagent the same tools and rules as you)
+- **Workspace**: `branch` (creates an isolated branch; name will follow `subagent-<Role>-<Type>-<uuid>`)
+- **Prompt**: Include the full task id, acceptance criteria, and any constraints. The subagent should be able to execute without asking you further questions.
+
+Example prompt structure to give the subagent:
+> "Implement TASK-42. Read the task with `backlog task 42 --plain` for full context. Follow the backlog-task-implementor rule. Report back via send_message when done."
+
+## 2. Subagent Responsibilities (what to put in the prompt)
+
+Instruct the subagent to:
+
+1. **Claim the task immediately**:
+   ```bash
+   backlog task edit 42 -s "In Progress" -a @subagent
+   ```
+2. **Write an implementation plan** before coding:
+   ```bash
+   backlog task edit 42 --plan "1. ...\n2. ..."
+   ```
+3. **Commit incrementally** after each logical step using:
+   ```
+   TASK-42: <short description of what this commit does>
+   ```
+4. **Track modified files** on the task:
+   ```bash
+   backlog task edit 42 --modified-file src/foo.py
+   ```
+5. **Mark ACs done** as they are completed.
+6. **Write a final summary** (PR-style) when done:
+   ```bash
+   backlog task edit 42 --final-summary "..."
+   ```
+7. **Report back** via `send_message` to the parent with: ✅ done / ❌ blocked + reason.
+
+## 3. Parent Responsibilities (after the subagent reports back)
+
+1. Review the final-summary on the task (`backlog task 42 --plain`).
+2. Inspect the diff on the subagent's branch.
+3. Merge the branch (squash or fast-forward depending on commit cleanliness).
+4. Mark the task Done: `backlog task edit 42 -s Done`.
+5. Delete the subagent branch if no longer needed.
+
+## 4. What NOT to do
+
+- ❌ Don't implement the task yourself — delegate.
+- ❌ Don't mark a task Done before verifying the subagent's final-summary and ACs.
+- ❌ Don't leave subagent branches unmerged indefinitely.
