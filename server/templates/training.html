@@ -583,6 +583,10 @@
                     <input type="checkbox" id="cherokee-only-checkbox" checked style="accent-color: var(--primary-color); cursor: pointer;">
                     Cherokee lines only
                 </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.825rem; color: var(--text-secondary); cursor: pointer; margin-top: 0.25rem; user-select: none;">
+                    <input type="checkbox" id="sort-confidence-checkbox" style="accent-color: var(--primary-color); cursor: pointer;">
+                    Sort by lowest confidence
+                </label>
             </div>
             <div class="line-list" id="line-list-container">
                 <!-- Javascript populated -->
@@ -674,6 +678,7 @@
         const lineListContainer = document.getElementById('line-list-container');
         const searchInput = document.getElementById('search-input');
         const cherokeeOnlyCheckbox = document.getElementById('cherokee-only-checkbox');
+        const sortConfidenceCheckbox = document.getElementById('sort-confidence-checkbox');
         const activeIdEl = document.getElementById('active-id');
         const activeScanInfoEl = document.getElementById('active-scan-info');
         const activeBboxEl = document.getElementById('active-bbox');
@@ -724,6 +729,15 @@
             }
         });
 
+        sortConfidenceCheckbox.addEventListener('change', () => {
+            filterAndRenderList();
+            if (filteredItems.length > 0) {
+                selectItem(0);
+            } else {
+                clearWorkspace();
+            }
+        });
+
         document.querySelectorAll('.filter-tab').forEach(tab => {
             tab.addEventListener('click', (e) => {
                 document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
@@ -753,6 +767,15 @@
                     item.source_scan.toLowerCase().includes(searchQuery);
                 return matchesFilter && matchesCherokeeOnly && matchesSearch;
             });
+
+            // Sort
+            if (sortConfidenceCheckbox.checked) {
+                filteredItems.sort((a, b) => {
+                    const confA = a.ftm_confidence !== undefined && a.ftm_confidence !== null ? a.ftm_confidence : 999;
+                    const confB = b.ftm_confidence !== undefined && b.ftm_confidence !== null ? b.ftm_confidence : 999;
+                    return confA - confB;
+                });
+            }
 
             // Render
             lineListContainer.innerHTML = '';
