@@ -35,7 +35,7 @@ if not os.path.exists(MANIFEST_PATH):
         json.dump([], f)
 
 TRAINING_DIR = os.path.join(PROJECT_ROOT, "training_data_v2")
-TRAINING_MANIFEST_PATH = os.path.join(TRAINING_DIR, "manifest.json")
+TRAINING_MANIFEST_PATH = os.path.join(TRAINING_DIR, "manifest_w_lang.json")
 
 
 def load_manifest():

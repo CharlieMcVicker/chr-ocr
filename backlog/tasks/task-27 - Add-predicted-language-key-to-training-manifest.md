@@ -1,10 +1,10 @@
 ---
 id: TASK-27
 title: Add predicted language key to training manifest
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-11 02:24'
-updated_date: '2026-06-11 02:48'
+updated_date: '2026-06-11 02:52'
 labels: []
 dependencies: []
 ordinal: 31000
@@ -18,10 +18,12 @@ Once the main image processing script finishes, update the manifest generation t
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Update manifest generation to classify and add predicted_lang key
-- [ ] #2 Run classification against the complete new dataset
-- [ ] #3 Ensure custom server labeling UI utilizes predicted_lang
+- [x] #1 Update manifest generation to classify and add predicted_lang key
+- [x] #2 Run classification against the complete new dataset
+- [x] #3 Ensure custom server labeling UI utilizes predicted_lang
 <!-- AC:END -->
+
+
 
 ## Implementation Plan
 
@@ -79,3 +81,9 @@ Once the CV pipeline is complete and the new manifest is generated, we will need
 <!-- SECTION:NOTES:BEGIN -->
 Implementation Details:\n1. Read the manifest created by 'prepare_training_data'\n2. Only process entries that lack a 'predicted_language' key (incremental processing)\n3. Classify those specific missing entries, and then write the file back atomicaly (e.g. write to a temporary file, then rename/move over the original) to ensure we don't corrupt the main manifest.
 <!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Implemented scripts/add_predicted_lang_to_manifest.py to safely augment manifest.json into manifest_w_lang.json. Updated server/app.py and server/templates/training.html to read from manifest_w_lang.json and display predicted_lang natively in the UI.
+<!-- SECTION:FINAL_SUMMARY:END -->
