@@ -30,9 +30,9 @@ def analyze_text(text: str) -> dict:
 
     if total == 0:
         classification = "Empty"
-    elif pct_cherokee < 0.20:
+    elif pct_cherokee < 0.40:
         classification = "English"
-    elif pct_cherokee > 0.50:
+    elif pct_cherokee > 0.45:
         classification = "Cherokee"
     else:
         classification = "Mixed"
