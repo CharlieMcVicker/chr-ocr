@@ -599,6 +599,7 @@
                     </div>
                     <div>
                         <span id="active-bbox"></span>
+                        <span id="active-predicted-lang" style="margin-left: 10px;"></span>
                     </div>
                 </div>
 
@@ -668,6 +669,7 @@
         const activeIdEl = document.getElementById('active-id');
         const activeScanInfoEl = document.getElementById('active-scan-info');
         const activeBboxEl = document.getElementById('active-bbox');
+        const activePredictedLangEl = document.getElementById('active-predicted-lang');
         const activeImageEl = document.getElementById('active-image');
         const noImageSelectedEl = document.getElementById('no-image-selected');
         const activeOcrEl = document.getElementById('active-ocr');
@@ -729,7 +731,7 @@
             // Filter
             filteredItems = items.filter(item => {
                 const matchesFilter = activeFilter === 'all' || item.status === activeFilter;
-                const matchesCherokeeOnly = !cherokeeOnly || item.classification === 'Cherokee';
+                const matchesCherokeeOnly = !cherokeeOnly || item.predicted_lang === 'Cherokee';
                 const matchesSearch = !searchQuery || 
                     item.id.toLowerCase().includes(searchQuery) ||
                     (item.initial_ocr && item.initial_ocr.toLowerCase().includes(searchQuery)) ||
@@ -745,9 +747,9 @@
                 el.className = `line-item ${idx === currentIndex ? 'active' : ''}`;
                 
                 let classBadge = '';
-                if (item.classification) {
-                    const cls = item.classification.toLowerCase();
-                    classBadge = `<span class="class-badge class-${cls}">${item.classification}</span>`;
+                if (item.predicted_lang) {
+                    const cls = item.predicted_lang.toLowerCase();
+                    classBadge = `<span class="class-badge class-${cls}">${item.predicted_lang}</span>`;
                 }
 
                 el.innerHTML = `
@@ -788,6 +790,11 @@
             activeIdEl.innerText = item.id;
             activeScanInfoEl.innerText = `Scan: ${item.source_scan} | Col ${item.column_index} Line ${item.line_index}`;
             activeBboxEl.innerText = `BBox: [${item.line_bbox.join(', ')}]`;
+            if(item.predicted_lang) {
+                activePredictedLangEl.innerHTML = `<span class="class-badge class-${item.predicted_lang.toLowerCase()}">${item.predicted_lang}</span>`;
+            } else {
+                activePredictedLangEl.innerHTML = "";
+            }
             
             activeImageEl.src = `/training_data/${item.image_path}`;
             activeImageEl.style.display = 'block';
@@ -805,6 +812,7 @@
             activeIdEl.innerText = 'Select a line crop';
             activeScanInfoEl.innerText = 'No line selected';
             activeBboxEl.innerText = '';
+            activePredictedLangEl.innerHTML = '';
             activeImageEl.style.display = 'none';
             noImageSelectedEl.style.display = 'block';
             activeOcrEl.innerText = '-';
