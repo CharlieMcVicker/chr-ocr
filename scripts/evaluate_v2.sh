@@ -3,7 +3,7 @@ set -e
 
 DATASET_DIR="training_data_v2/dataset"
 TEST_DIR="${DATASET_DIR}/test"
-MODEL_DIR="${DATASET_DIR}/output"
+MODEL_DIR=${1:-"${DATASET_DIR}/output"}
 
 # Find the best checkpoint model
 CHECKPOINT=$(ls -t "$MODEL_DIR"/*.checkpoint | head -n 1)
