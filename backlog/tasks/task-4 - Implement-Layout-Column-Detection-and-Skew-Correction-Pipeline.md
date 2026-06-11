@@ -1,11 +1,11 @@
 ---
 id: TASK-4
 title: Implement Layout Column Detection and Skew Correction Pipeline
-status: Done
+status: In Progress
 assignee:
   - '@agent'
 created_date: '2026-06-10 14:33'
-updated_date: '2026-06-10 14:33'
+updated_date: '2026-06-11 22:31'
 labels: []
 dependencies: []
 modified_files:
@@ -33,6 +33,12 @@ Create layout and skew correction utilities in server/layout.py and a plotting/v
 <!-- SECTION:PLAN:BEGIN -->
 1. Implement apply_stain_cleaning and apply_adaptive_threshold in server/layout.py\n2. Implement detect_and_fix_skew using projection variance\n3. Implement extract_columns using LayoutPredictor\n4. Develop scripts/plot_layout.py visualizer
 <!-- SECTION:PLAN:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Found 144 lines where initial OCR predicts text but FTM predicts nothing. Script written to analyze.
+<!-- SECTION:NOTES:END -->
 
 ## Final Summary
 
