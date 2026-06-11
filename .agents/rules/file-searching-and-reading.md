@@ -29,12 +29,13 @@ Prefer `ember` over grep, grep-like search tools, and raw file viewing tools whe
 
 ### 🔍 **FINDING** (Use `ember find`)
 
-Use `ember find <query> --json` to search the codebase.
+Use `ember find <query> <directory?> -k <num_results>` to search the codebase.
 
 - This is the **default** way to search for code.
 - Ember uses semantic searching. You don't need to search for "def foo" or a specific class name, unless that is what you need. You can search for "login" and it will find implementations of login. You can either use "noun-oriented" or "verb-oriented" searches, modelled below.
+- For searching for exact names or definitions, grep is a fine solution. Ember is for finding functionality you don't know the name of.
 - _Note:_ Non-code assets (like documentation, decisions, or tasks) may still use other search tools (e.g., `backlog search`).
-- Use `-k <max-results>` to limit the number of results. Default is 20. This is especially useful for large codebases.
+- Use `-k <max-results>` to limit the number of results. Default is 20, but attempt with 5 or 10 first, to reduce the amount of junk you have to read.
 
 ```bash
 # Example search (noun-oriented)
