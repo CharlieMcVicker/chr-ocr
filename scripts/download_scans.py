@@ -1,10 +1,24 @@
 #!/usr/bin/env python3
+"""
+This module downloads Cherokee Phoenix newspaper scans in JPEG 2000 (.jp2) format
+from the Georgia Historic Newspapers archive based on a list of seed URLs.
+"""
 import os
 import re
 import sys
 import subprocess
 
 def parse_url_line(line):
+    """
+    Parses a single line containing a newspaper scan URL to extract the base URL,
+    date, and edition string.
+    
+    Args:
+        line: Raw text line from the seed URLs file.
+        
+    Returns:
+        Dict containing base_url, date, and edition if parsed successfully, or None.
+    """
     # Strip whitespace
     line = line.strip()
     if not line:
@@ -34,6 +48,14 @@ def parse_url_line(line):
     }
 
 def download_scans(urls_file, output_dir="scans"):
+    """
+    Reads the list of seed URLs, parses them, and downloads all available sequential pages
+    (seq-1.jp2, seq-2.jp2, etc.) for each issue using curl.
+    
+    Args:
+        urls_file: Path to the text file containing seed URLs.
+        output_dir: Destination directory where downloaded scans are saved.
+    """
     if not os.path.exists(urls_file):
         print(f"Error: URL file '{urls_file}' not found.")
         sys.exit(1)

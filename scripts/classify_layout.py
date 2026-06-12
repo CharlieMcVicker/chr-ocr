@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+"""
+This module classifies detected layout columns / bounding boxes in images using Tesseract
+OCR (with both Cherokee and English languages loaded) and analyzes character proportions
+to categorize sections as Cherokee, English, Mixed, or Empty.
+"""
 import argparse
 import sys
 import os
@@ -14,16 +19,44 @@ from server.process_file import ocr_image_to_text
 
 
 def is_cherokee_char(c: str) -> bool:
+    """
+    Checks if a given character is within the Cherokee Unicode blocks.
+    
+    Args:
+        c: A single-character string.
+        
+    Returns:
+        True if the character is Cherokee, False otherwise.
+    """
     o = ord(c)
     # Cherokee: U+13A0 to U+13FF, Cherokee Supplement: U+AB70 to U+ABBF
     return (0x13A0 <= o <= 0x13FF) or (0xAB70 <= o <= 0xABBF)
 
 
 def is_latin_char(c: str) -> bool:
+    """
+    Checks if a given character is a Latin alphabet letter.
+    
+    Args:
+        c: A single-character string.
+        
+    Returns:
+        True if the character is a Latin letter, False otherwise.
+    """
     return c.isascii() and c.isalpha()
 
 
 def analyze_text(text: str) -> dict:
+    """
+    Analyzes OCR string text to determine Cherokee vs Latin characters,
+    calculates proportions, and classifies the dominant language.
+    
+    Args:
+        text: String of OCR-extracted text.
+        
+    Returns:
+        Dict containing counts, calculated classification, and stripped text.
+    """
     cherokee_count = 0
     latin_count = 0
     for c in text:
@@ -53,6 +86,11 @@ def analyze_text(text: str) -> dict:
 
 
 def main():
+    """
+    Main command-line entry point to parse scan image files in a folder,
+    extract bounding boxes (or whole images), perform OCR, classify the text,
+    and output CSV/JSON analysis reports.
+    """
     parser = argparse.ArgumentParser(
         description="Classify layout bounding boxes using Tesseract Cherokee and English models."
     )

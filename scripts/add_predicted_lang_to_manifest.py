@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+This module processes a training dataset manifest and enriches it by predicting
+the language (Cherokee, English, or Mix) of each image using OCR and text classification.
+It updates or creates an enriched manifest `manifest_w_lang.json` while allowing
+for process resumption.
+"""
 import os
 import sys
 import json
@@ -11,6 +17,10 @@ from server.process_file import ocr_image_to_text
 from scripts.classify_layout import analyze_text
 
 def main():
+    """
+    Main function to load the dataset manifest, run OCR on each image,
+    classify its language, and save the enriched data to `manifest_w_lang.json`.
+    """
     base_dir = "training_data_v2"
     manifest_path = os.path.join(base_dir, "manifest.json")
     out_manifest_path = os.path.join(base_dir, "manifest_w_lang.json")

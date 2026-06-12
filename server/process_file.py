@@ -1,3 +1,14 @@
+"""
+Processing pipeline orchestrator for document scans.
+
+This module coordinates:
+- Image normalization and rescaling (to standard max bounds).
+- Morphological and background stain cleaning via scripts.
+- Multi-algorithm local binarization (su, sauvola, wolf) utilizing doxapy.
+- Line bounding box extraction and hOCR document Generation via Tesseract OCR.
+- Unified multi-format conversion pipelines.
+"""
+
 import os
 import subprocess
 import re
@@ -11,6 +22,15 @@ def normalize_image(src_path: str, target_path: str, delete_source_if_different:
     
     If delete_source_if_different is True and target_path != src_path,
     delete the src_path after successful transcode.
+
+    Args:
+        src_path (str): File path of the source image to normalize.
+        target_path (str): Destination file path to save the normalized image.
+        delete_source_if_different (bool, optional): If True and target_path is different,
+            removes the source file. Defaults to False.
+
+    Raises:
+        RuntimeError: If image transcoding/resizing fails under both system binaries.
     """
     try:
         subprocess.run(
@@ -49,7 +69,16 @@ def normalize_image(src_path: str, target_path: str, delete_source_if_different:
 
 def clean_image_with_script(input_path: str, output_path: str) -> None:
     """
-    Cleans an image using the scripts/clean-img script.
+    Cleans an image using the scripts/clean-img script, estimating and
+    removing noise, stains, and lighting shadows.
+
+    Args:
+        input_path (str): File path to the source image.
+        output_path (str): File path to save the cleaned output image.
+
+    Raises:
+        RuntimeError: If the shell script execution encounters an error.
+        FileNotFoundError: If the script completes but output is missing.
     """
     server_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(server_dir)
@@ -87,6 +116,14 @@ def clean_image_with_script(input_path: str, output_path: str) -> None:
 def run_doxa_binarization(input_path: str, output_path: str, algorithm: str) -> None:
     """
     Runs Doxa binarization (su, sauvola, wolf) on the input image.
+
+    Args:
+        input_path (str): File path to the grayscale source image.
+        output_path (str): Destination path to save the binary output image.
+        algorithm (str): Doxa binarization algorithm name ('su', 'sauvola', or 'wolf').
+
+    Raises:
+        RuntimeError: If binarization fails or encounters invalid parameters.
     """
     try:
         binarize_image(input_path, output_path, algorithm)
@@ -97,6 +134,15 @@ def run_doxa_binarization(input_path: str, output_path: str, algorithm: str) -> 
 def ocr_image_to_text(pil_img, lang: str = "chr+eng", binarize: bool = True) -> str:
     """
     Runs Tesseract OCR on a PIL image and returns the recognized text.
+
+    Args:
+        pil_img (PIL.Image.Image): PIL Image to perform OCR on.
+        lang (str, optional): Tesseract language model code(s). Defaults to "chr+eng".
+        binarize (bool, optional): If True, preprocesses the image using Doxa's
+            Sauvola binarization before OCR. Defaults to True.
+
+    Returns:
+        str: Recognized plaintext string. Returns an empty string on failure.
     """
     import tempfile
     from PIL import Image
@@ -135,7 +181,13 @@ def ocr_image_to_text(pil_img, lang: str = "chr+eng", binarize: bool = True) -> 
 def get_tesseract_line_bboxes(pil_img, lang: str = "chr+eng") -> list:
     """
     Runs Tesseract OCR on a PIL image and extracts bounding boxes for each detected line.
-    Returns a list of tuples: (xmin, ymin, xmax, ymax)
+
+    Args:
+        pil_img (PIL.Image.Image): The input PIL Image.
+        lang (str, optional): Tesseract language model. Defaults to "chr+eng".
+
+    Returns:
+        list: A list of tuples containing line bounding boxes: [(xmin, ymin, xmax, ymax), ...]
     """
     import tempfile
     import csv
@@ -176,9 +228,20 @@ def get_tesseract_line_bboxes(pil_img, lang: str = "chr+eng") -> list:
 
 
 def run_tesseract_ocr(input_path: str, output_html_path: str, image_title: str) -> None:
-
     """
     Runs tesseract OCR on input_path and writes modified hOCR content to output_html_path.
+
+    This function updates the generated hOCR HTML so that browser-based viewers
+    reference the correct localized image filename instead of absolute system paths.
+
+    Args:
+        input_path (str): Path to the image file to run OCR on.
+        output_html_path (str): Destination path to save the modified hOCR HTML.
+        image_title (str): Image filename or title to embed inside hOCR header structure.
+
+    Raises:
+        RuntimeError: If Tesseract fails or outputs bad data.
+        FileNotFoundError: If the hOCR output file cannot be retrieved.
     """
     out_dir = os.path.dirname(output_html_path)
     os.makedirs(out_dir, exist_ok=True)
@@ -224,7 +287,13 @@ def process_all_versions(file_path: str, output_dir: str = None) -> dict:
     - Doxa binarization (su, sauvola, wolf)
     - Tesseract OCR on all the versions
     
-    Returns a dictionary of all processed file paths.
+    Args:
+        file_path (str): The path to the uploaded document image.
+        output_dir (str, optional): The directory where output products should
+            be stored. Defaults to same directory as file_path.
+
+    Returns:
+        dict: Mapped string paths of all generated PNGs and HTML hOCR products.
     """
     if not output_dir:
         output_dir = os.path.dirname(os.path.abspath(file_path))
@@ -283,6 +352,14 @@ def process_file(file_path: str, project_root: str = None, file_id: str = None):
     """
     Main entry point for web app uploads.
     Handles errors and returns None on success, or (error_msg, status_code) on failure.
+
+    Args:
+        file_path (str): Path of the file to process.
+        project_root (str, optional): Root folder of the project. Defaults to None.
+        file_id (str, optional): Unique upload identifier. Defaults to None.
+
+    Returns:
+        None | tuple: None on successful execution, or a tuple (error_message, status_code) on error.
     """
     try:
         process_all_versions(file_path)

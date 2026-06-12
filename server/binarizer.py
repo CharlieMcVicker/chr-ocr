@@ -1,3 +1,16 @@
+"""
+Local adaptive binarization handlers for historic document images.
+
+This module exposes preprocessing, adaptive thresholding, and noise reduction
+interfaces around the doxapy library, supporting algorithms:
+- SU (Su, Lu, and Tan) local thresholding.
+- Sauvola local thresholding.
+- Wolf local thresholding.
+
+Includes preprocessing filters (background subtraction and bilateral/Gaussian smoothing)
+and postprocessing filters (connected-component based denoising and morphological opening).
+"""
+
 import cv2
 import numpy as np
 import doxapy
@@ -6,6 +19,25 @@ from PIL import Image
 def preprocess_and_binarize_cv2(img, algorithm_name, parameters=None, use_bg_sub=True, use_bilateral=True, use_cc_denoise=True):
     """
     Core function to preprocess and binarize a grayscale OpenCV image (numpy array).
+
+    Preprocesses images to equalize illumination and minimize noise, applies the selected
+    local thresholding binarization algorithm, and cleans up residual noise.
+
+    Args:
+        img (np.ndarray): Input 2D grayscale image array (uint8).
+        algorithm_name (str): Local thresholding algorithm name ('su', 'sauvola', or 'wolf').
+        parameters (dict, optional): Custom parameter overrides for the selected algorithm (e.g. window size).
+        use_bg_sub (bool, optional): If True, applies morphological closing division for background subtraction.
+            Defaults to True.
+        use_bilateral (bool, optional): If True, applies bilateral filtering; otherwise Gaussian blurring.
+            Defaults to True.
+        use_cc_denoise (bool, optional): If True, filters out small disconnected component noise. Defaults to True.
+
+    Returns:
+        np.ndarray: Binary image (numpy array) containing only values 0 and 255.
+
+    Raises:
+        ValueError: If an unsupported algorithm_name is specified.
     """
     # For small images (like individual line crops), local thresholding with large windows
     # can crash doxapy if the window exceeds image dimensions. We will clamp the window below.
@@ -71,6 +103,18 @@ def preprocess_and_binarize_cv2(img, algorithm_name, parameters=None, use_bg_sub
 def binarize_image(input_path, output_path, algorithm_name, parameters=None, use_bg_sub=True, use_bilateral=True, use_cc_denoise=True):
     """
     Binarize an image file using doxapy and save the output.
+
+    Args:
+        input_path (str): File path of the input grayscale source image.
+        output_path (str): File path to save the processed binary output image.
+        algorithm_name (str): Algorithm name to apply ('su', 'sauvola', or 'wolf').
+        parameters (dict, optional): Custom algorithm parameters dictionary. Defaults to None.
+        use_bg_sub (bool, optional): If True, performs background subtraction. Defaults to True.
+        use_bilateral (bool, optional): If True, performs bilateral noise filtering. Defaults to True.
+        use_cc_denoise (bool, optional): If True, filters out tiny pixel noise components. Defaults to True.
+
+    Raises:
+        FileNotFoundError: If the input_path image fails to load.
     """
     # 1. Load the image using OpenCV in Grayscale
     img = cv2.imread(input_path, cv2.IMREAD_GRAYSCALE)
@@ -88,6 +132,21 @@ def binarize_image(input_path, output_path, algorithm_name, parameters=None, use
 def binarize_pil_image(pil_img, algorithm_name="sauvola", parameters=None, use_bg_sub=True, use_bilateral=True, use_cc_denoise=True):
     """
     Binarize a PIL image in-memory and return a new PIL Image.
+
+    This function automatically casts the PIL Image representation to a NumPy grayscale array,
+    applies the pre-processing and thresholding pipeline, and wraps the resulting binary
+    matrix back into a PIL Image instance.
+
+    Args:
+        pil_img (PIL.Image.Image): The input source PIL Image object.
+        algorithm_name (str, optional): Algorithm name to apply. Defaults to "sauvola".
+        parameters (dict, optional): Custom parameters overrides. Defaults to None.
+        use_bg_sub (bool, optional): If True, performs background subtraction. Defaults to True.
+        use_bilateral (bool, optional): If True, performs bilateral filtering. Defaults to True.
+        use_cc_denoise (bool, optional): If True, filters out pixel-level noise. Defaults to True.
+
+    Returns:
+        PIL.Image.Image: The resulting processed binary PIL Image object.
     """
     # Convert PIL Image to OpenCV Grayscale
     open_cv_image = np.array(pil_img)
@@ -102,4 +161,3 @@ def binarize_pil_image(pil_img, algorithm_name="sauvola", parameters=None, use_b
 
     # Convert back to PIL Image
     return Image.fromarray(cleaned_binary)
-

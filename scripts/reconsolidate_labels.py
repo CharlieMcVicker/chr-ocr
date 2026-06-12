@@ -1,10 +1,19 @@
 #!/usr/bin/env python
+"""
+This module maps old training labels to newly created line crop manifest entries
+using fuzzy text matching. It helps migrate hand-labeled text transcriptions
+to a reconstructed layout manifest while minimizing re-labeling effort.
+"""
 import os
 import json
 import difflib
 import argparse
 
 def main():
+    """
+    Main command-line entry point to load old and new manifests, perform fuzzy string
+    matching between initial OCR/labels, transfer label status, and save the updated manifest.
+    """
     parser = argparse.ArgumentParser(description="Map old training labels to new line crops using fuzzy text matching.")
     parser.add_argument("--old-manifest", default="training_data/manifest.json")
     parser.add_argument("--new-manifest", default="training_data_v2/manifest.json")

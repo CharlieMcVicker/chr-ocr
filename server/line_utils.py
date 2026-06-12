@@ -1,3 +1,10 @@
+"""
+Module containing image utility functions for text line cropping, padding,
+and vertical dimension normalization.
+
+Provides tools for standardizing raw line crop sizes for optimal OCR.
+"""
+
 from PIL import Image
 
 def crop_pad_normalize_line(image, bbox, padding_x, padding_y, target_height_range=(30, 33)):
@@ -6,6 +13,20 @@ def crop_pad_normalize_line(image, bbox, padding_x, padding_y, target_height_ran
     If the height is too large, it scales the image down using Lanczos
     while dynamically expanding the padding before scaling to ensure
     the final output maintains the exact padding sizes requested.
+
+    Args:
+        image (PIL.Image.Image): The input source image from which to crop the line.
+        bbox (list | tuple): Bounding box coordinates [lx1, ly1, lx2, ly2] of the line.
+        padding_x (int): Horizontal padding to add to the line crop boundaries.
+        padding_y (int): Vertical padding to add to the line crop boundaries.
+        target_height_range (tuple, optional): A (min_height, max_height) range.
+            Defaults to (30, 33).
+
+    Returns:
+        tuple: (PIL.Image.Image, list)
+            - PIL.Image.Image: The cropped, padded, and normalized line image.
+            - list: The exact coordinates [lx1_pad, ly1_pad, lx2_pad, ly2_pad] where
+              the crop was taken.
     """
     lx1, ly1, lx2, ly2 = bbox
     unpadded_height = max(1, int(ly2) - int(ly1))

@@ -1,8 +1,18 @@
+"""
+This module runs automated integration tests on the backend training routes.
+It verifies GET requests to the /training page, tests the POST requests to /training/update
+for updating label details in the manifest, and safely reverts modifications.
+"""
 import json
 import urllib.request
 import urllib.error
 
 def run_tests():
+    """
+    Performs end-to-end HTTP route tests using urllib. Requests the main training
+    page, updates an item in the JSON manifest via the update API, validates the
+    change on disk, and then reverts the item to its original state.
+    """
     # 1. Test GET /training
     try:
         req = urllib.request.urlopen("http://127.0.0.1:5001/training")

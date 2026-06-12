@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+This module handles data augmentation and preparation for the Cherokee OCR training dataset.
+It performs height normalization, Tesseract box file generation, various geometric/noise
+augmentations (including elastic distortion and morphological ink simulation),
+and binarization via algorithms like Otsu, Su, Sauvola, and Wolf.
+"""
 import os
 import json
 import random
@@ -9,6 +15,17 @@ import argparse
 import sys
 
 def normalize_height(image, target_line_height=42, pad_y=3):
+    """
+    Resizes the line image to a target height while maintaining the aspect ratio.
+    
+    Args:
+        image: Input OpenCV image.
+        target_line_height: The target height in pixels for the text line.
+        pad_y: Vertical padding in pixels around the line.
+        
+    Returns:
+        The height-normalized image.
+    """
     img_height, img_width = image.shape[:2]
     if img_height == 0 or img_width == 0:
         return image
@@ -26,6 +43,15 @@ def normalize_height(image, target_line_height=42, pad_y=3):
     return resized
 
 def generate_box_file(box_path, text, width, height):
+    """
+    Generates a Tesseract .box file containing WordStr layout format for training.
+    
+    Args:
+        box_path: Destination path for the .box file.
+        text: Ground truth transcription text.
+        width: Width of the line image.
+        height: Height of the line image.
+    """
     with open(box_path, "w", encoding="utf-8") as f:
         f.write(f"WordStr 0 0 {width} {height} 0 #{text}\n")
         f.write(f"\t 0 0 {width} {height} 0\n")
@@ -121,6 +147,16 @@ def augment_morphological_ink(image):
 
 
 def augment_geometry_and_noise(image):
+    """
+    Applies geometric augmentations, Gaussian noise, elastic distortion, and
+    morphological ink simulations to generate multiple dataset variants from a single image.
+    
+    Args:
+        image: Source OpenCV image.
+        
+    Returns:
+        List of tuples (variant_name, augmented_image).
+    """
     variations = []
     height, width = image.shape[:2]
     
@@ -156,6 +192,18 @@ def augment_geometry_and_noise(image):
     return variations
 
 def binarize(img, grid_name, params):
+    """
+    Binarizes an image using Otsu thresholding or local adaptive algorithms
+    from doxapy (such as Su, Sauvola, or Wolf).
+    
+    Args:
+        img: Input OpenCV image.
+        grid_name: Name of the binarization method or grid key.
+        params: Dict of parameter settings for doxapy.
+        
+    Returns:
+        The single-channel binary image.
+    """
     if len(img.shape) == 3:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         
@@ -186,6 +234,11 @@ def binarize(img, grid_name, params):
     return doxapy.to_binary(algo, img, p)
 
 def main():
+    """
+    Main function to parse arguments, divide the labeled dataset into train and test splits,
+    apply augmentations/binarizations, and write out finalized image, ground-truth,
+    and box files.
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", default="training_data_v2/manifest_w_lang.json")
     parser.add_argument("--output-dir", default="training_data_v2/dataset")

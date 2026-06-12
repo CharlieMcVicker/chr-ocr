@@ -1,9 +1,24 @@
+"""
+This module splits pre-generated Tesseract training files (.png, .gt.txt, and .box)
+into partitioned train (80%) and test (20%) directories to evaluate model accuracy.
+"""
 import os
 import random
 import shutil
 from pathlib import Path
 
 def split_data(src_dir, train_dir, test_dir, split_ratio=0.8, seed=42):
+    """
+    Randomly splits line assets (images, ground-truths, and boxes) into distinct
+    train and test groups based on a given ratio, copying the matching file triplets.
+    
+    Args:
+        src_dir: Root directory of compiled dataset items.
+        train_dir: Destination path for the training partition.
+        test_dir: Destination path for the test partition.
+        split_ratio: Proportion of assets allocated to train (default: 0.8).
+        seed: Random seed for partition reproducibility.
+    """
     random.seed(seed)
     
     src_path = Path(src_dir)

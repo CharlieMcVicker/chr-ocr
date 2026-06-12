@@ -1,3 +1,7 @@
+"""
+This utility script updates the document frontmatter and content for the Model Training Metrics Tracker (doc-9)
+in the project backlog documentation using the Backlog CLI.
+"""
 import subprocess
 
 content = """---

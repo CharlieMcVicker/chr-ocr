@@ -1,3 +1,13 @@
+"""
+Flask web application for the Cherokee OCR project.
+
+This application provides the main web-based interface, supporting:
+- Multi-algorithm file uploads and processing (original, clean, Doxa binarizations).
+- Real-time page rendering of processed documents, including hOCR viewers.
+- Interactive training data labeling editor and performance stats tracker.
+- Manifest loading and saving handlers.
+"""
+
 from server.process_file import process_file
 import os
 import uuid
@@ -39,6 +49,12 @@ TRAINING_MANIFEST_PATH = os.path.join(TRAINING_DIR, "manifest_w_lang.json")
 
 
 def load_manifest():
+    """
+    Loads the uploaded files manifest JSON database.
+
+    Returns:
+        list: A list of dict metadata objects for all uploads, or an empty list on failure.
+    """
     try:
         with open(MANIFEST_PATH, "r") as f:
             return json.load(f)
@@ -47,6 +63,12 @@ def load_manifest():
 
 
 def load_training_manifest():
+    """
+    Loads the training data manifest database tracking Cherokee text lines and annotations.
+
+    Returns:
+        dict: The mapped dataset dict, or an empty dictionary if file does not exist or fails to load.
+    """
     if not os.path.exists(TRAINING_MANIFEST_PATH):
         return {}
     try:
@@ -57,17 +79,36 @@ def load_training_manifest():
 
 
 def save_training_manifest(manifest):
+    """
+    Saves/serializes the training data manifest back to disk.
+
+    Args:
+        manifest (dict): The dataset dictionary to serialize.
+    """
     with open(TRAINING_MANIFEST_PATH, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
 
 
 def save_manifest(manifest):
+    """
+    Saves/serializes the uploads manifest back to disk.
+
+    Args:
+        manifest (list): The list of upload metadata objects to serialize.
+    """
     with open(MANIFEST_PATH, "w") as f:
         json.dump(manifest, f, indent=2)
 
 
 @app.route("/")
 def index():
+    """
+    Renders the dashboard/homepage containing historical uploaded scans, sorted
+    reverse-chronologically.
+
+    Returns:
+        str: Rendered HTML template response.
+    """
     manifest = load_manifest()
     # Sort manifest reverse-chronologically (newest first)
     manifest_sorted = sorted(
@@ -78,6 +119,14 @@ def index():
 
 @app.route("/upload", methods=["POST"])
 def upload_file():
+    """
+    Handles user image uploads. Registers the image, generates directories,
+    invokes the processing pipeline asynchronously or synchronously, updates
+    the manifest database, and redirects the user to the results.
+
+    Returns:
+        Response: HTTP redirect to view results, or 400 Bad Request error string.
+    """
     if "file" not in request.files:
         return "No file part", 400
     file = request.files["file"]
@@ -121,6 +170,15 @@ def upload_file():
 
 @app.route("/view/<file_id>")
 def view_result(file_id):
+    """
+    Renders the detailed multi-algorithm output page for a single processed upload.
+
+    Args:
+        file_id (str): The unique identifier of the uploaded scan.
+
+    Returns:
+        str: Rendered HTML page or 404 error response.
+    """
     manifest = load_manifest()
     item = next((x for x in manifest if x["id"] == file_id), None)
     if not item:
@@ -130,6 +188,17 @@ def view_result(file_id):
 
 @app.route("/uploads/<file_id>/<filename>")
 def serve_upload_file(file_id, filename):
+    """
+    Serves static assets and processed files (including images and interactive hOCR documents)
+    from the uploads directories. Automatically injects hocr.js scripts to HTML files.
+
+    Args:
+        file_id (str): The unique identifier of the upload folder.
+        filename (str): The specific file name within that directory.
+
+    Returns:
+        Response: The file content response with correct headers, or 404 error.
+    """
     allowed_files = {
         "cleaned.png",
         "original.png",
@@ -175,11 +244,27 @@ def serve_upload_file(file_id, filename):
 
 @app.route("/training_data/<path:filename>")
 def serve_training_data(filename):
+    """
+    Serves raw static image line crops and training assets from the V2 training directory.
+
+    Args:
+        filename (str): Path of the file relative to training directory.
+
+    Returns:
+        Response: The requested static file.
+    """
     return send_from_directory(TRAINING_DIR, filename)
 
 
 @app.route("/training")
 def training_editor():
+    """
+    Renders the web-based interactive dataset annotator and classifier review dashboard.
+    Performs on-the-fly layout and text pattern classification for unlabeled elements.
+
+    Returns:
+        str: Rendered training UI editor.
+    """
     from scripts.classify_layout import analyze_text
     manifest = load_training_manifest()
     
@@ -212,6 +297,13 @@ def training_editor():
 
 @app.route("/training/update", methods=["POST"])
 def update_training_item():
+    """
+    Receives JSON POST updates modifying training line annotations or review states,
+    saving changes directly to the training manifest.
+
+    Returns:
+        dict: Success dictionary on completion, or error dictionary with 400/404 HTTP codes.
+    """
     data = request.json
     if not data or "id" not in data:
         return {"error": "Missing item ID"}, 400
