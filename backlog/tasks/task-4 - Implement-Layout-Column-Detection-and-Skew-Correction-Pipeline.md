@@ -1,11 +1,11 @@
 ---
 id: TASK-4
 title: Implement Layout Column Detection and Skew Correction Pipeline
-status: In Progress
+status: Done
 assignee:
   - '@agent'
 created_date: '2026-06-10 14:33'
-updated_date: '2026-06-11 22:31'
+updated_date: '2026-06-12 02:35'
 labels: []
 dependencies: []
 modified_files:
