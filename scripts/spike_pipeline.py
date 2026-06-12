@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+This module implements a minimal spike training pipeline. It reads labeled items
+from a manifest, performs simple geometric augmentation and Otsu binarization,
+generates ground truth and box files, compiles them to .lstmf via Tesseract,
+and writes out a `list.train` index file.
+"""
 import os
 import json
 import subprocess
@@ -6,6 +12,15 @@ import cv2
 import numpy as np
 
 def augment_image(image):
+    """
+    Applies simple test augmentations (rotation and Otsu binarization) to the image.
+    
+    Args:
+        image: OpenCV source image.
+        
+    Returns:
+        Grayscale binarized image.
+    """
     # Basic augmentation for spike: slight rotation and Otsu thresholding
     height, width = image.shape[:2]
     
@@ -22,6 +37,16 @@ def augment_image(image):
     return thresh
 
 def normalize_height(image, target_height=48):
+    """
+    Resizes the height of the image to the standard expected by Tesseract for LSTM training.
+    
+    Args:
+        image: Input OpenCV image.
+        target_height: Standard height in pixels (default: 48).
+        
+    Returns:
+        Height-normalized image.
+    """
     # Tesseract typically expects 48px height for LSTM training
     h, w = image.shape[:2]
     ratio = target_height / float(h)
@@ -30,6 +55,15 @@ def normalize_height(image, target_height=48):
     return resized
 
 def generate_box_file(box_path, text, width, height):
+    """
+    Generates a WordStr .box file mapping the ground truth text to the line image coordinates.
+    
+    Args:
+        box_path: Destination path of the .box file.
+        text: Ground truth transcription text.
+        width: Line image width.
+        height: Line image height.
+    """
     # WordStr box file format for Tesseract LSTM training
     with open(box_path, "w", encoding="utf-8") as f:
         # Tesseract expects WordStr format for line images
@@ -37,6 +71,11 @@ def generate_box_file(box_path, text, width, height):
         f.write(f"\t 0 0 {width} {height} 0\n")
 
 def main():
+    """
+    Main entry point of the minimal pipeline. Iterates over labeled manifest items,
+    saves the ground truth text and WordStr coordinates, runs Tesseract training files
+    compilations, and writes out the file compilation registry `list.train`.
+    """
     manifest_path = "training_data_v2/manifest.json"
     output_dir = "dataset/train"
     os.makedirs(output_dir, exist_ok=True)

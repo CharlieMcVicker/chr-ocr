@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+"""
+This module performs diagnostics on the layout column detection algorithm.
+It extracts column blocks, clusters them based on x-coordinate tolerance,
+and generates a scatter plot of xmin vs xmax to analyze layout grouping.
+"""
 import argparse
 import sys
 import os
@@ -9,6 +14,10 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 from server.layout import extract_columns
 
 def main():
+    """
+    Main function to parse arguments, run column detection on an input image,
+    apply the fuzzy column-grouping logic, and plot xmin vs xmax using matplotlib.
+    """
     parser = argparse.ArgumentParser(description="Diagnose column bbox grouping by scatter plotting xmin vs xmax.")
     parser.add_argument("image_path", help="Path to the input image file")
     args = parser.parse_args()

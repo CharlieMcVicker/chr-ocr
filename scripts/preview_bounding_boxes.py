@@ -1,4 +1,10 @@
 #!/usr/bin/env python
+"""
+This module previews and visualizes bounding boxes of text columns.
+It uses Surya layout predictions, groups text blocks fuzzily into vertical column groups,
+applies quality filtering (minimum block counts and column height thresholds), and saves
+the visual bounding box overlays to disk.
+"""
 import os
 import sys
 import argparse
@@ -10,6 +16,11 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 from server.layout import get_layout_predictor
 
 def main():
+    """
+    Main command-line entry point. Extracts columns for one or more scan paths,
+    applies the fuzzy layout grouping and filtering, and outputs annotated overlay images
+    if --overlay is requested.
+    """
     parser = argparse.ArgumentParser(description="Preview bounding boxes of columns.")
     parser.add_argument("scans", nargs='+', help="Paths to sample scan images.")
     parser.add_argument("--overlay", action="store_true", help="Overlay valid column bounding boxes on the image and save to disk.")

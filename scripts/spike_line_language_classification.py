@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+This module implements a spike/experiment for line-by-line language classification.
+It extracts text lines from raw scans, performs OCR using several Tesseract configurations
+(chr+eng, chr, and eng models), analyzes character distributions, and generates
+a comparative HTML report to determine the best model strategy.
+"""
 import argparse
 import sys
 import os
@@ -17,6 +23,16 @@ from server.process_file import ocr_image_to_text
 from scripts.classify_layout import analyze_text
 
 def analyze_ocr_result(text):
+    """
+    Wrapper function to compute character counts, total counts, and language
+    classification metrics for OCR text.
+    
+    Args:
+        text: OCR output string.
+        
+    Returns:
+        Dict containing counts, classification, and stripped text.
+    """
     """Reuse existing analyze_text but return basic metrics"""
     analysis = analyze_text(text)
     return {
@@ -28,6 +44,11 @@ def analyze_ocr_result(text):
     }
 
 def main():
+    """
+    Main command-line entry point to load a scan image, extract layouts, filter
+    mixed-language columns, OCR lines across different configurations, and save
+    visual crops and HTML comparison matrices.
+    """
     parser = argparse.ArgumentParser(
         description="Spike: Extract lines and compare OCR language models to classify line language."
     )
