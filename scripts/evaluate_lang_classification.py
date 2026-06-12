@@ -1,3 +1,8 @@
+"""
+This module evaluates the accuracy of Cherokee vs. English line language classification.
+It processes folders of Cherokee and English line crops, runs OCR in parallel, and
+performs a grid search over decision thresholds to find parameters that optimize accuracy.
+"""
 import os
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
@@ -6,13 +11,40 @@ import tempfile
 import numpy as np
 
 def is_cherokee_char(c: str) -> bool:
+    """
+    Checks if a character is in the Cherokee or Cherokee Supplement Unicode blocks.
+    
+    Args:
+        c: A single-character string.
+        
+    Returns:
+        True if the character is Cherokee, False otherwise.
+    """
     o = ord(c)
     return (0x13A0 <= o <= 0x13FF) or (0xAB70 <= o <= 0xABBF)
 
 def is_latin_char(c: str) -> bool:
+    """
+    Checks if a character is a Latin letter.
+    
+    Args:
+        c: A single-character string.
+        
+    Returns:
+        True if the character is a Latin letter, False otherwise.
+    """
     return c.isascii() and c.isalpha()
 
 def run_ocr(image_path):
+    """
+    Runs Tesseract OCR in single-line mode on the specified image file and returns text.
+    
+    Args:
+        image_path: Path to the image file to run OCR on.
+        
+    Returns:
+        Stripped OCR output string.
+    """
     try:
         result = subprocess.run(
             ["tesseract", "--psm", "7", "--dpi", "300", "-l", "chr+eng", image_path, "stdout"],
@@ -26,6 +58,16 @@ def run_ocr(image_path):
         return ""
 
 def process_image(image_path, true_label):
+    """
+    Processes a single image file by running OCR and returning language classification stats.
+    
+    Args:
+        image_path: Path to the image file.
+        true_label: Ground truth label ("Cherokee" or "English").
+        
+    Returns:
+        Dict of results containing path, true_label, counts, and proportions.
+    """
     text = run_ocr(image_path)
     cherokee_count = 0
     latin_count = 0
@@ -49,6 +91,10 @@ def process_image(image_path, true_label):
     }
 
 def main():
+    """
+    Main evaluation entry point. Finds test images, executes thread-pooled OCR processes,
+    optimizes thresholds via grid-search, and produces a confusion matrix report.
+    """
     chr_dir = "chr_lines"
     eng_dir = "eng_lines"
     

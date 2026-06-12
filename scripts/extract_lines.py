@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+"""
+This module extracts and crops individual text lines from detected columns
+of a Cherokee Phoenix newspaper scan image using Surya for line-level layout detection.
+It saves cropped line images and generates a detailed HTML visualization report.
+"""
 import argparse
 import sys
 import os
@@ -14,6 +19,11 @@ from surya.detection import DetectionPredictor
 from server.line_utils import crop_pad_normalize_line
 
 def main():
+    """
+    Main function to parse command-line arguments, crop columns from the raw page scan,
+    run line-level detection within each column using Surya, normalize line dimensions,
+    and output files as well as an HTML inspection report.
+    """
     parser = argparse.ArgumentParser(
         description="Extract and crop text lines from a Cherokee Phoenix scan."
     )

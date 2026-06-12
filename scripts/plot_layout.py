@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+"""
+This module runs layout column detection on page scans and visualizes the results.
+It groups detected bounding boxes fuzzily by x-coordinates, applies crop, padding, and
+skew correction, saves files organized into directories, and generates scatter plots.
+"""
 import argparse
 import sys
 from PIL import Image
@@ -12,6 +17,11 @@ from server.layout import detect_and_fix_skew, extract_columns, crop_pad_skew_co
 
 
 def main():
+    """
+    Main command-line entry point. Performs layout box extraction and fuzzy clustering,
+    saves the unmerged text blocks and merged column slices as cropped PNG files,
+    and plots coordinate distributions.
+    """
     parser = argparse.ArgumentParser(description="Run layout detection and plot bounding box x coordinates.")
     parser.add_argument("image_path", help="Path to the input image file")
     args = parser.parse_args()

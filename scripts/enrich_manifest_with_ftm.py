@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+This module enriches the existing `manifest_w_lang.json` manifest with OCR transcriptions
+and word-level confidence scores produced by the best fine-tuned Cherokee Tesseract LSTM model.
+It gathers performance statistics to identify low-confidence predictions for targeted review.
+"""
 import os
 import sys
 import json
@@ -6,6 +11,11 @@ from PIL import Image
 import pytesseract
 
 def main():
+    """
+    Main entry point to read the manifest, execute PyTesseract OCR on each image
+    using the fine-tuned traineddata, compute mean confidence, write progress,
+    and generate summary statistics and a low-confidence list.
+    """
     base_dir = "training_data_v2"
     manifest_path = os.path.join(base_dir, "manifest_w_lang.json")
     

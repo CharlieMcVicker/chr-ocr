@@ -1,3 +1,8 @@
+"""
+This module filters the training manifest to clean and retain high-quality dataset entries.
+It processes entries in parallel, performs Tesseract OCR on unlabeled samples, classifies
+their language content, and filters out short or low-quality transcriptions.
+"""
 import os
 import sys
 import json
@@ -10,13 +15,40 @@ from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 def is_cherokee_char(c: str) -> bool:
+    """
+    Checks if a character belongs to the Cherokee Unicode ranges.
+    
+    Args:
+        c: A single-character string.
+        
+    Returns:
+        True if Cherokee, False otherwise.
+    """
     o = ord(c)
     return (0x13A0 <= o <= 0x13FF) or (0xAB70 <= o <= 0xABBF)
 
 def is_latin_char(c: str) -> bool:
+    """
+    Checks if a character is a Latin letter.
+    
+    Args:
+        c: A single-character string.
+        
+    Returns:
+        True if a Latin letter, False otherwise.
+    """
     return c.isascii() and c.isalpha()
 
 def analyze_text(text: str) -> dict:
+    """
+    Analyzes counts of Cherokee vs Latin characters to categorize text segment language.
+    
+    Args:
+        text: OCR text.
+        
+    Returns:
+        Dict detailing character counts, total counts, and classification.
+    """
     cherokee_count = 0
     latin_count = 0
     for c in text:
@@ -45,6 +77,15 @@ def analyze_text(text: str) -> dict:
     }
 
 def run_ocr(image_path):
+    """
+    Performs OCR in single-line mode on the given image after converting it via temporary PNG.
+    
+    Args:
+        image_path: Path to the image file.
+        
+    Returns:
+        Stripped OCR output string.
+    """
     with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
         temp_img_path = tmp.name
     try:
@@ -68,6 +109,17 @@ def run_ocr(image_path):
                 pass
 
 def process_item(item_id, item):
+    """
+    Filters and enriches a single manifest item based on label status, path validity,
+    and text classification criteria.
+    
+    Args:
+        item_id: Key of the item.
+        item: Dict value of the item.
+        
+    Returns:
+        Tuple of (item_id, updated_item_or_None, category_reason).
+    """
     if item.get("status") != "unlabeled":
         return item_id, item, "keep_labeled"
     
@@ -94,6 +146,10 @@ def process_item(item_id, item):
         return item_id, None, "skip_failed_classification"
 
 def main():
+    """
+    Main entry point to back up the manifest, run parallelized filtering of items
+    using ThreadPoolExecutor, display processing statistics, and overwrite the JSON file.
+    """
     manifest_path = "training_data/manifest.json"
     backup_path = "training_data/manifest.json.bak"
     

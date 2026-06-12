@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+This module processes all page scan files in a folder recursively,
+extracts layout columns, runs Tesseract OCR to classify layout blocks,
+and saves the cropped, skew-corrected slices categorized under Cherokee,
+English, or Other directories.
+"""
 import os
 import sys
 import argparse
@@ -12,6 +18,15 @@ from server.process_file import ocr_image_to_text
 from scripts.classify_layout import analyze_text
 
 def find_scans(base_dir):
+    """
+    Searches recursively under a directory for supported page scans.
+    
+    Args:
+        base_dir: Root directory path to search.
+        
+    Returns:
+        Sorted list of scan image paths.
+    """
     supported = (".jp2", ".png", ".jpg", ".jpeg", ".tiff", ".bmp")
     scan_files = []
     for root, _, files in os.walk(base_dir):
@@ -21,6 +36,16 @@ def find_scans(base_dir):
     return sorted(scan_files)
 
 def process_scans(input_dir, output_dir, margin=20, skip_existing=True):
+    """
+    Processes all found scan files: extracts columns, crop/skew-corrects them,
+    classifies their language, and saves the categorized column crops.
+    
+    Args:
+        input_dir: Source scans directory.
+        output_dir: Destination results directory.
+        margin: Crop padding margin.
+        skip_existing: Boolean to skip already-cropped slices.
+    """
     scans = find_scans(input_dir)
     print(f"Found {len(scans)} scan images in '{input_dir}' recursively.")
     

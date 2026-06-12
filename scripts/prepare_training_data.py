@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+This module automates the end-to-end extraction of Cherokee text line crops from raw scans
+to assemble a clean dataset for training. It parses newspaper page files, runs layout
+detection to locate text columns, filters columns containing Cherokee language, uses Surya
+for line segmentation, generates initial Tesseract transcriptions, and maintains a JSON manifest.
+"""
 import os
 import sys
 import argparse
@@ -16,6 +22,16 @@ from surya.inference import SuryaInferenceManager
 from server.line_utils import crop_pad_normalize_line
 
 def find_scans(base_dir):
+    """
+    Recursively crawls a base directory to locate scan image files of supported types,
+    excluding overlay debug files.
+    
+    Args:
+        base_dir: Root directory path.
+        
+    Returns:
+        Sorted list of scan image file paths.
+    """
     supported = (".jp2", ".png", ".jpg", ".jpeg", ".tiff", ".bmp")
     scan_files = []
     for root, _, files in os.walk(base_dir):
@@ -27,6 +43,11 @@ def find_scans(base_dir):
     return sorted(scan_files)
 
 def main():
+    """
+    Main entry point for training data extraction. Loads configuration, processes unprocessed scans,
+    extracts columns and lines, generates initial Cherokee OCR transcriptions, saves cropped image assets,
+    and updates the master manifest.json on disk.
+    """
     parser = argparse.ArgumentParser(
         description="Extract Cherokee text lines from scans to prepare training dataset."
     )
