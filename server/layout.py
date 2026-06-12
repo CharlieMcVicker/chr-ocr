@@ -1,3 +1,16 @@
+"""
+Module for layout analysis, skew correction, image loading, contrast enhancement,
+and text column extraction using Surya layout detection models.
+
+This module provides tools for:
+- Grayscale image loading and standardization.
+- Stain cleaning (background illumination correction).
+- Adaptive binarization.
+- Parameter optimization searching for stain cleaning.
+- Document skew angle detection and correction.
+- Multi-column document layout analysis and text column cropping.
+"""
+
 import cv2
 import numpy as np
 from PIL import Image
@@ -11,6 +24,17 @@ def load_image_grayscale(image_input) -> np.ndarray:
     """
     Utility to load image from a file path, a PIL Image, or a numpy array
     and convert it to a grayscale numpy array (2D uint8).
+
+    Args:
+        image_input (str | PIL.Image.Image | np.ndarray): Input image, which can
+            be a file path string, a PIL Image instance, or a numpy array.
+
+    Returns:
+        np.ndarray: Grayscale image as a 2D numpy array (uint8).
+
+    Raises:
+        FileNotFoundError: If a file path is provided but cannot be loaded.
+        TypeError: If the input type is unsupported.
     """
     if isinstance(image_input, str):
         img = cv2.imread(image_input, cv2.IMREAD_GRAYSCALE)
@@ -42,13 +66,13 @@ def apply_stain_cleaning(
     using morphological closing to estimate and cancel background illumination.
     
     Args:
-        image_input: File path, PIL.Image, or numpy array.
-        morph_kernel_size: Size of the morph kernel (must be odd).
-        gaussian_blur_ksize: Size of Gaussian blur kernel (odd, or 0 to skip).
-        clahe_clip_limit: Clip limit for CLAHE contrast enhancement.
+        image_input (str | PIL.Image.Image | np.ndarray): File path, PIL.Image, or numpy array.
+        morph_kernel_size (int): Size of the morph kernel (must be odd).
+        gaussian_blur_ksize (int): Size of Gaussian blur kernel (odd, or 0 to skip).
+        clahe_clip_limit (float): Clip limit for CLAHE contrast enhancement.
         
     Returns:
-        A cleaned grayscale numpy array (uint8).
+        np.ndarray: A cleaned grayscale numpy array (uint8).
     """
     img = load_image_grayscale(image_input)
 
@@ -84,13 +108,13 @@ def apply_adaptive_threshold(
     Applies adaptive thresholding (Gaussian C) and morphological opening cleanup.
     
     Args:
-        image_input: File path, PIL.Image, or numpy array.
-        block_size: Size of a pixel neighborhood (must be odd).
-        c_value: Constant subtracted from the mean.
-        morph_kernel_size: Size of the structuring element for morphological opening.
+        image_input (str | PIL.Image.Image | np.ndarray): File path, PIL.Image, or numpy array.
+        block_size (int): Size of a pixel neighborhood (must be odd).
+        c_value (float): Constant subtracted from the mean.
+        morph_kernel_size (int): Size of the structuring element for morphological opening.
         
     Returns:
-        A binary numpy array (0 and 255) of the same size.
+        np.ndarray: A binary numpy array (0 and 255) of the same size.
     """
     img = load_image_grayscale(image_input)
 
@@ -118,8 +142,14 @@ def run_stain_cleaning_search(
     """
     Runs a grid search over stain cleaning parameter spaces.
     
+    Args:
+        image_input (str | PIL.Image.Image | np.ndarray): The input image to analyze.
+        morph_kernel_sizes (list, optional): List of odd integers for morphological closing.
+        gaussian_blur_ksizes (list, optional): List of integers for Gaussian blurring.
+        clahe_clip_limits (list, optional): List of floats for CLAHE contrast clipping.
+
     Returns:
-        A list of dicts: [{"image": np.ndarray, "params": dict}, ...]
+        list: A list of dicts: [{"image": np.ndarray, "params": dict}, ...]
     """
     if morph_kernel_sizes is None:
         morph_kernel_sizes = [51, 101, 151]
@@ -151,6 +181,16 @@ def run_stain_cleaning_search(
 def detect_and_fix_skew(pil_img: Image.Image) -> Image.Image:
     """
     Detects document skew angle and rotates it back to straight.
+
+    This function analyzes the image projection profile variance across a range
+    of rotation angles. The angle that maximizes variance in horizontal row sums
+    is selected as the skew angle, aligning horizontal lines of text.
+
+    Args:
+        pil_img (PIL.Image.Image): The input PIL Image to analyze.
+
+    Returns:
+        PIL.Image.Image: The rotated/straightened PIL Image.
     """
     # Convert PIL Image to a grayscale numpy array for analysis
     img_gray = np.array(pil_img.convert("L"))
@@ -195,6 +235,15 @@ def crop_pad_skew_correct(pil_img: Image.Image, bbox: list, margin_x: int, margi
     """
     Takes a PIL image and a bounding box [xmin, ymin, xmax, ymax],
     applies margins, crops the region, and applies skew correction.
+
+    Args:
+        pil_img (PIL.Image.Image): The input source image.
+        bbox (list): Bounding box coordinates [xmin, ymin, xmax, ymax].
+        margin_x (int): Horizontal padding/margin to add to the crop.
+        margin_y (int): Vertical padding/margin to add to the crop.
+
+    Returns:
+        PIL.Image.Image: The cropped, padded, and straightened region.
     """
     width, height = pil_img.size
     xmin, ymin, xmax, ymax = bbox
@@ -216,6 +265,15 @@ def crop_pad_skew_correct(pil_img: Image.Image, bbox: list, margin_x: int, margi
 _layout_predictor = None
 
 def get_layout_predictor():
+    """
+    Retrieves or initializes a singleton instance of the Surya LayoutPredictor.
+
+    This function caches the LayoutPredictor using a global variable to avoid
+    re-initializing and loading heavy models on subsequent calls.
+
+    Returns:
+        surya.layout.LayoutPredictor: The initialized layout predictor instance.
+    """
     global _layout_predictor
     if _layout_predictor is None:
         print("Initializing Surya layout models...")
@@ -229,9 +287,12 @@ def extract_columns(pil_img: Image.Image) -> list:
     Runs Surya layout detection on the image, groups the blocks fuzzily into columns,
     filters out noise, and crops/returns the combined text/list columns.
     
+    Args:
+        pil_img (PIL.Image.Image): The input PIL Image to perform column extraction on.
+
     Returns:
-        A list of dicts containing the cropped PIL.Image and its bounding box details:
-        [{"image": PIL.Image, "bbox": [xmin, ymin, xmax, ymax], "label": str}, ...]
+        list: A list of dicts containing the cropped PIL.Image and its bounding box details:
+            [{"image": PIL.Image, "bbox": [xmin, ymin, xmax, ymax], "label": str}, ...]
     """
     layout_predictor = get_layout_predictor()
 
