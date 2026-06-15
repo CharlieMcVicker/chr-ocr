@@ -13,6 +13,7 @@ import tempfile
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from scripts.classify_layout import classify_line_image
 
 def is_cherokee_char(c: str) -> bool:
     """
@@ -133,17 +134,20 @@ def process_item(item_id, item):
     if not os.path.exists(image_path):
         return item_id, None, "missing_file"
     
+    try:
+        img = Image.open(image_path).convert("RGB")
+        classification = classify_line_image(img)
+    except Exception as e:
+        print(f"Error classifying {image_path}: {e}")
+        return item_id, None, "error_reading_image"
+        
+    if classification in ["English", "Empty"]:
+        return item_id, None, f"skip_{classification.lower()}"
+        
     new_text = run_ocr(image_path)
-    analysis = analyze_text(new_text)
-    
-    # If the new read has > 10 characters and is Cherokee, English, or Mixed
-    if analysis["total"] > 10 and analysis["classification"] in ["Cherokee", "English", "Mixed"]:
-        # Update manifest item with new OCR
-        updated_item = item.copy()
-        updated_item["initial_ocr"] = new_text
-        return item_id, updated_item, f"keep_matched_{analysis['classification'].lower()}"
-    else:
-        return item_id, None, "skip_failed_classification"
+    updated_item = item.copy()
+    updated_item["initial_ocr"] = new_text
+    return item_id, updated_item, f"keep_matched_{classification.lower()}"
 
 def main():
     """
