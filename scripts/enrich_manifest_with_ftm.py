@@ -7,6 +7,7 @@ It gathers performance statistics to identify low-confidence predictions for tar
 import os
 import sys
 import json
+import argparse
 from PIL import Image
 import pytesseract
 
@@ -16,6 +17,14 @@ def main():
     using the fine-tuned traineddata, compute mean confidence, write progress,
     and generate summary statistics and a low-confidence list.
     """
+    parser = argparse.ArgumentParser(description="Enrich manifest with FTM predictions")
+    parser.add_argument(
+        "--force", 
+        action="store_true", 
+        help="Force regeneration of all predictions even if they already exist"
+    )
+    args = parser.parse_args()
+
     base_dir = "training_data_v2"
     manifest_path = os.path.join(base_dir, "manifest_w_lang.json")
     
@@ -46,7 +55,7 @@ def main():
     save_interval = 100
     
     for idx, (key, item) in enumerate(manifest.items()):
-        if 'ftm_ocr' in item and 'ftm_confidence' in item:
+        if not args.force and 'ftm_ocr' in item and 'ftm_confidence' in item:
             skipped += 1
             continue
             
