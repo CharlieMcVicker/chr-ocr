@@ -1,10 +1,10 @@
 ---
 id: TASK-2
 title: Implement Line-Height Normalization to Improve Tesseract OCR Accuracy
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-10 14:31'
-updated_date: '2026-06-10 15:19'
+updated_date: '2026-06-15 17:40'
 labels: []
 dependencies: []
 ordinal: 2000

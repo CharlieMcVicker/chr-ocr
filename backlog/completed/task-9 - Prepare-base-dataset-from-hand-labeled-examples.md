@@ -1,10 +1,10 @@
 ---
 id: TASK-9
 title: Prepare base dataset from hand-labeled examples
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-10 19:06'
-updated_date: '2026-06-10 19:09'
+updated_date: '2026-06-15 17:40'
 labels: []
 dependencies: []
 ordinal: 9000

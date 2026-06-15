@@ -1,10 +1,10 @@
 ---
 id: TASK-11
 title: Format dataset for Tesseract training
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-10 19:06'
-updated_date: '2026-06-10 19:12'
+updated_date: '2026-06-15 17:40'
 labels: []
 dependencies: []
 ordinal: 11000

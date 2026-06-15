@@ -1,10 +1,10 @@
 ---
 id: TASK-12
 title: Setup and run Tesseract fine-tuning pipeline
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-10 19:06'
-updated_date: '2026-06-10 19:14'
+updated_date: '2026-06-15 17:40'
 labels: []
 dependencies: []
 ordinal: 12000
