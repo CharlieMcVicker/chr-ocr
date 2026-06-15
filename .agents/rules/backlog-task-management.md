@@ -65,6 +65,7 @@ remains fully synchronized and up-to-date.
 - Files are named: `task-<id> - <title>.md` (e.g., `task-42 - Add GraphQL resolver.md`)
 - Project documentation is in **`backlog/docs/`**
   - You can read a doc by name using `find backlog/docs -name '*<DOC_NAME>*' -exec cat {} \;`
+  - Do NOT use "backlog doc view <id>" this is an interactive TUI. It will not produce the text for you.
 - Project decisions are in **`backlog/decisions/`**
 
 ### 🔧 **ACTING** (How to change things)

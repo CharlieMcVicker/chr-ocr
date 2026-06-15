@@ -36,7 +36,7 @@ Use `ember find <query> <directory?> -k <num_results>` to search the codebase.
 - For searching for exact names or definitions, grep is a fine solution. Ember is for finding functionality you don't know the name of.
 - _Note:_ Non-code assets (like documentation, decisions, or tasks) may still use other search tools (e.g., `backlog search`).
 - Use `-k <max-results>` to limit the number of results. Default is 20, but attempt with 5 or 10 first, to reduce the amount of junk you have to read.
-- for piping to other processes, you may use --json flag. this adds to much bloat for normal text-based processing though.
+- for piping to other processes, you may use --json flag. this adds to much bloat for normal text-based processing though. Do not use --json if you plan on reading the output directly.
 
 ```bash
 # Example search (noun-oriented)
