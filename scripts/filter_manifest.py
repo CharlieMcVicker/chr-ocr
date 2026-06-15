@@ -12,6 +12,8 @@ from PIL import Image
 import tempfile
 from concurrent.futures import ThreadPoolExecutor
 
+import argparse
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from scripts.classify_layout import classify_line_image
 
@@ -109,7 +111,7 @@ def run_ocr(image_path):
             except Exception:
                 pass
 
-def process_item(item_id, item):
+def process_item(item_id, item, image_dir):
     """
     Filters and enriches a single manifest item based on label status, path validity,
     and text classification criteria.
@@ -117,6 +119,7 @@ def process_item(item_id, item):
     Args:
         item_id: Key of the item.
         item: Dict value of the item.
+        image_dir: Path to directory containing images.
         
     Returns:
         Tuple of (item_id, updated_item_or_None, category_reason).
@@ -130,7 +133,7 @@ def process_item(item_id, item):
         return item_id, None, "skip_short_initial"
     
     # Run OCR with chr+eng
-    image_path = os.path.join("training_data", item["image_path"])
+    image_path = os.path.join(image_dir, item["image_path"])
     if not os.path.exists(image_path):
         return item_id, None, "missing_file"
     
@@ -154,10 +157,16 @@ def main():
     Main entry point to back up the manifest, run parallelized filtering of items
     using ThreadPoolExecutor, display processing statistics, and overwrite the JSON file.
     """
-    manifest_path = "training_data/manifest.json"
-    backup_path = "training_data/manifest.json.bak"
+    parser = argparse.ArgumentParser(description="Filter manifest items based on OCR/classification.")
+    parser.add_argument("--manifest", default="training_data/manifest.json", help="Path to manifest file")
+    parser.add_argument("--image-dir", default="training_data", help="Directory where image files are located")
+    args = parser.parse_args()
+
+    manifest_path = args.manifest
+    image_dir = args.image_dir
+    backup_path = manifest_path + ".bak"
     
-    print("Creating backup of manifest.json...")
+    print(f"Creating backup of {manifest_path}...")
     shutil.copyfile(manifest_path, backup_path)
     
     with open(manifest_path, "r", encoding="utf-8") as f:
@@ -173,7 +182,7 @@ def main():
     
     print("Processing items using ThreadPoolExecutor...")
     with ThreadPoolExecutor(max_workers=10) as executor:
-        results = executor.map(lambda pair: process_item(pair[0], pair[1]), items_to_process)
+        results = executor.map(lambda pair: process_item(pair[0], pair[1], image_dir), items_to_process)
         
         for item_id, updated_item, category in results:
             stats[category] = stats.get(category, 0) + 1
