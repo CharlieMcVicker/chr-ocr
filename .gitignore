@@ -10,6 +10,7 @@ scans
 training_data*.log
 *_backup.json
 training_data*/line_crops/
+training_data*/*output/
 
 .DS_Store
 dataset/
