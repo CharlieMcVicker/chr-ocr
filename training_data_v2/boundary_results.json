@@ -1,0 +1,662 @@
+[
+  {
+    "id": "run_8_zero_noise",
+    "epochs": 4,
+    "variations": 3,
+    "iterations": 200,
+    "error_rate": 0.0,
+    "avg_BCER": 24.606699999999993,
+    "avg_BWER": 51.126833333333344,
+    "checkpoint": "training_data_v2/staged_tuning/run_8_zero_noise_output/chr_38.790_678_700.checkpoint",
+    "algo_details": {
+      "base": {
+        "BCER": 20.793,
+        "BWER": 45.495
+      },
+      "otsu": {
+        "BCER": 19.4,
+        "BWER": 42.418
+      },
+      "sauvola_w15_k0.1": {
+        "BCER": 23.112,
+        "BWER": 50.372
+      },
+      "sauvola_w15_k0.2": {
+        "BCER": 30.231,
+        "BWER": 57.912
+      },
+      "sauvola_w15_k0.3": {
+        "BCER": 38.5,
+        "BWER": 60.11
+      },
+      "sauvola_w25_k0.1": {
+        "BCER": 24.896,
+        "BWER": 54.518
+      },
+      "sauvola_w25_k0.2": {
+        "BCER": 28.627,
+        "BWER": 51.136
+      },
+      "sauvola_w25_k0.3": {
+        "BCER": 36.487,
+        "BWER": 57.546
+      },
+      "sauvola_w35_k0.1": {
+        "BCER": 20.354,
+        "BWER": 48.004
+      },
+      "sauvola_w35_k0.2": {
+        "BCER": 26.486,
+        "BWER": 50.501
+      },
+      "sauvola_w35_k0.3": {
+        "BCER": 37.235,
+        "BWER": 59.426
+      },
+      "sauvola_w45_k0.1": {
+        "BCER": 19.64,
+        "BWER": 48.834
+      },
+      "sauvola_w45_k0.2": {
+        "BCER": 26.003,
+        "BWER": 48.62
+      },
+      "sauvola_w45_k0.3": {
+        "BCER": 36.322,
+        "BWER": 57.314
+      },
+      "su_w15": {
+        "BCER": 21.061,
+        "BWER": 43.419
+      },
+      "su_w25": {
+        "BCER": 22.842,
+        "BWER": 45.427
+      },
+      "su_w35": {
+        "BCER": 21.636,
+        "BWER": 45.812
+      },
+      "su_w45": {
+        "BCER": 22.229,
+        "BWER": 47.265
+      },
+      "wolf_w15_k0.1": {
+        "BCER": 24.989,
+        "BWER": 55.33
+      },
+      "wolf_w15_k0.2": {
+        "BCER": 21.043,
+        "BWER": 49.341
+      },
+      "wolf_w15_k0.3": {
+        "BCER": 21.684,
+        "BWER": 47.399
+      },
+      "wolf_w25_k0.1": {
+        "BCER": 23.963,
+        "BWER": 60.586
+      },
+      "wolf_w25_k0.2": {
+        "BCER": 21.114,
+        "BWER": 52.247
+      },
+      "wolf_w25_k0.3": {
+        "BCER": 19.463,
+        "BWER": 48.462
+      },
+      "wolf_w35_k0.1": {
+        "BCER": 23.913,
+        "BWER": 54.261
+      },
+      "wolf_w35_k0.2": {
+        "BCER": 22.063,
+        "BWER": 52.039
+      },
+      "wolf_w35_k0.3": {
+        "BCER": 19.226,
+        "BWER": 47.509
+      },
+      "wolf_w45_k0.1": {
+        "BCER": 22.126,
+        "BWER": 52.527
+      },
+      "wolf_w45_k0.2": {
+        "BCER": 22.497,
+        "BWER": 51.227
+      },
+      "wolf_w45_k0.3": {
+        "BCER": 20.266,
+        "BWER": 48.748
+      }
+    }
+  },
+  {
+    "id": "run_9_epochs_6",
+    "epochs": 6,
+    "variations": 3,
+    "iterations": 200,
+    "error_rate": 0.05,
+    "avg_BCER": 21.2388,
+    "avg_BWER": 44.990433333333335,
+    "checkpoint": "training_data_v2/staged_tuning/run_9_epochs_6_output/chr_32.236_1153_1200.checkpoint",
+    "algo_details": {
+      "base": {
+        "BCER": 17.781,
+        "BWER": 38.913
+      },
+      "otsu": {
+        "BCER": 16.567,
+        "BWER": 38.23
+      },
+      "sauvola_w15_k0.1": {
+        "BCER": 21.78,
+        "BWER": 46.288
+      },
+      "sauvola_w15_k0.2": {
+        "BCER": 27.242,
+        "BWER": 51.99
+      },
+      "sauvola_w15_k0.3": {
+        "BCER": 35.786,
+        "BWER": 57.247
+      },
+      "sauvola_w25_k0.1": {
+        "BCER": 20.442,
+        "BWER": 46.117
+      },
+      "sauvola_w25_k0.2": {
+        "BCER": 25.002,
+        "BWER": 45.665
+      },
+      "sauvola_w25_k0.3": {
+        "BCER": 32.82,
+        "BWER": 52.503
+      },
+      "sauvola_w35_k0.1": {
+        "BCER": 16.561,
+        "BWER": 39.17
+      },
+      "sauvola_w35_k0.2": {
+        "BCER": 22.32,
+        "BWER": 45.153
+      },
+      "sauvola_w35_k0.3": {
+        "BCER": 33.22,
+        "BWER": 52.93
+      },
+      "sauvola_w45_k0.1": {
+        "BCER": 15.377,
+        "BWER": 41.007
+      },
+      "sauvola_w45_k0.2": {
+        "BCER": 22.043,
+        "BWER": 41.074
+      },
+      "sauvola_w45_k0.3": {
+        "BCER": 33.419,
+        "BWER": 53.187
+      },
+      "su_w15": {
+        "BCER": 18.922,
+        "BWER": 39.426
+      },
+      "su_w25": {
+        "BCER": 19.177,
+        "BWER": 40.171
+      },
+      "su_w35": {
+        "BCER": 17.626,
+        "BWER": 39.573
+      },
+      "su_w45": {
+        "BCER": 18.009,
+        "BWER": 41.795
+      },
+      "wolf_w15_k0.1": {
+        "BCER": 20.871,
+        "BWER": 45.263
+      },
+      "wolf_w15_k0.2": {
+        "BCER": 18.25,
+        "BWER": 44.298
+      },
+      "wolf_w15_k0.3": {
+        "BCER": 18.917,
+        "BWER": 44.341
+      },
+      "wolf_w25_k0.1": {
+        "BCER": 20.39,
+        "BWER": 50.562
+      },
+      "wolf_w25_k0.2": {
+        "BCER": 18.083,
+        "BWER": 46.068
+      },
+      "wolf_w25_k0.3": {
+        "BCER": 16.979,
+        "BWER": 41.477
+      },
+      "wolf_w35_k0.1": {
+        "BCER": 19.458,
+        "BWER": 46.545
+      },
+      "wolf_w35_k0.2": {
+        "BCER": 18.761,
+        "BWER": 46.777
+      },
+      "wolf_w35_k0.3": {
+        "BCER": 17.161,
+        "BWER": 41.648
+      },
+      "wolf_w45_k0.1": {
+        "BCER": 19.029,
+        "BWER": 43.272
+      },
+      "wolf_w45_k0.2": {
+        "BCER": 18.447,
+        "BWER": 46.819
+      },
+      "wolf_w45_k0.3": {
+        "BCER": 16.724,
+        "BWER": 42.204
+      }
+    }
+  },
+  {
+    "id": "run_10_epochs_8",
+    "epochs": 8,
+    "variations": 3,
+    "iterations": 200,
+    "error_rate": 0.05,
+    "avg_BCER": 19.59806666666667,
+    "avg_BWER": 42.39266666666666,
+    "checkpoint": "training_data_v2/staged_tuning/run_10_epochs_8_output/chr_29.030_1522_1600.checkpoint",
+    "algo_details": {
+      "base": {
+        "BCER": 16.346,
+        "BWER": 37.546
+      },
+      "otsu": {
+        "BCER": 16.144,
+        "BWER": 38.571
+      },
+      "sauvola_w15_k0.1": {
+        "BCER": 17.892,
+        "BWER": 44.792
+      },
+      "sauvola_w15_k0.2": {
+        "BCER": 23.78,
+        "BWER": 49.17
+      },
+      "sauvola_w15_k0.3": {
+        "BCER": 32.792,
+        "BWER": 55.067
+      },
+      "sauvola_w25_k0.1": {
+        "BCER": 18.596,
+        "BWER": 42.784
+      },
+      "sauvola_w25_k0.2": {
+        "BCER": 23.761,
+        "BWER": 44.212
+      },
+      "sauvola_w25_k0.3": {
+        "BCER": 31.219,
+        "BWER": 52.503
+      },
+      "sauvola_w35_k0.1": {
+        "BCER": 15.105,
+        "BWER": 37.888
+      },
+      "sauvola_w35_k0.2": {
+        "BCER": 20.293,
+        "BWER": 41.563
+      },
+      "sauvola_w35_k0.3": {
+        "BCER": 31.35,
+        "BWER": 54.64
+      },
+      "sauvola_w45_k0.1": {
+        "BCER": 14.288,
+        "BWER": 38.101
+      },
+      "sauvola_w45_k0.2": {
+        "BCER": 21.044,
+        "BWER": 39.768
+      },
+      "sauvola_w45_k0.3": {
+        "BCER": 31.173,
+        "BWER": 52.93
+      },
+      "su_w15": {
+        "BCER": 18.584,
+        "BWER": 36.947
+      },
+      "su_w25": {
+        "BCER": 18.351,
+        "BWER": 36.667
+      },
+      "su_w35": {
+        "BCER": 17.663,
+        "BWER": 37.692
+      },
+      "su_w45": {
+        "BCER": 17.382,
+        "BWER": 37.607
+      },
+      "wolf_w15_k0.1": {
+        "BCER": 18.445,
+        "BWER": 45.476
+      },
+      "wolf_w15_k0.2": {
+        "BCER": 16.057,
+        "BWER": 39.768
+      },
+      "wolf_w15_k0.3": {
+        "BCER": 17.364,
+        "BWER": 39.255
+      },
+      "wolf_w25_k0.1": {
+        "BCER": 17.833,
+        "BWER": 41.844
+      },
+      "wolf_w25_k0.2": {
+        "BCER": 16.052,
+        "BWER": 42.332
+      },
+      "wolf_w25_k0.3": {
+        "BCER": 15.403,
+        "BWER": 38.571
+      },
+      "wolf_w35_k0.1": {
+        "BCER": 17.562,
+        "BWER": 41.99
+      },
+      "wolf_w35_k0.2": {
+        "BCER": 17.058,
+        "BWER": 42.375
+      },
+      "wolf_w35_k0.3": {
+        "BCER": 15.157,
+        "BWER": 37.759
+      },
+      "wolf_w45_k0.1": {
+        "BCER": 18.33,
+        "BWER": 41.862
+      },
+      "wolf_w45_k0.2": {
+        "BCER": 17.086,
+        "BWER": 41.947
+      },
+      "wolf_w45_k0.3": {
+        "BCER": 15.832,
+        "BWER": 40.153
+      }
+    }
+  },
+  {
+    "id": "run_11_vars_6",
+    "epochs": 4,
+    "variations": 6,
+    "iterations": 200,
+    "error_rate": 0.05,
+    "avg_BCER": 25.24616666666667,
+    "avg_BWER": 51.87063333333334,
+    "checkpoint": "training_data_v2/staged_tuning/run_11_vars_6_output/chr_39.326_686_700.checkpoint",
+    "algo_details": {
+      "base": {
+        "BCER": 20.998,
+        "BWER": 45.409
+      },
+      "otsu": {
+        "BCER": 20.997,
+        "BWER": 44.725
+      },
+      "sauvola_w15_k0.1": {
+        "BCER": 24.023,
+        "BWER": 52.381
+      },
+      "sauvola_w15_k0.2": {
+        "BCER": 30.662,
+        "BWER": 58.4
+      },
+      "sauvola_w15_k0.3": {
+        "BCER": 37.446,
+        "BWER": 60.836
+      },
+      "sauvola_w25_k0.1": {
+        "BCER": 27.219,
+        "BWER": 57.228
+      },
+      "sauvola_w25_k0.2": {
+        "BCER": 28.827,
+        "BWER": 51.734
+      },
+      "sauvola_w25_k0.3": {
+        "BCER": 35.531,
+        "BWER": 58.486
+      },
+      "sauvola_w35_k0.1": {
+        "BCER": 22.004,
+        "BWER": 49.28
+      },
+      "sauvola_w35_k0.2": {
+        "BCER": 26.253,
+        "BWER": 49.792
+      },
+      "sauvola_w35_k0.3": {
+        "BCER": 36.966,
+        "BWER": 57.46
+      },
+      "sauvola_w45_k0.1": {
+        "BCER": 21.704,
+        "BWER": 53.834
+      },
+      "sauvola_w45_k0.2": {
+        "BCER": 26.633,
+        "BWER": 49.389
+      },
+      "sauvola_w45_k0.3": {
+        "BCER": 35.836,
+        "BWER": 53.98
+      },
+      "su_w15": {
+        "BCER": 22.523,
+        "BWER": 44.615
+      },
+      "su_w25": {
+        "BCER": 22.803,
+        "BWER": 45.983
+      },
+      "su_w35": {
+        "BCER": 22.037,
+        "BWER": 46.88
+      },
+      "su_w45": {
+        "BCER": 22.973,
+        "BWER": 48.547
+      },
+      "wolf_w15_k0.1": {
+        "BCER": 24.722,
+        "BWER": 52.271
+      },
+      "wolf_w15_k0.2": {
+        "BCER": 22.277,
+        "BWER": 48.828
+      },
+      "wolf_w15_k0.3": {
+        "BCER": 22.504,
+        "BWER": 48.297
+      },
+      "wolf_w25_k0.1": {
+        "BCER": 25.57,
+        "BWER": 60.287
+      },
+      "wolf_w25_k0.2": {
+        "BCER": 23.507,
+        "BWER": 55.409
+      },
+      "wolf_w25_k0.3": {
+        "BCER": 21.105,
+        "BWER": 51.709
+      },
+      "wolf_w35_k0.1": {
+        "BCER": 23.414,
+        "BWER": 55.458
+      },
+      "wolf_w35_k0.2": {
+        "BCER": 22.166,
+        "BWER": 52.466
+      },
+      "wolf_w35_k0.3": {
+        "BCER": 20.071,
+        "BWER": 48.101
+      },
+      "wolf_w45_k0.1": {
+        "BCER": 23.393,
+        "BWER": 51.331
+      },
+      "wolf_w45_k0.2": {
+        "BCER": 22.19,
+        "BWER": 51.886
+      },
+      "wolf_w45_k0.3": {
+        "BCER": 21.031,
+        "BWER": 51.117
+      }
+    }
+  },
+  {
+    "id": "run_12_vars_8",
+    "epochs": 4,
+    "variations": 8,
+    "iterations": 200,
+    "error_rate": 0.05,
+    "avg_BCER": 25.05763333333333,
+    "avg_BWER": 50.81236666666667,
+    "checkpoint": "training_data_v2/staged_tuning/run_12_vars_8_output/chr_38.981_687_700.checkpoint",
+    "algo_details": {
+      "base": {
+        "BCER": 20.849,
+        "BWER": 46.264
+      },
+      "otsu": {
+        "BCER": 19.912,
+        "BWER": 44.811
+      },
+      "sauvola_w15_k0.1": {
+        "BCER": 23.553,
+        "BWER": 51.142
+      },
+      "sauvola_w15_k0.2": {
+        "BCER": 29.624,
+        "BWER": 58.767
+      },
+      "sauvola_w15_k0.3": {
+        "BCER": 39.194,
+        "BWER": 60.11
+      },
+      "sauvola_w25_k0.1": {
+        "BCER": 25.137,
+        "BWER": 51.697
+      },
+      "sauvola_w25_k0.2": {
+        "BCER": 29.374,
+        "BWER": 51.648
+      },
+      "sauvola_w25_k0.3": {
+        "BCER": 36.243,
+        "BWER": 58.999
+      },
+      "sauvola_w35_k0.1": {
+        "BCER": 20.676,
+        "BWER": 47.338
+      },
+      "sauvola_w35_k0.2": {
+        "BCER": 26.813,
+        "BWER": 50.586
+      },
+      "sauvola_w35_k0.3": {
+        "BCER": 37.169,
+        "BWER": 57.973
+      },
+      "sauvola_w45_k0.1": {
+        "BCER": 19.903,
+        "BWER": 45.971
+      },
+      "sauvola_w45_k0.2": {
+        "BCER": 26.627,
+        "BWER": 50.672
+      },
+      "sauvola_w45_k0.3": {
+        "BCER": 37.205,
+        "BWER": 56.972
+      },
+      "su_w15": {
+        "BCER": 22.515,
+        "BWER": 42.051
+      },
+      "su_w25": {
+        "BCER": 24.316,
+        "BWER": 44.786
+      },
+      "su_w35": {
+        "BCER": 22.888,
+        "BWER": 46.068
+      },
+      "su_w45": {
+        "BCER": 23.191,
+        "BWER": 47.436
+      },
+      "wolf_w15_k0.1": {
+        "BCER": 25.181,
+        "BWER": 53.083
+      },
+      "wolf_w15_k0.2": {
+        "BCER": 21.763,
+        "BWER": 48.999
+      },
+      "wolf_w15_k0.3": {
+        "BCER": 21.937,
+        "BWER": 46.178
+      },
+      "wolf_w25_k0.1": {
+        "BCER": 22.891,
+        "BWER": 54.347
+      },
+      "wolf_w25_k0.2": {
+        "BCER": 21.923,
+        "BWER": 54.127
+      },
+      "wolf_w25_k0.3": {
+        "BCER": 20.009,
+        "BWER": 50.366
+      },
+      "wolf_w35_k0.1": {
+        "BCER": 23.794,
+        "BWER": 51.441
+      },
+      "wolf_w35_k0.2": {
+        "BCER": 22.607,
+        "BWER": 51.184
+      },
+      "wolf_w35_k0.3": {
+        "BCER": 19.719,
+        "BWER": 46.996
+      },
+      "wolf_w45_k0.1": {
+        "BCER": 22.709,
+        "BWER": 52.998
+      },
+      "wolf_w45_k0.2": {
+        "BCER": 22.437,
+        "BWER": 50.519
+      },
+      "wolf_w45_k0.3": {
+        "BCER": 21.57,
+        "BWER": 50.842
+      }
+    }
+  }
+]
