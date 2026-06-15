@@ -87,7 +87,7 @@ def evaluate_predictions():
         if (entry.get('status') == 'labeled' or entry.get('label')) and entry.get('predicted_lang') == 'Cherokee'
     ]
     
-    train_dir = "/Users/charlesmcvicker/.gemini/antigravity/worktrees/phoenix/implement-task-fifty-four/training_data_v2/dataset/train"
+    train_dir = "training_data_v2/dataset/train"
     
     total_gt_words = 0
     captured_top1 = 0
