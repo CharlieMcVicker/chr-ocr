@@ -99,6 +99,9 @@ Tesseract training requires splitting the labeled data into independent Train (8
     ```
     This script executes Tesseract with `lstm.train` configuration on the splits, creating the lists `list.train` and `list.test`.
 
+> [!NOTE]
+> The **Staged Epoch Loop** (`scripts/train_staged.py`) does **not** require running `prepare_splits.sh` beforehand. The staged loop dynamically splits the dataset in-memory and compiles training `.lstmf` files on-the-fly in a temporary directory. `prepare_splits.sh` is only needed if you are running static, offline training/evaluation (e.g. via `train_split.sh` or `evaluate_split.sh`).
+
 ---
 
 ## 4. Training the Model
