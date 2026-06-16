@@ -15,12 +15,11 @@ Image.MAX_IMAGE_PIXELS = None
 # Ensure server package can be imported
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from server.layout import extract_columns
+from phoenix.layout.segmentation import extract_columns, crop_pad_normalize_line
 from server.process_file import ocr_image_to_text
-from scripts.classify_layout import analyze_text
+from phoenix.layout.classification import analyze_text
 from surya.detection import DetectionPredictor
 from surya.inference import SuryaInferenceManager
-from server.line_utils import crop_pad_normalize_line
 
 def find_scans(base_dir):
     """

@@ -13,10 +13,9 @@ from PIL import Image
 # Ensure server package can be imported
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from server.layout import extract_columns
+from phoenix.layout.segmentation import extract_columns, crop_pad_normalize_line
 from surya.inference import SuryaInferenceManager
 from surya.detection import DetectionPredictor
-from server.line_utils import crop_pad_normalize_line
 
 def main():
     """
