@@ -99,7 +99,7 @@ def binarize(img, algo_name, params):
         
     return doxapy.to_binary(algo, img, p)
 
-def get_albumentations_pipeline():
+def get_albumentations_pipeline(blur_prob=0.4, shadow_prob=0.3, distortion_prob=0.4, dropout_prob=0.3):
     """
     Constructs a sophisticated Albumentations pipeline for text line perturbation.
     """
@@ -109,16 +109,16 @@ def get_albumentations_pipeline():
             A.GaussianBlur(blur_limit=(3, 5), p=1.0),
             A.MotionBlur(blur_limit=(3, 5), p=1.0),
             A.MedianBlur(blur_limit=(3, 5), p=1.0),
-        ], p=0.4),
+        ], p=blur_prob),
         A.ImageCompression(quality_range=(40, 85), p=0.3),
         A.RandomBrightnessContrast(brightness_limit=0.2, contrast_limit=0.2, p=0.4),
-        A.RandomShadow(num_shadows_limit=(1, 2), shadow_dimension=5, p=0.3),
+        A.RandomShadow(num_shadows_limit=(1, 2), shadow_dimension=5, p=shadow_prob),
         
         # 2. Spatial Distortions
         A.OneOf([
             A.GridDistortion(num_steps=5, distort_limit=0.1, border_mode=cv2.BORDER_REPLICATE, p=1.0),
             A.ElasticTransform(alpha=1, sigma=15, border_mode=cv2.BORDER_REPLICATE, p=1.0),
-        ], p=0.4),
+        ], p=distortion_prob),
         
         # 3. Occlusion
         A.CoarseDropout(
@@ -126,7 +126,7 @@ def get_albumentations_pipeline():
             hole_height_range=(4, 10),
             hole_width_range=(4, 10),
             fill=255, # fill with white for light background
-            p=0.3
+            p=dropout_prob
         )
     ])
 
@@ -162,10 +162,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", default="training_data_v2/manifest_w_lang.json")
     parser.add_argument("--output-dir", default="training_data_v2/dataset_epoch")
-    parser.add_argument("--split", type=float, default=0.6)
+    parser.add_argument("--split", type=float, default=0.8)
     parser.add_argument("--variations-per-image", type=int, default=3)
     parser.add_argument("--error-rate", type=float, default=0.05, help="Weakly supervised synthetic transcription error rate")
     parser.add_argument("--pad-y", type=int, default=3)
+    parser.add_argument("--blur-prob", type=float, default=0.4)
+    parser.add_argument("--shadow-prob", type=float, default=0.3)
+    parser.add_argument("--distortion-prob", type=float, default=0.4)
+    parser.add_argument("--dropout-prob", type=float, default=0.3)
+    parser.add_argument("--bleedthrough-prob", type=float, default=0.25)
     args = parser.parse_args()
 
     if not os.path.exists(args.manifest):
@@ -208,7 +213,12 @@ def main():
         if os.path.exists(path):
             train_img_paths.append(path)
 
-    pipeline = get_albumentations_pipeline()
+    pipeline = get_albumentations_pipeline(
+        blur_prob=args.blur_prob,
+        shadow_prob=args.shadow_prob,
+        distortion_prob=args.distortion_prob,
+        dropout_prob=args.dropout_prob
+    )
 
     # Binarization algorithms used dynamically
     bin_methods = ["otsu", "su", "sauvola", "wolf"]
@@ -224,7 +234,7 @@ def main():
 
         for var_idx in range(args.variations_per_image):
             # 1. Apply Mixup bleed-through
-            augmented = apply_mixup_bleedthrough(img, train_img_paths, p=0.25)
+            augmented = apply_mixup_bleedthrough(img, train_img_paths, p=args.bleedthrough_prob)
             
             # 2. Apply Albumentations pipeline
             augmented = pipeline(image=augmented)["image"]

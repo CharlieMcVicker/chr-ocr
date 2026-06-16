@@ -10,6 +10,7 @@ import subprocess
 import argparse
 import shutil
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 def download_file(url, dest):
     """
@@ -29,6 +30,19 @@ def get_latest_checkpoint(checkpoint_dir):
     checkpoints.sort(key=os.path.getmtime)
     return checkpoints[-1]
 
+def compile_image(img_path):
+    """
+    Compiles a single PNG image to .lstmf using tesseract.
+    """
+    base = os.path.splitext(img_path)[0]
+    subprocess.run(
+        ["tesseract", img_path, base, "-l", "chr", "--psm", "13", "lstm.train"],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        check=True
+    )
+    return os.path.abspath(base + ".lstmf")
+
 def main():
     parser = argparse.ArgumentParser(description="Staged Epoch Loop for Tesseract OCR Fine-tuning")
     parser.add_argument("--total-epochs", type=int, default=5, help="Total number of staged training epochs")
@@ -40,6 +54,13 @@ def main():
     parser.add_argument("--model-dir", default="training_data_v2/dataset/model", help="Directory containing base models")
     parser.add_argument("--train-output-dir", default="training_data_v2/dataset_staged_output", help="Directory where checkpoints and logs are saved")
     parser.add_argument("--continue-from", default=None, help="Explicit checkpoint path to start training from")
+    parser.add_argument("--max-workers", type=int, default=None, help="Maximum number of worker threads for parallel compilation")
+    parser.add_argument("--learning-rate", type=float, default=0.001, help="Learning rate for lstmtraining")
+    parser.add_argument("--blur-prob", type=float, default=0.4, help="Probability of blur augmentation")
+    parser.add_argument("--shadow-prob", type=float, default=0.3, help="Probability of shadow augmentation")
+    parser.add_argument("--distortion-prob", type=float, default=0.4, help="Probability of distortion augmentation")
+    parser.add_argument("--dropout-prob", type=float, default=0.3, help="Probability of dropout augmentation")
+    parser.add_argument("--bleedthrough-prob", type=float, default=0.25, help="Probability of bleedthrough augmentation")
     args = parser.parse_args()
 
     # 1. Directories setup
@@ -81,7 +102,12 @@ def main():
             "--manifest", args.train_manifest,
             "--output-dir", args.output_dir,
             "--variations-per-image", str(args.variations_per_image),
-            "--error-rate", str(args.error_rate)
+            "--error-rate", str(args.error_rate),
+            "--blur-prob", str(args.blur_prob),
+            "--shadow-prob", str(args.shadow_prob),
+            "--distortion-prob", str(args.distortion_prob),
+            "--dropout-prob", str(args.dropout_prob),
+            "--bleedthrough-prob", str(args.bleedthrough_prob)
         ]
         subprocess.run(cmd_aug, check=True)
 
@@ -93,17 +119,11 @@ def main():
             sys.exit(1)
 
         list_train_path = os.path.join(args.output_dir, "list.train")
+        with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
+            lstmf_paths = list(executor.map(compile_image, png_files))
+
         with open(list_train_path, "w", encoding="utf-8") as list_f:
-            for img_path in png_files:
-                base = os.path.splitext(img_path)[0]
-                # Run tesseract training file generation
-                subprocess.run(
-                    ["tesseract", img_path, base, "-l", "chr", "--psm", "13", "lstm.train"],
-                    stdout=subprocess.DEVNULL,
-                    stderr=subprocess.DEVNULL,
-                    check=True
-                )
-                lstmf_path = os.path.abspath(base + ".lstmf")
+            for lstmf_path in lstmf_paths:
                 list_f.write(lstmf_path + "\n")
 
         # Step D: Determine continue_from model checkpoint
@@ -141,8 +161,11 @@ def main():
             "--model_output", os.path.join(args.train_output_dir, "chr"),
             "--traineddata", traineddata_path,
             "--train_listfile", list_train_path,
-            "--max_iterations", str(max_iterations)
+            "--max_iterations", str(max_iterations),
+            "--learning_rate", str(args.learning_rate)
         ]
+        if args.learning_rate != 0.001:
+            cmd_train.append("--reset_learning_rate")
         
         with open(log_file_path, "w", encoding="utf-8") as log_f:
             subprocess.run(cmd_train, stdout=log_f, stderr=subprocess.STDOUT, check=True)
