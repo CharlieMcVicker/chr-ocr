@@ -112,12 +112,12 @@ def get_albumentations_pipeline():
         ], p=0.4),
         A.ImageCompression(quality_range=(40, 85), p=0.3),
         A.RandomBrightnessContrast(brightness_limit=0.2, contrast_limit=0.2, p=0.4),
-        A.RandomShadow(num_shadows_upper=2, shadow_dimension=5, p=0.3),
+        A.RandomShadow(num_shadows_limit=(1, 2), shadow_dimension=5, p=0.3),
         
         # 2. Spatial Distortions
         A.OneOf([
             A.GridDistortion(num_steps=5, distort_limit=0.1, border_mode=cv2.BORDER_REPLICATE, p=1.0),
-            A.ElasticTransform(alpha=1, sigma=15, alpha_affine=15, border_mode=cv2.BORDER_REPLICATE, p=1.0),
+            A.ElasticTransform(alpha=1, sigma=15, border_mode=cv2.BORDER_REPLICATE, p=1.0),
         ], p=0.4),
         
         # 3. Occlusion
