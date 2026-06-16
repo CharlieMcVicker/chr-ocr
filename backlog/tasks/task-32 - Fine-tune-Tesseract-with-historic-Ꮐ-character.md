@@ -1,11 +1,11 @@
 ---
 id: TASK-32
 title: Fine-tune Tesseract with historic Ꮐ character
-status: In Progress
+status: To Do
 assignee:
   - '@agent'
 created_date: '2026-06-11 14:57'
-updated_date: '2026-06-16 13:02'
+updated_date: '2026-06-16 13:31'
 labels:
   - fine-tuning
   - OCR
