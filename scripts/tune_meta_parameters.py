@@ -12,23 +12,68 @@ import argparse
 import json
 import re
 
-# Search matrix defined as One-at-a-Time (OAT) variations from a robust base configuration
-BASE_CONFIG = {
-    "epochs": 4,
-    "variations": 3,
-    "iterations": 150,
-    "error_rate": 0.05
-}
-
+# Search matrix for post-fix hyperparameter retuning
 EXPERIMENTS = [
-    # Run 8: Zero-noise baseline
-    {"id": "run_8_zero_noise", "epochs": 4, "variations": 3, "iterations": 200, "error_rate": 0.00},
-    # Run 9-10: High Epoch Counts
-    {"id": "run_9_epochs_6", "epochs": 6, "variations": 3, "iterations": 200, "error_rate": 0.05},
-    {"id": "run_10_epochs_8", "epochs": 8, "variations": 3, "iterations": 200, "error_rate": 0.05},
-    # Run 11-12: High Augmentation Variations
-    {"id": "run_11_vars_6", "epochs": 4, "variations": 6, "iterations": 200, "error_rate": 0.05},
-    {"id": "run_12_vars_8", "epochs": 4, "variations": 8, "iterations": 200, "error_rate": 0.05},
+    # Run 13: Baseline post-fix configuration
+    {
+        "id": "run_13_baseline",
+        "epochs": 12,
+        "variations": 3,
+        "iterations": 200,
+        "error_rate": 0.05,
+        "learning_rate": 0.001,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25,
+        "eval_epochs": [6, 8, 10, 12]
+    },
+    # Run 14: Lower learning rate
+    {
+        "id": "run_14_lower_lr",
+        "epochs": 12,
+        "variations": 3,
+        "iterations": 200,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25,
+        "eval_epochs": [6, 8, 10, 12]
+    },
+    # Run 15: Lower augmentation intensity (halved probability of perturbations)
+    {
+        "id": "run_15_lower_aug",
+        "epochs": 12,
+        "variations": 3,
+        "iterations": 200,
+        "error_rate": 0.05,
+        "learning_rate": 0.001,
+        "blur_prob": 0.2,
+        "shadow_prob": 0.15,
+        "distortion_prob": 0.2,
+        "dropout_prob": 0.15,
+        "bleedthrough_prob": 0.125,
+        "eval_epochs": [6, 8, 10, 12]
+    },
+    # Run 16: Zero transcription error rate
+    {
+        "id": "run_16_zero_noise",
+        "epochs": 12,
+        "variations": 3,
+        "iterations": 200,
+        "error_rate": 0.00,
+        "learning_rate": 0.001,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25,
+        "eval_epochs": [6, 8, 10, 12]
+    }
 ]
 
 def get_latest_checkpoint(checkpoint_dir):
@@ -40,6 +85,33 @@ def get_latest_checkpoint(checkpoint_dir):
         return None
     checkpoints.sort(key=os.path.getmtime)
     return checkpoints[-1]
+
+def get_checkpoint_for_epoch(checkpoint_dir, epoch, iterations_per_epoch):
+    """
+    Returns the checkpoint corresponding to the target epoch/iteration, or the closest one.
+    """
+    target_iter = epoch * iterations_per_epoch
+    checkpoints = glob.glob(os.path.join(checkpoint_dir, f"*_{target_iter}.checkpoint"))
+    if checkpoints:
+        return checkpoints[0]
+        
+    # Fallback to closest checkpoint
+    all_checkpoints = glob.glob(os.path.join(checkpoint_dir, "*.checkpoint"))
+    if not all_checkpoints:
+        return None
+        
+    best_cp = None
+    min_diff = float('inf')
+    for cp in all_checkpoints:
+        # Checkpoint filenames look like: chr_<error>_<iteration>_<maxiterations>.checkpoint
+        match = re.search(r"_(\d+)_(\d+)\.checkpoint$", cp)
+        if match:
+            cp_iter = int(match.group(2))
+            diff = abs(cp_iter - target_iter)
+            if diff < min_diff:
+                min_diff = diff
+                best_cp = cp
+    return best_cp
 
 def evaluate_checkpoint(checkpoint_path, test_dir, traineddata_path):
     """
@@ -122,13 +194,13 @@ def main():
     
     all_results = []
     
-    print(f"=== Staged Epoch Loop Tuning ===")
+    print(f"=== Staged Epoch Loop Hyperparameter Retuning ===")
     print(f"Total experiments to execute: {len(EXPERIMENTS)}")
     
     for i, exp in enumerate(EXPERIMENTS, 1):
         exp_id = exp["id"]
         print(f"\n--- Experiment {i}/{len(EXPERIMENTS)}: {exp_id} ---")
-        print(f"Parameters: epochs={exp['epochs']}, variations={exp['variations']}, iterations={exp['iterations']}, error_rate={exp['error_rate']}")
+        print(f"Parameters: epochs={exp['epochs']}, iterations={exp['iterations']}, lr={exp['learning_rate']}, shadow={exp['shadow_prob']}, error_rate={exp['error_rate']}")
         
         run_output_dir = f"training_data_v2/staged_tuning/{exp_id}_output"
         run_temp_epoch_dir = f"training_data_v2/staged_tuning/{exp_id}_temp_epoch"
@@ -140,62 +212,77 @@ def main():
             "--iterations-per-epoch", str(exp["iterations"]),
             "--variations-per-image", str(exp["variations"]),
             "--error-rate", str(exp["error_rate"]),
+            "--learning-rate", str(exp["learning_rate"]),
+            "--blur-prob", str(exp["blur_prob"]),
+            "--shadow-prob", str(exp["shadow_prob"]),
+            "--distortion-prob", str(exp["distortion_prob"]),
+            "--dropout-prob", str(exp["dropout_prob"]),
+            "--bleedthrough-prob", str(exp["bleedthrough_prob"]),
             "--train-output-dir", run_output_dir,
             "--output-dir", run_temp_epoch_dir
         ]
         
         if args.dry_run:
             print(f"[DRY-RUN] Would run command: {' '.join(cmd)}")
-            # Write dummy results
-            all_results.append({
-                "id": exp_id,
-                "epochs": exp["epochs"],
-                "variations": exp["variations"],
-                "iterations": exp["iterations"],
-                "error_rate": exp["error_rate"],
-                "avg_BCER": 25.0 - (0.5 * i),
-                "avg_BWER": 55.0 - (0.8 * i),
-                "checkpoint": f"{run_output_dir}/dummy_best.checkpoint"
-            })
+            for epoch in exp["eval_epochs"]:
+                all_results.append({
+                    "id": f"{exp_id}_epoch_{epoch}",
+                    "parent_id": exp_id,
+                    "epochs": epoch,
+                    "variations": exp["variations"],
+                    "iterations": exp["iterations"],
+                    "error_rate": exp["error_rate"],
+                    "learning_rate": exp["learning_rate"],
+                    "avg_BCER": 25.0 - (0.5 * i) - (0.1 * epoch),
+                    "avg_BWER": 55.0 - (0.8 * i) - (0.2 * epoch),
+                    "checkpoint": f"{run_output_dir}/dummy_epoch_{epoch}.checkpoint"
+                })
             continue
 
         print(f"Running Staged training pipeline...")
         try:
             subprocess.run(cmd, check=True)
             
-            # Locate the best checkpoint
-            best_checkpoint = get_latest_checkpoint(run_output_dir)
-            print(f"Training finished. Best checkpoint found: {best_checkpoint}")
-            
-            # Evaluate model
-            print("Evaluating checkpoint on test splits...")
-            avg_bcer, avg_bwer, algo_details = evaluate_checkpoint(best_checkpoint, test_dir, traineddata_path)
-            
-            if avg_bcer is not None:
-                print(f"Evaluation Results -> Average BCER: {avg_bcer:.3f}%, Average BWER: {avg_bwer:.3f}%")
-                all_results.append({
-                    "id": exp_id,
-                    "epochs": exp["epochs"],
-                    "variations": exp["variations"],
-                    "iterations": exp["iterations"],
-                    "error_rate": exp["error_rate"],
-                    "avg_BCER": avg_bcer,
-                    "avg_BWER": avg_bwer,
-                    "checkpoint": best_checkpoint,
-                    "algo_details": algo_details
-                })
-            else:
-                print("Error: Evaluation produced no metrics.")
+            # Evaluate all requested sub-epochs
+            for epoch in exp["eval_epochs"]:
+                print(f"Locating checkpoint for epoch {epoch} (target iterations: {epoch * exp['iterations']})...")
+                checkpoint = get_checkpoint_for_epoch(run_output_dir, epoch, exp["iterations"])
+                
+                if checkpoint:
+                    print(f"Evaluating checkpoint: {checkpoint}")
+                    avg_bcer, avg_bwer, algo_details = evaluate_checkpoint(checkpoint, test_dir, traineddata_path)
+                    
+                    if avg_bcer is not None:
+                        print(f"Epoch {epoch} -> Average BCER: {avg_bcer:.3f}%, Average BWER: {avg_bwer:.3f}%")
+                        all_results.append({
+                            "id": f"{exp_id}_epoch_{epoch}",
+                            "parent_id": exp_id,
+                            "epochs": epoch,
+                            "variations": exp["variations"],
+                            "iterations": exp["iterations"],
+                            "error_rate": exp["error_rate"],
+                            "learning_rate": exp["learning_rate"],
+                            "avg_BCER": avg_bcer,
+                            "avg_BWER": avg_bwer,
+                            "checkpoint": checkpoint,
+                            "algo_details": algo_details
+                        })
+                    else:
+                        print(f"Error: Evaluation produced no metrics for epoch {epoch}.")
+                else:
+                    print(f"Error: No checkpoint found for epoch {epoch}.")
                 
         except Exception as e:
             print(f"Error executing experiment {exp_id}: {e}")
             
     # Save results
-    with open(results_file, "w", encoding="utf-8") as f:
-        json.dump(all_results, f, indent=2)
-        
-    print(f"\n=== Tuning Completed ===")
-    print(f"Results written to {results_file}")
+    if not args.dry_run or not os.path.exists(results_file):
+        with open(results_file, "w", encoding="utf-8") as f:
+            json.dump(all_results, f, indent=2)
+        print(f"\n=== Tuning Completed ===")
+        print(f"Results written to {results_file}")
+    else:
+        print(f"\n=== [DRY-RUN] Tuning Completed ===")
     
     # Identify the best configuration
     if all_results:
@@ -205,6 +292,7 @@ def main():
         print(f"Epochs: {best_run['epochs']}")
         print(f"Variations: {best_run['variations']}")
         print(f"Iterations: {best_run['iterations']}")
+        print(f"Learning Rate: {best_run['learning_rate']}")
         print(f"Error Rate: {best_run['error_rate']}")
         print(f"Best Average BCER: {best_run['avg_BCER']:.3f}%")
         print(f"Best Average BWER: {best_run['avg_BWER']:.3f}%")
