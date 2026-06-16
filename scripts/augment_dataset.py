@@ -240,8 +240,8 @@ def main():
     and box files.
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument("--manifest", default="training_data_v2/manifest_w_lang.json")
-    parser.add_argument("--output-dir", default="training_data_v2/dataset")
+    parser.add_argument("--manifest", default="training_data/manifest_w_lang.json")
+    parser.add_argument("--output-dir", default="training_data/dataset")
     parser.add_argument("--split", type=float, default=0.6, help="Train split ratio")
     parser.add_argument("--pad-y", type=int, default=3, help="Y padding")
     args = parser.parse_args()
@@ -299,7 +299,7 @@ def main():
     # Process Training Data
     print("Processing Training Data...")
     for item in train_items:
-        image_path = os.path.join("training_data_v2", item["image_path"])
+        image_path = os.path.join("training_data", item["image_path"])
         img = cv2.imread(image_path)
         if img is None: continue
 
@@ -338,7 +338,7 @@ def main():
     # Process Test Data
     print("Processing Test Data...")
     for item in test_items:
-        image_path = os.path.join("training_data_v2", item["image_path"])
+        image_path = os.path.join("training_data", item["image_path"])
         img = cv2.imread(image_path)
         if img is None: continue
 

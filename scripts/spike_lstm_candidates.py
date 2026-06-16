@@ -7,9 +7,9 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from inference import get_hocr, parse_hocr_lstm_alternatives, generate_candidates
 
 def evaluate_predictions():
-    manifest_path = "training_data_v2/manifest_w_lang.json"
+    manifest_path = "training_data/manifest_w_lang.json"
     if not os.path.exists(manifest_path):
-        manifest_path = "training_data_v2/manifest.json"
+        manifest_path = "training_data/manifest.json"
         
     with open(manifest_path, 'r') as f:
         manifest = json.load(f)
@@ -19,7 +19,7 @@ def evaluate_predictions():
         if (entry.get('status') == 'labeled' or entry.get('label')) and entry.get('predicted_lang') == 'Cherokee'
     ]
     
-    train_dir = "training_data_v2/dataset/train"
+    train_dir = "training_data/dataset/train"
     
     total_gt_words = 0
     captured_top1 = 0

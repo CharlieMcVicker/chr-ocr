@@ -188,9 +188,9 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Print commands without executing training")
     args = parser.parse_args()
 
-    test_dir = "training_data_v2/dataset/test"
-    traineddata_path = "training_data_v2/dataset/model/chr.traineddata"
-    results_file = "training_data_v2/boundary_results.json"
+    test_dir = "training_data/dataset/test"
+    traineddata_path = "training_data/dataset/model/chr.traineddata"
+    results_file = "training_data/boundary_results.json"
     
     all_results = []
     
@@ -202,8 +202,8 @@ def main():
         print(f"\n--- Experiment {i}/{len(EXPERIMENTS)}: {exp_id} ---")
         print(f"Parameters: epochs={exp['epochs']}, iterations={exp['iterations']}, lr={exp['learning_rate']}, shadow={exp['shadow_prob']}, error_rate={exp['error_rate']}")
         
-        run_output_dir = f"training_data_v2/staged_tuning/{exp_id}_output"
-        run_temp_epoch_dir = f"training_data_v2/staged_tuning/{exp_id}_temp_epoch"
+        run_output_dir = f"training_data/staged_tuning/{exp_id}_output"
+        run_temp_epoch_dir = f"training_data/staged_tuning/{exp_id}_temp_epoch"
         
         cmd = [
             ".venv/bin/python",

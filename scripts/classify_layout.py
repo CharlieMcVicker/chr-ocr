@@ -91,7 +91,7 @@ def classify_line_image(pil_img) -> str:
     Classifies a PIL line crop image using the optimal confidence-weighted scoring heuristic.
     Returns: 'Cherokee', 'English', 'Mixed', or 'Empty'.
     """
-    model_dir = "/Users/charlesmcvicker/code/phoenix/training_data_v2/dataset/model"
+    model_dir = "/Users/charlesmcvicker/code/phoenix/training_data/dataset/model"
     ftm_model = "chr_lang_prediction"
     ftm_config = f"--tessdata-dir {model_dir} --psm 7"
     

@@ -160,8 +160,8 @@ def apply_mixup_bleedthrough(img, train_images, p=0.25):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--manifest", default="training_data_v2/manifest_w_lang.json")
-    parser.add_argument("--output-dir", default="training_data_v2/dataset_epoch")
+    parser.add_argument("--manifest", default="training_data/manifest_w_lang.json")
+    parser.add_argument("--output-dir", default="training_data/dataset_epoch")
     parser.add_argument("--split", type=float, default=0.8)
     parser.add_argument("--variations-per-image", type=int, default=3)
     parser.add_argument("--error-rate", type=float, default=0.05, help="Weakly supervised synthetic transcription error rate")
@@ -209,7 +209,7 @@ def main():
     # Pre-collect all train image paths for mixup bleed-through
     train_img_paths = []
     for item in train_items:
-        path = os.path.join("training_data_v2", item["image_path"])
+        path = os.path.join("training_data", item["image_path"])
         if os.path.exists(path):
             train_img_paths.append(path)
 
@@ -224,7 +224,7 @@ def main():
     bin_methods = ["otsu", "su", "sauvola", "wolf"]
 
     for idx, item in enumerate(train_items):
-        image_path = os.path.join("training_data_v2", item["image_path"])
+        image_path = os.path.join("training_data", item["image_path"])
         img = cv2.imread(image_path)
         if img is None:
             continue

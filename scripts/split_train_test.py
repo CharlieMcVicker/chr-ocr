@@ -54,7 +54,7 @@ def split_data(src_dir, train_dir, test_dir, split_ratio=0.8, seed=42):
 
 if __name__ == "__main__":
     split_data(
-        "training_data_v2/dataset/train/",
-        "training_data_v2/dataset/train_80/",
-        "training_data_v2/dataset/test_20/"
+        "training_data/dataset/train/",
+        "training_data/dataset/train_80/",
+        "training_data/dataset/test_20/"
     )

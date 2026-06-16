@@ -25,7 +25,7 @@ def main():
     )
     args = parser.parse_args()
 
-    base_dir = "training_data_v2"
+    base_dir = "training_data"
     manifest_path = os.path.join(base_dir, "manifest_w_lang.json")
     
     if not os.path.exists(manifest_path):
@@ -36,7 +36,7 @@ def main():
     with open(manifest_path, 'r', encoding='utf-8') as f:
         manifest = json.load(f)
         
-    model_dir = "/Users/charlesmcvicker/code/phoenix/training_data_v2/dataset/model"
+    model_dir = "/Users/charlesmcvicker/code/phoenix/training_data/dataset/model"
     model_name = "chr_best_finetuned"
     traineddata_path = os.path.join(model_dir, f"{model_name}.traineddata")
     

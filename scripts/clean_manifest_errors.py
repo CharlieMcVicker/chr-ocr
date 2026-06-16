@@ -1,6 +1,6 @@
 import json
 
-paths = ["training_data_v2/manifest_w_lang.json", "training_data_v2/manifest.json"]
+paths = ["training_data/manifest_w_lang.json", "training_data/manifest.json"]
 
 for path in paths:
     with open(path, "r", encoding="utf-8") as f:

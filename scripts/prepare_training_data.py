@@ -53,8 +53,8 @@ def main():
         description="Extract Cherokee text lines from scans to prepare training dataset."
     )
     parser.add_argument("--input-dir", default="scans", help="Directory containing scanned issues")
-    parser.add_argument("--output-dir", type=str, default="training_data_v2",
-                        help="Output directory for manifests and line crops (default: training_data_v2)")
+    parser.add_argument("--output-dir", type=str, default="training_data",
+                        help="Output directory for manifests and line crops (default: training_data)")
     parser.add_argument("--limit", type=int, default=0, help="Maximum number of scans to process (0 = all)")
     parser.add_argument("--padding-y", type=int, default=3, help="Top/bottom padding in pixels for line crops")
     parser.add_argument("--padding-x", type=int, default=5, help="Left/right padding in pixels for line crops")

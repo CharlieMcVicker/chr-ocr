@@ -33,4 +33,4 @@ def analyze_discrepancies(manifest_path):
     print(f"Lines with neither OCR: {both_empty}")
 
 if __name__ == '__main__':
-    analyze_discrepancies('./training_data_v2/manifest_w_lang.json')
+    analyze_discrepancies('./training_data/manifest_w_lang.json')

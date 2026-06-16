@@ -16,7 +16,7 @@ def main():
     """
     parser = argparse.ArgumentParser(description="Map old training labels to new line crops using fuzzy text matching.")
     parser.add_argument("--old-manifest", default="training_data/manifest.json")
-    parser.add_argument("--new-manifest", default="training_data_v2/manifest.json")
+    parser.add_argument("--new-manifest", default="training_data/manifest.json")
     args = parser.parse_args()
 
     if not os.path.exists(args.old_manifest):

@@ -20,7 +20,7 @@ def main():
     Main function to load the dataset manifest, run OCR on each image,
     classify its language, and save the enriched data to `manifest_w_lang.json`.
     """
-    base_dir = "training_data_v2"
+    base_dir = "training_data"
     manifest_path = os.path.join(base_dir, "manifest.json")
     out_manifest_path = os.path.join(base_dir, "manifest_w_lang.json")
     

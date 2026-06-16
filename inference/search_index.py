@@ -32,9 +32,9 @@ def build_db(limit_count=100, db_path=DB_PATH):
     """Load manifest, extract top-2 candidates, and save to FTS5 database."""
     init_db(db_path)
     
-    manifest_path = "training_data_v2/manifest_w_lang.json"
+    manifest_path = "training_data/manifest_w_lang.json"
     if not os.path.exists(manifest_path):
-        manifest_path = "training_data_v2/manifest.json"
+        manifest_path = "training_data/manifest.json"
         
     with open(manifest_path, 'r') as f:
         manifest = json.load(f)
@@ -55,13 +55,13 @@ def build_db(limit_count=100, db_path=DB_PATH):
             break
             
         img_relative = entry['image_path']
-        img_path = os.path.join("training_data_v2", img_relative)
+        img_path = os.path.join("training_data", img_relative)
         
         if not os.path.exists(img_path):
             base_name = os.path.splitext(os.path.basename(img_relative))[0]
-            img_path = os.path.join("training_data_v2/dataset/train", f"{base_name}_base_otsu.png")
+            img_path = os.path.join("training_data/dataset/train", f"{base_name}_base_otsu.png")
             if not os.path.exists(img_path):
-                img_path = os.path.join("training_data_v2/dataset/train", f"{base_name}_base_sauvola.png")
+                img_path = os.path.join("training_data/dataset/train", f"{base_name}_base_sauvola.png")
                 if not os.path.exists(img_path):
                     continue
                     

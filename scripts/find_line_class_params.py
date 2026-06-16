@@ -16,10 +16,10 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 CHR_DIR = "/Users/charlesmcvicker/code/phoenix/chr_lines"
 ENG_DIR = "/Users/charlesmcvicker/code/phoenix/eng_lines"
-MANIFEST_PATH = "training_data_v2/manifest_w_lang.json"
-CACHE_FILE = "training_data_v2/line_classification_features.json"
+MANIFEST_PATH = "training_data/manifest_w_lang.json"
+CACHE_FILE = "training_data/line_classification_features.json"
 
-MODEL_DIR = "/Users/charlesmcvicker/code/phoenix/training_data_v2/dataset/model"
+MODEL_DIR = "/Users/charlesmcvicker/code/phoenix/training_data/dataset/model"
 FTM_MODEL = "chr_best_finetuned"
 FTM_CONFIG = f"--tessdata-dir {MODEL_DIR} --psm 7"
 
@@ -108,7 +108,7 @@ def main():
                 manifest = json.load(f)
             for k, v in manifest.items():
                 if v.get("status") == "not_cherokee":
-                    img_path = os.path.join("training_data_v2", v["image_path"])
+                    img_path = os.path.join("training_data", v["image_path"])
                     if os.path.exists(img_path):
                         tasks.append((img_path, "English")) # labeled English/not_cherokee
                         

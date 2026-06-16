@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DATASET_DIR="training_data_v2/dataset"
+DATASET_DIR="training_data/dataset"
 TRAIN_80_DIR="${DATASET_DIR}/train_80"
 TEST_20_DIR="${DATASET_DIR}/test_20"
 

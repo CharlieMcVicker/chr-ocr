@@ -76,7 +76,7 @@ def main():
     saves the ground truth text and WordStr coordinates, runs Tesseract training files
     compilations, and writes out the file compilation registry `list.train`.
     """
-    manifest_path = "training_data_v2/manifest.json"
+    manifest_path = "training_data/manifest.json"
     output_dir = "dataset/train"
     os.makedirs(output_dir, exist_ok=True)
     
@@ -93,7 +93,7 @@ def main():
     for item in manifest.values():
         if item.get("status") == "labeled":
             labeled_count += 1
-            image_path = os.path.join("training_data_v2", item["image_path"])
+            image_path = os.path.join("training_data", item["image_path"])
             label = item["label"]
             item_id = item["id"]
             

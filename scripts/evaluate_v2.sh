@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DATASET_DIR="training_data_v2/dataset"
+DATASET_DIR="training_data/dataset"
 TEST_DIR="${DATASET_DIR}/test"
 MODEL_DIR=${1:-"${DATASET_DIR}/output"}
 
@@ -30,7 +30,7 @@ for algo_dir in "$TEST_DIR"/*; do
         echo "Running lstmeval for $algo..."
         lstmeval \
           --model "$CHECKPOINT" \
-          --traineddata "training_data_v2/dataset/model/chr.traineddata" \
+          --traineddata "training_data/dataset/model/chr.traineddata" \
           --eval_listfile "$algo_dir/list.test" \
           2>&1 | tee -a eval_results.txt
           

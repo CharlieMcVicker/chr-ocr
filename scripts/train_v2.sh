@@ -4,7 +4,7 @@ set -e
 ITERATIONS=${1:-100}
 RUN_ID=$(date +%Y%m%d_%H%M%S)
 
-DATASET_DIR="training_data_v2/dataset"
+DATASET_DIR="training_data/dataset"
 TRAIN_DIR="${DATASET_DIR}/train"
 MODEL_DIR="${DATASET_DIR}/model"
 OUTPUT_DIR="${DATASET_DIR}/output_${ITERATIONS}_${RUN_ID}"
