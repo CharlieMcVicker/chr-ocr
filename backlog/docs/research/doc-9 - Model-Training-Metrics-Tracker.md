@@ -23,6 +23,7 @@ This document tracks the iterative improvements in the Cherokee Tesseract LSTM c
 | 2026-06-12 | 300 (Split 60/40) | 1600 (8 epochs) | 29.030% | `staged_tuning/run_10_epochs_8_output/chr_29.030_1522_1600.checkpoint` | **CURRENT BEST MODEL**. Parameter sweep run 10 (epochs=8, variations=3, error_rate=0.05). **Avg Test BCER: 19.598%** (16.346% base), Avg Test BWER: 42.393% (37.546% base) across all 30 binarizations. |
 | 2026-06-15 | 300 (Split 60/40) | 1600 (8 epochs) | 40.050% | `dataset_staged_output/chr_40.050_1430_1500.checkpoint` | Re-run of standard epochs=8 staged loop configuration. **Avg Test BCER: 27.471%** (23.376% base), Avg Test BWER: 51.778% (46.387% base). |
 | 2026-06-16 | 300 (Split 60/40) | (Evaluation) | — | `best_checkpoint.checkpoint` vs `dataset_staged_output/...` | **TASK-63**: Direct evaluation comparison on clean/low-distortion base grayscale test set. Pre-fix best run 10 achieved **21.538% BCER**, while post-fix run achieved **23.376% BCER** (a uniform 1.8pp degradation due to more difficult augmentation constraints during training). |
+| 2026-06-16 | 7728 (Split 80/20, stratified) | 2400 (12 epochs) | 16.207% | `dataset_staged_output_full/chr_checkpoint` | Retrained model with historic Ꮐ (nah) character after crop restoration. Stratified split for rare characters. **Test BCER: 28.521%**, BWER: 44.656%. |
 
 ## Key Observations
 
