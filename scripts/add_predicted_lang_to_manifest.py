@@ -13,8 +13,7 @@ from PIL import Image
 # Ensure server package can be imported
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from server.process_file import ocr_image_to_text
-from scripts.classify_layout import analyze_text
+from scripts.classify_layout import classify_line_image
 
 def main():
     """
@@ -69,14 +68,12 @@ def main():
         
         try:
             pil_img = Image.open(img_path).convert("RGB")
-            # Run OCR
-            ocr_text = ocr_image_to_text(pil_img, lang="chr+eng")
-            analysis = analyze_text(ocr_text)
+            classification = classify_line_image(pil_img)
             
-            item['predicted_lang'] = analysis["classification"]
+            item['predicted_lang'] = classification
             
             # Print progress nicely
-            print(f"[{processed+1}/{total}] Classifying {item['image_path']}: {analysis['classification']}")
+            print(f"[{processed+1}/{total}] Classifying {item['image_path']}: {classification}")
             
         except Exception as e:
             print(f"[{processed+1}/{total}] Error classifying {item['image_path']}: {e}", file=sys.stderr)
