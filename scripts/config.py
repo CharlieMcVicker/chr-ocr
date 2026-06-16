@@ -1,2 +1,0 @@
-from phoenix.config import *
-
