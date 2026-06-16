@@ -1,0 +1,118 @@
+{
+  "experiments": [
+    {
+      "id": "run_17_const_low",
+      "config": {
+        "total_epochs": 16,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 3,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "constant",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25
+      },
+      "eval_epochs": [8, 12, 14, 16]
+    },
+    {
+      "id": "run_18_step_decay",
+      "config": {
+        "total_epochs": 16,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 3,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25
+      },
+      "eval_epochs": [8, 12, 14, 16]
+    },
+    {
+      "id": "run_19_exp_decay",
+      "config": {
+        "total_epochs": 16,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 3,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "exp",
+        "lr_decay_rate": 0.9,
+        "lr_decay_epochs": 4,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25
+      },
+      "eval_epochs": [8, 12, 14, 16]
+    },
+    {
+      "id": "run_20_long_const",
+      "config": {
+        "total_epochs": 20,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 3,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "constant",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25
+      },
+      "eval_epochs": [8, 12, 16, 20]
+    },
+    {
+      "id": "run_21_step_mod_aug",
+      "config": {
+        "total_epochs": 16,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 3,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
+        "blur_prob": 0.2,
+        "shadow_prob": 0.15,
+        "distortion_prob": 0.2,
+        "dropout_prob": 0.15,
+        "bleedthrough_prob": 0.125
+      },
+      "eval_epochs": [8, 12, 14, 16]
+    },
+    {
+      "id": "run_22_step_high_var",
+      "config": {
+        "total_epochs": 16,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 5,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25
+      },
+      "eval_epochs": [8, 12, 14, 16]
+    }
+  ]
+}

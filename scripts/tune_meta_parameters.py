@@ -12,117 +12,7 @@ import argparse
 import json
 import re
 
-# Search matrix for post-fix hyperparameter retuning (with expanded charset & schedules)
-EXPERIMENTS = [
-    # Run 17: Constant Low LR, 16 epochs
-    {
-        "id": "run_17_const_low",
-        "epochs": 16,
-        "variations": 3,
-        "iterations": 200,
-        "error_rate": 0.05,
-        "learning_rate": 0.0005,
-        "lr_schedule": "constant",
-        "lr_decay_rate": 0.5,
-        "lr_decay_epochs": 4,
-        "blur_prob": 0.4,
-        "shadow_prob": 0.3,
-        "distortion_prob": 0.4,
-        "dropout_prob": 0.3,
-        "bleedthrough_prob": 0.25,
-        "eval_epochs": [8, 12, 14, 16]
-    },
-    # Run 18: Stepped Decay, 16 epochs
-    {
-        "id": "run_18_step_decay",
-        "epochs": 16,
-        "variations": 3,
-        "iterations": 200,
-        "error_rate": 0.05,
-        "learning_rate": 0.0005,
-        "lr_schedule": "step",
-        "lr_decay_rate": 0.5,
-        "lr_decay_epochs": 4,
-        "blur_prob": 0.4,
-        "shadow_prob": 0.3,
-        "distortion_prob": 0.4,
-        "dropout_prob": 0.3,
-        "bleedthrough_prob": 0.25,
-        "eval_epochs": [8, 12, 14, 16]
-    },
-    # Run 19: Exponential Decay, 16 epochs
-    {
-        "id": "run_19_exp_decay",
-        "epochs": 16,
-        "variations": 3,
-        "iterations": 200,
-        "error_rate": 0.05,
-        "learning_rate": 0.0005,
-        "lr_schedule": "exp",
-        "lr_decay_rate": 0.9,
-        "lr_decay_epochs": 4,
-        "blur_prob": 0.4,
-        "shadow_prob": 0.3,
-        "distortion_prob": 0.4,
-        "dropout_prob": 0.3,
-        "bleedthrough_prob": 0.25,
-        "eval_epochs": [8, 12, 14, 16]
-    },
-    # Run 20: Constant LR, 20 epochs
-    {
-        "id": "run_20_long_const",
-        "epochs": 20,
-        "variations": 3,
-        "iterations": 200,
-        "error_rate": 0.05,
-        "learning_rate": 0.0005,
-        "lr_schedule": "constant",
-        "lr_decay_rate": 0.5,
-        "lr_decay_epochs": 4,
-        "blur_prob": 0.4,
-        "shadow_prob": 0.3,
-        "distortion_prob": 0.4,
-        "dropout_prob": 0.3,
-        "bleedthrough_prob": 0.25,
-        "eval_epochs": [8, 12, 16, 20]
-    },
-    # Run 21: Step Decay, Halved Augmentation, 16 epochs
-    {
-        "id": "run_21_step_mod_aug",
-        "epochs": 16,
-        "variations": 3,
-        "iterations": 200,
-        "error_rate": 0.05,
-        "learning_rate": 0.0005,
-        "lr_schedule": "step",
-        "lr_decay_rate": 0.5,
-        "lr_decay_epochs": 4,
-        "blur_prob": 0.2,
-        "shadow_prob": 0.15,
-        "distortion_prob": 0.2,
-        "dropout_prob": 0.15,
-        "bleedthrough_prob": 0.125,
-        "eval_epochs": [8, 12, 14, 16]
-    },
-    # Run 22: Step Decay, Heavier Variation, 16 epochs
-    {
-        "id": "run_22_step_high_var",
-        "epochs": 16,
-        "variations": 5,
-        "iterations": 200,
-        "error_rate": 0.05,
-        "learning_rate": 0.0005,
-        "lr_schedule": "step",
-        "lr_decay_rate": 0.5,
-        "lr_decay_epochs": 4,
-        "blur_prob": 0.4,
-        "shadow_prob": 0.3,
-        "distortion_prob": 0.4,
-        "dropout_prob": 0.3,
-        "bleedthrough_prob": 0.25,
-        "eval_epochs": [8, 12, 14, 16]
-    }
-]
+from config import SweepConfig, TrainingConfig
 
 def get_latest_checkpoint(checkpoint_dir):
     """
@@ -233,6 +123,7 @@ def evaluate_checkpoint(checkpoint_path, test_dir, traineddata_path):
 
 def main():
     parser = argparse.ArgumentParser(description="Tuning meta-parameters of Staged Epoch Loop")
+    parser.add_argument("--sweep-config", default="scripts/sweep_config.json", help="Path to JSON configuration for the sweep")
     parser.add_argument("--dry-run", action="store_true", help="Print commands without executing training")
     args = parser.parse_args()
 
@@ -240,53 +131,58 @@ def main():
     traineddata_path = "training_data/dataset/model/starter/chr/chr.traineddata"
     results_file = "training_data/boundary_results.json"
     
+    if not os.path.exists(args.sweep_config):
+        print(f"Error: Sweep config file not found at {args.sweep_config}")
+        sys.exit(1)
+        
+    sweep_config = SweepConfig.load_from_json(args.sweep_config)
+    experiments = sweep_config.experiments
     all_results = []
     
     print(f"=== Staged Epoch Loop Hyperparameter Retuning ===")
-    print(f"Total experiments to execute: {len(EXPERIMENTS)}")
+    print(f"Total experiments to execute: {len(experiments)}")
     
-    for i, exp in enumerate(EXPERIMENTS, 1):
-        exp_id = exp["id"]
-        print(f"\n--- Experiment {i}/{len(EXPERIMENTS)}: {exp_id} ---")
-        print(f"Parameters: epochs={exp['epochs']}, iterations={exp['iterations']}, lr={exp['learning_rate']}, shadow={exp['shadow_prob']}, error_rate={exp['error_rate']}")
+    for i, exp in enumerate(experiments, 1):
+        exp_id = exp.id
+        exp_config = exp.config
+        
+        print(f"\n--- Experiment {i}/{len(experiments)}: {exp_id} ---")
+        print(f"Parameters: epochs={exp_config.total_epochs}, iterations={exp_config.iterations_per_epoch}, lr={exp_config.learning_rate}, shadow={exp_config.shadow_prob}, error_rate={exp_config.error_rate}")
         
         run_output_dir = f"training_data/staged_tuning/{exp_id}_output"
         run_temp_epoch_dir = f"training_data/staged_tuning/{exp_id}_temp_epoch"
         
+        # Override paths to run in isolation
+        exp_config.train_output_dir = run_output_dir
+        exp_config.output_dir = run_temp_epoch_dir
+        if not exp_config.continue_from:
+            exp_config.continue_from = "training_data/dataset/model/chr.lstm"
+        if not exp_config.model_dir:
+            exp_config.model_dir = "training_data/dataset/model/starter/chr"
+        if not exp_config.old_traineddata:
+            exp_config.old_traineddata = "training_data/dataset/model/chr.traineddata"
+            
+        os.makedirs(run_output_dir, exist_ok=True)
+        config_path = os.path.join(run_output_dir, "config.json")
+        exp_config.save_to_json(config_path)
+        
         cmd = [
             ".venv/bin/python",
             "scripts/train_staged.py",
-            "--total-epochs", str(exp["epochs"]),
-            "--iterations-per-epoch", str(exp["iterations"]),
-            "--variations-per-image", str(exp["variations"]),
-            "--error-rate", str(exp["error_rate"]),
-            "--learning-rate", str(exp["learning_rate"]),
-            "--lr-schedule", exp["lr_schedule"],
-            "--lr-decay-rate", str(exp["lr_decay_rate"]),
-            "--lr-decay-epochs", str(exp["lr_decay_epochs"]),
-            "--blur-prob", str(exp["blur_prob"]),
-            "--shadow-prob", str(exp["shadow_prob"]),
-            "--distortion-prob", str(exp["distortion_prob"]),
-            "--dropout-prob", str(exp["dropout_prob"]),
-            "--bleedthrough-prob", str(exp["bleedthrough_prob"]),
-            "--train-output-dir", run_output_dir,
-            "--output-dir", run_temp_epoch_dir,
-            "--old-traineddata", "training_data/dataset/model/chr.traineddata",
-            "--model-dir", "training_data/dataset/model/starter/chr",
-            "--continue-from", "training_data/dataset/model/chr.lstm"
+            "--config", config_path
         ]
         
         if args.dry_run:
             print(f"[DRY-RUN] Would run command: {' '.join(cmd)}")
-            for epoch in exp["eval_epochs"]:
+            for epoch in exp.eval_epochs:
                 all_results.append({
                     "id": f"{exp_id}_epoch_{epoch}",
                     "parent_id": exp_id,
                     "epochs": epoch,
-                    "variations": exp["variations"],
-                    "iterations": exp["iterations"],
-                    "error_rate": exp["error_rate"],
-                    "learning_rate": exp["learning_rate"],
+                    "variations": exp_config.variations_per_image,
+                    "iterations": exp_config.iterations_per_epoch,
+                    "error_rate": exp_config.error_rate,
+                    "learning_rate": exp_config.learning_rate,
                     "avg_BCER": 25.0 - (0.5 * i) - (0.1 * epoch),
                     "avg_BWER": 55.0 - (0.8 * i) - (0.2 * epoch),
                     "checkpoint": f"{run_output_dir}/dummy_epoch_{epoch}.checkpoint"
@@ -298,9 +194,9 @@ def main():
             subprocess.run(cmd, check=True)
             
             # Evaluate all requested sub-epochs
-            for epoch in exp["eval_epochs"]:
-                print(f"Locating checkpoint for epoch {epoch} (target iterations: {epoch * exp['iterations']})...")
-                checkpoint = get_checkpoint_for_epoch(run_output_dir, epoch, exp["iterations"])
+            for epoch in exp.eval_epochs:
+                print(f"Locating checkpoint for epoch {epoch} (target iterations: {epoch * exp_config.iterations_per_epoch})...")
+                checkpoint = get_checkpoint_for_epoch(run_output_dir, epoch, exp_config.iterations_per_epoch)
                 
                 if checkpoint:
                     print(f"Evaluating checkpoint: {checkpoint}")
@@ -312,10 +208,10 @@ def main():
                             "id": f"{exp_id}_epoch_{epoch}",
                             "parent_id": exp_id,
                             "epochs": epoch,
-                            "variations": exp["variations"],
-                            "iterations": exp["iterations"],
-                            "error_rate": exp["error_rate"],
-                            "learning_rate": exp["learning_rate"],
+                            "variations": exp_config.variations_per_image,
+                            "iterations": exp_config.iterations_per_epoch,
+                            "error_rate": exp_config.error_rate,
+                            "learning_rate": exp_config.learning_rate,
                             "avg_BCER": avg_bcer,
                             "avg_BWER": avg_bwer,
                             "checkpoint": checkpoint,
@@ -350,6 +246,13 @@ def main():
         print(f"Error Rate: {best_run['error_rate']}")
         print(f"Best Average BCER: {best_run['avg_BCER']:.3f}%")
         print(f"Best Average BWER: {best_run['avg_BWER']:.3f}%")
+        
+        # Save best_config.json
+        best_exp = next((e for e in experiments if e.id == best_run['parent_id']), None)
+        if best_exp:
+            best_config = best_exp.config
+            best_config.save_to_json("best_config.json")
+            print("Saved best configuration to best_config.json")
 
 if __name__ == "__main__":
     main()
