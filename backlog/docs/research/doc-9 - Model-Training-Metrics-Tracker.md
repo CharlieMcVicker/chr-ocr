@@ -3,7 +3,7 @@ id: doc-9
 title: Model Training Metrics Tracker
 type: other
 created_date: '2026-06-11 14:58'
-updated_date: '2026-06-15 23:31'
+updated_date: '2026-06-16 07:40'
 ---
 # Model Training Metrics Tracker
 
@@ -22,6 +22,7 @@ This document tracks the iterative improvements in the Cherokee Tesseract LSTM c
 | 2026-06-11 | 7728 (Split 80/20, elastic+morph aug) | 600 | 43.258% | `chr_43.258_577_600.checkpoint` | TASK-39: Extended training to 600 iterations on the full 7728-sample augmented dataset. **Test BCER: 24.944%**, BWER: 55.757%. Massive improvement. |
 | 2026-06-12 | 300 (Split 60/40) | 1600 (8 epochs) | 29.030% | `staged_tuning/run_10_epochs_8_output/chr_29.030_1522_1600.checkpoint` | **CURRENT BEST MODEL**. Parameter sweep run 10 (epochs=8, variations=3, error_rate=0.05). **Avg Test BCER: 19.598%** (16.346% base), Avg Test BWER: 42.393% (37.546% base) across all 30 binarizations. |
 | 2026-06-15 | 300 (Split 60/40) | 1600 (8 epochs) | 40.050% | `dataset_staged_output/chr_40.050_1430_1500.checkpoint` | Re-run of standard epochs=8 staged loop configuration. **Avg Test BCER: 27.471%** (23.376% base), Avg Test BWER: 51.778% (46.387% base). |
+| 2026-06-16 | 300 (Split 60/40) | (Evaluation) | — | `best_checkpoint.checkpoint` vs `dataset_staged_output/...` | **TASK-63**: Direct evaluation comparison on clean/low-distortion base grayscale test set. Pre-fix best run 10 achieved **21.538% BCER**, while post-fix run achieved **23.376% BCER** (a uniform 1.8pp degradation due to more difficult augmentation constraints during training). |
 
 ## Key Observations
 
