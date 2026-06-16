@@ -10,6 +10,7 @@ import sys
 import argparse
 import json
 from PIL import Image
+Image.MAX_IMAGE_PIXELS = None
 
 # Ensure server package can be imported
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))

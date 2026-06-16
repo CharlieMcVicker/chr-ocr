@@ -92,7 +92,7 @@ def classify_line_image(pil_img) -> str:
     Returns: 'Cherokee', 'English', 'Mixed', or 'Empty'.
     """
     model_dir = "/Users/charlesmcvicker/code/phoenix/training_data_v2/dataset/model"
-    ftm_model = "chr_best_finetuned"
+    ftm_model = "chr_lang_prediction"
     ftm_config = f"--tessdata-dir {model_dir} --psm 7"
     
     try:

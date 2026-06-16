@@ -56,10 +56,16 @@ def main():
     
     for idx, (key, item) in enumerate(manifest.items()):
         if not args.force and 'ftm_ocr' in item and 'ftm_confidence' in item:
-            skipped += 1
-            continue
+            if item['ftm_ocr'] != "Error":
+                skipped += 1
+                continue
             
         img_path = os.path.join(base_dir, item['image_path'])
+        
+        if not os.path.exists(img_path):
+            fallback_path = os.path.join("training_data", item['image_path'])
+            if os.path.exists(fallback_path):
+                img_path = fallback_path
         
         try:
             # Open image and convert to RGB
