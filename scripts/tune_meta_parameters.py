@@ -12,67 +12,115 @@ import argparse
 import json
 import re
 
-# Search matrix for post-fix hyperparameter retuning
+# Search matrix for post-fix hyperparameter retuning (with expanded charset & schedules)
 EXPERIMENTS = [
-    # Run 13: Baseline post-fix configuration
+    # Run 17: Constant Low LR, 16 epochs
     {
-        "id": "run_13_baseline",
-        "epochs": 12,
-        "variations": 3,
-        "iterations": 200,
-        "error_rate": 0.05,
-        "learning_rate": 0.001,
-        "blur_prob": 0.4,
-        "shadow_prob": 0.3,
-        "distortion_prob": 0.4,
-        "dropout_prob": 0.3,
-        "bleedthrough_prob": 0.25,
-        "eval_epochs": [6, 8, 10, 12]
-    },
-    # Run 14: Lower learning rate
-    {
-        "id": "run_14_lower_lr",
-        "epochs": 12,
+        "id": "run_17_const_low",
+        "epochs": 16,
         "variations": 3,
         "iterations": 200,
         "error_rate": 0.05,
         "learning_rate": 0.0005,
+        "lr_schedule": "constant",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
         "blur_prob": 0.4,
         "shadow_prob": 0.3,
         "distortion_prob": 0.4,
         "dropout_prob": 0.3,
         "bleedthrough_prob": 0.25,
-        "eval_epochs": [6, 8, 10, 12]
+        "eval_epochs": [8, 12, 14, 16]
     },
-    # Run 15: Lower augmentation intensity (halved probability of perturbations)
+    # Run 18: Stepped Decay, 16 epochs
     {
-        "id": "run_15_lower_aug",
-        "epochs": 12,
+        "id": "run_18_step_decay",
+        "epochs": 16,
         "variations": 3,
         "iterations": 200,
         "error_rate": 0.05,
-        "learning_rate": 0.001,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25,
+        "eval_epochs": [8, 12, 14, 16]
+    },
+    # Run 19: Exponential Decay, 16 epochs
+    {
+        "id": "run_19_exp_decay",
+        "epochs": 16,
+        "variations": 3,
+        "iterations": 200,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "exp",
+        "lr_decay_rate": 0.9,
+        "lr_decay_epochs": 4,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25,
+        "eval_epochs": [8, 12, 14, 16]
+    },
+    # Run 20: Constant LR, 20 epochs
+    {
+        "id": "run_20_long_const",
+        "epochs": 20,
+        "variations": 3,
+        "iterations": 200,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "constant",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25,
+        "eval_epochs": [8, 12, 16, 20]
+    },
+    # Run 21: Step Decay, Halved Augmentation, 16 epochs
+    {
+        "id": "run_21_step_mod_aug",
+        "epochs": 16,
+        "variations": 3,
+        "iterations": 200,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
         "blur_prob": 0.2,
         "shadow_prob": 0.15,
         "distortion_prob": 0.2,
         "dropout_prob": 0.15,
         "bleedthrough_prob": 0.125,
-        "eval_epochs": [6, 8, 10, 12]
+        "eval_epochs": [8, 12, 14, 16]
     },
-    # Run 16: Zero transcription error rate
+    # Run 22: Step Decay, Heavier Variation, 16 epochs
     {
-        "id": "run_16_zero_noise",
-        "epochs": 12,
-        "variations": 3,
+        "id": "run_22_step_high_var",
+        "epochs": 16,
+        "variations": 5,
         "iterations": 200,
-        "error_rate": 0.00,
-        "learning_rate": 0.001,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 4,
         "blur_prob": 0.4,
         "shadow_prob": 0.3,
         "distortion_prob": 0.4,
         "dropout_prob": 0.3,
         "bleedthrough_prob": 0.25,
-        "eval_epochs": [6, 8, 10, 12]
+        "eval_epochs": [8, 12, 14, 16]
     }
 ]
 
@@ -143,7 +191,7 @@ def evaluate_checkpoint(checkpoint_path, test_dir, traineddata_path):
                     lstmf_path = base + ".lstmf"
                     if not os.path.exists(lstmf_path):
                         subprocess.run(
-                            ["tesseract", img, base, "-l", "chr", "--psm", "13", "lstm.train"],
+                            ["tesseract", img, base, "--tessdata-dir", "training_data/dataset/model/starter/chr", "-l", "chr", "--oem", "1", "--psm", "13", "/opt/homebrew/share/tessdata/configs/lstm.train"],
                             stdout=subprocess.DEVNULL,
                             stderr=subprocess.DEVNULL,
                             check=True
@@ -189,7 +237,7 @@ def main():
     args = parser.parse_args()
 
     test_dir = "training_data/dataset/test"
-    traineddata_path = "training_data/dataset/model/chr.traineddata"
+    traineddata_path = "training_data/dataset/model/starter/chr/chr.traineddata"
     results_file = "training_data/boundary_results.json"
     
     all_results = []
@@ -213,13 +261,19 @@ def main():
             "--variations-per-image", str(exp["variations"]),
             "--error-rate", str(exp["error_rate"]),
             "--learning-rate", str(exp["learning_rate"]),
+            "--lr-schedule", exp["lr_schedule"],
+            "--lr-decay-rate", str(exp["lr_decay_rate"]),
+            "--lr-decay-epochs", str(exp["lr_decay_epochs"]),
             "--blur-prob", str(exp["blur_prob"]),
             "--shadow-prob", str(exp["shadow_prob"]),
             "--distortion-prob", str(exp["distortion_prob"]),
             "--dropout-prob", str(exp["dropout_prob"]),
             "--bleedthrough-prob", str(exp["bleedthrough_prob"]),
             "--train-output-dir", run_output_dir,
-            "--output-dir", run_temp_epoch_dir
+            "--output-dir", run_temp_epoch_dir,
+            "--old-traineddata", "training_data/dataset/model/chr.traineddata",
+            "--model-dir", "training_data/dataset/model/starter/chr",
+            "--continue-from", "training_data/dataset/model/chr.lstm"
         ]
         
         if args.dry_run:

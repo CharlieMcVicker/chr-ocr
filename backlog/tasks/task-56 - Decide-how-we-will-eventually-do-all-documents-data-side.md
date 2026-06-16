@@ -4,8 +4,9 @@ title: Decide how we will eventually do all documents (data side)
 status: To Do
 assignee: []
 created_date: '2026-06-15 18:06'
-updated_date: '2026-06-15 19:53'
-labels: []
+updated_date: '2026-06-16 19:54'
+labels:
+  - maybe-stale
 dependencies: []
 ordinal: 58000
 ---

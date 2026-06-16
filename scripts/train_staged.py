@@ -57,6 +57,9 @@ def main():
     parser.add_argument("--old-traineddata", default=None, help="Path to the original traineddata (required for network expansion)")
     parser.add_argument("--max-workers", type=int, default=None, help="Maximum number of worker threads for parallel compilation")
     parser.add_argument("--learning-rate", type=float, default=0.0005, help="Learning rate for lstmtraining")
+    parser.add_argument("--lr-schedule", default="constant", choices=["constant", "step", "exp"], help="Learning rate schedule type")
+    parser.add_argument("--lr-decay-rate", type=float, default=0.5, help="Decay factor for learning rate schedule")
+    parser.add_argument("--lr-decay-epochs", type=int, default=4, help="Epoch interval for step decay")
     parser.add_argument("--blur-prob", type=float, default=0.4, help="Probability of blur augmentation")
     parser.add_argument("--shadow-prob", type=float, default=0.3, help="Probability of shadow augmentation")
     parser.add_argument("--distortion-prob", type=float, default=0.4, help="Probability of distortion augmentation")
@@ -147,7 +150,16 @@ def main():
                 print("Warning: No checkpoint found from previous epoch! Falling back to base model.", file=sys.stderr)
                 continue_model = base_lstm_path
 
+        # Determine current learning rate based on schedule
+        current_lr = args.learning_rate
+        if args.lr_schedule == "step":
+            decay_steps = (epoch - 1) // args.lr_decay_epochs
+            current_lr = args.learning_rate * (args.lr_decay_rate ** decay_steps)
+        elif args.lr_schedule == "exp":
+            current_lr = args.learning_rate * (args.lr_decay_rate ** (epoch - 1))
+            
         print(f"Continuing training from: {continue_model}")
+        print(f"Current Epoch {epoch} Learning Rate: {current_lr:.8f} (schedule: {args.lr_schedule})")
 
         # Step E: Run lstmtraining
         # max_iterations grows cumulative-wise for continuing training
@@ -163,12 +175,12 @@ def main():
             "--traineddata", traineddata_path,
             "--train_listfile", list_train_path,
             "--max_iterations", str(max_iterations),
-            "--learning_rate", str(args.learning_rate)
+            "--learning_rate", str(current_lr)
         ]
         if args.old_traineddata:
             cmd_train.extend(["--old_traineddata", args.old_traineddata])
             
-        if args.learning_rate != 0.001:
+        if current_lr != 0.001:
             cmd_train.append("--reset_learning_rate")
         
         with open(log_file_path, "w", encoding="utf-8") as log_f:

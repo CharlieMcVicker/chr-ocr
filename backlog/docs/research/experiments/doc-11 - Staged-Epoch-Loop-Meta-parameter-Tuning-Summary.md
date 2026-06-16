@@ -63,13 +63,33 @@ Following the Albumentations bug fix (TASK-54), the dataset complexity increased
 2. **Augmentation Strength and Convergence**: Halving the augmentation intensity (`run_15`) only resulted in a marginal improvement over the default-rate baseline (average BCER of **22.498%** vs. **23.469%**). Keeping the robust defaults but reducing the learning rate yielded far superior generalization.
 3. **Noise Injection acts as regularizer**: Incorporating `0.05` transcription error rate injection (`run_13`) showed equivalent or slightly better performance than `0.00` noise rate (`run_16`), confirming it acts as a healthy regularizer.
 
+## Expanded Charset & LR Schedule Sweep (June 16, 2026)
+
+Following the restoration of training crops and the integration of the historic Ꮐ character, we conducted a third systematic sweep to evaluate longer training runs (up to 20 epochs), learning rate decay schedules (stepped vs. exponential), and alternative augmentation settings.
+
+| Run ID | Epochs | Variations | Iterations/Epoch | LR Schedule | Base LR | Augmentations | Avg. BCER (%) | Avg. BWER (%) | Checkpoint |
+|:---|:---:|:---:|:---:|:---|:---|:---|:---:|:---:|:---|
+| **run_17_const_low** | 16 | 3 | 200 | `constant` | 0.0005 | Default (0.4/0.3/0.4/0.3/0.25) | 7.555% | 16.922% | `run_17_const_low_output/chr_22.995_2715_3100.checkpoint` |
+| **run_18_step_decay** | 16 | 3 | 200 | `step` | 0.0005 | Default (0.4/0.3/0.4/0.3/0.25) | 7.634% | 16.622% | `run_18_step_decay_output/chr_21.664_2744_3100.checkpoint` |
+| **run_19_exp_decay** | 16 | 3 | 200 | `exp` | 0.0005 | Default (0.4/0.3/0.4/0.3/0.25) | 7.673% | 16.870% | `run_19_exp_decay_output/chr_23.007_2706_3100.checkpoint` |
+| **run_20_long_const** | **20** | **3** | **200** | `constant` | **0.0005** | **Default (0.4/0.3/0.4/0.3/0.25)** | **7.033%** | **15.781%** | `run_20_long_const_output/chr_19.977_3345_3900.checkpoint` |
+| **run_21_step_mod_aug** | 16 | 3 | 200 | `step` | 0.0005 | Halved (0.2/0.15/0.2/0.15/0.125) | **7.037%** | **14.752%** | `run_21_step_mod_aug_output/chr_16.817_2625_3100.checkpoint` |
+| **run_22_step_high_var**| 16 | 5 | 200 | `step` | 0.0005 | Default (0.4/0.3/0.4/0.3/0.25) | 8.112% | 17.713% | `run_22_step_high_var_output/chr_22.573_2559_2900.checkpoint` |
+
+### Key Findings (Expanded & LR Schedule Sweep)
+
+1. **Extended training counts are highly beneficial**: Increasing training length to 20 epochs (4,000 iterations total) with a constant learning rate of `0.0005` (`run_20`) yielded a new record low of **7.033% average BCER** and **15.781% BWER** on the test split. The model continues to converge stably without overfitting.
+2. **Moderate augmentation yields the best word accuracy**: Combining a stepped learning rate decay schedule with halved/moderate augmentation intensities (`run_21`) achieved **7.037% average BCER** and the absolute best **14.752% average BWER**. This suggests that while heavy augmentation provides robustness, moderating the distortion noise allows the LSTM network to learn the features of the expanded character set (including rare characters like Ꮐ) more cleanly.
+3. **High variations per image do not scale**: Increasing the variations per image to 5 (`run_22`) resulted in performance regression (**8.112% BCER**), confirming that 3 variations remains the optimal density sweet spot.
+
 ## Production Recommendation
 
-The optimal meta-parameter boundaries for Cherokee OCR fine-tuning under the post-fix pipeline are:
-- **Learning Rate**: 0.0005 (crucial to allow the network to converge under heavy augmentation noise)
-- **Total Epochs**: 12
+The optimal meta-parameter boundaries for Cherokee OCR fine-tuning under the expanded post-fix pipeline are:
+- **Learning Rate**: 0.0005 (with optional stepped decay by a factor of 0.5 every 4 epochs)
+- **Total Epochs**: 20 (allowing full convergence)
 - **Variations per Image**: 3
 - **Iterations per Epoch**: 200
 - **Transcription Error Injection Rate**: 0.05
-- **Augmentation Intensities**: Default blur (0.4), shadow (0.3), spatial distortion (0.4), dropout (0.3), bleedthrough (0.25).
+- **Augmentation Intensities**: Moderate/Halved blur (0.2), shadow (0.15), spatial distortion (0.2), dropout (0.15), bleedthrough (0.125) for best word accuracy; or Default/Robust (0.4/0.3/0.4/0.3/0.25) for extreme noise resistance.
+
 
