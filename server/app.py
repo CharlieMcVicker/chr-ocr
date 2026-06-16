@@ -265,7 +265,7 @@ def training_editor():
     Returns:
         str: Rendered training UI editor.
     """
-    from scripts.classify_layout import analyze_text
+    from phoenix.layout import analyze_text
     manifest = load_training_manifest()
     
     # Return manifest as list of items for easier frontend handling

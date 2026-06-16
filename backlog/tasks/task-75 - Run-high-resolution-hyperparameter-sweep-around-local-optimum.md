@@ -4,6 +4,7 @@ title: Run high-resolution hyperparameter sweep around local optimum
 status: To Do
 assignee: []
 created_date: '2026-06-16 21:14'
+updated_date: '2026-06-16 21:19'
 labels: []
 dependencies: []
 ordinal: 74000
@@ -17,8 +18,8 @@ Perform a targeted, high-resolution hyperparameter sweep around the newly discov
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Define the high-resolution parameter grid (runs 23 to 26) in tune_meta_parameters.py
-- [ ] #2 Execute the high-resolution tuning sweep
-- [ ] #3 Evaluate the resulting checkpoints on the test split
-- [ ] #4 Document final findings and optimal parameters in doc-9 and doc-11
+- [ ] #1 Execute the high-resolution tuning sweep
+- [ ] #2 Evaluate the resulting checkpoints on the test split
+- [ ] #3 Document final findings and optimal parameters in doc-9 and doc-11
+- [ ] #4 Define the high-resolution parameter grid (runs 23 to 26) in a JSON sweep configuration file
 <!-- AC:END -->

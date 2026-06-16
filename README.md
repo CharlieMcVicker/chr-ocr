@@ -30,6 +30,17 @@ pip install surya-ocr pillow numpy scipy
 
 ---
 
+## Codebase Modular Structure
+
+The codebase is structured as a modular Python package (`phoenix/`) with thin scripts and server endpoints importing reusable core logic from it:
+
+- **`phoenix.config`**: Defines dataclasses for training parameters and hyperparameter sweep setups (`TrainingConfig`, `SweepConfig`).
+- **`phoenix.manifest`**: Manages manifest dataset load/save operations, splits (train/test), cleanups, label reconsolidation, and line crop operations.
+- **`phoenix.training`**: Holds ML pipeline orchestration (staged epoch loop, checkpoint sweep evaluation) and data augmentation (elastic transforms, ink simulation, mixup).
+- **`phoenix.layout`**: Segment scans into columns/lines (via Surya), classifies column/line layout languages, and performs PyTesseract FTM prediction enrichment.
+
+---
+
 ## Web OCR Server & Dashboard
  
 The web app provides a visual UI to upload document images, preprocess them using multiple binarization algorithms (Textcleaner, Doxa - Su, Doxa - Sauvola, and Doxa - Wolf), run Tesseract OCR on each version, and compare/view the results in an interactive tabbed hOCR overlay viewer.
