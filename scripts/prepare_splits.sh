@@ -10,7 +10,7 @@ rm -f "$TRAIN_80_DIR/list.train"
 for img in "$TRAIN_80_DIR"/*.png; do
     base="${img%.png}"
     if [ ! -f "${base}.lstmf" ]; then
-        tesseract "$img" "$base" -l chr --psm 13 lstm.train > /dev/null 2>&1
+        tesseract "$img" "$base" --tessdata-dir "training_data/dataset/model/starter/chr" -l chr --oem 1 --psm 13 /opt/homebrew/share/tessdata/configs/lstm.train > /dev/null 2>&1
     fi
     echo "$(realpath "${base}.lstmf")" >> "$TRAIN_80_DIR/list.train"
 done
@@ -21,7 +21,7 @@ rm -f "$TEST_20_DIR/list.test"
 for img in "$TEST_20_DIR"/*.png; do
     base="${img%.png}"
     if [ ! -f "${base}.lstmf" ]; then
-        tesseract "$img" "$base" -l chr --psm 13 lstm.train > /dev/null 2>&1
+        tesseract "$img" "$base" --tessdata-dir "training_data/dataset/model/starter/chr" -l chr --oem 1 --psm 13 /opt/homebrew/share/tessdata/configs/lstm.train > /dev/null 2>&1
     fi
     echo "$(realpath "${base}.lstmf")" >> "$TEST_20_DIR/list.test"
 done

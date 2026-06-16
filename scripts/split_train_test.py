@@ -31,13 +31,34 @@ def split_data(src_dir, train_dir, test_dir, split_ratio=0.8, seed=42):
     png_files = sorted(list(src_path.glob("*.png")))
     random.shuffle(png_files)
     
-    split_idx = int(len(png_files) * split_ratio)
-    train_files = png_files[:split_idx]
-    test_files = png_files[split_idx:]
+    has_g_files = []
+    no_g_files = []
     
+    for png_file in png_files:
+        gt_file = png_file.with_suffix(".gt.txt")
+        has_g = False
+        if gt_file.exists():
+            with open(gt_file, "r", encoding="utf-8") as f:
+                content = f.read()
+                if "Ꮐ" in content:
+                    has_g = True
+        
+        if has_g:
+            has_g_files.append(png_file)
+        else:
+            no_g_files.append(png_file)
+            
     print(f"Total PNG files: {len(png_files)}")
-    print(f"Training files: {len(train_files)}")
-    print(f"Testing files: {len(test_files)}")
+    print(f"Files containing 'Ꮐ': {len(has_g_files)}")
+    
+    g_split_idx = int(len(has_g_files) * split_ratio)
+    no_g_split_idx = int(len(no_g_files) * split_ratio)
+    
+    train_files = has_g_files[:g_split_idx] + no_g_files[:no_g_split_idx]
+    test_files = has_g_files[g_split_idx:] + no_g_files[no_g_split_idx:]
+    
+    print(f"Training files: {len(train_files)} ({len(has_g_files[:g_split_idx])} with 'Ꮐ')")
+    print(f"Testing files: {len(test_files)} ({len(has_g_files[g_split_idx:])} with 'Ꮐ')")
     
     for files, target_dir in [(train_files, train_path), (test_files, test_path)]:
         for png_file in files:

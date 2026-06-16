@@ -30,13 +30,13 @@ def get_latest_checkpoint(checkpoint_dir):
     checkpoints.sort(key=os.path.getmtime)
     return checkpoints[-1]
 
-def compile_image(img_path):
+def compile_image(img_path, model_dir):
     """
     Compiles a single PNG image to .lstmf using tesseract.
     """
     base = os.path.splitext(img_path)[0]
     subprocess.run(
-        ["tesseract", img_path, base, "-l", "chr", "--psm", "13", "lstm.train"],
+        ["tesseract", img_path, base, "--tessdata-dir", model_dir, "-l", "chr", "--oem", "1", "--psm", "13", "/opt/homebrew/share/tessdata/configs/lstm.train"],
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
         check=True
@@ -45,8 +45,8 @@ def compile_image(img_path):
 
 def main():
     parser = argparse.ArgumentParser(description="Staged Epoch Loop for Tesseract OCR Fine-tuning")
-    parser.add_argument("--total-epochs", type=int, default=5, help="Total number of staged training epochs")
-    parser.add_argument("--iterations-per-epoch", type=int, default=100, help="Number of training iterations to run per epoch")
+    parser.add_argument("--total-epochs", type=int, default=12, help="Total number of staged training epochs")
+    parser.add_argument("--iterations-per-epoch", type=int, default=200, help="Number of training iterations to run per epoch")
     parser.add_argument("--train-manifest", default="training_data/manifest_w_lang.json", help="Path to raw master manifest")
     parser.add_argument("--variations-per-image", type=int, default=3, help="Fresh variations to generate per source image each epoch")
     parser.add_argument("--error-rate", type=float, default=0.05, help="Weakly supervised synthetic transcription error rate")
@@ -54,8 +54,9 @@ def main():
     parser.add_argument("--model-dir", default="training_data/dataset/model", help="Directory containing base models")
     parser.add_argument("--train-output-dir", default="training_data/dataset_staged_output", help="Directory where checkpoints and logs are saved")
     parser.add_argument("--continue-from", default=None, help="Explicit checkpoint path to start training from")
+    parser.add_argument("--old-traineddata", default=None, help="Path to the original traineddata (required for network expansion)")
     parser.add_argument("--max-workers", type=int, default=None, help="Maximum number of worker threads for parallel compilation")
-    parser.add_argument("--learning-rate", type=float, default=0.001, help="Learning rate for lstmtraining")
+    parser.add_argument("--learning-rate", type=float, default=0.0005, help="Learning rate for lstmtraining")
     parser.add_argument("--blur-prob", type=float, default=0.4, help="Probability of blur augmentation")
     parser.add_argument("--shadow-prob", type=float, default=0.3, help="Probability of shadow augmentation")
     parser.add_argument("--distortion-prob", type=float, default=0.4, help="Probability of distortion augmentation")
@@ -120,7 +121,7 @@ def main():
 
         list_train_path = os.path.join(args.output_dir, "list.train")
         with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
-            lstmf_paths = list(executor.map(compile_image, png_files))
+            lstmf_paths = list(executor.map(lambda f: compile_image(f, args.model_dir), png_files))
 
         with open(list_train_path, "w", encoding="utf-8") as list_f:
             for lstmf_path in lstmf_paths:
@@ -164,6 +165,9 @@ def main():
             "--max_iterations", str(max_iterations),
             "--learning_rate", str(args.learning_rate)
         ]
+        if args.old_traineddata:
+            cmd_train.extend(["--old_traineddata", args.old_traineddata])
+            
         if args.learning_rate != 0.001:
             cmd_train.append("--reset_learning_rate")
         
