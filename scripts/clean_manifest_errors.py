@@ -1,20 +1,14 @@
-import json
+#!/usr/bin/env python3
+"""
+Clean error entries from manifest files.
+"""
+import os
+import sys
 
-paths = ["training_data/manifest_w_lang.json", "training_data/manifest.json"]
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-for path in paths:
-    with open(path, "r", encoding="utf-8") as f:
-        manifest = json.load(f)
-    
-    keys_to_remove = []
-    for k, v in manifest.items():
-        if v.get("ftm_ocr") == "Error" or v.get("predicted_lang") == "Error":
-            keys_to_remove.append(k)
-            
-    for k in keys_to_remove:
-        del manifest[k]
-        
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2, ensure_ascii=False)
-        
-    print(f"Removed {len(keys_to_remove)} error entries from {path}")
+from phoenix.manifest.operations import clean_manifest_errors
+
+if __name__ == "__main__":
+    paths = ["training_data/manifest_w_lang.json", "training_data/manifest.json"]
+    clean_manifest_errors(paths)

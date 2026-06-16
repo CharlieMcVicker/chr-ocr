@@ -9,163 +9,30 @@ import json
 import random
 import cv2
 import numpy as np
-import doxapy
 import argparse
 import sys
-import albumentations as A
 
-def normalize_height(image, target_line_height=42, pad_y=3):
-    """
-    Resizes the line image to a target height while maintaining the aspect ratio.
-    """
-    img_height, img_width = image.shape[:2]
-    if img_height == 0 or img_width == 0:
-        return image
-    
-    line_height = max(1, img_height - 2 * pad_y)
-    ratio = target_line_height / float(line_height)
-    
-    target_height = int(round(ratio * img_height))
-    target_width = int(round(ratio * img_width))
-    
-    if target_width == 0: target_width = 1
-    if target_height == 0: target_height = 1
-    
-    resized = cv2.resize(image, (target_width, target_height), interpolation=cv2.INTER_AREA)
-    return resized
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-def generate_box_file(box_path, text, width, height):
-    """
-    Generates a Tesseract .box file containing WordStr layout format for training.
-    """
-    with open(box_path, "w", encoding="utf-8") as f:
-        f.write(f"WordStr 0 0 {width} {height} 0 #{text}\n")
-        f.write(f"\t 0 0 {width} {height} 0\n")
-
-def inject_synthetic_errors(text, error_rate=0.05):
-    """
-    Probabilistically injects character-level typos (substitution, deletion, insertion)
-    into Cherokee transcriptions to simulate label noise and train robust OCR models.
-    """
-    if random.random() > error_rate or not text:
-        return text
-
-    # Common Cherokee syllables to use as random replacements
-    cherokee_chars = [chr(c) for c in range(0x13A0, 0x13FF)] + [chr(c) for c in range(0xAB70, 0xABBF)]
-    
-    chars = list(text)
-    err_type = random.choice(["sub", "del", "ins"])
-    idx = random.randint(0, len(chars) - 1)
-    
-    if err_type == "sub" and chars:
-        chars[idx] = random.choice(cherokee_chars)
-    elif err_type == "del" and len(chars) > 1:
-        chars.pop(idx)
-    elif err_type == "ins":
-        chars.insert(idx, random.choice(cherokee_chars))
-        
-    return "".join(chars)
-
-def binarize(img, algo_name, params):
-    """
-    Binarizes an image using Otsu thresholding or local adaptive algorithms via doxapy.
-    """
-    if len(img.shape) == 3:
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        
-    if algo_name == "otsu":
-        _, binary = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
-        return binary
-
-    p = dict(params)
-    if "algo" in p:
-        del p["algo"]
-    
-    h, w = img.shape[:2]
-    max_window = (min(h, w) // 2) * 2 + 1
-    if max_window < 3: max_window = 3
-    
-    if p.get("window", 15) > max_window:
-        p["window"] = max_window
-        
-    if algo_name == "su":
-        algo = doxapy.Binarization.Algorithms.SU
-    elif algo_name == "sauvola":
-        algo = doxapy.Binarization.Algorithms.SAUVOLA
-    elif algo_name == "wolf":
-        algo = doxapy.Binarization.Algorithms.WOLF
-    else:
-        return img
-        
-    return doxapy.to_binary(algo, img, p)
-
-def get_albumentations_pipeline(blur_prob=0.4, shadow_prob=0.3, distortion_prob=0.4, dropout_prob=0.3):
-    """
-    Constructs a sophisticated Albumentations pipeline for text line perturbation.
-    """
-    return A.Compose([
-        # 1. Sensor Noise
-        A.OneOf([
-            A.GaussianBlur(blur_limit=(3, 5), p=1.0),
-            A.MotionBlur(blur_limit=(3, 5), p=1.0),
-            A.MedianBlur(blur_limit=(3, 5), p=1.0),
-        ], p=blur_prob),
-        A.ImageCompression(quality_range=(40, 85), p=0.3),
-        A.RandomBrightnessContrast(brightness_limit=0.2, contrast_limit=0.2, p=0.4),
-        A.RandomShadow(num_shadows_limit=(1, 2), shadow_dimension=5, p=shadow_prob),
-        
-        # 2. Spatial Distortions
-        A.OneOf([
-            A.GridDistortion(num_steps=5, distort_limit=0.1, border_mode=cv2.BORDER_REPLICATE, p=1.0),
-            A.ElasticTransform(alpha=1, sigma=15, border_mode=cv2.BORDER_REPLICATE, p=1.0),
-        ], p=distortion_prob),
-        
-        # 3. Occlusion
-        A.CoarseDropout(
-            num_holes_range=(1, 4),
-            hole_height_range=(4, 10),
-            hole_width_range=(4, 10),
-            fill=255, # fill with white for light background
-            p=dropout_prob
-        )
-    ])
-
-def apply_mixup_bleedthrough(img, train_images, p=0.25):
-    """
-    Simulates print-through/bleed-through of text from the reverse side of paper.
-    Blends a random train line crop into the background at very low opacity.
-    """
-    if random.random() > p or not train_images:
-        return img
-        
-    bg_img_path = random.choice(train_images)
-    bg_img = cv2.imread(bg_img_path)
-    if bg_img is None:
-        return img
-        
-    # Resize bg_img to match source img shape
-    h, w = img.shape[:2]
-    bg_resized = cv2.resize(bg_img, (w, h), interpolation=cv2.INTER_AREA)
-    
-    # Standardize channels
-    if len(img.shape) == 3 and len(bg_resized.shape) == 2:
-        bg_resized = cv2.cvtColor(bg_resized, cv2.COLOR_GRAY2BGR)
-    elif len(img.shape) == 2 and len(bg_resized.shape) == 3:
-        bg_resized = cv2.cvtColor(bg_resized, cv2.COLOR_BGR2GRAY)
-        
-    # Bleed-through blending: high primary image weight, low background weight
-    opacity = random.uniform(0.05, 0.15)
-    blended = cv2.addWeighted(img, 1.0 - opacity, bg_resized, opacity, 0)
-    return blended
+from phoenix.training.augment import (
+    normalize_height,
+    generate_box_file,
+    inject_synthetic_errors,
+    binarize,
+    get_albumentations_pipeline,
+    apply_mixup_bleedthrough
+)
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", default="training_data/manifest_w_lang.json")
-    parser.add_argument("--output-dir", default="training_data/dataset_epoch")
-    parser.add_argument("--split", type=float, default=0.8)
-    parser.add_argument("--variations-per-image", type=int, default=3)
-    parser.add_argument("--error-rate", type=float, default=0.05, help="Weakly supervised synthetic transcription error rate")
-    parser.add_argument("--pad-y", type=int, default=3)
+    parser.add_argument("--output-dir", required=True, help="Directory to save augmented outputs")
+    parser.add_argument("--split", type=float, default=0.6, help="Train split ratio")
+    parser.add_argument("--pad-y", type=int, default=3, help="Y padding")
+    parser.add_argument("--variations-per-image", type=int, default=3, help="Number of variations per image")
+    parser.add_argument("--error-rate", type=float, default=0.05, help="Transcription error injection rate")
+    
+    # Augmentation options
     parser.add_argument("--blur-prob", type=float, default=0.4)
     parser.add_argument("--shadow-prob", type=float, default=0.3)
     parser.add_argument("--distortion-prob", type=float, default=0.4)
