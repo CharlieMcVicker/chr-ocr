@@ -25,3 +25,6 @@ test_struggled/
 chr_lines/
 eng_lines/
 
+# Tesseract fine-tuning and staged training outputs
+langdata_lstm/
+training_data/dataset_staged_output_*/
