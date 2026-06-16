@@ -32,3 +32,27 @@ This document tracks the iterative improvements in the Cherokee Tesseract LSTM c
 - **Elastic + Morphological Augmentation (TASK-38)**: Adding elastic distortion and morphological ink simulation reduced test BCER significantly.
 - **BCER trend**: Plateaued at 36-39% before augmentation. Now broken through to ~19.5% average (and ~16.3% base) on test.
 - **Encoding warnings**: Still skipping ~8-10% of samples due to encoding failures in the base chr.traineddata. This limits the effective training set size.
+
+## Production Recommendations
+
+### Hyperparameter & Metaparameter Tuning
+Based on the extensive sweep from `doc-11` (June 16), the optimal meta-parameter boundaries for Cherokee OCR fine-tuning under the post-fix pipeline are:
+- **Learning Rate**: 0.0005 (crucial to allow the network to converge under heavy augmentation noise)
+- **Total Epochs**: 12
+- **Variations per Image**: 3
+- **Iterations per Epoch**: 200
+- **Transcription Error Injection Rate**: 0.05
+- **Augmentation Intensities**: Default blur (0.4), shadow (0.3), spatial distortion (0.4), dropout (0.3), bleedthrough (0.25).
+
+Detailed sweep results are available in [Staged Epoch Loop Meta-parameter Tuning Summary](./experiments/doc-11%20-%20Staged-Epoch-Loop-Meta-parameter-Tuning-Summary.md).
+
+### Binarization Optimization
+Based on the grid search from `doc-8` (June 11):
+- **Base (Grayscale) is STILL the reigning champion.** Retaining 8-bit continuous grayscale information is objectively better for Tesseract LSTM training than aggressive Binarization.
+- If binarization is strictly required, the **Sauvola algorithm** with a **larger window size (35)** and a **lower sensitivity (k = 0.1)** is ideal.
+- The Su algorithm performed terribly on Cherokee syllabary strokes.
+
+Detailed grid results are available in [Binarization Parameter Grid Search Results](./experiments/doc-8%20-%20Binarization-Parameter-Grid-Search-Results.md).
+
+## Historical Experiments
+- [Pre-fix vs Post-fix Evaluation](./experiments/doc-12-prefix-vs-postfix-evaluation.md)
