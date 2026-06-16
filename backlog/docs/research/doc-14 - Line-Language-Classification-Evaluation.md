@@ -21,6 +21,11 @@ Evaluate Cherokee vs. English language classification on individual line crops, 
   - Fine-Tuned Cherokee Model confidence (`ftm_conf`) and OCR transcription
   - Tesseract character-count-based Cherokee percentage (`pct_cherokee = cherokee_count / (cherokee_count + latin_count)`)
 
+## Historical Context & Evolution
+- **Initial Spike**: Early attempts at line-by-line classification struggled heavily due to poor image quality and high noise in baseline Tesseract models.
+- **Ratio Thresholds**: A follow-up evaluated a simple ratio threshold (`pct_cherokee`). Using strict thresholds (`> 0.45` for Cherokee, `< 0.40` for English) yielded a **99.14%** baseline.
+- **Current Model**: The heuristics below build upon these early metrics by incorporating Fine-Tuned Model (FTM) confidences to achieve up to **99.76%** accuracy.
+
 ## Findings
 
 ### Weighted Heuristic
