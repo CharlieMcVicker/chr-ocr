@@ -164,6 +164,7 @@ def crop_pad_skew_correct(pil_img: Image.Image, bbox: list, margin_x: int, margi
     return detect_and_fix_skew(cropped)
 
 _layout_predictor = None
+_detector = None
 
 def get_layout_predictor():
     """
@@ -176,72 +177,99 @@ def get_layout_predictor():
         _layout_predictor = LayoutPredictor(manager)
     return _layout_predictor
 
+def get_detector():
+    """
+    Retrieves or initializes a singleton instance of the Surya DetectionPredictor.
+    """
+    global _detector
+    if _detector is None:
+        print("Initializing Surya detection models...")
+        _detector = DetectionPredictor()
+    return _detector
+
+def extract_columns_batch(pil_imgs: list) -> list:
+    """
+    Runs Surya layout detection on a batch of images and groups blocks fuzzily into columns.
+    """
+    layout_predictor = get_layout_predictor()
+    print(f"Analyzing document layout in batch of {len(pil_imgs)}...")
+    batch_predictions = layout_predictor(pil_imgs)
+    
+    batch_columns = []
+    for idx, pil_img in enumerate(pil_imgs):
+        predictions = batch_predictions[idx]
+        if hasattr(predictions, "error") and predictions.error:
+            print(f"Warning: Layout prediction failed or returned error for image {idx}. Skipping column grouping.")
+            batch_columns.append([])
+            continue
+
+        width, height = pil_img.size
+        tolerance = width * 0.08
+        min_blocks = 3
+        min_height = height * 0.05
+
+        blocks = []
+        for block in predictions.bboxes:
+            if block.label in ["Text", "List"]:
+                blocks.append({
+                    "bbox": block.bbox,
+                    "label": block.label
+                })
+                
+        if not blocks:
+            batch_columns.append([])
+            continue
+
+        groups = []
+        for block in blocks:
+            xmin, ymin, xmax, ymax = block["bbox"]
+            matched_group = None
+            for gp in groups:
+                gp_xmin = sum(b["bbox"][0] for b in gp) / len(gp)
+                gp_xmax = sum(b["bbox"][2] for b in gp) / len(gp)
+                if abs(xmin - gp_xmin) <= tolerance and abs(xmax - gp_xmax) <= tolerance:
+                    matched_group = gp
+                    break
+            
+            if matched_group is not None:
+                matched_group.append(block)
+            else:
+                groups.append([block])
+                
+        extracted_columns = []
+        for gp in groups:
+            gp_ymins = [b["bbox"][1] for b in gp]
+            gp_ymaxs = [b["bbox"][3] for b in gp]
+            gp_height = max(gp_ymaxs) - min(gp_ymins)
+            
+            if len(gp) >= min_blocks or gp_height >= min_height:
+                gp_xmins = [b["bbox"][0] for b in gp]
+                gp_xmaxs = [b["bbox"][2] for b in gp]
+                
+                merged_bbox = [
+                    min(gp_xmins),
+                    min(gp_ymins),
+                    max(gp_xmaxs),
+                    max(gp_ymaxs)
+                ]
+                
+                cropped = pil_img.crop(tuple(merged_bbox))
+                extracted_columns.append({
+                    "image": cropped,
+                    "bbox": merged_bbox,
+                    "label": "Column"
+                })
+                
+        extracted_columns.sort(key=lambda c: c["bbox"][0])
+        batch_columns.append(extracted_columns)
+        
+    return batch_columns
+
 def extract_columns(pil_img: Image.Image) -> list:
     """
     Runs Surya layout detection on the image and groups blocks fuzzily into columns.
     """
-    layout_predictor = get_layout_predictor()
-    print("Analyzing document layout...")
-    predictions = layout_predictor([pil_img])[0]
-    
-    width, height = pil_img.size
-    tolerance = width * 0.08
-    min_blocks = 3
-    min_height = height * 0.05
-
-    blocks = []
-    for block in predictions.bboxes:
-        if block.label in ["Text", "List"]:
-            blocks.append({
-                "bbox": block.bbox,
-                "label": block.label
-            })
-            
-    if not blocks:
-        return []
-
-    groups = []
-    for block in blocks:
-        xmin, ymin, xmax, ymax = block["bbox"]
-        matched_group = None
-        for gp in groups:
-            gp_xmin = sum(b["bbox"][0] for b in gp) / len(gp)
-            gp_xmax = sum(b["bbox"][2] for b in gp) / len(gp)
-            if abs(xmin - gp_xmin) <= tolerance and abs(xmax - gp_xmax) <= tolerance:
-                matched_group = gp
-                break
-        
-        if matched_group is not None:
-            matched_group.append(block)
-        else:
-            groups.append([block])
-            
-    extracted_columns = []
-    for gp in groups:
-        gp_ymins = [b["bbox"][1] for b in gp]
-        gp_ymaxs = [b["bbox"][3] for b in gp]
-        gp_height = max(gp_ymaxs) - min(gp_ymins)
-        
-        if len(gp) >= min_blocks or gp_height >= min_height:
-            gp_xmins = [b["bbox"][0] for b in gp]
-            gp_xmaxs = [b["bbox"][2] for b in gp]
-            
-            merged_bbox = [
-                min(gp_xmins),
-                min(gp_ymins),
-                max(gp_xmaxs),
-                max(gp_ymaxs)
-            ]
-            
-            cropped = pil_img.crop(tuple(merged_bbox))
-            extracted_columns.append({
-                "image": cropped,
-                "bbox": merged_bbox,
-                "label": "Column"
-            })
-            
-    extracted_columns.sort(key=lambda c: c["bbox"][0])
-    return extracted_columns
+    return extract_columns_batch([pil_img])[0]
 
 def crop_pad_normalize_line(image, bbox, padding_x, padding_y, target_height_range=(30, 33)):
     """
@@ -277,63 +305,62 @@ def crop_pad_normalize_line(image, bbox, padding_x, padding_y, target_height_ran
         
         return line_crop, [lx1_pad, ly1_pad, lx2_pad, ly2_pad]
 
-def extract_lines_from_image(pil_img: Image.Image, padding_x: int = 5, padding_y: int = 3) -> list:
+def extract_lines_from_images_batch(pil_imgs: list, padding_x: int = 5, padding_y: int = 3, batch_size: int = 16) -> list:
     """
-    Extracts columns and then lines from each column in a PIL Image.
-    Uses Surya layout and detection predictors.
+    Extracts columns and then lines from each column in a batch of PIL Images.
+    Uses Surya layout and detection predictors cached as singletons.
     """
-    detector = DetectionPredictor()
+    detector = get_detector()
     
-    try:
-        columns = extract_columns(pil_img)
-    except Exception as e:
-        print(f"Column extraction failed: {e}. Processing full page.")
-        columns = []
-        
-    results = []
-    if columns:
-        for col_idx, col in enumerate(columns):
-            margin_x = 20
-            margin_y = 20
-            c_xmin, c_ymin, c_xmax, c_ymax = col["bbox"]
-            c_xmin = max(0, c_xmin - margin_x)
-            c_ymin = max(0, c_ymin - margin_y)
-            c_xmax = min(pil_img.width, c_xmax + margin_x)
-            c_ymax = min(pil_img.height, c_ymax + margin_y)
-            
-            col_crop = pil_img.crop((c_xmin, c_ymin, c_xmax, c_ymax))
-            
-            predictions = detector([col_crop])
-            pred = predictions[0]
-            detected_lines = sorted(pred.bboxes, key=lambda b: b.bbox[1])
-            
-            lines_data = []
-            for line_idx, line in enumerate(detected_lines):
-                line_crop, padded_bbox = crop_pad_normalize_line(
-                    col_crop, line.bbox, padding_x, padding_y
-                )
-                lines_data.append({
-                    "image": line_crop,
-                    "bbox": padded_bbox,
-                    "confidence": line.confidence,
-                    "index": line_idx
-                })
+    # 1. Batch extract columns
+    batch_columns = extract_columns_batch(pil_imgs)
+    
+    # 2. Collect all images that need detection (some have columns, some fall back to full image)
+    # We will record tasks to run detector on and their mappings back to the original image index.
+    detection_inputs = []
+    detection_mapping = []  # List of tuples (img_idx, col_idx, col_crop, col_bbox, is_full_page)
+    
+    for img_idx, columns in enumerate(batch_columns):
+        pil_img = pil_imgs[img_idx]
+        if columns:
+            for col_idx, col in enumerate(columns):
+                margin_x = 20
+                margin_y = 20
+                c_xmin, c_ymin, c_xmax, c_ymax = col["bbox"]
+                c_xmin = max(0, c_xmin - margin_x)
+                c_ymin = max(0, c_ymin - margin_y)
+                c_xmax = min(pil_img.width, c_xmax + margin_x)
+                c_ymax = min(pil_img.height, c_ymax + margin_y)
                 
-            results.append({
-                "column_index": col_idx,
-                "column_bbox": col["bbox"],
-                "column_image": col_crop,
-                "lines": lines_data
-            })
-    else:
-        predictions = detector([pil_img])
-        pred = predictions[0]
-        detected_lines = sorted(pred.bboxes, key=lambda b: b.bbox[1])
+                col_crop = pil_img.crop((c_xmin, c_ymin, c_xmax, c_ymax))
+                detection_inputs.append(col_crop)
+                detection_mapping.append((img_idx, col_idx, col_crop, col["bbox"], False))
+        else:
+            detection_inputs.append(pil_img)
+            detection_mapping.append((img_idx, 0, pil_img, [0, 0, pil_img.width, pil_img.height], True))
+            
+    # 3. Batch run line detection on all compiled inputs
+    all_predictions = []
+    if detection_inputs:
+        for offset in range(0, len(detection_inputs), batch_size):
+            chunk = detection_inputs[offset:offset + batch_size]
+            all_predictions.extend(detector(chunk))
+            
+    # 4. Reconstruct results per image
+    batch_results = [[] for _ in range(len(pil_imgs))]
+    
+    for pred_idx, pred in enumerate(all_predictions):
+        img_idx, col_idx, crop_img, col_bbox, is_full_page = detection_mapping[pred_idx]
         
+        if hasattr(pred, "error") and pred.error:
+            print(f"Warning: Detection prediction failed or returned error for crop index {pred_idx}. Skipping line extraction.")
+            continue
+
+        detected_lines = sorted(pred.bboxes, key=lambda b: b.bbox[1])
         lines_data = []
         for line_idx, line in enumerate(detected_lines):
             line_crop, padded_bbox = crop_pad_normalize_line(
-                pil_img, line.bbox, padding_x, padding_y
+                crop_img, line.bbox, padding_x, padding_y
             )
             lines_data.append({
                 "image": line_crop,
@@ -342,11 +369,27 @@ def extract_lines_from_image(pil_img: Image.Image, padding_x: int = 5, padding_y
                 "index": line_idx
             })
             
-        results.append({
-            "column_index": 0,
-            "column_bbox": [0, 0, pil_img.width, pil_img.height],
-            "column_image": pil_img,
-            "lines": lines_data
-        })
-        
-    return results
+        if not is_full_page:
+            batch_results[img_idx].append({
+                "column_index": col_idx,
+                "column_bbox": col_bbox,
+                "column_image": crop_img,
+                "lines": lines_data
+            })
+        else:
+            batch_results[img_idx].append({
+                "column_index": 0,
+                "column_bbox": col_bbox,
+                "column_image": crop_img,
+                "lines": lines_data
+            })
+            
+    return batch_results
+
+def extract_lines_from_image(pil_img: Image.Image, padding_x: int = 5, padding_y: int = 3) -> list:
+    """
+    Extracts columns and then lines from each column in a PIL Image.
+    Uses Surya layout and detection predictors.
+    """
+    return extract_lines_from_images_batch([pil_img], padding_x, padding_y)[0]
+

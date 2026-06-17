@@ -11,6 +11,8 @@ training_data*.log
 *_backup.json
 training_data*/line_crops/
 training_data*/*output/
+training_data/cnt/book*/line_crops/
+training_data/cnt/book*/images/
 
 .DS_Store
 dataset/
