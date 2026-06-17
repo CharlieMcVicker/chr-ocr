@@ -1,0 +1,16 @@
+{
+  "train_manifest": "training_data/manifest_w_lang.json",
+  "train_output_dir": "training_data/dataset_staged_output_recovery",
+  "output_dir": "training_data/dataset_epoch_recovery",
+  "total_epochs": 3,
+  "iterations_per_epoch": 300,
+  "variations_per_image": 5,
+  "learning_rate": 0.0001,
+  "lr_schedule": "constant",
+  "continue_from": "training_data/dataset_staged_output_mixed_decay/chr_6.476_1925_4600.checkpoint",
+  "blur_prob": 0.4,
+  "shadow_prob": 0.3,
+  "distortion_prob": 0.4,
+  "dropout_prob": 0.3,
+  "bleedthrough_prob": 0.25
+}

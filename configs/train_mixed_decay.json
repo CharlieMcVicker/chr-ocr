@@ -1,0 +1,17 @@
+{
+  "train_manifest": "training_data/manifest_mixed.json",
+  "train_output_dir": "training_data/dataset_staged_output_mixed_decay",
+  "output_dir": "training_data/dataset_epoch_mixed_decay",
+  "total_epochs": 16,
+  "iterations_per_epoch": 300,
+  "variations_per_image": 5,
+  "learning_rate": 0.001,
+  "lr_schedule": "step",
+  "lr_decay_rate": 0.5,
+  "lr_decay_epochs": 4,
+  "blur_prob": 0.4,
+  "shadow_prob": 0.3,
+  "distortion_prob": 0.4,
+  "dropout_prob": 0.3,
+  "bleedthrough_prob": 0.25
+}
