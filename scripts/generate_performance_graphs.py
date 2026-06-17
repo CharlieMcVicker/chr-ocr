@@ -107,109 +107,111 @@ def load_ground_truths(lstmf_files: list[str]) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# lstmeval runner & parser
+## ---------------------------------------------------------------------------
+# Tesseract recognition & unicharset helpers
 # ---------------------------------------------------------------------------
 
-def run_lstmeval(checkpoint_path: str, traineddata_path: str, list_file: str) -> str:
-    """Run lstmeval once; return stderr (Truth/OCR pairs appear there)."""
+def convert_checkpoint_to_traineddata(checkpoint_path: str, traineddata_path: str, output_path: str):
+    """Convert training checkpoint to a runtime traineddata file."""
     cmd = [
-        "lstmeval",
-        "--model", checkpoint_path,
+        "lstmtraining",
+        "--stop_training",
+        "--continue_from", checkpoint_path,
         "--traineddata", traineddata_path,
-        "--eval_listfile", list_file,
+        "--model_output", output_path
     ]
-    print("Running: " + " ".join(cmd))
+    subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+def get_allowed_characters(traineddata_path: str) -> set[str]:
+    """Extract and parse unicharset from traineddata."""
+    import tempfile
+    allowed_chars = set()
+    with tempfile.TemporaryDirectory() as tmpdir:
+        prefix = os.path.join(tmpdir, "extract.")
+        cmd = ["combine_tessdata", "-u", traineddata_path, prefix]
+        res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        if res.returncode == 0:
+            unicharset_path = prefix + "lstm-unicharset"
+            if not os.path.exists(unicharset_path):
+                unicharset_path = prefix + "unicharset"
+            if os.path.exists(unicharset_path):
+                with open(unicharset_path, "r", encoding="utf-8") as f:
+                    lines = f.read().splitlines()
+                    if lines:
+                        for line in lines[1:]:
+                            parts = line.split()
+                            if not parts:
+                                continue
+                            char = parts[0]
+                            if char in ("NULL", "Joined", "|Broken|0|1"):
+                                continue
+                            match = re.search(r'#\s*(\S+)', line)
+                            if match:
+                                allowed_chars.add(match.group(1))
+                            else:
+                                allowed_chars.add(char)
+    allowed_chars.update({" ", "\t", "\n", "\r"})
+    return allowed_chars
+
+
+def check_true_encoding_errors(truth: str, allowed_chars: set[str]) -> list[str]:
+    """Return characters in truth not in allowed_chars."""
+    return [c for c in truth if c not in allowed_chars]
+
+
+def recognize_line(img_path: str, tessdata_dir: str, lang: str) -> str:
+    """Run Tesseract in recognition mode on single line crop."""
+    cmd = [
+        "tesseract",
+        img_path,
+        "stdout",
+        "--tessdata-dir", tessdata_dir,
+        "-l", lang,
+        "--oem", "1",
+        "--psm", "13"
+    ]
     res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    return res.stderr
+    return res.stdout.strip()
 
 
-def parse_truth_ocr_pairs(lstmeval_output: str) -> list[tuple[str, str]]:
-    """
-    Extract ALL (truth, ocr) pairs from lstmeval stderr in order.
-    Note: lstmeval does two internal passes so each file is emitted twice
-    (with different OCR outputs per pass). We keep all of them; the
-    assignment logic below picks only the first matching occurrence per file.
-    """
-    pairs: list[tuple[str, str]] = []
-    lines = lstmeval_output.splitlines()
-    i = 0
-    while i < len(lines):
-        if lines[i].startswith("Truth:"):
-            truth = lines[i][len("Truth:"):].strip()
-            j = i + 1
-            while j < len(lines) and not lines[j].startswith("OCR  :"):
-                j += 1
-            ocr = lines[j][len("OCR  :"):].strip() if j < len(lines) else ""
-            pairs.append((truth, ocr))
-            i = j + 1
-        else:
-            i += 1
-    return pairs
-
-
-# ---------------------------------------------------------------------------
-# Assignment: match pairs to files
-# ---------------------------------------------------------------------------
-
-def assign_pairs_to_files(
-    pairs: list[tuple[str, str]],
-    file_entries: list[dict],
-) -> list[dict]:
-    """
-    For each file (in list order), find its FIRST matching pair in the
-    emitted pairs by NFC-normalised truth string.
-
-    lstmeval emits each file's truth twice (two passes), so we track
-    which (pair_index, file_index) combinations have already been consumed.
-    We use a pointer into the pairs list that advances as we consume matches,
-    so the first pass is consumed before the second pass is reached.
-
-    Files with no matching pair (encoding error / missing GT) → CER = 100%.
-    """
-    # Build a forward index: norm_truth → sorted list of pair indices
-    from collections import defaultdict
-    truth_to_indices: dict[str, list[int]] = defaultdict(list)
-    for idx, (truth, _) in enumerate(pairs):
-        truth_to_indices[norm(truth)].append(idx)
-
-    # For each truth, we'll pop indices in order (first pass first)
-    truth_ptr: dict[str, int] = {}  # norm_truth → current position in its index list
-
-    results = []
-    for entry in file_entries:
-        norm_t = entry["norm_truth"]
-        truth = entry["truth"]
-        matched_ocr = None
-
-        if norm_t and norm_t in truth_to_indices:
-            indices = truth_to_indices[norm_t]
-            ptr = truth_ptr.get(norm_t, 0)
-            if ptr < len(indices):
-                # Consume this occurrence
-                pair_idx = indices[ptr]
-                matched_ocr = pairs[pair_idx][1]
-                truth_ptr[norm_t] = ptr + 1
-
-        if matched_ocr is not None:
-            line_cer = cer(truth, matched_ocr)
-            status = "ok"
-        else:
-            matched_ocr = ""
+def process_file_entry(entry: dict, allowed_chars: set[str], temp_tessdata_dir: str, temp_lang: str) -> dict:
+    truth = entry["truth"]
+    lstmf_path = entry["lstmf_path"]
+    img_path = os.path.splitext(lstmf_path)[0] + ".png"
+    
+    invalid_chars = []
+    status = "ok"
+    matched_ocr = ""
+    line_cer = 0.0
+    
+    if not truth:
+        status = "no_gt"
+        line_cer = 100.0
+    else:
+        invalid_chars = check_true_encoding_errors(truth, allowed_chars)
+        if invalid_chars:
+            status = "encoding_error"
             line_cer = 100.0
-            status = "encoding_error" if truth else "no_gt"
-
-        results.append({
-            "file": entry["lstmf_path"],
-            "base_name": entry["base_name"],
-            "doc_id": entry["doc_id"],
-            "line_id": entry["line_id"],
-            "truth": truth,
-            "ocr": matched_ocr,
-            "cer": line_cer,
-            "status": status,
-        })
-
-    return results
+        else:
+            if os.path.exists(img_path):
+                matched_ocr = recognize_line(img_path, temp_tessdata_dir, temp_lang)
+                line_cer = cer(truth, matched_ocr)
+            else:
+                status = "no_gt"
+                line_cer = 100.0
+                
+    return {
+        "file": lstmf_path,
+        "base_name": entry["base_name"],
+        "doc_id": entry["doc_id"],
+        "line_id": entry["line_id"],
+        "truth": truth,
+        "ocr": matched_ocr,
+        "cer": line_cer,
+        "status": status,
+        "invalid_chars": invalid_chars,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -317,58 +319,67 @@ def main():
     with ThreadPoolExecutor() as executor:
         lstmf_files = list(executor.map(compile_png, png_files))
 
-    # 2. Load ground truths from disk
-    print("Loading ground truth files from disk...")
-    file_entries = load_ground_truths(lstmf_files)
-    missing_gt = sum(1 for e in file_entries if not e["truth"])
-    print(f"  {len(file_entries) - missing_gt} with GT text, {missing_gt} missing.")
+    # 2. Convert checkpoint to a temporary traineddata file
+    print("Converting checkpoint to a runtime traineddata file...")
+    temp_traineddata = os.path.join(args.output_dir, "temp_eval.traineddata")
+    temp_tessdata_dir = args.output_dir
+    temp_lang = "temp_eval"
+    
+    try:
+        convert_checkpoint_to_traineddata(args.checkpoint, args.traineddata, temp_traineddata)
+        
+        # 3. Extract unicharset to identify true encoding errors
+        print("Extracting unicharset to determine allowed characters...")
+        allowed_chars = get_allowed_characters(temp_traineddata)
+        
+        # 4. Load ground truths from disk
+        print("Loading ground truth files from disk...")
+        file_entries = load_ground_truths(lstmf_files)
+        missing_gt = sum(1 for e in file_entries if not e["truth"])
+        print(f"  {len(file_entries) - missing_gt} with GT text, {missing_gt} missing.")
+        
+        # 5. Run recognition in parallel on all image crops
+        print("Running Tesseract recognition per line crop...")
+        from functools import partial
+        process_func = partial(process_file_entry, allowed_chars=allowed_chars, 
+                               temp_tessdata_dir=temp_tessdata_dir, temp_lang=temp_lang)
+        with ThreadPoolExecutor() as executor:
+            results = list(executor.map(process_func, file_entries))
+            
+    finally:
+        # Clean up temporary traineddata file and any extracted components
+        print("Cleaning up temporary evaluation assets...")
+        for pattern in ["temp_eval.traineddata", "extract.*"]:
+            for p in glob.glob(os.path.join(temp_tessdata_dir, pattern)):
+                try:
+                    os.remove(p)
+                except Exception:
+                    pass
 
-    # 3. Write list.test and run lstmeval once
-    list_file = os.path.join(args.test_dir, "list.test")
-    with open(list_file, "w", encoding="utf-8") as f:
-        for p in lstmf_files:
-            f.write(os.path.abspath(p) + "\n")
-
-    lstmeval_output = run_lstmeval(args.checkpoint, args.traineddata, list_file)
-
-    # 4. Parse ALL Truth/OCR pairs (includes both internal passes)
-    all_pairs = parse_truth_ocr_pairs(lstmeval_output)
-    unique_truths_emitted = len({norm(t) for t, _ in all_pairs})
-    print(f"Parsed {len(all_pairs)} Truth/OCR pairs ({unique_truths_emitted} unique truths).")
-
-    encoding_error_count = len(lstmf_files) - unique_truths_emitted - missing_gt
-    if encoding_error_count > 0:
-        print(f"  ~{encoding_error_count} files likely skipped by lstmeval due to encoding errors.")
-
-    # 5. Assign pairs to files (first-occurrence per file)
-    results = assign_pairs_to_files(all_pairs, file_entries)
-
-    ok_count = sum(1 for r in results if r["status"] == "ok")
+    valid_results = [r for r in results if r["status"] == "ok"]
+    ok_count = len(valid_results)
     err_count = len(results) - ok_count
-    print(f"Assigned: {ok_count} ok, {err_count} encoding errors / missing GT (CER=100%).")
+    
+    encoding_errors = [r for r in results if r["status"] == "encoding_error"]
+    print(f"Assigned: {ok_count} ok, {err_count} encoding errors / missing GT (dropped from performance metrics).")
+    if encoding_errors:
+        print(f"  Detected {len(encoding_errors)} true encoding errors:")
+        for r in encoding_errors:
+            unique_invalid = sorted(list(set(r["invalid_chars"])))
+            print(f"    - {r['base_name']}: missing characters {unique_invalid}")
 
-    # 6. Aggregate stats
-    all_cers = [r["cer"] for r in results]
-    mean_cer = np.mean(all_cers)
-    median_cer = np.median(all_cers)
-    clean_cers = [r["cer"] for r in results if r["status"] == "ok"]
-    mean_cer_clean = np.mean(clean_cers) if clean_cers else float("nan")
+    # 6. Aggregate stats (calculated ONLY on valid/encodeable lines)
+    all_cers = [r["cer"] for r in valid_results]
+    mean_cer = np.mean(all_cers) if all_cers else float("nan")
+    median_cer = np.median(all_cers) if all_cers else float("nan")
 
-    agg_match = re.search(r"BCER eval=([\d\.]+),\s*BWER eval=([\d\.]+)", lstmeval_output)
-    agg_bcer = float(agg_match.group(1)) if agg_match else None
-    agg_bwer = float(agg_match.group(2)) if agg_match else None
+    print(f"\nResults ({ok_count} valid lines, {err_count} dropped):")
+    print(f"  Mean CER           : {mean_cer:.3f}%")
+    print(f"  Median CER         : {median_cer:.3f}%")
 
-    print(f"\nResults ({len(results)} lines):")
-    print(f"  Mean CER (all)     : {mean_cer:.3f}%")
-    print(f"  Mean CER (ok only) : {mean_cer_clean:.3f}%")
-    print(f"  Median CER (all)   : {median_cer:.3f}%")
-    if agg_bcer is not None:
-        print(f"  lstmeval BCER      : {agg_bcer:.3f}%")
-        print(f"  lstmeval BWER      : {agg_bwer:.3f}%")
-
-    # 7. Document-level grouping
+    # 7. Document-level grouping (using valid results only)
     doc_groups: dict[str, list[float]] = {}
-    for r in results:
+    for r in valid_results:
         doc_groups.setdefault(r["doc_id"], []).append(r["cer"])
     doc_stats = sorted(
         [{"doc_id": d, "mean_cer": np.mean(c), "median_cer": np.median(c), "count": len(c)}
@@ -387,25 +398,30 @@ def main():
     with open(report_path, "w", encoding="utf-8") as f:
         f.write("# OCR Model Performance Analysis Report\n\n")
         f.write(f"- **Checkpoint**: `{args.checkpoint}`\n")
-        f.write(f"- **Dataset**: `{args.test_dir}` ({len(results)} lines)\n")
-        f.write(f"- **Encoding errors / missing GT**: {err_count} lines (CER forced to 100%)\n\n")
-        f.write("## Overall Metrics\n\n")
+        f.write(f"- **Dataset**: `{args.test_dir}` ({len(results)} total lines, {ok_count} evaluated, {err_count} dropped)\n")
+        f.write(f"- **Dropped (encoding errors / missing GT)**: {err_count} lines\n\n")
+        f.write("## Overall Metrics (Evaluated Lines Only)\n\n")
         f.write("| Metric | Value |\n| :--- | :---: |\n")
-        f.write(f"| Mean CER (all lines) | **{mean_cer:.3f}%** |\n")
-        f.write(f"| Mean CER (ok lines only) | **{mean_cer_clean:.3f}%** |\n")
-        f.write(f"| Median CER (all lines) | **{median_cer:.3f}%** |\n")
-        if agg_bcer is not None:
-            f.write(f"| lstmeval BCER (aggregate) | **{agg_bcer:.3f}%** |\n")
-            f.write(f"| lstmeval BWER | **{agg_bwer:.3f}%** |\n")
+        f.write(f"| Mean CER | **{mean_cer:.3f}%** |\n")
+        f.write(f"| Median CER | **{median_cer:.3f}%** |\n")
         f.write("\n## Document-level Performance\n\n")
         f.write("| Document Page | Lines | Mean CER | Median CER |\n")
         f.write("| :--- | :---: | :---: | :---: |\n")
         for d in doc_stats:
             f.write(f"| `{d['doc_id']}` | {d['count']} | {d['mean_cer']:.2f}% | {d['median_cer']:.2f}% |\n")
+        
+        if encoding_errors:
+            f.write("\n## Excluded True Encoding Errors\n\n")
+            f.write("| Base Name | Missing Characters | Ground Truth |\n")
+            f.write("| :--- | :---: | :--- |\n")
+            for r in encoding_errors:
+                unique_invalid = "".join(sorted(list(set(r["invalid_chars"]))))
+                f.write(f"| `{r['base_name']}` | `{unique_invalid}` | `{r['truth']}` |\n")
+
         f.write("\n## Top 10 Worst Performing Lines\n\n")
         f.write("| Base Name | Document | CER | Status |\n")
         f.write("| :--- | :--- | :---: | :--- |\n")
-        for r in sorted(results, key=lambda x: x["cer"], reverse=True)[:10]:
+        for r in sorted(valid_results, key=lambda x: x["cer"], reverse=True)[:10]:
             f.write(f"| `{r['base_name']}` | `{r['doc_id']}` | {r['cer']:.2f}% | {r['status']} |\n")
     print(f"Saved report          → {report_path}")
 
