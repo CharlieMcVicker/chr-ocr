@@ -1,9 +1,11 @@
 ---
 id: TASK-83.1
 title: Scrape Cherokee New Testament images and transcriptions
-status: To Do
-assignee: []
+status: In Progress
+assignee:
+  - '@antigravity'
 created_date: '2026-06-17 12:55'
+updated_date: '2026-06-17 12:59'
 labels:
   - cnt-ocr
 dependencies: []
