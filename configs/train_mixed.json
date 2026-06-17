@@ -1,0 +1,15 @@
+{
+  "train_manifest": "training_data/manifest_mixed.json",
+  "train_output_dir": "training_data/dataset_staged_output_mixed",
+  "output_dir": "training_data/dataset_epoch_mixed",
+  "total_epochs": 15,
+  "iterations_per_epoch": 300,
+  "variations_per_image": 3,
+  "learning_rate": 0.0005,
+  "lr_schedule": "constant",
+  "blur_prob": 0.4,
+  "shadow_prob": 0.3,
+  "distortion_prob": 0.4,
+  "dropout_prob": 0.3,
+  "bleedthrough_prob": 0.25
+}

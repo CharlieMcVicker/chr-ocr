@@ -82,6 +82,7 @@ def run_staged_training(config: TrainingConfig):
         print("Generating fresh dynamic augmentations...")
         cmd_aug = [
             ".venv/bin/python",
+            "-u",
             "scripts/augment_dynamic.py",
             "--manifest", config.train_manifest,
             "--output-dir", config.output_dir,
