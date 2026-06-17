@@ -18,6 +18,9 @@ class TrainingConfig:
     continue_from: Optional[str] = None
     old_traineddata: Optional[str] = None
     max_workers: Optional[int] = None
+    use_dynamic_cnt: bool = False
+    cnt_fraction: float = 0.1
+    cnt_dir: str = "training_data/cnt"
     
     # Learning rate options
     learning_rate: float = 0.0005

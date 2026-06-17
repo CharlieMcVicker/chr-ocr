@@ -79,12 +79,104 @@ def run_staged_training(config: TrainingConfig):
         os.makedirs(config.output_dir, exist_ok=True)
 
         # Step B: Generate fresh random dynamic augmentations (only train split)
+        manifest_to_use = config.train_manifest
+        if config.use_dynamic_cnt:
+            import json
+            import random
+            
+            print(f"Generating dynamic mixed manifest for epoch {epoch}...")
+            if not os.path.exists(config.train_manifest):
+                raise FileNotFoundError(f"Base manifest not found: {config.train_manifest}")
+            
+            with open(config.train_manifest, "r", encoding="utf-8") as f:
+                base_data = json.load(f)
+            
+            # Filter out any existing CNT items to keep the Phoenix base clean
+            mixed_data = {
+                k: v for k, v in base_data.items()
+                if v.get("dataset") != "cnt"
+            }
+            
+            # Assign split stable logic to Phoenix Cherokee items (same as mix_datasets.py)
+            labeled_phoenix_items = [
+                item for item in mixed_data.values()
+                if item.get("status") == "labeled" and item.get("predicted_lang") == "Cherokee"
+            ]
+            
+            # If split is not set, set it stably
+            phoenix_split = 0.8
+            accumulator = 0.0
+            for item in labeled_phoenix_items:
+                if "split" not in item:
+                    accumulator += (1.0 - phoenix_split)
+                    if accumulator >= 1.0:
+                        item["split"] = "test"
+                        accumulator -= 1.0
+                    else:
+                        item["split"] = "train"
+            
+            # Now, dynamically sample from each book in cnt_dir
+            total_cnt_sampled = 0
+            for book_idx in range(1, 28):
+                book_dir = os.path.join(config.cnt_dir, f"book_{book_idx:02d}")
+                cnt_manifest_path = os.path.join(book_dir, "aligned_manifest.json")
+                if not os.path.exists(cnt_manifest_path):
+                    continue
+                
+                with open(cnt_manifest_path, "r", encoding="utf-8") as f:
+                    aligned_manifest = json.load(f)
+                
+                valid_lines = []
+                for verse_key in sorted(aligned_manifest.keys()):
+                    verse = aligned_manifest[verse_key]
+                    for line_idx, line in enumerate(verse.get("lines", [])):
+                        ftm_aligned = line.get("ftm_aligned", "").strip()
+                        if ftm_aligned:
+                            valid_lines.append({
+                                "verse_key": verse_key,
+                                "line_idx": line_idx,
+                                "line": line
+                            })
+                
+                # Seeding with epoch ensures a different but deterministic subset per epoch
+                seed_str = f"cnt_book_salt_book_{book_idx:02d}_epoch_{epoch}"
+                rng = random.Random(seed_str)
+                
+                k = int(len(valid_lines) * config.cnt_fraction)
+                if k > 0 and len(valid_lines) > 0:
+                    sampled_lines = rng.sample(valid_lines, k)
+                    
+                    for item_info in sampled_lines:
+                        verse_key = item_info["verse_key"]
+                        line_idx = item_info["line_idx"]
+                        line = item_info["line"]
+                        
+                        item_id = f"cnt_{book_idx:02d}_{verse_key}_line_{line_idx:02d}"
+                        image_path = f"cnt/book_{book_idx:02d}/line_crops/{verse_key}_line_{line_idx:02d}.png"
+                        
+                        # Note: All dynamic CNT samples are train items for this epoch's training run
+                        mixed_data[item_id] = {
+                            "id": item_id,
+                            "image_path": image_path,
+                            "label": line["ftm_aligned"],
+                            "status": "labeled",
+                            "predicted_lang": "Cherokee",
+                            "dataset": "cnt",
+                            "split": "train"
+                        }
+                        total_cnt_sampled += 1
+            
+            manifest_to_use = os.path.join(config.output_dir, f"manifest_epoch_{epoch}.json")
+            with open(manifest_to_use, "w", encoding="utf-8") as f:
+                json.dump(mixed_data, f, ensure_ascii=False, indent=2)
+            print(f"Generated epoch {epoch} manifest at {manifest_to_use} with {total_cnt_sampled} dynamic CNT samples.")
+            
         print("Generating fresh dynamic augmentations...")
         cmd_aug = [
             ".venv/bin/python",
             "-u",
             "scripts/augment_dynamic.py",
-            "--manifest", config.train_manifest,
+            "--manifest", manifest_to_use,
             "--output-dir", config.output_dir,
             "--variations-per-image", str(config.variations_per_image),
             "--error-rate", str(config.error_rate),
