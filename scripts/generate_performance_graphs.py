@@ -64,9 +64,18 @@ def parse_filename_metadata(filepath: str) -> tuple[str, str, str]:
     """
     Extracts doc_id and line_id from a filepath.
     Pattern:  YYYY-MM-DD_seq-N_col_CC_line_LLL[_augment].lstmf
+    Or:       cnt_BB_VVVVVV_line_LL
     """
     filename = os.path.basename(filepath)
     base_name = os.path.splitext(filename)[0]
+    
+    # Check if CNT pattern
+    if base_name.startswith("cnt_"):
+        parts = base_name.split("_")
+        doc_id = "_".join(parts[:3]) # e.g. cnt_01_010101
+        line_id = "_".join(parts[3:5]) # e.g. line_00
+        return doc_id, line_id, base_name
+        
     doc_match = re.match(r"^(\d{4}-\d{2}-\d{2}_seq-\d+)", base_name)
     doc_id = doc_match.group(1) if doc_match else "unknown_doc"
     line_match = re.search(r"(line_\d+)", base_name)
