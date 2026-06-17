@@ -44,19 +44,19 @@ To recursively crawl the raw scans, segment columns, perform skew correction, an
 ```bash
 .venv/bin/python scripts/process_all_scans.py
 ```
-This extracts layout columns into `training_data_v2/` sorted folders.
+This extracts layout columns into `training_data/` sorted folders.
 
 ### Step C: Extract Line Crops & Initial OCR Manifest
 To segment text lines inside the identified Cherokee/Mixed columns using Surya layout detection and write initial Tesseract OCR transcription guesses to the master manifest:
 ```bash
-.venv/bin/python scripts/prepare_training_data.py --input-dir scans --output-dir training_data_v2
+.venv/bin/python scripts/prepare_training_data.py --input-dir scans --output-dir training_data
 ```
 *   **Language Metadata**: For each column, OCR is performed with `chr+eng` to compute character/word distributions. Columns with Cherokee content are classified as `Cherokee` or `Mixed` (`scripts/classify_layout.py`) and scheduled for line extraction.
 *   Once line crops are extracted, `scripts/add_predicted_lang_to_manifest.py` is invoked to add specific language metadata classifications (`Cherokee`, `English`, or `Mix`) for each line crop entry:
     ```bash
     .venv/bin/python scripts/add_predicted_lang_to_manifest.py
     ```
-    This generates/updates `training_data_v2/manifest_w_lang.json`.
+    This generates/updates `training_data/manifest_w_lang.json`.
 
 ---
 
@@ -70,7 +70,7 @@ export FLASK_APP=server/app.py
 export PORT=5000
 .venv/bin/flask run --host=0.0.0.0 --port=$PORT
 ```
-Open your browser and navigate to `http://localhost:5000` to start labeling. The server interacts directly with `training_data_v2/manifest_w_lang.json`.
+Open your browser and navigate to `http://localhost:5000` to start labeling. The server interacts directly with `training_data/manifest_w_lang.json`.
 
 ---
 
@@ -79,9 +79,9 @@ Open your browser and navigate to `http://localhost:5000` to start labeling. The
 Once humans have corrected or validated labels in the UI, you need to extract the ground-truth text and compile Tesseract training box/image triplets.
 
 ### Step A: Reconsolidate Existing Labels (If migrating)
-If you need to transfer manual labels from the older version `training_data/manifest.json` to the newer `training_data_v2/manifest.json` using fuzzy matching:
+If you need to transfer manual labels from the older version `training_data/manifest.json` to the newer `training_data/manifest_w_lang.json` using fuzzy matching:
 ```bash
-.venv/bin/python scripts/reconsolidate_labels.py --old-manifest training_data/manifest.json --new-manifest training_data_v2/manifest_w_lang.json
+.venv/bin/python scripts/reconsolidate_labels.py --old-manifest training_data/manifest.json --new-manifest training_data/manifest_w_lang.json
 ```
 
 ### Step B: Format the Dataset and Split Train/Test
@@ -91,7 +91,7 @@ Tesseract training requires splitting the labeled data into independent Train (8
     ```bash
     .venv/bin/python scripts/split_train_test.py
     ```
-    This segments assets into `training_data_v2/dataset/train_80/` and `training_data_v2/dataset/test_20/`.
+    This segments assets into `training_data/dataset/train_80/` and `training_data/dataset/test_20/`.
 2.  **Generate `.lstmf` Files**:
     Run the compilation shell script to generate binary Tesseract LSTM training files:
     ```bash
@@ -122,10 +122,10 @@ Run the training loop:
   --iterations-per-epoch 200 \
   --variations-per-image 3 \
   --error-rate 0.05 \
-  --train-manifest training_data_v2/manifest_w_lang.json \
-  --output-dir training_data_v2/dataset_epoch \
-  --model-dir training_data_v2/dataset/model \
-  --train-output-dir training_data_v2/dataset_staged_output
+  --train-manifest training_data/manifest_w_lang.json \
+  --output-dir training_data/dataset_epoch \
+  --model-dir training_data/dataset/model \
+  --train-output-dir training_data/dataset_staged_output
 ```
 
 ### Step B: How to Redo Metaparameter Search
@@ -146,9 +146,9 @@ Run `lstmtraining` with the `--stop_training` flag to convert the best checkpoin
 ```bash
 lstmtraining \
   --stop_training \
-  --continue_from training_data_v2/dataset_staged_output/chr_checkpoint \
-  --traineddata training_data_v2/dataset/model/chr.traineddata \
-  --model_output training_data_v2/dataset/model/chr_best_finetuned.traineddata
+  --continue_from training_data/dataset_staged_output/chr_checkpoint \
+  --traineddata training_data/dataset/model/chr.traineddata \
+  --model_output training_data/dataset/model/chr_best_finetuned.traineddata
 ```
 
 ### Step B: Add Inferences to the Labeling Server
@@ -161,4 +161,4 @@ To display predictions from your new model as interactive suggestions inside the
     .venv/bin/python scripts/enrich_manifest_with_ftm.py --force
     ```
 2.  **Restart the web server**:
-    Once the enrichment script finishes updating `training_data_v2/manifest_w_lang.json`, restart the Flask web server to see the updated FTM predictions and confidence values in the interface.
+    Once the enrichment script finishes updating `training_data/manifest_w_lang.json`, restart the Flask web server to see the updated FTM predictions and confidence values in the interface.
