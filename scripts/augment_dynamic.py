@@ -38,6 +38,20 @@ def main():
     parser.add_argument("--distortion-prob", type=float, default=0.4)
     parser.add_argument("--dropout-prob", type=float, default=0.3)
     parser.add_argument("--bleedthrough-prob", type=float, default=0.25)
+    
+    # CNT Augmentation options
+    parser.add_argument("--cnt-blur-prob", type=float, default=0.6)
+    parser.add_argument("--cnt-shadow-prob", type=float, default=0.5)
+    parser.add_argument("--cnt-distortion-prob", type=float, default=0.5)
+    parser.add_argument("--cnt-dropout-prob", type=float, default=0.5)
+    parser.add_argument("--cnt-blur-limit-min", type=int, default=3)
+    parser.add_argument("--cnt-blur-limit-max", type=int, default=5)
+    parser.add_argument("--cnt-shadow-dimension", type=int, default=6)
+    parser.add_argument("--cnt-distortion-limit", type=float, default=0.15)
+    parser.add_argument("--cnt-dropout-holes-min", type=int, default=1)
+    parser.add_argument("--cnt-dropout-holes-max", type=int, default=4)
+    parser.add_argument("--cnt-dropout-size-min", type=int, default=4)
+    parser.add_argument("--cnt-dropout-size-max", type=int, default=10)
     args = parser.parse_args()
 
     if not os.path.exists(args.manifest):
@@ -99,6 +113,18 @@ def main():
         dropout_prob=args.dropout_prob
     )
 
+    cnt_pipeline = get_albumentations_pipeline(
+        blur_prob=args.cnt_blur_prob,
+        shadow_prob=args.cnt_shadow_prob,
+        distortion_prob=args.cnt_distortion_prob,
+        dropout_prob=args.cnt_dropout_prob,
+        blur_limit=(args.cnt_blur_limit_min, args.cnt_blur_limit_max),
+        shadow_dimension=args.cnt_shadow_dimension,
+        distortion_limit=args.cnt_distortion_limit,
+        dropout_holes_range=(args.cnt_dropout_holes_min, args.cnt_dropout_holes_max),
+        dropout_size_range=(args.cnt_dropout_size_min, args.cnt_dropout_size_max),
+    )
+
     # Binarization algorithms used dynamically
     bin_methods = ["otsu", "su", "sauvola", "wolf"]
 
@@ -115,9 +141,9 @@ def main():
 
         for var_idx in range(args.variations_per_image):
             if skip_bin:
-                # Keep line crop in native grayscale/binarized form
-                # Skip dynamic binarization and albumentations/bleedthrough
-                gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) if len(img.shape) == 3 else img
+                # Apply high-intensity Albumentations noise pipeline to CNT images but bypass dynamic binarization/bleedthrough
+                augmented = cnt_pipeline(image=img)["image"]
+                gray = cv2.cvtColor(augmented, cv2.COLOR_BGR2GRAY) if len(augmented.shape) == 3 else augmented
                 bin_res = gray
                 algo = "native"
             else:

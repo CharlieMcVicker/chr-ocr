@@ -249,32 +249,42 @@ def inject_synthetic_errors(text, error_rate=0.05):
         
     return "".join(chars)
 
-def get_albumentations_pipeline(blur_prob=0.4, shadow_prob=0.3, distortion_prob=0.4, dropout_prob=0.3):
+def get_albumentations_pipeline(
+    blur_prob=0.4,
+    shadow_prob=0.3,
+    distortion_prob=0.4,
+    dropout_prob=0.3,
+    blur_limit=(3, 5),
+    shadow_dimension=5,
+    distortion_limit=0.1,
+    dropout_holes_range=(1, 4),
+    dropout_size_range=(4, 10),
+):
     """
     Constructs a sophisticated Albumentations pipeline for text line perturbation.
     """
     return A.Compose([
         # 1. Sensor Noise
         A.OneOf([
-            A.GaussianBlur(blur_limit=(3, 5), p=1.0),
-            A.MotionBlur(blur_limit=(3, 5), p=1.0),
-            A.MedianBlur(blur_limit=(3, 5), p=1.0),
+            A.GaussianBlur(blur_limit=blur_limit, p=1.0),
+            A.MotionBlur(blur_limit=blur_limit, p=1.0),
+            A.MedianBlur(blur_limit=blur_limit, p=1.0),
         ], p=blur_prob),
         A.ImageCompression(quality_range=(40, 85), p=0.3),
         A.RandomBrightnessContrast(brightness_limit=0.2, contrast_limit=0.2, p=0.4),
-        A.RandomShadow(num_shadows_limit=(1, 2), shadow_dimension=5, p=shadow_prob),
+        A.RandomShadow(num_shadows_limit=(1, 2), shadow_dimension=shadow_dimension, p=shadow_prob),
         
         # 2. Spatial Distortions
         A.OneOf([
-            A.GridDistortion(num_steps=5, distort_limit=0.1, border_mode=cv2.BORDER_REPLICATE, p=1.0),
+            A.GridDistortion(num_steps=5, distort_limit=distortion_limit, border_mode=cv2.BORDER_REPLICATE, p=1.0),
             A.ElasticTransform(alpha=1, sigma=15, border_mode=cv2.BORDER_REPLICATE, p=1.0),
         ], p=distortion_prob),
         
         # 3. Occlusion
         A.CoarseDropout(
-            num_holes_range=(1, 4),
-            hole_height_range=(4, 10),
-            hole_width_range=(4, 10),
+            num_holes_range=dropout_holes_range,
+            hole_height_range=dropout_size_range,
+            hole_width_range=dropout_size_range,
             fill=255, # fill with white for light background
             p=dropout_prob
         )

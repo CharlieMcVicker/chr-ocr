@@ -35,6 +35,20 @@ class TrainingConfig:
     dropout_prob: float = 0.3
     bleedthrough_prob: float = 0.25
 
+    # CNT high-noise probabilities and intensity levels
+    cnt_noise: dict = field(default_factory=lambda: {
+        "blur": {"prob": 0.6, "limit_min": 3, "limit_max": 5},
+        "shadow": {"prob": 0.5, "dimension": 6},
+        "distortion": {"prob": 0.5, "limit": 0.15},
+        "dropout": {
+            "prob": 0.5,
+            "holes_min": 1,
+            "holes_max": 4,
+            "size_min": 4,
+            "size_max": 10
+        }
+    })
+
     def to_dict(self) -> dict:
         return asdict(self)
 

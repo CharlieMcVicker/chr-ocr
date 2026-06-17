@@ -184,7 +184,19 @@ def run_staged_training(config: TrainingConfig):
             "--shadow-prob", str(config.shadow_prob),
             "--distortion-prob", str(config.distortion_prob),
             "--dropout-prob", str(config.dropout_prob),
-            "--bleedthrough-prob", str(config.bleedthrough_prob)
+            "--bleedthrough-prob", str(config.bleedthrough_prob),
+            "--cnt-blur-prob", str(config.cnt_noise["blur"]["prob"]),
+            "--cnt-shadow-prob", str(config.cnt_noise["shadow"]["prob"]),
+            "--cnt-distortion-prob", str(config.cnt_noise["distortion"]["prob"]),
+            "--cnt-dropout-prob", str(config.cnt_noise["dropout"]["prob"]),
+            "--cnt-blur-limit-min", str(config.cnt_noise["blur"]["limit_min"]),
+            "--cnt-blur-limit-max", str(config.cnt_noise["blur"]["limit_max"]),
+            "--cnt-shadow-dimension", str(config.cnt_noise["shadow"]["dimension"]),
+            "--cnt-distortion-limit", str(config.cnt_noise["distortion"]["limit"]),
+            "--cnt-dropout-holes-min", str(config.cnt_noise["dropout"]["holes_min"]),
+            "--cnt-dropout-holes-max", str(config.cnt_noise["dropout"]["holes_max"]),
+            "--cnt-dropout-size-min", str(config.cnt_noise["dropout"]["size_min"]),
+            "--cnt-dropout-size-max", str(config.cnt_noise["dropout"]["size_max"])
         ]
         subprocess.run(cmd_aug, check=True)
 

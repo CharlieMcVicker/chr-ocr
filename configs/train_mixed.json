@@ -11,5 +11,27 @@
   "shadow_prob": 0.3,
   "distortion_prob": 0.4,
   "dropout_prob": 0.3,
-  "bleedthrough_prob": 0.25
+  "bleedthrough_prob": 0.25,
+  "cnt_noise": {
+    "blur": {
+      "prob": 0.6,
+      "limit_min": 3,
+      "limit_max": 5
+    },
+    "shadow": {
+      "prob": 0.5,
+      "dimension": 6
+    },
+    "distortion": {
+      "prob": 0.5,
+      "limit": 0.15
+    },
+    "dropout": {
+      "prob": 0.5,
+      "holes_min": 1,
+      "holes_max": 4,
+      "size_min": 4,
+      "size_max": 10
+    }
+  }
 }
