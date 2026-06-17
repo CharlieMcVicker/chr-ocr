@@ -4,7 +4,9 @@ title: Integrate Cherokee New Testament as an OCR training and validation source
 status: To Do
 assignee: []
 created_date: '2026-06-17 12:51'
-labels: []
+updated_date: '2026-06-17 12:55'
+labels:
+  - cnt-ocr
 dependencies: []
 ordinal: 82000
 ---
