@@ -278,7 +278,8 @@ def main():
     parser.add_argument("--checkpoint",
         default="training_data/dataset_staged_output_full/chr_16.457_1987_2300.checkpoint")
     parser.add_argument("--test-root", default="training_data/dataset/test")
-    parser.add_argument("--traineddata", default="training_data/dataset/model/chr.traineddata")
+    parser.add_argument("--traineddata",
+        default="training_data/dataset/model/chr_best_finetuned.traineddata")
     parser.add_argument("--output-dir", default="training_data/performance_analysis")
     parser.add_argument("--top-n-worst", type=int, default=15,
         help="Number of worst-performing files to show in compound chart")
@@ -295,6 +296,8 @@ def main():
 
     os.makedirs(args.output_dir, exist_ok=True)
 
+    tessdata_dir = os.path.dirname(os.path.abspath(args.traineddata))
+
     subdirs = sorted([
         d for d in glob.glob(os.path.join(args.test_root, "*/"))
         if os.path.isdir(d)
@@ -306,14 +309,39 @@ def main():
     results_by_algo = {}
     algo_stats = []
 
+    from concurrent.futures import ThreadPoolExecutor
+
+    def compile_png(img_path):
+        base = os.path.splitext(img_path)[0]
+        # Always remove existing lstmf to force recompilation with the correct model/unicharset
+        lstmf_path = base + ".lstmf"
+        if os.path.exists(lstmf_path):
+            os.remove(lstmf_path)
+        
+        subprocess.run([
+            "tesseract",
+            img_path,
+            base,
+            "--tessdata-dir", tessdata_dir,
+            "-l", "chr",
+            "--oem", "1",
+            "--psm", "13",
+            "lstm.train"
+        ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        return lstmf_path
+
     for subdir_path in subdirs:
         algo_name = os.path.basename(subdir_path.rstrip("/"))
         print(f"\nEvaluating binarization algorithm: {algo_name}")
 
-        lstmf_files = sorted(glob.glob(os.path.join(subdir_path, "*.lstmf")))
-        if not lstmf_files:
-            print(f"  Warning: No .lstmf files found in {subdir_path}. Skipping.")
+        png_files = sorted(glob.glob(os.path.join(subdir_path, "*.png")))
+        if not png_files:
+            print(f"  Warning: No .png files found in {subdir_path}. Skipping.")
             continue
+
+        print(f"  Compiling {len(png_files)} images to .lstmf using {args.traineddata}...")
+        with ThreadPoolExecutor() as executor:
+            lstmf_files = list(executor.map(compile_png, png_files))
 
         file_entries = load_ground_truths(lstmf_files)
 
@@ -404,6 +432,7 @@ def main():
             f.write(f"| {rank} | `{base_name}` | **{avg_val:.2f}%** | " + " | ".join(cols) + " | ... |\n")
 
     print(f"Saved report          → {report_path}")
+
 
 
 if __name__ == "__main__":

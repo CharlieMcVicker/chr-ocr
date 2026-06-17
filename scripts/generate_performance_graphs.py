@@ -269,7 +269,8 @@ def main():
     parser.add_argument("--checkpoint",
         default="training_data/dataset_staged_output_full/chr_16.457_1987_2300.checkpoint")
     parser.add_argument("--test-dir", default="training_data/dataset/test/base")
-    parser.add_argument("--traineddata", default="training_data/dataset/model/chr.traineddata")
+    parser.add_argument("--traineddata",
+        default="training_data/dataset/model/chr_best_finetuned.traineddata")
     parser.add_argument("--output-dir", default="training_data/performance_analysis")
     args = parser.parse_args()
 
@@ -284,12 +285,37 @@ def main():
 
     os.makedirs(args.output_dir, exist_ok=True)
 
-    # 1. Discover lstmf files
-    lstmf_files = sorted(glob.glob(os.path.join(args.test_dir, "*.lstmf")))
-    if not lstmf_files:
-        print(f"Error: No .lstmf files found in {args.test_dir}")
+    tessdata_dir = os.path.dirname(os.path.abspath(args.traineddata))
+
+    # 1. Discover png files and compile them to lstmf
+    png_files = sorted(glob.glob(os.path.join(args.test_dir, "*.png")))
+    if not png_files:
+        print(f"Error: No .png files found in {args.test_dir}")
         sys.exit(1)
-    print(f"Found {len(lstmf_files)} lstmf files.")
+
+    from concurrent.futures import ThreadPoolExecutor
+
+    def compile_png(img_path):
+        base = os.path.splitext(img_path)[0]
+        lstmf_path = base + ".lstmf"
+        if os.path.exists(lstmf_path):
+            os.remove(lstmf_path)
+        
+        subprocess.run([
+            "tesseract",
+            img_path,
+            base,
+            "--tessdata-dir", tessdata_dir,
+            "-l", "chr",
+            "--oem", "1",
+            "--psm", "13",
+            "lstm.train"
+        ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        return lstmf_path
+
+    print(f"Compiling {len(png_files)} images to .lstmf using {args.traineddata}...")
+    with ThreadPoolExecutor() as executor:
+        lstmf_files = list(executor.map(compile_png, png_files))
 
     # 2. Load ground truths from disk
     print("Loading ground truth files from disk...")
