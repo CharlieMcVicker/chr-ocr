@@ -35,8 +35,17 @@ def compile_image(img_path, model_dir):
     Compiles a single PNG image to .lstmf using tesseract.
     """
     base = os.path.splitext(img_path)[0]
+    # Find the correct path of lstm.train inside homebrew directory
+    lstm_train_config = "/opt/homebrew/share/tessdata/configs/lstm.train"
+    if not os.path.exists(lstm_train_config):
+        # fallback to Cellar path
+        import glob
+        matches = glob.glob("/opt/homebrew/Cellar/tesseract/*/share/tessdata/configs/lstm.train")
+        if matches:
+            lstm_train_config = matches[0]
+
     subprocess.run(
-        ["tesseract", img_path, base, "--tessdata-dir", model_dir, "-l", "chr", "--oem", "1", "--psm", "13", "/opt/homebrew/share/tessdata/configs/lstm.train"],
+        ["tesseract", img_path, base, "--tessdata-dir", model_dir, "-l", "chr", "--oem", "1", "--psm", "13", lstm_train_config],
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
         check=True
@@ -115,8 +124,22 @@ def run_staged_training(config: TrainingConfig):
                     else:
                         item["split"] = "train"
             
-            # Now, dynamically sample from each book in cnt_dir
-            total_cnt_sampled = 0
+            # Get the exact list of Phoenix training items
+            phoenix_train_items = [
+                item for item in labeled_phoenix_items
+                if item.get("split") == "train"
+            ]
+            n_phoenix = len(phoenix_train_items)
+            
+            # Calculate required CNT lines based on mixture_ratio
+            if config.mixture_ratio <= 0.0 or config.mixture_ratio >= 1.0:
+                raise ValueError(f"mixture_ratio must be between 0 and 1, got {config.mixture_ratio}")
+            
+            n_cnt = int(n_phoenix * (1.0 - config.mixture_ratio) / config.mixture_ratio)
+            print(f"Computed batch mixture: Phoenix train samples = {n_phoenix}, target CNT samples = {n_cnt} (ratio = {config.mixture_ratio:.2f})")
+            
+            # Now, gather all valid CNT lines across all books
+            all_valid_cnt_lines = []
             for book_idx in range(1, 28):
                 book_dir = os.path.join(config.cnt_dir, f"book_{book_idx:02d}")
                 cnt_manifest_path = os.path.join(book_dir, "aligned_manifest.json")
@@ -126,50 +149,70 @@ def run_staged_training(config: TrainingConfig):
                 with open(cnt_manifest_path, "r", encoding="utf-8") as f:
                     aligned_manifest = json.load(f)
                 
-                valid_lines = []
                 for verse_key in sorted(aligned_manifest.keys()):
                     verse = aligned_manifest[verse_key]
                     for line_idx, line in enumerate(verse.get("lines", [])):
                         ftm_aligned = line.get("ftm_aligned", "").strip()
                         if ftm_aligned:
-                            valid_lines.append({
+                            all_valid_cnt_lines.append({
+                                "book_idx": book_idx,
                                 "verse_key": verse_key,
                                 "line_idx": line_idx,
                                 "line": line
                             })
+            
+            # Seeding with epoch ensures a different but deterministic subset per epoch
+            seed_str = f"cnt_batch_salt_epoch_{epoch}"
+            rng = random.Random(seed_str)
+            
+            if n_cnt > 0 and len(all_valid_cnt_lines) > 0:
+                # Sample exactly n_cnt lines (cap to size of all_valid_cnt_lines if needed)
+                sampled_count = min(n_cnt, len(all_valid_cnt_lines))
+                sampled_lines = rng.sample(all_valid_cnt_lines, sampled_count)
                 
-                # Seeding with epoch ensures a different but deterministic subset per epoch
-                seed_str = f"cnt_book_salt_book_{book_idx:02d}_epoch_{epoch}"
-                rng = random.Random(seed_str)
-                
-                k = int(len(valid_lines) * config.cnt_fraction)
-                if k > 0 and len(valid_lines) > 0:
-                    sampled_lines = rng.sample(valid_lines, k)
+                for item_info in sampled_lines:
+                    book_idx = item_info["book_idx"]
+                    verse_key = item_info["verse_key"]
+                    line_idx = item_info["line_idx"]
+                    line = item_info["line"]
                     
-                    for item_info in sampled_lines:
-                        verse_key = item_info["verse_key"]
-                        line_idx = item_info["line_idx"]
-                        line = item_info["line"]
-                        
-                        item_id = f"cnt_{book_idx:02d}_{verse_key}_line_{line_idx:02d}"
-                        image_path = f"cnt/book_{book_idx:02d}/line_crops/{verse_key}_line_{line_idx:02d}.png"
-                        
-                        # Note: All dynamic CNT samples are train items for this epoch's training run
-                        mixed_data[item_id] = {
-                            "id": item_id,
-                            "image_path": image_path,
-                            "label": line["ftm_aligned"],
-                            "status": "labeled",
-                            "predicted_lang": "Cherokee",
-                            "dataset": "cnt",
-                            "split": "train"
-                        }
-                        total_cnt_sampled += 1
+                    item_id = f"cnt_{book_idx:02d}_{verse_key}_line_{line_idx:02d}"
+                    image_path = f"cnt/book_{book_idx:02d}/line_crops/{verse_key}_line_{line_idx:02d}.png"
+                    
+                    # Note: All dynamic CNT samples are train items for this epoch's training run
+                    mixed_data[item_id] = {
+                        "id": item_id,
+                        "image_path": image_path,
+                        "label": line["ftm_aligned"],
+                        "status": "labeled",
+                        "predicted_lang": "Cherokee",
+                        "dataset": "cnt",
+                        "split": "train"
+                    }
+                total_cnt_sampled = len(sampled_lines)
+            else:
+                total_cnt_sampled = 0
+            
+            # Enforce that only train items (Phoenix train + CNT sampled train) are kept in the training set
+            # The test items should not be augmented or trained on in this epoch
+            epoch_data = {}
+            for k, v in mixed_data.items():
+                if v.get("split") == "train":
+                    epoch_data[k] = v
+                elif v.get("split") == "test":
+                    # Keep test items in manifest if they are needed for reference, but train listfile will only compile train items
+                    epoch_data[k] = v
             
             manifest_to_use = os.path.join(config.output_dir, f"manifest_epoch_{epoch}.json")
             with open(manifest_to_use, "w", encoding="utf-8") as f:
-                json.dump(mixed_data, f, ensure_ascii=False, indent=2)
-            print(f"Generated epoch {epoch} manifest at {manifest_to_use} with {total_cnt_sampled} dynamic CNT samples.")
+                json.dump(epoch_data, f, ensure_ascii=False, indent=2)
+            
+            # Verify exact ratio of Phoenix to CNT lines in the train set
+            train_phoenix_count = sum(1 for item in epoch_data.values() if item.get("split") == "train" and item.get("dataset") != "cnt")
+            train_cnt_count = sum(1 for item in epoch_data.values() if item.get("split") == "train" and item.get("dataset") == "cnt")
+            actual_ratio = train_phoenix_count / (train_phoenix_count + train_cnt_count) if (train_phoenix_count + train_cnt_count) > 0 else 0.0
+            print(f"Generated epoch {epoch} manifest at {manifest_to_use}")
+            print(f"Train set: {train_phoenix_count} Phoenix lines, {train_cnt_count} CNT lines. Actual Phoenix Ratio: {actual_ratio:.4f} (Target: {config.mixture_ratio:.4f})")
             
         print("Generating fresh dynamic augmentations...")
         cmd_aug = [
@@ -274,6 +317,9 @@ def run_staged_training(config: TrainingConfig):
 
         # Step F: Clean up temporary epoch augmented images and .lstmf files to preserve disk space
         print(f"Cleaning up temporary epoch files in {config.output_dir}...")
+        # Save manifest_epoch_{epoch}.json to train_output_dir for verification
+        if config.use_dynamic_cnt:
+            shutil.copy2(manifest_to_use, os.path.join(config.train_output_dir, f"manifest_epoch_{epoch}.json"))
         shutil.rmtree(config.output_dir)
 
     print("\n=== Staged Epoch Loop finished successfully! ===")

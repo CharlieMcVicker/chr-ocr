@@ -7,6 +7,7 @@
   "variations_per_image": 3,
   "learning_rate": 0.0005,
   "lr_schedule": "constant",
+  "mixture_ratio": 0.8,
   "blur_prob": 0.4,
   "shadow_prob": 0.3,
   "distortion_prob": 0.4,

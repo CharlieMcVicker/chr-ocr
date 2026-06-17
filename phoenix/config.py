@@ -21,6 +21,7 @@ class TrainingConfig:
     use_dynamic_cnt: bool = False
     cnt_fraction: float = 0.1
     cnt_dir: str = "training_data/cnt"
+    mixture_ratio: float = 0.8
     
     # Learning rate options
     learning_rate: float = 0.0005
