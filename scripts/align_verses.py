@@ -7,7 +7,7 @@ import pytesseract
 import Levenshtein
 
 # Helper function to do OCR using pytesseract
-def ocr_line(pil_img, model_dir=None, model_name=None):
+def ocr_line_with_confidence(pil_img, model_dir=None, model_name=None):
     if model_dir and model_name:
         config = f"--tessdata-dir {model_dir} --psm 7"
         lang = model_name
@@ -16,12 +16,19 @@ def ocr_line(pil_img, model_dir=None, model_name=None):
         lang = "chr"
     
     try:
-        # Get OCR text
-        ocr_text = pytesseract.image_to_string(pil_img, lang=lang, config=config)
-        return ocr_text.strip()
+        data = pytesseract.image_to_data(pil_img, lang=lang, config=config, output_type=pytesseract.Output.DICT)
+        words = [w for w in data['text'] if w.strip()]
+        ocr_text = ' '.join(words).strip()
+        confs = [c for c in data['conf'] if c != -1]
+        mean_conf = sum(confs) / len(confs) if confs else 0.0
+        return ocr_text, round(mean_conf, 2)
     except Exception as e:
         print(f"OCR failed with lang={lang}, model_dir={model_dir}: {e}")
-        return ""
+        return "", 0.0
+
+def ocr_line(pil_img, model_dir=None, model_name=None):
+    txt, _ = ocr_line_with_confidence(pil_img, model_dir, model_name)
+    return txt
 
 def align_words_to_lines(words, line_ocrs):
     """
@@ -129,6 +136,7 @@ def align_book_transcriptions(book_dir, model_dir, model_name):
         # 1. Read crops and run OCR using stock and fine-tuned
         stock_ocrs = []
         ftm_ocrs = []
+        ftm_confs = []
         pil_images = []
         
         for crop_rel_path in line_crops:
@@ -150,8 +158,9 @@ def align_book_transcriptions(book_dir, model_dir, model_name):
             stock_ocrs.append(stock_txt)
             
             # Run Fine-tuned Tesseract
-            ftm_txt = ocr_line(pil_img, model_dir, model_name)
+            ftm_txt, ftm_conf = ocr_line_with_confidence(pil_img, model_dir, model_name)
             ftm_ocrs.append(ftm_txt)
+            ftm_confs.append(ftm_conf)
             
         if not pil_images:
             continue
@@ -196,7 +205,8 @@ def align_book_transcriptions(book_dir, model_dir, model_name):
                 "stock_aligned": stock_formatted,
                 "stock_raw_ocr": stock_ocrs[idx] if idx < len(stock_ocrs) else "",
                 "ftm_aligned": ftm_formatted,
-                "ftm_raw_ocr": ftm_ocrs[idx] if idx < len(ftm_ocrs) else ""
+                "ftm_raw_ocr": ftm_ocrs[idx] if idx < len(ftm_ocrs) else "",
+                "ftm_confidence": ftm_confs[idx] if idx < len(ftm_confs) else 0.0
             })
             
             # Prepare row for HTML report
