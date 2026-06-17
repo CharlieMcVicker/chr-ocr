@@ -8,6 +8,12 @@ import Levenshtein
 from scripts.find_missing_spaces import find_missing_spaces
 from scripts.apply_space_corrections import apply_space_corrections
 
+try:
+    import tesserocr
+    HAS_TESSEROCR = True
+except ImportError:
+    HAS_TESSEROCR = False
+
 # Helper function to do OCR using pytesseract
 def ocr_line_with_confidence(pil_img, model_dir=None, model_name=None):
     if model_dir and model_name:
@@ -31,6 +37,58 @@ def ocr_line_with_confidence(pil_img, model_dir=None, model_name=None):
 def ocr_line(pil_img, model_dir=None, model_name=None):
     txt, _ = ocr_line_with_confidence(pil_img, model_dir, model_name)
     return txt
+
+def batch_ocr_book(segment_map, book_dir, model_dir, model_name):
+    """
+    Runs OCR on every line crop in segment_map using tesserocr, loading each
+    model exactly once per book.  Returns two dicts keyed by crop_rel_path:
+      stock_cache : {crop_rel: stock_text}
+      ftm_cache   : {crop_rel: (ftm_text, ftm_conf)}
+    Falls back to pytesseract per-image if tesserocr is not available.
+    """
+    # Collect all unique crop paths in iteration order
+    all_crops = []
+    seen = set()
+    for info in segment_map.values():
+        for crop_rel in info["line_crops"]:
+            if crop_rel not in seen:
+                crop_abs = os.path.join(book_dir, crop_rel)
+                if os.path.isfile(crop_abs):
+                    all_crops.append((crop_rel, crop_abs))
+                    seen.add(crop_rel)
+
+    stock_cache = {}
+    ftm_cache = {}
+
+    if HAS_TESSEROCR:
+        print(f"  Batch OCR (tesserocr): {len(all_crops)} crops, stock model...")
+        with tesserocr.PyTessBaseAPI(lang="chr", psm=tesserocr.PSM.SINGLE_LINE) as api:
+            for crop_rel, crop_abs in all_crops:
+                try:
+                    api.SetImage(Image.open(crop_abs).convert("RGB"))
+                    stock_cache[crop_rel] = api.GetUTF8Text().strip()
+                except Exception:
+                    stock_cache[crop_rel] = ""
+
+        print(f"  Batch OCR (tesserocr): {len(all_crops)} crops, fine-tuned model...")
+        with tesserocr.PyTessBaseAPI(path=model_dir, lang=model_name, psm=tesserocr.PSM.SINGLE_LINE) as api:
+            for crop_rel, crop_abs in all_crops:
+                try:
+                    api.SetImage(Image.open(crop_abs).convert("RGB"))
+                    text = api.GetUTF8Text().strip()
+                    conf = float(api.MeanTextConf())
+                    ftm_cache[crop_rel] = (text, conf)
+                except Exception:
+                    ftm_cache[crop_rel] = ("", 0.0)
+    else:
+        # Fallback: pytesseract per image
+        print(f"  Batch OCR (pytesseract fallback): {len(all_crops)} crops...")
+        for crop_rel, crop_abs in all_crops:
+            img = Image.open(crop_abs).convert("RGB")
+            stock_cache[crop_rel] = ocr_line(img)
+            ftm_cache[crop_rel] = ocr_line_with_confidence(img, model_dir, model_name)
+
+    return stock_cache, ftm_cache
 
 def preprocess_hyphenated_words(words, line_ocrs):
     """
@@ -215,48 +273,37 @@ def align_book_transcriptions(book_dir, model_dir, model_name, realign_if_correc
     # We will generate a verification report
     report_rows = []
     
+    # Pre-compute OCR for all crops in one batched pass (loads each model once)
+    print(f"Running batch OCR for {os.path.basename(book_dir)}...")
+    stock_cache, ftm_cache = batch_ocr_book(segment_map, book_dir, model_dir, model_name)
+
     for verse_key, info in segment_map.items():
         print(f"Aligning verse {verse_key}...")
         line_crops = info["line_crops"]
         cherokee_gt = info["cherokee"]
-        
-        # Split the verse key to extract the verse number
-        # verse_key looks like e.g. "010102"
-        # Let's parse the verse number (last 2 digits)
+
         try:
             verse_num = str(int(verse_key[-2:]))
         except ValueError:
             verse_num = ""
-            
-        # 1. Read crops and run OCR using stock and fine-tuned
+
+        # Build per-verse OCR lists from the pre-computed cache
         stock_ocrs = []
         ftm_ocrs = []
         ftm_confs = []
         pil_images = []
-        
+
         for crop_rel_path in line_crops:
             crop_path = os.path.join(book_dir, crop_rel_path)
             if not os.path.isfile(crop_path):
                 print(f"  Warning: Crop file not found: {crop_path}")
                 continue
-            
-            try:
-                pil_img = Image.open(crop_path).convert("RGB")
-            except Exception as e:
-                print(f"  Failed to load crop {crop_path}: {e}")
-                continue
-                
-            pil_images.append((crop_rel_path, pil_img))
-            
-            # Run Stock Tesseract
-            stock_txt = ocr_line(pil_img)
-            stock_ocrs.append(stock_txt)
-            
-            # Run Fine-tuned Tesseract
-            ftm_txt, ftm_conf = ocr_line_with_confidence(pil_img, model_dir, model_name)
-            ftm_ocrs.append(ftm_txt)
+            pil_images.append((crop_rel_path, None))  # image not needed post-OCR
+            stock_ocrs.append(stock_cache.get(crop_rel_path, ""))
+            ftm_text, ftm_conf = ftm_cache.get(crop_rel_path, ("", 0.0))
+            ftm_ocrs.append(ftm_text)
             ftm_confs.append(ftm_conf)
-            
+
         if not pil_images:
             continue
             
