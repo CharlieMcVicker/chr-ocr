@@ -101,23 +101,23 @@
         "line_crop": "line_crops/010104_line_00.png",
         "stock_aligned": "4 ᎡᎵᎻᏃ ᎡᎻᏂᏓᏈ ᎤᏕᏁᎴᎢ;",
         "stock_raw_ocr": "Ꮞ ᎡᎵᎻᏃ ᎡᏂᎥᎥᏂᏖᏈ ᎤᏕᏁᎴᎢ :Ᏻ Ꭱ",
-        "ftm_aligned": "4 ᎡᎵᎻᏃ ᎡᎻᏂᏓᏈ ᎤᏕᏁᎴᎢ;",
+        "ftm_aligned": "4 ᎡᎵᎻᏃ ᎡᎻᏂᏓᏈ ᎤᏕᏁᎴᎢ; Ꭱ-",
         "ftm_raw_ocr": "Ꮞ ᎡᎵᎻᏃ ᎡᎻᏂᏓᏈ ᎤᏕᏁᎴᎢ; Ꭱ-",
         "ftm_confidence": 78.8
       },
       {
         "line_crop": "line_crops/010104_line_01.png",
-        "stock_aligned": "ᎡᎻᏂᏓᏈᏃ ᎾᏐᏂ ᎤᏕᏁᎴᎢ; ᎾᏐᏂᏃ",
+        "stock_aligned": "ᎡᎻᏂᏓᏈᏃ ᎾᏐᏂ ᎤᏕᏁᎴᎢ; ᎾᏐᏂᏃ Ꮜ-",
         "stock_raw_ocr": "ᎻᏂᏓᏈᏃ ᎾᎰᏂ ᎤᏕᏁᎴᎢ; ᎾᏐᏂᏃ Ꮜ-",
-        "ftm_aligned": "ᎡᎻᏂᏓᏈᏃ ᎾᏐᏂ ᎤᏕᏁᎴᎢ; ᎾᏐᏂᏃ",
+        "ftm_aligned": "ᎻᏂᏓᏈᏃ ᎾᏐᏂ ᎤᏕᏁᎴᎢ; ᎾᏐᏂᏃ Ꮜ-",
         "ftm_raw_ocr": "ᎻᏂᏓᏈᏃ ᎾᏐᏂ ᎤᏕᏁᎴᎢ; ᎾᏐᏂᏃ Ꮜ-",
         "ftm_confidence": 64.6
       },
       {
         "line_crop": "line_crops/010104_line_02.png",
-        "stock_aligned": "ᏌᎵᎹ ᎤᏕᏁᎴᎢ;",
+        "stock_aligned": "ᎵᎹ ᎤᏕᏁᎴᎢ;",
         "stock_raw_ocr": "ᏭᎹ ᎤᏕᏁᎴᎢ 5",
-        "ftm_aligned": "ᏌᎵᎹ ᎤᏕᏁᎴᎢ;",
+        "ftm_aligned": "ᎵᎹ ᎤᏕᏁᎴᎢ;",
         "ftm_raw_ocr": "ᎵᎹ ᎤᏕᏁᎴᎢ ;Ꮆ",
         "ftm_confidence": 68.67
       }
@@ -130,9 +130,9 @@
     "lines": [
       {
         "line_crop": "line_crops/010105_line_00.png",
-        "stock_aligned": "5 ᏌᎵᎹᏃ ᏉᏏ ᎤᏕᏁᎴᎢ ᎴᎭᏫ",
+        "stock_aligned": "5 ᏌᎵᎹᏃ ᏉᏏ ᎤᏕ- ᏁᎴᎢ ᎴᎭᏫ",
         "stock_raw_ocr": "Ꮦ ᏌᎵᎹᏃ ᏉᏏ ᎤᏕᏁᎴᎢ ᎴᎭᏫ",
-        "ftm_aligned": "5 ᏌᎵᎹᏃ ᏉᏏ ᎤᏕᏁᎴᎢ ᎴᎭᏫ",
+        "ftm_aligned": "5 ᏌᎵᎹᏃ ᏉᏏ ᎤᏕ- ᏁᎴᎢ ᎴᎭᏫ",
         "ftm_raw_ocr": "5 ᏌᎹᏃ ᏉᏏ ᎤᏕᏁᎴᎢ ᎴᎭᎾᏫ",
         "ftm_confidence": 61.6
       },
@@ -200,17 +200,17 @@
     "lines": [
       {
         "line_crop": "line_crops/010107_line_00.png",
-        "stock_aligned": "7 ᏐᎵᎹᏅᏃ ᎶᏉᎹ ᎤᏕᏁᎴᎢ;",
+        "stock_aligned": "7 ᏐᎵᎹᏅᏃ ᎶᏉᎹ ᎤᏕᏁᎴᎢ; ᎶᏉ-",
         "stock_raw_ocr": "”7 ᏐᏝᎹᏅᏃ ᎶᏉᎹ ᎤᏅᏁᎴᎢᎶ ᏳᏉ-",
-        "ftm_aligned": "7 ᏐᎵᎹᏅᏃ ᎶᏉᎹ ᎤᏕᏁᎴᎢ;",
+        "ftm_aligned": "7 ᏐᎵᎹᏅᏃ ᎶᏉᎹ ᎤᏕᏁᎴᎢ; ᎶᏉ-",
         "ftm_raw_ocr": "Ꮓ ᏐᎵᎹᏅᏃ ᎶᏉᎹ ᎤᏕᏁᎴᎢ; ᏚᏉ-",
         "ftm_confidence": 36.6
       },
       {
         "line_crop": "line_crops/010107_line_01.png",
-        "stock_aligned": "ᎶᏉᎹᏃ ᎡᏆᏯ ᎤᏕᏁᎴᎢ; ᎡᏆᏯᏃ ᎡᏏ",
+        "stock_aligned": "ᎹᏃ ᎡᏆᏯ ᎤᏕᏁᎴᎢ; ᎡᏆᏯᏃ ᎡᏏ",
         "stock_raw_ocr": "ᎹᏃ ᎡᏆᏯ ᎤᏕᏁᎴᎢ 5 .ᎡᏆᏯᏃ ᎡᏏ",
-        "ftm_aligned": "ᎶᏉᎹᏃ ᎡᏆᏯ ᎤᏕᏁᎴᎢ; ᎡᏆᏯᏃ ᎡᏏ",
+        "ftm_aligned": "ᎹᏃ ᎡᏆᏯ ᎤᏕᏁᎴᎢ; ᎡᏆᏯᏃ ᎡᏏ",
         "ftm_raw_ocr": "ᎹᏃ ᎡᎢᏯ ᎤᏕᏁᎴᎢ; ᎡᏆᏯᏃ ᎡᏏ",
         "ftm_confidence": 59.6
       },
@@ -262,25 +262,25 @@
     "lines": [
       {
         "line_crop": "line_crops/010109_line_00.png",
-        "stock_aligned": "9 ᎣᏌᏯᏃ ᏦᏓᎻ ᎤᏕᏁᎴᎢ; ᏦᏓᎻᏃ",
+        "stock_aligned": "9 ᎣᏌᏯᏃ ᏦᏓᎻ ᎤᏕᏁᎴᎢ; ᏦᏓ-",
         "stock_raw_ocr": "9 ᎣᏠᏯᏃ ᏦᏓᎻ ᎤᏕᏁᎴᎢ ; ᏦᏓ-",
-        "ftm_aligned": "9 ᎣᏌᏯᏃ ᏦᏓᎻ ᎤᏕᏁᎴᎢ; ᏦᏓᎻᏃ",
+        "ftm_aligned": "9 ᎣᏌᏯᏃ ᏦᏓᎻ ᎤᏕᏁᎴᎢ; ᏦᏓ-",
         "ftm_raw_ocr": "9 ᎣᏌᏯᏃ ᏦᏓᎻ ᎤᏕᏁᎴᎢ ;Ꮆ ᏦᏓ-",
         "ftm_confidence": 84.83
       },
       {
         "line_crop": "line_crops/010109_line_01.png",
-        "stock_aligned": "ᎡᎭᏏ ᎤᏕᏁᎴᎢ; ᎡᎭᏏᏃ ᎮᏏᎦᏯ",
+        "stock_aligned": "ᎻᏃ ᎡᎭᏏ ᎤᏕᏁᎴᎢ; ᎡᎭᏏᏃ ᎮᏏ-",
         "stock_raw_ocr": "ᎻᏃ ᎡᎭᏏ ᎤᏕᏁᎴᎢ ; .-ᎡᎭᏏᏃ ᎮᏏ-",
-        "ftm_aligned": "ᎡᎭᏏ ᎤᏕᏁᎴᎢ; ᎡᎭᏏᏃ",
+        "ftm_aligned": "ᎻᏃ ᎡᎭᏏ ᎤᏕᏁᎴᎢ; ᎡᎭᏏᏃ ᎮᏏ-",
         "ftm_raw_ocr": "ᎻᏃ ᎡᎭᏏ ᎤᏕᏁᎴᎢ; ᎡᎭᏏᏃ ᎧᏏ-",
         "ftm_confidence": 74.4
       },
       {
         "line_crop": "line_crops/010109_line_02.png",
-        "stock_aligned": "ᎤᏕᏁᎴᎢ;",
+        "stock_aligned": "ᎦᏯ ᎤᏕᏁᎴᎢ;",
         "stock_raw_ocr": "ᎦᏯ ᎤᏕᏁᎴᎢ :",
-        "ftm_aligned": "ᎮᏏᎦᏯ ᎤᏕᏁᎴᎢ;",
+        "ftm_aligned": "ᎦᏯ ᎤᏕᏁᎴᎢ;",
         "ftm_raw_ocr": "ᎦᏯ ᎤᏕᏁᎴᎢ ;",
         "ftm_confidence": 84.0
       }
@@ -293,17 +293,17 @@
     "lines": [
       {
         "line_crop": "line_crops/010110_line_00.png",
-        "stock_aligned": "10 ᎮᏏᎦᏯᏃ ᎹᎾᏏ ᎤᏕᏁᎴᎢ; ᎹᎾᏏᏃ",
+        "stock_aligned": "10 ᎮᏏᎦᏯᏃ ᎹᎾᏏ ᎤᏕᏁᎴᎢ; ᎹᎾ-",
         "stock_raw_ocr": "10 ᎮᏏᎦᏯᏃ Ꮘ”ᎾᏏ ᎤᏕᏁᎴᎢ ; ᎹᎾ-",
-        "ftm_aligned": "10 ᎮᏏᎦᏯᏃ ᎹᎾᏏ ᎤᏕᏁᎴᎢ; ᎹᎾᏏᏃ",
+        "ftm_aligned": "10 ᎮᏏᎦᏯᏃ ᎹᎾᏏ ᎤᏕᏁᎴᎢ; ᎹᎾ-",
         "ftm_raw_ocr": "10 ᎮᏏᎦᏯᏃ ᎹᏑᎾᏏ ᎤᏕᏁᎴᎢ ;Ꮆ ᎹᎾ-",
         "ftm_confidence": 61.0
       },
       {
         "line_crop": "line_crops/010110_line_01.png",
-        "stock_aligned": "ᎠᎼᏂ ᎤᏕᏁᎴᎢ; ᎠᎼᏂᏃ ᏦᏌᏯ",
+        "stock_aligned": "ᏏᏃ ᎠᎼᏂ ᎤᏕᏁᎴᎢ; ᎠᎼᏂᏃ ᏦᏌᏯ",
         "stock_raw_ocr": "ᏏᏃ ᎠᏱᏖᏂ ᎤᏕᏁᎴᎢ 53 ᎠᏱᏂᏃ ᏦᏌᏯ",
-        "ftm_aligned": "ᎠᎼᏂ ᎤᏕᏁᎴᎢ; ᎠᎼᏂᏃ ᏦᏌᏯ",
+        "ftm_aligned": "ᏏᏃ ᎠᎼᏂ ᎤᏕᏁᎴᎢ; ᎠᎼᏂᏃ ᏦᏌᏯ",
         "ftm_raw_ocr": "ᏏᏃ ᎠᏱᏂ ᎤᏕᏁᎴᎢᎶ ᎠᏱᏂᏃ ᏦᏌᏯ",
         "ftm_confidence": 72.4
       },
@@ -334,7 +334,7 @@
         "line_crop": "line_crops/010111_line_01.png",
         "stock_aligned": "ᎬᏩᏕᏁᎴᎢ; ᎾᎯᏳ ᏓᏗᎶᏂ",
         "stock_raw_ocr": "ᎬᏩᏕᏁᎴᎢ :Ꮆ ᎾᎯᏳ’ ᏓᏘᎶᏂ ᏥᏫᏗᎨᎬᏢ”",
-        "ftm_aligned": "ᎬᏩᏕᏁᎴᎢ; ᎾᎯᏳ ᏓᏗᎶᏂ",
+        "ftm_aligned": "ᎬᏩᏕᏁᎴᎢ; ᎾᎯᏳ ᏓᏗᎶᏂ ᏥᏫᏗᎨ-",
         "ftm_raw_ocr": "ᎬᏩᏕᏁᎴᎢ;Ꮆ ᎾᎯᏳ ᏓᏗᎶᏂ ᏥᏫᏗᎨ-",
         "ftm_confidence": 64.5
       },
@@ -342,7 +342,7 @@
         "line_crop": "line_crops/010111_line_02.png",
         "stock_aligned": "ᏥᏫᏗᎨᎦᏘᏅᏍᏔᏁᎢ;",
         "stock_raw_ocr": "ᎦᏘᏅᏍᏔᏁᎢ :5",
-        "ftm_aligned": "ᏥᏫᏗᎨᎦᏘᏅᏍᏔᏁᎢ;",
+        "ftm_aligned": "ᎦᏘᏅᏍᏔᏁᎢ;",
         "ftm_raw_ocr": "ᎦᏘᏅᏍᏔᏁᎢ ;",
         "ftm_confidence": 82.5
       }
@@ -363,17 +363,17 @@
       },
       {
         "line_crop": "line_crops/010112_line_01.png",
-        "stock_aligned": "ᏌᎳᏓᏱᎵ ᎤᏕᏁᎴᎢ; ᏌᎳᏓᏱᎵᏃ",
+        "stock_aligned": "ᏌᎳᏓᏱᎵ ᎤᏕᏁᎴᎢ; ᏌᎳᏓᏱᎵᏃ Ꮵ-",
         "stock_raw_ocr": "ᏌᏱᏤᏓᏱᎵ ᎤᏕᏁᎴᎢ : ᏌᎳᏓᏱᎵᏝᏃ Ꮵ-",
-        "ftm_aligned": "ᏌᎳᏓᏱᎵ ᎤᏕᏁᎴᎢ; ᏌᎳᏓᏱᎵᏃ",
+        "ftm_aligned": "ᏌᎳᏓᏱᎵ ᎤᏕᏁᎴᎢ; ᏌᎳᏓᏱᎵᏃ Ꮵ-",
         "ftm_raw_ocr": "ᏌᎳᏓᏱᎵ ᎤᏕᏁᎴᎢ :Ꮆ ᏌᎳᏓᏱᎵᏃ Ꮵ-",
         "ftm_confidence": 74.2
       },
       {
         "line_crop": "line_crops/010112_line_02.png",
-        "stock_aligned": "ᏥᎳᏇᎵ ᎤᏕᏁᎴᎢ;",
+        "stock_aligned": "ᎳᏇᎵ ᎤᏕᏁᎴᎢ;",
         "stock_raw_ocr": "ᎳᏊᎵ ᎤᏕᏁᎴᎢ :",
-        "ftm_aligned": "ᏥᎳᏇᎵ ᎤᏕᏁᎴᎢ;",
+        "ftm_aligned": "ᎳᏇᎵ ᎤᏕᏁᎴᎢ;",
         "ftm_raw_ocr": "ᎳᏯᎵ ᎤᏕᏁᎴᎢ :",
         "ftm_confidence": 61.67
       }
@@ -394,17 +394,17 @@
       },
       {
         "line_crop": "line_crops/010113_line_01.png",
-        "stock_aligned": "ᎠᏆᏯᏗᏃ ᎢᎳᏯᎩᎻ ᎤᏕᏁᎴᎢ;",
+        "stock_aligned": "ᎠᏆᏯᏗᏃ ᎢᎳᏯᎩᎻ ᎤᏕᏁᎴᎢ; Ꭲ-",
         "stock_raw_ocr": "ᎠᎢᏐᏯᏗᏘᏃ ᎢᎳᏯᎩᎻ ᎤᏕᏁᎴᎢ 5- Ꮖ-",
-        "ftm_aligned": "ᎠᏆᏯᏗᏃ ᎢᎳᏯᎩᎻ ᎤᏕᏁᎴᎢ;",
+        "ftm_aligned": "ᎠᏆᏯᏗᏃ ᎢᎳᏯᎩᎻ ᎤᏕᏁᎴᎢ; Ꭲ-",
         "ftm_raw_ocr": "ᎠᏪᎯᏗᏃ ᎢᎳᏯᎩᎻ ᎤᏕᏁᎴᎢ --Ꭲ-",
         "ftm_confidence": 39.75
       },
       {
         "line_crop": "line_crops/010113_line_02.png",
-        "stock_aligned": "ᎢᎳᏯᎩᎻᏃ ᎡᏐ ᎤᏕᏁᎴᎢ;",
+        "stock_aligned": "ᎳᏯᎩᎻᏃ ᎡᏐ ᎤᏕᏁᎴᎢ;",
         "stock_raw_ocr": "ᎳᏯᎩᎻᏃ -ᎡᏐ ᎤᏕᏁᎴᎢ Ꮆ",
-        "ftm_aligned": "ᎢᎳᏯᎩᎻᏃ ᎡᏐ ᎤᏕᏁᎴᎢ;",
+        "ftm_aligned": "ᎳᏯᎩᎻᏃ ᎡᏐ ᎤᏕᏁᎴᎢ;",
         "ftm_raw_ocr": "ᎳᏯᎩᎻᏃ ᎡᏐ ᎤᏕᏁᎴᎢ ;Ꮆ",
         "ftm_confidence": 72.5
       }
@@ -487,17 +487,17 @@
       },
       {
         "line_crop": "line_crops/010116_line_01.png",
-        "stock_aligned": "ᎺᎵ ᎤᏰᎯ ᎾᏍᎩ ᏧᎾᏄᎪᏫᏎ ᏥᏌ ᎦᎶᏁᏛ",
+        "stock_aligned": "ᎺᎵ ᎤᏰᎯ ᎾᏍᎩ ᏧᎾᏄᎪᏫᏎ ᏥᏌ ᎦᎶ-",
         "stock_raw_ocr": "ᏣᎫ1Ꮅ ᎤᏰᎯ ᎾᏍᎩ ᏧᎾᏄᎪᏫᏎ ᎥᏥᏌ ᎦᎶ-",
-        "ftm_aligned": "ᎺᎵ ᎤᏰᎯ ᎾᏍᎩ ᏧᎾᏄᎪᏫᏎ ᏥᏌ ᎦᎶᏁᏛ",
+        "ftm_aligned": "ᎺᎵ ᎤᏰᎯ ᎾᏍᎩ ᏧᎾᏄᎪᏫᏎ ᏥᏌ ᎦᎶ-",
         "ftm_raw_ocr": "ᎤᎴ ᎤᏰᎯ ᎾᏍᎩ ᏧᎾᏄᎪᏫᏎ ᏥᏌ ᎦᎶ-",
         "ftm_confidence": 74.5
       },
       {
         "line_crop": "line_crops/010116_line_02.png",
-        "stock_aligned": "ᏣᏃᎭᎰᎢ.",
+        "stock_aligned": "ᏁᏛ ᏣᏃᎭᎰᎢ.",
         "stock_raw_ocr": "ᏁᏛ ᏣᏃᏎᎰᎢ.",
-        "ftm_aligned": "ᏣᏃᎭᎰᎢ.",
+        "ftm_aligned": "ᏁᏛ ᏣᏃᎭᎰᎢ.",
         "ftm_raw_ocr": "ᏁᏛ ᏣᏃᏎᎰᎢ.",
         "ftm_confidence": 87.0
       }
@@ -510,17 +510,17 @@
     "lines": [
       {
         "line_crop": "line_crops/010117_line_00.png",
-        "stock_aligned": "17 ᎾᏍᎩᏃ ᏂᎦᏛ ᏄᎾᏓᏁᏟᏴᏒ ᎡᏆᎭᎻ",
+        "stock_aligned": "17 ᎾᏍᎩᏃ ᏂᎦᏛ ᏄᎾᏓᏁᏟᏴᏒ ᎡᏆ-",
         "stock_raw_ocr": "ᎢᎴ ᎾᏍᎩᏃ ᏂᎦᏛ ᏄᎧᏮᏖᏁᏟᏴᏒ ᎡᏆ-",
-        "ftm_aligned": "17 ᎾᏍᎩᏃ ᏂᎦᏛ ᏄᎾᏓᏁᏟᏴᏒ ᎡᏆᎭᎻ",
+        "ftm_aligned": "17 ᎾᏍᎩᏃ ᏂᎦᏛ ᏄᎾᏓᏁᏟᏴᏒ ᎡᏆ-",
         "ftm_raw_ocr": "177 ᎾᏍᎩᏃ ᏂᎦᏛ ᏄᎾᏓᏁᏟᏴᎵ ᎡᏆ-",
         "ftm_confidence": 57.0
       },
       {
         "line_crop": "line_crops/010117_line_01.png",
-        "stock_aligned": "ᏤᎮ ᎾᎯᏳ ᏅᏓᎬᏩᏓᎴᏅᏛ ᏕᏫᏃ",
+        "stock_aligned": "ᎭᎻ ᏤᎮ ᎾᎯᏳ ᏅᏓᎬᏩᏓᎴᏅᏛ ᏕᏫᏃ",
         "stock_raw_ocr": "ᎭᎻ ᏤᎮ ᎾᎯᏳ ᏅᏖᎬᏩᏓᎴᏅᏛ ᏚᏫᏃ",
-        "ftm_aligned": "ᏤᎮ ᎾᎯᏳ ᏅᏓᎬᏩᏓᎴᏅᏛ ᏕᏫᏃ",
+        "ftm_aligned": "ᎭᎻ ᏤᎮ ᎾᎯᏳ ᏅᏓᎬᏩᏓᎴᏅᏛ ᏕᏫᏃ",
         "ftm_raw_ocr": "ᎭᎻ ᏤᎮ ᎾᎯᏳ ᏅᏓᎬᏩᏓᎴᏅᏛ ᏕᎤᏫᏃ",
         "ftm_confidence": 65.6
       },
@@ -534,17 +534,17 @@
       },
       {
         "line_crop": "line_crops/010117_line_03.png",
-        "stock_aligned": "ᏤᎮ ᎾᎯᏳ ᏅᎵᎬᏩᏓᎴᏅᏛ ᏓᏗᎶᏂᏃ",
+        "stock_aligned": "ᏤᎮ ᎾᎯᏳ ᏅᎵᎬᏩᏓᎴᏅᏛ ᏓᏗᎶᏂᏃ Ꮵ-",
         "stock_raw_ocr": "ᏤᎮ ᎾᎯᏳ” ᏅᏓᎬᏩᏖᎴᏅᏛ ᏓᏗᎶᏂᏃ Ꮵ-",
-        "ftm_aligned": "ᏤᎮ ᎾᎯᏳ ᏅᎵᎬᏩᏓᎴᏅᏛ ᏓᏗᎶᏂᏃ",
+        "ftm_aligned": "ᏤᎮ ᎾᎯᏳ ᏅᎵᎬᏩᏓᎴᏅᏛ ᏓᏗᎶᏂᏃ Ꮵ-",
         "ftm_raw_ocr": "ᏤᎮ ᎾᎯᏳ ᏅᏓᎬᏩᏓᎴᏅᏛ ᏓᏗᎶᏂᏃ Ꮵ-",
         "ftm_confidence": 89.0
       },
       {
         "line_crop": "line_crops/010117_line_04.png",
-        "stock_aligned": "ᏥᏫᏗᎨᎦᏘᏅᏍᏔᏁ ᎾᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏚ",
+        "stock_aligned": "ᏫᏗᎨᎦᏘᏅᏍᏔᏁ ᎾᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏚ",
         "stock_raw_ocr": "ᏫᏗᎨᎦᏘᏅᏍᏔᏁ ᎾᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏕ",
-        "ftm_aligned": "ᏥᏫᏗᎨᎦᏘᏅᏍᏔᏁ ᎾᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏚ",
+        "ftm_aligned": "ᏫᏗᎨᎦᏘᏅᏍᏔᏁ ᎾᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏚ",
         "ftm_raw_ocr": "ᏫᏗᎨᎦᏘᏅᏍᏔᏁ ᎾᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏚ",
         "ftm_confidence": 85.0
       },
@@ -552,7 +552,7 @@
         "line_crop": "line_crops/010117_line_05.png",
         "stock_aligned": "ᏄᎾᏓᏁᏟᏴᏎᎢ; ᏓᏗᎶᏂᏃ ᎾᎯᏳ",
         "stock_raw_ocr": "ᏄᎾᏓᏁᏟᏴᏎᎢ Ꮆ ᏓᏓᏘᎶᏂᏃ ᎾᎯᏳ ᏥᏫᏗᏅ",
-        "ftm_aligned": "ᏄᎾᏓᏁᏟᏴᏎᎢ; ᏓᏗᎶᏂᏃ ᎾᎯᏳ",
+        "ftm_aligned": "ᏄᎾᏓᏁᏟᏴᏎᎢ; ᏓᏗᎶᏂᏃ ᎾᎯᏳ ᏥᏫᏗ-",
         "ftm_raw_ocr": "ᏄᎾᏓᏁᏟᏴᏎᎢ; ᏓᏗᎶᏂᏃ ᎾᎯᏳ ᏥᏫᏗ-",
         "ftm_confidence": 76.5
       },
@@ -560,7 +560,7 @@
         "line_crop": "line_crops/010117_line_06.png",
         "stock_aligned": "ᏥᏫᏗᎨᎦᏘᏅᏍᏔᏁ ᎤᏓᏳᏓᎴᏅᏛ ᏥᏌᏃ",
         "stock_raw_ocr": "ᏏᎦᏘᏅᏍᏔᏁ ᏅᏓᏳᏓᎴᏅᏛ ᏥᏌᏃ ᏧᎨ",
-        "ftm_aligned": "ᏥᏫᏗᎨᎦᏘᏅᏍᏔᏁ ᎤᏓᏳᏓᎴᏅᏛ ᏥᏌᏃ",
+        "ftm_aligned": "ᎨᎦᏘᏅᏍᏔᏁ ᎤᏓᏳᏓᎴᏅᏛ ᏥᏌᏃ Ꮷ-",
         "ftm_raw_ocr": "ᎨᎦᏘᏅᏍᏔᏁ ᏅᏓᏳᏓᎴᏅᏛ ᏥᏌᏃ Ꮷ-",
         "ftm_confidence": 90.5
       },
@@ -568,7 +568,7 @@
         "line_crop": "line_crops/010117_line_07.png",
         "stock_aligned": "ᏧᏕᏁ ᎾᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏚ ᏄᎾᏓᏁᏟᏴᏎᎢ.",
         "stock_raw_ocr": "ᎦᏁ ᎧᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏚ ᏄᎾᏓᏁᏟᏴᏎᎢ.",
-        "ftm_aligned": "ᏧᏕᏁ ᎾᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏚ ᏄᎾᏓᏁᏟᏴᏎᎢ.",
+        "ftm_aligned": "ᏕᏁ ᎾᎯᏳ ᏅᏛᏍᏘ ᏂᎦᏚ ᏄᎾᏓᏁᏟᏴᏎᎢ.",
         "ftm_raw_ocr": "ᏕᏁ ᎾᎯᏳ ᏅᏛᏍᏘᏗ ᏂᎦᏚ ᏄᎾᏓᏁᏟᏴᏎᎢ.",
         "ftm_confidence": 56.0
       }
@@ -630,7 +630,7 @@
         "line_crop": "line_crops/010119_line_00.png",
         "stock_aligned": "19 ᏦᏩ ᎾᏍᎩ Ꮎ ᏧᎾᏨᏍᏗ ᎤᏓᏅᏘᏳ",
         "stock_raw_ocr": "19 (Ꮹ ᎾᏍᎩ Ꮎ ᏧᎾᏨᏍᏗ ᎤᏓᏅᏑ",
-        "ftm_aligned": "19 ᏦᏩ ᎾᏍᎩ Ꮎ ᏧᎾᏨᏍᏗ ᎤᏓᏅᏘᏳ",
+        "ftm_aligned": "19 ᏦᏩ ᎾᏍᎩ Ꮎ ᏧᎾᏨᏍᏗ ᎤᏓᏅ-",
         "ftm_raw_ocr": "18 ᏦᏩ ᎾᏍᎩ Ꮎ ᏧᎾᏨᏍᏗ ᎤᏓᏅ-",
         "ftm_confidence": 88.0
       },
@@ -638,13 +638,13 @@
         "line_crop": "line_crops/010119_line_01.png",
         "stock_aligned": "ᎨᏒ ᎢᏳᏍᏗ, ᎠᎴ ᏄᏚᎵᏍᎬᎾ ᎨᏒ",
         "stock_raw_ocr": "ᏘᏳ’ ᎨᏒ ᎢᏳᏍᏘ, ᎠᎴ ᏄᏚᎵᏍᎬᎾ ᎨᏏᏞᎡ",
-        "ftm_aligned": "ᎨᏒ ᎢᏳᏍᏗ, ᎠᎴ ᏄᏚᎵᏍᎬᎾ ᎨᏒ",
+        "ftm_aligned": "ᏘᏳ ᎨᏒ ᎢᏳᏍᏗ, ᎠᎴ ᏄᏚᎵᏍᎬᎾ ᎨᏒ",
         "ftm_raw_ocr": "ᏘᏳ ᎨᏒ ᎢᏳᏍᏗ, ᎠᎴ ᏄᏚᎵᏍᎬᎾ ᎨᏒ",
         "ftm_confidence": 84.5
       },
       {
         "line_crop": "line_crops/010119_line_02.png",
-        "stock_aligned": "ᎢᏳᏍᏗ ᎬᏂᎨᏒ ᎤᏕᎰᎯᏍᏙᏗᏱ,",
+        "stock_aligned": "ᎢᏳᏍᏗ ᎬᏂᎨᏒ ᎤᏕᎰᎯᏍᏙᏗᏱ, ᎤᏕ-",
         "stock_raw_ocr": "ᎢᏳᏍᏗ ᎬᏂᎨᏒ ᎤᏕᎰᎯᏍᏙᏘᏗᏱ, ᎤᏅ-Ꮕ",
         "ftm_aligned": "ᎢᏳᏍᏗ ᎬᏂᎨᏒ ᎤᏕᎰᎯᏍᏙᏗᏱ,",
         "ftm_raw_ocr": "ᎢᏳᏍᏗ ᎬᏂᎨᏒ ᎤᏕᎵᎯᏍᏙᏗᏱ, ᎤᏅ-",
@@ -652,7 +652,7 @@
       },
       {
         "line_crop": "line_crops/010119_line_03.png",
-        "stock_aligned": "ᎤᏕᎵᏛᏉ ᎢᏴᏛ ᏮᏓᏥᏯᎧᏂ, ᎤᏪᎵᏎᎢ.",
+        "stock_aligned": "ᎵᏛᏉ ᎢᏴᏛ ᏮᏓᏥᏯᎧᏂ, ᎤᏪᎵᏎᎢ.",
         "stock_raw_ocr": "ᎵᏛᏉ ᎢᏴᏛ ᏮᏖᏥᏯᎧᏂ, ᎤᏪᎵᏎᎢ.",
         "ftm_aligned": "ᎤᏕᎵᏛᏉ ᎢᏴᏛ ᏮᏓᏥᏯᎧᏂ, ᎤᏪᎵᏎᎢ.",
         "ftm_raw_ocr": "ᏝᏛᏉ ᎢᏴᏛ ᏮᏓᏥᏯᎧᏂ, ᎤᏪᎵᏎᎢ.",
@@ -683,17 +683,17 @@
       },
       {
         "line_crop": "line_crops/010120_line_02.png",
-        "stock_aligned": "ᏱᎰᏩ ᎤᏅᏏᏛ ᎬᏂᎨᏒ ᏄᏛᏁᎴ",
+        "stock_aligned": "ᏱᎰᏩ ᎤᏅᏏᏛ ᎬᏂᎨᏒ ᏄᏛᏁᎴ ᎠᏍᎩ-",
         "stock_raw_ocr": "ᎤᎧᎨᎬᏩ ᎤᏅᏏᏛ ᎬᏂᎨᏒ ᏄᏛᏁᎴ ᎠᏍᎩ-",
-        "ftm_aligned": "ᏱᎰᏩ ᎤᏅᏏᏛ ᎬᏂᎨᏒ ᏄᏛᏁᎴ",
+        "ftm_aligned": "ᏱᎰᏩ ᎤᏅᏏᏛ ᎬᏂᎨᏒ ᏄᏛᏁᎴ ᎠᏍᎩ-",
         "ftm_raw_ocr": "ᏍᎨᏩ ᎤᏅᏏᏛ ᎬᏂᎨᏢ ᏄᏛᏁᎴ ᎠᏍᎩ-",
         "ftm_confidence": 71.8
       },
       {
         "line_crop": "line_crops/010120_line_03.png",
-        "stock_aligned": "ᎠᏍᎩᏓᏍᎬᎢ, ᎯᎠ ᏂᎦᏪᏍᎨᎢ; ᏦᏩ, ᏕᏫ",
+        "stock_aligned": "ᏓᏍᎬᎢ, ᎯᎠ ᏂᎦᏪᏍᎨᎢ; ᏦᏩ, ᏕᏫ",
         "stock_raw_ocr": "ᏖᏍᎬᎢ, ᎯᎠ ᏂᎦᏪᏍᎨᎢ Ꮆ ᏦᏄᏩ, ᎩᏫ",
-        "ftm_aligned": "ᎠᏍᎩᏓᏍᎬᎢ, ᎯᎠ ᏂᎦᏪᏍᎨᎢ; ᏦᏩ, ᏕᏫ",
+        "ftm_aligned": "ᏓᏍᎬᎢ, ᎯᎠ ᏂᎦᏪᏍᎨᎢ; ᏦᏩ, ᏕᏫ",
         "ftm_raw_ocr": "ᏓᏍᎬᎢ, ᎯᎠ ᏂᎦᏪᏍᎨᎢ;Ꮆ ᏦᏩ, ᎩᏫ",
         "ftm_confidence": 62.2
       },
@@ -709,7 +709,7 @@
         "line_crop": "line_crops/010120_line_05.png",
         "stock_aligned": "ᏣᏓᏴᏍᏗ, ᎾᏍᎩᏰᏃ Ꮎ ᏥᎦᏁᎵ ᎦᎸᏉᏗᏳ",
         "stock_raw_ocr": "ᏣᏓᏴᏍᏘ, ᎾᏍᎩᏰᏃ Ꮎ ᏥᎦᏁᏝ ᎦᎸᎹᏉ-",
-        "ftm_aligned": "ᏣᏓᏴᏍᏗ, ᎾᏍᎩᏰᏃ Ꮎ ᏥᎦᏁᎵ ᎦᎸᏉᏗᏳ",
+        "ftm_aligned": "ᏣᏓᏴᏍᏗ, ᎾᏍᎩᏰᏃ Ꮎ ᏥᎦᏁᎵ ᎦᎸᏉ-",
         "ftm_raw_ocr": "ᏣᏓᏴᏍᏗ, ᎾᏍᎩᏰᏃ Ꮎ ᏥᎦᏁᏝ ᎦᎸᏉ-",
         "ftm_confidence": 80.6
       },
@@ -717,7 +717,7 @@
         "line_crop": "line_crops/010120_line_06.png",
         "stock_aligned": "ᎠᏓᏅᏙ ᎤᏓᏅᏖᎸᎯ;",
         "stock_raw_ocr": "ᏘᏳ ᎠᏓᏅᏙ ᎤᏓᏅᏖᎸᎯ :Ᏻ",
-        "ftm_aligned": "ᎠᏓᏅᏙ ᎤᏓᏅᏖᎸᎯ;",
+        "ftm_aligned": "ᏗᏳ ᎠᏓᏅᏙ ᎤᏓᏅᏖᎸᎯ;",
         "ftm_raw_ocr": "ᏗᏳ ᎠᏓᏅᏙ ᎤᏓᏅᏖᎸᎯ ;Ꮆ",
         "ftm_confidence": 87.5
       }
@@ -738,17 +738,17 @@
       },
       {
         "line_crop": "line_crops/010121_line_01.png",
-        "stock_aligned": "ᏥᏌ ᏕᎯᏲᎥᎭ, ᏧᏤᎵᏰᏃ ᏴᏫ ᏙᏛᏍᏕᎸᎯ",
+        "stock_aligned": "ᏥᏌ ᏕᎯᏲᎥᎭ, ᏧᏤᎵᏰᏃ ᏴᏫ ᏙᏛᏍᏕ-",
         "stock_raw_ocr": "ᏥᏌ ᎦᎯᏲᎥᎭ, ᏧᏤᎵᏝᏰᏃ ᏴᏫ ᏙᏛᏍᏕ-",
-        "ftm_aligned": "ᏥᏌ ᏕᎯᏲᎥᎭ, ᏧᏤᎵᏰᏃ ᏴᏫ ᏙᏛᏍᏕᎸᎯ",
+        "ftm_aligned": "ᏥᏌ ᏕᎯᏲᎥᎭ, ᏧᏤᎵᏰᏃ ᏴᏫ ᏙᏛᏍᏕ-",
         "ftm_raw_ocr": "ᏥᏌ ᏳᎯᏲᎥᎭ, ᏧᏤᎵᏝᏰᏃ ᏴᏫ ᏙᏛᏍᏕ-",
         "ftm_confidence": 59.2
       },
       {
         "line_crop": "line_crops/010121_line_02.png",
-        "stock_aligned": "ᏙᏓᎫᏓᎴᏏ ᎤᏂᏍᎦᏅᏨᎢ.",
+        "stock_aligned": "ᎸᎯ ᏙᏓᎫᏓᎴᏏ ᎤᏂᏍᎦᏅᏨᎢ.",
         "stock_raw_ocr": "ᎸᎯ ᏙᏓᎫᏓᎴᏏ ᎤᏂᏍᎦᏅᏨᎢ,",
-        "ftm_aligned": "ᏙᏓᎫᏓᎴᏏ ᎤᏂᏍᎦᏅᏨᎢ.",
+        "ftm_aligned": "ᎸᎯ ᏙᏓᎫᏓᎴᏏ ᎤᏂᏍᎦᏅᏨᎢ.",
         "ftm_raw_ocr": "ᎸᎯ ᏙᏓᎫᏓᎴᏏ ᎤᏂᏍᎦᏅᏨᎢ.",
         "ftm_confidence": 86.67
       }
@@ -808,17 +808,17 @@
       },
       {
         "line_crop": "line_crops/010123_line_02.png",
-        "stock_aligned": "ᎢᎹᏄᎡᎵ ᎠᏃᏎᎮᏍᏗ, ᎾᏍᎩ ᎠᏁᏢᏔᏅᎯ",
+        "stock_aligned": "ᎢᎹᏄᎡᎵ ᎠᏃᏎᎮᏍᏗ, ᎾᏍᎩ ᎠᏁᏢᏔ-",
         "stock_raw_ocr": "ᎢᎹᏄᎡᎵᏝ ᎠᏃᏎᎮᏍᏘ, ᎾᏍᎩ ᎠᏁᏢᏔ-",
-        "ftm_aligned": "ᎢᎹᏄᎡᎵ ᎠᏃᏎᎮᏍᏗ, ᎾᏍᎩ ᎠᏁᏢᏔᏅᎯ",
+        "ftm_aligned": "ᎢᎹᏄᎡᎵ ᎠᏃᏎᎮᏍᏗ, ᎾᏍᎩ ᎠᏁᏢᏔ-",
         "ftm_raw_ocr": "ᎢᎹᏄᎡᎵ ᎠᏃᏎᎮᏍᏗ, ᎾᏍᎩ ᎠᏁᏢᏔ-",
         "ftm_confidence": 86.5
       },
       {
         "line_crop": "line_crops/010123_line_03.png",
-        "stock_aligned": "ᎨᏒ ᎯᎠ ᏄᏍᏗ ᎦᏛᎦ, ᎤᏁᎳᏅᎯ",
+        "stock_aligned": "ᏅᎯ ᎨᏒ ᎯᎠ ᏄᏍᏗ ᎦᏛᎦ, ᎤᏁᎳᏅᎯ",
         "stock_raw_ocr": "ᏅᎯ ᎨᏒ ᎯᎠ ᏄᏍᏘ ᎦᏛᎦ, ᎤᏁᎳᏅᎯ",
-        "ftm_aligned": "ᎨᏒ ᎯᎠ ᏄᏍᏗ ᎦᏛᎦ, ᎤᏁᎳᏅᎯ",
+        "ftm_aligned": "ᏅᎯ ᎨᏒ ᎯᎠ ᏄᏍᏗ ᎦᏛᎦ, ᎤᏁᎳᏅᎯ",
         "ftm_raw_ocr": "ᏅᎯ ᎨᏒ ᎯᎠ ᏄᏍᏗ ᎦᏛᎦ, ᎤᏁᎳᏅᎯ",
         "ftm_confidence": 87.33
       },
@@ -839,25 +839,25 @@
     "lines": [
       {
         "line_crop": "line_crops/010124_line_00.png",
-        "stock_aligned": "24 ᏦᏩᏃ ᎤᏰᏨ ᎤᎸᏅᎢ ᏗᎧᎿᎭᏩᏗᏙᎯ",
+        "stock_aligned": "24 ᏦᏩᏃ ᎤᏰᏨ ᎤᎸᏅᎢ ᏗᎧᎿᎭᏩ-",
         "stock_raw_ocr": "2Ꮞ ᏦᏩᏃ ᎤᏰᏨ ᎤᎸᏅᎢ ᏘᏗᎧᎿᏩᎩ-",
-        "ftm_aligned": "24 ᏦᏩᏃ ᎤᏰᏨ ᎤᎸᏅᎢ ᏗᎧᎿᎭᏩᏗᏙᎯ",
+        "ftm_aligned": "24 ᏦᏩᏃ ᎤᏰᏨ ᎤᎸᏅᎢ ᏗᎧᎿᎭᏩ-",
         "ftm_raw_ocr": "2Ꮞ ᏦᏩᏃ ᎤᏰᏨ ᎤᎸᏅᎢ ᏗᎧᎿᏩ-",
         "ftm_confidence": 85.2
       },
       {
         "line_crop": "line_crops/010124_line_01.png",
-        "stock_aligned": "ᏱᎰᏩ ᏅᏓᏳᏅᏏᏛ ᏄᏪᏎᎸ",
+        "stock_aligned": "ᏗᏙᎯ ᏱᎰᏩ ᏅᏓᏳᏅᏏᏛ ᏄᏪᏎᎸ ᏄᏛ-",
         "stock_raw_ocr": "ᏗᏙᎯ ᎤᎾᎰᏩ ᏅᏓᏳᏅᏏᏛ ᏄᏪᏎᎸ ᏄᏛ-",
-        "ftm_aligned": "ᏱᎰᏩ ᏅᏓᏳᏅᏏᏛ ᏄᏪᏎᎸ",
+        "ftm_aligned": "ᏗᏙᎯ ᏱᎰᏩ ᏅᏓᏳᏅᏏᏛ ᏄᏪᏎᎸ ᏄᏛ-",
         "ftm_raw_ocr": "ᏗᏙᎯ ᏱᎰᏩ ᏅᏓᏳᏅᏏᏛ ᏄᏪᏎᎸ ᏄᏛ-",
         "ftm_confidence": 85.0
       },
       {
         "line_crop": "line_crops/010124_line_02.png",
-        "stock_aligned": "ᏄᏛᏁᎴᎢ, ᎤᏯᏅᎨᏉ ᎤᏓᏴᏍᏗ.",
+        "stock_aligned": "ᏁᎴᎢ, ᎤᏯᏅᎨᏉ ᎤᏓᏴᏍᏗ.",
         "stock_raw_ocr": "ᏁᎴᎢ, ᎤᏯᏅᎮᏉ ᎤᏓᏖᏴᏍᏗ.",
-        "ftm_aligned": "ᏄᏛᏁᎴᎢ, ᎤᏯᏅᎨᏉ ᎤᏓᏴᏍᏗ.",
+        "ftm_aligned": "ᏁᎴᎢ, ᎤᏯᏅᎨᏉ ᎤᏓᏴᏍᏗ.",
         "ftm_raw_ocr": "ᏁᎴᎢ, ᎤᏯᏅᎮᏉ ᎤᏓᏴᏍᏗ.",
         "ftm_confidence": 86.33
       }

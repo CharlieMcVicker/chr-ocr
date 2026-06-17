@@ -38,11 +38,74 @@ def align_words_to_lines(words, line_ocrs):
     
     Uses dynamic programming or recursion with memoization.
     """
-    n_words = len(words)
     n_lines = len(line_ocrs)
-    
     if n_lines == 0:
         return []
+
+    # Preprocess words to detect and split hyphenated words split across lines
+    def clean_word(w):
+        return "".join(c for c in w if c.isalnum() or '\u13A0' <= c <= '\u13FF' or '\uAB70' <= c <= '\uABBF')
+
+    words = list(words)
+    start_search_idx = 0
+    for i in range(n_lines - 1):
+        line_str = line_ocrs[i].rstrip()
+        line_words = line_str.split()
+        if not line_words:
+            continue
+            
+        # Look for hyphen in the last word, or the second-to-last word if the last is very short garbage
+        last_word = line_words[-1]
+        has_hyphen = "-" in last_word
+        if not has_hyphen and len(line_words) > 1 and len(last_word) <= 2:
+            if "-" in line_words[-2]:
+                last_word = line_words[-2]
+                has_hyphen = True
+                
+        if not has_hyphen:
+            continue
+            
+        part1 = last_word.split("-")[0]
+        
+        next_line_words = line_ocrs[i+1].split()
+        if not next_line_words:
+            continue
+        part2 = next_line_words[0]
+        
+        target = clean_word(part1) + clean_word(part2)
+        if not target:
+            continue
+            
+        best_match_idx = -1
+        best_dist = float('inf')
+        search_limit = min(len(words), start_search_idx + 15)
+        for w_idx in range(start_search_idx, search_limit):
+            w_clean = clean_word(words[w_idx])
+            if not w_clean:
+                continue
+            dist = Levenshtein.distance(w_clean, target)
+            if dist < best_dist:
+                best_dist = dist
+                best_match_idx = w_idx
+                
+        if best_match_idx != -1 and best_dist <= 3 and best_dist < len(clean_word(words[best_match_idx])) * 0.4:
+            matched_word = words[best_match_idx]
+            best_k = 1
+            min_split_cost = float('inf')
+            for k in range(1, len(matched_word)):
+                w1 = matched_word[:k]
+                w2 = matched_word[k:]
+                split_cost = Levenshtein.distance(clean_word(w1), clean_word(part1)) + Levenshtein.distance(clean_word(w2), clean_word(part2))
+                if split_cost < min_split_cost:
+                    min_split_cost = split_cost
+                    best_k = k
+                    
+            word1 = matched_word[:best_k] + "-"
+            word2 = matched_word[best_k:]
+            words[best_match_idx:best_match_idx+1] = [word1, word2]
+            start_search_idx = best_match_idx + 2
+
+    n_words = len(words)
     
     # Memoization table: memo[(word_idx, line_idx)] = (cost, split_index_after)
     memo = {}
