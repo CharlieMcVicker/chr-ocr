@@ -5,6 +5,7 @@ import argparse
 from PIL import Image
 import pytesseract
 import Levenshtein
+from scripts.find_missing_spaces import find_missing_spaces
 
 # Helper function to do OCR using pytesseract
 def ocr_line_with_confidence(pil_img, model_dir=None, model_name=None):
@@ -293,6 +294,18 @@ def align_book_transcriptions(book_dir, model_dir, model_name):
     html_path = os.path.join(book_dir, "alignment_verification.html")
     generate_html_report(html_path, report_rows)
     print(f"Verification report created at {html_path}")
+    
+    # Run missing space candidate detection
+    print("Checking for missing space candidates in ground truth...")
+    try:
+        candidates = find_missing_spaces(out_json)
+        candidates_out = os.path.join(book_dir, "missing_spaces_candidates.json")
+        with open(candidates_out, "w", encoding="utf-8") as f:
+            json.dump(candidates, f, ensure_ascii=False, indent=2)
+        print(f"Found {len(candidates)} missing space candidates. Report saved to {candidates_out}")
+    except Exception as e:
+        print(f"Failed to run missing space detection: {e}")
+
 
 def generate_html_report(html_path, rows):
     html_content = """<!DOCTYPE html>
