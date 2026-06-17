@@ -12,5 +12,6 @@ numpy
 Pillow
 pytesseract
 surya-ocr
+Levenshtein
+python-Levenshtein
 scipy
-
