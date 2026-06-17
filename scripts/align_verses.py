@@ -6,6 +6,7 @@ from PIL import Image
 import pytesseract
 import Levenshtein
 from scripts.find_missing_spaces import find_missing_spaces
+from scripts.apply_space_corrections import apply_space_corrections
 
 # Helper function to do OCR using pytesseract
 def ocr_line_with_confidence(pil_img, model_dir=None, model_name=None):
@@ -170,7 +171,7 @@ def align_words_to_lines(words, line_ocrs):
         curr_w_idx = split
     return segments
 
-def align_book_transcriptions(book_dir, model_dir, model_name):
+def align_book_transcriptions(book_dir, model_dir, model_name, realign_if_corrected=True):
     segment_map_path = os.path.join(book_dir, "segment_map.json")
     if not os.path.isfile(segment_map_path):
         print(f"Error: segment_map.json not found in {book_dir}")
@@ -303,8 +304,15 @@ def align_book_transcriptions(book_dir, model_dir, model_name):
         with open(candidates_out, "w", encoding="utf-8") as f:
             json.dump(candidates, f, ensure_ascii=False, indent=2)
         print(f"Found {len(candidates)} missing space candidates. Report saved to {candidates_out}")
+
+        if realign_if_corrected:
+            print("Applying automatic space corrections (if any)...")
+            applied = apply_space_corrections(book_dir)
+            if applied > 0:
+                print("Space corrections applied. Re-running alignment to sync changes...")
+                align_book_transcriptions(book_dir, model_dir, model_name, realign_if_corrected=False)
     except Exception as e:
-        print(f"Failed to run missing space detection: {e}")
+        print(f"Failed to run missing space detection or correction: {e}")
 
 
 def generate_html_report(html_path, rows):
