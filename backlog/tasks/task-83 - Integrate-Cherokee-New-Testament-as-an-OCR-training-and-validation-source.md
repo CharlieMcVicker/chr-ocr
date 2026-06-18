@@ -1,10 +1,10 @@
 ---
 id: TASK-83
 title: Integrate Cherokee New Testament as an OCR training and validation source
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-17 12:51'
-updated_date: '2026-06-17 12:55'
+updated_date: '2026-06-18 12:31'
 labels:
   - cnt-ocr
 dependencies: []
@@ -19,7 +19,7 @@ Explore incorporating the Cherokee New Testament text and scans as additional so
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Locate high-quality scans and digital transcriptions of the Cherokee New Testament
-- [ ] #2 Develop a pipeline to segment pages and align verses/lines with digital ground truth text
-- [ ] #3 Integrate New Testament line crops and transcriptions into the training split
+- [x] #1 Locate high-quality scans and digital transcriptions of the Cherokee New Testament
+- [x] #2 Develop a pipeline to segment pages and align verses/lines with digital ground truth text
+- [x] #3 Integrate New Testament line crops and transcriptions into the training split
 <!-- AC:END -->

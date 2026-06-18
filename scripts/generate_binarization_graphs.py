@@ -25,9 +25,12 @@ import numpy as np
 # Utilities
 # ---------------------------------------------------------------------------
 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from phoenix.text.normalization import normalize_truth
+
 def norm(s: str) -> str:
-    """NFC-normalise to handle any Unicode form differences."""
-    return unicodedata.normalize("NFC", s)
+    """Centralized normalization."""
+    return normalize_truth(s)
 
 
 def edit_distance(a: str, b: str) -> int:

@@ -16,8 +16,11 @@ import argparse
 import subprocess
 import unicodedata
 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from phoenix.text.normalization import normalize_truth
+
 def norm(s: str) -> str:
-    return unicodedata.normalize("NFC", s)
+    return normalize_truth(s)
 
 def edit_distance(a, b) -> int:
     la, lb = len(a), len(b)

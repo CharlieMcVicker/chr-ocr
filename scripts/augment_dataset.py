@@ -21,6 +21,7 @@ from phoenix.training.augment import (
     augment_geometry_and_noise,
     binarize
 )
+from phoenix.text.normalization import normalize_truth
 
 def main():
     """
@@ -108,7 +109,7 @@ def main():
         img = cv2.imread(image_path)
         if img is None: continue
 
-        label = item["label"]
+        label = normalize_truth(item["label"])
         item_id = item["id"]
 
         aug_variations = augment_geometry_and_noise(img)
@@ -161,7 +162,7 @@ def main():
         img = cv2.imread(image_path)
         if img is None: continue
 
-        label = item["label"]
+        label = normalize_truth(item["label"])
         item_id = item["id"]
 
         skip_bin = should_skip_binarization(item)

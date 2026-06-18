@@ -22,6 +22,7 @@ from phoenix.training.augment import (
     get_albumentations_pipeline,
     apply_mixup_bleedthrough
 )
+from phoenix.text.normalization import normalize_truth
 
 def main():
     parser = argparse.ArgumentParser()
@@ -136,7 +137,7 @@ def main():
         if img is None:
             continue
 
-        label = item["label"]
+        label = normalize_truth(item["label"])
         item_id = item["id"]
 
         skip_bin = should_skip_binarization(item)
@@ -175,15 +176,17 @@ def main():
 
             # 5. Weakly-supervised transcription error injection
             final_label = inject_synthetic_errors(label, error_rate=args.error_rate)
+            normalized_final_label = normalize_truth(final_label)
 
             # 6. Save assets
             out_name = f"{item_id}_dyn_{var_idx}_{algo}"
             out_base = os.path.join(args.output_dir, out_name)
 
+            # Note that we use normalized_final_label here
             cv2.imwrite(out_base + ".png", norm_img)
             with open(out_base + ".gt.txt", "w", encoding="utf-8") as f:
-                f.write(final_label + "\n")
-            generate_box_file(out_base + ".box", final_label, w, h)
+                f.write(normalized_final_label + "\n")
+            generate_box_file(out_base + ".box", normalized_final_label, w, h)
 
     print(f"Dynamic augmentation complete. Generated variations in {args.output_dir}")
 

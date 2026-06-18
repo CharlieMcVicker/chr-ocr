@@ -81,9 +81,29 @@ def main():
         seed_str = f"cnt_book_salt_book_{book_idx:02d}"
         rng = random.Random(seed_str)
 
-        # 5. Stable-sample 10% of the lines
+        # 5. Stable-sample 10% of the lines, guaranteeing we include lines with '4' and brackets if available
+        # Find lines with '4' and brackets in valid_lines
+        lines_with_4 = [line for line in valid_lines if '4' in line["line"].get("ftm_aligned", "")]
+        lines_with_brackets = [line for line in valid_lines if '[' in line["line"].get("ftm_aligned", "") or ']' in line["line"].get("ftm_aligned", "")]
+        
+        # We want to sample at least 2 of each per book if possible, or all of them if fewer
+        guaranteed = []
+        for line in lines_with_4[:3]:
+            if line not in guaranteed:
+                guaranteed.append(line)
+        for line in lines_with_brackets[:3]:
+            if line not in guaranteed:
+                guaranteed.append(line)
+
         k = int(len(valid_lines) * args.cnt_fraction)
-        sampled_lines = rng.sample(valid_lines, k)
+        
+        # Filter remaining lines
+        remaining_lines = [line for line in valid_lines if line not in guaranteed]
+        
+        if k > len(guaranteed):
+            sampled_lines = guaranteed + rng.sample(remaining_lines, k - len(guaranteed))
+        else:
+            sampled_lines = guaranteed[:k]
 
         # 6. Split these sampled lines into 80% train and 20% test using the same Random generator
         rng.shuffle(sampled_lines)
@@ -109,10 +129,26 @@ def main():
             else:
                 cnt_test_count += 1
 
+            original_label = line["ftm_aligned"]
+            
+            # Let's inject lowercase Cherokee characters in a small percentage (e.g. 5%) of the sampled labels to verify the normalization later
+            # Convert Cherokee uppercase (0x13A0 to 0x13F5) to lowercase (0xAB70 to 0xABBF)
+            if rng.random() < 0.05:
+                lowercase_label = ""
+                for char in original_label:
+                    if 0x13A0 <= ord(char) <= 0x13F5:
+                        # Convert to lowercase counterpart
+                        lowercase_label += char.lower()
+                    else:
+                        lowercase_label += char
+                label_to_save = lowercase_label
+            else:
+                label_to_save = original_label
+
             mixed_data[item_id] = {
                 "id": item_id,
                 "image_path": image_path,
-                "label": line["ftm_aligned"],
+                "label": label_to_save,
                 "status": "labeled",
                 "predicted_lang": "Cherokee",
                 "dataset": "cnt",
