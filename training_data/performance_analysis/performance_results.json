@@ -1,0 +1,1278 @@
+{
+  "doc_stats": [
+    {
+      "doc_id": "1829-01-28_seq-3",
+      "mean_cer": 17.12962962962963,
+      "median_cer": 22.22222222222222,
+      "count": 3
+    },
+    {
+      "doc_id": "1828-03-27_seq-3",
+      "mean_cer": 14.285714285714286,
+      "median_cer": 14.285714285714286,
+      "count": 1
+    },
+    {
+      "doc_id": "1828-03-27_seq-1",
+      "mean_cer": 12.236980410893455,
+      "median_cer": 6.923076923076923,
+      "count": 8
+    },
+    {
+      "doc_id": "1828-11-19_seq-2",
+      "mean_cer": 11.140583554376656,
+      "median_cer": 6.896551724137931,
+      "count": 3
+    },
+    {
+      "doc_id": "1828-03-27_seq-2",
+      "mean_cer": 8.53494623655914,
+      "median_cer": 9.67741935483871,
+      "count": 3
+    },
+    {
+      "doc_id": "1828-03-13_seq-1",
+      "mean_cer": 6.417887667887667,
+      "median_cer": 5.626780626780627,
+      "count": 4
+    },
+    {
+      "doc_id": "1828-05-06_seq-2",
+      "mean_cer": 5.262445887445888,
+      "median_cer": 3.5714285714285716,
+      "count": 3
+    },
+    {
+      "doc_id": "1828-03-13_seq-4",
+      "mean_cer": 5.172413793103448,
+      "median_cer": 5.172413793103448,
+      "count": 2
+    },
+    {
+      "doc_id": "1829-01-21_seq-3",
+      "mean_cer": 5.020703933747412,
+      "median_cer": 4.3478260869565215,
+      "count": 3
+    },
+    {
+      "doc_id": "1828-04-10_seq-1",
+      "mean_cer": 4.235075081931066,
+      "median_cer": 3.0303030303030303,
+      "count": 17
+    },
+    {
+      "doc_id": "1828-11-12_seq-2",
+      "mean_cer": 3.8461538461538463,
+      "median_cer": 3.8461538461538463,
+      "count": 1
+    },
+    {
+      "doc_id": "1828-04-17_seq-3",
+      "mean_cer": 3.60178362204231,
+      "median_cer": 3.225806451612903,
+      "count": 9
+    },
+    {
+      "doc_id": "1828-12-29_seq-3",
+      "mean_cer": 3.5714285714285716,
+      "median_cer": 3.5714285714285716,
+      "count": 1
+    },
+    {
+      "doc_id": "1829-01-07_seq-3",
+      "mean_cer": 3.4195402298850572,
+      "median_cer": 3.390804597701149,
+      "count": 4
+    },
+    {
+      "doc_id": "1829-01-14_seq-3",
+      "mean_cer": 3.3333333333333335,
+      "median_cer": 3.3333333333333335,
+      "count": 1
+    },
+    {
+      "doc_id": "1828-08-20_seq-4",
+      "mean_cer": 2.2988505747126435,
+      "median_cer": 0.0,
+      "count": 6
+    },
+    {
+      "doc_id": "1828-05-21_seq-3",
+      "mean_cer": 2.1778584392014517,
+      "median_cer": 1.7241379310344827,
+      "count": 4
+    },
+    {
+      "doc_id": "1828-04-17_seq-2",
+      "mean_cer": 1.8518518518518519,
+      "median_cer": 1.8518518518518519,
+      "count": 2
+    },
+    {
+      "doc_id": "1828-04-17_seq-4",
+      "mean_cer": 1.083974210097253,
+      "median_cer": 0.0,
+      "count": 13
+    },
+    {
+      "doc_id": "1828-05-06_seq-1",
+      "mean_cer": 0.0,
+      "median_cer": 0.0,
+      "count": 1
+    },
+    {
+      "doc_id": "1828-05-06_seq-3",
+      "mean_cer": 0.0,
+      "median_cer": 0.0,
+      "count": 1
+    },
+    {
+      "doc_id": "1828-05-21_seq-1",
+      "mean_cer": 0.0,
+      "median_cer": 0.0,
+      "count": 2
+    },
+    {
+      "doc_id": "1828-06-04_seq-1",
+      "mean_cer": 0.0,
+      "median_cer": 0.0,
+      "count": 1
+    },
+    {
+      "doc_id": "1828-06-04_seq-2",
+      "mean_cer": 0.0,
+      "median_cer": 0.0,
+      "count": 2
+    },
+    {
+      "doc_id": "1828-07-02_seq-1",
+      "mean_cer": 0.0,
+      "median_cer": 0.0,
+      "count": 2
+    },
+    {
+      "doc_id": "1828-09-24_seq-2",
+      "mean_cer": 0.0,
+      "median_cer": 0.0,
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "file": "training_data/dataset/test/base/1828-03-13_seq-1_col_02_line_011.lstmf",
+      "base_name": "1828-03-13_seq-1_col_02_line_011",
+      "doc_id": "1828-03-13_seq-1",
+      "line_id": "line_011",
+      "truth": "Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᏗ ᏦᏣᎴᏅᏓ",
+      "ocr": "Ꮙ ᎣᏣᎴᏅ ᏙᏥᎴᏴᏓ. ᎯᎠ ᎾᏍᎩ ᏦᏣᎴᏅᏓ",
+      "cer": 3.8461538461538463,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-13_seq-1_col_02_line_024.lstmf",
+      "base_name": "1828-03-13_seq-1_col_02_line_024",
+      "doc_id": "1828-03-13_seq-1",
+      "line_id": "line_024",
+      "truth": "ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᏉ  ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ",
+      "ocr": "ᏗᎩᎧᎾᏩᏛᏍᏗ ᏥᎩ; ᎿᎭᏉ ᏀᏍᎩ ᏙᏍᏗᏍᏆᏓ",
+      "cer": 7.407407407407407,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-13_seq-1_col_02_line_127.lstmf",
+      "base_name": "1828-03-13_seq-1_col_02_line_127",
+      "doc_id": "1828-03-13_seq-1",
+      "line_id": "line_127",
+      "truth": "ᏱᏂᎤᏍᏗ. ᏕᎦᏙᎥᏍᎩᏂ ᏫᎬᏩᏲᏥᏓᏍᏗᏉ. --",
+      "ocr": "ᏂᎤᏍᏗ. ᏕᎦᏙᎥᏍᎩᏂ ᏫᎬᏩᏂᏲᏥᏓᏍᏗᏉ.--",
+      "cer": 10.714285714285714,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-13_seq-1_col_03_line_004.lstmf",
+      "base_name": "1828-03-13_seq-1_col_03_line_004",
+      "doc_id": "1828-03-13_seq-1",
+      "line_id": "line_004",
+      "truth": "Ꮢ; ᏌᏉ ᎢᎬᏱ ᎦᏙᎩ ᎠᎴ ᏌᏉ ᏔᎵᏁ ᎦᏙᎩ",
+      "ocr": "Ꮢ; ᏌᏉ ᎢᎬᏱ ᎦᏙᎩ ᎠᎴ ᏌᏉ ᏔᎵᏁ ᎦᎪᎩ",
+      "cer": 3.7037037037037037,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-13_seq-4_col_00_line_058.lstmf",
+      "base_name": "1828-03-13_seq-4_col_00_line_058",
+      "doc_id": "1828-03-13_seq-4",
+      "line_id": "line_058",
+      "truth": "ᎦᎸᎳᏗ ᎡᎯ ᎤᏁᏲᎲᏍᎨᎢ, ᎩᎳᏃ ᎠᏃᏪᎵᏍᎨᎢ.",
+      "ocr": "ᏰᎸᎳᏗ ᎡᎯ ᎤᏁᏂᏲᎲᏍᎨᎢ. ᎩᎳᏃ ᎠᏃᏪᎵᏍᎨᎢ.",
+      "cer": 10.344827586206897,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-13_seq-4_col_00_line_061.lstmf",
+      "base_name": "1828-03-13_seq-4_col_00_line_061",
+      "doc_id": "1828-03-13_seq-4",
+      "line_id": "line_061",
+      "truth": "ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ",
+      "ocr": "ᎯᎸᏍᎩ ᏂᏕᎦᎥ ᏧᏁᎳᎩᎭᎾ ᏚᏙᎠᏗ. ᎢᎬᏱᏱ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-1_col_00_line_025.lstmf",
+      "base_name": "1828-03-27_seq-1_col_00_line_025",
+      "doc_id": "1828-03-27_seq-1",
+      "line_id": "line_025",
+      "truth": "ᏣᎳᎩ ᏧᎴᎯᏌᏅᎯ ᎯᎠ ᏂᎦᎥ ᏧᎬᏩᎶᏗ.",
+      "ocr": "ᏣᎳᎩ ᏧᎴᎯᏌᏅᎯ ᎯᎠ ᏂᎦᎥ ᏧᎬᏩᎶᏗ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-1_col_00_line_029.lstmf",
+      "base_name": "1828-03-27_seq-1_col_00_line_029",
+      "doc_id": "1828-03-27_seq-1",
+      "line_id": "line_029",
+      "truth": "ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ,",
+      "ocr": "ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, Ꮒ-",
+      "cer": 12.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-1_col_00_line_031.lstmf",
+      "base_name": "1828-03-27_seq-1_col_00_line_031",
+      "doc_id": "1828-03-27_seq-1",
+      "line_id": "line_031",
+      "truth": "ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏅᎩᏁᎢ ᎠᏰᎵ ᎤᎾᎫᏴᏗ ᎨᏎᏍᏗ.",
+      "ocr": "ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏅᎩᏁᎢ ᎠᏰᎵ ᏣᎾᎫᎵᏗ ᎨᏎᏍᏗ",
+      "cer": 10.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-1_col_03_line_066.lstmf",
+      "base_name": "1828-03-27_seq-1_col_03_line_066",
+      "doc_id": "1828-03-27_seq-1",
+      "line_id": "line_066",
+      "truth": "ᏣᎳᎩᏱ ᏴᏫᏁᎬ ᏧᏓᏘᏀᎢ, ᏀᏍᎩᏃ ᎠᏙᎳᏍᏗ-",
+      "ocr": "ᎳᎩᏱ ᏚᏫᎾᏁᎬ ᏧᏓᏘᎾ0Ꭲ, ᏀᏍᎩᏃ ᎡᎦᎳᏍᏗ-",
+      "cer": 25.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-1_col_03_line_099.lstmf",
+      "base_name": "1828-03-27_seq-1_col_03_line_099",
+      "doc_id": "1828-03-27_seq-1",
+      "line_id": "line_099",
+      "truth": "Ꮓ ᏗᎫᎪᏗᏍᎩ ᏔᎵ ᏂᎦᏚᎲ ᏧᎸᏫᏍᏓᏁᏗ ᎨᏎ-",
+      "ocr": "Ꮓ ᏗᎫᎪᏗᏍᎩ ᏔᎵ ᏂᎦᏚᎲᏪ ᏧᎸᏫᏍᏓᏁᏗ ᎨᏎ-",
+      "cer": 3.5714285714285716,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-1_col_04_line_024.lstmf",
+      "base_name": "1828-03-27_seq-1_col_04_line_024",
+      "doc_id": "1828-03-27_seq-1",
+      "line_id": "line_024",
+      "truth": "ᎣᏍᏗᏰᎸᎾ, ᏅᏃᎭ ᏓᎯ, ᎠᎩᎬᏫᏳᎯ.",
+      "ocr": "ᏧᏍᏗᎮᎸ9Ꮎ, ᏅᎩᏗ ᎨᎢ ᏓᎯ, ᏂᎩᎬᎾᏳᎯ.",
+      "cer": 43.47826086956522,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-1_col_04_line_069.lstmf",
+      "base_name": "1828-03-27_seq-1_col_04_line_069",
+      "doc_id": "1828-03-27_seq-1",
+      "line_id": "line_069",
+      "truth": ", ᏄᏂᎬᏫᏳᏒ ᏗᎾᏕᏲᎲᏍᎩ ᏧᎾᎫᏴᎡᏗ ᎨᏎ-",
+      "ocr": ", ᏄᏂᎬᏫᏳᏒ ᏗᎾᏕᏲᎲᏍᎩ ᏧᎾᎫᏴᎡᏗ ᎨᏎ-",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-1_col_04_line_081.lstmf",
+      "base_name": "1828-03-27_seq-1_col_04_line_081",
+      "doc_id": "1828-03-27_seq-1",
+      "line_id": "line_081",
+      "truth": "ᏁᎮᏍᏗ ᏂᎪᎯᎸ ᎠᏥᏁᏤᎸᎢ, ᎢᎤᏕᎶᏆᎡᏍᏗ",
+      "ocr": "ᏁᎮᏍᏗ ᏂᎪᎯᎸ ᎠᏥᏁᏤᎸᎢ, ᎢᎤᏕᎶᏆᎡᏍᏗ-",
+      "cer": 3.8461538461538463,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-2_col_00_line_000.lstmf",
+      "base_name": "1828-03-27_seq-2_col_00_line_000",
+      "doc_id": "1828-03-27_seq-2",
+      "line_id": "line_000",
+      "truth": "ᎠᏍᎪᎯᏧᏈ ᎯᏍᎦᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ-",
+      "ocr": "ᎠᏍᎪᎯᏈ ᎯᏍᏕᏍᎪᎯᏃ ᎠᏕᎸᎯ ᏑᏕᏘᏴᏛ ᎠᎦᎫᏴ.",
+      "cer": 9.67741935483871,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-2_col_00_line_003.lstmf",
+      "base_name": "1828-03-27_seq-2_col_00_line_003",
+      "doc_id": "1828-03-27_seq-2",
+      "line_id": "line_003",
+      "truth": "ᎠᎦᎫᏴᎡᏗᏱ ᏥᏂᎦᎵᏍᏗᎭ.",
+      "ocr": "ᎠᏕᎫᏴᎡᏗᏱ ᏥᏂᎦᎵᏍᏗᎭ.",
+      "cer": 6.25,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-2_col_00_line_005.lstmf",
+      "base_name": "1828-03-27_seq-2_col_00_line_005",
+      "doc_id": "1828-03-27_seq-2",
+      "line_id": "line_005",
+      "truth": "ᎯᏯᏃ  ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᎦ",
+      "ocr": "ᎯᏃ ᏀᏍᏉ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ ᏔᎵ ᎠᏕᎸᎯ ᏏᏚ",
+      "cer": 9.67741935483871,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-03-27_seq-3_col_03_line_043.lstmf",
+      "base_name": "1828-03-27_seq-3_col_03_line_043",
+      "doc_id": "1828-03-27_seq-3",
+      "line_id": "line_043",
+      "truth": "500,000",
+      "ocr": "500 000",
+      "cer": 14.285714285714286,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_00_line_027.lstmf",
+      "base_name": "1828-04-10_seq-1_col_00_line_027",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_027",
+      "truth": "ᏑᎾᏙᏓᏆᏍᏗ ᎢᎪᎯᏛ ᏌᏉ ᏧᏂᎴᏴᏙᏗ ᎨᏎᏍᏗ.",
+      "ocr": "ᎤᎾᏙᏓᏆᏍᏗ ᎢᎪᎯᏛ ᏌᏉ ᏧᏂᎴᏴᏙᏗ ᎨᏎᏍᏗ.",
+      "cer": 3.5714285714285716,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_00_line_029.lstmf",
+      "base_name": "1828-04-10_seq-1_col_00_line_029",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_029",
+      "truth": "ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ",
+      "ocr": "ᏰᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ.",
+      "cer": 12.5,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_00_line_033.lstmf",
+      "base_name": "1828-04-10_seq-1_col_00_line_033",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_033",
+      "truth": "ᏣᎳᎩᏃ ᎤᏩᏒ ᏗᏂᏬᏂᏗᏍᎩ, ᏔᎵᏉ ᎠᏕᎸ",
+      "ocr": "ᏣᎳᎩᏃ ᎤᏩᏒ ᏗᏂᏬᏂᏗᏍᎩ, ᏔᎵᏉ ᎠᏕᎸ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_00_line_035.lstmf",
+      "base_name": "1828-04-10_seq-1_col_00_line_035",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_035",
+      "truth": "ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏘᏴᎯ-",
+      "ocr": "ᎫᏱᏍᎨᏍᏗ. ᏦᎢᏁᏃ ᎠᏰᎵ ᎩᎳ ᎣᏂ ᎤᏕᏗᎡᎯ-",
+      "cer": 6.896551724137931,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_136.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_136",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_136",
+      "truth": "ᎣᏥᏁᎩ ᎠᏰᎵ ᎣᏣᏓᏅᏖᏍᎩ ᎠᎴ ᏙᏥᎳᏫᎥ, Ꭲ",
+      "ocr": "ᎣᏥᏁᎩ ᎠᏰᎵ ᎣᏣᏓᏅᏖᏍᎩ ᎠᎴ ᏙᏥᎳᏫᎥ, Ꭲ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_138.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_138",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_138",
+      "truth": "Ꮓ ᎤᏀᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ,",
+      "ocr": "Ꮓ ᎤᏟᏝᎢ ᎣᏍᏏᏳ ᎤᏰᎸᏅᎯ ᏂᎨᏒᎾ ᎢᎨᏎᏍᏗ.",
+      "cer": 6.896551724137931,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_141.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_141",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_141",
+      "truth": "ᏩᎶᏗ ᎤᏁᏗᏉ ᎢᎨᏎᏍᏗ ᏄᎬᏫᏳᏒ ᎤᏤᎵᎦᏯ,",
+      "ocr": "ᏩᎶᏗ ᎤᏁᏗᏉ ᎢᎨᏎᏍᏗ ᏄᎬᏫᏳᏒ ᎤᏤᎵᎦᏯ,",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_146.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_146",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_146",
+      "truth": "ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ",
+      "ocr": "ᎠᎴ ᏀᏍᏉ ᎣᏥᏁᎩ ᎢᏳᏃ ᎩᎶ ᎢᎧᏁᏤᎮᏍᏗ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_152.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_152",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_152",
+      "truth": "ᎠᎴ ᏧᏂᏀᏝᎢ ᏀᏍᎩ ᎠᏂᎬᎿᎨ ᏧᏂᎯᏍᏗ, ᎠᎴ ᎤᎫᏴᏗ",
+      "ocr": "ᎠᎴ ᏧᏂᏣᏝᎢ ᏀᏍᎩ ᎠᏂᎬᎿᎨ ᏧᏂᎯᏍᏗ, ᎠᎴ ᎤᎫᏴᏗ",
+      "cer": 3.0303030303030303,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_156.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_156",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_156",
+      "truth": "ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ",
+      "ocr": "ᎤᏂᏍᎦᏅᏨᎢ. ᏄᏂᎬᏫᏳᏒᏃ ᏗᎾᏓᏂᎶᏍᎩ ᏀᏍᎩ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_162.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_162",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_162",
+      "truth": "ᏎᎸᎭ ᎢᎦᎾᏕᎨᏍᏗ ᎠᏓᏴᏍᏕᏍᏗᏍᎩ ᎤᏀᏝᎢᏃ Ꭳ-",
+      "ocr": "ᏎᎸᎭ ᎢᎦᎾᏕᎨᏍᏗ ᎠᏓᏴᏍᏕᏍᏗᏍᎩ ᎤᏟᎴᎢᏃ Ꭳ-",
+      "cer": 6.666666666666667,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_164.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_164",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_164",
+      "truth": "ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏍᎪᎸᏂᎮᏍᏗ, ᎤᏯᏔᏘ",
+      "ocr": "ᎤᏍᎦᏅᏨᎯ ᎯᏍᎩᎦᏚ ᏂᏓᏥᏆᎸᏂᎮᏍᏗ, ᎤᏍᏔᏘ",
+      "cer": 10.344827586206897,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_167.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_167",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_167",
+      "truth": "Ᏻ ᏓᏂᏁᎸ ᏚᎾᏓᏈᏩᏗᏒ ᎤᎾᏁᎳᎩ ᏓᎾᏑᏰᏍᎨ-",
+      "ocr": "Ᏻ ᏓᏂᏁᎸ ᏚᎾᏓᏡᏩᏗᏒ ᎤᎾᏁᎳᎩ ᏓᎾᏑᏰᏍᎨ-",
+      "cer": 3.5714285714285716,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_169.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_169",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_169",
+      "truth": "ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,",
+      "ocr": "ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᎠᎾᏓᏅᏖᏍᎩ,",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_174.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_174",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_174",
+      "truth": "Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ.",
+      "ocr": "Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_03_line_179.lstmf",
+      "base_name": "1828-04-10_seq-1_col_03_line_179",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_179",
+      "truth": "ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-",
+      "ocr": "ᏗᏄᎪᏗᏍᎩ ᏕᎦᏚᎿᎥ ᎠᏁᎯ ᏓᏂᎳᏫᎥ ᎠᏃᏪᎵᏍᎨ-",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-10_seq-1_col_04_line_104.lstmf",
+      "base_name": "1828-04-10_seq-1_col_04_line_104",
+      "doc_id": "1828-04-10_seq-1",
+      "line_id": "line_104",
+      "truth": "ᎸᏨ ᏅᎦᏍᎪᎯ ᎠᏕᎸᎯ ᎨᏥᏍᏕᎸᏗᏱ ᏍᎦᏚᎩᎭ",
+      "ocr": "ᎥᏨ ᏅᎦᏍᎪᎯ ᎠᏕᎸᎯ ᎨᎨᏍᏚᎸᏗᎯᏱ ᏍᎦᏚᎩᎭ-",
+      "cer": 18.51851851851852,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-2_col_00_line_004.lstmf",
+      "base_name": "1828-04-17_seq-2_col_00_line_004",
+      "doc_id": "1828-04-17_seq-2",
+      "line_id": "line_004",
+      "truth": "ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᎸᎾᏛᏁᎴᏍᏗ",
+      "ocr": "ᏂᏚᏅᏅ ᏅᏃᎯ; ᎢᏳᏃ ᎤᏣᏘᏂᏉ ᏄᎾᏛᏁᎴᏍᏗ",
+      "cer": 3.7037037037037037,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-2_col_00_line_009.lstmf",
+      "base_name": "1828-04-17_seq-2_col_00_line_009",
+      "doc_id": "1828-04-17_seq-2",
+      "line_id": "line_009",
+      "truth": "ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,",
+      "ocr": "ᎠᎵᏁᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-3_col_01_line_006.lstmf",
+      "base_name": "1828-04-17_seq-3_col_01_line_006",
+      "doc_id": "1828-04-17_seq-3",
+      "line_id": "line_006",
+      "truth": "ᏧᎾᏓᏂᎸᎢᏍᏗᏱ ᏥᏌ ᎣᏍᏛ ᏄᏩᏁᎵᎴᎢ. ᎢᎬᏱ",
+      "ocr": "ᏧᎾᏓᏂᎸᎢᏍᏗᏱ ᏥᏌ ᎣᏍᏛ ᏄᏩᏁᎵᎴᎢ. ᎢᎬᏱ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-3_col_01_line_008.lstmf",
+      "base_name": "1828-04-17_seq-3_col_01_line_008",
+      "doc_id": "1828-04-17_seq-3",
+      "line_id": "line_008",
+      "truth": "ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎣᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ",
+      "ocr": "ᎤᎴᏅᎲ ᏚᏬᏁᏔᏅ ᎤᏂ ᎢᏥᏰᎸᎾ ᎢᏥᏍᎦᏅᏨᎢ",
+      "cer": 3.7037037037037037,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-3_col_01_line_146.lstmf",
+      "base_name": "1828-04-17_seq-3_col_01_line_146",
+      "doc_id": "1828-04-17_seq-3",
+      "line_id": "line_146",
+      "truth": "ᎠᎴ ᎾᏍᏉ ᎢᏗᏍᎦᎢᎰ ᎢᎩᏲᎱᎯᏍᏗᏱ, ᎾᏍᎩᏃ Ꭲ-",
+      "ocr": "ᎠᎴ ᎾᏍᏉ ᎢᏗᏍᎦᎢᎵ ᎢᎩᏲᎱᎯᏍᏗᏱ, ᎾᏍᎩᏃ Ꭲ-",
+      "cer": 3.225806451612903,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-3_col_01_line_148.lstmf",
+      "base_name": "1828-04-17_seq-3_col_01_line_148",
+      "doc_id": "1828-04-17_seq-3",
+      "line_id": "line_148",
+      "truth": "ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎰᎢ, ᎠᎴ",
+      "ocr": "ᏳᏍᏗ, ᏂᏗᏍᎦᎢᎲᎾ ᎢᎬᏁᏗᏱ ᎡᏗᏔᏂᏎᎵᎢ, ᎠᎴ",
+      "cer": 3.3333333333333335,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-3_col_01_line_163.lstmf",
+      "base_name": "1828-04-17_seq-3_col_01_line_163",
+      "doc_id": "1828-04-17_seq-3",
+      "line_id": "line_163",
+      "truth": "ᏓᏆᏗᎯ ᏙᏧᏯᏓᏛ ᎡᎯ ᎤᏬᏪᎳᏅᎯ.",
+      "ocr": "ᏓᏆᏗᎯ ᏙᏧᏯᏓᏛ ᎡᎯ ᎤᏬᏪᎳᏅᎯ;",
+      "cer": 4.761904761904762,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-3_col_01_line_166.lstmf",
+      "base_name": "1828-04-17_seq-3_col_01_line_166",
+      "doc_id": "1828-04-17_seq-3",
+      "line_id": "line_166",
+      "truth": "ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.",
+      "ocr": "ᎦᎷᏆᏚᏏᏁ ᎢᎦ, ᎦᎶᏂ, 1827.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-3_col_01_line_175.lstmf",
+      "base_name": "1828-04-17_seq-3_col_01_line_175",
+      "doc_id": "1828-04-17_seq-3",
+      "line_id": "line_175",
+      "truth": "ᎿᏉ ᏭᎾᏓᎵᏍᏓᏁᎸ ᏅᏓᎨᏥᎧᏁᏗᏱ ᎤᏍᎦᏅᏨᎯ",
+      "ocr": "ᎿᏉ ᏭᎾᏓᎵᏍᏓᏁᎸ ᏅᏓᎨᏥᎧᏁᏗᏱ ᎤᏍᎦᏅᏨᎯ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-3_col_01_line_178.lstmf",
+      "base_name": "1828-04-17_seq-3_col_01_line_178",
+      "doc_id": "1828-04-17_seq-3",
+      "line_id": "line_178",
+      "truth": "ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-",
+      "ocr": "ᏗᏐᏴᏉ ᏓᏰᏥᏍᏚᎲ ᏩᏌᏏ. ᎠᏎᏃ ᏭᎾᏓᏄᎸᏅ-",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-3_col_02_line_042.lstmf",
+      "base_name": "1828-04-17_seq-3_col_02_line_042",
+      "doc_id": "1828-04-17_seq-3",
+      "line_id": "line_042",
+      "truth": "ᎢᏅᎯᏳ ᏀᏍᎩ ᎤᏍᏆᏂᎪᏗ ᏅᏧᏍᏗᏕᎦ.",
+      "ocr": "ᎵᏅᎯᏳ ᏀᏍᎩ ᎤᏍᏆᏂᎪᏗ ᎤᏧᎧᏗᏕᎦ..",
+      "cer": 17.391304347826086,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_004.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_004",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_004",
+      "truth": "ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;",
+      "ocr": "ᎠᏇᎵᎯᏍᏗᏍᎬᎢ;",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_011.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_011",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_011",
+      "truth": "ᏙᏓᎬᏃᎩᏍᏓᏂ.",
+      "ocr": "ᏙᏓᎬᏃᎩᏍᏓᏂ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_017.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_017",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_017",
+      "truth": "1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ",
+      "ocr": "1. ᏀᎯᏳ ᎤᎷᏤ ᏣᏂ ᏗᏓᏬᏍᎩ ᎠᎵᏥᏙᎲᏍᎨ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_024.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_024",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_024",
+      "truth": "3. ᏀᏍᎩᏍᎩᏂ ᎯᎠ ᏥᎧᏁᎢᏍᏗᏍᎨ ᎠᏙᎴᎰ-",
+      "ocr": "3. ᏀᏍᎩᏍᎩᏂ ᎯᎠ ᏥᎧᏁᎢᏍᏗᏍᎨ ᎠᏙᎴᎰ-",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_027.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_027",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_027",
+      "truth": "ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-",
+      "ocr": "ᎨᎢ, ᎣᏍᏛ ᏂᏨᎦ ᏱᎰᏩ ᎤᎶᎯᏍᏗᏱ, ᏚᏅᏅ ᏗᏥ-",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_037.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_037",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_037",
+      "truth": "5. ᎿᏉᏃ ᎬᏩᏩᏛᎯᎴ ᏥᎷᏏᎵᎻ ᎠᎴ ᏂᎦᏗᏳ",
+      "ocr": "5. ᎿᏉᏃ ᎬᏩᏩᏛᎯᎴ ᏥᎷᏏᎵᎻ ᎠᎴ ᏂᎦᏗᏳ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_041.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_041",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_041",
+      "truth": "5. ᏦᏓᏂᏃ ᏕᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-",
+      "ocr": "5. ᏦᏓᏂᏃ ᏚᎤᎾᏬᎡᎢ, ᎠᏂᏃᎲᏍᎨ ᎤᏂᏍᎦᏅ-",
+      "cer": 3.4482758620689653,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_049.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_049",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_049",
+      "truth": "ᏤᎭ, ᎦᎪ ᎢᏥᏁᏥ ᎢᏣᎵᎡᏗᏱ ᎤᏓᎳᏬᎯᏍᏗ Ꭸ-",
+      "ocr": "ᏤᎭ, ᎦᎪ ᎢᏥᏁᏥ ᎢᏣᎵᎡᏗᏱ ᎤᏓᎳᏬᎯᏍᏗ Ꭸ-",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_054.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_054",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_054",
+      "truth": "ᎢᏥᏍᎦᏅᏨᎢ,",
+      "ocr": "ᎢᏥᏍᎦᏅᏨᎢ,",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_062.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_062",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_062",
+      "truth": "10. ᎠᎴ ᏀᏍᏉ ᎦᏳᎳ ᎦᎷᏯᏍᏗ ᎤᎵᏂᎸ Ꮪ-",
+      "ocr": "10. ᎠᎴ ᏀᏍᏉ ᎦᏳᎳ ᏭᎷᏯᏍᏗ ᎤᎵᏂᎸ Ꮪ-",
+      "cer": 3.5714285714285716,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_087.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_087",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_087",
+      "truth": "14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-",
+      "ocr": "",
+      "cer": 100.0,
+      "status": "encoding_error",
+      "invalid_chars": [
+        "4"
+      ]
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_098.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_098",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_098",
+      "truth": "16. ᏥᏌᏃ ᎠᎦᏬᎥ, ᎩᎳᏉ ᎢᏴᏛ ᎤᎾᎷᏎᎢ,",
+      "ocr": "16. ᏥᏌᏃ ᎠᎦᏬᎥ, ᎩᎳᏉ ᎢᏴᏛ ᎤᎾᎷᏎᎢ,",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_101.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_101",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_101",
+      "truth": "ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᏧᎴ ᏗᏍᎪᏂ-",
+      "ocr": "ᏭᎪᎮᏃ ᎤᏁᎳᏅᎯ ᎤᏓᏅᏙ ᏗᎦᏃᎯᎵᏎ ᎫᎴ ᏗᏍᎪᏂ-",
+      "cer": 3.225806451612903,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-04-17_seq-4_col_01_line_106.lstmf",
+      "base_name": "1828-04-17_seq-4_col_01_line_106",
+      "doc_id": "1828-04-17_seq-4",
+      "line_id": "line_106",
+      "truth": "ᏥᎨᏳᎢ ᎠᏇᏥ, ᎣᏏᏳ ᏥᏥᏰᎸᎠ, ᎤᏛᏁᎢ.",
+      "ocr": "ᏥᎨᏳᎢ ᎠᏇᏥ, ᎤᏏᏳ ᏥᏥᏰᎸᎠ, ᎤᏛᏁᎢ.",
+      "cer": 3.8461538461538463,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-06_seq-1_col_03_line_124.lstmf",
+      "base_name": "1828-05-06_seq-1_col_03_line_124",
+      "doc_id": "1828-05-06_seq-1",
+      "line_id": "line_124",
+      "truth": "[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]",
+      "ocr": "",
+      "cer": 100.0,
+      "status": "encoding_error",
+      "invalid_chars": [
+        "[",
+        "]"
+      ]
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-06_seq-1_col_03_line_155.lstmf",
+      "base_name": "1828-05-06_seq-1_col_03_line_155",
+      "doc_id": "1828-05-06_seq-1",
+      "line_id": "line_155",
+      "truth": "ᏅᏃᎭᏓᎯ,",
+      "ocr": "ᏅᏃᎭᏓᎯ,",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-06_seq-2_col_00_line_003.lstmf",
+      "base_name": "1828-05-06_seq-2_col_00_line_003",
+      "doc_id": "1828-05-06_seq-2",
+      "line_id": "line_003",
+      "truth": "ᏂᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-",
+      "ocr": "ᏏᎦᎥ ᎠᎾᎫᏴᎯᏙᎲ ᏀᏍᎩ ᎣᏍᏛ ᎠᏃᏪᎵᏍᎨᏍᏗ, Ꮐ-",
+      "cer": 3.125,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-06_seq-2_col_00_line_009.lstmf",
+      "base_name": "1828-05-06_seq-2_col_00_line_009",
+      "doc_id": "1828-05-06_seq-2",
+      "line_id": "line_009",
+      "truth": "ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏥᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ",
+      "ocr": "ᎢᏯᎦᏰᎵ ᎯᏍᎩᏧᏈᏃ ᎠᏕᎸ ᏧᏬᏣᎴᏍᏗ ᎨᏎᏍᏗ",
+      "cer": 3.5714285714285716,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-06_seq-2_col_00_line_081.lstmf",
+      "base_name": "1828-05-06_seq-2_col_00_line_081",
+      "doc_id": "1828-05-06_seq-2",
+      "line_id": "line_081",
+      "truth": "ᎣᏏᏳ ᎣᏍᏗᏰᎸᎾ,",
+      "ocr": "5ᏏᏳ ᎣᏍᏗᏰᎸᎾ,",
+      "cer": 9.090909090909092,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-06_seq-3_col_01_line_156.lstmf",
+      "base_name": "1828-05-06_seq-3_col_01_line_156",
+      "doc_id": "1828-05-06_seq-3",
+      "line_id": "line_156",
+      "truth": "ᎠᏰᎵ ᎠᎵᏁᎬᎢ.",
+      "ocr": "ᎠᏰᎵ ᎠᎵᏁᎬᎢ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-21_seq-1_col_03_line_008.lstmf",
+      "base_name": "1828-05-21_seq-1_col_03_line_008",
+      "doc_id": "1828-05-21_seq-1",
+      "line_id": "line_008",
+      "truth": "Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.",
+      "ocr": "Ꭱ. ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-21_seq-1_col_04_line_055.lstmf",
+      "base_name": "1828-05-21_seq-1_col_04_line_055",
+      "doc_id": "1828-05-21_seq-1",
+      "line_id": "line_055",
+      "truth": "ᎦᏅᏓᏞᎩ.",
+      "ocr": "ᎦᏅᏓᏞᎩ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-21_seq-3_col_01_line_005.lstmf",
+      "base_name": "1828-05-21_seq-3_col_01_line_005",
+      "doc_id": "1828-05-21_seq-3",
+      "line_id": "line_005",
+      "truth": "1. ᎤᏂᏣᏗᏃ ᏫᏚᎪᎲ ᎤᏌᎯᎸ ᎤᎿᎷᏎᎢ, ᎤᏪ-",
+      "ocr": "1. ᎤᏂᏣᏗᏃ ᏫᏚᎪᎲ ᎤᏌᎯᎸ ᎤᎿᎭᎷᏎᎢ, ᎤᏪ-",
+      "cer": 3.4482758620689653,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-21_seq-3_col_01_line_006.lstmf",
+      "base_name": "1828-05-21_seq-3_col_01_line_006",
+      "doc_id": "1828-05-21_seq-3",
+      "line_id": "line_006",
+      "truth": "ᏅᏃ ᎬᏩᏍᏓᏩᏗᏙᎯ ᎬᏩᎷᏤᎴᎢ.",
+      "ocr": "ᏅᏃ ᎬᏩᏍᏓᏩᏗᎪᏙᎯ ᎬᏩᎷᏤᎴᎢ.",
+      "cer": 5.2631578947368425,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-21_seq-3_col_01_line_110.lstmf",
+      "base_name": "1828-05-21_seq-3_col_01_line_110",
+      "doc_id": "1828-05-21_seq-3",
+      "line_id": "line_110",
+      "truth": "ᎦᏓᎭ ᏂᎨᏒᎾ ᎤᎾᏓᏅᏛ ᏣᏗᎭ, ᎦᏛᎦ ᏄᎾᏚᎵ-",
+      "ocr": "ᎦᏓᎭ ᏂᎨᏒᎾ ᎤᎾᏓᏅᏛ ᏣᏗᎭ, ᎦᏛᎦ ᏄᎾᏚᎵ-",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-05-21_seq-3_col_01_line_116.lstmf",
+      "base_name": "1828-05-21_seq-3_col_01_line_116",
+      "doc_id": "1828-05-21_seq-3",
+      "line_id": "line_116",
+      "truth": "ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-",
+      "ocr": "ᎠᏃᎯᏍᏗᏍᎩ ᏣᏗᎭ ᎥᏝ ᏙᎯᏱᏉ ᎠᏁᎯ ᎤᏅ-",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-06-04_seq-1_col_04_line_034.lstmf",
+      "base_name": "1828-06-04_seq-1_col_04_line_034",
+      "doc_id": "1828-06-04_seq-1",
+      "line_id": "line_034",
+      "truth": "ᎠᎵᏁᎩ, ᏣᏂ ᎫᏫᏍᎫᏫ.",
+      "ocr": "ᎠᎵᏁᎩ, ᏣᏂ ᎫᏫᏍᎫᏫ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-06-04_seq-2_col_00_line_002.lstmf",
+      "base_name": "1828-06-04_seq-2_col_00_line_002",
+      "doc_id": "1828-06-04_seq-2",
+      "line_id": "line_002",
+      "truth": "ᎠᎵᏁᎩ, ᏣᏂ ᎫᏫᏍᎫᏫ.",
+      "ocr": "ᎠᎵᏁᎩ, ᏣᏂ ᎫᏫᏍᎫᏫ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-06-04_seq-2_col_00_line_007.lstmf",
+      "base_name": "1828-06-04_seq-2_col_00_line_007",
+      "doc_id": "1828-06-04_seq-2",
+      "line_id": "line_007",
+      "truth": "ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.",
+      "ocr": "ᎦᎳᎩᎾ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-07-02_seq-1_col_00_line_028.lstmf",
+      "base_name": "1828-07-02_seq-1_col_00_line_028",
+      "doc_id": "1828-07-02_seq-1",
+      "line_id": "line_028",
+      "truth": "ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ.",
+      "ocr": "ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ ᎠᎾᎫᏱᏍᎨᏍᏗ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-07-02_seq-1_col_00_line_029.lstmf",
+      "base_name": "1828-07-02_seq-1_col_00_line_029",
+      "doc_id": "1828-07-02_seq-1",
+      "line_id": "line_029",
+      "truth": "ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ",
+      "ocr": "ᎢᏳᏃ ᏑᏓᎵ ᎢᏯᏅᏙ ᎢᏴ ᎠᎾᎫᏱᏍᎨᏍᏗ, ᏦᎢ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-08-20_seq-4_col_01_line_000.lstmf",
+      "base_name": "1828-08-20_seq-4_col_01_line_000",
+      "doc_id": "1828-08-20_seq-4",
+      "line_id": "line_000",
+      "truth": "ᏔᎳᏚ ᎢᏯᏂᏛ ᎬᏩᏍᏓᏩᏗᏙᎯ, ᎤᏂᎩᏒ ᏚᏕᏂᏅᏒ",
+      "ocr": "ᏔᎳᏚ ᎢᏯᏂᏛ ᎬᏩᏍᏓᏩᏗᏙᎯ, ᎤᏂᎩᏒ ᏚᏕᏂᏅᏒ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-08-20_seq-4_col_01_line_005.lstmf",
+      "base_name": "1828-08-20_seq-4_col_01_line_005",
+      "doc_id": "1828-08-20_seq-4",
+      "line_id": "line_005",
+      "truth": "",
+      "ocr": "",
+      "cer": 100.0,
+      "status": "no_gt",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-08-20_seq-4_col_01_line_009.lstmf",
+      "base_name": "1828-08-20_seq-4_col_01_line_009",
+      "doc_id": "1828-08-20_seq-4",
+      "line_id": "line_009",
+      "truth": "ᏥᎪᎨ ᎠᏏᏉ ᎣᏥᎦᏖᏃᎮᏍᏗ.",
+      "ocr": "ᏥᎪᎨ ᎠᏏᏉ ᎣᏥᎦᏖᏃᎮᏍᏗ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-08-20_seq-4_col_01_line_015.lstmf",
+      "base_name": "1828-08-20_seq-4_col_01_line_015",
+      "doc_id": "1828-08-20_seq-4",
+      "line_id": "line_015",
+      "truth": "5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,",
+      "ocr": "5. ᏗᏂᎨᏫ ᎠᏂᎪᏩᏗᎭ ᏗᏂᏲᎤᎵᏃ ᎠᏁᏙᎭ,",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-08-20_seq-4_col_01_line_018.lstmf",
+      "base_name": "1828-08-20_seq-4_col_01_line_018",
+      "doc_id": "1828-08-20_seq-4",
+      "line_id": "line_018",
+      "truth": "ᏧᏂᏲᎱᏒᎯ ᏓᎾᎴᎲᏍᎦ ᎤᏲᏃ ᎢᏳᎾᏛᎿᏕᎩ ᎣᏏᏳ",
+      "ocr": "ᏧᏂᏂᎱᏒᎯ ᏓᎾᎴᎲᏍᎦ ᎤᏲᏃ ᎢᏳᎾᏛᎿᏕᎩ ᎣᏏᏳ",
+      "cer": 3.4482758620689653,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-08-20_seq-4_col_01_line_022.lstmf",
+      "base_name": "1828-08-20_seq-4_col_01_line_022",
+      "doc_id": "1828-08-20_seq-4",
+      "line_id": "line_022",
+      "truth": "ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.",
+      "ocr": "ᎯᏎᎸᎾ ᎢᎨᏎᏍᏗ ᎠᏴ.",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-08-20_seq-4_col_01_line_037.lstmf",
+      "base_name": "1828-08-20_seq-4_col_01_line_037",
+      "doc_id": "1828-08-20_seq-4",
+      "line_id": "line_037",
+      "truth": "10.  ᏀᏍᎩᏍᎩᏂ ᎯᎠ ᏣᎪᏪᎳ, ᎬᏂᎿᏉ ᏥᏅ-",
+      "ocr": "10, ᏀᏍᎩᏍᎩᏂ ᎯᎠ ᏣᎪᏪᎳ, ᎬᏂᏳᏉ ᏥᏅ-",
+      "cer": 10.344827586206897,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-09-24_seq-2_col_04_line_064.lstmf",
+      "base_name": "1828-09-24_seq-2_col_04_line_064",
+      "doc_id": "1828-09-24_seq-2",
+      "line_id": "line_064",
+      "truth": "ᎦᎸᎦᎶᎣᏍᎩ,",
+      "ocr": "ᎦᎸᎦᎶᎣᏍᎩ,",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-11-12_seq-2_col_02_line_024.lstmf",
+      "base_name": "1828-11-12_seq-2_col_02_line_024",
+      "doc_id": "1828-11-12_seq-2",
+      "line_id": "line_024",
+      "truth": "ᎤᎶᏒᏍᏓᏁᎸᎯ ᏄᏓᏅᏒᎾᏉ ᏱᎩ ᎠᏥᏅᏏᏙᎸᎯ",
+      "ocr": "ᎤᎶᏒᏍᏓᏁᎸᎯ ᏄᏓᏅᏒᎾᏉ ᏱᎩ ᎠᏥᏅᏏᏙᎸᎯ,",
+      "cer": 3.8461538461538463,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-11-19_seq-2_col_02_line_000.lstmf",
+      "base_name": "1828-11-19_seq-2_col_02_line_000",
+      "doc_id": "1828-11-19_seq-2",
+      "line_id": "line_000",
+      "truth": "ᎠᎩᏍᏆᏂᎪᏛ ᏓᎦᏗᏢᏔᏂ ᏱᏅᏪᎵᏐᏅ ᎤᏓᏚᎩᏍᎩ-",
+      "ocr": "ᎠᎩᏍᏆᏂᎪᏛ ᏓᎦᏗᏢᏔᏂ ᏱᎤᏪᎵᏐᏅ ᎤᏓᏚᎩᏍᎩ-",
+      "cer": 3.4482758620689653,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-11-19_seq-2_col_04_line_001.lstmf",
+      "base_name": "1828-11-19_seq-2_col_04_line_001",
+      "doc_id": "1828-11-19_seq-2",
+      "line_id": "line_001",
+      "truth": "ᎬᎦ, ᎾᏍᏉ ᎠᎴ ᎢᏳᏩᏂᏌᏅᎯ ᎨᏒᎢ. ᎤᏂ",
+      "ocr": "0, ᎾᏍᎩᏉ ᎠᎴ ᎢᏳᏩᏂᏌᏅᎯ ᎨᏒᎢ, ᎤᎿᎥ",
+      "cer": 23.076923076923077,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-11-19_seq-2_col_04_line_008.lstmf",
+      "base_name": "1828-11-19_seq-2_col_04_line_008",
+      "doc_id": "1828-11-19_seq-2",
+      "line_id": "line_008",
+      "truth": "ᏙᎵ ᎤᏍᎦᏎᏗ ᎥᏳᎩ ᏦᎨᎭ, ᎤᏪᎵᏍᏗ ᏱᏂᎦᎵ-",
+      "ocr": "ᏙᎵ ᎤᏍᎦᏎᏗ ᎥᏳᎩ ᏦᎨᎭ, ᎤᏪᎵᏍᏗ ᏱᏂᎦᏂ",
+      "cer": 6.896551724137931,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1828-12-29_seq-3_col_03_line_125.lstmf",
+      "base_name": "1828-12-29_seq-3_col_03_line_125",
+      "doc_id": "1828-12-29_seq-3",
+      "line_id": "line_125",
+      "truth": "Ꭲ ᏱᏅᎦᏲᎵᏍᏓᏏ ᏱᏂᎦᎥ ᏳᎵᏕᏂᎸ ᎣᏓᏅᏙᎩ-",
+      "ocr": "Ꭲ ᏱᏅᎦᏂᎵᏍᏓᏏ ᏱᏂᎦᎥ ᏳᎵᏕᏂᎸ ᎣᏓᏅᏙᎩ-",
+      "cer": 3.5714285714285716,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-07_seq-3_col_00_line_004.lstmf",
+      "base_name": "1829-01-07_seq-3_col_00_line_004",
+      "doc_id": "1829-01-07_seq-3",
+      "line_id": "line_004",
+      "truth": "ᎿᎠ ᎠᎴ ᎡᎩᏁᎸᎯ ᎢᎦᏓᏅᏙ ᏀᏍᎩ ᎢᎦᏓᏅᏖᏗ,",
+      "ocr": "ᎢᎠ ᎠᎴ ᎡᎩᏁᎸᎯ ᎢᎦᏓᏅᏙ ᎾᏍᎩ ᎢᎦᏓᏅᏖᏗ,",
+      "cer": 6.896551724137931,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-07_seq-3_col_00_line_013.lstmf",
+      "base_name": "1829-01-07_seq-3_col_00_line_013",
+      "doc_id": "1829-01-07_seq-3",
+      "line_id": "line_013",
+      "truth": "ᏆᏍᏗᏉ, ᎠᎴ ᎠᎦᏔᎯᏳ ᎤᏣᏗ ᎢᏳᏓᎴᎩ. ᏄᏍᏗ-",
+      "ocr": "ᏰᏍᏗᏉ, ᎠᎴ ᎠᎦᏔᎯᏳ ᎤᏣᏗ ᎢᏳᏓᎴᎩ. ᏄᏍᏗ-",
+      "cer": 3.3333333333333335,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-07_seq-3_col_00_line_022.lstmf",
+      "base_name": "1829-01-07_seq-3_col_00_line_022",
+      "doc_id": "1829-01-07_seq-3",
+      "line_id": "line_022",
+      "truth": "ᎡᎳ ᎤᏩᏒ ᎠᏓᏅᏖᏍᎬ ᎢᏳᎵᏍᏙᏗ, ᏂᎦᎥ ᎪᎱᏍᏗ",
+      "ocr": "ᎡᎳ ᎤᏩᏒ ᎠᏓᏅᏖᏍᎬ ᎢᏳᎵᏍᏙᏗ, ᏂᎦᎥ ᎪᎱᏍᏗ",
+      "cer": 0.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-07_seq-3_col_00_line_065.lstmf",
+      "base_name": "1829-01-07_seq-3_col_00_line_065",
+      "doc_id": "1829-01-07_seq-3",
+      "line_id": "line_065",
+      "truth": "ᎡᏗᎸᏉᏗᏳ ᎢᎨᏎᏍᏗ, ᎿᏉ ᎥᏝ ᎤᏲ ᎢᎩᏰᎸᏗ,",
+      "ocr": "ᎡᏗᎸᏉᏗᏳ ᎢᎨᏎᏍᏗ, ᎿᏉ ᎥᏝ ᎤᏂ ᎢᎩᏰᎸᏗ,",
+      "cer": 3.4482758620689653,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-14_seq-3_col_01_line_153.lstmf",
+      "base_name": "1829-01-14_seq-3_col_01_line_153",
+      "doc_id": "1829-01-14_seq-3",
+      "line_id": "line_153",
+      "truth": "ᎥᏝ ᎨᎵ ᎠᏂᏩᏥᏂ ᎤᏂᎬᏫᏳᎯ ᎬᏩᏂᏁᏤᎸ ᏴᎦᎬ-",
+      "ocr": "ᎥᏝ ᎨᎵ ᎠᏂᏩᏥᏂ ᎤᏂᎬᏫᏳᎯ ᎬᏩᏂᏁᏤᎸ ᏏᎦᎬ-",
+      "cer": 3.3333333333333335,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-21_seq-3_col_02_line_171.lstmf",
+      "base_name": "1829-01-21_seq-3_col_02_line_171",
+      "doc_id": "1829-01-21_seq-3",
+      "line_id": "line_171",
+      "truth": "ᏆᏍᎩ, ᎢᏓᎬᏍᏓᏃ ᏙᏣᏑᏯᎩ ᎠᎾᏓᏆᎾᏛᏗᏍᎩ.",
+      "ocr": "ᎱᏍᎩ, ᎢᏓᎬᏍᏓᏃ ᏙᏣᏑᏯᎩ ᎠᎾᏓᎪᎾᏛᏗᏍᎩ.",
+      "cer": 7.142857142857143,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-21_seq-3_col_02_line_224.lstmf",
+      "base_name": "1829-01-21_seq-3_col_02_line_224",
+      "doc_id": "1829-01-21_seq-3",
+      "line_id": "line_224",
+      "truth": "ᎣᏍᏛ ᎢᏳᏅᎾᏕᎩ, ᏤᎩᏃ ᏗᎨᎵᏌᏛᎥᏍᎩ ᎤᏪᏥ",
+      "ocr": "ᏍᏛ ᎢᏳᏅᎾᏕᎩ, ᏤᎩᏃ ᏗᎨᎵᏌᏛᎥᏍᎩ ᎤᏪᏥ",
+      "cer": 3.5714285714285716,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-21_seq-3_col_03_line_109.lstmf",
+      "base_name": "1829-01-21_seq-3_col_03_line_109",
+      "doc_id": "1829-01-21_seq-3",
+      "line_id": "line_109",
+      "truth": "ᎩᏂ ᎦᎸᎳᏗᏢ ᏥᎪᏪᎳ, ᏄᏍᏛ ᎤᎵᏁᏨ",
+      "ocr": "ᏀᎩᏂ ᎦᎸᎳᏗᏢ ᏥᎪᏪᎳ, ᏄᏍᏛ ᎤᎵᏁᏨ",
+      "cer": 4.3478260869565215,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-28_seq-3_col_02_line_069.lstmf",
+      "base_name": "1829-01-28_seq-3_col_02_line_069",
+      "doc_id": "1829-01-28_seq-3",
+      "line_id": "line_069",
+      "truth": "ᏱᎵᏁᎭ",
+      "ocr": "ᏱᎵᎪᎭ",
+      "cer": 25.0,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-28_seq-3_col_03_line_015.lstmf",
+      "base_name": "1829-01-28_seq-3_col_03_line_015",
+      "doc_id": "1829-01-28_seq-3",
+      "line_id": "line_015",
+      "truth": "ᏕᎪᏪᎸ ᏧᏂᏰᎢ",
+      "ocr": "ᏕᎪᏙᏪᎸ ᏧᏲᏰᎢ",
+      "cer": 22.22222222222222,
+      "status": "ok",
+      "invalid_chars": []
+    },
+    {
+      "file": "training_data/dataset/test/base/1829-01-28_seq-3_col_03_line_081.lstmf",
+      "base_name": "1829-01-28_seq-3_col_03_line_081",
+      "doc_id": "1829-01-28_seq-3",
+      "line_id": "line_081",
+      "truth": "ᏫᏍᎩᏰᏃ ᎢᎩᏬᏂᏍᎩ ᏧᎬᏩᎶᏗ. ᎰᏍᎩᏂ",
+      "ocr": "ᏫᏍᎩᏰᏃ ᎢᎩᏬᏂᏍᎩ ᏧᎬᏩᎶᏗ. ᎰᏍᎩᏂ.",
+      "cer": 4.166666666666667,
+      "status": "ok",
+      "invalid_chars": []
+    }
+  ]
+}

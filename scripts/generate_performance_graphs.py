@@ -23,6 +23,7 @@ import sys
 import glob
 import argparse
 import subprocess
+import json
 import unicodedata
 import matplotlib.pyplot as plt
 import numpy as np
@@ -432,6 +433,26 @@ def main():
         f.write("| :--- | :--- | :---: | :--- |\n")
         for r in sorted(valid_results, key=lambda x: x["cer"], reverse=True)[:10]:
             f.write(f"| `{r['base_name']}` | `{r['doc_id']}` | {r['cer']:.2f}% | {r['status']} |\n")
+
+    class NumpyEncoder(json.JSONEncoder):
+        def default(self, obj):
+            if isinstance(obj, np.integer):
+                return int(obj)
+            elif isinstance(obj, np.floating):
+                if np.isnan(obj):
+                    return None
+                return float(obj)
+            elif isinstance(obj, np.ndarray):
+                return obj.tolist()
+            return super().default(obj)
+
+    raw_data_path = os.path.join(args.output_dir, "performance_results.json")
+    with open(raw_data_path, "w", encoding="utf-8") as jf:
+        json.dump({
+            "doc_stats": doc_stats,
+            "results": results
+        }, jf, cls=NumpyEncoder, indent=2, ensure_ascii=False)
+    print(f"Saved raw JSON data   → {raw_data_path}")
     print(f"Saved report          → {report_path}")
 
 

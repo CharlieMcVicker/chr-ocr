@@ -15,6 +15,7 @@ import sys
 import glob
 import argparse
 import subprocess
+import json
 import unicodedata
 import matplotlib.pyplot as plt
 import numpy as np
@@ -476,6 +477,25 @@ def main():
                 cols.append(val_str)
             f.write(f"| {rank} | `{base_name}` | **{avg_val:.2f}%** | " + " | ".join(cols) + " | ... |\n")
 
+    class NumpyEncoder(json.JSONEncoder):
+        def default(self, obj):
+            if isinstance(obj, np.integer):
+                return int(obj)
+            elif isinstance(obj, np.floating):
+                if np.isnan(obj):
+                    return None
+                return float(obj)
+            elif isinstance(obj, np.ndarray):
+                return obj.tolist()
+            return super().default(obj)
+
+    raw_data_path = os.path.join(args.output_dir, "binarization_results.json")
+    with open(raw_data_path, "w", encoding="utf-8") as jf:
+        json.dump({
+            "algo_stats": algo_stats,
+            "results_by_algo": results_by_algo
+        }, jf, cls=NumpyEncoder, indent=2, ensure_ascii=False)
+    print(f"Saved raw JSON data   → {raw_data_path}")
     print(f"Saved report          → {report_path}")
 
 
