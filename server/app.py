@@ -268,16 +268,30 @@ def training_editor():
     from phoenix.layout import analyze_text
     manifest = load_training_manifest()
     
+    filter_rare = request.args.get("filter") == "rare"
+    rare_chars = {'[', ']', '4', 'Ꮞ', '?', 'Ꭾ'}
+    
     # Return manifest as list of items for easier frontend handling
     items = []
     for item in manifest.values():
+        if filter_rare:
+            ftm_ocr = item.get("ftm_ocr")
+            ftm_conf = item.get("ftm_confidence")
+            if not ftm_ocr or ftm_conf is None or ftm_ocr == "Error" or ftm_ocr == "":
+                continue
+            if ftm_conf > 85.0:
+                continue
+            if not any(c in ftm_ocr for c in rare_chars):
+                continue
+
         if "classification" not in item:
             # Analyze initial_ocr or label to get the classification
             txt = item.get("label") or item.get("initial_ocr", "")
             item["classification"] = analyze_text(txt)["classification"]
         items.append(item)
     
-    # Calculate stats
+    # Calculate stats (based on entire manifest to keep standard context, or of the filtered subset if requested)
+    # We will compute stats based on the loaded items list
     total = len(items)
     unlabeled = sum(1 for x in items if x.get("status") == "unlabeled")
     labeled = sum(1 for x in items if x.get("status") == "labeled")
@@ -292,7 +306,7 @@ def training_editor():
         "nasty_crop": nasty_crop
     }
     
-    return render_template("training.html", items=items, stats=stats)
+    return render_template("training.html", items=items, stats=stats, filter_rare=filter_rare)
 
 
 @app.route("/training/update", methods=["POST"])

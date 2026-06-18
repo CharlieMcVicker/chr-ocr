@@ -591,6 +591,10 @@
                     <input type="checkbox" id="sort-confidence-checkbox" style="accent-color: var(--primary-color); cursor: pointer;">
                     Sort by lowest confidence
                 </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.825rem; color: var(--text-secondary); cursor: pointer; margin-top: 0.25rem; user-select: none;">
+                    <input type="checkbox" id="rare-confused-checkbox" style="accent-color: var(--primary-color); cursor: pointer;">
+                    Low-confidence rare/confused ('[', ']', '4', 'Ꮞ', '?', 'Ꭾ')
+                </label>
                 <div class="worst-pages-card" style="background: rgba(239, 68, 68, 0.04); border: 1px solid rgba(239, 68, 68, 0.12); border-radius: 8px; padding: 0.65rem; margin-top: 0.75rem;">
                     <div style="font-size: 0.725rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #f87171; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.25rem;">
                         <span>⚠️ Worst Performing Pages</span>
@@ -694,6 +698,7 @@
         const searchInput = document.getElementById('search-input');
         const cherokeeOnlyCheckbox = document.getElementById('cherokee-only-checkbox');
         const sortConfidenceCheckbox = document.getElementById('sort-confidence-checkbox');
+        const rareConfusedCheckbox = document.getElementById('rare-confused-checkbox');
         const activeIdEl = document.getElementById('active-id');
         const activeScanInfoEl = document.getElementById('active-scan-info');
         const activeBboxEl = document.getElementById('active-bbox');
@@ -717,6 +722,12 @@
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
         const skipDocBtn = document.getElementById('skip-doc-btn');
+
+        // Set rare filter checkbox state from backend flag
+        const filterRareBackend = {{ 'true' if filter_rare else 'false' }};
+        if (filterRareBackend) {
+            rareConfusedCheckbox.checked = true;
+        }
 
         // Initial setup
         filterAndRenderList();
@@ -745,6 +756,15 @@
         });
 
         sortConfidenceCheckbox.addEventListener('change', () => {
+            filterAndRenderList();
+            if (filteredItems.length > 0) {
+                selectItem(0);
+            } else {
+                clearWorkspace();
+            }
+        });
+
+        rareConfusedCheckbox.addEventListener('change', () => {
             filterAndRenderList();
             if (filteredItems.length > 0) {
                 selectItem(0);
@@ -785,16 +805,28 @@
 
         function filterAndRenderList() {
             const cherokeeOnly = cherokeeOnlyCheckbox.checked;
+            const rareOnly = rareConfusedCheckbox.checked;
+            const rareChars = ['[', ']', '4', 'Ꮞ', '?', 'Ꭾ'];
+            
             // Filter
             filteredItems = items.filter(item => {
                 const matchesFilter = activeFilter === 'all' || item.status === activeFilter;
                 const matchesCherokeeOnly = !cherokeeOnly || item.predicted_lang === 'Cherokee';
+                
+                let matchesRareOnly = true;
+                if (rareOnly) {
+                    const hasFtm = item.ftm_ocr !== undefined && item.ftm_ocr !== null && item.ftm_ocr !== "Error" && item.ftm_ocr !== "";
+                    const lowConf = item.ftm_confidence !== undefined && item.ftm_confidence !== null && item.ftm_confidence <= 85.0;
+                    const hasRareChar = hasFtm && rareChars.some(c => item.ftm_ocr.includes(c));
+                    matchesRareOnly = hasFtm && lowConf && hasRareChar;
+                }
+                
                 const matchesSearch = !searchQuery || 
                     item.id.toLowerCase().includes(searchQuery) ||
                     (item.initial_ocr && item.initial_ocr.toLowerCase().includes(searchQuery)) ||
                     (item.label && item.label.toLowerCase().includes(searchQuery)) ||
                     item.source_scan.toLowerCase().includes(searchQuery);
-                return matchesFilter && matchesCherokeeOnly && matchesSearch;
+                return matchesFilter && matchesCherokeeOnly && matchesRareOnly && matchesSearch;
             });
 
             // Sort
