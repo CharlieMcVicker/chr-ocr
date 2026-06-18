@@ -258,7 +258,7 @@ def plot_compound_chart(
     width = 0.8 / n_algos  # width of each individual bar
 
     # Use a colormap to distinguish all algorithms
-    cmap = plt.cm.get_cmap("gist_rainbow")
+    cmap = plt.get_cmap("gist_rainbow")
 
     file_to_idx = {f: idx for idx, f in enumerate(selected_files)}
 
