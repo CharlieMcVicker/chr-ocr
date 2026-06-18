@@ -33,11 +33,12 @@ def main():
     parser.add_argument("--error-rate", type=float, default=0.05, help="Transcription error injection rate")
     
     # Augmentation options
-    parser.add_argument("--blur-prob", type=float, default=0.4)
-    parser.add_argument("--shadow-prob", type=float, default=0.3)
-    parser.add_argument("--distortion-prob", type=float, default=0.4)
-    parser.add_argument("--dropout-prob", type=float, default=0.3)
+    parser.add_argument("--blur-prob", type=float, default=0.5)
+    parser.add_argument("--shadow-prob", type=float, default=0.4)
+    parser.add_argument("--distortion-prob", type=float, default=0.45)
+    parser.add_argument("--dropout-prob", type=float, default=0.4)
     parser.add_argument("--bleedthrough-prob", type=float, default=0.25)
+    parser.add_argument("--distortion-limit", type=float, default=0.05)
     
     # CNT Augmentation options
     parser.add_argument("--cnt-blur-prob", type=float, default=0.6)
@@ -110,7 +111,8 @@ def main():
         blur_prob=args.blur_prob,
         shadow_prob=args.shadow_prob,
         distortion_prob=args.distortion_prob,
-        dropout_prob=args.dropout_prob
+        dropout_prob=args.dropout_prob,
+        distortion_limit=args.distortion_limit
     )
 
     cnt_pipeline = get_albumentations_pipeline(

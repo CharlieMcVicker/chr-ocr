@@ -68,7 +68,7 @@ def augment_elastic_distortion(image):
     height, width = image.shape[:2]
 
     for i in range(3):
-        amplitude = random.uniform(3.0, 6.0)
+        amplitude = random.uniform(1.5, 3.0)
         # Phase shifts make each variant unique
         phase_x = random.uniform(0, 2 * np.pi)
         phase_y = random.uniform(0, 2 * np.pi)
@@ -256,7 +256,7 @@ def get_albumentations_pipeline(
     dropout_prob=0.3,
     blur_limit=(3, 5),
     shadow_dimension=5,
-    distortion_limit=0.1,
+    distortion_limit=0.05,
     dropout_holes_range=(1, 4),
     dropout_size_range=(4, 10),
 ):

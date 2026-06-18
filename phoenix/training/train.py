@@ -227,6 +227,7 @@ def run_staged_training(config: TrainingConfig):
             "--distortion-prob", str(config.distortion_prob),
             "--dropout-prob", str(config.dropout_prob),
             "--bleedthrough-prob", str(config.bleedthrough_prob),
+            "--distortion-limit", str(config.distortion_limit),
             "--cnt-blur-prob", str(config.cnt_noise["blur"]["prob"]),
             "--cnt-shadow-prob", str(config.cnt_noise["shadow"]["prob"]),
             "--cnt-distortion-prob", str(config.cnt_noise["distortion"]["prob"]),

@@ -3,10 +3,10 @@ id: TASK-99
 title: >-
   Consolidated: Improve training data quality (grayscale, optimized
   binarizations, & refined augmentations)
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-17 23:55'
-updated_date: '2026-06-18 02:43'
+updated_date: '2026-06-18 02:47'
 labels: []
 dependencies: []
 ordinal: 107000
@@ -25,7 +25,13 @@ Specifically:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Complete subtask TASK-99.1: Remove low-performance binarizations from training pipelines
-- [ ] #2 Complete subtask TASK-99.2: Include raw grayscale variations for Phoenix images in training pipelines
-- [ ] #3 Complete subtask TASK-99.3: Refine dynamic augmentation parameters (warping and noise rate)
+- [x] #1 Complete subtask TASK-99.1: Remove low-performance binarizations from training pipelines
+- [x] #2 Complete subtask TASK-99.2: Include raw grayscale variations for Phoenix images in training pipelines
+- [x] #3 Complete subtask TASK-99.3: Refine dynamic augmentation parameters (warping and noise rate)
 <!-- AC:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Completed all three subtasks: TASK-99.1 (removed low-performance binarizations like Su and Sauvola k>=0.2), TASK-99.2 (included grayscale native variations for training), and TASK-99.3 (refined distortion limit, elastic warp amplitude, and noise rates).
+<!-- SECTION:FINAL_SUMMARY:END -->

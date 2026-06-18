@@ -30,11 +30,12 @@ class TrainingConfig:
     lr_decay_epochs: int = 4
     
     # Augmentation probabilities
-    blur_prob: float = 0.4
-    shadow_prob: float = 0.3
-    distortion_prob: float = 0.4
-    dropout_prob: float = 0.3
+    blur_prob: float = 0.5
+    shadow_prob: float = 0.4
+    distortion_prob: float = 0.45
+    dropout_prob: float = 0.4
     bleedthrough_prob: float = 0.25
+    distortion_limit: float = 0.05
 
     # CNT high-noise probabilities and intensity levels
     cnt_noise: dict = field(default_factory=lambda: {
