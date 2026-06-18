@@ -34,3 +34,4 @@ eng_lines/
 # Tesseract fine-tuning and staged training outputs
 langdata_lstm/
 training_data/dataset_staged_output_*/
+training_data/dataset_epoch_mixed/

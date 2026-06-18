@@ -1,0 +1,37 @@
+Loaded file training_data/staged_tuning/run_custom_big_lr_big_decay_dr6_mx5_output/chr_checkpoint, unpacking...
+Successfully restored trainer from training_data/staged_tuning/run_custom_big_lr_big_decay_dr6_mx5_output/chr_checkpoint
+Encoding of string failed! Failure bytes: e1 8f 8b e1 8f 95 e1 8f a8 e1 8e a2 2c 20 e1 8e be e1 8f 8d e1 8e a9 20 e1 8e a4 e1 8e be e1 8f 93 e1 8f 91 e1 8f af 20 e1 8f 86 2d
+Can't encode transcription: 'ᎠᏁᎯ ᎬᏋᏕᏨᎢ, ᎾᏍᎩ ᎤᎾᏓᏑᏯ Ꮖ-' in language ''
+Encoding of string failed! Failure bytes: 49 49 49 2e
+Can't encode transcription: 'ᎹᏚ. ᎠᏯᏙᎸᎢ III.' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a4 e1 8f 82 e1 8f a3 e1 8f 98 e1 8f b0 e1 8f 83 20 e1 8e a8 e1 8f a5 e1 8f af e1 8f 85 e1 8f 9b 2c 20 e1 8e a0 e1 8f 8e e1 8f 83
+Can't encode transcription: '14 ᎤᏂᏣᏘᏰᏃ ᎨᏥᏯᏅᏛ, ᎠᏎᏃ' in language ''
+Encoding of string failed! Failure bytes: 34 32 20 e1 8e a0 e1 8e b4 20 e1 8e af e1 8e a0 20 e1 8f 84 e1 8f 82 e1 8f aa e1 8f 8e e1 8e b8 e1 8e a9 20 e1 8e a0 e1 8e a8 e1 8f b4 3b
+Can't encode transcription: '42 ᎠᎴ ᎯᎠ ᏄᏂᏪᏎᎸᎩ ᎠᎨᏴ;' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8e ac e1 8f 82 e1 8f b3 e1 8f 89 20 e1 8f 97 e1 8f a9 e1 8e be e1 8e a8
+Can't encode transcription: 'ᏗᏩᎾᎨ ᏧᏄᏩᎢ? ᎬᏂᏳᏉ ᏗᏩᎾᎨ' in language ''
+Encoding of string failed! Failure bytes: 3f
+Can't encode transcription: 'ᏁᎳᏅᎯ ᎤᏤᎵᎦ ᎢᏨᏯᎵᏥᏙᏁᎸᎢ?' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8f 80 e1 8f 8d e1 8e a9 e1 8f 83 20 e1 8e af e1 8e a0 20 e1 8f a3 e1 8f 82 20 e1 8e a4 e1 8f 85 e1 8f a9 e1 8e a1 20 e1 8f 90 e1 8f 88 e1 8e b5 20 e1 8e a6 e1 8f 90 e1 8f 86 e1 8f 97 20 e1 8e a4 2d
+Can't encode transcription: '4. ᏀᏍᎩᏃ ᎯᎠ ᏣᏂ ᎤᏅᏩᎡ ᏐᏈᎵ ᎦᏐᏆᏗ Ꭴ-' in language ''
+At iteration 1820/2700/2940, mean rms=1.392%, delta=4.290%, BCER train=13.701%, BWER train=26.871%, skip ratio=8.900%, New worst BCER = 13.701 wrote checkpoint.
+Encoding of string failed! Failure bytes: ea ae b7 e1 8f 86 e1 8e b4 e1 8f ac 20 e1 8e a5 e1 8e a0 e1 8f 82 e1 8f 81 e1 8e a9 20 e1 8e bf e1 8f 89 20 e1 8e a0 e1 8f 82 e1 8f b2 e1 8e af e1 8f 8d e1 8f 93 20 e1 8e aa e1 8f aa e1 8e b5 20 e1 8f a7 e1 8f b2 2d
+Can't encode transcription: 'ᏃꮷᏆᎴᏬ ᎥᎠᏂᏁᎩ ᎿᏉ ᎠᏂᏲᎯᏍᏓ ᎪᏪᎵ ᏧᏲ-' in language ''
+Encoding of string failed! Failure bytes: 22
+Can't encode transcription: 'ᏗᏣᏤᎵ ᏴᏫ ᎤᎾᏤᎵᎦ."' in language ''
+Encoding of string failed! Failure bytes: 34 31 20 e1 8f b4 e1 8f ab 20 e1 8e ac e1 8e a9 e1 8e b8 e1 8f 89 e1 8f 97 e1 8f 8d e1 8e ac 20 e1 8e a5 e1 8f 9d 20 e1 8f b1 e1 8f 97 e1 8e a6 e1 8f 93 2d
+Can't encode transcription: '41 ᏴᏫ ᎬᎩᎸᏉᏗᏍᎬ ᎥᏝ ᏱᏗᎦᏓ-' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a4 e1 8f ab e1 8f 92 e1 8f 83 20 e1 8e a2 e1 8e a6 e1 8f 9b 20 e1 8f 85 e1 8f 83 e1 8e b1 e1 8e b6 e1 8f 97
+Can't encode transcription: '4 ᎤᏫᏒᏃ ᎢᎦᏛ ᏅᏃᎱᎶᏗ' in language ''
+Encoding of string failed! Failure bytes: ea ad bc e1 8f af e1 8f 8d e1 8e a9 20 e1 8e a4 e1 8f aa e1 8f a5 2c 20 e1 8e a0 e1 8f b0 e1 8e b5 20 e1 8f a3 e1 8e b3 e1 8e a9 20 e1 8f 97 e1 8e a9 2d
+Can't encode transcription: 'ᎡᎯ ᎡᏫᏃ ᏂᏄᎬꭼᏯᏍᎩ ᎤᏪᏥ, ᎠᏰᎵ ᏣᎳᎩ ᏗᎩ-' in language ''
+Encoding of string failed! Failure bytes: 3f
+Can't encode transcription: 'ᎬᏩᎴᏗ ᎨᏎᏍᏗ?' in language ''
+Encoding of string failed! Failure bytes: 34 30 20 e1 8f a6 e1 8e be e1 8f b0 e1 8f 83 20 e1 8f a6 e1 8e a2 20 e1 8e a2 e1 8e a6 e1 8e a0 e1 8e b4 20 e1 8f a6 e1 8e a2 20 e1 8f 92 e1 8f 83 e1 8f b1
+Can't encode transcription: '40 ᏦᎾᏰᏃ ᏦᎢ ᎢᎦᎠᎴ ᏦᎢ ᏒᏃᏱ' in language ''
+Encoding of string failed! Failure bytes: 34 36 20 e1 8f a4 e1 8e b5 e1 8e aa e1 8f 83 20 e1 8e a4 e1 8f 82 e1 8e b7 e1 8f a4 e1 8e a2 2c 20 e1 8e a0 e1 8e b4 20 e1 8e be e1 8f 8d e1 8e a9
+Can't encode transcription: '46 ᏤᎵᎪᏃ ᎤᏂᎷᏤᎢ, ᎠᎴ ᎾᏍᎩ' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8f a5 2d
+Can't encode transcription: 'ᏍᎩᏬ ᏗᎧᎿᎭᏩᏛᏍᏗ ᏂᎦᏪᏍᎬᎢ? Ꮵ-' in language ''
+At iteration 1883/2800/3049, mean rms=1.387%, delta=4.182%, BCER train=13.869%, BWER train=27.017%, skip ratio=8.300%, New worst BCER = 13.869 wrote checkpoint.
+Finished! Selected model with minimal training error rate (BCER) = 12.848
