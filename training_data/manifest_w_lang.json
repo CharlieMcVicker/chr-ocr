@@ -1361,8 +1361,8 @@
       3660
     ],
     "initial_ocr": "WO TS ᎤᏮᏤᏢᎪᏱᎯ PRT DAG ᏄᏂᎲᏰᏍᎩᏂ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏍᏔᏅᏍᏗᏱ ᎤᎾᏤᎵᎪᎯ ᎠᏗᏀ ᏄᏂᎲᎾᏍᎩᏂ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏓᏔᏅᏍᏗᏱ ᎤᎾᏤᎵᎪᎯ ᎨᏒᎢ ᎠᏗ ᏄᏂᎲᏴᏍᎩᏂ",
     "ftm_confidence": 38.4
@@ -2178,8 +2178,8 @@
       553
     ],
     "initial_ocr": ")Ꮓ DSLA ᎠᏂᎭᎢ GRY ᎠᏮᎵᏢᏇᏕᎰᏢᏍᎩ.--",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎯᏃ ᎠᏕᎸᎯ ᎠᏂᏐᎢ ᏀᏍᎩ ᎠᎾᎵᏍᏕᎵᏍᎩ.--",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "2Ꮓ ᎠᏕᎸᎯ ᎠᏂᏐᎢ ᏩᏍᎩ ᎠᎾᏮᎵᏍᏕᎵᏍᎩ.--",
     "ftm_confidence": 49.6
@@ -3242,8 +3242,8 @@
       3474
     ],
     "initial_ocr": "ᏚᏂᏁᏨᎯ ᎦᎷᏉᎩ ᏳᏂᎳᏫᏍᏖᎸᎢ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎤᏂᏁᏨᎯ ᎦᏅᏉᎩ ᏀᏂᎳᏍᏓᎸᎢ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎤᏂᏁᏨᎯ ᎦᎷᏉᎩ ᏣᏂᎳᏍᏓᎸᎢ.",
     "ftm_confidence": 52.33
@@ -5332,8 +5332,8 @@
       5922
     ],
     "initial_ocr": "RAaATEALT, GxrVev*? DSP “ᏥᏁᏤ-ᏄᎸᎯ ᎠᎾ”",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏂᏍᏕᎵᏍᎬ, ᏀᏍᎩᏯᏉ ᎠᏰᎵ ᎨᏥᏁᏤᎸᎯ ᎠᎾ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏂᏍᏕᎵᏍᎬᎢ, ᏣᏍᎩᏯᏉ ᎠᏰᎵ ᎨᏥᏁᏙᏤᎸᎯ ᎠᎾ-",
     "ftm_confidence": 55.0
@@ -5788,8 +5788,8 @@
       6870
     ],
     "initial_ocr": "; ᎬᎦ!!ᎫᏬᏞᏗ!ᎿᏄ) “ᏓᏆᏓᏘᎶᎢ ᎠᏰᏢ OHA.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏳᏂ ᎫᏫᏍᏧᎾ, ᏗᏆᏓᏘᏀᎢ ᎠᏰᎵ ᎧᎻᎯ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎶᏂ ᏧᎾᏍᏧᏫ, ᏓᏘᎶᎢ ᎠᏰᎵ ᎧᎻᏘ.",
     "ftm_confidence": 58.0
@@ -5940,8 +5940,8 @@
       7790
     ],
     "initial_ocr": "ᏍᏓᏁᎲᎢ.  ᏗᎪᏆᏢᏍᎩᏃ ᏕᎦᎳᏫᎥ WR Ꭰ!;",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏍᏓᏁᎲᎢ. ᏗᎪᏪᎵᏍᎩᏃ ᏕᎦᎳᏫᎥ ᏔᎵ ᎠᏕ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏍᏓᏁᎲᎢ. ᏗᎪᏪᎵᏍᎩᏃ ᏕᎦᎳᏫᎥᎳᎵ ᎠᏕ-",
     "ftm_confidence": 55.0
@@ -8239,8 +8239,8 @@
       585
     ],
     "initial_ocr": "ᎤᎾᏮᏤᎸᏎ, ᎾᏍᎩᏃ PERMA Ohh ᏚᏂᏰᎸᏎᎢ Ꮕ-",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎤᎾᏤᎸᏎ, ᎾᏍᎩᏃ ᎢᏳᏍᏗ ᎤᏂᏲ ᏚᏂᏰᎸᏎᎢ Ꮕ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎤᎾᏤᎸᏎ, ᎾᏍᎩᏃ ᎢᏳᏍᏗ ᎤᏂᏲ ᏚᏂᏰᎸᏎᎢ Ꮕ-",
     "ftm_confidence": 90.0
@@ -8277,8 +8277,8 @@
       687
     ],
     "initial_ocr": "ᎾᏍᎩ ᏑᏬᏃᎯᏳᎶᏎᎢ ᎤᏣᏘᏂ ᏩᏕᏘ BR ᎥᏲᎱᎯ.--",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎾᏍᎩ ᏳᏃᎯᏳᏎᎢ ᎤᏣᏗᏂ ᏩᏕᏗ ᎨᏒ ᎥᏲᎱᎯ.--",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎾᏍᎩ ᏳᏃᎯᏳᏎᎢ ᎤᏣᏗᏂ ᏩᏕᏗ ᎨᏒ ᎥᏲᎱᎯ.---",
     "ftm_confidence": 74.0
@@ -8315,8 +8315,8 @@
       790
     ],
     "initial_ocr": "Oh ᏧᏂᏲᏂᏒᎯ Te RA COVANT. ᎠᏎᏃ ᎣᏒ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎤᏲ ᏧᏂᏲᏒᎯ ᎢᏳᏍᏗ ᎤᎾᏤᎸᏁᎢ. ᎠᏎᏃ ᎣᏒ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎤᏲ ᏧᏂᏲᏒᎯ ᎢᏳᏍᏗ ᎤᎾᏤᎸᏁᎢ. ᎠᏎᏃ ᎣᏒ",
     "ftm_confidence": 86.17
@@ -8353,8 +8353,8 @@
       891
     ],
     "initial_ocr": "ᏨᏍᎩᏃ Ob ᏪᏥᎦᎪᏗ, ᏕᏡᎬ ᎣᏍᏛ .ᏯᎾ”",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏨᏍᎩᏃ ᎾᏏ ᏪᏥᎦᏙᏗ, ᎦᏡᎬ ᎣᏍᏛ ᏯᎾ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏨᏍᎩᏃ ᎾᏏ ᏪᏥᎦᏙᏗ, ᎦᏡᎬ ᎣᏍᏛ ᏯᎾ-",
     "ftm_confidence": 81.17
@@ -8391,8 +8391,8 @@
       990
     ],
     "initial_ocr": "ᏳᏍᏗ .…ᎢᏣᎬᏆᏍᏓᏁᏘᏗ, ᏚᏬᏎᎴᎢ. RE SAWS",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏳᏍᏗ ᎢᏣᎵᏍᏓᏁᏗ, ᏚᏬᏎᎴᎢ. ᎡᏆ ᎦᎸᎳᏗ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏳᏍᏗ ᎢᏣᎵᏍᏓᏁᏗ, ᏚᏬᏎᎴᎢ. ᎡᏆ ᎦᎸᎳᏗ",
     "ftm_confidence": 92.2
@@ -10177,8 +10177,8 @@
       6084
     ],
     "initial_ocr": "ᎨᏥᏓᏁᎸᏉᏃ ᎠᏂᏍᎦᏰᎢ.ᏍᏓ; GhA Gry ᏞᎦᏉ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎨᏥᏓᏁᎸᏉᏃ ᎠᏂᏍᎦᏰᎬᏍᏓ; ᏀᏲᎪ ᏀᏍᎩ ᏞᎦᏉ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎨᏥᏓᏁᎸᏉᏃ ᎠᏂᏍᎦᏰᎱᏍᏓ; ᏣᏲᎪ ᏣᏍᎩ ᏂᎦᏉ",
     "ftm_confidence": 41.2
@@ -10652,8 +10652,8 @@
       1191
     ],
     "initial_ocr": "AT. ᏩᏣᏍᎩᏍᎩᏂ AD ᏅᏧᎴᏘᏕᎦ,Ꮻ DAG SP | amoul",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏁᎢ. ᏀᏍᎩᏍᎩᏂ ᎯᎠ ᏅᏧᏍᏘᏕᎦ; ᎠᏗᏀ ᏰᎵ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏁᎢ. ᏣᏍᎩᏍᎩᏲ ᎯᎠ ᏅᏧᏍᏘᏕᎦ; ᎠᏗ ᏰᎵ ᏄᎾ",
     "ftm_confidence": 53.43
@@ -10747,8 +10747,8 @@
       1443
     ],
     "initial_ocr": "ᏗᎬᏩᎾᏢᏔᎮ ᏩᏌᏏ, ᏳᏍᎩ ᏕᎬᏟᏂᎴᎢ. ᏳᏍᎩ’",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏗᎬᏩᎾᏢᏔᎮ ᏩᏌᏏ, ᏀᏍᎩ ᏕᎬᏩᏂᎴᎢ. ᏀᏍᎩ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏗᎬᏩᎾᏢᏔᎮ ᏩᏌᏏ, ᏣᏍᎩ ᏕᎬᏩᏂᎴᎢ. ᏣᏳᏍᎩ-",
     "ftm_confidence": 54.0
@@ -11868,8 +11868,8 @@
       4377
     ],
     "initial_ocr": "ᎥᏓᏅᏖᏍᎪ ᎢᎸᎯᏢ ᎪᎱᏍᏗ ᏨᏗᎦᏢᎦᏔᏂᎪᎰᎢ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎥᏓᏅᏖᏍᎪ ᎢᎸᎯᏢ ᎪᎱᏍᏗ ᏨᏗᎦᎵᏍᏔᏂᎪᎰᎢ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏓᏅᏖᏍᎪ ᎢᎸᎯᏢ ᎪᎱᏍᏗ ᏨᏗᎦᎵᎦᏔᏂᎪᏙᎰᎢ.",
     "ftm_confidence": 52.5
@@ -12324,8 +12324,8 @@
       830
     ],
     "initial_ocr": "ᎣᏥᏍᏓᏱᏘᏍᎬ, DS OG ᎢᏲᏍᎴ!Ꭾ ᎢᏳᎱᏍᎪᏎ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎣᏥᏍᏓᏱᏗᏍᎬ, ᎠᎴ ᎤᏀ ᎢᏲᏍᏛ ᎢᏳᎵᏍᏙ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎣᏥᏍᏓᏱᏗᏍᎬ, ᎠᎴ ᎤᏟ ᎢᏲᏍᏛ ᎢᏳᎵᏍᏙᎲ",
     "ftm_confidence": 54.6
@@ -14965,8 +14965,8 @@
       3724
     ],
     "initial_ocr": "ᎦᏕᎬᏩᎶᏘ ᎠᏆᏤᏢ ᏚᏍᏆᏂᎪᏗ ᎢᎠᏓᏕᎱᏎᎮᏍᏗ Ve",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏧᎬᏩᎶᏗ ᎠᏆᏤᎵ ᏚᏍᎪᏂᎪᏗ ᎢᎠᏓᏕᎵᏎᎮᏍᏗ ᎩᎶ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏕᎬᏩᎶᏗ ᎠᏆᏤᎵ ᏚᏍᏆᏂᎪᏗ ᎢᎠᏓᏕᎵᏎᎮᏍᏗ Ꭹ",
     "ftm_confidence": 52.8
@@ -15003,8 +15003,8 @@
       3830
     ],
     "initial_ocr": "2ᏁᎷᏩᏛᎡᎮᏍᏗᏉ ᏄᏖᎪᏎᎸᎾ ᎨᏒᎢ, GRYZ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏭᏙᎷᏩᏛᎡᎮᏍᏗ ᏄᏓᏙᏎᎸᎾ ᎨᏒᎢ, ᏀᏍᎩᏃ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎠᏙᎷᏩᏛᎡᎮᏍᏗᏉ ᏄᏓᏙᏎᎸᎾ ᎨᏒᎢ, ᏣᏍᎩᏃ",
     "ftm_confidence": 48.25
@@ -15763,8 +15763,8 @@
       200
     ],
     "initial_ocr": "GAY ᏧᎬᏩᎳᏅᎯ;",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏀᏍᎩ ᏧᎬᏩᎳᏅᎯ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎶᏍᎩ ᏧᎬᏩᎳᏅᎯ.",
     "ftm_confidence": 51.5
@@ -17473,8 +17473,8 @@
       538
     ],
     "initial_ocr": "Ᏸ, ᎤᏍᏚᎢᎡᏃ DEP ᏚᏪᏲᏁᎢ, ᎯᎠ ᏄᏪᏎᎢ:",
-    "label": "",
-    "status": "unlabeled",
+    "label": "2. ᎤᏍᏚᎢᏒᏃ ᎠᎰᎵ ᏚᏪᏲᏁᎢ, ᎯᎠ ᏄᏪᏎᎢ;",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "2. ᎤᏍᏚᎢᏒᏃ ᎠᎰᎵ ᏚᏪᏲᏁᎢ, ᎯᎠ ᏄᏪᏎᎢ;",
     "ftm_confidence": 89.83
@@ -17511,8 +17511,8 @@
       639
     ],
     "initial_ocr": "ᎤᎾᎧᏓᏅᎪ; ᎤᎾᏤᎮᏰᏃ ᎦᎸᎳᏗ ᎤᏤᏢᎪᎯ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎤᎾᏓᏅᏙ; ᎤᎾᏤᎵᏰᏃ ᎦᎸᎳᏗ ᎤᏤᎵᎪᎯ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎤᎾᏓᏅᏙ; ᎤᎾᏤᎵᏰᏃ ᎦᎸᎳᏗ ᎤᏤᎵᎪᎯ.",
     "ftm_confidence": 86.5
@@ -17568,8 +17568,8 @@
       788
     ],
     "initial_ocr": "5. Sh ᎢᏳᎴᏮᎱᏍᏓᏁᏘ ᎤᎾᏓᏅᏘ, ᎦᏁᎯᏰᏃ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "5. ᎣᏏᏳ ᎢᏳᎾᎵᏍᏓᏁᏗ ᎤᎾᏓᏅᏗ, ᎦᏙᎯᏰᏃ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "5. ᎣᏏᏳ ᎢᏳᎾᎵᏍᏓᏁᏗ ᎤᎾᏓᏅᏗ, ᎦᏙᎯᏰᏃ",
     "ftm_confidence": 83.0
@@ -19354,8 +19354,8 @@
       254
     ],
     "initial_ocr": "ᏍᎩᏃ, ᏦᏩ ᏜᏄᏏᏃ ᏣᏍᎩ ᏚᏂᎬᏩᎶᏔᏅ Te",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏍᎩᏃ, ᏦᏩ ᏜᏄᏏᏃ ᏀᏍᎩ ᏚᏂᎬᏩᎶᏔᏅ Ꭲ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏍᎩᏃ, ᏦᏩ ᎣᏄᏏᏃ ᏣᏩᏍᎩ ᏚᏂᎬᏩᎶᏔᏅ ᎢᎾ",
     "ftm_confidence": 59.5
@@ -19392,8 +19392,8 @@
       352
     ],
     "initial_ocr": "ᎤᏂᏁᏨᎯ DSP ᏕᎦᎳᏫᎥ,",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎤᏂᏁᏨᎯ ᎠᏰᎵ ᏕᎦᎳᏫᎥ,",
     "ftm_confidence": 89.33
@@ -19430,8 +19430,8 @@
       610
     ],
     "initial_ocr": "ᎹᎦᏱ, AASFRY DBP ᎧᎻᎯ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎹᎦᏱ, ᏗᎪᏪᎵᏍᎩ ᎠᏰᎵ ᎧᎻᏘ.",
     "ftm_confidence": 87.75
@@ -19468,8 +19468,8 @@
       779
     ],
     "initial_ocr": "ᎢᏦᏘ;, 14 ost, 1825.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎢᏦᏗ, 1Ꮞ ᏅᏓᏕᏆ, 1825.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎢᏦᏗ, 1Ꮞ ᏅᏓᏕᏆ, 1825.",
     "ftm_confidence": 82.0
@@ -19506,8 +19506,8 @@
       894
     ],
     "initial_ocr": "” ᏥᏕᎦᏠᎯᏍᏔᏅ ᏓᏍᎩᎩᏱ, 24 ᏚᏂᏃᏗ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏥᏕᎦᏠᎯᏍᏔᏅ ᏓᏍᎩᎩᏱ, 24 ᏚᏂᏃᏗ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "Ꭾ ᏥᏕᎦᏠᎯᏍᏔᏅ ᏓᏍᎩᎩᏱ, ᎯᏎ ᏚᏂᏃᏗ",
     "ftm_confidence": 60.0
@@ -19545,7 +19545,7 @@
     ],
     "initial_ocr": "Ꭿ ᎠᎸᏘᏱᏍᎬ, DAZ ASIDE WOW CER",
     "label": "",
-    "status": "unlabeled",
+    "status": "nasty_crop",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "Ꭿ ᎠᏕᏘᏱᏍᎬ, ᎠᏎᏃ ᏁᎦᎫᎵᏏᎲᎾᏉ ᏨᎨᏒ",
     "ftm_confidence": 62.2
@@ -19582,8 +19582,8 @@
       1098
     ],
     "initial_ocr": "ᏩᏍᎩ ᏣᏂᏍᏓᏱᏓ ᏂᎦᏛ ᎠᏂᏩᏥᏂ, ᏣᏳᏡᎩᏃ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏀᏍᎩ ᏣᏂᏍᏓᏱᏓ ᏂᎦᏛ ᎠᏂᏩᏥᏂ, ᏀᏍᎩᏃ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏣᏍᎩ ᏣᏂᏍᏓᏱᏓ ᏂᎦᏛ ᎠᏂᏩᏥᏂ, ᏣᏍᎩᏃ",
     "ftm_confidence": 87.6
@@ -19620,8 +19620,8 @@
       1201
     ],
     "initial_ocr": "Ꭹ. GAYZ ᏫᏗᎦᏅᏁᏗ ᎨᏎᏍᏘ ᎤᏂᎱᏫᎴ”",
-    "label": "",
-    "status": "unlabeled",
+    "label": "Ꭹ, ᏀᏍᎩᏃ ᏫᏗᎦᏅᏁᏗ ᎨᏎᏍᏗ ᎤᏂᎬᏫ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "Ꭹ, ᏩᏍᎩᏃ ᏫᏗᎦᏅᏁᏗ ᎨᏎᏍᏗ ᎤᏂᎬᏫ-",
     "ftm_confidence": 73.8
@@ -19658,8 +19658,8 @@
       1295
     ],
     "initial_ocr": "ᏭᎶᎯᏍᎪᏘ ᎨᏎᏍᏗ DS GRY ᏗᎧᏃᏐ ᏍᎩ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏭᎶᎯᏍᏙᏗ ᎨᏎᏍᏗ ᎠᎴ ᏀᏍᏉ ᏗᎧᏃᎮᏍᎩ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏭᎶᎯᏍᏙᏗ ᎨᏎᏍᏗ ᎠᎴ ᏣᏍᏉ ᏗᎧᏃᎮᏍᎩ",
     "ftm_confidence": 72.2
@@ -19696,8 +19696,8 @@
       1397
     ],
     "initial_ocr": "ᏍᎬ ᎧᏃᎮᏛ ᏕᎦᎦᏠᎯᏍᏛ ᏄᏍᏛ ᏩᎭᏉ Gay",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏍᎬ ᎧᏃᎮᏛ ᏕᎦᏠᎯᏍᏛ ᏄᏍᏛ ᏀᏍᏉ ᏀᏍᎩ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏍᎬ ᎧᏃᎮᏛ ᏕᎦᏠᎯᏍᏛ ᏄᏍᏛ ᏣᏍᏉ ᏣᏍᎩ",
     "ftm_confidence": 74.17
@@ -20950,8 +20950,8 @@
       569
     ],
     "initial_ocr": "ᏂᎦᏗᏳ ᎢᏥᏍᎦᏯ ᎢᏣᏅᏖᏍᏗ ᎯᎠ ᎣᏥᏁᎬᎢ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏂᎦᏗᏳ ᎢᏥᏍᎦᏯ ᎢᏣᏅᏖᏍᏗ ᎯᎠ ᎣᏥᏁᎬᎢ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏂᎦᏗᏳ ᎢᏥᏍᎦᏯ ᎢᏣᏅᏖᏍᏗ ᎯᎠ ᎣᏥᏁᎬᎢ",
     "ftm_confidence": 81.2
@@ -21767,8 +21767,8 @@
       100
     ],
     "initial_ocr": "ᎠᏂᏍᏆᏛᏃ GAY DEP ᏕᎦᎳᏫᎥ ᏳᎿ ᏓᏂᏃᎸᎭ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎠᏂᏍᏆᏛᏃ ᏀᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ ᎥᎿ ᏓᏂᏃᎸᎭ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎠᏂᏍᏆᏛᏃ ᏣᏍᎩ ᎠᏰᎵ ᏕᎦᎳᏫᎥ ᏣᎿᎭᏓᏂᏃᎸᎭ",
     "ftm_confidence": 71.8
@@ -21805,8 +21805,8 @@
       199
     ],
     "initial_ocr": "ᏍᎩ ᎬᏩᎾᎫᏴᎡᏘ ᎨᏎᏍᏗ ᏚᏂᎸᏫᏍᏖᏁᎸᎢ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏍᎩ ᎬᏩᎾᎫᏴᎡᏗ ᎨᏎᏍᏗ ᏚᏂᎸᏫᏍᏓᏁᎸᎢ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏍᎩ ᎬᏩᎾᎫᏴᎡᏗ ᎨᏎᏍᏗ ᏚᏂᎸᏫᏍᏓᏁᎸᎢ.",
     "ftm_confidence": 89.5
@@ -24427,8 +24427,8 @@
       3105
     ],
     "initial_ocr": "“ᏂᏍᏛᏘᏍᏘ BRT.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏂᏍᏛᏗᏍᏗ ᎨᏒᎢ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏂᏍᏛᏗᏍᏗ ᎨᏒᎢ.",
     "ftm_confidence": 47.5
@@ -25529,8 +25529,8 @@
       799
     ],
     "initial_ocr": "1. ᎢᏬᏪᏁᏅᏃ ᏥᏌ ᎤᎴᏅᎲ AD ᏂᏚᏪᏎᎸ ᎤᏂ-",
-    "label": "",
-    "status": "unlabeled",
+    "label": "7. ᎢᎤᏁᏅᏃ ᏥᏌ ᎤᎴᏅᎲ ᎯᎠ ᏂᏚᏪᏎᎸ ᎤᏂ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "7. ᎢᎤᏁᏅᏃ ᏥᏌ ᎤᎴᏅᎲ ᎯᎠ ᏂᏚᏪᏎᎸ ᎤᏂ-",
     "ftm_confidence": 87.86
@@ -25567,8 +25567,8 @@
       900
     ],
     "initial_ocr": "ᏩᏐᎾᏉᎨ’ ᎤᏖᎸᎮᏍᎬ ᎤᏃᎴᎮ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏩᏐᎾᏉᎨ ᎤᏖᎸᎮᏍᎬ ᎤᏃᎴ?",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏩᏐᎾᏉᎨ ᎤᏓᎸᎮᏍᎬ ᎤᏃᎴᎮ",
     "ftm_confidence": 85.0
@@ -25605,8 +25605,8 @@
       1001
     ],
     "initial_ocr": "ᏧᏅᏩᎢᎵᎮ ᎬᏂᏅᏳᏉ ᏗᏬᏍᎩᏢ ᏧᏮᏅᏩᎢ ᎤᏂᎬᏫ-Ꭸ-",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏧᏅᏩᎢ? ᎬᏂᏳᏉ ᏗᏬᏍᎩᎵ ᏧᎾᏅᏩᎢ ᎤᏂᎬᏫ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏧᏅᏩᎢᎮ ᎬᏂᏳᏉ ᏗᏬᏍᎩᎵ ᏧᎾᏅᏩᎢ ᎤᏂᎬᏫ-",
     "ftm_confidence": 89.8
@@ -25662,8 +25662,8 @@
       1158
     ],
     "initial_ocr": "ᏨᏪᏎᎭ; DE OGAG ᎡᏍᎦᏉ ᎠᎪᎴᎰᏍᎩ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏨᏪᏎᎭ, ᎠᎴ ᎤᏟᎯᏳ ᎡᏍᎦᏉ ᎠᏙᎴᎰᏍᎩ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏨᏪᏎᎭ, ᎠᎴ ᎤᎶᎯᏳ ᎡᏍᎦᏉ ᎠᏙᎴᎰᏍᎩ.",
     "ftm_confidence": 71.0
@@ -25719,8 +25719,8 @@
       1296
     ],
     "initial_ocr": "ᏓᏦᏢᎯᏌᏁᏢᎱ ᏣᎶᎯᏍᏗᏱ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏓᏦᏢᎯᏌᏁᎵ ᏣᎶᎯᏍᏗᏱ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏓᏦᏢᎯᏌᏁᎵ ᏣᎶᎯᏍᏗᏱ.",
     "ftm_confidence": 81.5
@@ -25757,8 +25757,8 @@
       1407
     ],
     "initial_ocr": "ᎬᏩᏂᎾᏄᎪᏫᏒ Ꮭ ᎩᎶ ᏳᎾᏄᎪᏨ ᎬᏩᏓᏢᏁᎯᏕᏘ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎬᏩᏂᎾᏄᎪᏫᏒ Ꮭ ᎩᎶ ᏳᎾᏄᎪᏨ ᎬᏩᏓᎵᏁᎯᏕᏗ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎬᏩᏂᎾᏄᎪᏫᏒ Ꮭ ᎩᎶ ᏳᎾᏄᎪᏨ ᎬᏩᏓᎵᏁᎯᏕᏗ",
     "ftm_confidence": 78.6
@@ -25814,8 +25814,8 @@
       1551
     ],
     "initial_ocr": "12. Gh ᏗᏓᏬᏍᎩ ᎤᎾᏄᎪᏨ ᏓᎬᏩᏖᎴᏅᏛ AV",
-    "label": "",
-    "status": "unlabeled",
+    "label": "12. ᏣᏂ ᏗᏓᏬᏍᎩ ᎤᎾᏄᎪᏨ ᏓᎬᏩᏓᎴᏅᏛ ᎪᎯ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "12. ᏣᏂ ᏗᏓᏬᏍᎩ ᎤᎾᏄᎪᏨ ᏓᎬᏩᏓᎴᏅᏛ ᎪᎯ",
     "ftm_confidence": 89.83
@@ -25852,8 +25852,8 @@
       1650
     ],
     "initial_ocr": "ᎷᎩᏍᎩᏃ ᎠᏮᏓᏬᏂᏐᎭ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎷᎩᏍᎩᏃ ᎠᎾᏓᏬᏂᎭ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎷᎩᏍᎩᏃ ᎠᎾᏓᏬᏂᎭ.",
     "ftm_confidence": 86.0
@@ -25890,8 +25890,8 @@
       1751
     ],
     "initial_ocr": "ᎠᎾᎪᎴᎬᏍᎬ ᎬᏂ ᏣᏂ ᎤᎾᏄᎪᏥᎸ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎠᎾᏙᎴᎰᏍᎬ ᎬᏂ ᏣᏂ ᎤᎾᏄᎪᏥᎸ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎠᎾᏙᎴᎰᏍᎬ ᎬᏂ ᏣᏂ ᎤᎾᏄᎪᏥᎸ.",
     "ftm_confidence": 85.75
@@ -25928,8 +25928,8 @@
       1849
     ],
     "initial_ocr": "ᎢᎳᏊ ᎤᎷᎯᏍᏗ ᏥᎨᏒᎳᎩ.",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎢᎳᏯ ᎤᎷᎯᏍᏗ ᏥᎨᏒᎩ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎢᎳᏯ ᎤᎷᎯᏍᏗ ᏥᎨᏒᎩ.",
     "ftm_confidence": 86.33
@@ -25966,8 +25966,8 @@
       2006
     ],
     "initial_ocr": "16. ᎦᎪᎰ ᎪᏖᎦᏥᏯᎶᎶᏍᏔᏂ AD AD ᏣᏁᎭᎮ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "16. ᎦᏙᎨ ᏙᏓᎦᏥᏯᏟᎶᏍᏔᏂ ᎯᎠ ᎪᎯ ᏣᏁᎭ?",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "16. ᎦᎪᎨ ᏙᏓᎦᏥᏯᎶᎶᏍᏔᏂ ᎯᎠ ᎪᎯ ᏣᏁᎭᎮ",
     "ftm_confidence": 74.67
@@ -26004,8 +26004,8 @@
       2155
     ],
     "initial_ocr": "17. Dé ᎯᎠ ᏥᏂᏓᏂᏪᏎᎰ, DYMY ᎤᎬᏓᏅ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "17. ᎠᎴ ᎯᎠ ᏥᏂᏓᏂᏪᏎᎰ, ᎠᏤᎷᎩ ᎤᎬᏓᏅ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "17. ᎠᎴ ᎯᎠ ᏥᏂᏓᏂᏪᏎᎰ, ᎠᏤᎷᎩ ᎤᏴᏓᏅ",
     "ftm_confidence": 87.5
@@ -26061,8 +26061,8 @@
       2304
     ],
     "initial_ocr": "18. ᏣᏂᏰᏃ OMG Ꮭ ᏱᎵᏍᏖᏴᎲᏍᎨ DE ᏱᏗ-",
-    "label": "",
-    "status": "unlabeled",
+    "label": "18. ᏣᏂᏰᏃ ᎤᎷᏨ Ꮭ ᏱᎵᏍᏓᏴᎲᏍᎨ ᎠᎴ ᏱᏗ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "18. ᏣᏂᏰᏃ ᎤᎷᏨ Ꮭ ᏱᎵᏍᏓᏴᎲᏍᎨ ᎠᎴ ᏱᏗ-",
     "ftm_confidence": 89.14
@@ -26099,8 +26099,8 @@
       2404
     ],
     "initial_ocr": "19. no OW ᎤᎷᏨ ᎠᏢᏍᏓᏴᎲᏍᎬ Dé",
-    "label": "",
-    "status": "unlabeled",
+    "label": "19. ᏴᏫ ᎤᏪᏥ ᎤᎷᏨ ᎠᎵᏍᏓᏴᎲᏍᎬ ᎠᎴ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "12. ᏴᏫ ᎤᏪᏥ ᎤᎷᏨ ᎠᎵᏍᏓᏴᎲᏍᎬ ᎠᎴ",
     "ftm_confidence": 88.67
@@ -26137,8 +26137,8 @@
       2508
     ],
     "initial_ocr": "ᎤᎬᎥᏍᎩ ᏏᎵᏍᏓᏴᏗ Dé OL YS, DEA Ꭰ-",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎤᎬᎥᏍᎩ ᎠᎵᏍᏓᏴᏗ ᎠᎴ ᏅᏬᏘ ᎩᎦᎨ, ᎠᏕᎸ Ꭰ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎤᎬᎥᏍᎩ ᎠᎵᏍᏓᏴᏗ ᎠᎴ ᏅᏬᏘ ᎩᎦᎨ, ᎠᏕᎸ Ꭰ-",
     "ftm_confidence": 80.86
@@ -26175,8 +26175,8 @@
       2606
     ],
     "initial_ocr": "Ꮓ ᎠᎦᏔᎧᎢ ᎣᏏᏳ ᎢᎬᏩᏰᎸ ᏧᏪᏥ,",
-    "label": "",
-    "status": "unlabeled",
+    "label": "Ꮓ ᎠᎦᏔᎾᎢ ᎣᏏᏳ ᎢᎬᏩᏰᎸ ᏧᏪᏥ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "Ꮓ ᎠᎦᏔᎾᎢ ᎣᏏᏳ ᎢᎬᏩᏰᎸ ᏧᏪᏥ.",
     "ftm_confidence": 88.4
@@ -26213,8 +26213,8 @@
       2706
     ],
     "initial_ocr": "OG TST ᎤᏍᏆᏂᎪᏘ ᏚᎸᏫᎣᏓᏁᎸ ᎤᏂᏍᎦᏅᏨ-Ꮡ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎤᏟ ᎢᎦᎢ ᎤᏍᏆᏂᎪᏗ ᏚᎸᏫᏍᏓᏁᎸ ᎤᏂᏍᎦᏅᏨ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎤᎶ ᎢᎦᎢ ᎤᏍᏆᏂᎪᏗ ᏚᎸᏫᏍᏓᏁᎸ ᎤᏂᏍᎦᏅᏨ-",
     "ftm_confidence": 90.2
@@ -26251,8 +26251,8 @@
       2804
     ],
     "initial_ocr": "21. ᎤᏲᎢᏳ ᎢᏣᏢᏍᏖᏁᏘ ᎪᎴᏏᏂ, ᎤᏲᎢᏳ",
-    "label": "",
-    "status": "unlabeled",
+    "label": "21. ᎤᏲᎢᏳ ᎢᏣᎵᏍᏓᏁᏗ ᎪᎴᏏᏂ, ᎤᏲᎢᏳ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "21. ᎤᏲᎢᏳ ᎢᏣᎵᏍᏓᏁᏗ ᎪᎴᏏᏂ, ᎤᏲᎢᏳ",
     "ftm_confidence": 87.4
@@ -26973,8 +26973,8 @@
       1608
     ],
     "initial_ocr": "ᎢᎩᎨᏳᏅᎡᏒ SAA ᎤᏂᎬᏫᏳᎯ ᏩᏥᏂᏱ WAZ ᏂᎦᏘ-",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎢᎩᎨᏳᏒ ᎦᏙᎯ ᎤᏂᎬᏫᏳᎯ ᏩᏥᏂᏱ ᏥᎪᏃ ᏂᎦᏗ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎢᎩᎨᏳᏒ ᎦᏙᎯ ᎤᏂᎬᏫᏳᎯ ᏩᏥᏂᏱ ᏥᎪᏃ ᏂᎦᏗ-",
     "ftm_confidence": 89.0
@@ -27011,8 +27011,8 @@
       1711
     ],
     "initial_ocr": "ᏫᎾᏄᎧᏓᏪᏎᎲᎢ ᎤᏂᎬᏫᏳᎯᏱ ᏅᏘᎦᏢᏍᎪᏘᎭ ᎯᎠ-",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏫᎾᎾᏓᏪᏎᎲᎢ ᎤᏂᎬᏫᏳᎯᏱ ᏅᏗᎦᎵᏍᏙᏗᎭ ᎯᎠ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏫᎾᎾᏓᏪᏎᎲᎢ ᎤᏂᎬᏫᏳᎯᏱ ᏅᏗᎦᎵᏍᏙᏗᎭ ᎯᎠ-",
     "ftm_confidence": 87.5
@@ -27429,8 +27429,8 @@
       2876
     ],
     "initial_ocr": "ᏏᏂᏥᏁᎢᏍᏗᏍᎬᎢ DAG ᎠᏎᏉ ᎨᎦᏓᏅᏖᏍᎬᏍᎩ”",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎨᏥᏁᎢᏍᏗᏍᎬᎢ ᎠᏗᏀ ᎠᏎᏉ ᎨᎦᏓᏅᏖᏍᎬᏍᎩ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎨᏥᏁᎢᏍᏗᏍᎬᎢ ᎠᏗ ᎠᏎᏉ ᎨᎦᏓᏅᏓᏖᏍᎬᏍᎩ-",
     "ftm_confidence": 53.25
@@ -33433,8 +33433,8 @@
       494
     ],
     "initial_ocr": "$A ᏓᏍᏘᏂᎪᏛ ᎪᎠᎾᏢᏍᎪᎸᏓ ᎯᏍᎦᏍᎪᎯ ᎦᏢᎹᏉ”-",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏕᎸ ᏓᏍᏆᏂᎪᏛ ᏙᎠᎾᎵᏍᎪᎸᏓ ᎯᏍᎦᏍᎪᎯ ᎦᎵᏉ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏕᎸ ᏓᏍᏗ ᎪᏛ ᏙᎠᎾᎵᏍᎪᎸᏓ ᎯᏍᎦᏍᎪᎯ ᎦᎵᏉᎦ-",
     "ftm_confidence": 46.33
@@ -34061,7 +34061,7 @@
     ],
     "initial_ocr": "ᏐᎩᎾᏄᎥᏍᏓᏲᎸᏍᏗ ᎢᎦᏢᎢ ᎩᏂᎬᏍᏅᏒᏉᏲᎪ",
     "label": "",
-    "status": "unlabeled",
+    "status": "nasty_crop",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏕᎩᎾᏍᏓᏲᏕᏍᏗ ᎢᎦᎵᎢ ᎩᏂᎨᏳᏒᏉᏲᏂᎪ",
     "ftm_confidence": 35.67
@@ -36454,8 +36454,8 @@
       2363
     ],
     "initial_ocr": "ᎷᎠ;!!:;Ꮻ;; ;;;“Ꮟ;Ꮷ;ᎬᏤ;ᏳᎠᏕᏢᏥᎪᏇᏍᎬᎩᎪᎪ inde",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎠᏂᏏᏴᏫᎭ ᏓᎾᎴᎲᏍᎬᎩ ᎠᎾᎵᏥᏙᎲᏍᎬᎩ. ᎿᏉ",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎠᏂᏏᏴᏫᎭ ᏓᎾᎴᎲᏍᎬᎩ ᎠᎾᎵᏥᎪᎲᏍᎬᎩ. ᏓᏉ",
     "ftm_confidence": 55.25
@@ -38203,7 +38203,7 @@
     ],
     "initial_ocr": "ᎤᎧᏁᏓᏉᏅᎯ ᎢᏓᏩ ᎠᏱᎯᏃ ᎪᎠᏂᎳᏫᏢᏍᏘᏓᎩ----",
     "label": "",
-    "status": "unlabeled",
+    "status": "nasty_crop",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎤᎾᏙᏓᏉᏅᎯ ᎢᏓᏩ ᎠᏱᏐᎯᏃ ᏙᎠᏂᎳᏫᎨᏍᏗ.-",
     "ftm_confidence": 47.25
@@ -41736,8 +41736,8 @@
       6081
     ],
     "initial_ocr": "ᏘᏄᏫᏍᏓᏁᎲ, ᎦᎪᏉᏃ ᎪᏛᏥᏲᎢᏏ.”",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎸᏫᏍᏓᏁᎲ, ᎦᏙᏉᏃ ᏙᏛᏥᏲᎱᏏ\"",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎸᏫᏍᏓᏁᎲ, ᎦᏙᏉᏃ ᏙᏛᏥᏲᎢᏏ.",
     "ftm_confidence": 53.67
@@ -49336,8 +49336,8 @@
       1258
     ],
     "initial_ocr": "ᎥᎳᏫᎢᏍᏗ ᎨᏎᎲᏎᏗ; ᎿᏉᏃ ᎤᏣᎪᏓᏉᏅ-” |",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎳᏫᎢᏍᏗ ᎨᏎᏍᏗ; ᎿᏉᏃ ᎤᎾᏙᏓᏉᏅ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎳᏫᎢᏍᏗ ᎨᏎᏎᏗ; ᎿᎭᏉᏃ ᎤᎾᏙᏓᏉᏅ-",
     "ftm_confidence": 29.5
@@ -49716,8 +49716,8 @@
       2110
     ],
     "initial_ocr": "ᎨᏎᏍᏗ ᏗᎧᎾᏩᏛᏍᏗ,",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᎨᏎᏍᏗ ᏗᎧᎾᏩᏛᏍᏗ.",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᎨᏎᏍᏗ ᏧᎧᎾᏩᏛᏍᏗ.",
     "ftm_confidence": 51.0
@@ -50039,8 +50039,8 @@
       3255
     ],
     "initial_ocr": "ᎠᏣᏂᏏᏂ, ᏓᏥᏥᏃ, ᎤᏓᏲᎴᏅᏃ, ᏟᎴᎩ TE-",
-    "label": "",
-    "status": "unlabeled",
+    "label": "ᏴᎶᏂᏏᏂ, ᏓᏥᏥᏃ, ᎤᏓᏲᎴᏅᏃ, ᏀᏍᎩ ᎢᎬ-",
+    "status": "labeled",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "Ꭰ ᏣᏂᏏᏂ, ᏓᏥᏥᏃ, ᎤᏓᏲᎴᏅᏃ, ᏟᏍᎩ ᎢᎬ-",
     "ftm_confidence": 49.83
