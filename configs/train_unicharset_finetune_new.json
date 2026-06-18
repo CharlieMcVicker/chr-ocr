@@ -1,7 +1,7 @@
 {
-  "total_epochs": 24,
+  "total_epochs": 36,
   "iterations_per_epoch": 200,
-  "variations_per_image": 3,
+  "variations_per_image": 5,
   "error_rate": 0.05,
   "train_manifest": "training_data/manifest_mixed.json",
   "output_dir": "training_data/staged_tuning/run_unicharset_finetune_temp",
@@ -13,7 +13,7 @@
   "use_dynamic_cnt": true,
   "cnt_fraction": 0.1,
   "cnt_dir": "training_data/cnt",
-  "mixture_ratio": 0.4,
+  "mixture_ratio": 0.3,
   "learning_rate": 0.002,
   "lr_schedule": "step",
   "lr_decay_rate": 0.6,
@@ -25,7 +25,7 @@
   "bleedthrough_prob": 0.25,
   "cnt_noise": {
     "blur": {
-      "prob": 0.6,
+      "prob": 0.7,
       "limit_min": 3,
       "limit_max": 5
     },
@@ -34,8 +34,8 @@
       "dimension": 6
     },
     "distortion": {
-      "prob": 0.6,
-      "limit": 0.15
+      "prob": 0.8,
+      "limit": 0.25
     },
     "dropout": {
       "prob": 0.5,

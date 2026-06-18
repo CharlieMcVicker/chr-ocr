@@ -10,63 +10,63 @@ def update_unicharset(filepath):
     size = int(lines[0])
     print(f"Current count: {size}")
     
-    # Check if chars already present
-    present = [False, False, False]
-    for idx, char in enumerate(["4 ", "[ ", "] "]):
-        for line in lines[1:]:
-            if line.startswith(char):
-                present[idx] = True
+    # Define the target characters and their properties
+    # Each item: (char, simple_prop, complex_prop, script, direction, char_hex, char_category)
+    targets = [
+        ("4", "8", "8", "Common", "2", "34", "0"),
+        ("[", "16", "16", "Common", "10", "5b", "p"),
+        ("]", "16", "16", "Common", "10", "5d", "p"),
+        ("Ꮐ", "5", "1", "Cherokee", "0", "13c0", "x"),
+        ("?", "10", "16", "Common", "10", "3f", "p")
+    ]
     
+    # Check which characters are already present
+    present = []
+    for char, _, _, _, _, _, _ in targets:
+        char_found = False
+        for line in lines[1:]:
+            if line.startswith(char + " "):
+                char_found = True
+                break
+        present.append(char_found)
+        
     if all(present):
-        print(f"Characters already present in {filepath}")
+        print(f"All target characters already present in {filepath}")
         return size
 
-    # Update size
-    new_size = size
-    
-    # We will generate lines based on how the starter unicharset or target unicharset is structured.
-    # We'll use standard properties.
-    # 4: 8 (numeric/digit property)
-    # [: 16 (punctuation property)
-    # ]: 16 (punctuation property)
-    # Let's inspect the target unicharset vs starter unicharset.
-    # Starter uses:
-    # 1 8 49,69,192,255,45,128,0,66,74,173 Common 89 2 89 1	# 1 [31 ]0
-    # Common has 10 parameters or 12. Let's look at standard format.
-    # In target unicharset (which is from tessdata_best, simplified property):
-    # 1 8 0,255,0,255,0,0,0,0,0,0 Common 89 2 89 1	# 1 [31 ]0
-    #
-    # We can detect whether it has 10 elements in the third field (bounding box/script info) or properties.
-    # Let's just look at line 2 to see properties format.
-    
     sample_line = lines[2] # e.g. Joined 7 0,255,0,255,0,0,0,0,0,0 Latin 1 ...
     fields = sample_line.split()
     has_zero_properties = "0,255,0,255" in fields[2]
     
-    # Let's construct the appropriate strings:
-    if has_zero_properties:
-        # Target style (simple):
-        char_4 = "4 8 0,255,0,255,0,0,0,0,0,0 Common {index} 2 {index} 4\t# 4 [34 ]0"
-        char_open = "[ 16 0,255,0,255,0,0,0,0,0,0 Common {index} 10 {index} [\t# [ [5b ]p"
-        char_close = "] 16 0,255,0,255,0,0,0,0,0,0 Common {index} 10 {index} ]\t# ] [5d ]p"
-    else:
-        # Starter style (complex, has learned properties/statistics from training):
-        # We can use some defaults or copy close properties.
-        # e.g., '3 8 0,66,196,255,84,158,0,32,103,173 Common 98 2 98 3'
-        # Let's use standard default properties or dummy ones.
-        char_4 = "4 8 0,66,196,255,84,158,0,32,103,173 Common {index} 2 {index} 4\t# 4 [34 ]0"
-        char_open = "[ 16 14,56,131,221,17,93,0,58,38,173 Common {index} 10 {index} [\t# [ [5b ]p"
-        char_close = "] 16 14,56,131,221,17,93,0,58,38,173 Common {index} 10 {index} ]\t# ] [5d ]p"
-        
+    new_size = size
     added_lines = []
-    if not present[0]:
-        added_lines.append(char_4.format(index=new_size))
-        new_size += 1
-    if not present[1]:
-        added_lines.append(char_open.format(index=new_size))
-        new_size += 1
-    if not present[2]:
-        added_lines.append(char_close.format(index=new_size))
+    
+    for idx, (char, simple_prop, complex_prop, script, direction, char_hex, char_category) in enumerate(targets):
+        if present[idx]:
+            continue
+            
+        if has_zero_properties:
+            # Target style (simple):
+            prop = simple_prop
+            bbox = "0,255,0,255,0,0,0,0,0,0"
+            category = "A" if script == "Cherokee" else char_category
+        else:
+            # Starter style (complex):
+            prop = complex_prop
+            if char == "4":
+                bbox = "0,66,196,255,84,158,0,32,103,173"
+            elif char in ["[", "]"]:
+                bbox = "14,56,131,221,17,93,0,58,38,173"
+            elif char == "Ꮐ":
+                bbox = "64,64,255,255,174,190,8,27,195,211"
+            elif char == "?":
+                bbox = "41,67,216,255,11,87,0,71,50,173"
+            else:
+                bbox = "0,255,0,255,0,0,0,0,0,0"
+            category = char_category
+            
+        line_str = f"{char} {prop} {bbox} {script} {new_size} {direction} {new_size} {char}\t# {char} [{char_hex} ]{category}"
+        added_lines.append(line_str)
         new_size += 1
         
     lines[0] = str(new_size)

@@ -3,7 +3,7 @@ id: doc-11
 title: Staged Epoch Loop Meta-parameter Tuning Summary
 type: other
 created_date: '2026-06-12 03:08'
-updated_date: '2026-06-16 13:20'
+updated_date: '2026-06-18 14:04'
 ---
 # Staged Epoch Loop Meta-parameter Tuning Summary
 
@@ -76,20 +76,25 @@ Following the restoration of training crops and the integration of the historic 
 | **run_21_step_mod_aug** | 16 | 3 | 200 | `step` | 0.0005 | Halved (0.2/0.15/0.2/0.15/0.125) | **7.037%** | **14.752%** | `run_21_step_mod_aug_output/chr_16.817_2625_3100.checkpoint` |
 | **run_22_step_high_var**| 16 | 5 | 200 | `step` | 0.0005 | Default (0.4/0.3/0.4/0.3/0.25) | 8.112% | 17.713% | `run_22_step_high_var_output/chr_22.573_2559_2900.checkpoint` |
 
-### Key Findings (Expanded & LR Schedule Sweep)
+## Best Mixture Ratio Sweep (June 18, 2026)
 
-1. **Extended training counts are highly beneficial**: Increasing training length to 20 epochs (4,000 iterations total) with a constant learning rate of `0.0005` (`run_20`) yielded a new record low of **7.033% average BCER** and **15.781% BWER** on the test split. The model continues to converge stably without overfitting.
-2. **Moderate augmentation yields the best word accuracy**: Combining a stepped learning rate decay schedule with halved/moderate augmentation intensities (`run_21`) achieved **7.037% average BCER** and the absolute best **14.752% average BWER**. This suggests that while heavy augmentation provides robustness, moderating the distortion noise allows the LSTM network to learn the features of the expanded character set (including rare characters like Ꮐ) more cleanly.
-3. **High variations per image do not scale**: Increasing the variations per image to 5 (`run_22`) resulted in performance regression (**8.112% BCER**), confirming that 3 variations remains the optimal density sweet spot.
+Following a systematic sweep of the Phoenix/CNT mixture ratio, a new optimal configuration was identified using a staged learning rate decay (decaying by 0.6 every 3 epochs from a base of 0.002) and a 0.4 mixture ratio:
+
+| Run ID | Epochs | Variations | Iterations/Epoch | LR Schedule | Base LR | Augmentations | Phoenix CER | CNT CER | Weighted CER |
+|:---|:---:|:---:|:---:|:---|:---|:---|:---:|:---:|:---|
+| **run_custom_big_lr_big_decay_dr6_mx4** | 24 | 3 | 200 | `step` (decay 0.6 every 3 epochs) | 0.002 | Default | **5.72%** | **3.08%** | **3.40%** |
+
+### Key Findings (Mixture Ratio Sweep)
+1. **Staged learning rate decay from a higher base is highly effective**: Running with a base learning rate of `0.002` and a stepped decay factor of `0.6` every `3` epochs (`run_custom_big_lr_big_decay_dr6_mx4`) achieved a record-low **Phoenix CER of 5.72%** and a **Weighted CER of 3.4%** by epoch 24.
+2. **0.4 Mixture Ratio is optimal**: Keeping the mixture ratio at 0.4 stably balances training between the target Phoenix domain and the larger CNT domain.
 
 ## Production Recommendation
 
 The optimal meta-parameter boundaries for Cherokee OCR fine-tuning under the expanded post-fix pipeline are:
-- **Learning Rate**: 0.0005 (with optional stepped decay by a factor of 0.5 every 4 epochs)
-- **Total Epochs**: 20 (allowing full convergence)
+- **Base Learning Rate**: 0.002 with stepped decay by a factor of 0.6 every 3 epochs (as configured in `run_custom_big_lr_big_decay_dr6_mx4`) for optimal convergence and error rates.
+- **Mixture Ratio**: 0.4 (Phoenix to CNT)
+- **Total Epochs**: 24 (allowing full convergence under the stepped decay schedule)
 - **Variations per Image**: 3
 - **Iterations per Epoch**: 200
 - **Transcription Error Injection Rate**: 0.05
-- **Augmentation Intensities**: Moderate/Halved blur (0.2), shadow (0.15), spatial distortion (0.2), dropout (0.15), bleedthrough (0.125) for best word accuracy; or Default/Robust (0.4/0.3/0.4/0.3/0.25) for extreme noise resistance.
-
-
+- **Augmentation Intensities**: Default/Robust (0.4/0.3/0.4/0.3/0.25) for extreme noise resistance.
