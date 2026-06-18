@@ -51,9 +51,11 @@ def edit_distance(a: str, b: str) -> int:
 
 def cer(truth: str, ocr: str) -> float:
     """Character Error Rate as a percentage. Returns 100.0 if truth is empty."""
-    if not truth:
-        return 100.0
-    return min(100.0, 100.0 * edit_distance(truth, ocr) / len(truth))
+    t_norm = norm(truth)
+    o_norm = norm(ocr)
+    if not t_norm:
+        return 100.0 if o_norm else 0.0
+    return min(100.0, 100.0 * edit_distance(t_norm, o_norm) / len(t_norm))
 
 
 def parse_filename_metadata(filepath: str) -> tuple[str, str, str]:
@@ -171,7 +173,7 @@ def recognize_line(img_path: str, tessdata_dir: str, lang: str) -> str:
 
 
 def process_file_entry(entry: dict, allowed_chars: set[str], temp_tessdata_dir: str, temp_lang: str) -> dict:
-    truth = entry["truth"]
+    truth = entry["norm_truth"]
     lstmf_path = entry["lstmf_path"]
     img_path = os.path.splitext(lstmf_path)[0] + ".png"
     
