@@ -1,0 +1,48 @@
+{
+  "total_epochs": 36,
+  "iterations_per_epoch": 200,
+  "variations_per_image": 3,
+  "error_rate": 0.05,
+  "train_manifest": "training_data/manifest_w_lang.json",
+  "output_dir": "training_data/staged_tuning/run_custom_big_lr_big_decay_dr7_mx4_temp_epoch",
+  "model_dir": "training_data/dataset/model/starter/chr",
+  "train_output_dir": "training_data/staged_tuning/run_custom_big_lr_big_decay_dr7_mx4_output",
+  "continue_from": "training_data/dataset/model/chr.lstm",
+  "old_traineddata": "training_data/dataset/model/chr.traineddata",
+  "max_workers": null,
+  "use_dynamic_cnt": true,
+  "cnt_fraction": 0.1,
+  "cnt_dir": "training_data/cnt",
+  "mixture_ratio": 0.4,
+  "learning_rate": 0.002,
+  "lr_schedule": "step",
+  "lr_decay_rate": 0.7,
+  "lr_decay_epochs": 3,
+  "blur_prob": 0.4,
+  "shadow_prob": 0.3,
+  "distortion_prob": 0.4,
+  "dropout_prob": 0.3,
+  "bleedthrough_prob": 0.25,
+  "cnt_noise": {
+    "blur": {
+      "prob": 0.6,
+      "limit_min": 3,
+      "limit_max": 5
+    },
+    "shadow": {
+      "prob": 0.7,
+      "dimension": 6
+    },
+    "distortion": {
+      "prob": 0.6,
+      "limit": 0.15
+    },
+    "dropout": {
+      "prob": 0.5,
+      "holes_min": 1,
+      "holes_max": 4,
+      "size_min": 4,
+      "size_max": 10
+    }
+  }
+}

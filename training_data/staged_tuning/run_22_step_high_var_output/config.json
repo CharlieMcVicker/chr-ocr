@@ -1,0 +1,22 @@
+{
+  "total_epochs": 16,
+  "iterations_per_epoch": 200,
+  "variations_per_image": 5,
+  "error_rate": 0.05,
+  "train_manifest": "training_data/manifest_w_lang.json",
+  "output_dir": "training_data/staged_tuning/run_22_step_high_var_temp_epoch",
+  "model_dir": "training_data/dataset/model",
+  "train_output_dir": "training_data/staged_tuning/run_22_step_high_var_output",
+  "continue_from": "training_data/dataset/model/chr.lstm",
+  "old_traineddata": "training_data/dataset/model/chr.traineddata",
+  "max_workers": null,
+  "learning_rate": 0.0005,
+  "lr_schedule": "step",
+  "lr_decay_rate": 0.5,
+  "lr_decay_epochs": 4,
+  "blur_prob": 0.4,
+  "shadow_prob": 0.3,
+  "distortion_prob": 0.4,
+  "dropout_prob": 0.3,
+  "bleedthrough_prob": 0.25
+}

@@ -1,0 +1,37 @@
+Loaded file training_data/staged_tuning/run_custom_mid_lr_mid_decay_output/chr_checkpoint, unpacking...
+Successfully restored trainer from training_data/staged_tuning/run_custom_mid_lr_mid_decay_output/chr_checkpoint
+Encoding of string failed! Failure bytes: ea ae b0 e1 8f 8d e1 8e a9 20 e1 8e af e1 8e a0 20 e1 8f 84 e1 8f 8d e1 8f 97 20 e1 8e a2 e1 8f a8 e1 8f b2 e1 8f aa e1 8e b3 e1 8f 8f
+Can't encode transcription: '13 ꮰᏍᎩ ᎯᎠ ᏄᏍᏗ ᎢᏨᏲᏪᎳᏏ' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8f 9d e1 8e a9 e1 8f b3 20 e1 8e a4 e1 8f 9b e1 8f 83 e1 8e af 20 e1 8f 95 e1 8e a6 e1 8e b3 e1 8f ab e1 8e a5 20 e1 8e ac e1 8f a9 e1 8f 96 e1 8e b3 e1 8f 97 e1 8f 8d e1 8f 97 e1 8e a2 2c
+Can't encode transcription: '4. ᏝᎩᏳ ᎤᏛᏃᎯ ᏕᎦᎳᏫᎥ ᎬᏩᏖᎳᏗᏍᏗᎢ,' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8f 9d e1 8e a9 e1 8f b3 20 e1 8e a4 e1 8f 9b e1 8f 83 e1 8e af 20 e1 8f 95 e1 8e a6 e1 8e b3 e1 8f ab e1 8e a5 20 e1 8e ac e1 8f a9 e1 8f 96 e1 8e b3 e1 8f 97 e1 8f 8d e1 8f 97 e1 8e a2 2c
+Can't encode transcription: '4. ᏝᎩᏳ ᎤᏛᏃᎯ ᏕᎦᎳᏫᎥ ᎬᏩᏖᎳᏗᏍᏗᎢ,' in language ''
+Encoding of string failed! Failure bytes: e1 8e ba e1 8f 85 2e
+Can't encode transcription: 'ᏂᏥᎥᎢ. ᎡᎺᏅ.' in language ''
+Encoding of string failed! Failure bytes: e1 8f b8
+Can't encode transcription: 'ᎾᏍᎩ ᎠᎪᎲᏍᎬᎢᏸ' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8e a0 e1 8f 99 e1 8e b4 e1 8e b0 e1 8f 8d e1 8e a9 e1 8e a8 3f 20 e1 8e a5 e1 8e a5 20 e1 8f 82 2d
+Can't encode transcription: '9. ᎦᏙᎩ ᎢᏣᎦᏔᏅᏎᎢ? ᎠᏙᎴᎰᏍᎩᎨ? ᎥᎥ Ꮒ-' in language ''
+Encoding of string failed! Failure bytes: 3f
+Can't encode transcription: 'ᏅᏩᏓᎴ ᏫᏤᎵᎯᏍᎪᎢ?' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8f 82 e1 8e af 20 e1 8f 97 e1 8f 93 e1 8f 82 e1 8f 90 e1 8f 97 e1 8f b1 20 e1 8e a8 2d
+Can't encode transcription: 'ᏓᏨᏯᏍᏗᎨᏒᎢ? ᏂᎯ ᏗᏓᏂᏐᏗᏱ Ꭸ-' in language ''
+2 Percent improvement time=182, best error was 41.012 @ 93
+At iteration 275/300/321, mean rms=2.859%, delta=13.651%, BCER train=37.913%, BWER train=61.797%, skip ratio=7.000%, New best BCER = 37.913 wrote best model:training_data/staged_tuning/run_custom_mid_lr_mid_decay_output/chr_37.913_275_300.checkpoint wrote checkpoint.
+Encoding of string failed! Failure bytes: e1 8e bc e1 8f 8f 20 e1 8e a2 e1 8e a9 e1 8f 81 e1 8e b8 e1 8e af 2e
+Can't encode transcription: 'ᏓᏍᏗ ᎾᏍᎩ ᎼᏏ ᎢᎩᏁᎸᎯ.' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e af e1 8e a0 e1 8f 83 20 e1 8f 84 e1 8f aa e1 8f 8e e1 8e b4 e1 8e a2 2c 20 e1 8e af e1 8f 8d e1 8e a6 e1 8f af 2c 20 e1 8e a6 e1 8e aa
+Can't encode transcription: '14 ᎯᎠᏃ ᏄᏪᏎᎴᎢ, ᎯᏍᎦᏯ, ᎦᎪ' in language ''
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e af e1 8e a0 e1 8f 83 20 e1 8f 84 e1 8f aa e1 8f 92 e1 8e a9 3b 20 e1 8e a4 e1 8f 81 e1 8e b3 e1 8f 85 e1 8e af 20 e1 8f 97 2d
+Can't encode transcription: '14 ᎯᎠᏃ ᏄᏪᏒᎩ; ᎤᏁᎳᏅᎯ Ꮧ-' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a2 e1 8f a3 e1 8f 93 e1 8f 9f e1 8f 8c e1 8e ae e1 8f 8d e1 8f 97 2c 20 e1 8e a0 e1 8f 86 e1 8f 93 e1 8f 85 e1 8f 99 e1 8f 83 20 e1 8e a0 e1 8e a6 e1 8f 94 2d
+Can't encode transcription: '4 ᎢᏣᏓᏟᏌᎮᏍᏗ, ᎠᏆᏓᏅᏙᏃ ᎠᎦᏔ-' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8f 9e e1 8f 8d e1 8f 97 20 e1 8f 82 e1 8f 97 e1 8f a3 e1 8f 99 e1 8e b5 e1 8e ac e1 8e be 20 e1 8e a2 e1 8f a7 e1 8e b3 e1 8e ad 20 e1 8f b1 2d
+Can't encode transcription: '14 ᏞᏍᏗ ᏂᏗᏣᏙᎵᎬᎾ ᎢᏧᎳᎭ Ᏹ-' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8e a0 e1 8f 99 e1 8e b4 e1 8e b0 e1 8f 8d e1 8e a9 e1 8e a8 3f 20 e1 8e a5 e1 8e a5 20 e1 8f 82 2d
+Can't encode transcription: '9. ᎦᏙᎩ ᎢᏣᎦᏔᏅᏎᎢ? ᎠᏙᎴᎰᏍᎩᎨ? ᎥᎥ Ꮒ-' in language ''
+2 Percent improvement time=89, best error was 37.913 @ 275
+At iteration 364/400/428, mean rms=2.722%, delta=12.458%, BCER train=35.651%, BWER train=60.303%, skip ratio=7.000%, New best BCER = 35.651 wrote best model:training_data/staged_tuning/run_custom_mid_lr_mid_decay_output/chr_35.651_364_400.checkpoint wrote checkpoint.
+Finished! Selected model with minimal training error rate (BCER) = 35.651

@@ -1,0 +1,65 @@
+Loaded file training_data/staged_tuning/run_custom_big_lr_big_decay_dr7_mx4_output/chr_checkpoint, unpacking...
+Successfully restored trainer from training_data/staged_tuning/run_custom_big_lr_big_decay_dr7_mx4_output/chr_checkpoint
+Encoding of string failed! Failure bytes: 3f 20 e1 8e a0 e1 8e b4
+Can't encode transcription: 'ᎤᎾᏛᎦᏅᎯ ᏂᎨᏒᎾ ᏱᎩ ᎡᎲᎢ? ᎠᎴ' in language ''
+Encoding of string failed! Failure bytes: 5b e1 8e a7 e1 8f 83 e1 8e ae e1 8f 9b 2c 5d
+Can't encode transcription: '15 ᏣᏂ ᎧᏃᎮᏍᎬᎩ ᎾᏍᎩ [ᎧᏃᎮᏛ,]' in language ''
+Encoding of string failed! Failure bytes: 22 e1 8f 85 e1 8f af 20 e1 8e a0 e1 8f 93 e1 8e bf e1 8e ad e1 8f 8d e1 8f 86 e1 8e b6 e1 8f 8d e1 8f 97 e1 8f 8d e1 8e a9
+Can't encode transcription: '8 ᎠᎴ "ᏅᏯ ᎠᏓᎿᎭᏍᏆᎶᏍᏗᏍᎩ' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8f a3 e1 8f a0 e1 8e be e1 8f 8d e1 8f 97 21 20 e1 8e a2 2d
+Can't encode transcription: 'ᎠᏓ ᏨᏒ ᏣᎦᏑᎲᎢ? ᏣᏠᎾᏍᏗ! Ꭲ-' in language ''
+Encoding of string failed! Failure bytes: 3f
+Can't encode transcription: 'ᏂᎨᏒᎾ ᎨᏒᎢ?' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8f 82 e1 8e aa e1 8e af e1 8f b3 e1 8e b2 e1 8f 8d e1 8e ac e1 8e be 20 e1 8e a2 e1 8e a8 2d
+Can't encode transcription: '14 ᎢᏳᏃ ᎩᎶ ᏂᎪᎯᏳᎲᏍᎬᎾ ᎢᎨ-' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a6 e1 8e b6 e1 8f 81 e1 8f 9b 20 e1 8e aa e1 8e b1 e1 8f 8d e1 8f 97 20 e1 8e a6 e1 8f b0 e1 8f a3 e1 8e b5 e1 8f 8d e1 8f 95 e1 8e b8 e1 8f 99 e1 8f 97
+Can't encode transcription: '4 ᎦᎶᏁᏛ ᎪᎱᏍᏗ ᎦᏰᏣᎵᏍᏕᎸᏙᏗ' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e af e1 8e a0 20 e1 8f 82 e1 8e a6 e1 8f aa e1 8f 8d e1 8e a8 e1 8e a2 2c 20 e1 8e a3 e1 8e a6 e1 8f 81 e1 8e b3 e1 8e a9 3b
+Can't encode transcription: '34 ᎯᎠ ᏂᎦᏪᏍᎨᎢ, ᎣᎦᏁᎳᎩ;' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8e a0 e1 8f 86 e1 8f 93 e1 8f 85 e1 8f 99 20 e1 8e ac e1 8f 97 2d
+Can't encode transcription: '15 ᎦᏙ ᎰᏩ ᎤᏍᏗ? ᎠᏆᏓᏅᏙ ᎬᏗ-' in language ''
+Encoding of string failed! Failure bytes: 34 37 20 e1 8e bf e1 8e ad e1 8f 89 e1 8f 83 20 e1 8f 84 e1 8f 82 e1 8e ac e1 8f ab e1 8f b3 e1 8f 92 20 e1 8e a0 e1 8f a5 e1 8e b8 2d
+Can't encode transcription: '47 ᎿᎭᏉᏃ ᏄᏂᎬᏫᏳᏒ ᎠᏥᎸ-' in language ''
+Encoding of string failed! Failure bytes: 5b e1 8e a0 e1 8f 81 e1 8e af 3b 5d 20 e1 8e be e1 8f 8d e1 8e a9 20 e1 8f 93 2d
+Can't encode transcription: 'ᎮᎭ ᏂᎬᎾᏛ ᎡᎶᎯ [ᎠᏁᎯ;] ᎾᏍᎩ Ꮣ-' in language ''
+Encoding of string failed! Failure bytes: ea ad b8 2c 20 e1 8e a0 e1 8e b4 20 e1 8e a2 e1 8f 93 e1 8f 93 e1 8f 85 e1 8f 96 e1 8f 8d e1 8e ac e1 8e a2 2c 20 e1 8e be e1 8f 8d e1 8e a9 e1 8f af 20 e1 8e a4 2d
+Can't encode transcription: 'Ꮂꭸ, ᎠᎴ ᎢᏓᏓᏅᏖᏍᎬᎢ, ᎾᏍᎩᏯ Ꭴ-' in language ''
+Encoding of string failed! Failure bytes: 3f
+Can't encode transcription: 'ᏙᏃ Ꮭ ᏴᎡᏣᏘᏃᎦ?' in language ''
+Encoding of string failed! Failure bytes: 34 30 20 e1 8e bf e1 8e ad e1 8f 89 e1 8f 83 20 e1 8e be e1 8f 8d e1 8e a9 20 e1 8f 96 e1 8e b8 e1 8e b3 e1 8f 97 20 e1 8f 93 e1 8f ab e1 8f 92
+Can't encode transcription: '40 ᎿᎭᏉᏃ ᎾᏍᎩ ᏖᎸᎳᏗ ᏓᏫᏒ' in language ''
+Encoding of string failed! Failure bytes: ea ae 98 2d
+Can't encode transcription: 'ᏭᏂᎶᏎᎢ; ᏩᎾᎢᏒᏃ ᏚᏛᏛᏁ ᎬᏩᏍꮘ-' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a4 e1 8f a3 e1 8f 98 20 e1 8e a2 e1 8f a8 e1 8f b2 e1 8e a2 e1 8f b3 e1 8e ad 3b 20 e1 8e a4 e1 8f a3 e1 8f 98 20 e1 8e a2 e1 8f a8 2d
+Can't encode transcription: '4 ᎤᏣᏘ ᎢᏨᏲᎢᏳᎭ; ᎤᏣᏘ ᎢᏨ-' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e bd e1 8f a5 e1 8f 8c e1 8f 83 20 e1 8e a4 e1 8f 81 e1 8f a8 20 e1 8e af e1 8e a0 20 e1 8f 82 e1 8f 9a e1 8f aa e1 8f 8e e1 8e b8 e1 8e a9 3b 20 e1 8f a5 e1 8f 8d e1 8f 95 e1 8e be 20 e1 8f a3 e1 8f 82
+Can't encode transcription: '4. ᎽᏥᏌᏃ ᎤᏁᏨ ᎯᎠ ᏂᏚᏪᏎᎸᎩ; ᏥᏍᏕᎾ ᏣᏂ' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8f 82 e1 8e a6 e1 8f 97 e1 8e b9 e1 8f 8f e1 8f 83 20 e1 8e af e1 8e a0 20 e1 8f 84 e1 8f aa e1 8f 8e e1 8e b8 e1 8e a9 3b 20 e1 8e a6 e1 8f 99
+Can't encode transcription: '4 ᏂᎦᏗᎹᏏᏃ ᎯᎠ ᏄᏪᏎᎸᎩ; ᎦᏙ' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8f 80 e1 8f 8d e1 8e a9 e1 8f 83 20 e1 8e af e1 8e a0 20 e1 8f a3 e1 8f 82 20 e1 8e a4 e1 8f 85 e1 8f a9 e1 8e a1 20 e1 8f 90 e1 8f 88 e1 8e b5 20 e1 8e a6 e1 8f 90 e1 8f 86 e1 8f 97 20 e1 8e a4 2d
+Can't encode transcription: '4. ᏀᏍᎩᏃ ᎯᎠ ᏣᏂ ᎤᏅᏩᎡ ᏐᏈᎵ ᎦᏐᏆᏗ Ꭴ-' in language ''
+2 Percent improvement time=257, best error was 22.3 @ 385
+At iteration 642/900/1016, mean rms=1.723%, delta=5.712%, BCER train=19.697%, BWER train=35.981%, skip ratio=12.889%, New best BCER = 19.697 wrote best model:training_data/staged_tuning/run_custom_big_lr_big_decay_dr7_mx4_output/chr_19.697_642_900.checkpoint wrote checkpoint.
+Encoding of string failed! Failure bytes: 34 35 20 e1 8e ac e1 8f a9 e1 8f a0 e1 8f a8 e1 8f 83 20 e1 8e a2 e1 8e a4 e1 8e be e1 8f a8 e1 8f 8e e1 8e a2 20 e1 8f a5 e1 8e b7 e1 8f 8f e1 8e b5 e1 8e bb
+Can't encode transcription: '45 ᎬᏩᏠᏨᏃ ᎢᎤᎾᏨᏎᎢ ᏥᎷᏏᎵᎻ' in language ''
+Encoding of string failed! Failure bytes: 3f 20 ea ae 8d e1 8e a0 e1 8e b4
+Can't encode transcription: 'ᎤᎾᏛᎦᏅᎯ ᏂᎨᏒᎾ ᏱᎩ ᎡᎲᎢ? ꮍᎠᎴ' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a0 e1 8e b4 20 e1 8e a2 e1 8f a3 e1 8f 93 e1 8e a6 e1 8f 8c e1 8f af e1 8f 8d e1 8f 95 e1 8f 8d e1 8f 97 20 e1 8e a2 e1 8f a8 e1 8f 92
+Can't encode transcription: '34 ᎠᎴ ᎢᏣᏓᎦᏌᏯᏍᏕᏍᏗ ᎢᏨᏒ' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8e a0 e1 8f b2 e1 8e b1 2d
+Can't encode transcription: 'ᏁᏉᏤᎮ ᎾᏍᎩ ᎪᎯ ᏥᏣᏕᎰᏍᎦ? ᎠᏲᎱ-' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8f a3 e1 8f a0 e1 8e be e1 8f 8d e1 8f 97 21 20 e1 8e a2 2d
+Can't encode transcription: 'ᎠᏓ ᏨᏒ ᏣᎦᏑᎲᎢ? ᏣᏠᎾᏍᏗ! Ꭲ-' in language ''
+Encoding of string failed! Failure bytes: 22 e1 8f 85 e1 8f af 20 e1 8e a0 e1 8f 93 e1 8e bf e1 8e ad e1 8f 8d e1 8f 86 e1 8e b6 e1 8f 8d e1 8f 97 e1 8f 8d e1 8e a9
+Can't encode transcription: '8 ᎠᎴ "ᏅᏯ ᎠᏓᎿᎭᏍᏆᎶᏍᏗᏍᎩ' in language ''
+Encoding of string failed! Failure bytes: 5b e1 8e a7 e1 8f 83 e1 8e ae e1 8f 9b 2c 5d
+Can't encode transcription: '15 ᏣᏂ ᎧᏃᎮᏍᎬᎩ ᎾᏍᎩ [ᎧᏃᎮᏛ,]' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a6 e1 8e b6 e1 8f 81 e1 8f 9b 20 e1 8e aa e1 8e b1 e1 8f 8d e1 8f 97 20 e1 8e a6 e1 8f b0 e1 8f a3 e1 8e b5 e1 8f 8d e1 8f 95 e1 8e b8 e1 8f 99 e1 8f 97
+Can't encode transcription: '4 ᎦᎶᏁᏛ ᎪᎱᏍᏗ ᎦᏰᏣᎵᏍᏕᎸᏙᏗ' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8e a6 e1 8f 99 20 e1 8e a0 e1 8f 97 e1 8e ad 20 e1 8e a4 e1 8f 81 e1 8e b3 e1 8f 85 e1 8e af 20 e1 8e a4 2d
+Can't encode transcription: '4 ᎠᏎᏃ ᎦᏙ ᎠᏗᎭ ᎤᏁᎳᏅᎯ Ꭴ-' in language ''
+Encoding of string failed! Failure bytes: 5b e1 8f a5 e1 8f 8c 5d 20 e1 8f a5 e1 8f af e1 8e a0 20 e1 8f af e1 8f 97 e1 8e ad 2c 20 5b e1 8f a5 e1 8f 8c 5d
+Can't encode transcription: '6 ᎩᎶ [ᏥᏌ] ᏥᏯᎠ ᏯᏗᎭ, [ᏥᏌ]' in language ''
+2 Percent improvement time=318, best error was 22.3 @ 385
+At iteration 703/1000/1126, mean rms=1.701%, delta=5.566%, BCER train=19.335%, BWER train=35.494%, skip ratio=12.600%, New best BCER = 19.335 wrote checkpoint.
+Finished! Selected model with minimal training error rate (BCER) = 19.335

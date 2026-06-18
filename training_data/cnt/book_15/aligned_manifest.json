@@ -1,0 +1,4801 @@
+{
+  "150101": {
+    "image_path": "images/150101.png",
+    "cherokee_gt": "ᎠᏴ ᏉᎳ ᏥᏌ ᎦᎶᏁᏛ ᎠᎩᏅᏏᏛ ᎬᎩᏁᏤᎸᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵᏍᎩ ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎾᏍᎩ ᎤᏚᎩ ᎬᏗ ᎨᏒ ᎢᎦᏤᎵᎦ,",
+    "verse_number": "1",
+    "lines": [
+      {
+        "line_crop": "line_crops/150101_line_00.png",
+        "stock_aligned": "1 ᎠᏴ ᏉᎳ ᏥᏌ ᎦᎶᏁᏛ ᎠᎩᏅᏏᏛ",
+        "stock_raw_ocr": "Ꭲ.ᎠᏰ ᏉᎳ ᏥᏌ ᏕᎦᎶᏁᏛ ᎠᎩᏅᏏᏛ",
+        "ftm_aligned": "1 ᎠᏴ ᏉᎳ ᏥᏌ ᎦᎶᏁᏛ ᎠᎩᏅᏏᏛ",
+        "ftm_raw_ocr": "ᎢᎠᏴᏉᎳ ᏥᏌ ᎦᎶᏁᏛ ᎠᎩᏅᏏᏛ",
+        "ftm_confidence": 54.0
+      },
+      {
+        "line_crop": "line_crops/150101_line_01.png",
+        "stock_aligned": "ᎬᎩᏁᏤᎸᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵᏍᎩ",
+        "stock_raw_ocr": "ᎬᎩᏁᏤᎸᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵᏍᎩ",
+        "ftm_aligned": "ᎬᎩᏁᏤᎸᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵᏍᎩ",
+        "ftm_raw_ocr": "ᎬᎩᏁᏤᎸᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵᏍᎩ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150101_line_02.png",
+        "stock_aligned": "ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎾᏍᎩ",
+        "stock_raw_ocr": "ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎾᏍᎩ",
+        "ftm_aligned": "ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎾᏍᎩ",
+        "ftm_raw_ocr": "ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎾᏍᎩ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150101_line_03.png",
+        "stock_aligned": "ᎤᏚᎩ ᎬᏗ ᎨᏒ ᎢᎦᏤᎵᎦ,",
+        "stock_raw_ocr": "ᎤᏚᎩ ᎬᏘ ᎨᏒ ᎢᎦᏤᎵᎦ,",
+        "ftm_aligned": "ᎤᏚᎩ ᎬᏗ ᎨᏒ ᎢᎦᏤᎵᎦ,",
+        "ftm_raw_ocr": "ᎤᏚᎩ ᎬᏗ ᎨᏒᏴ ᎢᎦᏤᎵᎦ,",
+        "ftm_confidence": 73.0
+      }
+    ]
+  },
+  "150102": {
+    "image_path": "images/150102.png",
+    "cherokee_gt": "ᏫᎬᏲᏪᎳᏏ ᏘᎹᏗ ᎠᏋᏒ ᎠᏆᏤᎵ ᎠᏊᏥ ᎪᎯᏳᏗ ᎨᏒ ᎢᏳᏩᏂᏌᏛ; ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎠᎴ ᎤᏓᏙᎵᏣᏛ ᎨᏒ ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᏕᏣᎧᎿᎭᏩᏗᏙᎮᏍᏗ ᏅᏓᏳᎾᎵᏍᎪᎸᏔᏅᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ ᏥᏌ ᎦᎶᏁᏛ ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵᎦ.",
+    "verse_number": "2",
+    "lines": [
+      {
+        "line_crop": "line_crops/150102_line_00.png",
+        "stock_aligned": "2 ᏫᎬᏲᏪᎳᏏ ᏘᎹᏗ ᎠᏋᏒ ᎠᏆᏤᎵ",
+        "stock_raw_ocr": "29 ᏫᎬᏲᏪᎳᏏ ᏘᎹᏘ ᎠᎦᎡ ᎠᏆᏤᎵ",
+        "ftm_aligned": "2 ᏫᎬᏲᏪᎳᏏ ᏘᎹᏗ ᎠᏋᏒ ᎠᏆᏤᎵ",
+        "ftm_raw_ocr": "2 ᏫᎬᏲᏪᎳᏏ ᏗᎹᏗ ᎠᎦᏒ ᎠᏆᏤᎵ",
+        "ftm_confidence": 59.0
+      },
+      {
+        "line_crop": "line_crops/150102_line_01.png",
+        "stock_aligned": "ᎠᏊᏥ ᎪᎯᏳᏗ ᎨᏒ ᎢᏳᏩᏂᏌᏛ; Ꭼ-",
+        "stock_raw_ocr": "ᎠᏊᏥ ᎪᎯᏳᏗ ᎨᏒ ᎢᏳᏩᏂᏌᏛ; Ꭼ-",
+        "ftm_aligned": "ᎠᏊᏥ ᎪᎯᏳᏗ ᎨᏒ ᎢᏳᏩᏂᏌᏛ; Ꭼ-",
+        "ftm_raw_ocr": "ᎠᏯᏥ ᎪᎯᏳᏗ ᎨᏒ ᎢᏳᏩᏂᏌᏛᎥ; Ꭼ-",
+        "ftm_confidence": 76.0
+      },
+      {
+        "line_crop": "line_crops/150102_line_02.png",
+        "stock_aligned": "ᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎠᎴ ᎤᏓᏙᎵ-",
+        "stock_raw_ocr": "ᏩᎦᏘᏯ ᎤᏓᏙᏝᏍᏗ ᎨᏒ ᎠᎴ ᎤᏓᏙᎵ-",
+        "ftm_aligned": "ᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎠᎴ ᎤᏓᏙᎵ-",
+        "ftm_raw_ocr": "ᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎠᎴ ᎤᏓᏙᎵ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150102_line_03.png",
+        "stock_aligned": "ᏣᏛ ᎨᏒ ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᏕᏣᎧᎿᎭᏩᏗᏙᎮᏍᏗ",
+        "stock_raw_ocr": "ᏣᏛ ᎨᏒ ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᏕᏣᎧᎿᏩᎩ",
+        "ftm_aligned": "ᏣᏛ ᎨᏒ ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᏕᏣᎧᎿᎭᏩ-",
+        "ftm_raw_ocr": "ᏣᏛ ᎨᏒ ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᏕᏣᎧᎿᏩ-",
+        "ftm_confidence": 71.0
+      },
+      {
+        "line_crop": "line_crops/150102_line_04.png",
+        "stock_aligned": "ᏅᏓᏳᎾᎵᏍᎪᎸᏔᏅᎯ ᎤᏁ-",
+        "stock_raw_ocr": "ᏗᏙᎮᏍᏘ ᏅᏓᏳᎾᎵᏍᎪᎸᏔᏅᎯ ᎤᏁ-",
+        "ftm_aligned": "ᏗᏙᎮᏍᏗ ᏅᏓᏳᎾᎵᏍᎪᎸᏔᏅᎯ ᎤᏁ-",
+        "ftm_raw_ocr": "ᏗᏙᎮᏍᏗ ᏅᏓᏳᎾᎵᏍᎪᎸᏔᏅᎯ ᎤᏁ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150102_line_05.png",
+        "stock_aligned": "ᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ ᏥᏌ ᎦᎶᏁᏛ Ꭴ-",
+        "stock_raw_ocr": "ᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ ᏥᏌ ᎦᎶᏁᏛ Ꭴ-",
+        "ftm_aligned": "ᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ ᏥᏌ ᎦᎶᏁᏛ Ꭴ-",
+        "ftm_raw_ocr": "ᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ ᏥᏌ ᎦᎶᏁᏛ Ꭴ-",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150102_line_06.png",
+        "stock_aligned": "ᎬᏫᏳᎯ ᎢᎦᏤᎵᎦ.",
+        "stock_raw_ocr": "ᎬᏫᏳᎯ ᎢᎦᏤᎵᏝᎦ.",
+        "ftm_aligned": "ᎬᏫᏳᎯ ᎢᎦᏤᎵᎦ.",
+        "ftm_raw_ocr": "ᎬᏫᏳᎯ ᎢᎦᏤᎵᏝᎦ.",
+        "ftm_confidence": 49.0
+      }
+    ]
+  },
+  "150103": {
+    "image_path": "images/150103.png",
+    "cherokee_gt": "ᎾᏃ ᏥᎬᏔᏲᏎᎸᎩ ᏣᏗᎩᏯᏍᏗᏱ ᎡᏈᏌ, ᎹᏏᏙᏁ ᏥᏩᎩᎶᏒᎩ, ᎾᏍᎩ ᏘᏅᏍᏓᏕᏗᏱ ᎩᎶ ᏓᎾᏕᏲᎲᏍᎬ ᎤᏣᏘᏂ ᎢᏳᏂᏪᏍᏗᏱ ᏂᎨᏒᎾ,",
+    "verse_number": "3",
+    "lines": [
+      {
+        "line_crop": "line_crops/150103_line_00.png",
+        "stock_aligned": "3 ᎾᏃ ᏥᎬᏔᏲᏎᎸᎩ ᏣᏗᎩᏯᏍᏗᏱ",
+        "stock_raw_ocr": "8 ᎾᏃ ᏥᎬᏔᏲᏎᎸᎩ ᏣᏘᎩᏯᏍᏘᏱ",
+        "ftm_aligned": "3 ᎾᏃ ᏥᎬᏔᏲᏎᎸᎩ ᏣᏗᎩᏯᏍᏗᏱ",
+        "ftm_raw_ocr": "3 ᎾᏃ ᏥᎬᏔᏲᏎᎸᎩ ᏣᏗᎩᏯᏍᏗᏱ",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150103_line_01.png",
+        "stock_aligned": "ᎡᏈᏌ, ᎹᏏᏙᏁ ᏥᏩᎩᎶᏒᎩ, ᎾᏍᎩ Ꮨ-",
+        "stock_raw_ocr": "ᎡᏈᏌ, Ꮉ.ᏏᏙᏂ ᏥᏩᎩᎶᏒᎩ, ᎾᏍᎩ Ꭿ-",
+        "ftm_aligned": "ᎡᏈᏌ, ᎹᏏᏙᏁ ᏥᏩᎩᎶᏒᎩ, ᎾᏍᎩ Ꮨ-",
+        "ftm_raw_ocr": "ᎡᏈᏌ, ᎹᏏᏙᏂ ᏥᏩᎩᎶᏒᎩ, ᎾᏍᎩ Ꮨ-",
+        "ftm_confidence": 67.0
+      },
+      {
+        "line_crop": "line_crops/150103_line_02.png",
+        "stock_aligned": "ᏅᏍᏓᏕᏗᏱ ᎩᎶ ᏓᎾᏕᏲᎲᏍᎬ ᎤᏣᏘᏂ",
+        "stock_raw_ocr": "ᏅᏍᏓᏕᏗᏱ ᎩᎶ ᏓᎾᏕᏲᎲᏍᎬ ᎤᏣᏘᏂ",
+        "ftm_aligned": "ᏅᏍᏓᏕᏗᏱ ᎩᎶ ᏓᎾᏕᏲᎲᏍᎬ ᎤᏣᏘᏂ",
+        "ftm_raw_ocr": "ᏅᏍᏓᏕᏗᏱ ᎩᎶ ᏓᎾᏕᏲᎲᏍᎬ ᎤᏣᏘᏂ",
+        "ftm_confidence": 71.0
+      },
+      {
+        "line_crop": "line_crops/150103_line_03.png",
+        "stock_aligned": "ᎢᏳᏂᏪᏍᏗᏱ ᏂᎨᏒᎾ,",
+        "stock_raw_ocr": "ᎢᏳᏂᏪᏍᏗᏱ ᏂᎨᎡᎾ,",
+        "ftm_aligned": "ᎢᏳᏂᏪᏍᏗᏱ ᏂᎨᏒᎾ,",
+        "ftm_raw_ocr": "ᎢᏳᏂᏪᏍᏗᏱ ᏂᎨᏒᎾ,",
+        "ftm_confidence": 85.0
+      }
+    ]
+  },
+  "150104": {
+    "image_path": "images/150104.png",
+    "cherokee_gt": "ᎠᎴ ᎤᎾᏛᏓᏍᏙᏗᏱ ᏂᎨᏒᎾ ᎠᏎᏉ ᎦᏬᏂᎯᏍᏗ ᎨᏒ ᎠᎴ ᏫᎾᏍᏛᎾ ᎧᏃᎮᏗ ᎨᏒ ᎤᎾᏓᏁᏟᏴᏒᏒᎢ, ᎾᏍᎩ ᎦᏬᏂᎯᏍᏗᏉ ᏥᏩᎵᏱᎶᎯᎭ ᎥᏲᏃ ᎤᏁᎳᏅᎯ ᏗᏁᎳᏙᏗ ᎨᏒ ᎤᏛᎯᏍᏗᏱ, ᎾᏍᎩ ᎪᎯᏳᏗ ᎨᏒ ᏨᏗᏓᎴᎲᏍᎦ, [ᎾᏍᎩ ᎿᎭᏛᏁᎸᎭ.]",
+    "verse_number": "4",
+    "lines": [
+      {
+        "line_crop": "line_crops/150104_line_00.png",
+        "stock_aligned": "4 ᎠᎴ ᎤᎾᏛᏓᏍᏙᏗᏱ ᏂᎨᏒᎾ ᎠᏎᏉ",
+        "stock_raw_ocr": "Ꮞ ᎠᎴ ᎤᎧᎾᏛᏓᏍᎩᏗᏱ ᏂᎨᏒᎾ ᎠᏎᏉ",
+        "ftm_aligned": "4 ᎠᎴ ᎤᎾᏛᏓᏍᏙᏗᏱ ᏂᎨᏒᎾ ᎠᏎᏉ",
+        "ftm_raw_ocr": "Ꮞ ᎠᎴ ᎤᎾᏛᏓᏍᎩᏗᏱ ᏂᎨᏒᎾ ᎠᏎᏉ",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150104_line_01.png",
+        "stock_aligned": "ᎦᏬᏂᎯᏍᏗ ᎨᏒ ᎠᎴ ᏫᎾᏍᏛᎾ ᎧᏃᎮᏗ",
+        "stock_raw_ocr": "ᎦᏬᏂᎯᏍᏗ ᎨᎢ ᎠᎴ ᏫᎾᏍᏛᎾ ᎧᏃᎮᏗ",
+        "ftm_aligned": "ᎦᏬᏂᎯᏍᏗ ᎨᏒ ᎠᎴ ᏫᎾᏍᏛᎾ ᎧᏃᎮᏗ",
+        "ftm_raw_ocr": "ᎦᏬᏂᎯᏍᏗ ᎨᏒ ᎠᎴ ᏫᎾᏍᏛᎾ ᎧᏃᎮᏗ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150104_line_02.png",
+        "stock_aligned": "ᎨᏒ ᎤᎾᏓᏁᏟᏴᏒᏒᎢ, ᎾᏍᎩ ᎦᏬᏂ-",
+        "stock_raw_ocr": "ᏥᎠᏒ ᎤᎾᏓᏁᏟᏴᏒᏒᎢ, ᎾᏍᎩ ᎦᏬᏂ-",
+        "ftm_aligned": "ᎨᏒ ᎤᎾᏓᏁᏟᏴᏒᏒᎢ, ᎾᏍᎩ ᎦᏬᏂ-",
+        "ftm_raw_ocr": "ᎨᏒ ᎤᎾᏓᏁᏟᏴᏒᏒᎢ, ᎾᏍᎩ ᎦᏬᏂ-",
+        "ftm_confidence": 72.0
+      },
+      {
+        "line_crop": "line_crops/150104_line_03.png",
+        "stock_aligned": "ᎯᏍᏗᏉ ᏥᏩᎵᏱᎶᎯᎭ ᎥᏲᏃ ᎤᏁᎳᏅᎯ",
+        "stock_raw_ocr": "ᎯᏍᏗᏉ ᏥᏩᎵᏱᎶᎯᎭ ᎥᏲᏃ ᎤᏁᎳᏅᎯ",
+        "ftm_aligned": "ᎯᏍᏗᏉ ᏥᏩᎵᏱᎶᎯᎭ ᎥᏲᏃ ᎤᏁᎳᏅᎯ",
+        "ftm_raw_ocr": "ᎯᏍᏗᏉ ᏥᏩᎵᏱᎶᎯᎭ ᎥᏲᏃ ᎤᏁᎳᏅᎯ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150104_line_04.png",
+        "stock_aligned": "ᏗᏁᎳᏙᏗ ᎨᏒ ᎤᏛᎯᏍᏗᏱ, ᎾᏍᎩ",
+        "stock_raw_ocr": "ᏘᏁᎳᏙᏗ ᎨᏒ ᎤᏛᎯᏍᏗᏱ, ᎾᏍᎩ",
+        "ftm_aligned": "ᏗᏁᎳᏙᏗ ᎨᏒ ᎤᏛᎯᏍᏗᏱ, ᎾᏍᎩ",
+        "ftm_raw_ocr": "ᏗᏁᎳᏙᏗ ᎨᏒ ᎤᏛᎯᏍᏗᏱ, ᎾᏍᎩ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150104_line_05.png",
+        "stock_aligned": "ᎪᎯᏳᏗ ᎨᏒ ᏨᏗᏓᎴᎲᏍᎦ, [ᎾᏍᎩ",
+        "stock_raw_ocr": "ᎪᎯᏳᏛᏗ ᎨᏒ ᏨᏗᏓᎴᎲᏍᎦ, ᎥᎾᏍᎩ",
+        "ftm_aligned": "ᎪᎯᏳᏗ ᎨᏒ ᏨᏗᏓᎴᎲᏍᎦ, [ᎾᏍᎩ",
+        "ftm_raw_ocr": "ᎪᎯᏳᏗ ᎨᏒ ᏨᏗᏓᎴᎲᏍᎦ, ᎾᏍᎩ",
+        "ftm_confidence": 76.0
+      },
+      {
+        "line_crop": "line_crops/150104_line_06.png",
+        "stock_aligned": "ᎿᎭᏛᏁᎸᎭ.]",
+        "stock_raw_ocr": "ᎿᏛᏁᎸᎭᏁ",
+        "ftm_aligned": "ᎿᎭᏛᏁᎸᎭ.]",
+        "ftm_raw_ocr": "ᎿᏛᏁᎸᎭᏁ",
+        "ftm_confidence": 70.0
+      }
+    ]
+  },
+  "150105": {
+    "image_path": "images/150105.png",
+    "cherokee_gt": "ᏗᎧᎿᎭᏩᏛᏍᏗ ᎠᏓᎨᏳᏗ ᎨᏒ ᎤᎬᏩᎳ ᎾᏍᎩ ᎦᏓᎭ ᏂᎨᏒᎾ ᎣᎾᏫ ᏅᏓᏳᏓᎴᏅᎯ, ᎠᎴ ᎣᏍᏛ ᏗᎫᎪᏙᏗ ᎨᏒ ᎠᎴ ᏄᏠᎾᏍᏛᎾ ᎪᎯᏳᏗ ᎨᏒᎢ;",
+    "verse_number": "5",
+    "lines": [
+      {
+        "line_crop": "line_crops/150105_line_00.png",
+        "stock_aligned": "5 ᏗᎧᎿᎭᏩᏛᏍᏗ ᎠᏓᎨᏳᏗ ᎨᏒ Ꭴ-",
+        "stock_raw_ocr": "5Ꮦ ᏗᎧᎿᏩᏛᏍᏗ ᎠᏓᎨᏳᏘ ᎨᏒ ᎤᏅ-",
+        "ftm_aligned": "5 ᏗᎧᎿᎭᏩᏛᏍᏗ ᎠᏓᎨᏳᏗ ᎨᏒ Ꭴ-",
+        "ftm_raw_ocr": "5 ᏗᎧᎿᏩᏛᏍᏗ ᎠᏓᎨᏳᏗ ᎨᏒ Ꭴ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150105_line_01.png",
+        "stock_aligned": "ᎬᏩᎳ ᎾᏍᎩ ᎦᏓᎭ ᏂᎨᏒᎾ ᎣᎾᏫ",
+        "stock_raw_ocr": "ᎬᏩᎳ ᎾᏍᎩ ᎦᏓᎭ ᏂᎨᏒᎾ ᎣᎾᏫ",
+        "ftm_aligned": "ᎬᏩᎳ ᎾᏍᎩ ᎦᏓᎭ ᏂᎨᏒᎾ ᎣᎾᏫ",
+        "ftm_raw_ocr": "ᎬᏩᎳ ᎾᏍᎩ ᎦᏓᎭ ᏂᎨᏒᎾ ᎣᎾᏫ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150105_line_02.png",
+        "stock_aligned": "ᏅᏓᏳᏓᎴᏅᎯ, ᎠᎴ ᎣᏍᏛ ᏗᎫᎪᏙᏗ",
+        "stock_raw_ocr": "ᏅᏓᏳᏓᎴᏅᎯ, ᎠᎴ ᎣᏍᏛ ᏗᎫᎪᏙᏗ",
+        "ftm_aligned": "ᏅᏓᏳᏓᎴᏅᎯ, ᎠᎴ ᎣᏍᏛ ᏗᎫᎪᏙᏗ",
+        "ftm_raw_ocr": "ᏅᏓᏳᏓᎴᏅᎯ, ᎠᎴ ᎣᏍᏛ ᏗᎫᎪᏙᏗ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150105_line_03.png",
+        "stock_aligned": "ᎨᏒ ᎠᎴ ᏄᏠᎾᏍᏛᎾ ᎪᎯᏳᏗ ᎨᏒᎢ;",
+        "stock_raw_ocr": "ᏥᏒ ᎠᎴ ᏄᏠᎾᏍᏛᎾ ᎪᎯᏳᏗ ᏥᎨᏒᎢ :",
+        "ftm_aligned": "ᎨᏒ ᎠᎴ ᏄᏠᎾᏍᏛᎾ ᎪᎯᏳᏗ ᎨᏒᎢ;",
+        "ftm_raw_ocr": "ᎨᏴ ᎠᎴ ᏄᏠᎾᏍᏛᎾ ᎪᎯᏳᏗ ᎨᏒᎢ;",
+        "ftm_confidence": 80.0
+      }
+    ]
+  },
+  "150106": {
+    "image_path": "images/150106.png",
+    "cherokee_gt": "ᎾᏍᎩ ᎾᎿᎭᎩᎶ ᎤᎾᎪᎸᏛ ᏥᎩ, ᏄᎵᏌᎶᏛᎾ ᎦᏬᏂᎯᏍᏗ ᎨᏒ ᏭᎾᎦᏔᎲᏍᏔᏅ;",
+    "verse_number": "6",
+    "lines": [
+      {
+        "line_crop": "line_crops/150106_line_00.png",
+        "stock_aligned": "6 ᎾᏍᎩ ᎾᎿᎭᎩᎶ ᎤᎾᎪᎸᏛ ᏥᎩ,",
+        "stock_raw_ocr": "Ꮾ ᎾᏍᎩ ᏮᎾᎿ ᎩᎶ ᎤᏮᎾᎪᎸᏛ ᏥᎩ,",
+        "ftm_aligned": "6 ᎾᏍᎩ ᎾᎿᎭᎩᎶ ᎤᎾᎪᎸᏛ ᏥᎩ,",
+        "ftm_raw_ocr": "ᎾᏮ ᎾᏍᎩ ᎾᎿ ᎩᎶ ᎤᎾᎪᎸᏛ ᏥᎩ,",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150106_line_01.png",
+        "stock_aligned": "ᏄᎵᏌᎶᏛᎾ ᎦᏬᏂᎯᏍᏗ ᎨᏒ ᏭᎾᎦᏔᎲᏍᏔᏅ;",
+        "stock_raw_ocr": "ᏄᎵᏌᎶᏛᎾ ᎦᏬᏂᎯᏍᏗ ᏥᏝᎠ ᏭᎾᎦᏔᏅ",
+        "ftm_aligned": "ᏄᎵᏌᎶᏛᎾ ᎦᏬᏂᎯᏍᏗ ᎨᏒ ᏭᎾᎦᏔ-",
+        "ftm_raw_ocr": "ᏄᎵᏌᎶᏛᎾ ᎦᏬᏂᎯᏍᏗ ᎨᏒ ᏭᎾᎦᏔ-",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150106_line_02.png",
+        "stock_aligned": "",
+        "stock_raw_ocr": "ᎲᏍᏔᏅ ;Ꮆ",
+        "ftm_aligned": "ᎲᏍᏔᏅ;",
+        "ftm_raw_ocr": "ᎲᏍᏔᏅ ;",
+        "ftm_confidence": 60.0
+      }
+    ]
+  },
+  "150107": {
+    "image_path": "images/150107.png",
+    "cherokee_gt": "ᎤᎾᏚᎵᏍᎬᎩ ᏗᎧᎿᎭᏩᏛᏍᏗ ᏗᏃᏏᏏᏍᎩ ᎢᏳᎾᎵᏍᏙᏗᏱ, ᎠᏎᏃ ᎾᏃᎵᎬᎾ ᏄᏍᏛ ᎠᏂᏬᏂᏍᎬ, ᎠᎴ ᏄᏍᏛ ᎠᏂᏍᏓᏱᏗᏍᎬᎢ.",
+    "verse_number": "7",
+    "lines": [
+      {
+        "line_crop": "line_crops/150107_line_00.png",
+        "stock_aligned": "7 ᎤᎾᏚᎵᏍᎬᎩ ᏗᎧᎿᎭᏩᏛᏍᏗ ᏗᏃ-",
+        "stock_raw_ocr": "7 ᎤᏮᎦᎵᏍᎬᎩ ᏘᎧᎿᏩᏛᏍᏗ ᏗᏃ-",
+        "ftm_aligned": "7 ᎤᎾᏚᎵᏍᎬᎩ ᏗᎧᎿᎭᏩᏛᏍᏗ ᏗᏃ-",
+        "ftm_raw_ocr": "7 ᎤᎾᎦᎵᏍᎬᎩ ᏗᎧᎿᏩᏛᏍᏗ ᏗᏃ-",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150107_line_01.png",
+        "stock_aligned": "ᏏᏏᏍᎩ ᎢᏳᎾᎵᏍᏙᏗᏱ, ᎠᏎᏃ ᎾᏃᎵᎬᎾ",
+        "stock_raw_ocr": "ᏏᏏᏍᎩ ᎢᏳᎾᎵᏍᏙᏗᏱ, ᎠᏎᏃ ᎧᏃ ᎵᎬᎾ",
+        "ftm_aligned": "ᏏᏏᏍᎩ ᎢᏳᎾᎵᏍᏙᏗᏱ, ᎠᏎᏃ ᎾᏃᎵᎬᎾ",
+        "ftm_raw_ocr": "ᏏᏏᏍᎩ ᎢᏳᎾᎵᏍᏙᏗᏱ, ᎠᏎᏃ ᎾᏃ ᎵᏝᎬᎾ",
+        "ftm_confidence": 73.0
+      },
+      {
+        "line_crop": "line_crops/150107_line_02.png",
+        "stock_aligned": "ᏄᏍᏛ ᎠᏂᏬᏂᏍᎬ, ᎠᎴ ᏄᏍᏛ",
+        "stock_raw_ocr": "ᏄᏍᏛ ᎠᏂᏬᏂᏍᎬ, ᎠᎴ ᏄᏍᏛ ᎠᏂᎹᏝ-",
+        "ftm_aligned": "ᏄᏍᏛ ᎠᏂᏬᏂᏍᎬ, ᎠᎴ ᏄᏍᏛ ᎠᏂ-",
+        "ftm_raw_ocr": "ᏄᏍᏛ ᎠᏂᏬᏂᏍᎬ, ᎠᎴ ᏄᏍᏛ ᎠᏂ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150107_line_03.png",
+        "stock_aligned": "ᎠᏂᏍᏓᏱᏗᏍᎬᎢ.",
+        "stock_raw_ocr": "ᏍᏱᏓᏱᏘᏍᎬᎢ,.",
+        "ftm_aligned": "ᏍᏓᏱᏗᏍᎬᎢ.",
+        "ftm_raw_ocr": "ᏍᏓᏱᏗᏍᎬᎢ.",
+        "ftm_confidence": 82.0
+      }
+    ]
+  },
+  "150108": {
+    "image_path": "images/150108.png",
+    "cherokee_gt": "ᎠᏎᏃ ᎢᏗᎦᏔᎭ ᏗᎧᎿᎭᏩᏛᏍᏗ ᎣᏏᏳ ᎨᏒ, ᎢᏳᏃ ᎩᎶ ᎤᏙᎯᏳᎯᏯ ᏱᏓᎧᎿᎭᏩᏕᎦ,",
+    "verse_number": "8",
+    "lines": [
+      {
+        "line_crop": "line_crops/150108_line_00.png",
+        "stock_aligned": "8 ᎠᏎᏃ ᎢᏗᎦᏔᎭ ᏗᎧᎿᎭᏩᏛᏍᏗ",
+        "stock_raw_ocr": "Ꮪ ᎠᏎᏃ ᎢᏘᎦᏔᎭ ᏗᎧᎿᏩᏛᏍᏘ Ꭳ“",
+        "ftm_aligned": "8 ᎠᏎᏃ ᎢᏗᎦᏔᎭ ᏗᎧᎿᎭᏩᏛᏍᏗ Ꭳ-",
+        "ftm_raw_ocr": "Ꮪ ᎠᏎᏃ ᎢᏗᎦᏔᎭ ᏗᎧᎿᏩᏛᏍᏗ Ꭳ-",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150108_line_01.png",
+        "stock_aligned": "ᎣᏏᏳ ᎨᏒ, ᎢᏳᏃ ᎩᎶ ᎤᏙᎯᏳᎯᏯ",
+        "stock_raw_ocr": "ᏏᏳ ᏥᏂᎡᏒ, ᎢᏳᏃ ᎩᎶ ᎤᏙᎯᏳᎯᏯ Ᏹ”",
+        "ftm_aligned": "ᏏᏳ ᎨᏒ, ᎢᏳᏃ ᎩᎶ ᎤᏙᎯᏳᎯᏯ Ᏹ-",
+        "ftm_raw_ocr": "ᏏᏳ ᎨᏒ, ᎢᏳᏃ ᎩᎶ ᎤᏙᎯᏳᎯᏯ Ᏹ-",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150108_line_02.png",
+        "stock_aligned": "ᏱᏓᎧᎿᎭᏩᏕᎦ,",
+        "stock_raw_ocr": "ᏓᎧᎿᏩᏕᎦ,",
+        "ftm_aligned": "ᏓᎧᎿᎭᏩᏕᎦ,",
+        "ftm_raw_ocr": "ᏓᎧᎿᏩᏕᎦ,",
+        "ftm_confidence": 82.0
+      }
+    ]
+  },
+  "150109": {
+    "image_path": "images/150109.png",
+    "cherokee_gt": "ᎯᎠ ᎾᏍᏉ ᏯᎦᏔᎭ, ᎾᏍᎩ ᏗᎧᎿᎭᏩᏛᏍᏗ ᎤᏓᏅᏘ ᏴᏫ ᎠᎪᏢᎾᏁᎸᎯ ᏂᎨᏒᎾ ᎨᏒᎢ, ᏗᎧᎿᎭᏩᏛᏍᏗᏍᎩᏂ ᏂᏚᎾᏁᎶᏛᎾ, ᎠᎴ ᏄᏃᎯᏳᏒᎾ, ᎤᏁᎳᏅᎯ ᏂᏚᎾᏁᎶᏛᎾ, ᎠᎴ ᎠᏂᏍᎦᎾᎢ, ᎠᏂᎦᏓᎭᎢ, ᎠᎴ ᎣᏍᏛ ᎨᏒ ᎠᏂᏂᏆᏘᎯ, ᏧᏂᏙᏓ ᏗᏂᎯᎯ ᎠᎴ ᏧᏂᏥ ᏗᏂᎯᎯ, ᏴᏫ ᏗᏂᎯᎯ,",
+    "verse_number": "9",
+    "lines": [
+      {
+        "line_crop": "line_crops/150109_line_00.png",
+        "stock_aligned": "9 ᎯᎠ ᎾᏍᏉ ᏯᎦᏔᎭ, ᎾᏍᎩ",
+        "stock_raw_ocr": "9 ᎯᎠ ᎾᏍᏉ ᏯᎦᏔᎭ, ᎾᏍᎩ ᏗᎧᏅ",
+        "ftm_aligned": "9 ᎯᎠ ᎾᏍᏉ ᏯᎦᏔᎭ, ᎾᏍᎩ ᏗᎧ-",
+        "ftm_raw_ocr": "3 ᎯᎠ ᎾᏍᏉ ᏯᎦᏔᎭ, ᎾᏍᎩ ᏗᎧ-",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150109_line_01.png",
+        "stock_aligned": "ᏗᎧᎿᎭᏩᏛᏍᏗ ᎤᏓᏅᏘ ᏴᏫ ᎠᎪᏢᎾᏁᎸᎯ",
+        "stock_raw_ocr": "ᎿᏩᏛᏍᏘ ᎤᏓᏅᏘ ᏴᏫ ᎠᎪᏢᎾᏁᎸᎯ",
+        "ftm_aligned": "ᎿᎭᏩᏛᏍᏗ ᎤᏓᏅᏘ ᏴᏫ ᎠᎪᏢᎾᏁᎸᎯ",
+        "ftm_raw_ocr": "ᎿᏩᏛᏍᏗ ᎤᏓᏅᏘ ᏴᏫ ᎠᎪᏢᎾᏁᎸᎯ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150109_line_02.png",
+        "stock_aligned": "ᏂᎨᏒᎾ ᎨᏒᎢ, ᏗᎧᎿᎭᏩᏛᏍᏗᏍᎩᏂ",
+        "stock_raw_ocr": "ᏂᎨᏒᎧ ᎨᏝᏒᎢ;, ᏗᎧᎿᏩᏛᏍᏗᏍᎩᏂ ᏂᎩ",
+        "ftm_aligned": "ᏂᎨᏒᎾ ᎨᏒᎢ, ᏗᎧᎿᎭᏩᏛᏍᏗᏍᎩᏂ Ꮒ-",
+        "ftm_raw_ocr": "ᏂᎨᏒᎾ ᎨᏒᎢ, ᏗᎧᎿᏩᏛᏍᏗᏍᎩᏂ Ꮒ-",
+        "ftm_confidence": 71.0
+      },
+      {
+        "line_crop": "line_crops/150109_line_03.png",
+        "stock_aligned": "ᏂᏚᎾᏁᎶᏛᎾ, ᎠᎴ ᏄᏃᎯᏳᏒᎾ, ᎤᏁᎳ-",
+        "stock_raw_ocr": "ᏚᏮᏁᎶᏛᎾ, ᎠᎴ ᏄᏃᎯᏳᏒᎾ, ᎤᏁᎳᎩ-",
+        "ftm_aligned": "ᏚᎾᏁᎶᏛᎾ, ᎠᎴ ᏄᏃᎯᏳᏒᎾ, ᎤᏁᎳ-",
+        "ftm_raw_ocr": "ᏚᎾᏁᎶᏛᎾ, ᎠᎴ ᏄᏃᎯᏳᏒᎾ, ᎤᏁᎳ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150109_line_04.png",
+        "stock_aligned": "ᏅᎯ ᏂᏚᎾᏁᎶᏛᎾ, ᎠᎴ ᎠᏂᏍᎦᎾᎢ, Ꭰ-",
+        "stock_raw_ocr": "ᏅᎯ ᏂᏚᎾᏁᎶᏛᎾ, ᎠᎴ ᎠᏂᏍᎦᎾᎢ, Ꭰ-",
+        "ftm_aligned": "ᏅᎯ ᏂᏚᎾᏁᎶᏛᎾ, ᎠᎴ ᎠᏂᏍᎦᎾᎢ, Ꭰ-",
+        "ftm_raw_ocr": "ᏅᎯ ᏂᏚᎾᏁᎶᏛᎾ, ᎠᎴ ᎠᏂᏍᎦᎾᎢ, Ꭰ-",
+        "ftm_confidence": 90.0
+      },
+      {
+        "line_crop": "line_crops/150109_line_05.png",
+        "stock_aligned": "ᏂᎦᏓᎭᎢ, ᎠᎴ ᎣᏍᏛ ᎨᏒ ᎠᏂᏂᏆᏘᎯ,",
+        "stock_raw_ocr": "ᏂᎦᏓᏖᎭᎢ;, ᎠᎴ ᎣᏍᏛ ᎨᏒ ᎠᏂᏂᏆᏘᎯ,",
+        "ftm_aligned": "ᏂᎦᏓᎭᎢ, ᎠᎴ ᎣᏍᏛ ᎨᏒ ᎠᏂᏂᏆᏘᎯ,",
+        "ftm_raw_ocr": "ᏂᎦᏓᎭᎢ, ᎠᎴ ᎣᏍᏛ ᎨᏒ ᎠᏂᏂᏆᏘᎯ,",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150109_line_06.png",
+        "stock_aligned": "ᏧᏂᏙᏓ ᏗᏂᎯᎯ ᎠᎴ ᏧᏂᏥ ᏗᏂᎯᎯ, ᏴᏫ",
+        "stock_raw_ocr": "ᏧᏂᏙᏓ ᏗᏂᎯᎯ ᎠᎴ ᏧᏂᏥ ᏗᏂᎯᎯ, ᏴᏫ",
+        "ftm_aligned": "ᏧᏂᏙᏓ ᏗᏂᎯᎯ ᎠᎴ ᏧᏂᏥ ᏗᏂᎯᎯ, ᏴᏫ",
+        "ftm_raw_ocr": "ᏧᏂᏙᏓ ᏗᏂᎯᎯ ᎠᎴ ᏧᏂᏥ ᏗᏂᎯᎯ, ᏴᏫ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150109_line_07.png",
+        "stock_aligned": "ᏗᏂᎯᎯ,",
+        "stock_raw_ocr": "ᏘᏂᎯᎯ,",
+        "ftm_aligned": "ᏗᏂᎯᎯ,",
+        "ftm_raw_ocr": "ᏗᏂᎯᎯ.,",
+        "ftm_confidence": 32.0
+      }
+    ]
+  },
+  "150110": {
+    "image_path": "images/150110.png",
+    "cherokee_gt": "ᎤᏂᏁᎫᏥᏛ, ᎠᏂᏍᎦᏯ ᏗᎾᏂᏏᎲᏍᎩ, ᏴᏫ ᏗᏂᏃᏍᎩᏍᎩ, ᎠᏂᏰᎪᎩ, ᎦᏰᎪᎩ ᎠᎾᏎᎵᏛᏍᎩ, ᎠᎴ ᎾᏍᏉ ᏂᎦᎥ ᎪᎱᏍᏗ ᎾᏍᎩ ᏗᎦᏘᎴᎩ ᎣᏍᏛ ᏗᏕᏲᏗ ᎨᏒᎢ;",
+    "verse_number": "10",
+    "lines": [
+      {
+        "line_crop": "line_crops/150110_line_00.png",
+        "stock_aligned": "10 ᎤᏂᏁᎫᏥᏛ, ᎠᏂᏍᎦᏯ ᏗᎾᏂᏏᎲᏍᎩ,",
+        "stock_raw_ocr": "10 ᎤᏂᏁᎫᏥᏛ, ᎠᏂᏍᎦᏯ ᏘᏗᎾᏮᏂᏏᎲ”",
+        "ftm_aligned": "10 ᎤᏂᏁᎫᏥᏛ, ᎠᏂᏍᎦᏯ ᏗᎾᏂᏏᎲ-",
+        "ftm_raw_ocr": "10 ᎤᏂᏁᎫᏥᏛ, ᎠᏂᏍᎦᏯ ᏗᎾᏂᏏᎲ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150110_line_01.png",
+        "stock_aligned": "ᏴᏫ ᏗᏂᏃᏍᎩᏍᎩ, ᎠᏂᏰᎪᎩ,",
+        "stock_raw_ocr": "ᏍᎩ, ᏴᏫ ᏗᏂᏃᏍᎩᏍᎩ;, ᎠᏂᏰᎪᎩ, Ꭶ“”",
+        "ftm_aligned": "ᏍᎩ, ᏴᏫ ᏗᏂᏃᏍᎩᏍᎩ, ᎠᏂᏰᎪᎩ, Ꭶ-",
+        "ftm_raw_ocr": "ᏍᎩ, ᏴᏫ ᏗᏂᏃᏍᎩᏍᎩ, ᎠᏂᏰᎪᎩ, Ꭶ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150110_line_02.png",
+        "stock_aligned": "ᎦᏰᎪᎩ ᎠᎾᏎᎵᏛᏍᎩ, ᎠᎴ ᎾᏍᏉ ᏂᎦᎥ",
+        "stock_raw_ocr": "ᏰᎪᎩ ᎠᎾᏎᎵᏛᏍᎩ, ᎠᎴ ᎾᏍᏉ ᏂᎦᎥ",
+        "ftm_aligned": "ᏰᎪᎩ ᎠᎾᏎᎵᏛᏍᎩ, ᎠᎴ ᎾᏍᏉ ᏂᎦᎥ",
+        "ftm_raw_ocr": "ᏰᎪᎩ ᎠᎾᏎᎵᏛᏍᎩ, ᎠᎴ ᎾᏍᏉ ᏂᎦᎥ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150110_line_03.png",
+        "stock_aligned": "ᎪᎱᏍᏗ ᎾᏍᎩ ᏗᎦᏘᎴᎩ ᎣᏍᏛ ᏗᏕᏲᏗ",
+        "stock_raw_ocr": "ᎪᎱᏍᏗ ᎾᏍᎩ ᏗᎦᏘᎴᎩ ᎣᏍᏛ ᏗᏕᏲᏗ",
+        "ftm_aligned": "ᎪᎱᏍᏗ ᎾᏍᎩ ᏗᎦᏘᎴᎩ ᎣᏍᏛ ᏗᏕᏲᏗ",
+        "ftm_raw_ocr": "ᎪᎱᏍᏗ ᎾᏍᎩ ᏗᎦᏘᎴᎩ ᎣᏍᏛ ᏗᏕᏲᏗ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150110_line_04.png",
+        "stock_aligned": "ᎨᏒᎢ;",
+        "stock_raw_ocr": "ᎨᏒᎢ ;",
+        "ftm_aligned": "ᎨᏒᎢ;",
+        "ftm_raw_ocr": "ᎨᏒᎢ;",
+        "ftm_confidence": 80.0
+      }
+    ]
+  },
+  "150111": {
+    "image_path": "images/150111.png",
+    "cherokee_gt": "ᎾᏍᎩᏯ ᏄᏍᏛ ᎦᎸᏉᏗᏳ ᎣᏍᏛ ᎧᏃᎮᏛ ᎤᏁᎳᏅᎯ ᏅᏩᏙᎯᏯᏛ ᎡᎯ ᎤᏤᎵᎦ; ᎾᏍᎩ ᎠᏴ ᎥᏆᏒᎦᎶᏔᏅᎯ ᏥᎩ.",
+    "verse_number": "11",
+    "lines": [
+      {
+        "line_crop": "line_crops/150111_line_00.png",
+        "stock_aligned": "11 ᎾᏍᎩᏯ ᏄᏍᏛ ᎦᎸᏉᏗᏳ ᎣᏍᏛ",
+        "stock_raw_ocr": "11 ᎾᏍᎩᏯ ᏄᏍᏛ ᎦᎸᏉᏘᏳ” ᎣᏍᏛ",
+        "ftm_aligned": "11 ᎾᏍᎩᏯ ᏄᏍᏛ ᎦᎸᏉᏗᏳ ᎣᏍᏛ",
+        "ftm_raw_ocr": "11 ᎾᏍᎩᏯ ᏄᏍᏛ ᎦᎸᏉᏗᏳ ᎣᏍᏛ",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150111_line_01.png",
+        "stock_aligned": "ᎧᏃᎮᏛ ᎤᏁᎳᏅᎯ ᏅᏩᏙᎯᏯᏛ ᎡᎯ",
+        "stock_raw_ocr": "ᎧᏃᎮᏛᎲ ᎤᏁᎳᏅᎯ ᏅᏩᏙᎯᏯᏛ ᎡᎯ",
+        "ftm_aligned": "ᎧᏃᎮᏛ ᎤᏁᎳᏅᎯ ᏅᏩᏙᎯᏯᏛ ᎡᎯ",
+        "ftm_raw_ocr": "ᎧᏃᎮᏛ ᎤᏁᎳᏅᎯ ᏅᏩᏙᎯᏯᏛ ᎡᎯ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150111_line_02.png",
+        "stock_aligned": "ᎤᏤᎵᎦ; ᎾᏍᎩ ᎠᏴ ᎥᏆᏒᎦᎶᏔᏅᎯ ᏥᎩ.",
+        "stock_raw_ocr": "ᎤᏤᎵᎦ : ᎾᏍᎩ ᎠᏴ ᎥᏆᎡᎦᎶᏔᏅᎯ ᏥᎩ.",
+        "ftm_aligned": "ᎤᏤᎵᎦ; ᎾᏍᎩ ᎠᏴ ᎥᏆᏒᎦᎶᏔᏅᎯ ᏥᎩ.",
+        "ftm_raw_ocr": "ᎤᏤᎵᎦ: ᎾᏍᎩ ᎠᏴ ᎥᏆᏥᎦᎶᏔᏅᎯ ᏥᎩ.",
+        "ftm_confidence": 72.0
+      }
+    ]
+  },
+  "150112": {
+    "image_path": "images/150112.png",
+    "cherokee_gt": "ᎠᎴ ᏥᏯᎵᎡᎵᏤᎭ ᎦᎶᏁᏛ ᏥᏌ ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵ ᏣᏆᎵᏂᎪᎯᏍᏔᏅ, ᏰᎵᏉ ᎢᎬᏩᏛᏁᏗ ᏣᏇᎵᏎᎸ, ᏣᎩᏁᏤᎸ ᏗᎩᎸᏫᏍᏓᏁᏗᏱ ᎠᎵᏥᏙᏗ ᎨᏒᎢ,",
+    "verse_number": "12",
+    "lines": [
+      {
+        "line_crop": "line_crops/150112_line_00.png",
+        "stock_aligned": "12 ᎠᎴ ᏥᏯᎵᎡᎵᏤᎭ ᎦᎶᏁᏛ ᏥᏌ",
+        "stock_raw_ocr": "12 ᎠᎴ ᏥᏏᏯᎵᎡᎵᏤᎭ ᎦᎶᏁᏛ ᎠᏥᏌ",
+        "ftm_aligned": "12 ᎠᎴ ᏥᏯᎵᎡᎵᏤᎭ ᎦᎶᏁᏛ ᏥᏌ",
+        "ftm_raw_ocr": "ᏪᏉ ᎠᎴ ᏥᏯᎵᎡᎵᏤᎭ ᏚᎶᏁᏛ ᏥᏌ",
+        "ftm_confidence": 69.0
+      },
+      {
+        "line_crop": "line_crops/150112_line_01.png",
+        "stock_aligned": "ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵ ᏣᏆᎵᏂᎪᎯᏍᏔᏅ,",
+        "stock_raw_ocr": "ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵ ᏣᏆᎵᏂᎪᎯᏍᏔᏅ,",
+        "ftm_aligned": "ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵ ᏣᏆᎵᏂᎪᎯᏍᏔᏅ,",
+        "ftm_raw_ocr": "ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵ ᏣᏆᎵᏂᎪᎯᏍᏔᏅ,",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150112_line_02.png",
+        "stock_aligned": "ᏰᎵᏉ ᎢᎬᏩᏛᏁᏗ ᏣᏇᎵᏎᎸ, ᏣᎩᏁ-",
+        "stock_raw_ocr": "ᏰᎵᏉ ᎢᎬᏩᏛᏁᏗ ᏣᏇᎵᏎᎸ, ᏣᎩᏁ-",
+        "ftm_aligned": "ᏰᎵᏉ ᎢᎬᏩᏛᏁᏗ ᏣᏇᎵᏎᎸ, ᏣᎩᏁ-",
+        "ftm_raw_ocr": "ᏰᎵᏉ ᎢᎬᏩᏛᏁᏗ ᏣᏇᎵᏎᎸ, ᏣᎩᏁ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150112_line_03.png",
+        "stock_aligned": "ᏤᎸ ᏗᎩᎸᏫᏍᏓᏁᏗᏱ ᎠᎵᏥᏙᏗ ᎨᏒᎢ,",
+        "stock_raw_ocr": "ᏤᎸ ᏘᎩᎸᏫᏍᏓᏁᏗᏱ ᎠᎵᏥᏙᏗ ᎨᏒᎢ;",
+        "ftm_aligned": "ᏤᎸ ᏗᎩᎸᏫᏍᏓᏁᏗᏱ ᎠᎵᏥᏙᏗ ᎨᏒᎢ,",
+        "ftm_raw_ocr": "ᏤᎸ ᏗᎩᎸᏫᏍᏓᏁᏗᏱ ᎠᎵᏥᏙᏗ ᎨᏒᎢ,",
+        "ftm_confidence": 83.0
+      }
+    ]
+  },
+  "150113": {
+    "image_path": "images/150113.png",
+    "cherokee_gt": "ᎠᏴ ᎾᏍᎩ ᎢᎸᎯᏳ ᏥᏐᏢᏗᏍᎩ ᏥᎨᏒᎩ, ᎠᎴ ᎤᏲ ᎢᏗᎬᏁᎯ, ᎠᎴ ᏗᎦᏂᏐᏢᏗ; ᎠᏎᏃ ᎥᎩᏙᎵᏨᎩ, ᏅᏓᎦᎵᏍᏙᏗᏍᎬᎩ ᏂᏥᎦᏔᎿᎭᎥᎾ ᎨᏒᎢ, ᎠᎴ ᎾᏉᎯᏳᏒᎾ ᎨᏒ ᎾᏍᎩ ᎾᏆᏛᏁᎸᎢ.",
+    "verse_number": "13",
+    "lines": [
+      {
+        "line_crop": "line_crops/150113_line_00.png",
+        "stock_aligned": "13 ᎠᏴ ᎾᏍᎩ ᎢᎸᎯᏳ ᏥᏐᏢᏗᏍᎩ",
+        "stock_raw_ocr": "18 ᎠᏰ ᎧᏮᏍᎩ Ꭲ.ᎸᎯᏳ ᏥᏐᏢᏘᏍᎩ",
+        "ftm_aligned": "13 ᎠᏴ ᎾᏍᎩ ᎢᎸᎯᏳ ᏥᏐᏢᏗᏍᎩ",
+        "ftm_raw_ocr": "13 ᎠᏴ ᎾᏍᎩ ᎢᎸᎯᏳ ᏥᏐᏢᏗᏍᎩ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150113_line_01.png",
+        "stock_aligned": "ᏥᎨᏒᎩ, ᎠᎴ ᎤᏲ ᎢᏗᎬᏁᎯ, ᎠᎴ",
+        "stock_raw_ocr": "ᏥᎨᏒᎩ, ᎠᎴ ᎤᏲ ᎢᏘᎬᏁᎯ, ᎠᎴ ᏗᏜᎭ",
+        "ftm_aligned": "ᏥᎨᏒᎩ, ᎠᎴ ᎤᏲ ᎢᏗᎬᏁᎯ, ᎠᎴ ᏗᎦ-",
+        "ftm_raw_ocr": "ᏥᎨᎵᎩ, ᎠᎴ ᎤᏲ ᎢᏗᎬᏁᎯ, ᎠᎴ ᏗᎦ-",
+        "ftm_confidence": 78.0
+      },
+      {
+        "line_crop": "line_crops/150113_line_02.png",
+        "stock_aligned": "ᏗᎦᏂᏐᏢᏗ; ᎠᏎᏃ ᎥᎩᏙᎵᏨᎩ,",
+        "stock_raw_ocr": "ᏥᏐᏢᏗ, ᎠᏎᏃ ᎥᎩᏙᏪᎵᏨᎩ, ᏅᏓᎦᏪ”",
+        "ftm_aligned": "ᏂᏐᏢᏗ; ᎠᏎᏃ ᎥᎩᏙᎵᏨᎩ, ᏅᏓᎦᎵ-",
+        "ftm_raw_ocr": "ᏥᏐᏢᏗ; ᎠᏎᏃ ᎥᎩᏙᎵᏨᎩ, ᏅᏓᎦᎵᏝ-",
+        "ftm_confidence": 71.0
+      },
+      {
+        "line_crop": "line_crops/150113_line_03.png",
+        "stock_aligned": "ᏅᏓᎦᎵᏍᏙᏗᏍᎬᎩ ᏂᏥᎦᏔᎿᎭᎥᎾ ᎨᏒᎢ, ᎠᎴ",
+        "stock_raw_ocr": "ᏍᏙᏗᏍᎬᎩ ᏂᏥᎦᏔᎿᎥᎾ ᏥᏒᎢ, ᎠᎴ",
+        "ftm_aligned": "ᏍᏙᏗᏍᎬᎩ ᏂᏥᎦᏔᎿᎭᎥᎾ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_raw_ocr": "ᏍᏙᏗᏍᎬᎩ ᏂᏥᎦᏔᎿᎥᎾ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150113_line_04.png",
+        "stock_aligned": "ᎾᏉᎯᏳᏒᎾ ᎨᏒ ᎾᏍᎩ ᎾᏆᏛᏁᎸᎢ.",
+        "stock_raw_ocr": "ᎾᏉᎯᏳᎡᎾ ᎨᏒ ᎾᏍᎩ ᎾᏆᏛᏁᎸᎢ. .",
+        "ftm_aligned": "ᎾᏉᎯᏳᏒᎾ ᎨᏒ ᎾᏍᎩ ᎾᏆᏛᏁᎸᎢ.",
+        "ftm_raw_ocr": "ᎾᏉᎯᏳᏴᎾ ᎨᏒ ᎾᏍᎩ ᎾᏆᏛᏁᎸᎢᎸ.",
+        "ftm_confidence": 56.0
+      }
+    ]
+  },
+  "150114": {
+    "image_path": "images/150114.png",
+    "cherokee_gt": "ᎠᎴ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵᎦ ᎤᏣᏔᏅᎯ ᎡᏉᎯᏳ ᎨᏒᎩ, ᎤᎵᏠᏯᏍᏛᎩ ᎦᎶᏁᏛ ᏥᏌ ᏥᏲᎢᏳᏗ ᎨᏒ ᎠᎴ ᏥᎨᏳᎢ, ᎢᏳᎵᏍᏙᏗ ᎨᏒᎢ.",
+    "verse_number": "14",
+    "lines": [
+      {
+        "line_crop": "line_crops/150114_line_00.png",
+        "stock_aligned": "14 ᎠᎴ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ",
+        "stock_raw_ocr": "1Ꮞ ᎠᎴ ᎬᏩᎦᏘᏯ ᎤᏖᏙᎵᏍᏗ ᎨᏒ",
+        "ftm_aligned": "14 ᎠᎴ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ",
+        "ftm_raw_ocr": "1Ꮞ ᎠᎴ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150114_line_01.png",
+        "stock_aligned": "ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵᎦ ᎤᏣᏔᏅᎯ ᎡᏉᎯ-",
+        "stock_raw_ocr": "ᎤᎬᎧᏳᎯ ᎢᎦᏤᎵᎦ ᎤᏣᏔᏅᎯ ᎡᏉᎯ-",
+        "ftm_aligned": "ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵᎦ ᎤᏣᏔᏅᎯ ᎡᏉᎯ-",
+        "ftm_raw_ocr": "ᎤᎬᏫᏳᎯ ᎢᎦᏤᎵᎦ ᎤᏣᏔᏅᎯ ᎡᏉᎯ-",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150114_line_02.png",
+        "stock_aligned": "Ᏻ ᎨᏒᎩ, ᎤᎵᏠᏯᏍᏛᎩ ᎦᎶᏁᏛ ᏥᏌ",
+        "stock_raw_ocr": "Ᏻ ᎨᏒᎩ, ᎤᎵᏝᏠᏯᏍᏛᎩ ᎦᎶᏁᏛ ᏥᏌ",
+        "ftm_aligned": "Ᏻ ᎨᏒᎩ, ᎤᎵᏠᏯᏍᏛᎩ ᎦᎶᏁᏛ ᏥᏌ",
+        "ftm_raw_ocr": "Ᏻ ᎨᏒᎩ, ᎤᎵᏠᏯᏍᏛᎩ ᎦᎶᏁᏛ ᏥᏌ",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150114_line_03.png",
+        "stock_aligned": "ᏥᏲᎢᏳᏗ ᎨᏒ ᎠᎴ ᏥᎨᏳᎢ, ᎢᏳᎵ-",
+        "stock_raw_ocr": "ᏥᏲᎢᏳᏗ ᎨᏒ ᎠᎴ ᏥᎨᏳᎢ, ᎢᏳᏪᎵ-",
+        "ftm_aligned": "ᏥᏲᎢᏳᏗ ᎨᏒ ᎠᎴ ᏥᎨᏳᎢ, ᎢᏳᎵ-",
+        "ftm_raw_ocr": "ᏥᏲᎢᏳᏗ ᎨᏒ ᎠᎴ ᏥᎨᏳᎢ, ᎢᏳᎵ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150114_line_04.png",
+        "stock_aligned": "ᏍᏙᏗ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᏍᏙᏘ ᎨᏦᎢ.",
+        "ftm_aligned": "ᏍᏙᏗ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᏍᏙᏗ ᎨᏥᎢ.",
+        "ftm_confidence": 79.0
+      }
+    ]
+  },
+  "150115": {
+    "image_path": "images/150115.png",
+    "cherokee_gt": "ᎤᏙᎯᏳᎯᏯ ᎯᎠ ᎾᏍᎩ ᎢᎦᏪᏛ, ᎠᎴ ᏩᏍᏛ ᏧᏓᏂᎸᎢᏍᏗᏳ, ᎾᏍᎩ ᎦᎶᏁᏛ ᏥᏌ ᎡᎶᎯ ᎤᎷᏨᎢ, ᏚᏍᏕᎸᎯᎸ ᎠᏂᏍᎦᎾᎢ, ᎠᏴ ᎾᏍᎩ ᎾᎩᎬᏫᏳᏒ ᏥᏍᎦᎾᎢ.",
+    "verse_number": "15",
+    "lines": [
+      {
+        "line_crop": "line_crops/150115_line_00.png",
+        "stock_aligned": "15 ᎤᏙᎯᏳᎯᏯ ᎯᎠ ᎾᏍᎩ ᎢᎦᏪᏛ,",
+        "stock_raw_ocr": "15 ᎤᏙᎯᏳᎯᏯ ᎯᎠ ᎾᏍᎩ ᎢᎦᏪᏛ,",
+        "ftm_aligned": "15 ᎤᏙᎯᏳᎯᏯ ᎯᎠ ᎾᏍᎩ ᎢᎦᏪᏛ,",
+        "ftm_raw_ocr": "5 ᎤᏙᎯᏳᎯᏯ ᎯᎠ ᎾᏍᎩ ᎢᎦᏪᏛ,",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150115_line_01.png",
+        "stock_aligned": "ᎠᎴ ᏩᏍᏛ ᏧᏓᏂᎸᎢᏍᏗᏳ, ᎾᏍᎩ ᎦᎶ-",
+        "stock_raw_ocr": "ᎠᎴ ᏩᏍᏛ ᏧᏓᏂᎸᎢᏍᏗᏳ,, ᎾᏍᎩ ᎦᎶ-",
+        "ftm_aligned": "ᎠᎴ ᏩᏍᏛ ᏧᏓᏂᎸᎢᏍᏗᏳ, ᎾᏍᎩ ᎦᎶ-",
+        "ftm_raw_ocr": "ᎠᎴ ᏩᏍᏛ ᏧᏓᏂᎸᎢᏍᏗᏳ, ᎾᏍᎩ ᎦᎶ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150115_line_02.png",
+        "stock_aligned": "ᏁᏛ ᏥᏌ ᎡᎶᎯ ᎤᎷᏨᎢ, ᏚᏍᏕᎸᎯᎸ",
+        "stock_raw_ocr": "ᏁᏛ ᏥᏌ ᎡᎶᎯ ᎤᎷᏨᎢ, ᏚᏍᏕᎸᎯᎸ.",
+        "ftm_aligned": "ᏁᏛ ᏥᏌ ᎡᎶᎯ ᎤᎷᏨᎢ, ᏚᏍᏕᎸᎯᎸ",
+        "ftm_raw_ocr": "ᏁᏛ ᏥᏌ ᎡᎶᎯ ᎤᎷᏨᎢ, ᏚᏍᏕᎸᎯᎸ",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150115_line_03.png",
+        "stock_aligned": "ᎠᏂᏍᎦᎾᎢ, ᎠᏴ ᎾᏍᎩ ᎾᎩᎬᏫᏳᏒ Ꮵ-",
+        "stock_raw_ocr": "ᎠᏂᏍᎦᎾᎢ, ᎠᏴ ᎾᏍᎩ ᎾᎩᎬᏫᏳᎢᏆ Ꮵ-",
+        "ftm_aligned": "ᎠᏂᏍᎦᎾᎢ, ᎠᏴ ᎾᏍᎩ ᎾᎩᎬᏫᏳᏒ Ꮵ-",
+        "ftm_raw_ocr": "ᎠᏂᏍᎦᎾᎢ, ᎠᏴ ᎾᏍᎩ ᎾᎩᎬᏫᏳᏒ Ꮵ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150115_line_04.png",
+        "stock_aligned": "ᏍᎦᎾᎢ.",
+        "stock_raw_ocr": "ᏍᎦᎾᎢ.,",
+        "ftm_aligned": "ᏍᎦᎾᎢ.",
+        "ftm_raw_ocr": "ᏍᎦᎾᎢ.",
+        "ftm_confidence": 87.0
+      }
+    ]
+  },
+  "150116": {
+    "image_path": "images/150116.png",
+    "cherokee_gt": "ᎠᏎᏃ ᎾᏍᎩ ᎯᎠ ᏅᏓᏳᎵᏍᏙᏔᏅᎩ ᎥᎩᏙᎵᏨᎩ; ᎾᏍᎩ ᎠᏴ ᎨᏒ ᎾᎩᎬᏫᏳᏒ ᏥᏌ ᎦᎶᏁᏛ ᎬᏂᎨᏒ ᎢᏳᏩᏁᏗᏱ ᏩᏍᏛ ᎬᏂᏗᏳ ᎨᏒᎢ, ᎾᏍᎩ ᏧᎾᏟᎶᏍᏙᏗ ᎢᏳᎵᏍᏙᏗᏱ ᎣᏂ ᎬᏬᎯᏳᏅᎯ ᎬᏂᏛ ᎠᎵᏍᏆᏗᏍᎩ ᏂᎨᏒᎾ ᏫᏚᎷᎩ.",
+    "verse_number": "16",
+    "lines": [
+      {
+        "line_crop": "line_crops/150116_line_00.png",
+        "stock_aligned": "16 ᎠᏎᏃ ᎾᏍᎩ ᎯᎠ ᏅᏓᏳᎵᏍᏙᏔ-",
+        "stock_raw_ocr": "16 ᎠᏎᏃ ᎾᏍᎩ ᎯᎠ ᏅᏖᏳ ᎵᏍᏙᏔ-",
+        "ftm_aligned": "16 ᎠᏎᏃ ᎾᏍᎩ ᎯᎠ ᏅᏓᏳᎵᏍᏙᏔᏅᎩ",
+        "ftm_raw_ocr": "16 ᎠᏎᏃ ᎾᏍᎩ ᎯᎠ ᏅᏓᏳ ᎵᏍᎩᏙᏔ-",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150116_line_01.png",
+        "stock_aligned": "ᏅᎩ ᎥᎩᏙᎵᏨᎩ; ᎾᏍᎩ ᎠᏴ ᎨᏒ ᎾᎩ-",
+        "stock_raw_ocr": "ᏅᎩ ᎥᎩᏙᎵᏨᎩ : ᏮᏍᎩ ᎠᏴ ᎨᏒ ᎾᎩ-",
+        "ftm_aligned": "ᎥᎩᏙᎵᏨᎩ; ᎾᏍᎩ ᎠᏴ ᎨᏒ ᎾᎩ-",
+        "ftm_raw_ocr": "ᏅᎩ ᎥᎩᏙᎵᏨᎩ ;Ꮆ ᎾᏍᎩ ᎠᏴ ᎨᏒ ᎾᎩ-",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150116_line_02.png",
+        "stock_aligned": "ᎬᏫᏳᏒ ᏥᏌ ᎦᎶᏁᏛ ᎬᏂᎨᏒ ᎢᏳᏩ-",
+        "stock_raw_ocr": "ᎬᏫᏳᏒ ᏥᏌ ᎦᎶᏁᏛ ᎬᏂᎨᏒ ᎢᏳᏩ-",
+        "ftm_aligned": "ᎬᏫᏳᏒ ᏥᏌ ᎦᎶᏁᏛ ᎬᏂᎨᏒ ᎢᏳᏩ-",
+        "ftm_raw_ocr": "ᎬᏫᏳᏒ ᏥᏌ ᎦᎶᏁᏛ ᎬᏂᎨᏒ ᎢᏳᏩ-",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150116_line_03.png",
+        "stock_aligned": "ᏁᏗᏱ ᏩᏍᏛ ᎬᏂᏗᏳ ᎨᏒᎢ, ᎾᏍᎩ",
+        "stock_raw_ocr": "ᏁᏗᏱ ᏩᏍᏛ ᎬᏂᏘᏳ ᏥᏒᎢ, ᎾᏍᎩ",
+        "ftm_aligned": "ᏁᏗᏱ ᏩᏍᏛ ᎬᏂᏗᏳ ᎨᏒᎢ, ᎾᏍᎩ",
+        "ftm_raw_ocr": "ᏁᏗᏱ ᏩᏍᏛ ᎬᏂᏗᏳ ᎨᏒᎢ, ᎾᏍᎩ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150116_line_04.png",
+        "stock_aligned": "ᏧᎾᏟᎶᏍᏙᏗ ᎢᏳᎵᏍᏙᏗᏱ ᎣᏂ ᎬᏬᎯ-",
+        "stock_raw_ocr": "ᏧᎾᏟᎶᏍᏙᏗ ᎢᏳᏝᏍᏙᏗᏱ ᎣᏂ ᎬᏬᎯ-",
+        "ftm_aligned": "ᏧᎾᏟᎶᏍᏙᏗ ᎢᏳᎵᏍᏙᏗᏱ ᎣᏂ ᎬᏬᎯ-",
+        "ftm_raw_ocr": "ᏧᎾᏟᎶᏍᏙᏗ ᎢᏳᎵᏍᏙᏗᏱ ᎣᏂ ᎬᏬᎯ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150116_line_05.png",
+        "stock_aligned": "ᏳᏅᎯ ᎬᏂᏛ ᎠᎵᏍᏆᏗᏍᎩ ᏂᎨᏒᎾ",
+        "stock_raw_ocr": "ᏳᏅᎯ ᎬᏂᏛ ᎠᎵᏍᏆᏘᏍᎩ ᏂᎨᏒᎡᎾ",
+        "ftm_aligned": "ᏳᏅᎯ ᎬᏂᏛ ᎠᎵᏍᏆᏗᏍᎩ ᏂᎨᏒᎾ",
+        "ftm_raw_ocr": "ᏳᏅᎯ ᎬᏂᏛ ᎠᎵᏍᏆᏗᏍᎩ ᏂᎨᏒᎾ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150116_line_06.png",
+        "stock_aligned": "ᏫᏚᎷᎩ.",
+        "stock_raw_ocr": "ᏫᎦᎷᎩ.",
+        "ftm_aligned": "ᏫᏚᎷᎩ.",
+        "ftm_raw_ocr": "ᏫᎦᎷᎩ.",
+        "ftm_confidence": 88.0
+      }
+    ]
+  },
+  "150117": {
+    "image_path": "images/150117.png",
+    "cherokee_gt": "Ꭷ, ᎤᎬᏫᏳᎯ ᎠᎵᏍᏆᏗᏍᎩ ᏂᎨᏒᎾ ᎨᏒ ᎡᎯ, ᎠᏲᎱᏍᎩ ᏂᎨᏒᎾ, ᎠᎪᏩᏛᏗ ᏂᎨᏒᎾ, ᎤᏩᏒᎯ ᎠᎦᏔᎿᎭᎢ ᎤᏁᎳᏅᎯ, ᎦᎸᏉᏗᏳ ᎨᏎᏍᏗ ᎠᎴ ᎦᎸᏉᏙᏗ ᎨᏎᏍᏗ ᏂᎪᎯᎸ ᎠᎴ ᏂᎪᎯᎸᎢ; ᎡᎺᏅ.",
+    "verse_number": "17",
+    "lines": [
+      {
+        "line_crop": "line_crops/150117_line_00.png",
+        "stock_aligned": "17 Ꭷ, ᎤᎬᏫᏳᎯ ᎠᎵᏍᏆᏗᏍᎩ Ꮒ-",
+        "stock_raw_ocr": "17 Ꭷ, ᎤᎬᎧᏳᏨᎯ ᎠᎵᏍᏆᏘᏍᎩ Ꮒ-",
+        "ftm_aligned": "17 Ꭷ, ᎤᎬᏫᏳᎯ ᎠᎵᏍᏆᏗᏍᎩ Ꮒ-",
+        "ftm_raw_ocr": "17 Ꭷ, ᎤᎬᏫᏳᎯ ᎠᎵᏍᏆᏗᏍᎩ Ꮒ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150117_line_01.png",
+        "stock_aligned": "ᎨᏒᎾ ᎨᏒ ᎡᎯ, ᎠᏲᎱᏍᎩ ᏂᎨᏒᎾ,",
+        "stock_raw_ocr": "ᎨᏒᎾ ᎨᏒ ᎡᎯ, ᎠᏲᎱᏍᎩ ᏂᎨᏒᏮ,",
+        "ftm_aligned": "ᎨᏒᎾ ᎨᏒ ᎡᎯ, ᎠᏲᎱᏍᎩ ᏂᎨᏒᎾ,",
+        "ftm_raw_ocr": "ᎨᏒᎾ ᎨᏒ ᎡᎯ, ᎠᏲᎱᏍᎩ ᏂᎨᏒᎾ,",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150117_line_02.png",
+        "stock_aligned": "ᎠᎪᏩᏛᏗ ᏂᎨᏒᎾ, ᎤᏩᏒᎯ ᎠᎦᏔᎿᎭᎢ",
+        "stock_raw_ocr": "ᎠᎪᏩᏛᏘ ᏂᎨᎠᎾ, ᎤᏩᏐᎯ ᎠᎦᏔᎿᎢ",
+        "ftm_aligned": "ᎠᎪᏩᏛᏗ ᏂᎨᏒᎾ, ᎤᏩᏒᎯ ᎠᎦᏔᎿᎭᎢ",
+        "ftm_raw_ocr": "ᎠᎪᏩᏛᏗ ᏂᎨᏒᎾ, ᎤᏩᏒᎯ ᎠᎦᏔᎿᎢ",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150117_line_03.png",
+        "stock_aligned": "ᎤᏁᎳᏅᎯ, ᎦᎸᏉᏗᏳ ᎨᏎᏍᏗ ᎠᎴ",
+        "stock_raw_ocr": "ᎤᏁᎳᏅᎯ; ᎦᎸᏉᏘᏳ ᎨᏎᏍᏗ ᎠᎴ",
+        "ftm_aligned": "ᎤᏁᎳᏅᎯ, ᎦᎸᏉᏗᏳ ᎨᏎᏍᏗ ᎠᎴ",
+        "ftm_raw_ocr": "ᎤᏁᎳᏅᎯ, ᎦᎸᏉᏗᏳ ᎨᏎᏍᏗ ᎠᎴ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150117_line_04.png",
+        "stock_aligned": "ᎦᎸᏉᏙᏗ ᎨᏎᏍᏗ ᏂᎪᎯᎸ ᎠᎴ ᏂᎪᎯ-",
+        "stock_raw_ocr": "ᎦᎸᏉᏙᏘᏗ ᎨᏎᏍᏘ ᏂᎪᎯᎸ. ᎠᎴ ᏂᎪᎯ-",
+        "ftm_aligned": "ᎦᎸᏉᏙᏗ ᎨᏎᏍᏗ ᏂᎪᎯᎸ ᎠᎴ ᏂᎪᎯ-",
+        "ftm_raw_ocr": "ᎦᎸᏉᏙᏗ ᎨᏎᏍᏗ ᏂᎪᎯᎸ ᎠᎴ ᏂᎪᎯ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150117_line_05.png",
+        "stock_aligned": "ᎸᎢ; ᎡᎺᏅ.",
+        "stock_raw_ocr": "ᎸᎢ;Ꮆ ᎡᎶᎾ.Ꮕ-",
+        "ftm_aligned": "ᎸᎢ; ᎡᎺᏅ.",
+        "ftm_raw_ocr": "ᎸᎢ; ᎡᎷᏅ.",
+        "ftm_confidence": 44.0
+      }
+    ]
+  },
+  "150118": {
+    "image_path": "images/150118.png",
+    "cherokee_gt": "ᎯᎠ ᎾᏍᎩ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ ᏂᎯ ᏕᎬᏲᎯᏏ, ᎠᏇᏥ ᏗᎹᏗ, ᎾᏍᎩᏯ ᏄᏂᏪᏒ ᎤᎾᏙᎴᎰᏒ ᏂᎯ ᎨᏣᏃᎮᏍᎬᎢ, ᎾᏍᎩᏃ ᏂᎯ ᎾᏍᎩᎾ ᏕᎲᏗᏍᎬ ᏯᎵᎦ ᎣᏍᏛ ᎠᎵᏍᏗ ᎨᏒᎢ;",
+    "verse_number": "18",
+    "lines": [
+      {
+        "line_crop": "line_crops/150118_line_00.png",
+        "stock_aligned": "18 ᎯᎠ ᎾᏍᎩ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ",
+        "stock_raw_ocr": "18 ᎯᎠ ᎧᏍᎩ ᏘᎦᎸᏫᏍᏖᏁᏗ ᎨᎢ",
+        "ftm_aligned": "18 ᎯᎠ ᎾᏍᎩ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ",
+        "ftm_raw_ocr": "18 ᎯᎠ ᎾᏍᎩ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150118_line_01.png",
+        "stock_aligned": "ᏂᎯ ᏕᎬᏲᎯᏏ, ᎠᏇᏥ ᏗᎹᏗ, ᎾᏍᎩᏯ",
+        "stock_raw_ocr": "ᏂᎯ ᏕᎬᏲᎯᏏ, ᎠᏇᏥ ᏗᏑᏁ, ᎾᏍᎩᏯ",
+        "ftm_aligned": "ᏂᎯ ᏕᎬᏲᎯᏏ, ᎠᏇᏥ ᏗᎹᏗ, ᎾᏍᎩᏯ",
+        "ftm_raw_ocr": "ᏂᎯ ᏕᎬᏲᎯᏏ, ᎠᏇᏥ ᏗᏑᏗ, ᎾᏍᎩᏯ",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150118_line_02.png",
+        "stock_aligned": "ᏄᏂᏪᏒ ᎤᎾᏙᎴᎰᏒ ᏂᎯ ᎨᏣᏃᎮᏍᎬᎢ,",
+        "stock_raw_ocr": "ᏄᏂᏪᏒ ᎤᎾᏙᎴᎰᏒ ᏂᎯ ᎨᏣᏃᎮᏍᎬᎢ,",
+        "ftm_aligned": "ᏄᏂᏪᏒ ᎤᎾᏙᎴᎰᏒ ᏂᎯ ᎨᏣᏃᎮᏍᎬᎢ,",
+        "ftm_raw_ocr": "ᏄᏂᏪᏒ ᎤᎾᏙᎴᎨᏒ ᏂᎯ ᎨᏣᏃᎮᏍᎬᎢ,",
+        "ftm_confidence": 70.0
+      },
+      {
+        "line_crop": "line_crops/150118_line_03.png",
+        "stock_aligned": "ᎾᏍᎩᏃ ᏂᎯ ᎾᏍᎩᎾ ᏕᎲᏗᏍᎬ ᏯᎵᎦ",
+        "stock_raw_ocr": "ᏮᏍᎩᏃ ᏂᎯ ᎾᏍᎩᎾ ᏕᎲᏘᏍᎬ ᏯᏝᎦ",
+        "ftm_aligned": "ᎾᏍᎩᏃ ᏂᎯ ᎾᏍᎩᎾ ᏕᎲᏗᏍᎬ ᏯᎵᎦ",
+        "ftm_raw_ocr": "ᎾᏍᎩᏃ ᏂᎯ ᎾᏍᎩᎾ ᏕᎤᎲᏗᏍᎬ ᏯᎵᎦ",
+        "ftm_confidence": 70.0
+      },
+      {
+        "line_crop": "line_crops/150118_line_04.png",
+        "stock_aligned": "ᎣᏍᏛ ᎠᎵᏍᏗ ᎨᏒᎢ;",
+        "stock_raw_ocr": "ᎣᏍᏛ ᎠᎵᏍᏘ ᎨᏒᎢ :Ꮆ",
+        "ftm_aligned": "ᎣᏍᏛ ᎠᎵᏍᏗ ᎨᏒᎢ;",
+        "ftm_raw_ocr": "ᎣᏍᏛ ᎠᎵᏍᏗ ᎨᏒᎢ;",
+        "ftm_confidence": 78.0
+      }
+    ]
+  },
+  "150119": {
+    "image_path": "images/150119.png",
+    "cherokee_gt": "ᏕᏣᏂᏴᏒ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎣᏍᏛ ᏗᎫᎪᏙᏗ ᎨᏒᎢ, ᎾᏍᎩ ᎩᎶ ᎢᏴᏛ ᎢᏳᏅᏁᏔᏅᎯ ᏥᎩ, ᎾᏍᎩ ᎪᎯᏳᏗ ᎨᏒ ᎬᏩᏂᏲᏥᏙᎸ;",
+    "verse_number": "19",
+    "lines": [
+      {
+        "line_crop": "line_crops/150119_line_00.png",
+        "stock_aligned": "19 ᏕᏣᏂᏴᏒ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ",
+        "stock_raw_ocr": "19 ᎤᏳᏣᏂᏴᏒ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_aligned": "19 ᏕᏣᏂᏴᏒ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_raw_ocr": "18 ᏳᏣᏂᏴᏒ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_confidence": 60.0
+      },
+      {
+        "line_crop": "line_crops/150119_line_01.png",
+        "stock_aligned": "ᎣᏍᏛ ᏗᎫᎪᏙᏗ ᎨᏒᎢ, ᎾᏍᎩ ᎩᎶ",
+        "stock_raw_ocr": "ᎣᏍᏛ ᏗᎫᎪᏙᏘ ᎨᏦᏒᎢ, ᎾᏍᎩ ᎩᎶ",
+        "ftm_aligned": "ᎣᏍᏛ ᏗᎫᎪᏙᏗ ᎨᏒᎢ, ᎾᏍᎩ ᎩᎶ",
+        "ftm_raw_ocr": "ᎣᏍᏛ ᏗᎫᎪᏙᏗ ᎨᏒᏥᎢ, ᎾᏍᎩ ᎩᎶ",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150119_line_02.png",
+        "stock_aligned": "ᎢᏴᏛ ᎢᏳᏅᏁᏔᏅᎯ ᏥᎩ, ᎾᏍᎩ ᎪᎯ-",
+        "stock_raw_ocr": "ᎢᏴᏛ ᎢᏳᏅᏁᏔᏅᎯ ᏥᎩ,, ᎾᏍᎩ ᎪᎯ-",
+        "ftm_aligned": "ᎢᏴᏛ ᎢᏳᏅᏁᏔᏅᎯ ᏥᎩ, ᎾᏍᎩ ᎪᎯ-",
+        "ftm_raw_ocr": "ᎢᏴᏛ ᎢᏳᏅᏁᏔᏅᎯ ᏥᎩ, ᎾᏍᎩ ᎪᎯ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150119_line_03.png",
+        "stock_aligned": "ᏳᏗ ᎨᏒ ᎬᏩᏂᏲᏥᏙᎸ;",
+        "stock_raw_ocr": "ᏳᏘ ᎨᎡ ᎬᏩᏂᏲᏥᏙᎸ:Ꮆ",
+        "ftm_aligned": "ᏳᏗ ᎨᏒ ᎬᏩᏂᏲᏥᏙᎸ;",
+        "ftm_raw_ocr": "ᏳᏗ ᎨᏒ ᎬᏩᏂᏲᏥᏙᎸ;",
+        "ftm_confidence": 83.0
+      }
+    ]
+  },
+  "150120": {
+    "image_path": "images/150120.png",
+    "cherokee_gt": "ᎾᏍᎩ ᎯᎠ ᏄᎾᏛᏁᎸ ᎭᎻᏂᏯ ᎠᎴ ᎡᎵᎩ, ᎾᏍᎩ ᏕᎦᏥᏲᏒ ᏎᏓᏂ ᏕᏥᏲᎯᏎᎸ ᎤᎾᏕᎶᏆᏍᏗᏱ ᎤᏂᏐᏢᏙᏗᏱ ᏂᎨᏒᎾ ᎨᏒᎢ.",
+    "verse_number": "20",
+    "lines": [
+      {
+        "line_crop": "line_crops/150120_line_00.png",
+        "stock_aligned": "20 ᎾᏍᎩ ᎯᎠ ᏄᎾᏛᏁᎸ ᎭᎻᏂᏯ",
+        "stock_raw_ocr": "20 ᎾᏍᎩ ᎯᎠ ᏄᎾᏛᏁᎸ. ᎤᏤᎻᏂᏯ",
+        "ftm_aligned": "20 ᎾᏍᎩ ᎯᎠ ᏄᎾᏛᏁᎸ ᎭᎻᏂᏯ",
+        "ftm_raw_ocr": "20 ᎾᏍᎩ ᎯᎠ ᏄᎾᏛᏁᎸ ᏤᎻᏂᏯ",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150120_line_01.png",
+        "stock_aligned": "ᎠᎴ ᎡᎵᎩ, ᎾᏍᎩ ᏕᎦᏥᏲᏒ ᏎᏓᏂ Ꮥ-",
+        "stock_raw_ocr": "ᎠᎴ ᎡᎵᎩ, ᎧᏍᎩ ᏕᎦᏥᏲᏒ ᏎᏓᏂ Ꭶ-",
+        "ftm_aligned": "ᎠᎴ ᎡᎵᎩ, ᎾᏍᎩ ᏕᎦᏥᏲᏒ ᏎᏓᏂ Ꮥ-",
+        "ftm_raw_ocr": "ᎠᎴ ᎡᎵᎩ, ᎾᏍᎩ ᏕᎤᎦᏥᏲᏒ ᏎᏓᏂ Ꭴ-",
+        "ftm_confidence": 61.0
+      },
+      {
+        "line_crop": "line_crops/150120_line_02.png",
+        "stock_aligned": "ᏥᏲᎯᏎᎸ ᎤᎾᏕᎶᏆᏍᏗᏱ ᎤᏂᏐᏢᏙᏗᏱ",
+        "stock_raw_ocr": "ᏥᏲᎯᏎᎸ. ᎤᎧᏭᏕᎶᏆᏍᏗᏱ ᎤᏂᏐᏢᏙᏘᏱ",
+        "ftm_aligned": "ᏥᏲᎯᏎᎸ ᎤᎾᏕᎶᏆᏍᏗᏱ ᎤᏂᏐᏢᏙᏗᏱ",
+        "ftm_raw_ocr": "ᏥᏲᎯᏎᎸ ᎤᎾᏕᎶᏆᏍᏗᏱ ᎤᏂᏐᎵᏢᏙᏗᏱ",
+        "ftm_confidence": 45.0
+      },
+      {
+        "line_crop": "line_crops/150120_line_03.png",
+        "stock_aligned": "ᏂᎨᏒᎾ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᏂᎨᏒᎾ ᎨᎬᎢ.",
+        "ftm_aligned": "ᏂᎨᏒᎾ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᏂᎨᏒᎾ ᎨᎬᎢ.",
+        "ftm_confidence": 58.0
+      }
+    ]
+  },
+  "150201": {
+    "image_path": "images/150201.png",
+    "cherokee_gt": "ᎾᏍᎩᏃ ᏥᏁᎦ ᎢᎬᏱᏱᏉ ᎨᏒᎢ, ᎠᏔᏲᏍᏗ ᎨᏒᎢ, ᎠᏓᏙᎵᏍᏙᏗ ᎨᏒᎢ, ᏗᏅᏓᏗᏍᏗ ᎨᏒᎢ, ᎠᎴ ᎠᎵᎮᎵᏍᏗ ᎨᏒ ᏗᎦᎸᏫᏍᏓᏁᏗᏱ, ᎾᏍᎩ ᎾᏂᎥ ᏴᏫ ᎤᎬᏩᎵ,",
+    "verse_number": "1",
+    "lines": [
+      {
+        "line_crop": "line_crops/150201_line_00.png",
+        "stock_aligned": "1 ᎾᏍᎩᏃ ᏥᏁᎦ ᎢᎬᏱᏱᏉ ᎨᏒᎢ,",
+        "stock_raw_ocr": "1. ᎾᏍᎩᏃ ᏏᏁᎦ ᎢᎬᏱᏱᏉ ᎨᏒᎢ;",
+        "ftm_aligned": "1 ᎾᏍᎩᏃ ᏥᏁᎦ ᎢᎬᏱᏱᏉ ᎨᏒᎢ,",
+        "ftm_raw_ocr": "Ꭵ ᎾᏍᎩᏃ ᏏᏁᎦ ᎢᎬᏱᏱᏉ ᎨᏒᎢ,",
+        "ftm_confidence": 63.0
+      },
+      {
+        "line_crop": "line_crops/150201_line_01.png",
+        "stock_aligned": "ᎠᏔᏲᏍᏗ ᎨᏒᎢ, ᎠᏓᏙᎵᏍᏙᏗ ᎨᏒᎢ,",
+        "stock_raw_ocr": "ᎠᏔᏲᏍᏗ. ᎨᏒᎢ; ᎠᏓᏙᎵᏍᏙᏗ ᎨᏒᎢ)",
+        "ftm_aligned": "ᎠᏔᏲᏍᏗ ᎨᏒᎢ, ᎠᏓᏙᎵᏍᏙᏗ ᎨᏒᎢ,",
+        "ftm_raw_ocr": "ᎠᏔᏲᏍᏗ ᎨᏒᎢ, ᎠᏓᏙᎵᏍᏙᏗ ᎨᏒᎢ,",
+        "ftm_confidence": 68.0
+      },
+      {
+        "line_crop": "line_crops/150201_line_02.png",
+        "stock_aligned": "ᏗᏅᏓᏗᏍᏗ ᎨᏒᎢ, ᎠᎴ ᎠᎵᎮᎵᏍᏗ",
+        "stock_raw_ocr": "ᏘᏅᏓᏘᏍᏘ ᎨᏒᎢ, ᎠᎴ ᎠᎵᏝᎮᎵᏍᏗ.",
+        "ftm_aligned": "ᏗᏅᏓᏗᏍᏗ ᎨᏒᎢ, ᎠᎴ ᎠᎵᎮᎵᏍᏗ",
+        "ftm_raw_ocr": "ᏗᏅᏓᏗᏍᏗ ᎨᏒᎢ, ᎠᎴ ᎠᎵᎮᎵᏍᏗ",
+        "ftm_confidence": 73.0
+      },
+      {
+        "line_crop": "line_crops/150201_line_03.png",
+        "stock_aligned": "ᎨᏒ ᏗᎦᎸᏫᏍᏓᏁᏗᏱ, ᎾᏍᎩ ᎾᏂᎥ ᏴᏫ",
+        "stock_raw_ocr": "ᎨᏒ ᏗᎦᎸᏫᏍᏖᏓᏁᏗᏱ, ᎾᏍᎩ ᎾᏂᎥ ᏴᏫ’",
+        "ftm_aligned": "ᎨᏒ ᏗᎦᎸᏫᏍᏓᏁᏗᏱ, ᎾᏍᎩ ᎾᏂᎥ ᏴᏫ",
+        "ftm_raw_ocr": "ᎨᏒ ᏗᎦᎸᏫᏍᏓᏁᏗᏱ, ᎾᏍᎩ ᎾᏂᎥ ᏴᏫ-",
+        "ftm_confidence": 78.0
+      },
+      {
+        "line_crop": "line_crops/150201_line_04.png",
+        "stock_aligned": "ᎤᎬᏩᎵ,",
+        "stock_raw_ocr": "ᎤᎬᏩᎵ, :-",
+        "ftm_aligned": "ᎤᎬᏩᎵ,",
+        "ftm_raw_ocr": "ᎤᎬᏩᎵ,",
+        "ftm_confidence": 74.0
+      }
+    ]
+  },
+  "150202": {
+    "image_path": "images/150202.png",
+    "cherokee_gt": "ᎤᏂᎬᏫᏳᎯ ᎠᎴ ᎾᏂᎥ ᎠᏰᎵ ᏧᏂᎸᏫᏍᏓᏁᎯ ᎤᎬᏩᎵ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ ᎠᎴ ᏄᎾᏰᎯᏍᏛᎾ ᎢᎦᎴᏂᏓᏍᏗᏱ, ᏕᏗᎧᎿᎭᏩᏗᏒ ᏚᏳᎪᏛ ᎨᏒ ᎠᎴ ᎦᎸᏉᏗᏳ ᎨᏒᎢ.",
+    "verse_number": "2",
+    "lines": [
+      {
+        "line_crop": "line_crops/150202_line_00.png",
+        "stock_aligned": "2 ᎤᏂᎬᏫᏳᎯ ᎠᎴ ᎾᏂᎥ ᎠᏰᎵ ᏧᏂᎸ-",
+        "stock_raw_ocr": "2 ᎤᏂᎬᏫᏳᎯ ᎠᎴ ᎾᏂᎥ ᎠᏰᎵ ᏧᏂᎸᏄ-ᎨᏅ",
+        "ftm_aligned": "2 ᎤᏂᎬᏫᏳᎯ ᎠᎴ ᎾᏂᎥ ᎠᏰᎵ ᏧᏂᎸ-",
+        "ftm_raw_ocr": "2 ᎤᏂᎬᏫᏳᎯ ᎠᎴ ᎾᏂᎥ ᎠᏰᎵ ᏧᏂᎸ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150202_line_01.png",
+        "stock_aligned": "ᏫᏍᏓᏁᎯ ᎤᎬᏩᎵ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ",
+        "stock_raw_ocr": "ᏫᏍᏓᏁᎯ ᎤᎬᏩᎵᏝ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ",
+        "ftm_aligned": "ᏫᏍᏓᏁᎯ ᎤᎬᏩᎵ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ",
+        "ftm_raw_ocr": "ᏫᏍᏓᏁᎯ ᎤᎬᏩᎵ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ",
+        "ftm_confidence": 76.0
+      },
+      {
+        "line_crop": "line_crops/150202_line_02.png",
+        "stock_aligned": "ᎠᎴ ᏄᎾᏰᎯᏍᏛᎾ ᎢᎦᎴᏂᏓᏍᏗᏱ,",
+        "stock_raw_ocr": "ᎠᎴ ᏄᎾᏰᎯᏍᏛᎾ ᎢᎦᎴᏂᏓᏍᏗᏱ, ᏫᏕᏗᎨᏓ",
+        "ftm_aligned": "ᎠᎴ ᏄᎾᏰᎯᏍᏛᎾ ᎢᎦᎴᏂᏓᏍᏗᏱ, ᏕᏗ-",
+        "ftm_raw_ocr": "ᎠᎴ ᏄᎾᏰᎯᏍᏛᎾ ᎢᎦᎴᏂᏓᏍᏗᏱ, ᏕᏗ-",
+        "ftm_confidence": 73.0
+      },
+      {
+        "line_crop": "line_crops/150202_line_03.png",
+        "stock_aligned": "ᏕᏗᎧᎿᎭᏩᏗᏒ ᏚᏳᎪᏛ ᎨᏒ ᎠᎴ ᎦᎸᏉᏗᏳ",
+        "stock_raw_ocr": "ᎧᎿᏩᏗᏒ ᏚᏳᎪᏛ ᏥᎨᏒ ᎠᎴ ᎦᎸᏉᏗᏳ”",
+        "ftm_aligned": "ᎧᎿᎭᏩᏗᏒ ᏚᏳᎪᏛ ᎨᏒ ᎠᎴ ᎦᎸᏉᏗᏳ",
+        "ftm_raw_ocr": "ᎧᎿᏩᏗᏒ ᏚᏳᎪᏙᏛ ᎨᏒ ᎠᎴ ᎦᎸᏉᏗᏳ",
+        "ftm_confidence": 69.0
+      },
+      {
+        "line_crop": "line_crops/150202_line_04.png",
+        "stock_aligned": "ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᏂᏲᎡᎢ,",
+        "ftm_aligned": "ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎨᏥᎢ.",
+        "ftm_confidence": 1.0
+      }
+    ]
+  },
+  "150203": {
+    "image_path": "images/150203.png",
+    "cherokee_gt": "ᎾᏍᎩᏰᏃ ᎯᎠ ᎣᏏᏳ ᎠᎴ ᏧᏓᏂᎸᎢᏍᏗᏳ ᏓᎧᏅ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵᏍᎩ,",
+    "verse_number": "3",
+    "lines": [
+      {
+        "line_crop": "line_crops/150203_line_00.png",
+        "stock_aligned": "3 ᎾᏍᎩᏰᏃ ᎯᎠ ᎣᏏᏳ ᎠᎴ ᏧᏓᏂᎸ-",
+        "stock_raw_ocr": "8. ᎾᏍᎩᏰᏃ ᎯᎠ ᎣᏏᏳ’ ᎠᎴ ᏧᏖᏂᎸ-",
+        "ftm_aligned": "3 ᎾᏍᎩᏰᏃ ᎯᎠ ᎣᏏᏳ ᎠᎴ ᏧᏓᏂᎸ-",
+        "ftm_raw_ocr": "8 ᎾᏍᎩᏰᏃ ᎯᎠ ᎣᏏᏳ ᎠᎴ ᏧᏓᏂᎸ-",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150203_line_01.png",
+        "stock_aligned": "ᎢᏍᏗᏳ ᏓᎧᏅ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵᏍᎩ,",
+        "stock_raw_ocr": "ᎢᏍᏘᏳ ᏖᎧᏅ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵ-",
+        "ftm_aligned": "ᎢᏍᏗᏳ ᏓᎧᏅ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵᏍᎩ,",
+        "ftm_raw_ocr": "ᎢᏍᏗᏳ ᏓᎧᏅ ᎤᏁᎳᏅᎯ ᎢᎩᏍᏕᎵ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150203_line_02.png",
+        "stock_aligned": "",
+        "stock_raw_ocr": "",
+        "ftm_aligned": "",
+        "ftm_raw_ocr": "",
+        "ftm_confidence": 0.0
+      }
+    ]
+  },
+  "150204": {
+    "image_path": "images/150204.png",
+    "cherokee_gt": "ᎾᏍᎩ ᎣᏏᏳ ᎤᏰᎸᏗ ᏥᎩ ᎾᏂᎥ ᏴᏫ ᎨᏥᏍᏕᎸᏗᏱ, ᎠᎴ ᎤᏂᎷᎯᏍᏗᏱ ᎠᎦᏙᎥᎯᏍᏗ ᎨᏒ ᏚᏳᎪᏛ ᎨᏒᎢ.",
+    "verse_number": "4",
+    "lines": [
+      {
+        "line_crop": "line_crops/150204_line_00.png",
+        "stock_aligned": "4 ᎾᏍᎩ ᎣᏏᏳ ᎤᏰᎸᏗ ᏥᎩ ᎾᏂᎥ",
+        "stock_raw_ocr": "Ꮞ ᎾᏍᎩ ᎣᏏᏳ ᎤᏰᎸᏘ ᏥᎩ ᎾᏂᎥ",
+        "ftm_aligned": "4 ᎾᏍᎩ ᎣᏏᏳ ᎤᏰᎸᏗ ᏥᎩ ᎾᏂᎥ",
+        "ftm_raw_ocr": "Ꮞ ᎾᏍᎩ ᎣᏏᏳ ᎤᏰᎸᏗ ᏥᎩ ᎾᏂᎥ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150204_line_01.png",
+        "stock_aligned": "ᏴᏫ ᎨᏥᏍᏕᎸᏗᏱ, ᎠᎴ ᎤᏂᎷᎯᏍᏗᏱ",
+        "stock_raw_ocr": "ᏴᏫ ᎨᏥᏍᏕᎸᏘᏱ, ᎠᎴ ᎤᏂᎷᎯᏍᏗᏱ",
+        "ftm_aligned": "ᏴᏫ ᎨᏥᏍᏕᎸᏗᏱ, ᎠᎴ ᎤᏂᎷᎯᏍᏗᏱ",
+        "ftm_raw_ocr": "ᏴᏫ ᎨᏥᏍᏕᎸᏗᏱ, ᎠᎴ ᎤᏂᎷᎯᏍᏗᏱ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150204_line_02.png",
+        "stock_aligned": "ᎠᎦᏙᎥᎯᏍᏗ ᎨᏒ ᏚᏳᎪᏛ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᎠᎦᏙᎥᎯᏍᏗ ᎨᎢ ᏚᏅᎪᏛ ᎨᏒᎢ.",
+        "ftm_aligned": "ᎠᎦᏙᎥᎯᏍᏗ ᎨᏒ ᏚᏳᎪᏛ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎠᎦᏙᎥᎯᏍᏗ ᎨᏒ ᏚᏳᎪᏛ ᎨᎬᎢ.",
+        "ftm_confidence": 75.0
+      }
+    ]
+  },
+  "150205": {
+    "image_path": "images/150205.png",
+    "cherokee_gt": "ᏌᏉᏉᏰᏃ ᎡᎭ ᎤᏁᎳᏅᎯ, ᎠᎴ ᏌᏉ ᏗᎪᎯᏍᏗᏍᎩ ᎠᏰᎵ ᏗᎴᏁᎯ ᎤᏁᎳᏅᎯ ᎠᎴ ᏴᏫ, ᎾᏍᎩ Ꮎ ᏴᏫ ᏥᏌ ᎦᎶᏁᏛ;",
+    "verse_number": "5",
+    "lines": [
+      {
+        "line_crop": "line_crops/150205_line_00.png",
+        "stock_aligned": "5 ᏌᏉᏉᏰᏃ ᎡᎭ ᎤᏁᎳᏅᎯ, ᎠᎴ",
+        "stock_raw_ocr": "Ꮎ5Ꭷ ᏌᎹᏉᏰᏃ ᎡᎭ ᎤᏁᎳᏅᎯ, ᎠᎴ",
+        "ftm_aligned": "5 ᏌᏉᏉᏰᏃ ᎡᎭ ᎤᏁᎳᏅᎯ, ᎠᎴ",
+        "ftm_raw_ocr": "5 ᏌᏉᏉᏰᏃ ᎡᎭ ᎤᏁᎳᏅᎯ, ᎠᎴ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150205_line_01.png",
+        "stock_aligned": "ᏌᏉ ᏗᎪᎯᏍᏗᏍᎩ ᎠᏰᎵ ᏗᎴᏁᎯ Ꭴ-",
+        "stock_raw_ocr": "ᏌᏉ ᏘᎪᎯᏍᏘᏍᎩ ᎠᏰᎵ ᏘᎴᏁᎯ Ꭴ-Ꮕ",
+        "ftm_aligned": "ᏌᏉ ᏗᎪᎯᏍᏗᏍᎩ ᎠᏰᎵ ᏗᎴᏁᎯ Ꭴ-",
+        "ftm_raw_ocr": "ᏌᏉ ᏗᎪᎯᏍᏗᏍᎩ ᎠᏰᎵ ᏗᎴᏁᎯ Ꭴ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150205_line_02.png",
+        "stock_aligned": "ᏁᎳᏅᎯ ᎠᎴ ᏴᏫ, ᎾᏍᎩ Ꮎ ᏴᏫ ᏥᏌ",
+        "stock_raw_ocr": "ᏁᎳᏅᎯ ᎠᎴ ᏴᏫ, ᎾᏍᎩ Ꮎ ᏴᏫ ᏥᏌ",
+        "ftm_aligned": "ᏁᎳᏅᎯ ᎠᎴ ᏴᏫ, ᎾᏍᎩ Ꮎ ᏴᏫ ᏥᏌ",
+        "ftm_raw_ocr": "ᏁᎳᏅᎯ ᎠᎴ ᏴᏫ, ᎾᏍᎩ Ꮎ ᏴᏫ ᏥᏌ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150205_line_03.png",
+        "stock_aligned": "ᎦᎶᏁᏛ;",
+        "stock_raw_ocr": "ᎦᎶᏁᏛ:;",
+        "ftm_aligned": "ᎦᎶᏁᏛ;",
+        "ftm_raw_ocr": "ᎦᎶᏁᏛ;",
+        "ftm_confidence": 46.0
+      }
+    ]
+  },
+  "150206": {
+    "image_path": "images/150206.png",
+    "cherokee_gt": "ᎾᏍᎩ ᏥᏚᏓᏲᏎ ᎤᏩᏒ ᏥᏚᎫᏴᎮ ᎾᏂᎥᎢ, ᎬᏂᎨᏒ ᎢᎬᏁᏗ ᎠᏎᎸᎯ ᎨᏒ ᎾᎯᏳᎢ,",
+    "verse_number": "6",
+    "lines": [
+      {
+        "line_crop": "line_crops/150206_line_00.png",
+        "stock_aligned": "6 ᎾᏍᎩ ᏥᏚᏓᏲᏎ ᎤᏩᏒ ᏥᏚᎫᏴᎮ",
+        "stock_raw_ocr": "Ꮾ ᎾᏍᎩ ᏥᏚᏓᏲᏎ ᎤᏩᏒ ᏥᏚᎫᏴᎮ",
+        "ftm_aligned": "6 ᎾᏍᎩ ᏥᏚᏓᏲᏎ ᎤᏩᏒ ᏥᏚᎫᏴᎮ",
+        "ftm_raw_ocr": "Ꮾ ᎾᏍᎩ ᏥᏚᏓᏲᏎ ᎤᏩᏒ ᏥᏚᎫᏴᎵ",
+        "ftm_confidence": 67.0
+      },
+      {
+        "line_crop": "line_crops/150206_line_01.png",
+        "stock_aligned": "ᎾᏂᎥᎢ, ᎬᏂᎨᏒ ᎢᎬᏁᏗ ᎠᏎᎸᎯ ᎨᏒ",
+        "stock_raw_ocr": "ᎧᏂᎥᎢ, ᎬᏂᏥᏒ ᎢᎬᏁᏗ ᎠᏎᎸᎯ ᎨᏒ",
+        "ftm_aligned": "ᎾᏂᎥᎢ, ᎬᏂᎨᏒ ᎢᎬᏁᏗ ᎠᏎᎸᎯ ᎨᏒ",
+        "ftm_raw_ocr": "ᎾᏂᎥᎢ, ᎬᏂᎨᏒ ᎢᎬᏁᏗ ᎠᏎᎸᎯ ᎨᏒ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150206_line_02.png",
+        "stock_aligned": "ᎾᎯᏳᎢ,",
+        "stock_raw_ocr": "ᎧᎯᏳᎢ,",
+        "ftm_aligned": "ᎾᎯᏳᎢ,",
+        "ftm_raw_ocr": "ᎾᎯᏳᎢ,",
+        "ftm_confidence": 87.0
+      }
+    ]
+  },
+  "150207": {
+    "image_path": "images/150207.png",
+    "cherokee_gt": "ᎾᏍᎩᏃ ᎯᎠ ᎠᏴ ᎥᎩᏁᏤᎸᎯ ᎦᎵᏥᏙᎲᏍᎩ ᎠᎴ ᎥᎩᏅᏏᏛ, ᏧᎾᏓᎴᏅᏛ ᏴᏫ ᏗᎦᏥᏰᏲᎲᏍᎩ ᎦᎶᏄᎮᏛ ᎠᎴ ᎦᏰᎪᎩ ᏂᎬᏗᏍᎬᎾ; ᎤᏙᎯᏳᎯᏯ ᏥᏁᎦ ᎦᎶᏁᏛ ᎠᎦᏔᎲᎢ, ᎥᏝ ᏱᎦᏥᎪᎥᏍᎦ.",
+    "verse_number": "7",
+    "lines": [
+      {
+        "line_crop": "line_crops/150207_line_00.png",
+        "stock_aligned": "7 ᎾᏍᎩᏃ ᎯᎠ ᎠᏴ ᎥᎩᏁᏤᎸᎯ ᎦᎵ-",
+        "stock_raw_ocr": "7. ᎾᏍᎩᏃ ᎯᎠ ᎠᏴ ᎥᎩᏁᏤᎸᎯ ᎦᎵ-",
+        "ftm_aligned": "7 ᎾᏍᎩᏃ ᎯᎠ ᎠᏴ ᎥᎩᏁᏤᎸᎯ ᎦᎵ-",
+        "ftm_raw_ocr": "7 ᎾᏍᎩᏃ ᎯᎠ ᎠᏴ ᎥᎩᏁᏤᎸᎯ ᎦᎵ-",
+        "ftm_confidence": 91.0
+      },
+      {
+        "line_crop": "line_crops/150207_line_01.png",
+        "stock_aligned": "ᏥᏙᎲᏍᎩ ᎠᎴ ᎥᎩᏅᏏᏛ, ᏧᎾᏓᎴᏅᏛ",
+        "stock_raw_ocr": "ᏥᏙᎲᏍᎩ ᎠᎴ ᎥᎩᏅᏏᏛ, ᏧᎾᏓᎴᏅᏛ",
+        "ftm_aligned": "ᏥᏙᎲᏍᎩ ᎠᎴ ᎥᎩᏅᏏᏛ, ᏧᎾᏓᎴᏅᏛ",
+        "ftm_raw_ocr": "ᏥᏙᎲᏍᎩ ᎠᎴ ᎥᎩᏅᏏᏛ, ᏧᎾᏓᎴᏅᏛ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150207_line_02.png",
+        "stock_aligned": "ᏴᏫ ᏗᎦᏥᏰᏲᎲᏍᎩ ᎦᎶᏄᎮᏛ ᎠᎴ ᎦᏰᎪᎩ",
+        "stock_raw_ocr": "ᏴᏫ ᏘᎦᏥᏰᏲᎲᏍᎩ ᎦᎶᏄᎮᏛ ᎠᎴ ᎦᏰᎪᎩ",
+        "ftm_aligned": "ᏴᏫ ᏗᎦᏥᏰᏲᎲᏍᎩ ᎦᎶᏄᎮᏛ ᎠᎴ ᎦᏰᎪᎩ",
+        "ftm_raw_ocr": "ᏴᏫ ᏗᎦᏥᏰᏲᎲᏍᎩ ᎦᎶᏄᎮᏛ ᎠᎴ ᎦᏰᎪᎩ",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150207_line_03.png",
+        "stock_aligned": "ᏂᎬᏗᏍᎬᎾ; ᎤᏙᎯᏳᎯᏯ ᏥᏁᎦ ᎦᎶ-",
+        "stock_raw_ocr": "ᏂᎬᏘᏍᎬᎾ;Ꮆ ᎤᏙᎯᏳᎯᏯ ᏥᏁᎦ ᎦᎶ-",
+        "ftm_aligned": "ᏂᎬᏗᏍᎬᎾ; ᎤᏙᎯᏳᎯᏯ ᏥᏁᎦ ᎦᎶ-",
+        "ftm_raw_ocr": "ᏂᎬᏗᏍᎬᎾᏫ ᎤᏙᎯᏳᎯᏯ ᏥᏁᎦ ᎦᎶ-",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150207_line_04.png",
+        "stock_aligned": "ᏁᏛ ᎠᎦᏔᎲᎢ, ᎥᏝ ᏱᎦᏥᎪᎥᏍᎦ.",
+        "stock_raw_ocr": "ᏁᏛ ᎠᎦᏔᎲᎢ,, ᎥᏝ ᏱᎦᏥᎪᎥᏍᎦ.",
+        "ftm_aligned": "ᏁᏛ ᎠᎦᏔᎲᎢ, ᎥᏝ ᏱᎦᏥᎪᎥᏍᎦ.",
+        "ftm_raw_ocr": "ᏁᏛ ᎠᎦᏔᎲᎢ, ᎥᏝ ᏱᎦᏥᎪᎥᏍᎦ.",
+        "ftm_confidence": 87.0
+      }
+    ]
+  },
+  "150208": {
+    "image_path": "images/150208.png",
+    "cherokee_gt": "ᎾᏍᎩᏃ ᎠᏆᏚᎵᎭ ᎠᏂᏍᎦᏯ ᏂᎦᎥ ᏕᎨᏌᏗᏒ ᎤᎾᏓᏙᎵᏍᏙᏱ, ᏧᏂᏌᎳᏙᏗᏱ ᏗᎦᏓᎭ ᏂᎨᏒᎾ ᏧᏃᏰᏂ ᏄᏂᏔᎳᏬᏍᎬᎾ ᎠᎴ ᏄᎾᏜᏓᏏᏛᎡᎲᎾ.",
+    "verse_number": "8",
+    "lines": [
+      {
+        "line_crop": "line_crops/150208_line_00.png",
+        "stock_aligned": "8 ᎾᏍᎩᏃ ᎠᏆᏚᎵᎭ ᎠᏂᏍᎦᏯ ᏂᎦᎥ",
+        "stock_raw_ocr": "8 ᎾᏍᎩᏃ ᎠᏆᏚᎵᏝᎭ ᎠᏂᏍᎦᏯ ᏂᎦᎥ",
+        "ftm_aligned": "8 ᎾᏍᎩᏃ ᎠᏆᏚᎵᎭ ᎠᏂᏍᎦᏯ ᏂᎦᎥ",
+        "ftm_raw_ocr": "Ꮪ ᎾᏍᎩᏃ ᎠᏆᏚᎵᎭ ᎠᏂᏍᎦᏯ ᏂᎦᎥ",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150208_line_01.png",
+        "stock_aligned": "ᏕᎨᏌᏗᏒ ᎤᎾᏓᏙᎵᏍᏙᏱ, ᏧᏂᏌᎳᏙ-",
+        "stock_raw_ocr": "ᏕᎨᏌᏗᏒ ᎤᎾᏓᏙᎵᏍᏙᏗᏱ, ᏧᏂᏌᎳᏙ-",
+        "ftm_aligned": "ᏕᎨᏌᏗᏒ ᎤᎾᏓᏙᎵᏍᏙᏱ, ᏧᏂᏌᎳᏙ-",
+        "ftm_raw_ocr": "ᏕᎨᏌᏗᏒ ᎤᎾᏓᏙᎵᏍᏔᏙᏗᏱ, ᏧᏂᏌᎳᏙᏉ-",
+        "ftm_confidence": 66.0
+      },
+      {
+        "line_crop": "line_crops/150208_line_02.png",
+        "stock_aligned": "ᏗᏱ ᏗᎦᏓᎭ ᏂᎨᏒᎾ ᏧᏃᏰᏂ ᏄᏂᏔᎳ-",
+        "stock_raw_ocr": "ᏗᏱ ᏘᎦᏖᎭ ᏂᎨᏒᎾ ᏧᏃᏰᏂ ᏄᏂᏔᎳ-",
+        "ftm_aligned": "ᏗᏱ ᏗᎦᏓᎭ ᏂᎨᏒᎾ ᏧᏃᏰᏂ ᏄᏂᏔᎳ-",
+        "ftm_raw_ocr": "ᏗᏱ ᏗᎦᏓᎭ ᏂᎨᏴᎾ ᏧᏃᏰᏂ ᏄᏂᏔᎳ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150208_line_03.png",
+        "stock_aligned": "ᏬᏍᎬᎾ ᎠᎴ ᏄᎾᏜᏓᏏᏛᎡᎲᎾ.",
+        "stock_raw_ocr": "ᏬᏍᎬᎾ ᎠᎴ ᏄᎾᏜᏏᏛᎡᎲᎾ.",
+        "ftm_aligned": "ᏬᏍᎬᎾ ᎠᎴ ᏄᎾᏜᏓᏏᏛᎡᎲᎾ.",
+        "ftm_raw_ocr": "ᏬᏍᎬᎾ ᎠᎴ ᏄᎾᏱᏏᏛᎡᎲᎾ.",
+        "ftm_confidence": 87.0
+      }
+    ]
+  },
+  "150209": {
+    "image_path": "images/150209.png",
+    "cherokee_gt": "ᎠᎴ ᎾᏍᎩᏯ ᎾᏍᏉ ᎠᏂᎨᏴ ᏓᎾᏣᎤᏍᎬ ᎤᏢᏉᏗ ᏂᎨᏒᎾ ᏓᎾᏄᏬᏍᎨᏍᏗ, ᎤᎾᏓᎾᏰᎯᏍᏗ ᎠᎴ ᎤᎾᎵᏏᎾᎯᏍᏗ ᎨᏎᏍᏗ; ᎥᏝᏍᏗᏃ ᏓᏂᏍᏕᏲᎲ ᏚᏂᏍᏘᏰᎬᎢ, ᎠᎴ ᎠᏕᎸ ᏓᎶᏂᎨ, ᎠᎴ ᏓᎬᎾ-ᎢᏳᎾᏍᏗ, ᎠᎴ ᎤᏣᏘ ᏧᎬᏩᎶᏗ ᏗᏄᏬ ᏱᏓᎾᏣᏅᏗᏍᎨᏍᏗ;",
+    "verse_number": "9",
+    "lines": [
+      {
+        "line_crop": "line_crops/150209_line_00.png",
+        "stock_aligned": "9 ᎠᎴ ᎾᏍᎩᏯ ᎾᏍᏉ ᎠᏂᎨᏴ ᏓᎾᏣᎤ-",
+        "stock_raw_ocr": "9 ᎠᎴ ᎧᏍᎩᏯ ᎾᏍᏉ ᎠᏂᎨᏴ ᏓᏮᏣᏅ-",
+        "ftm_aligned": "9 ᎠᎴ ᎾᏍᎩᏯ ᎾᏍᏉ ᎠᏂᎨᏴ ᏓᎾᏣᎤ-",
+        "ftm_raw_ocr": "9 ᎠᎴ ᎾᏍᎩᏯ ᎾᏍᏉ ᎠᏂᎨᏴ ᏓᎾᏣᎤ-",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150209_line_01.png",
+        "stock_aligned": "ᏍᎬ ᎤᏢᏉᏗ ᏂᎨᏒᎾ ᏓᎾᏄᏬᏍᎨᏍᏗ,",
+        "stock_raw_ocr": "ᏍᎬ ᎤᏢᏉᏘ ᏂᎨᏒᎾ ᏓᎾᏄᏬᏍᎨᏍᏘ,;",
+        "ftm_aligned": "ᏍᎬ ᎤᏢᏉᏗ ᏂᎨᏒᎾ ᏓᎾᏄᏬᏍᎨᏍᏗ,",
+        "ftm_raw_ocr": "ᏍᎬ ᎤᏢᏉᏗ ᏂᎨᏒᎾ ᏓᎾᏄᏬᏍᎨᏍᏗ,",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150209_line_02.png",
+        "stock_aligned": "ᎤᎾᏓᎾᏰᎯᏍᏗ ᎠᎴ ᎤᎾᎵᏏᎾᎯᏍᏗ",
+        "stock_raw_ocr": "ᎤᎾᏖᎾᏰᎯᏍᏗ ᎠᎴ ᎤᎾᏝᏏᎾᎯᏍᏘ ᎲᏑᏎ-",
+        "ftm_aligned": "ᎤᎾᏓᎾᏰᎯᏍᏗ ᎠᎴ ᎤᎾᎵᏏᎾᎯᏍᏗ ᎨᏎ-",
+        "ftm_raw_ocr": "ᎤᎾᏓᎾᏰᎯᏍᏗ ᎠᎴ ᎤᎾᎵᏝᏏᎾᎯᏍᏗ ᎨᏎ-",
+        "ftm_confidence": 77.0
+      },
+      {
+        "line_crop": "line_crops/150209_line_03.png",
+        "stock_aligned": "ᎨᏎᏍᏗ; ᎥᏝᏍᏗᏃ ᏓᏂᏍᏕᏲᎲ ᏚᏂᏍᏘᏰ-",
+        "stock_raw_ocr": "ᏍᎣᏘ;Ꮆ ᎥᏞᏍᏘᏃ ᏓᏂᏍᏕᏲᎲ ᏚᏂᏍᏘᏰ-",
+        "ftm_aligned": "ᏍᏗ; ᎥᏝᏍᏗᏃ ᏓᏂᏍᏕᏲᎲ ᏚᏂᏍᏘᏰ-",
+        "ftm_raw_ocr": "ᏍᏗ; ᎥᏞᏍᏗᏃ ᏓᏂᏍᏕᏲᎲ ᏚᏂᏍᏘᏰ-",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150209_line_04.png",
+        "stock_aligned": "ᎬᎢ, ᎠᎴ ᎠᏕᎸ ᏓᎶᏂᎨ, ᎠᎴ ᏓᎬᎾ-",
+        "stock_raw_ocr": "ᎬᎢ; ᎠᎴ ᎠᎦᏕᎸ. ᏓᎶᏂᎨᎬ, ᎠᎴ ᏓᎬᎾ-Ꭲ-",
+        "ftm_aligned": "ᎬᎢ, ᎠᎴ ᎠᏕᎸ ᏓᎶᏂᎨ, ᎠᎴ ᏓᎬᎾ-",
+        "ftm_raw_ocr": "ᎬᎢ, ᎠᎴ ᎠᏕᎸ ᏓᎶᏂᎨ, ᎠᎴ ᏓᎬᎾ-Ꭲ-",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150209_line_05.png",
+        "stock_aligned": "-ᎢᏳᎾᏍᏗ, ᎠᎴ ᎤᏣᏘ ᏧᎬᏩᎶᏗ ᏗᏄᏬ",
+        "stock_raw_ocr": "ᏳᏮᏍᏘ, ᎠᎴ ᎤᏣᏘ ᏧᎬᏩᎶᏘ ᏘᏄᏄᏊᏬᎧ",
+        "ftm_aligned": "-ᎢᏳᎾᏍᏗ, ᎠᎴ ᎤᏣᏘ ᏧᎬᏩᎶᏗ ᏗᏄᏬ",
+        "ftm_raw_ocr": "ᏳᎾᏍᏗ, ᎠᎴ ᎤᏣᏘ ᏧᎬᏩᎶᏗ ᏗᏄᏬ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150209_line_06.png",
+        "stock_aligned": "ᏱᏓᎾᏣᏅᏗᏍᎨᏍᏗ;",
+        "stock_raw_ocr": "ᏱᏖᏓᎾᏣᏅᏘᏍᎨᏍᏗ;",
+        "ftm_aligned": "ᏱᏓᎾᏣᏅᏗᏍᎨᏍᏗ;",
+        "ftm_raw_ocr": "ᏱᏓᎾᏣᏅᏗᏍᎨᏍᏗ;",
+        "ftm_confidence": 87.0
+      }
+    ]
+  },
+  "150210": {
+    "image_path": "images/150210.png",
+    "cherokee_gt": "ᎣᏍᏛᏍᎩᏂ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ ᏓᎾᏣᏅᏗᏍᎨᏍᏗ, ᎾᏍᎩ ᏧᎾᏁᎶᏗ ᎠᏂᎨᏴ ᏧᏂᎵᎶᎲᏍᎦ.",
+    "verse_number": "10",
+    "lines": [
+      {
+        "line_crop": "line_crops/150210_line_00.png",
+        "stock_aligned": "10 ᎣᏍᏛᏍᎩᏂ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ",
+        "stock_raw_ocr": "10 ᎣᏍᏛᏍᎩᏂ ᏘᎦᎸᏫᏍᏖᏁᏗ ᎨᏒ",
+        "ftm_aligned": "10 ᎣᏍᏛᏍᎩᏂ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ",
+        "ftm_raw_ocr": "10 ᎣᏍᏛᏍᎩᏂ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150210_line_01.png",
+        "stock_aligned": "ᏓᎾᏣᏅᏗᏍᎨᏍᏗ, ᎾᏍᎩ ᏧᎾᏁᎶᏗ ᎠᏂᎨᏴ",
+        "stock_raw_ocr": "ᏓᎾᏣᏅᏘᏍᎨᏍᏗ, ᎾᎧᏍᎩ ᏧᎾᏁᎶᏗ ᎠᏂᎹ-",
+        "ftm_aligned": "ᏓᎾᏣᏅᏗᏍᎨᏍᏗ, ᎾᏍᎩ ᏧᎾᏁᎶᏗ ᎠᏂ-",
+        "ftm_raw_ocr": "ᏓᎾᏣᏅᏗᏍᎨᏍᏗ, ᎾᏍᎩ ᏧᎾᏁᎶᏗ ᎠᏂ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150210_line_02.png",
+        "stock_aligned": "ᏧᏂᎵᎶᎲᏍᎦ.",
+        "stock_raw_ocr": "ᏥᏴ ᏧᏂᎵᎶᎲᏍᎦ,",
+        "ftm_aligned": "ᎨᏴ ᏧᏂᎵᎶᎲᏍᎦ.",
+        "ftm_raw_ocr": "ᎨᏴ ᏧᏂᎵᎶᎲᏍᎦ.",
+        "ftm_confidence": 85.0
+      }
+    ]
+  },
+  "150211": {
+    "image_path": "images/150211.png",
+    "cherokee_gt": "ᎠᎴ ᎠᎨᏴ ᎡᎳᏪᏱ ᎠᏕᎶᏆᏍᎨᏍᏗ ᎤᏣᏘ ᎤᏬᎯᏳᎯᏳ ᎨᏎᏍᏗ.",
+    "verse_number": "11",
+    "lines": [
+      {
+        "line_crop": "line_crops/150211_line_00.png",
+        "stock_aligned": "11 ᎠᎴ ᎠᎨᏴ ᎡᎳᏪᏱ ᎠᏕᎶᏆᏍᎨᏍᏗ",
+        "stock_raw_ocr": "11 ᎠᎴ ᎠᎨᏴ ᎡᎳᏪᏱ ᎠᎾᎶᏆᏍᎨᎰ”",
+        "ftm_aligned": "11 ᎠᎴ ᎠᎨᏴ ᎡᎳᏪᏱ ᎠᏕᎶᏆᏍᎨ-",
+        "ftm_raw_ocr": "11 ᎠᎴ ᎠᎨᏴ ᎡᎳᏪᏱ ᎠᏅᎶᏆᏍᎨ-",
+        "ftm_confidence": 71.0
+      },
+      {
+        "line_crop": "line_crops/150211_line_01.png",
+        "stock_aligned": "ᎤᏣᏘ ᎤᏬᎯᏳᎯᏳ ᎨᏎᏍᏗ.",
+        "stock_raw_ocr": "ᏍᏘ ᎤᏣᏘ ᎤᏬᎯᏳᎯᏳ ᎨᏎᏍᏗ,",
+        "ftm_aligned": "ᏍᏗ ᎤᏣᏘ ᎤᏬᎯᏳᎯᏳ ᎨᏎᏍᏗ.",
+        "ftm_raw_ocr": "ᏍᏗ ᎤᏣᏘ ᎤᏬᎯᏳᎯᏳ ᎨᏎᏍᏗ.",
+        "ftm_confidence": 88.0
+      }
+    ]
+  },
+  "150212": {
+    "image_path": "images/150212.png",
+    "cherokee_gt": "ᎥᏝᏍᎩᏂ ᎤᏁᎳᎩ ᏱᏥᏰᎵᏎ ᎠᎨᏴ ᏧᏕᏲᏗᏱ ᎠᎴ ᎤᏓᎵᏁᎯᏕᏗᏱ ᎠᏍᎦᏯ, ᎡᎳᏪᏱᏉᏍᎩᏂ ᎤᏩᏗᏱ.",
+    "verse_number": "12",
+    "lines": [
+      {
+        "line_crop": "line_crops/150212_line_00.png",
+        "stock_aligned": "12 ᎥᏝᏍᎩᏂ ᎤᏁᎳᎩ ᏱᏥᏰᎵᏎ ᎠᎨᏴ",
+        "stock_raw_ocr": "12 ᎥᏝᏍᎩᏂ ᎤᏁᎳᎩ ᏱᏥᏰᏝᏎ ᎠᎨᏴ",
+        "ftm_aligned": "12 ᎥᏝᏍᎩᏂ ᎤᏁᎳᎩ ᏱᏥᏰᎵᏎ ᎠᎨᏴ",
+        "ftm_raw_ocr": "Ꭰ ᎥᎴᏍᎩᏂ ᎤᏁᎳᎩ ᏱᏥᏰᎵᏎ ᎠᎨᏴ",
+        "ftm_confidence": 58.0
+      },
+      {
+        "line_crop": "line_crops/150212_line_01.png",
+        "stock_aligned": "ᏧᏕᏲᏗᏱ ᎠᎴ ᎤᏓᎵᏁᎯᏕᏗᏱ ᎠᏍᎦᏯ,",
+        "stock_raw_ocr": "ᏧᏕᏲᏗᏱ ᎠᎴ ᎤᏓᎵᏁᎯᏕᏚᏗᏱ ᎠᏍᎦᏯ,",
+        "ftm_aligned": "ᏧᏕᏲᏗᏱ ᎠᎴ ᎤᏓᎵᏁᎯᏕᏗᏱ ᎠᏍᎦᏯ,",
+        "ftm_raw_ocr": "ᏧᏕᏳᏲᏗᏱ ᎠᎴ ᎤᏓᎵᏁᎯᏳᏗᏱ ᎠᏍᎦᏯ,",
+        "ftm_confidence": 53.0
+      },
+      {
+        "line_crop": "line_crops/150212_line_02.png",
+        "stock_aligned": "ᎡᎳᏪᏱᏉᏍᎩᏂ ᎤᏩᏗᏱ.",
+        "stock_raw_ocr": "ᎡᎳᏪᏱᏉᏍᏱᎩᏂ ᎤᏩᏘᏱ.",
+        "ftm_aligned": "ᎡᎳᏪᏱᏉᏍᎩᏂ ᎤᏩᏗᏱ.",
+        "ftm_raw_ocr": "ᎡᎳᏪᏱᏉᏍᎩᏂ ᎤᏩᏗᏱ.",
+        "ftm_confidence": 86.0
+      }
+    ]
+  },
+  "150213": {
+    "image_path": "images/150213.png",
+    "cherokee_gt": "ᎠᏓᏫᏰᏃ ᎢᎬᏱ ᎠᎪᏢᏁᎢ, ᎩᎳᏃ ᎢᏫ.",
+    "verse_number": "13",
+    "lines": [
+      {
+        "line_crop": "line_crops/150213_line_00.png",
+        "stock_aligned": "13 ᎠᏓᏫᏰᏃ ᎢᎬᏱ ᎠᎪᏢᏁᎢ, ᎩᎳᏃ",
+        "stock_raw_ocr": "18 ᎠᏓᎧᏰᏃ ᎢᎬᏱ ᎠᎪᏢᏁᎢ, ᎩᎳᏃ",
+        "ftm_aligned": "13 ᎠᏓᏫᏰᏃ ᎢᎬᏱ ᎠᎪᏢᏁᎢ, ᎩᎳᏃ",
+        "ftm_raw_ocr": "18 ᎠᏓᏫᏰᏃ ᎢᎬᏱ ᎠᎪᏢᏁᎢ, ᎩᎳᏃ",
+        "ftm_confidence": 69.0
+      },
+      {
+        "line_crop": "line_crops/150213_line_01.png",
+        "stock_aligned": "ᎢᏫ.",
+        "stock_raw_ocr": "ᎢᎧ.",
+        "ftm_aligned": "ᎢᏫ.",
+        "ftm_raw_ocr": "ᎢᎾᏯ.",
+        "ftm_confidence": 24.0
+      }
+    ]
+  },
+  "150214": {
+    "image_path": "images/150214.png",
+    "cherokee_gt": "ᎥᏝᏰᏃ ᎠᏓᏫ ᏯᏥᎶᏄᎡᎴᎢ, ᎠᎨᏴᏍᎩᏂ ᎠᏥᎶᏄᎡᎸ ᎤᏍᎦᏅᏤᎢ.",
+    "verse_number": "14",
+    "lines": [
+      {
+        "line_crop": "line_crops/150214_line_00.png",
+        "stock_aligned": "14 ᎥᏝᏰᏃ ᎠᏓᏫ ᏯᏥᎶᏄᎡᎴᎢ, ᎠᎨ-",
+        "stock_raw_ocr": "1Ꮞ ᎥᏝᏰᏃ ᎠᏖᏓᏫᎧ ᏯᏥᎶᏄᎡᎴᎢ, ᎠᎰ-",
+        "ftm_aligned": "14 ᎥᏝᏰᏃ ᎠᏓᏫ ᏯᏥᎶᏄᎡᎴᎢ, ᎠᎨ-",
+        "ftm_raw_ocr": "1Ꮞ ᎥᏝᏰᏃ ᎠᏓᏫ ᏯᏥᎶᏄᎡᎴᎢ, ᎠᎨ-",
+        "ftm_confidence": 77.0
+      },
+      {
+        "line_crop": "line_crops/150214_line_01.png",
+        "stock_aligned": "ᏴᏍᎩᏂ ᎠᏥᎶᏄᎡᎸ ᎤᏍᎦᏅᏤᎢ.",
+        "stock_raw_ocr": "ᏰᏍᎩᏂ ᎠᏥᎶᏄᎡᎸ ᎤᏍᎦᏅᏤᎢ.",
+        "ftm_aligned": "ᏴᏍᎩᏂ ᎠᏥᎶᏄᎡᎸ ᎤᏍᎦᏅᏤᎢ.",
+        "ftm_raw_ocr": "ᏰᏍᎩᏂ ᎠᏥᎶᏄᎡᎸ ᎤᏍᎦᏅᏤᎢ.",
+        "ftm_confidence": 86.0
+      }
+    ]
+  },
+  "150215": {
+    "image_path": "images/150215.png",
+    "cherokee_gt": "ᎠᏎᏍᎩᏂᏃᏅ ᎠᏥᏍᏕᎸᏗ ᎢᎨᏎᏍᏗ ᏗᏂᏲᎵ ᏕᎦᎾᏄᎪᏫᏍᎬᎢ, ᎢᏳᏃ ᏓᏂᎧᎿᎭᏩᏗᏎᏍᏗ ᎪᎯᏳᏗ ᎨᏒ, ᎠᎴ ᎠᏓᎨᏳᏗ ᎨᏒᎢ, ᎠᎴ ᏚᏳᎪᏛ ᎨᏒᎢ, ᎠᎴ ᎠᎵᏏᎾᎯᏍᏙᏗ ᎨᏒᎢ.",
+    "verse_number": "15",
+    "lines": [
+      {
+        "line_crop": "line_crops/150215_line_00.png",
+        "stock_aligned": "15 ᎠᏎᏍᎩᏂᏃᏅ ᎠᏥᏍᏕᎸᏗ ᎢᎨᏎ-",
+        "stock_raw_ocr": "15 ᎠᏎᏍᎩᏂᏃᏅ ᎠᏥᏍᏕᎸᏗ ᎢᎨᏎ-",
+        "ftm_aligned": "15 ᎠᏎᏍᎩᏂᏃᏅ ᎠᏥᏍᏕᎸᏗ ᎢᎨᏎ-",
+        "ftm_raw_ocr": "15 ᎠᏎᏍᎩᏂᏃᏅ ᎠᏥᏍᏕᎸᏗ ᎢᎨᏎ-",
+        "ftm_confidence": 68.0
+      },
+      {
+        "line_crop": "line_crops/150215_line_01.png",
+        "stock_aligned": "ᏍᏗ ᏗᏂᏲᎵ ᏕᎦᎾᏄᎪᏫᏍᎬᎢ, ᎢᏳᏃ",
+        "stock_raw_ocr": "ᏍᏘ ᏗᏂᏲᎵ ᏕᎦᎾᏄᎪᏫᏍᎬᎢ, ᎢᏳᏃ",
+        "ftm_aligned": "ᏍᏗ ᏗᏂᏲᎵ ᏕᎦᎾᏄᎪᏫᏍᎬᎢ, ᎢᏳᏃ",
+        "ftm_raw_ocr": "ᏍᏗ ᏗᏂᏲᎵᏝ ᏕᏣᎦᎾᏄᎪᏫᏍᎬᎢ, ᎢᏳᏃ",
+        "ftm_confidence": 47.0
+      },
+      {
+        "line_crop": "line_crops/150215_line_02.png",
+        "stock_aligned": "ᏓᏂᎧᎿᎭᏩᏗᏎᏍᏗ ᎪᎯᏳᏗ ᎨᏒ, ᎠᎴ",
+        "stock_raw_ocr": "ᏓᏂᎧᎿᏩᏗᏎᏍᏘ ᎪᎯᏳᏗ ᎨᎻ, ᎠᎴ",
+        "ftm_aligned": "ᏓᏂᎧᎿᎭᏩᏗᏎᏍᏗ ᎪᎯᏳᏗ ᎨᏒ, ᎠᎴ",
+        "ftm_raw_ocr": "ᏓᏂᎧᎿᏩᏗᏎᏍᏗ ᎪᎯᏳᏗ ᎨᏒ, ᎠᎴ",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150215_line_03.png",
+        "stock_aligned": "ᎠᏓᎨᏳᏗ ᎨᏒᎢ, ᎠᎴ ᏚᏳᎪᏛ ᎨᏒᎢ,",
+        "stock_raw_ocr": "ᎠᏓᎨᏳᏘ ᎨᎡᎢ, ᎠᎴ ᏚᏅᏇᎪᏛ ᏥᎨᏒᎢ,.",
+        "ftm_aligned": "ᎠᏓᎨᏳᏗ ᎨᏒᎢ, ᎠᎴ ᏚᏳᎪᏛ ᎨᏒᎢ,",
+        "ftm_raw_ocr": "ᎠᏓᎨᏳᏗ ᎨᏒᎢ, ᎠᎴ ᏚᏳᎪᏛ ᎨᏒᎢ.,",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150215_line_04.png",
+        "stock_aligned": "ᎠᎴ ᎠᎵᏏᎾᎯᏍᏙᏗ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᎠᎴ ᎠᎵᏏᎾᎯᏍᏙᏗ ᏥᎨᏦᏒᎢ.",
+        "ftm_aligned": "ᎠᎴ ᎠᎵᏏᎾᎯᏍᏙᏗ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎠᎴ ᎠᎵᏏᎾᎯᏍᏙᏗ ᎨᏒᎢ.",
+        "ftm_confidence": 86.0
+      }
+    ]
+  },
+  "150301": {
+    "image_path": "images/150301.png",
+    "cherokee_gt": "ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ; ᎢᏳᏃ ᎩᎶ ᎤᏚᏝᏍᎨᏍᏗ ᎠᏥᎦᏘᏗᏍᏗ ᎢᏳᎵᏍᏙᏗᏱ, ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ ᎤᏚᎵᏍᎨᏍᏗ.",
+    "verse_number": "1",
+    "lines": [
+      {
+        "line_crop": "line_crops/150301_line_00.png",
+        "stock_aligned": "1 ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ; ᎢᏳᏃ ᎩᎶ",
+        "stock_raw_ocr": "1.ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ; ᎢᏳᏃ ᎩᎶ",
+        "ftm_aligned": "1 ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ; ᎢᏳᏃ ᎩᎶ",
+        "ftm_raw_ocr": "1ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ;Ꮻ ᎢᏳᏃ ᎩᎶ",
+        "ftm_confidence": 62.0
+      },
+      {
+        "line_crop": "line_crops/150301_line_01.png",
+        "stock_aligned": "ᎤᏚᏝᏍᎨᏍᏗ ᎠᏥᎦᏘᏗᏍᏗ ᎢᏳᎵᏍᏙ-",
+        "stock_raw_ocr": "ᎤᏚᏝᏍᎨᏍᏗ ᎠᏥᎦᏘᏗᏍᏗ ᎢᏳᎵᏍᏙᎩ-",
+        "ftm_aligned": "ᎤᏚᏝᏍᎨᏍᏗ ᎠᏥᎦᏘᏗᏍᏗ ᎢᏳᎵᏍᏙ-",
+        "ftm_raw_ocr": "ᎤᏚᏝᏍᎨᏍᏗ ᎠᏥᎦᏘᏗᏍᏗ ᎢᏳᎵᏍᏙ-",
+        "ftm_confidence": 67.0
+      },
+      {
+        "line_crop": "line_crops/150301_line_02.png",
+        "stock_aligned": "ᏗᏱ, ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ ᎤᏚ-",
+        "stock_raw_ocr": "ᏘᏱ, ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᏥᎨᎡᏒᎡ ᎤᏚ-Ꮕ",
+        "ftm_aligned": "ᏗᏱ, ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ ᎤᏚ-",
+        "ftm_raw_ocr": "ᏗᏱ, ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ ᎤᏚ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150301_line_03.png",
+        "stock_aligned": "ᎵᏍᎨᏍᏗ.",
+        "stock_raw_ocr": "ᎵᏍᎨᏍᏗᏘ,",
+        "ftm_aligned": "ᎵᏍᎨᏍᏗ.",
+        "ftm_raw_ocr": "ᎵᏍᎨᏍᏗ.",
+        "ftm_confidence": 84.0
+      }
+    ]
+  },
+  "150302": {
+    "image_path": "images/150302.png",
+    "cherokee_gt": "ᎠᏥᎦᏘᏗᏍᏗ ᎠᏗᎾ ᎠᏎ ᎪᎱᏍᏗ ᎾᏍᎦᏅᎾ ᎨᏎᏍᏗ, ᏌᏉᏉ ᎠᏓᏰᎮᏍᏗ, ᎨᏯᏔᎯ, ᎤᎵᏏᎾᎯᏍᏗ, ᎣᏍᏛ ᏧᎸᏫᏍᏓᏁᎯ, ᏧᏓᏓᏂᎸᏣᏘ, ᏗᎬᏩᏕᏲᏗ;",
+    "verse_number": "2",
+    "lines": [
+      {
+        "line_crop": "line_crops/150302_line_00.png",
+        "stock_aligned": "2 ᎠᏥᎦᏘᏗᏍᏗ ᎠᏗᎾ ᎠᏎ ᎪᎱᏍᏗ",
+        "stock_raw_ocr": "2 ᎠᏥᎦᏘᏘᏍᏘ ᎠᏘᎾ ᎠᏎ ᎪᎱᏍᏘᏗ",
+        "ftm_aligned": "2 ᎠᏥᎦᏘᏗᏍᏗ ᎠᏗᎾ ᎠᏎ ᎪᎱᏍᏗ",
+        "ftm_raw_ocr": "2 ᎠᏥᎦᏘᏗᏍᏗ ᎠᏗᎾ ᎠᏎ ᎪᎱᏍᏗ",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150302_line_01.png",
+        "stock_aligned": "ᎾᏍᎦᏅᎾ ᎨᏎᏍᏗ, ᏌᏉᏉ ᎠᏓᏰᎮᏍᏗ,",
+        "stock_raw_ocr": "ᎾᎧᏍᎦᏅᎾ ᎨᏎᏍᏗ, ᏌᏉᏉ ᎠᏖᏰᎮᏍᏘ,",
+        "ftm_aligned": "ᎾᏍᎦᏅᎾ ᎨᏎᏍᏗ, ᏌᏉᏉ ᎠᏓᏰᎮᏍᏗ,",
+        "ftm_raw_ocr": "ᎾᏍᎦᏅᎾ ᎨᏎᏍᏗ, ᏌᏉᏉ ᎠᏓᏰᎮᏍᏗ,",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150302_line_02.png",
+        "stock_aligned": "ᎨᏯᏔᎯ, ᎤᎵᏏᎾᎯᏍᏗ, ᎣᏍᏛ ᏧᎸᏫ-",
+        "stock_raw_ocr": "Ꭼ“ᏯᏔᎯ, ᎤᏝᏏᎾᎯᏍᏗ, ᎣᏍᏛ ᏧᎸᏫ-",
+        "ftm_aligned": "ᎨᏯᏔᎯ, ᎤᎵᏏᎾᎯᏍᏗ, ᎣᏍᏛ ᏧᎸᏫ-",
+        "ftm_raw_ocr": "ᎨᏯᏔᎯ, ᎤᎵᏏᎾᎯᏍᏗ, ᎣᏍᏛ ᏧᎸᏫ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150302_line_03.png",
+        "stock_aligned": "ᏍᏓᏁᎯ, ᏧᏓᏓᏂᎸᏣᏘ, ᏗᎬᏩᏕᏲᏗ;",
+        "stock_raw_ocr": "ᏍᏖᏁᎯ, ᏧᏓᏓᏂᎸᏣᏘ, ᏗᎬᏩᏕᏲᏗ;",
+        "ftm_aligned": "ᏍᏓᏁᎯ, ᏧᏓᏓᏂᎸᏣᏘ, ᏗᎬᏩᏕᏲᏗ;",
+        "ftm_raw_ocr": "ᏍᏓᏁᎯ, ᏧᏓᏓᏂᎸᏣᏘ, ᏗᎬᏩᏕᏲᏗ;",
+        "ftm_confidence": 84.0
+      }
+    ]
+  },
+  "150303": {
+    "image_path": "images/150303.png",
+    "cherokee_gt": "ᎩᎦᎨ-ᎠᏗᏔᏍᏗ ᎤᎦᎾᏏᏍᎩ ᏂᎨᏒᎾ, ᏗᏓᏛᏂᎯ ᏂᎨᏒᎾ, ᏧᎬᏩᎶᏗ ᎤᎬᎥᏍᎩ ᏂᎨᏒᎾ, ᎤᏓᏅᏘᏍᎩᏂ, ᏧᏘᏲᏌᏘ ᏂᎨᏒᎾ, ᎠᏕᎸ ᏧᎨᏳᎯ ᏂᎨᏒᎾ.",
+    "verse_number": "3",
+    "lines": [
+      {
+        "line_crop": "line_crops/150303_line_00.png",
+        "stock_aligned": "3 ᎩᎦᎨ-ᎠᏗᏔᏍᏗ ᎤᎦᎾᏏᏍᎩ",
+        "stock_raw_ocr": "8. ᎩᎦᎨ-ᎠᏗᏔᏍᏘ ᎤᎦᎾᏏᏍᎩ ᏂᎨ-Ꮣ",
+        "ftm_aligned": "3 ᎩᎦᎨ-ᎠᏗᏔᏍᏗ ᎤᎦᎾᏏᏍᎩ ᏂᎨ-",
+        "ftm_raw_ocr": "3 ᎩᎦᎨ-ᎠᏗᏔᏍᏗ ᎤᎦᎾᏏᏍᎩ ᏂᎨ-",
+        "ftm_confidence": 70.0
+      },
+      {
+        "line_crop": "line_crops/150303_line_01.png",
+        "stock_aligned": "ᏂᎨᏒᎾ, ᏗᏓᏛᏂᎯ ᏂᎨᏒᎾ, ᏧᎬᏩᎶᏗ",
+        "stock_raw_ocr": "ᏒᎡᏮᎾ, ᏗᏓᏛᏂᎯ ᏂᎨᏒᎾ, ᏧᎬᏩᎶᏘ ᎤᏅ",
+        "ftm_aligned": "ᏒᎾ, ᏗᏓᏛᏂᎯ ᏂᎨᏒᎾ, ᏧᎬᏩᎶᏗ Ꭴ-",
+        "ftm_raw_ocr": "ᎠᎾ, ᏗᏓᏛᏂᎯ ᏂᎨᏒᎾ, ᏧᎬᏩᎶᏗ Ꭴ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150303_line_02.png",
+        "stock_aligned": "ᎤᎬᎥᏍᎩ ᏂᎨᏒᎾ, ᎤᏓᏅᏘᏍᎩᏂ, ᏧᏘᏲ-",
+        "stock_raw_ocr": "ᎬᎥᏍᎩ ᏂᎨᏒᎾ, ᎤᏓᏅᏘᏍᎩᏂ, ᏧᏘᏲ-",
+        "ftm_aligned": "ᎬᎥᏍᎩ ᏂᎨᏒᎾ, ᎤᏓᏅᏘᏍᎩᏂ, ᏧᏘᏲ-",
+        "ftm_raw_ocr": "ᎬᎥᏍᎩ ᏂᎨᏒᎾ, ᎤᏓᏅᏘᏍᎩᏂ, ᏧᏘᏲ-",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150303_line_03.png",
+        "stock_aligned": "ᏌᏘ ᏂᎨᏒᎾ, ᎠᏕᎸ ᏧᎨᏳᎯ ᏂᎨᏒᎾ.",
+        "stock_raw_ocr": "ᏌᏘ ᏂᎨᏒᏮ, ᎠᏕᎸ. ᏧᎨᏳᎯ ᏂᎨᏒᎾᎧ.",
+        "ftm_aligned": "ᏌᏘ ᏂᎨᏒᎾ, ᎠᏕᎸ ᏧᎨᏳᎯ ᏂᎨᏒᎾ.",
+        "ftm_raw_ocr": "ᏌᏘ ᏂᎨᏒᎾ, ᎠᏕᎸ ᏧᎨᏳᎯ ᏂᎨᏴᎾ.",
+        "ftm_confidence": 62.0
+      }
+    ]
+  },
+  "150304": {
+    "image_path": "images/150304.png",
+    "cherokee_gt": "ᎤᏩᏒ ᏚᏓᏘᎿᎭᎥ ᎣᏍᏛ ᏗᎧᎿᎭᏩᏗᏙᎯ, ᏧᏪᏥ ᎬᏬᎯᏳᎯᏳ ᎠᎴ ᎬᏩᎸᏉᏗᏳ ᎢᎬᏁᎯ.",
+    "verse_number": "4",
+    "lines": [
+      {
+        "line_crop": "line_crops/150304_line_00.png",
+        "stock_aligned": "4 ᎤᏩᏒ ᏚᏓᏘᎿᎭᎥ ᎣᏍᏛ ᏗᎧᎿᎭᏩᏗ-",
+        "stock_raw_ocr": "Ꮞ ᎤᏩᎪᏒ ᏚᏓᏘᎿᎥ ᎣᏍᏛ ᏘᎧᎿᏩᏗ-",
+        "ftm_aligned": "4 ᎤᏩᏒ ᏚᏓᏘᎿᎭᎥ ᎣᏍᏛ ᏗᎧᎿᎭᏩᏗ-",
+        "ftm_raw_ocr": "Ꮞ ᎤᏩᏒᏴ ᏚᏓᏘᎿᎥ ᎣᏍᏛ ᏗᎧᎿᏩᏗ-",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150304_line_01.png",
+        "stock_aligned": "ᏙᎯ, ᏧᏪᏥ ᎬᏬᎯᏳᎯᏳ ᎠᎴ ᎬᏩᎸᏉᏗᏳ",
+        "stock_raw_ocr": "ᏙᎯ, ᏧᏪᏥ ᎬᏬᎯᏳᎯᏳ’ ᎠᎴ ᎬᏩᎸᏓᎨ-",
+        "ftm_aligned": "ᏙᎯ, ᏧᏪᏥ ᎬᏬᎯᏳᎯᏳ ᎠᎴ ᎬᏩᎸ-",
+        "ftm_raw_ocr": "ᏔᏙᎯ, ᏧᏪᏥ ᎬᏬᎯᏳᎯᏳ ᎠᎴ ᎬᏩᎸ-",
+        "ftm_confidence": 76.0
+      },
+      {
+        "line_crop": "line_crops/150304_line_02.png",
+        "stock_aligned": "ᎢᎬᏁᎯ.",
+        "stock_raw_ocr": "ᏉᏘᏳ ᎢᎬᏁᎯ.",
+        "ftm_aligned": "ᏉᏗᏳ ᎢᎬᏁᎯ.",
+        "ftm_raw_ocr": "ᏉᏗᏳ ᎢᎬᏁᎯ.",
+        "ftm_confidence": 87.0
+      }
+    ]
+  },
+  "150305": {
+    "image_path": "images/150305.png",
+    "cherokee_gt": "ᎢᏳᏰᏃ ᎩᎶ ᎾᎦᏔᎲᎾ ᏱᎩ ᎤᏩᏒ ᏚᏓᏘᎿᎭᎥ ᎣᏍᏛ ᏧᎧᎿᎭᏩᏗᏓᏍᏗᏱ, ᎦᏙ ᏱᎦᎵᏍᏙᏓ ᏱᏓᎦᏌᏯᏍᏓ ᏧᎾᏁᎶᎯ ᎤᎾᏓᏡᎬ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎦ?",
+    "verse_number": "5",
+    "lines": [
+      {
+        "line_crop": "line_crops/150305_line_00.png",
+        "stock_aligned": "5 ᎢᏳᏰᏃ ᎩᎶ ᎾᎦᏔᎲᎾ ᏱᎩ ᎤᏩᏒ",
+        "stock_raw_ocr": "5 ᎢᏳᏨᏰᏃ ᎩᎶ ᎾᎦᏔᎲᎾ ᏱᎩ ᎤᏩᎱᏆᏓ",
+        "ftm_aligned": "5 ᎢᏳᏰᏃ ᎩᎶ ᎾᎦᏔᎲᎾ ᏱᎩ ᎤᏩᏒ",
+        "ftm_raw_ocr": "5 ᎢᏳᏰᏃ ᎩᎶ ᎾᎦᏔᎲᎾ ᏱᎩ ᎤᏩᏒ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150305_line_01.png",
+        "stock_aligned": "ᏚᏓᏘᎿᎭᎥ ᎣᏍᏛ ᏧᎧᎿᎭᏩᏗᏓᏍᏗᏱ, ᎦᏙ",
+        "stock_raw_ocr": "ᏚᏓᏘᎿᎥ ᎣᏍᏛ ᏧᎧᎿᏩᏗᏓᏍᏗᏘᏱ.,,. ᎦᏙ",
+        "ftm_aligned": "ᏚᏓᏘᎿᎭᎥ ᎣᏍᏛ ᏧᎧᎿᎭᏩᏗᏓᏍᏗᏱ, ᎦᏙ",
+        "ftm_raw_ocr": "ᏚᏓᏘᎿᎥ ᎣᏍᏛ ᏧᎧᎿᏩᏗᏓᏍᏗᏱ, ᎦᏙ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150305_line_02.png",
+        "stock_aligned": "ᏱᎦᎵᏍᏙᏓ ᏱᏓᎦᏌᏯᏍᏓ ᏧᎾᏁᎶᎯ ᎤᎾ-",
+        "stock_raw_ocr": "ᏱᎦᎵᏍᏙᏓ ᏱᏓᎦᏌᏯᏍᏓ ᏧᎾᏁᎶᎯ ᎤᎾ-Ꮕ",
+        "ftm_aligned": "ᏱᎦᎵᏍᏙᏓ ᏱᏓᎦᏌᏯᏍᏓ ᏧᎾᏁᎶᎯ ᎤᎾ-",
+        "ftm_raw_ocr": "ᏱᎦᎵᏍᏙᏓ ᏱᏓᎦᏌᏯᏍᏓ ᏧᎾᏁᎶᎯ ᎤᎾ-",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150305_line_03.png",
+        "stock_aligned": "ᏓᏡᎬ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎦ?",
+        "stock_raw_ocr": "ᏓᏡᎬ ᎤᏁᎳᏅᎯ ᏅᏤᎵᎦᎮ",
+        "ftm_aligned": "ᏓᏡᎬ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎦ?",
+        "ftm_raw_ocr": "ᏓᏡᎬ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎦᎮ",
+        "ftm_confidence": 87.0
+      }
+    ]
+  },
+  "150306": {
+    "image_path": "images/150306.png",
+    "cherokee_gt": "ᎠᎴ ᎥᏞᏍᏗ ᎩᎳᎢ ᎤᎵᎪᏃᏅᎯ ᏱᎨᏎᏍᏗ, ᎠᏢᏉᏙᏗᏰᏃ ᎨᏒ ᏯᎵᏌᎳᏙᏓ ᎾᏍᎩᏃ ᎤᏍᎦᏅᏨᎯ ᎨᏒ ᏱᏚᏚᎪᏓᏏ ᎾᏍᎩᏯ ᎠᏍᎩᎾ ᏚᏚᎪᏓᏁᎸᎢ.",
+    "verse_number": "6",
+    "lines": [
+      {
+        "line_crop": "line_crops/150306_line_00.png",
+        "stock_aligned": "6 ᎠᎴ ᎥᏞᏍᏗ ᎩᎳᎢ ᎤᎵᎪᏃᏅᎯ Ᏹ-",
+        "stock_raw_ocr": "Ꮾ ᎠᎴ ᎥᏞᏍᏘ ᎩᎳᎢ ᎤᎵᎪᏃᏅᎯ Ᏹ-",
+        "ftm_aligned": "6 ᎠᎴ ᎥᏞᏍᏗ ᎩᎳᎢ ᎤᎵᎪᏃᏅᎯ Ᏹ-",
+        "ftm_raw_ocr": "Ꮾ ᎠᎴ ᏞᏍᏗ ᎩᎳᎢ ᎤᎵᎪᏃᏅᎯ Ᏹ-",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150306_line_01.png",
+        "stock_aligned": "ᎨᏎᏍᏗ, ᎠᏢᏉᏙᏗᏰᏃ ᎨᏒ ᏯᎵᏌᎳ-",
+        "stock_raw_ocr": "ᎨᏎᏍᏗ, ᎠᏢᏉᏙᏗᏰᏃ ᎹᏒ ᏯᎵᏝᏌᎳ-",
+        "ftm_aligned": "ᎨᏎᏍᏗ, ᎠᏢᏉᏙᏗᏰᏃ ᎨᏒ ᏯᎵᏌᎳ-",
+        "ftm_raw_ocr": "ᎨᏎᏍᏗ, ᎠᏢᏉᏙᏗᏰᏃ ᎨᏒ ᏯᎵᏌᎳ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150306_line_02.png",
+        "stock_aligned": "ᏙᏓ ᎾᏍᎩᏃ ᎤᏍᎦᏅᏨᎯ ᎨᏒ ᏱᏚᏚᎪᏓᏏ",
+        "stock_raw_ocr": "ᏙᏓ ᎾᏍᎩᏃ ᎤᏍᎦᏅᏨᎯ ᎨᏒ ᏱᏚᏚᎪᏓᏏ",
+        "ftm_aligned": "ᏙᏓ ᎾᏍᎩᏃ ᎤᏍᎦᏅᏨᎯ ᎨᏒ ᏱᏚᏚᎪᏓᏏ",
+        "ftm_raw_ocr": "ᏔᏓ ᎾᏍᎩᏃ ᎤᏍᎦᏅᏨᎯ ᎨᏴ ᏱᏚᏚᎪᏓᏏ",
+        "ftm_confidence": 78.0
+      },
+      {
+        "line_crop": "line_crops/150306_line_03.png",
+        "stock_aligned": "ᎾᏍᎩᏯ ᎠᏍᎩᎾ ᏚᏚᎪᏓᏁᎸᎢ.",
+        "stock_raw_ocr": "ᏯᏍᎩᏯ ᎠᏍᎩᎾ ᏚᏚᎪᏓᏁᎸᎢ.",
+        "ftm_aligned": "ᎾᏍᎩᏯ ᎠᏍᎩᎾ ᏚᏚᎪᏓᏁᎸᎢ.",
+        "ftm_raw_ocr": "ᎾᏍᎩᏯ ᎠᏍᎩᎾ ᏚᏚᎪᏓᏁᎸᎢ.",
+        "ftm_confidence": 85.0
+      }
+    ]
+  },
+  "150307": {
+    "image_path": "images/150307.png",
+    "cherokee_gt": "ᎠᎴᏬ ᎣᏏᏳ ᎬᏩᏃᎮᏍᎩ ᏱᎩ ᎢᏴᏛ ᎤᏅᎫᏛᎢ, ᎤᏐᏅᏰᏃ ᎠᏥᏃᎮᏍᎩ ᏱᏅᎦᎵᏍᏓ, ᎠᎴ ᎠᏍᎩᎾ ᎤᏌᏛ ᏳᏪᎯ.",
+    "verse_number": "7",
+    "lines": [
+      {
+        "line_crop": "line_crops/150307_line_00.png",
+        "stock_aligned": "7 ᎠᎴᏬ ᎣᏏᏳ ᎬᏩᏃᎮᏍᎩ ᏱᎩ Ꭲ-",
+        "stock_raw_ocr": "7 ᎠᎴᏬ ᎣᏏᏳ ᎬᏩᏃᎮᏍᎩ ᏱᎩ Ꭲ-",
+        "ftm_aligned": "7 ᎠᎴᏬ ᎣᏏᏳ ᎬᏩᏃᎮᏍᎩ ᏱᎩ Ꭲ-",
+        "ftm_raw_ocr": "7 ᎠᎴᏬ ᎣᏏᏳ ᎬᏩᏃᎮᏍᎩ ᏱᎩ Ꭲ-",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150307_line_01.png",
+        "stock_aligned": "ᏴᏛ ᎤᏅᎫᏛᎢ, ᎤᏐᏅᏰᏃ ᎠᏥᏃᎮᏍᎩ",
+        "stock_raw_ocr": "ᏴᏛ ᎤᏅᎫᏛᎢ, ᎤᏐᏅᏰᏃ ᎠᏥᏃᎮᏍᎩ",
+        "ftm_aligned": "ᏴᏛ ᎤᏅᎫᏛᎢ, ᎤᏐᏅᏰᏃ ᎠᏥᏃᎮᏍᎩ",
+        "ftm_raw_ocr": "ᏴᏛ ᎤᏅᎫᏛᎢ, ᎤᏐᏅᏰᏃ ᎠᏥᏃᎮᏍᎩ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150307_line_02.png",
+        "stock_aligned": "ᏱᏅᎦᎵᏍᏓ, ᎠᎴ ᎠᏍᎩᎾ ᎤᏌᏛ ᏳᏪᎯ.",
+        "stock_raw_ocr": "ᏱᏅᎦᎵᏍᏖ, ᎠᎴ ᎠᏍᎩᎾ ᎤᏌᏛ ᏳᏪᎯ.",
+        "ftm_aligned": "ᏱᏅᎦᎵᏍᏓ, ᎠᎴ ᎠᏍᎩᎾ ᎤᏌᏛ ᏳᏪᎯ.",
+        "ftm_raw_ocr": "ᏱᏅᎦᎵᏍᏓ, ᎠᎴ ᎠᏍᎩᎾ ᎤᏌᏛ ᏳᏪᎯ.",
+        "ftm_confidence": 90.0
+      }
+    ]
+  },
+  "150308": {
+    "image_path": "images/150308.png",
+    "cherokee_gt": "ᎾᏍᎩᏯ ᎾᏍᏉ ᎠᏂᏯᏙᎯᎯ ᎨᏥᎸᏉᏗ ᎨᏎᏍᏗ, ᎥᏞᏍᏗ ᏧᏓᎴᏅᏛ ᎢᏯᏂᏪᏍᎩ ᏱᎨᏎᏍᏗ, ᎠᎴ ᎥᏞᏍᏗ ᏱᎦᎨᎠᏗᏔᏍᏗ ᎤᏂᎦᎾᏏᏍᎩ ᏱᎨᏎᏍᏗ, ᏞᏍᏗ ᏧᎬᏩᎶᏗ ᎤᏂᎬᎥᏍᎩ ᏱᎨᏎᏍᏗ;",
+    "verse_number": "8",
+    "lines": [
+      {
+        "line_crop": "line_crops/150308_line_00.png",
+        "stock_aligned": "8 ᎾᏍᎩᏯ ᎾᏍᏉ ᎠᏂᏯᏙᎯᎯ ᎨᏥᎸᏉᏗ ᎨᏎᏍᏗ,",
+        "stock_raw_ocr": "Ꮪ ᎾᏍᎩᏯ ᎾᏍᏉ ᎠᏂᏯᏙᎯᎯ ᎨᏥᎸᎨ",
+        "ftm_aligned": "8 ᎾᏍᎩᏯ ᎾᏍᏉ ᎠᏂᏯᏙᎯᎯ ᎨᏥᎸᏉᏗ",
+        "ftm_raw_ocr": "Ꮪ ᎾᏍᎩᏯ ᎾᏍᏉ ᎠᏂᏯᏙᎯᎯ ᎨᏥᎸ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150308_line_01.png",
+        "stock_aligned": "ᎥᏞᏍᏗ ᏧᏓᎴᏅᏛ ᎢᏯᏂᏪᏍᎩ ᏱᎨᏎᏍᏗ, ᎠᎴ ᎥᏞᏍᏗ",
+        "stock_raw_ocr": "ᎯᏍᏚ ᏱᎵᎴᏓᏘ, ᎠᎴ ᎥᏅᏘ ᎤᎵ",
+        "ftm_aligned": "ᎨᏎᏍᏗ, ᎥᏞᏍᏗ ᏧᏓᎴᏅᏛ ᎢᏯᏂᏪᏍᎩ ᏱᎨᏎᏍᏗ, ᎠᎴ ᎥᏞᏍᏗ ᏱᎦᎨ-",
+        "ftm_raw_ocr": "ᏥᏍ ᏗᏝᏍᏗ ᎠᎴ ᏔᎵᎶ ᎢᎴᎵ-",
+        "ftm_confidence": 0.0
+      },
+      {
+        "line_crop": "line_crops/150308_line_02.png",
+        "stock_aligned": "ᏱᎦᎨᎠᏗᏔᏍᏗ ᎤᏂᎦᎾᏏᏍᎩ ᏱᎨᏎᏍᏗ,",
+        "stock_raw_ocr": "ᎠᏘᏔᏍᏗ ᎤᏂᎦᎾᏏᏍᎩ ᏱᎨᏎᏍᏗ, ᏞᎩ",
+        "ftm_aligned": "ᎠᏗᏔᏍᏗ ᎤᏂᎦᎾᏏᏍᎩ ᏱᎨᏎᏍᏗ, Ꮮ-",
+        "ftm_raw_ocr": "ᎠᏗᏔᏍᏗ ᎤᏂᎦᎾᏏᏍᎩ ᏱᎨᏎᏍᏗ, Ꮮ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150308_line_03.png",
+        "stock_aligned": "ᏞᏍᏗ ᏧᎬᏩᎶᏗ ᎤᏂᎬᎥᏍᎩ ᏱᎨᏎᏍᏗ;",
+        "stock_raw_ocr": "ᏍᏗ ᏧᎬᏩᎶᏗ ᎤᏂᎬᎥᏍᎩ ᏱᎨᏎᏍᏗ ;",
+        "ftm_aligned": "ᏍᏗ ᏧᎬᏩᎶᏗ ᎤᏂᎬᎥᏍᎩ ᏱᎨᏎᏍᏗ;",
+        "ftm_raw_ocr": "ᏍᏗ ᏧᎬᏩᎶᏗ ᎤᏂᎬᎥᏍᎩ ᏱᎨᏎᏍᏗ;",
+        "ftm_confidence": 88.0
+      }
+    ]
+  },
+  "150309": {
+    "image_path": "images/150309.png",
+    "cherokee_gt": "ᏚᏂᏂᏴᏎᏍᏗᏍᎩᏂ ᎤᏕᎵᏛ ᎪᎯᏳᏗ ᎨᏒᎢ ᎠᏅᏗᏍᎨᏍᏗ ᎦᏓᎭ ᏂᎨᏒᎾ ᏗᎫᎪᏙᏗ ᎨᏒᎢ.",
+    "verse_number": "9",
+    "lines": [
+      {
+        "line_crop": "line_crops/150309_line_00.png",
+        "stock_aligned": "9 ᏚᏂᏂᏴᏎᏍᏗᏍᎩᏂ ᎤᏕᎵᏛ ᎪᎯᏳᏗ",
+        "stock_raw_ocr": "9 ᏚᏂᏂᏴᏎᏍᏗᏍᎩᏂ ᎤᏕᎵᏛ ᎪᎯᏳᏗ",
+        "ftm_aligned": "9 ᏚᏂᏂᏴᏎᏍᏗᏍᎩᏂ ᎤᏕᎵᏛ ᎪᎯᏳᏗ",
+        "ftm_raw_ocr": "0 ᏚᏂᏂᏴᏎᏍᏗᏍᎩᏂ ᎤᏕᏅᎵᏛ ᎪᎯᏳᏗ",
+        "ftm_confidence": 59.0
+      },
+      {
+        "line_crop": "line_crops/150309_line_01.png",
+        "stock_aligned": "ᎨᏒᎢ ᎠᏅᏗᏍᎨᏍᏗ ᎦᏓᎭ ᏂᎨᏒᎾ",
+        "stock_raw_ocr": "ᎨᏒᎢ ᎠᏅᏗᏍᎨᏍᏗ ᎦᏖᎭ ᏂᎨᏒᏮ Ꮧ-",
+        "ftm_aligned": "ᎨᏒᎢ ᎠᏅᏗᏍᎨᏍᏗ ᎦᏓᎭ ᏂᎨᏒᎾ Ꮧ-",
+        "ftm_raw_ocr": "ᎨᏒᎢ ᎠᏅᏗᏍᎨᏍᏗ ᎦᏓᎭ ᏂᎨᏒᏮ Ꮧ-",
+        "ftm_confidence": 71.0
+      },
+      {
+        "line_crop": "line_crops/150309_line_02.png",
+        "stock_aligned": "ᏗᎫᎪᏙᏗ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᏧᎫᎪᏙᏘ ᏤᏙᏂᎢ.",
+        "ftm_aligned": "ᎫᎪᏙᏗ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᏧᎪᏙᏗ ᎨᏒᎢ.",
+        "ftm_confidence": 32.0
+      }
+    ]
+  },
+  "150310": {
+    "image_path": "images/150310.png",
+    "cherokee_gt": "ᎠᎴ ᎾᏍᎩ ᎯᎠ ᎢᎬᏱ ᏗᎪᎵᏰᎥᎯ ᎨᏎᏍᏗ, ᎩᎳ ᏚᏂᎸᏫᏍᏓᏁᎮᏍᏗ ᎠᏂᏯᏙᎯᎲ ᎪᎱᏍᏗ ᎦᎨᎫᎢᏍᏙᏗ ᏂᎨᏒᎾ ᎨᏎᏍᏗ.",
+    "verse_number": "10",
+    "lines": [
+      {
+        "line_crop": "line_crops/150310_line_00.png",
+        "stock_aligned": "10 ᎠᎴ ᎾᏍᎩ ᎯᎠ ᎢᎬᏱ ᏗᎪᎵᏰᎥᎯ",
+        "stock_raw_ocr": "10 ᎠᎴ ᎾᎧᏍᎩ ᎯᎠ ᎢᎬᏱ ᏘᎪᎵᏰᎥᎯ",
+        "ftm_aligned": "10 ᎠᎴ ᎾᏍᎩ ᎯᎠ ᎢᎬᏱ ᏗᎪᎵᏰᎥᎯ",
+        "ftm_raw_ocr": "10 ᎠᎴ ᎾᏍᎩ ᎯᎠ ᎢᎬᏱ ᏗᎪᎵᏰᎥᎯ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150310_line_01.png",
+        "stock_aligned": "ᎨᏎᏍᏗ, ᎩᎳ ᏚᏂᎸᏫᏍᏓᏁᎮᏍᏗ ᎠᏂ-",
+        "stock_raw_ocr": "ᏏᏂᏎᏍᏗ, ᎩᎳ ᏚᏂᎸᏫᏍᏓᏁᎮᏍᏗ ᎠᏂᎹ-",
+        "ftm_aligned": "ᎨᏎᏍᏗ, ᎩᎳ ᏚᏂᎸᏫᏍᏓᏁᎮᏍᏗ ᎠᏂ-",
+        "ftm_raw_ocr": "ᎨᏎᏍᏗ, ᎩᎳ ᏚᏂᎸᏫᏍᏓᏁᎮᏍᏗ ᎠᏂ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150310_line_02.png",
+        "stock_aligned": "ᏯᏙᎯᎲ ᎪᎱᏍᏗ ᎦᎨᎫᎢᏍᏙᏗ ᏂᎨᏒᎾ",
+        "stock_raw_ocr": "ᏯᏙᎯᎲ ᎪᎱᏍᏗ ᎦᏥᎨᎫᎢᏍᏙᏗ ᏂᎨᎬᏒᎾ",
+        "ftm_aligned": "ᏯᏙᎯᎲ ᎪᎱᏍᏗ ᎦᎨᎫᎢᏍᏙᏗ ᏂᎨᏒᎾ",
+        "ftm_raw_ocr": "ᏯᏍᏙᎯᎲ ᎪᎱᏍᏗ ᎦᎨᎫᎢᏍᏙᏗ ᏂᎨᏒᎾ",
+        "ftm_confidence": 67.0
+      },
+      {
+        "line_crop": "line_crops/150310_line_03.png",
+        "stock_aligned": "ᎨᏎᏍᏗ.",
+        "stock_raw_ocr": "ᏂᏎᎤᎧᏗ,",
+        "ftm_aligned": "ᎨᏎᏍᏗ.",
+        "ftm_raw_ocr": "ᎨᏎᏍᏗ.",
+        "ftm_confidence": 68.0
+      }
+    ]
+  },
+  "150311": {
+    "image_path": "images/150311.png",
+    "cherokee_gt": "ᎾᏍᏉᏃ ᏧᎾᏓᎵᎢ ᎨᏥᎸᏉᏗ ᎨᏎᏍᏗ, ᎤᏐᏅ ᎠᎾᏓᏃᎮᎵᏙᎯ ᏂᎨᏒᎾ, ᎠᏁᏯᏔᎯᏍᎩᏂ ᎨᏎᏍᏗ, ᏰᎵᎦᏯ ᎢᏯᎾᏛᏁᎯ ᏂᎦᎥ ᎪᎱᏍᏗ.",
+    "verse_number": "11",
+    "lines": [
+      {
+        "line_crop": "line_crops/150311_line_00.png",
+        "stock_aligned": "11 ᎾᏍᏉᏃ ᏧᎾᏓᎵᎢ ᎨᏥᎸᏉᏗ",
+        "stock_raw_ocr": "11 ᎾᏍᏉᏃ ᏧᏮᏖᏓᎵᏝᎢ ᏂᎬᏥᎸᏉᏘ ᎰᏅ",
+        "ftm_aligned": "11 ᎾᏍᏉᏃ ᏧᎾᏓᎵᎢ ᎨᏥᎸᏉᏗ Ꭸ-",
+        "ftm_raw_ocr": "11 ᎾᏍᏉᏃ ᏧᎾᏓᎵᎢ ᎨᏥᎸᏉᏗ Ꭸ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150311_line_01.png",
+        "stock_aligned": "ᎨᏎᏍᏗ, ᎤᏐᏅ ᎠᎾᏓᏃᎮᎵᏙᎯ ᏂᎨᏒᎾ,",
+        "stock_raw_ocr": "ᏎᏍᏘ, ᎤᏐᏅ ᎠᎾᏓᏃᎮᎵᏙᎯ ᏂᎨᏒᏮᎾ,",
+        "ftm_aligned": "ᏎᏍᏗ, ᎤᏐᏅ ᎠᎾᏓᏃᎮᎵᏙᎯ ᏂᎨᏒᎾ,",
+        "ftm_raw_ocr": "ᏎᏍᏗ, ᎤᏐᏅ ᎠᎾᏓᏃᎮᎵᏙᎯ ᏂᎨᏒᎾ,",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150311_line_02.png",
+        "stock_aligned": "ᎠᏁᏯᏔᎯᏍᎩᏂ ᎨᏎᏍᏗ, ᏰᎵᎦᏯ",
+        "stock_raw_ocr": "ᎠᏁᏯᏔᎯᏍᎩᏂ ᎨᏎᏍᏘ, ᏰᎵᏝᎦᏯ ᎢᏯᏑᎹ",
+        "ftm_aligned": "ᎠᏁᏯᏔᎯᏍᎩᏂ ᎨᏎᏍᏗ, ᏰᎵᎦᏯ ᎢᏯ-",
+        "ftm_raw_ocr": "ᎠᏁᏯᏔᎯᏍᎩᏂ ᎨᏎᏍᏗ, ᏰᎵᎦᏯ ᎢᏯ-",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150311_line_03.png",
+        "stock_aligned": "ᎢᏯᎾᏛᏁᎯ ᏂᎦᎥ ᎪᎱᏍᏗ.",
+        "stock_raw_ocr": "ᎾᏛᏁᎯ ᏂᎦᎥ ᎪᎱᏍᏗ.",
+        "ftm_aligned": "ᎾᏛᏁᎯ ᏂᎦᎥ ᎪᎱᏍᏗ.",
+        "ftm_raw_ocr": "ᎾᏛᏁᎯ ᏂᎦᎥ ᎪᎱᏍᏗ.",
+        "ftm_confidence": 86.0
+      }
+    ]
+  },
+  "150312": {
+    "image_path": "images/150312.png",
+    "cherokee_gt": "ᎠᏯᏙᎯᎯ ᏌᏉᎭ ᎠᏓᏰᎮᏍᏗ, ᎣᏍᏛ ᏗᎧᎿᎭᏩᏗᏙᎯ ᏧᏪᏥ ᎠᎴ ᎤᏩᏒ ᏚᏓᏘᎿᎭᎥᎢ.",
+    "verse_number": "12",
+    "lines": [
+      {
+        "line_crop": "line_crops/150312_line_00.png",
+        "stock_aligned": "12 ᎠᏯᏙᎯᎯ ᏌᏉᎭ ᎠᏓᏰᎮᏍᏗ,",
+        "stock_raw_ocr": "12 ᎠᏯᏙᎯᎯ ᏌᏉᏅᏤ ᎠᏓᏰᎮᏍᏗ,",
+        "ftm_aligned": "12 ᎠᏯᏙᎯᎯ ᏌᏉᎭ ᎠᏓᏰᎮᏍᏗ,",
+        "ftm_raw_ocr": "Ꮺ ᎠᏯᏙᎯᎯ ᏌᏉᎭ ᎠᏓᏰᎮᏍᏗ,",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150312_line_01.png",
+        "stock_aligned": "ᎣᏍᏛ ᏗᎧᎿᎭᏩᏗᏙᎯ ᏧᏪᏥ ᎠᎴ ᎤᏩᏒ",
+        "stock_raw_ocr": "ᎣᏍᏛ ᏗᏘᎧᎿᏩᏘᏤᏙᎯ ᏧᏪᏥ ᎠᎴ ᎤᏩᎬᏒ",
+        "ftm_aligned": "ᎣᏍᏛ ᏗᎧᎿᎭᏩᏗᏙᎯ ᏧᏪᏥ ᎠᎴ ᎤᏩᏒ",
+        "ftm_raw_ocr": "ᎣᏍᏛ ᏗᎧᎿᏩᏗᏙᎯ ᏧᏪᏥ ᎠᎴ ᎤᏩᏒ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150312_line_02.png",
+        "stock_aligned": "ᏚᏓᏘᎿᎭᎥᎢ.",
+        "stock_raw_ocr": "ᏚᏓᏘᎿᎥᎢ,.,",
+        "ftm_aligned": "ᏚᏓᏘᎿᎭᎥᎢ.",
+        "ftm_raw_ocr": "ᏚᏓᏘᎿᎥᎢ.",
+        "ftm_confidence": 80.0
+      }
+    ]
+  },
+  "150313": {
+    "image_path": "images/150313.png",
+    "cherokee_gt": "ᎾᏍᎩᏰᏃ ᎣᏍᏛ ᏧᏂᎸᏫᏍᏓᏁᎯ ᎨᏒ ᎠᏂᏯᏙᎯᎲᎢ, ᎠᏂᏩᏛᏗᎭ ᎣᏍᏛ ᎨᎦᏓᏅᏖᏗᏱ, ᎠᎴ ᎤᏣᏘ ᏄᎾᏰᎯᏍᏛᎾ ᎠᏓᏅᏓᏗᏍᏗᏱ ᎪᎯᏳᏗ ᎨᏒ ᎦᎶᏁᏛ ᏥᏌ.",
+    "verse_number": "13",
+    "lines": [
+      {
+        "line_crop": "line_crops/150313_line_00.png",
+        "stock_aligned": "13 ᎾᏍᎩᏰᏃ ᎣᏍᏛ ᏧᏂᎸᏫᏍᏓᏁᎯ",
+        "stock_raw_ocr": "18 ᎾᏍᎩᏰᏃ ᎣᏍᏛ ᏧᏂᎸᏫᏍᏓᏁᎯ",
+        "ftm_aligned": "13 ᎾᏍᎩᏰᏃ ᎣᏍᏛ ᏧᏂᎸᏫᏍᏓᏁᎯ",
+        "ftm_raw_ocr": "13 ᎾᏍᎩᏰᏃ ᎣᏍᏛ ᏧᏂᎸᏫᏍᏓᏁᎯ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150313_line_01.png",
+        "stock_aligned": "ᎨᏒ ᎠᏂᏯᏙᎯᎲᎢ, ᎠᏂᏩᏛᏗᎭ ᎣᏍᏛ",
+        "stock_raw_ocr": "ᎨᏒ ᎠᏂᏍᏯᏍᏙᎯᎲᎢ, ᎠᏂᏩᏛᏗᎭ ᎣᏍᏛ",
+        "ftm_aligned": "ᎨᏒ ᎠᏂᏯᏙᎯᎲᎢ, ᎠᏂᏩᏛᏗᎭ ᎣᏍᏛ",
+        "ftm_raw_ocr": "ᎨᏒ ᎠᏂᏯᏙᎯᎲᎢ, ᎠᏂᏩᏛᏗᎭ ᎣᏍᏛ",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150313_line_02.png",
+        "stock_aligned": "ᎨᎦᏓᏅᏖᏗᏱ, ᎠᎴ ᎤᏣᏘ ᏄᎾᏰᎯᏍᏛᎾ",
+        "stock_raw_ocr": "ᎨᎦᏓᏅᏖᏗᏱ, ᎠᎴ ᎤᏣᏘ ᏄᎾᏰᎯᏍᏛᎾ",
+        "ftm_aligned": "ᎨᎦᏓᏅᏖᏗᏱ, ᎠᎴ ᎤᏣᏘ ᏄᎾᏰᎯᏍᏛᎾ",
+        "ftm_raw_ocr": "ᎨᎦᏓᏅᏖᏗᏱ, ᎠᎴ ᎤᏣᏘ ᏄᎾᏰᎯᏍᏛᎾ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150313_line_03.png",
+        "stock_aligned": "ᎠᏓᏅᏓᏗᏍᏗᏱ ᎪᎯᏳᏗ ᎨᏒ ᎦᎶᏁᏛ",
+        "stock_raw_ocr": "ᎠᏖᏅᏖᏘᏍᏗᏱ ᎪᎯᏳᏗ ᎨᏒ ᎦᎶᏁᏛ",
+        "ftm_aligned": "ᎠᏓᏅᏓᏗᏍᏗᏱ ᎪᎯᏳᏗ ᎨᏒ ᎦᎶᏁᏛ",
+        "ftm_raw_ocr": "ᎠᏓᏅᏓᏗᏍᏗᏱ ᎪᎯᏳᏗ ᎨᏒ ᎦᎶᏁᏛ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150313_line_04.png",
+        "stock_aligned": "ᏥᏌ.",
+        "stock_raw_ocr": "ᏥᏌ.",
+        "ftm_aligned": "ᏥᏌ.",
+        "ftm_raw_ocr": "ᏥᏌ.",
+        "ftm_confidence": 85.0
+      }
+    ]
+  },
+  "150314": {
+    "image_path": "images/150314.png",
+    "cherokee_gt": "ᎾᏍᎩ ᎯᎠ ᏧᏓᎴᏅᏛ ᏫᎬᏲᏪᎳᏏ, ᎠᎴ ᎤᏚᎩ ᎠᏋᎭ ᏂᎪᎯᎸᎾᏉ ᏫᎬᎷᏤᏗᏱ;",
+    "verse_number": "14",
+    "lines": [
+      {
+        "line_crop": "line_crops/150314_line_00.png",
+        "stock_aligned": "14 ᎾᏍᎩ ᎯᎠ ᏧᏓᎴᏅᏛ ᏫᎬᏲᏪᎳᏏ,",
+        "stock_raw_ocr": "1Ꮞ ᎾᏍᎩ ᎯᎠ ᏧᏖᎴᏅᏛ ᏫᎬᏲᏪᎳᏏ;",
+        "ftm_aligned": "14 ᎾᏍᎩ ᎯᎠ ᏧᏓᎴᏅᏛ ᏫᎬᏲᏪᎳᏏ,",
+        "ftm_raw_ocr": "1Ꮞ ᎾᏍᎩ ᎯᎠ ᏧᏓᎴᏅᏛ ᏫᎬᏲᏪᎳᏏ,",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150314_line_01.png",
+        "stock_aligned": "ᎠᎴ ᎤᏚᎩ ᎠᏋᎭ ᏂᎪᎯᎸᎾᏉ ᏫᎬᎷᏤᏗᏱ;",
+        "stock_raw_ocr": "ᎠᎴ ᎤᏚᎩ ᎠᎦᎭ ᏂᎪᎯᎸᎾᏉ ᏫᎬᎷᏤ”",
+        "ftm_aligned": "ᎠᎴ ᎤᏚᎩ ᎠᏋᎭ ᏂᎪᎯᎸᎾᏉ ᏫᎬᎷᏤ-",
+        "ftm_raw_ocr": "ᎠᎴ ᎤᏚᎩ ᎠᎦᎭ ᏂᎪᎯᎸᎾᏉ ᏫᎬᎷᏤ-",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150314_line_02.png",
+        "stock_aligned": "",
+        "stock_raw_ocr": "ᏘᏱ:",
+        "ftm_aligned": "ᏗᏱ;",
+        "ftm_raw_ocr": "ᏗᏱ;",
+        "ftm_confidence": 75.0
+      }
+    ]
+  },
+  "150315": {
+    "image_path": "images/150315.png",
+    "cherokee_gt": "ᎢᏳᏍᎩᏂᏃᏅ ᎠᏉᎯᏤᎵᏙᎸᎭ ᎾᏍᎩ ᏣᏙᎴᎰᎯᏍᏗᏱ ᎢᏣᏛᏁᏗᏱ ᏗᏣᎸᏫᏍᏓᏁᏗᏱ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎠᏓᏁᎸᎢ, ᎾᏍᎩ ᏧᎾᏁᎶᏗ ᎤᎾᏓᏡᎬ ᎬᏂᏛ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᏥᎩ, ᎦᎫᏍᏛᏗ ᎠᎴ ᎤᎵᏍᏓᏱᏙ ᏥᎩ ᏚᏳᎯᏛ ᎨᏒᎢ.",
+    "verse_number": "15",
+    "lines": [
+      {
+        "line_crop": "line_crops/150315_line_00.png",
+        "stock_aligned": "15 ᎢᏳᏍᎩᏂᏃᏅ ᎠᏉᎯᏤᎵᏙᎸᎭ",
+        "stock_raw_ocr": "15 ᎢᏑᏍᎩᏂᏃᏅ ᎠᏉᎯᏤᏝᏙᎸᎭ",
+        "ftm_aligned": "15 ᎢᏳᏍᎩᏂᏃᏅ ᎠᏉᎯᏤᎵᏙᎸᎭ",
+        "ftm_raw_ocr": "5 ᎢᏳᏍᎩᏂᏃᏅ ᎠᏉᎯᏤᎵᏙᎸᎭ",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150315_line_01.png",
+        "stock_aligned": "ᎾᏍᎩ ᏣᏙᎴᎰᎯᏍᏗᏱ ᎢᏣᏛᏁᏗᏱ",
+        "stock_raw_ocr": "ᎾᏍᎩ ᏣᏙᎴᎰᎯᏍᏗᏱ ᎢᏣᏛᏁᏗᏱ ᏗᏣ”",
+        "ftm_aligned": "ᎾᏍᎩ ᏣᏙᎴᎰᎯᏍᏗᏱ ᎢᏣᏛᏁᏗᏱ ᏗᏣ-",
+        "ftm_raw_ocr": "ᎾᏍᎩ ᏣᏙᎴᎰᎯᏍᏗᏱ ᎢᏣᏛᏁᏗᏱ ᏗᏣ-",
+        "ftm_confidence": 69.0
+      },
+      {
+        "line_crop": "line_crops/150315_line_02.png",
+        "stock_aligned": "ᏗᏣᎸᏫᏍᏓᏁᏗᏱ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎠᏓ-",
+        "stock_raw_ocr": "ᏄᎸᏫᏍᏖᏁᏗᏱ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎠᏓ-",
+        "ftm_aligned": "ᎸᏫᏍᏓᏁᏗᏱ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎠᏓ-",
+        "ftm_raw_ocr": "ᎸᏫᏍᏓᏁᏗᏱ ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎠᏓ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150315_line_03.png",
+        "stock_aligned": "ᏁᎸᎢ, ᎾᏍᎩ ᏧᎾᏁᎶᏗ ᎤᎾᏓᏡᎬ ᎬᏂᏛ",
+        "stock_raw_ocr": "ᏁᎸᎢ, ᎾᏍᎩ ᏧᎾᏁᎶᏗ ᎤᎾᏮᎾᏓᏡᎬ ᏴᏂᏛ",
+        "ftm_aligned": "ᏁᎸᎢ, ᎾᏍᎩ ᏧᎾᏁᎶᏗ ᎤᎾᏓᏡᎬ ᎬᏂᏛ",
+        "ftm_raw_ocr": "ᏁᎸᎢ, ᎾᏍᎩ ᏧᎾᏁᎶᏗ ᎤᎾᏓᏡᎬ ᎬᏂᏛᎲ",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150315_line_04.png",
+        "stock_aligned": "ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᏥᎩ, ᎦᎫᏍᏛᏗ ᎠᎴ",
+        "stock_raw_ocr": "ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᏥᎩ, ᎦᎫᏍᏛᏗ ᎠᎴ",
+        "ftm_aligned": "ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᏥᎩ, ᎦᎫᏍᏛᏗ ᎠᎴ",
+        "ftm_raw_ocr": "ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᏥᎩ, ᎦᎫᏍᏛᏗ ᎠᎴ",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150315_line_05.png",
+        "stock_aligned": "ᎤᎵᏍᏓᏱᏙ ᏥᎩ ᏚᏳᎯᏛ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᎤᎵᏍᏓᏱᏙ ᏥᎩ ᏚᏳᎯᏛ ᏥᎡᎢ.",
+        "ftm_aligned": "ᎤᎵᏍᏓᏱᏙ ᏥᎩ ᏚᏳᎯᏛ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎤᎵᏍᏓᏱᏙ ᏥᎩ ᏚᏳᎯᏛ ᎨᏒᎢ.",
+        "ftm_confidence": 84.0
+      }
+    ]
+  },
+  "150316": {
+    "image_path": "images/150316.png",
+    "cherokee_gt": "ᎠᎴ ᏄᏜᏓᏏᏛᏒᎾ ᎤᏍᏆᏂᎪᏗᏳ ᎤᏕᎵᏛ ᎤᏁᎳᏅᎯ ᏗᏁᎶᏗ ᎨᏒᎢ; ᎤᏁᎳᏅᎯ ᎬᏂᎨᏒ ᎾᎬᏁᎴ ᎤᏬᏓᎵ ᎨᏒᎢ, ᏄᏠᎾᏍᏛᎾ ᎬᏂᎨᏒ ᏄᏩᏁᎴ ᎠᏓᏅᏙ, ᏗᏂᎧᎿᎭᏩᏗᏙᎯ ᎬᏩᎪᎮᎢ, ᏧᎾᏓᎴᏅᏛ ᏴᏫ ᎨᎦᎵᏥᏙᏁᎴ ᎾᏍᎩ ᎠᏥᏃᎮᏍᎨᎢ, ᎠᏂ ᎡᎶᎯ ᎠᎪᎢᏳᏁᎢ, ᎦᎸᏉᏗᏳ ᏗᎨᏒ ᏫᏓᎦᏓᏂᎸᏤᎢ.",
+    "verse_number": "16",
+    "lines": [
+      {
+        "line_crop": "line_crops/150316_line_00.png",
+        "stock_aligned": "16 ᎠᎴ ᏄᏜᏓᏏᏛᏒᎾ ᎤᏍᏆᏂᎪᏗᏳ",
+        "stock_raw_ocr": "16 ᎠᎴ ᏄᏜᏏᏛᏒᎾ ᎤᏍᏆᏂᎪᏗᏳ’",
+        "ftm_aligned": "16 ᎠᎴ ᏄᏜᏓᏏᏛᏒᎾ ᎤᏍᏆᏂᎪᏗᏳ",
+        "ftm_raw_ocr": "16 ᎠᎴ ᏄᏜᏏᏛᏒᎾ ᎤᏍᏆᏂᎪᏗᏳ",
+        "ftm_confidence": 78.0
+      },
+      {
+        "line_crop": "line_crops/150316_line_01.png",
+        "stock_aligned": "ᎤᏕᎵᏛ ᎤᏁᎳᏅᎯ ᏗᏁᎶᏗ ᎨᏒᎢ;",
+        "stock_raw_ocr": "ᎤᏕᎵᏛ ᎤᏁᎳᏅᎯ ᏗᏁᎶᏗ ᎨᏒᎢ;",
+        "ftm_aligned": "ᎤᏕᎵᏛ ᎤᏁᎳᏅᎯ ᏗᏁᎶᏗ ᎨᏒᎢ;",
+        "ftm_raw_ocr": "ᎤᏕᎵᏛ ᎤᏁᎳᏅᎯ ᏗᏁᎶᏗ ᎨᏒᎢ;",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150316_line_02.png",
+        "stock_aligned": "ᎤᏁᎳᏅᎯ ᎬᏂᎨᏒ ᎾᎬᏁᎴ ᎤᏬᏓᎵ",
+        "stock_raw_ocr": "ᎤᏁᎳᏅᎯ ᎬᏂᎨᏒ ᎾᎬᏁᎴ ᎤᏬᏓᎵ",
+        "ftm_aligned": "ᎤᏁᎳᏅᎯ ᎬᏂᎨᏒ ᎾᎬᏁᎴ ᎤᏬᏓᎵ",
+        "ftm_raw_ocr": "ᎤᏁᎳᏅᎯ ᎬᏂᎨᏒ ᎾᎬᏁᎴ ᎤᏬᏓᎵ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150316_line_03.png",
+        "stock_aligned": "ᎨᏒᎢ, ᏄᏠᎾᏍᏛᎾ ᎬᏂᎨᏒ ᏄᏩᏁᎴ",
+        "stock_raw_ocr": "ᎨᏒᎡᎢ, ᏄᏠᎾᏍᏛᎾ ᎬᏂᎨᏒ ᏄᏩᏁᎴ",
+        "ftm_aligned": "ᎨᏒᎢ, ᏄᏠᎾᏍᏛᎾ ᎬᏂᎨᏒ ᏄᏩᏁᎴ",
+        "ftm_raw_ocr": "ᎨᏒᎢ, ᏄᏠᎾᏍᏛᎾ ᎬᏂᎨᏒ ᏄᏩᏁᎴ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150316_line_04.png",
+        "stock_aligned": "ᎠᏓᏅᏙ, ᏗᏂᎧᎿᎭᏩᏗᏙᎯ ᎬᏩᎪᎮᎢ, Ꮷ-",
+        "stock_raw_ocr": "ᎠᏓᏅᏙ, ᏗᏂᎧᎿᏩᏗᏙᎯ ᎬᏩᎪᎮᎢ, Ꮷ-",
+        "ftm_aligned": "ᎠᏓᏅᏙ, ᏗᏂᎧᎿᎭᏩᏗᏙᎯ ᎬᏩᎪᎮᎢ, Ꮷ-",
+        "ftm_raw_ocr": "ᎠᏓᏅᏙ, ᏗᏂᎧᎿᏩᏗᏙᎯ ᎬᏩᎪᎮᎢ, Ꮷ-",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150316_line_05.png",
+        "stock_aligned": "ᎾᏓᎴᏅᏛ ᏴᏫ ᎨᎦᎵᏥᏙᏁᎴ ᎾᏍᎩ ᎠᏥ-",
+        "stock_raw_ocr": "ᎾᏖᎴᏅᏛ ᏴᏫ ᎨᎦᎵᏝᏥᏙᏁᎴ ᎾᏍᎩ ᎠᏥ-",
+        "ftm_aligned": "ᎾᏓᎴᏅᏛ ᏴᏫ ᎨᎦᎵᏥᏙᏁᎴ ᎾᏍᎩ ᎠᏥ-",
+        "ftm_raw_ocr": "ᎾᏓᎴᏅᏛ ᏴᏫ ᎨᎦᎵᏥᏙᏁᎴ ᎾᏍᎩ ᎠᏥ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150316_line_06.png",
+        "stock_aligned": "ᏃᎮᏍᎨᎢ, ᎠᏂ ᎡᎶᎯ ᎠᎪᎢᏳᏁᎢ, ᎦᎸ-",
+        "stock_raw_ocr": "ᏃᎮᏍᎨᎢ, ᎠᏂ ᎡᎶᎯ ᎠᎪᎢᏳᏁᎢ, ᎦᎸ-",
+        "ftm_aligned": "ᏃᎮᏍᎨᎢ, ᎠᏂ ᎡᎶᎯ ᎠᎪᎢᏳᏁᎢ, ᎦᎸ-",
+        "ftm_raw_ocr": "ᏃᎮᏍᎨᎢ, ᎠᏂ ᎡᎶᎯ ᎠᎪᎢᏳᏁᎢ, ᎦᎸ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150316_line_07.png",
+        "stock_aligned": "ᏉᏗᏳ ᏗᎨᏒ ᏫᏓᎦᏓᏂᎸᏤᎢ.",
+        "stock_raw_ocr": "ᏉᏘᏳ’ ᏗᎨᏒ ᏫᏓᎦᏓᏖᏂᎸᏤᎢ.",
+        "ftm_aligned": "ᏉᏗᏳ ᏗᎨᏒ ᏫᏓᎦᏓᏂᎸᏤᎢ.",
+        "ftm_raw_ocr": "ᏉᏗᏳ ᏗᎨᏒ ᏫᏓᎦᏓᏂᎸᏤᎢ.",
+        "ftm_confidence": 85.0
+      }
+    ]
+  },
+  "150401": {
+    "image_path": "images/150401.png",
+    "cherokee_gt": "ᎠᏎᏃ ᎠᏓᏅᏙ ᎧᏁᎬ ᎬᏂᎨᏒᎢᏳ ᏂᎬᏁᎭ ᎤᎵᏍᏆᎸᏗ ᎨᏎᏍᏗ ᎩᎶ ᏧᏂᏲᎯᏍᏗᏱ ᎪᎯᏳᏗ ᎨᏒᎢ, ᏓᎾᏛᏓᏍᏓᏁᎮᏍᏗ ᎤᎾᏠᎾᏍᏗ ᏗᏓᏅᏙ, ᎠᎴ ᏓᎾᏕᏲᎲᏍᎩ ᎠᏂᏍᎩᎾ,",
+    "verse_number": "1",
+    "lines": [
+      {
+        "line_crop": "line_crops/150401_line_00.png",
+        "stock_aligned": "1 ᎠᏎᏃ ᎠᏓᏅᏙ ᎧᏁᎬ ᎬᏂᎨᏒᎢᏳ",
+        "stock_raw_ocr": "Ꭲ ᎠᏎᏃ ᎠᏓᏅᏙ ᎧᏁᎬ ᎬᏂᎨᏒᎢᏅᏳ",
+        "ftm_aligned": "1 ᎠᏎᏃ ᎠᏓᏅᏙ ᎧᏁᎬ ᎬᏂᎨᏒᎢᏳ",
+        "ftm_raw_ocr": "1 ᎠᏎᏃ ᎠᏓᏅᏙ ᎧᏁᎬ ᎬᏂᎨᏴᎢᏳ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150401_line_01.png",
+        "stock_aligned": "ᏂᎬᏁᎭ ᎤᎵᏍᏆᎸᏗ ᎨᏎᏍᏗ ᎩᎶ ᏧᏂ-",
+        "stock_raw_ocr": "ᏂᎬᏁᎭ ᎤᎵᏍᏆᎸᏗ”ᎨᏎᏍᏘ ᎩᎶ ᏧᏂ-",
+        "ftm_aligned": "ᏂᎬᏁᎭ ᎤᎵᏍᏆᎸᏗ ᎨᏎᏍᏗ ᎩᎶ ᏧᏂ-",
+        "ftm_raw_ocr": "ᏂᎬᏁᎭ ᎤᎵᏍᏆᎸᏗ ᎨᏎᏍᏗ ᎩᎶ ᏧᏂ-",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150401_line_02.png",
+        "stock_aligned": "ᏲᎯᏍᏗᏱ ᎪᎯᏳᏗ ᎨᏒᎢ, ᏓᎾᏛᏓᏍᏓ-",
+        "stock_raw_ocr": "ᏲᎯᏍᏘᏱ ᎪᎯᏳᏗ ᏥᏦᏒᎢ;, ᏓᎾᏛᏓᏍᏓ-",
+        "ftm_aligned": "ᏲᎯᏍᏗᏱ ᎪᎯᏳᏗ ᎨᏒᎢ, ᏓᎾᏛᏓᏍᏓ-",
+        "ftm_raw_ocr": "ᏲᎯᏍᏗᏱ ᎪᎯᏳᏗ ᎨᏒᎢ, ᏓᎾᏛᏓᏍᏓ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150401_line_03.png",
+        "stock_aligned": "ᏁᎮᏍᏗ ᎤᎾᏠᎾᏍᏗ ᏗᏓᏅᏙ, ᎠᎴ ᏓᎾ-",
+        "stock_raw_ocr": "ᏁᎮᏍᏗ ᎤᎾᏠᎾᏍᏗ ᏗᏓᏅᏙ, ᎠᎴ ᏖᎾ-",
+        "ftm_aligned": "ᏁᎮᏍᏗ ᎤᎾᏠᎾᏍᏗ ᏗᏓᏅᏙ, ᎠᎴ ᏓᎾ-",
+        "ftm_raw_ocr": "ᏁᎮᏍᏗ ᎤᎾᏠᎾᏍᏗ ᏗᏓᏅᏙ, ᎠᎴ ᏓᎾ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150401_line_04.png",
+        "stock_aligned": "ᏕᏲᎲᏍᎩ ᎠᏂᏍᎩᎾ,",
+        "stock_raw_ocr": "ᏕᏲᎲᏍᎩ ᎠᏂᏍᎩᎾ,",
+        "ftm_aligned": "ᏕᏲᎲᏍᎩ ᎠᏂᏍᎩᎾ,",
+        "ftm_raw_ocr": "ᏕᎤᏲᎲᏍᎩ ᎠᏂᏍᎩᎾ,",
+        "ftm_confidence": 47.0
+      }
+    ]
+  },
+  "150402": {
+    "image_path": "images/150402.png",
+    "cherokee_gt": "ᎤᎾᏠᎾᏍᏛ ᎦᏰᎪᎩ ᎠᏂᏬᏂᏍᎨᏍᏗ, ᏚᎾᏓᏅᏛ ᏗᎦᎴᏴᏔᏅᎯ ᏔᎷᎩᏍᎩ ᎤᏗᎴᎩ ᎬᏔᏅᎯ;",
+    "verse_number": "2",
+    "lines": [
+      {
+        "line_crop": "line_crops/150402_line_00.png",
+        "stock_aligned": "2 ᎤᎾᏠᎾᏍᏛ ᎦᏰᎪᎩ ᎠᏂᏬᏂᏍᎨ-",
+        "stock_raw_ocr": "2 ᎤᏮᏠᎾᏮᏍᏛ ᎦᏰᎪᎩ ᎠᏂᏬᏂᏍᎨ-",
+        "ftm_aligned": "2 ᎤᎾᏠᎾᏍᏛ ᎦᏰᎪᎩ ᎠᏂᏬᏂᏍᎨ-",
+        "ftm_raw_ocr": "2 ᎤᎾᏠᎾᏍᏛ ᎦᏰᎪᎩ ᎠᏂᏬᏂᏍᎨ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150402_line_01.png",
+        "stock_aligned": "ᏍᏗ, ᏚᎾᏓᏅᏛ ᏗᎦᎴᏴᏔᏅᎯ ᏔᎷᎩᏍᎩ",
+        "stock_raw_ocr": "ᏍᏘ, ᏚᎾᏖᏅᏛ ᏗᎦᎴᏴᏔᏅᎯ ᏔᎷᎩᏍᎩ",
+        "ftm_aligned": "ᏍᏗ, ᏚᎾᏓᏅᏛ ᏗᎦᎴᏴᏔᏅᎯ ᏔᎷᎩᏍᎩ",
+        "ftm_raw_ocr": "ᏍᏗ, ᏚᎾᏓᏅᏛ ᏗᎦᎴᏴᏔᏅᎯ ᏔᎷᎩᏍᎩ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150402_line_02.png",
+        "stock_aligned": "ᎤᏗᎴᎩ ᎬᏔᏅᎯ;",
+        "stock_raw_ocr": "ᎤᏘᎴᎩ ᎬᏔᏅᎯ :",
+        "ftm_aligned": "ᎤᏗᎴᎩ ᎬᏔᏅᎯ;",
+        "ftm_raw_ocr": "ᎤᏗᎴᎩ ᎬᏔᏅᎯ ;",
+        "ftm_confidence": 78.0
+      }
+    ]
+  },
+  "150403": {
+    "image_path": "images/150403.png",
+    "cherokee_gt": "ᎤᏂᏅᏍᏙᏍᎨᏍᏗ ᏗᏨᏍᏗᏱ, ᎠᏂᏁᎨᏍᏗ ᎪᎱᏍᏗ ᎢᏳᏍᏗ ᎠᎵᏍᏓᏴᏗ ᏗᏲᎯᏍᏗᏱ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᎤᏬᏢᏅᎯ ᏥᎩ ᎤᎵᎮᎵᏨᎯᏉ ᏧᎾᏓᏂᎸᎢᏍᏗᏱ ᎠᏃᎯᏳᎲᏍᎩ ᎠᎴ ᎤᏂᎦᏙᎥᏒᎯ ᏥᎩ ᏚᏳᎪᏛᎢ.",
+    "verse_number": "3",
+    "lines": [
+      {
+        "line_crop": "line_crops/150403_line_00.png",
+        "stock_aligned": "3 ᎤᏂᏅᏍᏙᏍᎨᏍᏗ ᏗᏨᏍᏗᏱ, ᎠᏂ-",
+        "stock_raw_ocr": "ᎾᎤᏂᏅᏍᏙᏍᎨᏍᏘᏗ ᏗᏨᏍᏘᏱ, ᎠᏂ-",
+        "ftm_aligned": "3 ᎤᏂᏅᏍᏙᏍᎨᏍᏗ ᏗᏨᏍᏗᏱ, ᎠᏂ-",
+        "ftm_raw_ocr": "ᎾᎤᏂᏅᏍᏙᏍᎨᏍᏗ ᏗᏨᏍᏗᏱ, ᎠᏂ-",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150403_line_01.png",
+        "stock_aligned": "ᏁᎨᏍᏗ ᎪᎱᏍᏗ ᎢᏳᏍᏗ ᎠᎵᏍᏓᏴᏗ",
+        "stock_raw_ocr": "ᏁᎰᎨᏍᏗ ᎪᎱᏍᏗ ᎢᏳᏍᏗᏘ ᎠᎵᏍᏓᏴᏘ",
+        "ftm_aligned": "ᏁᎨᏍᏗ ᎪᎱᏍᏗ ᎢᏳᏍᏗ ᎠᎵᏍᏓᏴᏗ",
+        "ftm_raw_ocr": "ᏁᎨᏍᏗ ᎪᎱᏍᏗ ᎢᏳᏍᏗ ᎠᎵᏍᏓᏴᏗ",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150403_line_02.png",
+        "stock_aligned": "ᏗᏲᎯᏍᏗᏱ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᎤᏬᏢ-",
+        "stock_raw_ocr": "ᏗᏘᏲᎯᏍᏗᏱ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᎤᏬᏢ-",
+        "ftm_aligned": "ᏗᏲᎯᏍᏗᏱ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᎤᏬᏢ-",
+        "ftm_raw_ocr": "ᏗᏲᎯᏍᏗᏱ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᎤᏬᏢ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150403_line_03.png",
+        "stock_aligned": "ᏅᎯ ᏥᎩ ᎤᎵᎮᎵᏨᎯᏉ ᏧᎾᏓᏂᎸᎢᏍᏗ-",
+        "stock_raw_ocr": "ᏅᎯ ᏥᎩ ᎤᎵᎮᎵᏨᎯᎹᏉ ᏧᎾᏓᏂᎸᎢᏍᏗ-",
+        "ftm_aligned": "ᏅᎯ ᏥᎩ ᎤᎵᎮᎵᏨᎯᏉ ᏧᎾᏓᏂᎸᎢᏍᏗ-",
+        "ftm_raw_ocr": "ᏅᎯ ᏥᎩ ᎤᎵᎮᎵᏨᎯᏉ ᏧᎾᏓᏂᎸᎢᏍᏗ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150403_line_04.png",
+        "stock_aligned": "Ᏹ ᎠᏃᎯᏳᎲᏍᎩ ᎠᎴ ᎤᏂᎦᏙᎥᏒᎯ ᏥᎩ",
+        "stock_raw_ocr": "Ᏹ ᎠᏃᎯᏳᎲᏍᎩ ᎠᎴ ᎤᏂᎦᏙᎥᏒᎯ ᏥᎩ",
+        "ftm_aligned": "Ᏹ ᎠᏃᎯᏳᎲᏍᎩ ᎠᎴ ᎤᏂᎦᏙᎥᏒᎯ ᏥᎩ",
+        "ftm_raw_ocr": "Ᏹ ᎠᏃᎯᏳᏨᎲᏍᎩ ᎠᎴ ᎤᏂᎦᏙᎥᏒᎯ ᏥᎩ",
+        "ftm_confidence": 66.0
+      },
+      {
+        "line_crop": "line_crops/150403_line_05.png",
+        "stock_aligned": "ᏚᏳᎪᏛᎢ.",
+        "stock_raw_ocr": "ᏚᏳᎪᏛᎢ,.",
+        "ftm_aligned": "ᏚᏳᎪᏛᎢ.",
+        "ftm_raw_ocr": "ᏚᏳᎪᏛᎢ.",
+        "ftm_confidence": 59.0
+      }
+    ]
+  },
+  "150404": {
+    "image_path": "images/150404.png",
+    "cherokee_gt": "ᏂᎦᎥᏰᏃ ᎪᎱᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏪᏢᏅᎯ ᎨᏒ ᎣᏏᏳ, ᎠᎴ ᎥᏝ ᎪᎱᏍᏗ ᎠᏲᎢᏎᏗ ᏱᎩ, ᎢᏳᏃ ᎤᎵᎮᎵᏍᏗ ᎣᏓᏅᏛ ᏱᏛᏓᏂᎸᎦ;",
+    "verse_number": "4",
+    "lines": [
+      {
+        "line_crop": "line_crops/150404_line_00.png",
+        "stock_aligned": "4 ᏂᎦᎥᏰᏃ ᎪᎱᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏪ-",
+        "stock_raw_ocr": "Ꮞ ᏂᎦᎥᏰᏃ ᎪᎱᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏬ-",
+        "ftm_aligned": "4 ᏂᎦᎥᏰᏃ ᎪᎱᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏪ-",
+        "ftm_raw_ocr": "Ꮞ ᏂᎦᎥᏰᏃ ᎪᎱᏍᏗ ᎤᏁᎳᏅᎯ ᎤᏬ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150404_line_01.png",
+        "stock_aligned": "ᏢᏅᎯ ᎨᏒ ᎣᏏᏳ, ᎠᎴ ᎥᏝ ᎪᎱᏍᏗ Ꭰ-",
+        "stock_raw_ocr": "ᏢᏅᎯ ᎨᎢ ᎣᏏᏳ’!, ᎠᎴ ᎥᏝ ᎪᎱᏍᏗ Ꭰ-",
+        "ftm_aligned": "ᏢᏅᎯ ᎨᏒ ᎣᏏᏳ, ᎠᎴ ᎥᏝ ᎪᎱᏍᏗ Ꭰ-",
+        "ftm_raw_ocr": "ᏢᏅᎯ ᎨᏒ ᎣᏏᏳ,, ᎠᎴ ᎥᏝ ᎪᎱᏍᏗ Ꭰ-",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150404_line_02.png",
+        "stock_aligned": "ᏲᎢᏎᏗ ᏱᎩ, ᎢᏳᏃ ᎤᎵᎮᎵᏍᏗ ᎣᏓ-",
+        "stock_raw_ocr": "ᏲᎢᏎᏗ ᏱᎩ, ᎢᏳᏃ ᎤᎵᎮᏝᏍᏗ ᎣᏓ-",
+        "ftm_aligned": "ᏲᎢᏎᏗ ᏱᎩ, ᎢᏳᏃ ᎤᎵᎮᎵᏍᏗ ᎣᏓ-",
+        "ftm_raw_ocr": "ᏲᎢᏎᏗ ᏱᎩ, ᎢᏳᏃ ᎤᎵᎮᎵᏍᏗ ᎣᏓ-",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150404_line_03.png",
+        "stock_aligned": "ᏅᏛ ᏱᏛᏓᏂᎸᎦ;",
+        "stock_raw_ocr": "ᏅᏛ ᏱᏛᏓᏂᎸᎦ :",
+        "ftm_aligned": "ᏅᏛ ᏱᏛᏓᏂᎸᎦ;",
+        "ftm_raw_ocr": "ᏅᏛ ᏱᏛᏓᏂᎸᎦ;",
+        "ftm_confidence": 84.0
+      }
+    ]
+  },
+  "150405": {
+    "image_path": "images/150405.png",
+    "cherokee_gt": "ᎦᏓᎭᏰᏃ ᏂᎨᏒᎾ ᎢᎬᏁᎸᎯ ᎬᏔᏅᎯ ᎧᏃᎮᏛ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎦ, ᎠᎴ ᎠᏓᏙᎵᏍᏙᏗ ᎨᏒᎢ.",
+    "verse_number": "5",
+    "lines": [
+      {
+        "line_crop": "line_crops/150405_line_00.png",
+        "stock_aligned": "5 ᎦᏓᎭᏰᏃ ᏂᎨᏒᎾ ᎢᎬᏁᎸᎯ ᎬᏔ-",
+        "stock_raw_ocr": "5 ᎦᏓᎭᏰᏃ ᏂᎨᏒᎠᏒᎾ ᎢᎬᏁᎸᎯ ᎬᏔ-",
+        "ftm_aligned": "5 ᎦᏓᎭᏰᏃ ᏂᎨᏒᎾ ᎢᎬᏁᎸᎯ ᎬᏔ-",
+        "ftm_raw_ocr": "5 ᎦᏓᎭᏰᏃ ᏂᎨᏒᎾ ᎢᎬᏁᎸᎯ ᎬᏔ-",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150405_line_01.png",
+        "stock_aligned": "ᏅᎯ ᎧᏃᎮᏛ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎦ, ᎠᎴ",
+        "stock_raw_ocr": "ᏅᎯ ᎧᏃᎮᏛ ᎤᏁᎳᏅᎯ ᎤᏤᎵᏝᎦ, ᎠᎴ",
+        "ftm_aligned": "ᏅᎯ ᎧᏃᎮᏛ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎦ, ᎠᎴ",
+        "ftm_raw_ocr": "ᏅᎯ ᎧᏃᎮᏛ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎦ, ᎠᎴ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150405_line_02.png",
+        "stock_aligned": "ᎠᏓᏙᎵᏍᏙᏗ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᎠᏖᏙᏝᏍᏙᏘᏗ ᎨᏒᎢ.",
+        "ftm_aligned": "ᎠᏓᏙᎵᏍᏙᏗ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎠᏓᏙᎵᏝᏍᏙᏗ ᎨᏂᎢ.",
+        "ftm_confidence": 18.0
+      }
+    ]
+  },
+  "150406": {
+    "image_path": "images/150406.png",
+    "cherokee_gt": "ᎢᏳᏃ ᎠᎾᎵᏅᏟ ᎯᎠ ᎾᏍᎩ ᏱᎩᏯᏅᏓᏗᏍᏔᏅ, ᎰᏍᏛ ᎨᏎᏍᏗ ᎡᏣᏅᏏᏓᏍᏗ ᏥᏌ ᎦᎶᏁᏛ ᎤᏤᎵᎦ, ᎡᏤᎳᏍᏔᏅᎯ ᎨᏎᏍᏗ ᎧᏃᎮᏛ ᎪᎯᏳᏗ ᎨᏒ ᏥᎧᏃᎮᎭ, ᎠᎴ ᎣᏍᏛ ᏗᏕᏲᏗ ᎨᏒᎢ, ᎾᏍᎩ ᎦᏳᎳ ᏗᏣᏂᏴᏛ ᏥᎩ.",
+    "verse_number": "6",
+    "lines": [
+      {
+        "line_crop": "line_crops/150406_line_00.png",
+        "stock_aligned": "6 ᎢᏳᏃ ᎠᎾᎵᏅᏟ ᎯᎠ ᎾᏍᎩ ᏱᎩᏯ-",
+        "stock_raw_ocr": "Ꮾ ᎢᏃᏃ ᎠᎾᏮᎵᏝᏅᏝ ᎯᎠ ᎾᏍᎩ ᏱᎩᏯ-",
+        "ftm_aligned": "6 ᎢᏳᏃ ᎠᎾᎵᏅᏟ ᎯᎠ ᎾᏍᎩ ᏱᎩᏯ-",
+        "ftm_raw_ocr": "Ꮾ ᎢᏳᏃ ᎠᎾᎵᏅᏝ ᎯᎠ ᎾᏍᎩ ᏱᎩᏯ-",
+        "ftm_confidence": 77.0
+      },
+      {
+        "line_crop": "line_crops/150406_line_01.png",
+        "stock_aligned": "ᏅᏓᏗᏍᏔᏅ, ᎰᏍᏛ ᎨᏎᏍᏗ ᎡᏣᏅᏏᏓ-",
+        "stock_raw_ocr": "ᏅᏓᏘᏍᏔᏅ, ᎰᏍᏛ ᎨᏎᏍᏗ ᎡᏣᏅᏏᏓ-",
+        "ftm_aligned": "ᏅᏓᏗᏍᏔᏅ, ᎰᏍᏛ ᎨᏎᏍᏗ ᎡᏣᏅᏏᏓ-",
+        "ftm_raw_ocr": "ᏅᏓᏗᏍᏔᏅ, ᎰᏍᏛ ᎨᏎᏍᏗ ᎡᏣᏅᏏᏓ-",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150406_line_02.png",
+        "stock_aligned": "ᏍᏗ ᏥᏌ ᎦᎶᏁᏛ ᎤᏤᎵᎦ, ᎡᏤᎳᏍᏔ-",
+        "stock_raw_ocr": "ᏍᏘ ᏥᏠ ᎦᎶᏁᏛ ᎤᏤᎵᏝᎦ, ᎡᏤᎳᏙᏍᏔ-",
+        "ftm_aligned": "ᏍᏗ ᏥᏌ ᎦᎶᏁᏛ ᎤᏤᎵᎦ, ᎡᏤᎳᏍᏔ-",
+        "ftm_raw_ocr": "ᏍᏗ ᏥᏌ ᎦᎶᏁᏛ ᎤᏤᎵᎦ, ᎡᏤᎳᏍᏔ-",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150406_line_03.png",
+        "stock_aligned": "ᏅᎯ ᎨᏎᏍᏗ ᎧᏃᎮᏛ ᎪᎯᏳᏗ ᎨᏒ Ꮵ-",
+        "stock_raw_ocr": "ᏅᎯ ᎨᏎᏍᏗ ᎧᏃᎮᏛ ᎪᎯᏳᎩᏁᏗ ᏥᏥᎡ Ꮵ-",
+        "ftm_aligned": "ᏅᎯ ᎨᏎᏍᏗ ᎧᏃᎮᏛ ᎪᎯᏳᏗ ᎨᏒ Ꮵ-",
+        "ftm_raw_ocr": "ᏅᎯ ᎨᏎᏍᏗ ᎧᏃᎮᏛ ᎪᎯᏳᏗ ᎨᏒ Ꮵ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150406_line_04.png",
+        "stock_aligned": "ᎧᏃᎮᎭ, ᎠᎴ ᎣᏍᏛ ᏗᏕᏲᏗ ᎨᏒᎢ,",
+        "stock_raw_ocr": "ᎧᏃᎮᎭ, ᎠᎴ ᎣᏍᏛ ᏗᏕᏲᏗ ᎲᎡᏒᎢ,",
+        "ftm_aligned": "ᎧᏃᎮᎭ, ᎠᎴ ᎣᏍᏛ ᏗᏕᏲᏗ ᎨᏒᎢ,",
+        "ftm_raw_ocr": "ᎧᏃᎮᎭ, ᎠᎴ ᎣᏍᏛ ᏗᏕᏲᏗ ᎨᏒᎢ,",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150406_line_05.png",
+        "stock_aligned": "ᎾᏍᎩ ᎦᏳᎳ ᏗᏣᏂᏴᏛ ᏥᎩ.",
+        "stock_raw_ocr": "ᎧᏍᎩ ᎦᏳ”Ꮃ ᏗᏣᏂᏴᏛ ᏥᎩ.",
+        "ftm_aligned": "ᎾᏍᎩ ᎦᏳᎳ ᏗᏣᏂᏴᏛ ᏥᎩ.",
+        "ftm_raw_ocr": "ᎾᏍᎩ ᎦᏳᎳ ᏗᏣᏂᏴᏛ ᏥᎩ.",
+        "ftm_confidence": 90.0
+      }
+    ]
+  },
+  "150407": {
+    "image_path": "images/150407.png",
+    "cherokee_gt": "ᏕᏣᏲᎢᏎᎮᏍᏗᏍᎩᏂ ᎦᏪᏢᏗ ᎨᏒ ᎪᎱᏍᏗ ᎬᏙᏗ ᏂᎨᏒᎾ ᎠᎴ ᎠᏂᎦᏴᎵᎨ ᎤᏂᏃᎮᎸᏗ ᏥᎩ; ᎠᎴ ᏣᎸᏫᏍᏓᏁᎮᏍᏗ ᎤᏁᎳᏅᎯ ᏗᏁᎶᏙᏗ ᎨᏒᎢ.",
+    "verse_number": "7",
+    "lines": [
+      {
+        "line_crop": "line_crops/150407_line_00.png",
+        "stock_aligned": "7 ᏕᏣᏲᎢᏎᎮᏍᏗᏍᎩᏂ ᎦᏪᏢᏗ ᎨᏒ",
+        "stock_raw_ocr": "7 ᏚᏕᏣᏲᎢᏎᎮᏍᏗᏍᎩᏂ ᎦᏪᏢᏗ ᎨᎢ",
+        "ftm_aligned": "7 ᏕᏣᏲᎢᏎᎮᏍᏗᏍᎩᏂ ᎦᏪᏢᏗ ᎨᏒ",
+        "ftm_raw_ocr": "7 ᏳᎤᏣᏲᎢᏎᎮᏍᏗᏍᎩᏂ ᎦᏪᏢᏗ ᎨᏒ",
+        "ftm_confidence": 67.0
+      },
+      {
+        "line_crop": "line_crops/150407_line_01.png",
+        "stock_aligned": "ᎪᎱᏍᏗ ᎬᏙᏗ ᏂᎨᏒᎾ ᎠᎴ ᎠᏂᎦᏴᎵᎨ",
+        "stock_raw_ocr": "ᎪᎱᏍᏗ ᎬᏙᏗ ᏂᎨᏒᎾ ᎠᎴ ᎠᏂᎦᏴᎵᎻ",
+        "ftm_aligned": "ᎪᎱᏍᏗ ᎬᏙᏗ ᏂᎨᏒᎾ ᎠᎴ ᎠᏂᎦᏴᎵᎨ",
+        "ftm_raw_ocr": "ᎪᎱᏍᏗ ᎬᏙᏗ ᏂᎨᏒᎾ ᎠᎴ ᎠᏂᎦᏴᎵᎨ",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150407_line_02.png",
+        "stock_aligned": "ᎤᏂᏃᎮᎸᏗ ᏥᎩ; ᎠᎴ ᏣᎸᏫᏍᏓᏁᎮᏍᏗ",
+        "stock_raw_ocr": "ᎤᏂᏃᎮᎸᏘ ᏥᎩ: ᎠᎴ ᏣᏄᏫᏍᏓᏁᎮᏍᏗ",
+        "ftm_aligned": "ᎤᏂᏃᎮᎸᏗ ᏥᎩ; ᎠᎴ ᏣᎸᏫᏍᏓᏁᎮᏍᏗ",
+        "ftm_raw_ocr": "ᎤᏂᏃᎮᎸᏗ ᏥᎩ;Ꮆ ᎠᎴ ᏣᎸᏫᏍᏓᏁᎮᏍᏗ",
+        "ftm_confidence": 77.0
+      },
+      {
+        "line_crop": "line_crops/150407_line_03.png",
+        "stock_aligned": "ᎤᏁᎳᏅᎯ ᏗᏁᎶᏙᏗ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᎤᏁᎳᏅᎯ ᏘᏗᏁᎶᏙᏗ ᎨᏒᎢ.",
+        "ftm_aligned": "ᎤᏁᎳᏅᎯ ᏗᏁᎶᏙᏗ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎤᏁᎳᏅᎯ ᏗᏁᎶᏙᏗ ᎨᏒᎢ.",
+        "ftm_confidence": 83.0
+      }
+    ]
+  },
+  "150408": {
+    "image_path": "images/150408.png",
+    "cherokee_gt": "ᎠᏰᎸᎢᏰᏃ ᎤᎬᏩᎵ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒ ᎤᏍᏗᎩᏳ ᎠᏓᏍᏕᎵᎭ; ᎤᏁᎳᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ ᏂᎦᎥ ᎪᎱᏍᏗ ᎤᎬᏩᎵ ᎬᏩᏓᏍᏕᎸᏗ, ᎾᏍᎩᏰᏃ ᎠᏚᎢᏍᏗ ᎠᏥᏁᏗᏱ ᎬᏅ ᎪᎯ ᏥᎩ, ᎠᎴ ᎾᏍᎩ ᎤᎵᏱᎶᎯᏍᏗ ᎨᏒᎢ.",
+    "verse_number": "8",
+    "lines": [
+      {
+        "line_crop": "line_crops/150408_line_00.png",
+        "stock_aligned": "8 ᎠᏰᎸᎢᏰᏃ ᎤᎬᏩᎵ ᏗᎦᎸᏫᏍᏓᏁᏗ",
+        "stock_raw_ocr": "8 ᎠᏰᏄᎢᏰᏃ ᎤᎬᏩᎵ ᏗᎦᎸᏫᏍᏖᏁᏗ",
+        "ftm_aligned": "8 ᎠᏰᎸᎢᏰᏃ ᎤᎬᏩᎵ ᏗᎦᎸᏫᏍᏓᏁᏗ",
+        "ftm_raw_ocr": "8 ᎠᏰᎸᎢᏰᏃ ᎤᎬᏩᎵ ᏗᎦᎸᏫᏍᏓᏁᏗ",
+        "ftm_confidence": 65.0
+      },
+      {
+        "line_crop": "line_crops/150408_line_01.png",
+        "stock_aligned": "ᎨᏒ ᎤᏍᏗᎩᏳ ᎠᏓᏍᏕᎵᎭ; ᎤᏁᎳ-",
+        "stock_raw_ocr": "ᎨᎠᎬ ᎤᏍᏗᎩᏳ’ ᎠᏓᏍᏕᎨᏕᎵᏝᎭ; ᎤᏁᎳ-",
+        "ftm_aligned": "ᎨᏒ ᎤᏍᏗᎩᏳ ᎠᏓᏍᏕᎵᎭ; ᎤᏁᎳ-",
+        "ftm_raw_ocr": "ᎨᏴ ᎤᏍᏗᎩᏳ ᎠᏓᏍᏕᎵᎭ; ᎤᏁᎳ-",
+        "ftm_confidence": 61.0
+      },
+      {
+        "line_crop": "line_crops/150408_line_02.png",
+        "stock_aligned": "ᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ ᏂᎦᎥ ᎪᎱᏍᏗ",
+        "stock_raw_ocr": "ᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ ᏂᎦᎥ ᎪᎱᏍᏗ",
+        "ftm_aligned": "ᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ ᏂᎦᎥ ᎪᎱᏍᏗ",
+        "ftm_raw_ocr": "ᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ ᏂᎦᎥ ᎪᎱᏍᏗ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150408_line_03.png",
+        "stock_aligned": "ᎤᎬᏩᎵ ᎬᏩᏓᏍᏕᎸᏗ, ᎾᏍᎩᏰᏃ ᎠᏚ-",
+        "stock_raw_ocr": "ᎤᎬᏩᎵ ᎬᏩᏓᏍᏕᎸᏘ, ᎾᏍᎩᏰᏃ ᎠᏚ-",
+        "ftm_aligned": "ᎤᎬᏩᎵ ᎬᏩᏓᏍᏕᎸᏗ, ᎾᏍᎩᏰᏃ ᎠᏚ-",
+        "ftm_raw_ocr": "ᎤᎬᏩᎵ ᎬᏩᏓᏍᏕᎸᏗ, ᎾᏍᎩᏰᏃ ᎠᏚ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150408_line_04.png",
+        "stock_aligned": "ᎢᏍᏗ ᎠᏥᏁᏗᏱ ᎬᏅ ᎪᎯ ᏥᎩ, ᎠᎴ",
+        "stock_raw_ocr": "ᎢᏍᏗ ᎠᏥᏁᏗᏱ ᎬᏅ ᎪᎯ ᏥᎩ, ᎠᎴ",
+        "ftm_aligned": "ᎢᏍᏗ ᎠᏥᏁᏗᏱ ᎬᏅ ᎪᎯ ᏥᎩ, ᎠᎴ",
+        "ftm_raw_ocr": "ᎢᏍᏗ ᎠᏥᏁᏗᏱ ᎬᏅ ᎪᎯ ᏥᎩ, ᎠᎴ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150408_line_05.png",
+        "stock_aligned": "ᎾᏍᎩ ᎤᎵᏱᎶᎯᏍᏗ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᎾᏍᎩ ᎤᎵᏱᎶᎯᏍᏗ ᎨᏦᎢ.",
+        "ftm_aligned": "ᎾᏍᎩ ᎤᎵᏱᎶᎯᏍᏗ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎾᏍᎩ ᎤᎵᏱᎶᎯᏍᏗ ᎨᏒᎢ.",
+        "ftm_confidence": 85.0
+      }
+    ]
+  },
+  "150409": {
+    "image_path": "images/150409.png",
+    "cherokee_gt": "ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ, ᎠᎴ ᏩᏍᏛ ᏧᏓᏂᎸᎢᏍᏗᏳ;",
+    "verse_number": "9",
+    "lines": [
+      {
+        "line_crop": "line_crops/150409_line_00.png",
+        "stock_aligned": "9 ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ, ᎠᎴ ᏩᏍᏛ",
+        "stock_raw_ocr": "9. ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ, ᎠᎴ ᏩᏍᏛ",
+        "ftm_aligned": "9 ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ, ᎠᎴ ᏩᏍᏛ",
+        "ftm_raw_ocr": "9 ᎤᏙᎯᏳᎯᏯ ᎢᎦᏪᏛ, ᎠᎴ ᏩᏍᏛ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150409_line_01.png",
+        "stock_aligned": "ᏧᏓᏂᎸᎢᏍᏗᏳ;",
+        "stock_raw_ocr": "ᏧᏓᏂᎸᎢᏍᏗᏳ Ꮆ",
+        "ftm_aligned": "ᏧᏓᏂᎸᎢᏍᏗᏳ;",
+        "ftm_raw_ocr": "ᏧᏓᏂᎸᎢᏍᏗᏳ,",
+        "ftm_confidence": 58.0
+      }
+    ]
+  },
+  "150410": {
+    "image_path": "images/150410.png",
+    "cherokee_gt": "ᎾᏍᎩᏰᏃ ᎢᏳᏍᏗ ᏕᎩᎸᏫᏍᏓᏁᎭ ᎠᎴ ᎦᏰᎩᏐᏢᏗᎭ ᏅᏗᎦᎵᏍᏙᏗ ᎡᏓᎵᏍᎦᏍᏙᏛ ᎬᏂᏛ ᎤᏁᎳᏅᎯ, ᎾᏍᎩ ᏗᏍᏕᎵᏍᎩ ᏥᎩ ᎾᏂᎥ ᏴᏫ, ᎾᏍᎩ Ꮀ ᎤᎬᏫᏳᎭ ᎾᏍᎩ Ꮎ ᎠᏃᎯᏳᎲᏍᎩ.",
+    "verse_number": "10",
+    "lines": [
+      {
+        "line_crop": "line_crops/150410_line_00.png",
+        "stock_aligned": "10 ᎾᏍᎩᏰᏃ ᎢᏳᏍᏗ ᏕᎩᎸᏫᏍᏓᏁᎭ",
+        "stock_raw_ocr": "10 ᎾᏍᎩᏰᏃ ᎢᏳᏅᏍᏗ.,.ᏕᎩᎸᏫᏍᏓ-",
+        "ftm_aligned": "10 ᎾᏍᎩᏰᏃ ᎢᏳᏍᏗ ᏕᎩᎸᏫᏍᏓ-",
+        "ftm_raw_ocr": "10 ᎾᏍᎩᏰᏃ ᎢᏳᏍᏗ ᏕᎩᎸᏫᏍᏓ-",
+        "ftm_confidence": 62.0
+      },
+      {
+        "line_crop": "line_crops/150410_line_01.png",
+        "stock_aligned": "ᎠᎴ ᎦᏰᎩᏐᏢᏗᎭ ᏅᏗᎦᎵᏍᏙᏗ",
+        "stock_raw_ocr": "ᏁᎭ ᎠᎴ ᎦᏰᎩᏐᏢᏗᎭ ᏅᏗᎦᎵᏝᏍᏙᏗ",
+        "ftm_aligned": "ᏁᎭ ᎠᎴ ᎦᏰᎩᏐᏢᏗᎭ ᏅᏗᎦᎵᏍᏙᏗ",
+        "ftm_raw_ocr": "ᏁᎭ ᎠᎴ ᎦᏰᎩᏐᏢᏗᎭ ᏅᏗᎦᎵᏍᏙᏗ",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150410_line_02.png",
+        "stock_aligned": "ᎡᏓᎵᏍᎦᏍᏙᏛ ᎬᏂᏛ ᎤᏁᎳᏅᎯ, Ꮎ-",
+        "stock_raw_ocr": "ᎡᏖᏝᏍᎦᏍᏙᏛ ᎬᏂᏛ ᎤᏁᎳᏅᎯ, Ꮎ-",
+        "ftm_aligned": "ᎡᏓᎵᏍᎦᏍᏙᏛ ᎬᏂᏛ ᎤᏁᎳᏅᎯ, Ꮎ-",
+        "ftm_raw_ocr": "ᎡᏓᎵᏍᎦᏍᏙᏛ ᎬᏂᏛ ᎤᏁᎳᏅᎯ, Ꮎ-",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150410_line_03.png",
+        "stock_aligned": "ᏍᎩ ᏗᏍᏕᎵᏍᎩ ᏥᎩ ᎾᏂᎥ ᏴᏫ, ᎾᏍᎩ",
+        "stock_raw_ocr": "ᏍᎩ ᏗᏍᏕ.ᏝᏍᎩ ᏥᎩ ᎾᏂᎥ ᏴᏫ, ᎾᏍᎩ",
+        "ftm_aligned": "ᏍᎩ ᏗᏍᏕᎵᏍᎩ ᏥᎩ ᎾᏂᎥ ᏴᏫ, ᎾᏍᎩ",
+        "ftm_raw_ocr": "ᏍᎩ ᏗᏍᏕᎵᏍᎩ ᏥᎩ ᎾᏂᎥ ᏴᏫ, ᎾᏍᎩ",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150410_line_04.png",
+        "stock_aligned": "Ꮀ ᎤᎬᏫᏳᎭ ᎾᏍᎩ Ꮎ ᎠᏃᎯᏳᎲᏍᎩ.",
+        "stock_raw_ocr": "Ꮀ ᎤᎬᏫᏳᎭ ᎾᏍᎩ Ꮎ ᎠᏃᎯᏳᎲ”",
+        "ftm_aligned": "Ꮀ ᎤᎬᏫᏳᎭ ᎾᏍᎩ Ꮎ ᎠᏃᎯᏳᎲ-",
+        "ftm_raw_ocr": "Ꮀ ᎤᎬᏫᏳᎭ ᎾᏍᎩ Ꮎ ᎠᏃᎯᏳᎲ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150410_line_05.png",
+        "stock_aligned": "",
+        "stock_raw_ocr": "ᏍᎩ,",
+        "ftm_aligned": "ᏍᎩ.",
+        "ftm_raw_ocr": "ᏍᎩ.",
+        "ftm_confidence": 83.0
+      }
+    ]
+  },
+  "150411": {
+    "image_path": "images/150411.png",
+    "cherokee_gt": "ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᎯᏁᎨᏍᏗ ᎠᎴ ᏕᎭᏕᏲᎲᏍᎨᏍᏗ.",
+    "verse_number": "11",
+    "lines": [
+      {
+        "line_crop": "line_crops/150411_line_00.png",
+        "stock_aligned": "11 ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᎯᏁᎨᏍᏗ",
+        "stock_raw_ocr": "ᏗᏞ ᎤᏍᎩ ᎯᎠ “ᏄᏍᏅᏅᏍᏗ ᎯᎫᏞᏗᏙᎩᏟᎧᏗ",
+        "ftm_aligned": "11 ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᎯᏁᎨᏍᏗ",
+        "ftm_raw_ocr": "Ꭵ ᎩᎤᏍᎩ ᎯᎠ ᏄᏍᎩᎤᏍᏗ ᏯᎤᏙᎲᏍᏯ",
+        "ftm_confidence": 10.0
+      },
+      {
+        "line_crop": "line_crops/150411_line_01.png",
+        "stock_aligned": "ᎠᎴ ᏕᎭᏕᏲᎲᏍᎨᏍᏗ.",
+        "stock_raw_ocr": "ᎸᏄᎸᏍᎸ ᎤᎴᏑᎸ Ꮤ ᏑᎤ Ꮂ Ꮬ “ᎸᏔ- “ᎸᏄ Ꮔ",
+        "ftm_aligned": "ᎠᎴ ᏕᎭᏕᏲᎲᏍᎨᏍᏗ.",
+        "ftm_raw_ocr": "ᏙᏍᏱ ᎠᏍᏍᎣᎴᎣ ᎦᏔ ᏍᎸ",
+        "ftm_confidence": 18.0
+      }
+    ]
+  },
+  "150412": {
+    "image_path": "images/150412.png",
+    "cherokee_gt": "ᏞᏍᏗ ᎩᎶ ᏳᏐᏅᏤᎴᏏᏗ ᎯᏫᏂᏳ ᎨᏒᎢ; ᎦᎨᏣᏕᎶᏆᎡᏗᏍᎩᏂ ᎨᏎᏍᏗ ᎠᏃᎯᏳᎲᏍᎩ, ᎯᏬᏂᏍᎬᎢ ᎠᎴ ᏂᏣᏛᎿᎭᏕᎬᎢ, ᎠᎴ ᏣᏓᎨᏳᎡᎢ, ᎠᎴ ᏣᏓᏅᏖᏗᏱ, ᎠᎴ ᏦᎯᏳᏒᎢ, ᎠᎴ ᎦᏓᎭ ᏂᎨᏒᎾ ᎨᏒᎢ.",
+    "verse_number": "12",
+    "lines": [
+      {
+        "line_crop": "line_crops/150412_line_00.png",
+        "stock_aligned": "12 ᏞᏍᏗ ᎩᎶ ᏳᏐᏅᏤᎴᏏᏗ ᎯᏫᏂᏳ",
+        "stock_raw_ocr": "12 ᏞᏍᏗ ᎩᎶ ᏳᏐᏅᏤᎴᏍᏗ ᎯᏫ”",
+        "ftm_aligned": "12 ᏞᏍᏗ ᎩᎶ ᏳᏐᏅᏤᎴᏏᏗ ᎯᏫ-",
+        "ftm_raw_ocr": "Ꭰ ᏞᏍᏗ ᎩᎶ ᏳᏐᏅᏤᎴᏍᏗ ᎯᏫ-",
+        "ftm_confidence": 73.0
+      },
+      {
+        "line_crop": "line_crops/150412_line_01.png",
+        "stock_aligned": "ᎨᏒᎢ; ᎦᎨᏣᏕᎶᏆᎡᏗᏍᎩᏂ ᎨᏎ-",
+        "stock_raw_ocr": "ᏂᏳ’ ᎨᎢ 5) ᎦᎨᏣᏕᎶᏆᎡᏗᏍᎩᏂ ᎨᏎ-",
+        "ftm_aligned": "ᏂᏳ ᎨᏒᎢ; ᎦᎨᏣᏕᎶᏆᎡᏗᏍᎩᏂ ᎨᏎ-",
+        "ftm_raw_ocr": "ᏂᏳ ᎨᏒᎢ; ᎦᎨᏣᎶᎶᏆᎡᏗᏍᎩᏂ ᎨᏎ-",
+        "ftm_confidence": 69.0
+      },
+      {
+        "line_crop": "line_crops/150412_line_02.png",
+        "stock_aligned": "ᏍᏗ ᎠᏃᎯᏳᎲᏍᎩ, ᎯᏬᏂᏍᎬᎢ ᎠᎴ",
+        "stock_raw_ocr": "ᏍᏘ ᎠᏃᎯᏳᎲᏍᎩ, ᎯᏬᏂᏍᎬᎢ ᎠᎴ",
+        "ftm_aligned": "ᏍᏗ ᎠᏃᎯᏳᎲᏍᎩ, ᎯᏬᏂᏍᎬᎢ ᎠᎴ",
+        "ftm_raw_ocr": "ᏍᏗ ᎠᏃᎯᏳᎲᏍᎩ, ᎯᏬᏂᏍᎬᎢ ᎠᎴ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150412_line_03.png",
+        "stock_aligned": "ᏂᏣᏛᎿᎭᏕᎬᎢ, ᎠᎴ ᏣᏓᎨᏳᎡᎢ, ᎠᎴ",
+        "stock_raw_ocr": "ᏂᏣᏛᎿᏅᏕᎬᎢ, ᎠᎴ ᏣᏓᎨᏳᎡᎢ, ᎠᎴ",
+        "ftm_aligned": "ᏂᏣᏛᎿᎭᏕᎬᎢ, ᎠᎴ ᏣᏓᎨᏳᎡᎢ, ᎠᎴ",
+        "ftm_raw_ocr": "ᏂᏣᏛᎿᏕᎬᎢ, ᎠᎴ ᏣᏓᎨᏳᎡᎢ, ᎠᎴ",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150412_line_04.png",
+        "stock_aligned": "ᏣᏓᏅᏖᏗᏱ, ᎠᎴ ᏦᎯᏳᏒᎢ, ᎠᎴ ᎦᏓᎭ",
+        "stock_raw_ocr": "ᏣᏖᏅᏖᏗᏱ; ᎠᎴ ᏦᎯᏳᎬᎢ; ᎠᎴ ᎦᏓᎭᏤ",
+        "ftm_aligned": "ᏣᏓᏅᏖᏗᏱ, ᎠᎴ ᏦᎯᏳᏒᎢ, ᎠᎴ ᎦᏓᎭ",
+        "ftm_raw_ocr": "ᏣᏓᏅᏖᏗᏱ, ᎠᎴ ᏦᎯᏳᏒᎢ, ᎠᎴ ᎦᏓᎭ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150412_line_05.png",
+        "stock_aligned": "ᏂᎨᏒᎾ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᏂᎨᏒᎾ ᎡᎬᎩᏒᎢ.",
+        "ftm_aligned": "ᏂᎨᏒᎾ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᏂᎨᏒᎾ ᎨᏒᎢ.",
+        "ftm_confidence": 76.0
+      }
+    ]
+  },
+  "150413": {
+    "image_path": "images/150413.png",
+    "cherokee_gt": "ᏫᏥᎷᏨᎭ ᎢᏯᏍᏘ ᏕᏣᎸᏫᏍᏓᏁᎮᏍᏗ ᎪᏪᎵ ᏕᎯᎪᎵᏰᏍᎬᎢ, ᎠᎴ ᏕᎯᏬᏁᏗᏍᎬᎢ, ᎠᎴ ᏕᎭᏕᏲᎲᏍᎬᎢ.",
+    "verse_number": "13",
+    "lines": [
+      {
+        "line_crop": "line_crops/150413_line_00.png",
+        "stock_aligned": "13 ᏫᏥᎷᏨᎭ ᎢᏯᏍᏘ ᏕᏣᎸᏫᏍᏓ-",
+        "stock_raw_ocr": "18 ᏫᏏᎷᏨᎭ ᎢᏯᏍᏘ ᏕᏣᎸᏫᏍᏓ”-",
+        "ftm_aligned": "13 ᏫᏥᎷᏨᎭ ᎢᏯᏍᏘ ᏕᏣᎸᏫᏍᏓ-",
+        "ftm_raw_ocr": "13 ᏫᏥᎷᏥᏨᎭ ᎢᏯᏍᏘ ᏕᏣᎸᏫᏍᏓ-",
+        "ftm_confidence": 55.0
+      },
+      {
+        "line_crop": "line_crops/150413_line_01.png",
+        "stock_aligned": "ᏁᎮᏍᏗ ᎪᏪᎵ ᏕᎯᎪᎵᏰᏍᎬᎢ, ᎠᎴ",
+        "stock_raw_ocr": "ᏁᎮᏍᏗ ᎪᏪᎵ ᏕᏅᎯᎪᎵᏰᏍᎬᎢ, ᎠᎴ Ꭶ”“",
+        "ftm_aligned": "ᏁᎮᏍᏗ ᎪᏪᎵ ᏕᎯᎪᎵᏰᏍᎬᎢ, ᎠᎴ Ꮥ-",
+        "ftm_raw_ocr": "ᏁᎮᏍᏗ ᎪᏪᎵ ᏣᎤᎯᎪᎵᏰᏍᎬᎢ, ᎠᎴ Ꭶ-",
+        "ftm_confidence": 53.0
+      },
+      {
+        "line_crop": "line_crops/150413_line_02.png",
+        "stock_aligned": "ᏕᎯᏬᏁᏗᏍᎬᎢ, ᎠᎴ ᏕᎭᏕᏲᎲᏍᎬᎢ.",
+        "stock_raw_ocr": "ᎯᏬᏁᏗᏍᎬᎢ, ᎠᎴ ᏕᎭᏕᏲᎲᏍᎬᎢ,.",
+        "ftm_aligned": "ᎯᏬᏁᏗᏍᎬᎢ, ᎠᎴ ᏕᎭᏕᏲᎲᏍᎬᎢ.",
+        "ftm_raw_ocr": "ᎯᏬᏁᏗᏍᎬᎢ, ᎠᎴ ᏕᎤᎭᏕᏲᎲᏍᎬᎢ.",
+        "ftm_confidence": 57.0
+      }
+    ]
+  },
+  "150414": {
+    "image_path": "images/150414.png",
+    "cherokee_gt": "ᏞᏍᏗ ᎤᏁᎳᎩ ᏤᎵᏒᎩ ᎡᏣᏁᎸᎯ ᎾᏍᎩ ᏥᏣᎭ, ᎾᏍᎩ ᎡᏣᏁᎸᎯ ᏥᎩ ᎠᏅᏗᏍᎬ ᎤᎾᏙᎴᎰᏒ ᎠᎴ ᏕᎨᏣᏏᏔᏛ ᏗᎨᎦᏁᎶᏗ.",
+    "verse_number": "14",
+    "lines": [
+      {
+        "line_crop": "line_crops/150414_line_00.png",
+        "stock_aligned": "14 ᏞᏍᏗ ᎤᏁᎳᎩ ᏤᎵᏒᎩ ᎡᏣᏁ-",
+        "stock_raw_ocr": "1Ꮞ ᏞᏍᏗ ᎤᏁᎳᎩ ᏤᎵᏒᎩ ᎡᏣᏁᎩ-",
+        "ftm_aligned": "14 ᏞᏍᏗ ᎤᏁᎳᎩ ᏤᎵᏒᎩ ᎡᏣᏁ-",
+        "ftm_raw_ocr": "1Ꮞ ᏞᏍᏗ ᎤᏁᎳᎩ ᏤᎵᏒᎩ ᎡᏣᏁ-",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150414_line_01.png",
+        "stock_aligned": "ᎸᎯ ᎾᏍᎩ ᏥᏣᎭ, ᎾᏍᎩ ᎡᏣᏁᎸᎯ ᏥᎩ",
+        "stock_raw_ocr": "ᎸᎯ ᎾᏍᎩ ᏥᏣᎭ, ᎾᏍᎩ ᎡᏣᏁᎸᎯ ᏥᎩ",
+        "ftm_aligned": "ᎸᎯ ᎾᏍᎩ ᏥᏣᎭ, ᎾᏍᎩ ᎡᏣᏁᎸᎯ ᏥᎩ",
+        "ftm_raw_ocr": "ᎸᎯ ᎾᏍᎩ ᏥᏣᎭ, ᎾᏍᎩ ᎡᏣᏁᎸᎯ ᏥᎩ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150414_line_02.png",
+        "stock_aligned": "ᎠᏅᏗᏍᎬ ᎤᎾᏙᎴᎰᏒ ᎠᎴ ᏕᎨᏣᏏᏔᏛ",
+        "stock_raw_ocr": "ᎠᏅᏘᏍᎬ ᎤᎾᏙᎴᎰᏒ ᎠᎴ ᏕᎨᏣᏏᏔᏛ",
+        "ftm_aligned": "ᎠᏅᏗᏍᎬ ᎤᎾᏙᎴᎰᏒ ᎠᎴ ᏕᎨᏣᏏᏔᏛ",
+        "ftm_raw_ocr": "ᎠᏅᏗᏍᎬ ᎤᎾᏙᎴᎰᏒ ᎠᎴ ᏕᎨᏣᏏᏔᏛ",
+        "ftm_confidence": 72.0
+      },
+      {
+        "line_crop": "line_crops/150414_line_03.png",
+        "stock_aligned": "ᏗᎨᎦᏁᎶᏗ.",
+        "stock_raw_ocr": "ᏗᏂᎦᏁᎶᏗᏘ.",
+        "ftm_aligned": "ᏗᎨᎦᏁᎶᏗ.",
+        "ftm_raw_ocr": "ᏗᎨᎦᏁᎶᏗ.",
+        "ftm_confidence": 77.0
+      }
+    ]
+  },
+  "150415": {
+    "image_path": "images/150415.png",
+    "cherokee_gt": "ᎾᏍᎩ ᏕᎭᏓᏅᏖᏍᎨᏍᏗ, ᎾᏍᎩᏉ ᏕᏣᎸᏫᏍᏓᏁᎮᏍᏗ, ᎾᏍᎩᏃ ᏣᏁᏉᏤᎲ ᎬᏂᎨᏒ ᏄᎾᎵᏍᏓᏁᎮᏍᏗ ᏂᎦᏛ.",
+    "verse_number": "15",
+    "lines": [
+      {
+        "line_crop": "line_crops/150415_line_00.png",
+        "stock_aligned": "15 ᎾᏍᎩ ᏕᎭᏓᏅᏖᏍᎨᏍᏗ, ᎾᏍᎩᏉ",
+        "stock_raw_ocr": "15 ᎾᏍᎩ ᏕᎭᏖᏅᏖᏍᎨᏍᏗ, ᎾᏍᎩ”",
+        "ftm_aligned": "15 ᎾᏍᎩ ᏕᎭᏓᏅᏖᏍᎨᏍᏗ, ᎾᏍᎩ-",
+        "ftm_raw_ocr": "155 ᎾᏍᎩ ᏕᎭᏓᏅᏖᏍᎨᏍᏗ, ᎾᏍᎩ-",
+        "ftm_confidence": 58.0
+      },
+      {
+        "line_crop": "line_crops/150415_line_01.png",
+        "stock_aligned": "ᏕᏣᎸᏫᏍᏓᏁᎮᏍᏗ, ᎾᏍᎩᏃ ᏣᏁ-",
+        "stock_raw_ocr": "Ꮙ ᏕᏣᎸᏫᏍᏓᏁᎮᏍᏘ, ᎾᏍᎩᏃ ᏣᏁ-”",
+        "ftm_aligned": "Ꮙ ᏕᏣᎸᏫᏍᏓᏁᎮᏍᏗ, ᎾᏍᎩᏃ ᏣᏁ-",
+        "ftm_raw_ocr": "Ꮙ ᏕᏣᏣᎸᏫᏍᏓᏁᎮᏍᏗ, ᎾᏍᎩᏃ ᏣᏁ-",
+        "ftm_confidence": 68.0
+      },
+      {
+        "line_crop": "line_crops/150415_line_02.png",
+        "stock_aligned": "ᏉᏤᎲ ᎬᏂᎨᏒ ᏄᎾᎵᏍᏓᏁᎮᏍᏗ ᏂᎦᏛ.",
+        "stock_raw_ocr": "ᏉᏤᎲ ᎬᏂᎨᏒ ᏄᎾᏝᎵᏍᏓᏁᎮᏍᏗ ᏂᎦᏛ.",
+        "ftm_aligned": "ᏉᏤᎲ ᎬᏂᎨᏒ ᏄᎾᎵᏍᏓᏁᎮᏍᏗ ᏂᎦᏛ.",
+        "ftm_raw_ocr": "ᏉᏤᎲ ᎬᏂᎨᏴ ᏄᎾᎵᏍᏓᏁᎮᏍᏗ ᏂᎦᏛ.",
+        "ftm_confidence": 80.0
+      }
+    ]
+  },
+  "150416": {
+    "image_path": "images/150416.png",
+    "cherokee_gt": "ᏣᏓᎦᏌᏯᏍᏕᏍᏗ ᏨᏒ ᎠᎴ ᏄᏍᏛ ᏕᎭᏕᏲᎲᏍᎩᎢ, ᎾᏍᎩ ᏕᎯᏍᏓᏩᏗᏎᏍᏗ; ᎾᏍᎩᏰᏃ ᎿᎭᏛᏁᎲ ᏨᏒ ᏔᏓᏍᏕᎸᎯ ᎠᎴ ᎾᏍᏉ ᎾᏍᎩ Ꮎ ᎨᏣᏛᏓᏍᏓᏁᎯ ᏙᏘᏍᏕᎸᎯ.",
+    "verse_number": "16",
+    "lines": [
+      {
+        "line_crop": "line_crops/150416_line_00.png",
+        "stock_aligned": "16 ᏣᏓᎦᏌᏯᏍᏕᏍᏗ ᏨᏒ ᎠᎴ ᏄᏍᏛ",
+        "stock_raw_ocr": "16 ᏣᏓᎦᏌᏯᏍᏕᏍᏘ ᏨᏒ ᎠᎴ ᏄᏍᏛ",
+        "ftm_aligned": "16 ᏣᏓᎦᏌᏯᏍᏕᏍᏗ ᏨᏒ ᎠᎴ ᏄᏍᏛ",
+        "ftm_raw_ocr": "16 ᏣᏓᎦᏌᏯᏍᏕᏍᏗ ᏨᏒ ᎠᎴ ᏄᏍᏛ",
+        "ftm_confidence": 72.0
+      },
+      {
+        "line_crop": "line_crops/150416_line_01.png",
+        "stock_aligned": "ᏕᎭᏕᏲᎲᏍᎩᎢ, ᎾᏍᎩ ᏕᎯᏍᏓᏩᏗᏎ-",
+        "stock_raw_ocr": "ᏕᎭᏕᏲᎲᏍᎬᎢ, ᎾᏍᎩ ᏕᎯᏍᏓᏩᏗᏘᏎ-",
+        "ftm_aligned": "ᏕᎭᏕᏲᎲᏍᎩᎢ, ᎾᏍᎩ ᏕᎯᏍᏓᏩᏗᏎ-",
+        "ftm_raw_ocr": "ᏣᎭᏕᏲᎲᏍᎬᎢ, ᎾᏍᎩ ᏕᎤᎯᏍᏓᏩᏗᏎ-",
+        "ftm_confidence": 42.0
+      },
+      {
+        "line_crop": "line_crops/150416_line_02.png",
+        "stock_aligned": "ᏍᏗ; ᎾᏍᎩᏰᏃ ᎿᎭᏛᏁᎲ ᏨᏒ ᏔᏓᏍᏕ-",
+        "stock_raw_ocr": "ᏍᏘ; ᎾᏍᎩᏰᏃ ᎿᏛᏁᎲ ᏨᏒ ᏔᏓᏍᏕ-”",
+        "ftm_aligned": "ᏍᏗ; ᎾᏍᎩᏰᏃ ᎿᎭᏛᏁᎲ ᏨᏒ ᏔᏓᏍᏕ-",
+        "ftm_raw_ocr": "ᏍᏗ; ᎾᏍᎩᏰᏃ ᎿᏛᏁᎲ ᏨᎵ ᏔᏓᏍᏕ-",
+        "ftm_confidence": 70.0
+      },
+      {
+        "line_crop": "line_crops/150416_line_03.png",
+        "stock_aligned": "ᎸᎯ ᎠᎴ ᎾᏍᏉ ᎾᏍᎩ Ꮎ ᎨᏣᏛᏓᏍᏓᏁᎯ",
+        "stock_raw_ocr": "ᎸᎯ ᎠᎴ ᎾᏍᏉ ᎾᏍᎩ Ꮎ ᎨᏣᏛᏓᏍᏓ”",
+        "ftm_aligned": "ᎸᎯ ᎠᎴ ᎾᏍᏉ ᎾᏍᎩ Ꮎ ᎨᏣᏛᏓᏍᏓ-",
+        "ftm_raw_ocr": "ᎸᎯ ᎠᎴ ᎾᏍᏉ ᎾᏍᎩ Ꮎ ᎨᏣᏛᏓᏍᏓ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150416_line_04.png",
+        "stock_aligned": "ᏙᏘᏍᏕᎸᎯ.",
+        "stock_raw_ocr": "ᏁᎯ ᏙᏘᏍᏕᎸᎯ.",
+        "ftm_aligned": "ᏁᎯ ᏙᏘᏍᏕᎸᎯ.",
+        "ftm_raw_ocr": "ᏁᎯ ᏙᏘᏍᏕᎸᎯ.",
+        "ftm_confidence": 57.0
+      }
+    ]
+  },
+  "150501": {
+    "image_path": "images/150501.png",
+    "cherokee_gt": "ᎤᏛᏐᏅᎯ ᏞᏍᏗ ᏱᎬᏍᎪᎸᏁᏍᏗ, ᎯᏍᏗᏰᏗᏍᎨᏍᏗᏍᎩᏂ ᎠᎦᏴᎵᎨ ᎾᏍᎩᏯᎢ, ᎠᏂᏫᏅᏃ ᎢᏣᏓᏅᏟ ᎾᏍᎩᏯᎢ,",
+    "verse_number": "1",
+    "lines": [
+      {
+        "line_crop": "line_crops/150501_line_00.png",
+        "stock_aligned": "1 ᎤᏛᏐᏅᎯ ᏞᏍᏗ ᏱᎬᏍᎪᎸᏁᏍᏗ,",
+        "stock_raw_ocr": "1 ᎤᏛᏐᏅᎯ ᏞᏍᏗ ᏱᎬᏍᎪᎸᏁᏍᏘ,",
+        "ftm_aligned": "1 ᎤᏛᏐᏅᎯ ᏞᏍᏗ ᏱᎬᏍᎪᎸᏁᏍᏗ,",
+        "ftm_raw_ocr": "1 ᎤᏛᏐᏅᎯ ᏞᏍᏗ ᏱᎬᏍᎪᎸᏁᏍᏗ,",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150501_line_01.png",
+        "stock_aligned": "ᎯᏍᏗᏰᏗᏍᎨᏍᏗᏍᎩᏂ ᎠᎦᏴᎵᎨ",
+        "stock_raw_ocr": "ᎯᏍᏘᏰᏘᏍᎨᏍᏗᏍᎩᏂ ᎠᎦᏴᎵᏥ ᎾᏅ",
+        "ftm_aligned": "ᎯᏍᏗᏰᏗᏍᎨᏍᏗᏍᎩᏂ ᎠᎦᏴᎵᎨ Ꮎ-",
+        "ftm_raw_ocr": "ᎯᏍᏗᏰᏗᏍᎨᏍᏗᏍᎩᏂ ᎠᎦᏴᎵᎨ Ꮎ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150501_line_02.png",
+        "stock_aligned": "ᎾᏍᎩᏯᎢ, ᎠᏂᏫᏅᏃ ᎢᏣᏓᏅᏟ ᎾᏍᎩᏯᎢ,",
+        "stock_raw_ocr": "ᏍᎩᏯᎢ, ᎠᏂᏫᏅᏃ ᎢᏣᏓᏅᏟ ᎾᏍᎩ”",
+        "ftm_aligned": "ᏍᎩᏯᎢ, ᎠᏂᏫᏅᏃ ᎢᏣᏓᏅᏟ ᎾᏍᎩ-",
+        "ftm_raw_ocr": "ᏍᎩᏯᎢ, ᎠᏂᏫᏅᏃ ᎢᏣᏓᏅᏣ ᎾᏍᎩ-",
+        "ftm_confidence": 73.0
+      },
+      {
+        "line_crop": "line_crops/150501_line_03.png",
+        "stock_aligned": "",
+        "stock_raw_ocr": "ᏯᎢ,",
+        "ftm_aligned": "ᏯᎢ,",
+        "ftm_raw_ocr": "ᏯᎢ,",
+        "ftm_confidence": 78.0
+      }
+    ]
+  },
+  "150502": {
+    "image_path": "images/150502.png",
+    "cherokee_gt": "ᎠᎾᎦᏴᎵᎨᏃ ᎠᏂᎨᏴ ᏗᏣᏥ ᎾᏍᎩᏯᎢ, ᎠᏂᏫᏅᎨᏃ ᎠᏂᎨᏴ ᏤᏣᏙ ᎾᏍᎩᏯᎢ, ᎤᏐᏅ ᏄᏓᏑᏴᎾ.",
+    "verse_number": "2",
+    "lines": [
+      {
+        "line_crop": "line_crops/150502_line_00.png",
+        "stock_aligned": "2 ᎠᎾᎦᏴᎵᎨᏃ ᎠᏂᎨᏴ ᏗᏣᏥ ᎾᏍᎩ-",
+        "stock_raw_ocr": "2 ᎠᏂᎦᏴᎵᎰᏃ ᎠᏂᎨᏴ ᏘᏣᏥ ᎾᏍᎩ-",
+        "ftm_aligned": "2 ᎠᎾᎦᏴᎵᎨᏃ ᎠᏂᎨᏴ ᏗᏣᏥ ᎾᏍᎩ-",
+        "ftm_raw_ocr": "2 ᎠᏂᎦᏴᎵᎨᏃ ᎠᏂᎨᏴ ᏗᏣᏥ ᎾᏍᎩ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150502_line_01.png",
+        "stock_aligned": "ᏯᎢ, ᎠᏂᏫᏅᎨᏃ ᎠᏂᎨᏴ ᏤᏣᏙ ᎾᏍᎩᏯᎢ,",
+        "stock_raw_ocr": "ᏯᎢ, ᎠᏂᏫᏅᎨᏃ ᎠᏂᏥᏴ ᏤᏣᏙ ᎾᏍᎩ”",
+        "ftm_aligned": "ᏯᎢ, ᎠᏂᏫᏅᎨᏃ ᎠᏂᎨᏴ ᏤᏣᏙ ᎾᏍᎩ-",
+        "ftm_raw_ocr": "ᏯᎢ, ᎠᏂᏫᏅᎨᏃ ᎠᏂᎨᏴ ᏤᏣᏙ ᎾᏍᎩ-",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150502_line_02.png",
+        "stock_aligned": "ᎤᏐᏅ ᏄᏓᏑᏴᎾ.",
+        "stock_raw_ocr": "ᏯᎢ;, ᎤᏐᏅ ᏄᏓᏑᏴᎾ.",
+        "ftm_aligned": "ᏯᎢ, ᎤᏐᏅ ᏄᏓᏑᏴᎾ.",
+        "ftm_raw_ocr": "ᏯᎢ, ᎤᏐᏅ ᏄᏓᏑᏴᎾ.",
+        "ftm_confidence": 83.0
+      }
+    ]
+  },
+  "150503": {
+    "image_path": "images/150503.png",
+    "cherokee_gt": "ᏕᎯᎸᏉᏕᏍᏗ ᏧᏃᏑᎶᏨᎯ, ᎢᏳᏃ ᎤᏙᎯᏳᏒ ᏧᏃᏑᎶᏨᎯ ᏱᎩ.",
+    "verse_number": "3",
+    "lines": [
+      {
+        "line_crop": "line_crops/150503_line_00.png",
+        "stock_aligned": "3 ᏕᎯᎸᏉᏕᏍᏗ ᏧᏃᏑᎶᏨᎯ, ᎢᏳᏃ",
+        "stock_raw_ocr": "Ᏸ ᏕᎯᎸᏉᏕᏍᏘ ᏧᏃᏑᎶᏨᎯ, ᎢᏳᏃ",
+        "ftm_aligned": "3 ᏕᎯᎸᏉᏕᏍᏗ ᏧᏃᏑᎶᏨᎯ, ᎢᏳᏃ",
+        "ftm_raw_ocr": "8 ᏕᎯᎸᏉᏕᏍᏗ ᏧᏃᏑᎶᏨᎯ, ᎢᏳᏃ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150503_line_01.png",
+        "stock_aligned": "ᎤᏙᎯᏳᏒ ᏧᏃᏑᎶᏨᎯ ᏱᎩ.",
+        "stock_raw_ocr": "ᎤᏙᎯᏳᏒ ᏧᏃᏑᎶᏨᎯ ᏱᎩ.",
+        "ftm_aligned": "ᎤᏙᎯᏳᏒ ᏧᏃᏑᎶᏨᎯ ᏱᎩ.",
+        "ftm_raw_ocr": "ᎤᏙᎯᏳᏒ ᏧᏃᏑᎶᏨᎯ ᏱᎩ.",
+        "ftm_confidence": 83.0
+      }
+    ]
+  },
+  "150504": {
+    "image_path": "images/150504.png",
+    "cherokee_gt": "ᎢᏳᏍᎩᏂ ᎩᎶ ᎤᏬᏑᎶᏨᎯ ᏧᏪᏥ ᎠᎴ ᏧᎵᏏ ᏯᏁᎭ, ᎾᏍᎩ ᎠᎾᏕᎶᏆᏍᎨᏍᏗ ᏧᏂᎸᏉᏙᏗᏱ ᏙᏧᏁᏅᏒ ᎠᏁᎯ, ᎠᎴ ᏧᎾᎫᏴᎡᏗᏱ ᏧᏂᎦᏴᎵᎨᎢ; ᎾᏍᎩᏰᏃ ᎣᏏᏳ, ᎠᎴ ᏧᏓᏂᎸᎢᏍᏗᏳ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ.",
+    "verse_number": "4",
+    "lines": [
+      {
+        "line_crop": "line_crops/150504_line_00.png",
+        "stock_aligned": "4 ᎢᏳᏍᎩᏂ ᎩᎶ ᎤᏬᏑᎶᏨᎯ ᏧᏪᏥ",
+        "stock_raw_ocr": "Ꮞ ᎢᏯᏍᎩᏂ ᎩᎶ ᎤᏬᏑᎶᏨᎯ ᏧᏪᏥ",
+        "ftm_aligned": "4 ᎢᏳᏍᎩᏂ ᎩᎶ ᎤᏬᏑᎶᏨᎯ ᏧᏪᏥ",
+        "ftm_raw_ocr": "Ꮞ ᎢᏍᏍᎩᏂ ᎩᎶ ᎤᏬᏑᎶᏨᎯ ᏧᏪᏥ",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150504_line_01.png",
+        "stock_aligned": "ᎠᎴ ᏧᎵᏏ ᏯᏁᎭ, ᎾᏍᎩ ᎠᎾᏕᎶᏆᏍᎨ-",
+        "stock_raw_ocr": "ᎠᎴ ᏧᎵᏏ ᏯᏁᎭ, ᎾᏍᎩ ᎠᎾᏕᎶᏆᏍᎬ-”",
+        "ftm_aligned": "ᎠᎴ ᏧᎵᏏ ᏯᏁᎭ, ᎾᏍᎩ ᎠᎾᏕᎶᏆᏍᎨ-",
+        "ftm_raw_ocr": "ᎠᎴ ᏧᎵᏝᏏ ᏯᏁᎭ, ᎾᏍᎩ ᎠᎾᏕᏅᎶᏆᏍᎨ-",
+        "ftm_confidence": 66.0
+      },
+      {
+        "line_crop": "line_crops/150504_line_02.png",
+        "stock_aligned": "ᏍᏗ ᏧᏂᎸᏉᏙᏗᏱ ᏙᏧᏁᏅᏒ ᎠᏁᎯ,",
+        "stock_raw_ocr": "ᏍᏘ ᏧᏂᎸᏉᏙᏗᏱ ᏙᏧᏁᏅᏒ ᎠᏁᎯ,",
+        "ftm_aligned": "ᏍᏗ ᏧᏂᎸᏉᏙᏗᏱ ᏙᏧᏁᏅᏒ ᎠᏁᎯ,",
+        "ftm_raw_ocr": "ᏍᏗ ᏧᏂᎸᏉᏙᏗᏱ ᏙᏧᏁᏅᏒ ᎠᏁᎯ,",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150504_line_03.png",
+        "stock_aligned": "ᎠᎴ ᏧᎾᎫᏴᎡᏗᏱ ᏧᏂᎦᏴᎵᎨᎢ; ᎾᏍᎩᏰᏃ",
+        "stock_raw_ocr": "ᎠᎴ ᏧᏮᎫᏴᎡᏘᏱ ᏧᏂᎦᏴᎵᎰᎢ Ꮆ, ᎾᏍᎩ”“”",
+        "ftm_aligned": "ᎠᎴ ᏧᎾᎫᏴᎡᏗᏱ ᏧᏂᎦᏴᎵᎨᎢ; ᎾᏍᎩ-",
+        "ftm_raw_ocr": "ᎠᎴ ᏧᎾᎫᏴᎡᏗᏱ ᏧᏂᎦᏴᎵᎨᎢ; ᎾᏍᎩ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150504_line_04.png",
+        "stock_aligned": "ᎣᏏᏳ, ᎠᎴ ᏧᏓᏂᎸᎢᏍᏗᏳ ᎤᏁ-",
+        "stock_raw_ocr": "ᏰᏃ ᎣᏏᏳ, ᎠᎴ ᏧᏓᏂᎸᎢᏍᏗᏳ’ ᎤᏁ-",
+        "ftm_aligned": "ᏰᏃ ᎣᏏᏳ, ᎠᎴ ᏧᏓᏂᎸᎢᏍᏗᏳ ᎤᏁ-",
+        "ftm_raw_ocr": "ᏰᏃ ᎣᏏᏳ, ᎠᎴ ᏧᏓᏂᎸᎢᏍᏗᏳ ᎤᏁ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150504_line_05.png",
+        "stock_aligned": "ᎳᏅᎯ ᎠᎦᏔᎲᎢ.",
+        "stock_raw_ocr": "ᎳᏅᎯ ᎠᎦᏔᎲᎢ,",
+        "ftm_aligned": "ᎳᏅᎯ ᎠᎦᏔᎲᎢ.",
+        "ftm_raw_ocr": "ᎳᏅᎯ ᎠᎦᏔᎲᎢ.",
+        "ftm_confidence": 59.0
+      }
+    ]
+  },
+  "150505": {
+    "image_path": "images/150505.png",
+    "cherokee_gt": "ᎾᏍᎩᏰᏃ Ꮎ ᎤᏙᎯᏳᎯ ᎤᏬᏑᎶᏨᎯ ᏥᎨᏐᎢ, ᎠᎴ ᎤᏩᏒᎯᏳ ᏥᎨᏐᎢ, ᎤᏁᎳᏅᎯ ᎠᎵᏍᎦᏍᏙᏗᏍᎪᎢ, ᎠᎴ ᏓᎧᎿᎭᏩᏗᏐ ᎠᏔᏲᏍᏗ ᎨᏒ ᎠᎴ ᎠᏓᏙᎵᏍᏙᏗ ᎨᏒ ᏂᏚᎵᏏᏂᏒ ᎠᎴ ᏂᏚᎩᏨᏂᏒᎢ.",
+    "verse_number": "5",
+    "lines": [
+      {
+        "line_crop": "line_crops/150505_line_00.png",
+        "stock_aligned": "5 ᎾᏍᎩᏰᏃ Ꮎ ᎤᏙᎯᏳᎯ ᎤᏬᏑᎶᏨᎯ",
+        "stock_raw_ocr": "5 ᎾᏍᎩᏰᏃ Ꮎ ᎤᏙᎯᏳᎯ ᎤᏬᏑᎶᏨᎯ",
+        "ftm_aligned": "5 ᎾᏍᎩᏰᏃ Ꮎ ᎤᏙᎯᏳᎯ ᎤᏬᏑᎶᏨᎯ",
+        "ftm_raw_ocr": "5 ᎾᏍᎩᏰᏃ Ꮎ ᎤᏙᎯᏳᎯ ᎤᏬᏑᎶᏨᎯ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150505_line_01.png",
+        "stock_aligned": "ᏥᎨᏐᎢ, ᎠᎴ ᎤᏩᏒᎯᏳ ᏥᎨᏐᎢ, Ꭴ-",
+        "stock_raw_ocr": "ᏥᎨᏐᎢ, ᎠᎴ ᎤᏩᏒᎯᏳ” ᏥᎨᏐᎢ; Ꭴ-",
+        "ftm_aligned": "ᏥᎨᏐᎢ, ᎠᎴ ᎤᏩᏒᎯᏳ ᏥᎨᏐᎢ, Ꭴ-",
+        "ftm_raw_ocr": "ᏥᎨᏐᎢ, ᎠᎴ ᎤᏩᏒᎯᏳ ᏥᎨᏐᎢ, Ꭴ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150505_line_02.png",
+        "stock_aligned": "ᏁᎳᏅᎯ ᎠᎵᏍᎦᏍᏙᏗᏍᎪᎢ, ᎠᎴ ᏓᎧ-",
+        "stock_raw_ocr": "ᏁᎳᏅᎯ ᎠᎵᏍᎦᏍᏙᏗᏍᎪᎢ, ᎠᎴ ᏓᏖᎧ-",
+        "ftm_aligned": "ᏁᎳᏅᎯ ᎠᎵᏍᎦᏍᏙᏗᏍᎪᎢ, ᎠᎴ ᏓᎧ-",
+        "ftm_raw_ocr": "ᏁᎳᏅᎯ ᎠᎵᏍᎦᏍᏙᏗᏍᎪᎢ, ᎠᎴ ᏓᎧ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150505_line_03.png",
+        "stock_aligned": "ᎿᎭᏩᏗᏐ ᎠᏔᏲᏍᏗ ᎨᏒ ᎠᎴ ᎠᏓᏙᎵ-",
+        "stock_raw_ocr": "ᎿᏩᏗᏐ ᎠᏔᏲᏍᏗ ᎨᏒ ᎠᎴ ᎠᏓᏙᎲ-",
+        "ftm_aligned": "ᎿᎭᏩᏗᏐ ᎠᏔᏲᏍᏗ ᎨᏒ ᎠᎴ ᎠᏓᏙᎵ-",
+        "ftm_raw_ocr": "ᎿᏩᏗᏐ ᎠᏔᏲᏍᏗ ᎨᏒ ᎠᎴ ᎠᏓᏙᎵ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150505_line_04.png",
+        "stock_aligned": "ᏍᏙᏗ ᎨᏒ ᏂᏚᎵᏏᏂᏒ ᎠᎴ ᏂᏚᎩᏨᏂ-",
+        "stock_raw_ocr": "ᏍᏙᏗ ᏥᎨᎡᏒᎡ ᏂᏚᎵᏏᏂᏒ ᎠᎴ ᏂᏚᎩᏨᏂ-Ꭹ-",
+        "ftm_aligned": "ᏍᏙᏗ ᎨᏒ ᏂᏚᎵᏏᏂᏒ ᎠᎴ ᏂᏚᎩᏨᏂ-",
+        "ftm_raw_ocr": "ᏍᏙᏗ ᎨᏒ ᏂᏚᎵᏏᏂᏒ ᎠᎴ ᏂᏚᎩᏨᏂ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150505_line_05.png",
+        "stock_aligned": "ᏒᎢ.",
+        "stock_raw_ocr": "ᏒᎢ.",
+        "ftm_aligned": "ᏒᎢ.",
+        "ftm_raw_ocr": "ᎠᎢ.",
+        "ftm_confidence": 12.0
+      }
+    ]
+  },
+  "150506": {
+    "image_path": "images/150506.png",
+    "cherokee_gt": "ᎾᏍᎩ Ꮎ ᏄᏁᎸᎾ ᎡᎯ ᎤᏲᎱᏒᎯ ᎨᏐ ᎠᏏᏉ ᎠᎴᏂᏙᎲᎢ.",
+    "verse_number": "6",
+    "lines": [
+      {
+        "line_crop": "line_crops/150506_line_00.png",
+        "stock_aligned": "6 ᎾᏍᎩ Ꮎ ᏄᏁᎸᎾ ᎡᎯ ᎤᏲᎱᏒᎯ",
+        "stock_raw_ocr": "Ꮾ ᎾᏍᎩ Ꮎ ᏄᏁᎸᎾ ᎡᎯ ᎤᏲᎱᏒᎯ",
+        "ftm_aligned": "6 ᎾᏍᎩ Ꮎ ᏄᏁᎸᎾ ᎡᎯ ᎤᏲᎱᏒᎯ",
+        "ftm_raw_ocr": "Ꮾ ᎾᏍᎩ Ꮎ ᏄᏁᎸᎾ ᎡᎯ ᎤᏲᎱᏒᎯ",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150506_line_01.png",
+        "stock_aligned": "ᎨᏐ ᎠᏏᏉ ᎠᎴᏂᏙᎲᎢ.",
+        "stock_raw_ocr": "ᎬᏌᏐ ᎠᏏᏉ ᎠᎴᏂᏙᎲᎢ.",
+        "ftm_aligned": "ᎨᏐ ᎠᏏᏉ ᎠᎴᏂᏙᎲᎢ.",
+        "ftm_raw_ocr": "ᎨᏡ ᎠᏏᏉ ᎠᎴᏂᏙᎲᎢ.",
+        "ftm_confidence": 84.0
+      }
+    ]
+  },
+  "150507": {
+    "image_path": "images/150507.png",
+    "cherokee_gt": "ᎠᎴ ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᎯᏁᎨᏍᏗ, ᎾᏍᎩ ᎦᎨᎫᎢᏍᏙᏗ ᏂᎨᏒᎾ ᎢᏳᎵᏍᏙᏗᏱ.",
+    "verse_number": "7",
+    "lines": [
+      {
+        "line_crop": "line_crops/150507_line_00.png",
+        "stock_aligned": "7 ᎠᎴ ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᎯᏁᎨᏍᏗ,",
+        "stock_raw_ocr": "7 ᎠᎫᎴ ᎧᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏘ ᎯᏁᎰ”-",
+        "ftm_aligned": "7 ᎠᎴ ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᎯᏁᎨ-",
+        "ftm_raw_ocr": "7 ᎠᎴ ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᎯᏁᎨ-",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150507_line_01.png",
+        "stock_aligned": "ᎾᏍᎩ ᎦᎨᎫᎢᏍᏙᏗ ᏂᎨᏒᎾ ᎢᏳ-",
+        "stock_raw_ocr": "ᏍᏘ, ᎾᏍᎩ ᎦᎨᏂᎫᎢᏍᏙᏗ ᏂᏂᏏᎡᎾ ᎢᏳ-",
+        "ftm_aligned": "ᏍᏗ, ᎾᏍᎩ ᎦᎨᎫᎢᏍᏙᏗ ᏂᎨᏒᎾ ᎢᏳ-",
+        "ftm_raw_ocr": "ᏍᏗ, ᎾᏍᎩ ᎦᎨᎫᎢᏍᏙᏗ ᏂᎨᏒᎾ ᎢᏳ-",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150507_line_02.png",
+        "stock_aligned": "ᎵᏍᏙᏗᏱ.",
+        "stock_raw_ocr": "ᎱᏍᏙᏗᏱ.",
+        "ftm_aligned": "ᎵᏍᏙᏗᏱ.",
+        "ftm_raw_ocr": "ᎵᏍᏙᏗᏱ.",
+        "ftm_confidence": 63.0
+      }
+    ]
+  },
+  "150508": {
+    "image_path": "images/150508.png",
+    "cherokee_gt": "ᎢᏳᏍᎩᏂᏃ ᎩᎶ ᏂᏓᏛᏅᎢᏍᏓᏁᎲᎾ ᎢᎨᏎᏍᏗ ᎤᏩᏒ ᏧᏤᎵᎦ, ᎠᎴ ᎾᏍᎩ Ꮀ ᎤᎬᏫᏳᎭ ᎤᏩᏒ ᏚᏓᏘᎿᎭᎥᎢ, ᎾᏍᎩ ᎤᏓᏱᎸ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎤᏟ ᎤᏲᎢᏳ ᎡᏍᎦᏉ Ꮎ ᏄᏬᎯᏳᏒᎾ.",
+    "verse_number": "8",
+    "lines": [
+      {
+        "line_crop": "line_crops/150508_line_00.png",
+        "stock_aligned": "8 ᎢᏳᏍᎩᏂᏃ ᎩᎶ ᏂᏓᏛᏅᎢᏍᏓᏁ-",
+        "stock_raw_ocr": "Ꮪ ᎢᏯᏍᎩᏂᏃ ᎩᎶ ᏂᏓᏛᏅᎢᏍᏓᏁ-",
+        "ftm_aligned": "8 ᎢᏳᏍᎩᏂᏃ ᎩᎶ ᏂᏓᏛᏅᎢᏍᏓᏁ-",
+        "ftm_raw_ocr": "Ꮪ ᎢᏳᏍᎩᏂᏃ ᎩᎶ ᏂᏓᏛᏅᎢᏍᏓᏁ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150508_line_01.png",
+        "stock_aligned": "ᎲᎾ ᎢᎨᏎᏍᏗ ᎤᏩᏒ ᏧᏤᎵᎦ, ᎠᎴ Ꮎ-",
+        "stock_raw_ocr": "ᎲᎾ ᎢᎬᎨᏎᏍᏘᏗ ᎤᏩᏞᏒ ᏧᏤᎵᎦ, ᎠᎴ Ꮎ-Ꮕ",
+        "ftm_aligned": "ᎲᎾ ᎢᎨᏎᏍᏗ ᎤᏩᏒ ᏧᏤᎵᎦ, ᎠᎴ Ꮎ-",
+        "ftm_raw_ocr": "ᎲᎾ ᎢᎨᏎᏍᏗ ᎤᏩᏒ ᏧᏤᎵᎦ, ᎠᎴ Ꮎ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150508_line_02.png",
+        "stock_aligned": "ᏍᎩ Ꮀ ᎤᎬᏫᏳᎭ ᎤᏩᏒ ᏚᏓᏘᎿᎭᎥᎢ,",
+        "stock_raw_ocr": "ᏍᎩ Ꮀ ᎤᎬᏫᏳᎭ ᎤᏩᏚᏒ ᏚᏓᏘᎿᎥᎢ,",
+        "ftm_aligned": "ᏍᎩ Ꮀ ᎤᎬᏫᏳᎭ ᎤᏩᏒ ᏚᏓᏘᎿᎭᎥᎢ,",
+        "ftm_raw_ocr": "ᏍᎩ Ꮀ ᎤᎬᏫᏳᎭ ᎤᏩᏒ ᏚᏓᏘᎿᎥᎢ,",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150508_line_03.png",
+        "stock_aligned": "ᎾᏍᎩ ᎤᏓᏱᎸ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎤᏟ",
+        "stock_raw_ocr": "ᎾᏍᎩ ᎤᏓᏱᎸ. ᎪᎯᏳᏗ ᎨᏒᎢ; ᎠᎴ ᎤᏟ",
+        "ftm_aligned": "ᎾᏍᎩ ᎤᏓᏱᎸ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎤᏟ",
+        "ftm_raw_ocr": "ᎾᏍᎩ ᎤᏓᏱᎸ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎤᏟ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150508_line_04.png",
+        "stock_aligned": "ᎤᏲᎢᏳ ᎡᏍᎦᏉ Ꮎ ᏄᏬᎯᏳᏒᎾ.",
+        "stock_raw_ocr": "ᎤᏲᎢᏳ” ᎡᏍᎦᏉ Ꮎ ᏄᏬᎯᏳᏒᎾ.",
+        "ftm_aligned": "ᎤᏲᎢᏳ ᎡᏍᎦᏉ Ꮎ ᏄᏬᎯᏳᏒᎾ.",
+        "ftm_raw_ocr": "ᎤᏲᎢᏳ ᎡᏍᎦᏉ Ꮎ ᏄᏬᎯᏳᏒᎾ.",
+        "ftm_confidence": 68.0
+      }
+    ]
+  },
+  "150509": {
+    "image_path": "images/150509.png",
+    "cherokee_gt": "ᎤᏬᏑᎶᏨᎯ ᎠᎦᏎᏍᏗ ᎨᏎᏍᏗ ᎢᏳᏃ ᏑᏓᎳᏍᎪᎯ ᎢᏳᏕᏘᏴᏛ ᎨᏎᏍᏗ, ᎠᎴ ᎤᎶᏒᏍᏕᏍᏗ, ᏌᏉᏉ ᎠᏍᎦᏯ ᎤᎾᏁᎳᏛᎯ ᎨᏎᏍᏗ.",
+    "verse_number": "9",
+    "lines": [
+      {
+        "line_crop": "line_crops/150509_line_00.png",
+        "stock_aligned": "9 ᎤᏬᏑᎶᏨᎯ ᎠᎦᏎᏍᏗ ᎨᏎᏍᏗ",
+        "stock_raw_ocr": "9 ᎤᏬᏓᏑᎶᏨᎯ ᎠᎦᏎᏍᏗ ᎨᏎᏍᏘ Ꭲ-",
+        "ftm_aligned": "9 ᎤᏬᏑᎶᏨᎯ ᎠᎦᏎᏍᏗ ᎨᏎᏍᏗ Ꭲ-",
+        "ftm_raw_ocr": "2 ᎤᏬᏑᎶᏨᎯ ᎠᎦᏎᏍᏗ ᎨᏎᏍᏗ Ꭲ-",
+        "ftm_confidence": 69.0
+      },
+      {
+        "line_crop": "line_crops/150509_line_01.png",
+        "stock_aligned": "ᎢᏳᏃ ᏑᏓᎳᏍᎪᎯ ᎢᏳᏕᏘᏴᏛ ᎨᏎᏍᏗ,",
+        "stock_raw_ocr": "ᏨᏃᏃ ᏑᏓᎳᏍᎪᎯ ᎢᏳᏕᏘᏴᏛ ᏥᎨᏎᏍᏗ,",
+        "ftm_aligned": "ᏳᏃ ᏑᏓᎳᏍᎪᎯ ᎢᏳᏕᏘᏴᏛ ᎨᏎᏍᏗ,",
+        "ftm_raw_ocr": "ᏳᏃ ᏑᏓᎳᏍᎪᎯ ᎢᏳᏕᏳᏘᏴᏛ ᎨᏎᏍᏗ,",
+        "ftm_confidence": 71.0
+      },
+      {
+        "line_crop": "line_crops/150509_line_02.png",
+        "stock_aligned": "ᎠᎴ ᎤᎶᏒᏍᏕᏍᏗ, ᏌᏉᏉ ᎠᏍᎦᏯ",
+        "stock_raw_ocr": "ᎠᎴ ᎤᎶᏒᏍᏕᏍᏘ, ᏌᏉᎣᎹ ᎠᏍᎦᏯ",
+        "ftm_aligned": "ᎠᎴ ᎤᎶᏒᏍᏕᏍᏗ, ᏌᏉᏉ ᎠᏍᎦᏯ",
+        "ftm_raw_ocr": "ᎠᎴ ᎤᎶᏒᏍᏕᏍᏗ, ᏌᏉᏉ ᎠᏍᎦᏯ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150509_line_03.png",
+        "stock_aligned": "ᎤᎾᏁᎳᏛᎯ ᎨᏎᏍᏗ.",
+        "stock_raw_ocr": "ᎤᎾᏁᎳᏛᎯ ᎨᏎᏍᏗ.",
+        "ftm_aligned": "ᎤᎾᏁᎳᏛᎯ ᎨᏎᏍᏗ.",
+        "ftm_raw_ocr": "ᎤᎾᏁᎳᏛᎯ ᎨᏎᏍᏗ.",
+        "ftm_confidence": 86.0
+      }
+    ]
+  },
+  "150510": {
+    "image_path": "images/150510.png",
+    "cherokee_gt": "ᎢᏳᏃ ᎣᏍᏛ ᎠᏥᏃᎮᏍᎩ ᎨᏎᏍᏗ ᎣᏏ ᏕᎤᎸᏫᏍᏓᏁᎲᎢ, ᎢᏳᏃ ᏗᏂᏲᎵ ᏧᏛᎯᏍᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ ᎠᏁᏙᎯ ᏧᏍᏆᏂᎪᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ ᎤᎾᏓᏅᏘ ᏧᎾᎳᏏᏕᏂ ᏧᏬᏑᎴᎸᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ ᏧᏍᏕᎸᏛ ᎨᏎᏍᏗ ᎠᏂᎩᎵᏲᎩ, ᎢᏳᏃ ᎤᏍᏓᏩᏛᏛ ᎨᏎᏍᏗ ᏂᎦᎥ ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒᎢ.",
+    "verse_number": "10",
+    "lines": [
+      {
+        "line_crop": "line_crops/150510_line_00.png",
+        "stock_aligned": "10 ᎢᏳᏃ ᎣᏍᏛ ᎠᏥᏃᎮᏍᎩ ᎨᏎ-",
+        "stock_raw_ocr": "10 ᎢᏊᏃ ᎣᏍᏛ ᎠᏥᏃᎮᏍᎩ ᎨᏎ-",
+        "ftm_aligned": "10 ᎢᏳᏃ ᎣᏍᏛ ᎠᏥᏃᎮᏍᎩ ᎨᏎ-",
+        "ftm_raw_ocr": "10 ᎢᏳᏃ ᎣᏍᏛ ᎠᏥᏃᎮᏍᎩ ᎨᏎ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150510_line_01.png",
+        "stock_aligned": "ᏍᏗ ᎣᏏ ᏕᎤᎸᏫᏍᏓᏁᎲᎢ, ᎢᏳᏃ Ꮧ-",
+        "stock_raw_ocr": "ᏍᏘ ᎣᏏ ᏕᎤᎸᏫᏍᏓᏁᎲᎢ; ᎢᏳᏃ Ꮧ-",
+        "ftm_aligned": "ᏍᏗ ᎣᏏ ᏕᎤᎸᏫᏍᏓᏁᎲᎢ, ᎢᏳᏃ Ꮧ-",
+        "ftm_raw_ocr": "ᏍᏗ ᎣᏏ ᏕᎤᎸᏫᏍᏓᏁᎲᎢ, ᎢᏳᏃ Ꮧ-",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150510_line_02.png",
+        "stock_aligned": "ᏂᏲᎵ ᏧᏛᎯᏍᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ",
+        "stock_raw_ocr": "ᏂᏲᏝ ᏧᏛᎯᏍᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ",
+        "ftm_aligned": "ᏂᏲᎵ ᏧᏛᎯᏍᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ",
+        "ftm_raw_ocr": "ᏂᏲᎵ ᏧᏛᎯᏍᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150510_line_03.png",
+        "stock_aligned": "ᎠᏁᏙᎯ ᏧᏍᏆᏂᎪᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ",
+        "stock_raw_ocr": "ᎠᏁᏙᎯ ᏧᏍᏆᏂᎪᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ",
+        "ftm_aligned": "ᎠᏁᏙᎯ ᏧᏍᏆᏂᎪᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ",
+        "ftm_raw_ocr": "ᎠᏁᏙᎯ ᏧᏍᏆᏂᎪᏔᏅᎯ ᎨᏎᏍᏗ, ᎢᏳᏃ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150510_line_04.png",
+        "stock_aligned": "ᎤᎾᏓᏅᏘ ᏧᎾᎳᏏᏕᏂ ᏧᏬᏑᎴᎸᎯ ᎨᏎ-",
+        "stock_raw_ocr": "ᎤᎾᏖᏅᏘ ᏧᎾᎳᏏᏕᏂ ᏧᏬᏑᎴᎸᎯ ᎨᏎ-",
+        "ftm_aligned": "ᎤᎾᏓᏅᏘ ᏧᎾᎳᏏᏕᏂ ᏧᏬᏑᎴᎸᎯ ᎨᏎ-",
+        "ftm_raw_ocr": "ᎤᎾᏓᏅᏘ ᏧᎾᎳᏏᏕᏂ ᏧᏬᏑᎴᎸᎯ ᎨᏎ-",
+        "ftm_confidence": 73.0
+      },
+      {
+        "line_crop": "line_crops/150510_line_05.png",
+        "stock_aligned": "ᏍᏗ, ᎢᏳᏃ ᏧᏍᏕᎸᏛ ᎨᏎᏍᏗ ᎠᏂᎩ-",
+        "stock_raw_ocr": "ᏍᏘ, ᎢᏳᏃ ᏧᏍᏕᎸᏛ ᎨᏎᏍᏘ ᎠᏂᎩ-",
+        "ftm_aligned": "ᏍᏗ, ᎢᏳᏃ ᏧᏍᏕᎸᏛ ᎨᏎᏍᏗ ᎠᏂᎩ-",
+        "ftm_raw_ocr": "ᏍᏗ, ᎢᏳᏃ ᏧᏍᏕᎸᏛ ᎨᏎᏍᏗ ᎠᏂᎩ-",
+        "ftm_confidence": 78.0
+      },
+      {
+        "line_crop": "line_crops/150510_line_06.png",
+        "stock_aligned": "ᎵᏲᎩ, ᎢᏳᏃ ᎤᏍᏓᏩᏛᏛ ᎨᏎᏍᏗ Ꮒ-",
+        "stock_raw_ocr": "ᎵᏲᎩ, ᎢᏳᏃ ᎤᏍᏖᏩᏛᏛ ᎨᏎᏍᏗ Ꮒ-",
+        "ftm_aligned": "ᎵᏲᎩ, ᎢᏳᏃ ᎤᏍᏓᏩᏛᏛ ᎨᏎᏍᏗ Ꮒ-",
+        "ftm_raw_ocr": "ᎵᏲᎩ, ᎢᏳᏃ ᎤᏍᏓᏩᏛᏛ ᎨᏎᏍᏗ Ꮒ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150510_line_07.png",
+        "stock_aligned": "ᎦᎥ ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᎦᎥ ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒᎢ.",
+        "ftm_aligned": "ᎦᎥ ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎦᎥ ᎣᏍᏛ ᏗᎦᎸᏫᏍᏓᏁᏗ ᎨᏒᎢ.",
+        "ftm_confidence": 88.0
+      }
+    ]
+  },
+  "150511": {
+    "image_path": "images/150511.png",
+    "cherokee_gt": "ᎠᏂᏫᏅᎨᏌᏂᏍᎩᏂ ᏧᏃᏑᎶᏨᎯ ᎩᏲᎢᏎᎮᏍᏗ; ᎢᏳᏰᏃ ᏄᎾᏁᎸᎾ ᏂᎦᎵᏍᏓ ᎠᏁᎲ, ᎦᎶᏁᏛᏃ ᎤᏁᎳᎩ ᎠᏁᎳ, ᎿᎭᏉ ᎤᎾᏚᎵᏍᎪ ᏧᎾᏨᏍᏗᏱ,",
+    "verse_number": "11",
+    "lines": [
+      {
+        "line_crop": "line_crops/150511_line_00.png",
+        "stock_aligned": "11 ᎠᏂᏫᏅᎨᏌᏂᏍᎩᏂ ᏧᏃᏑᎶᏨᎯ",
+        "stock_raw_ocr": "11 ᎠᏂᎧᏅᎰᏌᏂᏍᎩᏂ ᏧᏃᏑᎶᏨᎯ",
+        "ftm_aligned": "11 ᎠᏂᏫᏅᎨᏌᏂᏍᎩᏂ ᏧᏃᏑᎶᏨᎯ",
+        "ftm_raw_ocr": "11 ᎠᏂᏫᏅᎨᏌᏂᏍᎩᏂ ᏧᏃᏑᎶᏨᎯ",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150511_line_01.png",
+        "stock_aligned": "ᎩᏲᎢᏎᎮᏍᏗ; ᎢᏳᏰᏃ ᏄᎾᏁᎸᎾ ᏂᎦᎵ-",
+        "stock_raw_ocr": "ᎩᏲᎢᏎᎮᏍᏗ ; ᎢᏳᏰᏃ ᏄᎾᏁᎸᎾ ᏂᎦᎵ-",
+        "ftm_aligned": "ᎩᏲᎢᏎᎮᏍᏗ; ᎢᏳᏰᏃ ᏄᎾᏁᎸᎾ ᏂᎦᎵ-",
+        "ftm_raw_ocr": "ᎩᏲᎢᏎᎮᏍᏗ; ᎢᏳᏰᏃ ᏄᎾᏁᎸᎾ ᏂᎦᎵ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150511_line_02.png",
+        "stock_aligned": "ᏍᏓ ᎠᏁᎲ, ᎦᎶᏁᏛᏃ ᎤᏁᎳᎩ ᎠᏁᎳ,",
+        "stock_raw_ocr": "ᏍᏖ ᎠᏁᎲ, ᎦᎶᏁᏛᏃ ᎤᏁᎳᎩ ᎠᏁᎳ;",
+        "ftm_aligned": "ᏍᏓ ᎠᏁᎲ, ᎦᎶᏁᏛᏃ ᎤᏁᎳᎩ ᎠᏁᎳ,",
+        "ftm_raw_ocr": "ᏍᏓ ᎠᏁᎲ, ᎦᎶᏁᏛᏃ ᎤᏁᎳᎩ ᎠᏁᎳ,",
+        "ftm_confidence": 90.0
+      },
+      {
+        "line_crop": "line_crops/150511_line_03.png",
+        "stock_aligned": "ᎿᎭᏉ ᎤᎾᏚᎵᏍᎪ ᏧᎾᏨᏍᏗᏱ,",
+        "stock_raw_ocr": "ᎿᏉ ᎤᎾᏚᎵᏍᎪ ᏧᎾᏨᏍᏗᏱ;",
+        "ftm_aligned": "ᎿᎭᏉ ᎤᎾᏚᎵᏍᎪ ᏧᎾᏨᏍᏗᏱ,",
+        "ftm_raw_ocr": "ᎿᏉ ᎤᎾᏚᎵᏍᎪ ᏧᎾᏨᏍᏗᏱ,",
+        "ftm_confidence": 88.0
+      }
+    ]
+  },
+  "150512": {
+    "image_path": "images/150512.png",
+    "cherokee_gt": "ᏧᎾᏚᎪᏓᏁᎸᎯ ᎨᏐᎢ ᏅᏗᎦᎵᏍᏙᏗᏍᎪ ᏕᎤᏂᏲᏒ ᎢᎬᏱᏱ ᎤᏃᎯᏳᏅᎢ.",
+    "verse_number": "12",
+    "lines": [
+      {
+        "line_crop": "line_crops/150512_line_00.png",
+        "stock_aligned": "12 ᏧᎾᏚᎪᏓᏁᎸᎯ ᎨᏐᎢ ᏅᏗᎦᎵᏍᏙᏗᏍᎪ ᏕᎤᏂᏲᏒ ᎢᎬᏱᏱ ᎤᏃᎯᏳᏅᎢ.",
+        "stock_raw_ocr": "20 ᏧᎾᏚᎪᏓᏁᎸᎯ ᎨᏐᎢ ᏅᏗᎦᎵᏍ",
+        "ftm_aligned": "12 ᏧᎾᏚᎪᏓᏁᎸᎯ ᎨᏐᎢ ᏅᏗᎦᎵᏍᏙᏗᏍᎪ ᏕᎤᏂᏲᏒ ᎢᎬᏱᏱ ᎤᏃᎯᏳᏅᎢ.",
+        "ftm_raw_ocr": "2 ᏧᎾᏚᎪᏓᏁᎸᎯ ᎨᏐᎢ ᏅᏗᎦᎵᏍ",
+        "ftm_confidence": 84.0
+      }
+    ]
+  },
+  "150513": {
+    "image_path": "images/150513.png",
+    "cherokee_gt": "ᎠᎴ ᎾᏍᏉ ᎠᎾᏕᎶᏆᏍᎪ ᎤᎾᏓᏄᎸᏗ ᎢᏳᎾᎵᏍᏙᏗᏱ, ᎠᏁᏙᎵᏙᎰ ᏓᏓᏁᎳᏗᏒᎢ; ᎥᏝ ᎠᎴ ᎤᎾᏓᏄᎸᏗᏉ ᎤᏩᏒ ᏱᎨᏐᎢ, ᎾᏍᏉᏍᎩᏂ ᎧᏃᎮᏛ ᎠᏂᏱᏙᎯ ᎨᏐᎢ ᎠᎴ ᎤᏂᏂᎳᏗᏌᏘ, ᎠᏂᏃᎮᏍᎩ ᎾᏍᎩ ᏂᏚᏳᎪᏛᎾ ᎨᏒ ᎤᏂᏃᎮᏗᏱ.",
+    "verse_number": "13",
+    "lines": [
+      {
+        "line_crop": "line_crops/150513_line_00.png",
+        "stock_aligned": "13 ᎠᎴ ᎾᏍᏉ ᎠᎾᏕᎶᏆᏍᎪ ᎤᎾᏓᏄᎸᏗ",
+        "stock_raw_ocr": "13 ᎠᎴ ᎾᏍᏉ ᎠᎾᏕᎶᏆᏍᎪ ᎤᏮᎾᏓᏄ-",
+        "ftm_aligned": "13 ᎠᎴ ᎾᏍᏉ ᎠᎾᏕᎶᏆᏍᎪ ᎤᎾᏓᏄ-",
+        "ftm_raw_ocr": "13 ᎠᎴ ᎾᏍᏉ ᎠᎾᏕᎶᏆᏍᎪ ᎤᎾᏓᏄ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150513_line_01.png",
+        "stock_aligned": "ᎢᏳᎾᎵᏍᏙᏗᏱ, ᎠᏁᏙᎵᏙᎰ ᏓᏓ-",
+        "stock_raw_ocr": "ᏘᏁᏘ ᎢᏳᎾᎵᏝᏍᏙᏗᏱ, ᎠᏁᏙᎵᏙᎰᏢ ᏓᏓ-",
+        "ftm_aligned": "ᎸᏗ ᎢᏳᎾᎵᏍᏙᏗᏱ, ᎠᏁᏙᎵᏙᎰ ᏓᏓ-",
+        "ftm_raw_ocr": "ᎸᏗ ᎢᏳᎾᎵᏍᏙᏗᏱ, ᎠᏁᏙᎵᏙᎰ ᏓᏓ-",
+        "ftm_confidence": 72.0
+      },
+      {
+        "line_crop": "line_crops/150513_line_02.png",
+        "stock_aligned": "ᏁᎳᏗᏒᎢ; ᎥᏝ ᎠᎴ ᎤᎾᏓᏄᎸᏗᏉ Ꭴ-",
+        "stock_raw_ocr": "ᏁᎳᏗᏒᎢ Ꮆ ᎥᏝ ᎠᎴ ᎤᎾᏓᏄᎸᏗᏉ Ꭴ-",
+        "ftm_aligned": "ᏁᎳᏗᏒᎢ; ᎥᏝ ᎠᎴ ᎤᎾᏓᏄᎸᏗᏉ Ꭴ-",
+        "ftm_raw_ocr": "ᏁᎳᏗᏒᎢ; ᎥᏝ ᎠᎴ ᎤᎾᏓᏄᎸᏗᏉ Ꭴ-",
+        "ftm_confidence": 69.0
+      },
+      {
+        "line_crop": "line_crops/150513_line_03.png",
+        "stock_aligned": "ᏩᏒ ᏱᎨᏐᎢ, ᎾᏍᏉᏍᎩᏂ ᎧᏃᎮᏛ ᎠᏂ-",
+        "stock_raw_ocr": "ᏩᏒ ᏱᎨᏐᎢ; ᎾᏍᏉᏍᎩᏂ ᎧᏃᎮᏛ ᎠᏂ-",
+        "ftm_aligned": "ᏩᏒ ᏱᎨᏐᎢ, ᎾᏍᏉᏍᎩᏂ ᎧᏃᎮᏛ ᎠᏂ-",
+        "ftm_raw_ocr": "ᏩᏒ ᏱᎨᏐᎢ, ᎾᏍᏉᏍᎩᏂ ᎧᏃᎮᏛ ᎠᏂ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150513_line_04.png",
+        "stock_aligned": "ᏱᏙᎯ ᎨᏐᎢ ᎠᎴ ᎤᏂᏂᎳᏗᏌᏘ, ᎠᏂᏃ-",
+        "stock_raw_ocr": "ᏱᏙᎯ ᎨᏐᎢ ᎠᎴ ᎤᏂᏂᎳᏗᏌᏘ; ᎠᏂᏃ-",
+        "ftm_aligned": "ᏱᏙᎯ ᎨᏐᎢ ᎠᎴ ᎤᏂᏂᎳᏗᏌᏘ, ᎠᏂᏃ-",
+        "ftm_raw_ocr": "ᏱᏙᎯ ᎨᏐᎢ ᎠᎴ ᎤᏂᏂᎳᏗᏌᏘ, ᎠᏂᏃ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150513_line_05.png",
+        "stock_aligned": "ᎮᏍᎩ ᎾᏍᎩ ᏂᏚᏳᎪᏛᎾ ᎨᏒ ᎤᏂᏃᎮᏗᏱ.",
+        "stock_raw_ocr": "ᎮᏍᎩ ᎾᏍᎩ ᏂᏚᏳᎪᏛᎾ ᎨᎡ ᎤᏂᏃᎮ”",
+        "ftm_aligned": "ᎮᏍᎩ ᎾᏍᎩ ᏂᏚᏳᎪᏛᎾ ᎨᏒ ᎤᏂᏃᎮ-",
+        "ftm_raw_ocr": "ᎮᏍᎩ ᎾᏍᎩ ᏂᏚᏳᎪᏛᎾ ᎨᏒ ᎤᏂᏃᎮ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150513_line_06.png",
+        "stock_aligned": "",
+        "stock_raw_ocr": "ᏗᏜ.",
+        "ftm_aligned": "ᏗᏱ.",
+        "ftm_raw_ocr": "ᏗᏱ.",
+        "ftm_confidence": 84.0
+      }
+    ]
+  },
+  "150514": {
+    "image_path": "images/150514.png",
+    "cherokee_gt": "ᎾᏍᎩᏃ ᎢᏳᏍᏗ ᎠᏆᏚᎵᎭ ᎠᏂᏫᏅᎨᏌᏂ ᏧᎾᏨᏍᏗᏱ, ᏗᏂᏲᎵ ᏧᏂᎾᏄᎪᏫᏍᏗᏱ, ᏧᏂᏍᏆᏂᎪᏙᏗᏱ ᏓᏂᏁᎸᎢ, ᎠᎴ ᎬᏩᎾᏡᏗᏍᎩ ᏧᏂᎳᏅᏓᏕᏗᏱ ᏂᎨᏒᎾ ᎨᏒ ᎤᏐᏅ ᎬᏩᏂᏃᎮᏗᏱ.",
+    "verse_number": "14",
+    "lines": [
+      {
+        "line_crop": "line_crops/150514_line_00.png",
+        "stock_aligned": "14 ᎾᏍᎩᏃ ᎢᏳᏍᏗ ᎠᏆᏚᎵᎭ ᎠᏂ-",
+        "stock_raw_ocr": "1Ꮞ ᎾᏍᎩᏃ ᎢᏳᏍᏘ ᎠᏆᏚᎵᎭ ᎠᏂ-",
+        "ftm_aligned": "14 ᎾᏍᎩᏃ ᎢᏳᏍᏗ ᎠᏆᏚᎵᎭ ᎠᏂ-",
+        "ftm_raw_ocr": "1Ꮞ ᎾᏍᎩᏃ ᎢᏳᏍᏗ ᎠᏆᏚᎵᎭ ᎠᏂ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150514_line_01.png",
+        "stock_aligned": "ᏫᏅᎨᏌᏂ ᏧᎾᏨᏍᏗᏱ, ᏗᏂᏲᎵ ᏧᏂᎾᏄ-",
+        "stock_raw_ocr": "ᏫᏅᎨᏌᏂ ᏧᎾᏨᏍᏘᏱ, ᏘᏗᏂᏲᎵ ᏧᏂᎾᏮᏄ-",
+        "ftm_aligned": "ᏫᏅᎨᏌᏂ ᏧᎾᏨᏍᏗᏱ, ᏗᏂᏲᎵ ᏧᏂᎾᏄ-",
+        "ftm_raw_ocr": "ᏫᏅᎨᏌᏂ ᏧᎾᏨᏍᏗᏱ, ᏗᏂᏲᎵ ᏧᏂᎾᏄ-",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150514_line_02.png",
+        "stock_aligned": "ᎪᏫᏍᏗᏱ, ᏧᏂᏍᏆᏂᎪᏙᏗᏱ ᏓᏂᏁᎸᎢ,",
+        "stock_raw_ocr": "ᎪᏫᏍᏗᏱ, ᏧᏂᏍᏆᏂᎪᏔᏗᏱ ᏓᏂᏁᎸᎢ,",
+        "ftm_aligned": "ᎪᏫᏍᏗᏱ, ᏧᏂᏍᏆᏂᎪᏙᏗᏱ ᏓᏂᏁᎸᎢ,",
+        "ftm_raw_ocr": "ᎪᏫᏍᏗᏱ, ᏧᏂᏍᏆᏂᎪᏙᏗᏱ ᏓᏂᏁᎸᎢ,",
+        "ftm_confidence": 67.0
+      },
+      {
+        "line_crop": "line_crops/150514_line_03.png",
+        "stock_aligned": "ᎠᎴ ᎬᏩᎾᏡᏗᏍᎩ ᏧᏂᎳᏅᏓᏕᏗᏱ ᏂᎨᏒᎾ",
+        "stock_raw_ocr": "ᎠᎴ ᎬᏩᎾᏡᏑᏗᏍᎩ ᏧᏂᎳᏅᏓᏕᏗᏱ ᏂᎰᎨᎹ”",
+        "ftm_aligned": "ᎠᎴ ᎬᏩᎾᏡᏗᏍᎩ ᏧᏂᎳᏅᏓᏕᏗᏱ ᏂᎨ-",
+        "ftm_raw_ocr": "ᎠᎴ ᎬᏩᎾᏑᏗᏍᎩ ᏧᏂᎳᏅᏓᏕᏗᏱ ᏂᎨ-",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150514_line_04.png",
+        "stock_aligned": "ᎨᏒ ᎤᏐᏅ ᎬᏩᏂᏃᎮᏗᏱ.",
+        "stock_raw_ocr": "ᎡᎾ ᎨᎠᎡ ᎤᏐᏅ ᎬᏩᏒᏃᎮᏗᏱ.",
+        "ftm_aligned": "ᏒᎾ ᎨᏒ ᎤᏐᏅ ᎬᏩᏂᏃᎮᏗᏱ.",
+        "ftm_raw_ocr": "ᏒᎾ ᎨᏒ ᎤᏐᏅ ᎬᏩᏂᏃᎮᏗᏱ.",
+        "ftm_confidence": 86.0
+      }
+    ]
+  },
+  "150515": {
+    "image_path": "images/150515.png",
+    "cherokee_gt": "ᎦᏳᎳᏰᏃ ᎢᎦᏛ ᎤᎾᎪᎸᏒ ᏎᏓᏂ ᎤᎾᏍᏓᏩᏕᏅ.",
+    "verse_number": "15",
+    "lines": [
+      {
+        "line_crop": "line_crops/150515_line_00.png",
+        "stock_aligned": "15 ᎦᏳᎳᏰᏃ ᎢᎦᏛ ᎤᎾᎪᎸᏒ ᏎᏓᏂ",
+        "stock_raw_ocr": "15 ᎦᏅᎳᏰᏃ ᎢᎦᏛ ᎤᎾᎪᎸᏒ ᏎᏖᏂ",
+        "ftm_aligned": "15 ᎦᏳᎳᏰᏃ ᎢᎦᏛ ᎤᎾᎪᎸᏒ ᏎᏓᏂ",
+        "ftm_raw_ocr": "15 ᎦᏳᎳᏰᏃ ᎢᎦᏛ ᎤᎾᎪᎸᏒ ᏎᏓᏂ",
+        "ftm_confidence": 90.0
+      },
+      {
+        "line_crop": "line_crops/150515_line_01.png",
+        "stock_aligned": "ᎤᎾᏍᏓᏩᏕᏅ.",
+        "stock_raw_ocr": "ᎤᏂᏍᏓᏩᏕᏅ,",
+        "ftm_aligned": "ᎤᎾᏍᏓᏩᏕᏅ.",
+        "ftm_raw_ocr": "ᎤᏂᏍᏓᏩᏕᏅ.",
+        "ftm_confidence": 72.0
+      }
+    ]
+  },
+  "150516": {
+    "image_path": "images/150516.png",
+    "cherokee_gt": "ᎢᏳᏃ ᎩᎶ ᎪᎯᏳᎲᏍᎩ ᎠᏍᎦᏯ ᎠᎴ ᎠᎨᏴ ᏚᏪᎧᎮᏍᏗ ᏧᏃᏑᎶᏨᎯ, ᎤᏅᏒᏉ ᏗᏂᏍᏕᎵᏍᎨᏍᏗ, ᏞᏍᏗᏃ ᏧᎾᏁᎶᏗ ᎤᎾᏓᏡᎬ ᏱᏚᏂᏓᏁᎴᏍᏗ, ᎾᏍᎩ ᏗᎬᏩᏂᏍᏕᎸᏗ ᏱᎩ ᎤᏙᎯᏳᏒ ᏧᏃᏑᎶᏨᎯ ᎨᏒᎢ.",
+    "verse_number": "16",
+    "lines": [
+      {
+        "line_crop": "line_crops/150516_line_00.png",
+        "stock_aligned": "16 ᎢᏳᏃ ᎩᎶ ᎪᎯᏳᎲᏍᎩ ᎠᏍᎦᏯ",
+        "stock_raw_ocr": "16 ᎠᏃᎴᏃ ᎩᎶ ᎪᎯᏳᎲᏍᎩ ᎠᏍᎦᏯ",
+        "ftm_aligned": "16 ᎢᏳᏃ ᎩᎶ ᎪᎯᏳᎲᏍᎩ ᎠᏍᎦᏯ",
+        "ftm_raw_ocr": "16 ᎢᏳᏃ ᎩᎶ ᎪᎯᏳᎲᏍᎩ ᎠᏍᎦᏯ",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150516_line_01.png",
+        "stock_aligned": "ᎠᎴ ᎠᎨᏴ ᏚᏪᎧᎮᏍᏗ ᏧᏃᏑᎶᏨᎯ, Ꭴ-",
+        "stock_raw_ocr": "ᎠᎴ ᎠᎨᏴ ᏚᏪᎧᎮᏍᏗ ᏧᏃᏑᎶᏨᎯ; Ꭴ-Ꮕ",
+        "ftm_aligned": "ᎠᎴ ᎠᎨᏴ ᏚᏪᎧᎮᏍᏗ ᏧᏃᏑᎶᏨᎯ, Ꭴ-",
+        "ftm_raw_ocr": "ᎠᎴ ᎠᎨᏴ ᏚᏪᎧᎮᏍᏗ ᏧᏃᏑᎶᏨᎯ, Ꭴ-",
+        "ftm_confidence": 90.0
+      },
+      {
+        "line_crop": "line_crops/150516_line_02.png",
+        "stock_aligned": "ᏅᏒᏉ ᏗᏂᏍᏕᎵᏍᎨᏍᏗ, ᏞᏍᏗᏃ ᏧᎾ-",
+        "stock_raw_ocr": "ᏅᏒᏉ ᏓᏖᏂᏍᏕᏪᏍᎨᏍᏘ,. ᏞᏍᏘᏗᏃ ᏧᎾ-Ꮕ",
+        "ftm_aligned": "ᏅᏒᏉ ᏗᏂᏍᏕᎵᏍᎨᏍᏗ, ᏞᏍᏗᏃ ᏧᎾ-",
+        "ftm_raw_ocr": "ᏅᏒᏉ ᏓᏂᏍᏕᎵᏍᎨᏍᏗ, ᏞᏍᏗᏃ ᏧᎾ-",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150516_line_03.png",
+        "stock_aligned": "ᏁᎶᏗ ᎤᎾᏓᏡᎬ ᏱᏚᏂᏓᏁᎴᏍᏗ, ᎾᏍᎩ",
+        "stock_raw_ocr": "ᏁᎶᏗ ᎤᎾᏖᏡᎬ ᏱᏚᏂᏓᏁᎴᏍᏗ, ᎾᏍᎩ",
+        "ftm_aligned": "ᏁᎶᏗ ᎤᎾᏓᏡᎬ ᏱᏚᏂᏓᏁᎴᏍᏗ, ᎾᏍᎩ",
+        "ftm_raw_ocr": "ᏁᎶᏗ ᎤᎾᏓᏡᎬ ᏱᏚᏂᏓᏁᎴᏍᏗ, ᎾᏍᎩ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150516_line_04.png",
+        "stock_aligned": "ᏗᎬᏩᏂᏍᏕᎸᏗ ᏱᎩ ᎤᏙᎯᏳᏒ ᏧᏃᏑ-",
+        "stock_raw_ocr": "ᏗᎬᏩᏂᏍᏕᎸᏗ ᏱᎩ ᎤᏙᎯᏳᏒ ᏧᏃᏑ-”",
+        "ftm_aligned": "ᏗᎬᏩᏂᏍᏕᎸᏗ ᏱᎩ ᎤᏙᎯᏳᏒ ᏧᏃᏑ-",
+        "ftm_raw_ocr": "ᏗᎬᏩᏂᏍᏕᎸᏗ ᏱᎩ ᎤᏙᎯᏳᏒ ᏧᏃᏑ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150516_line_05.png",
+        "stock_aligned": "ᎶᏨᎯ ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᎶᏨᎯ ᏥᎡᎢ.",
+        "ftm_aligned": "ᎶᏨᎯ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎶᏨᎯ ᎨᏒᎢ.",
+        "ftm_confidence": 89.0
+      }
+    ]
+  },
+  "150517": {
+    "image_path": "images/150517.png",
+    "cherokee_gt": "ᎠᎴ ᏗᎨᎦᏁᎶᏗ ᏥᎩ ᎣᏍᏛ ᏧᏂᎸᏫᏍᏓᏁᎯ ᏔᎵ ᎢᏳᏩᎫᏗ ᏕᏥᎸᏉᏕᏍᏗ, ᎠᎴ ᎾᏍᎩ Ꮀ ᎤᎬᏫᏳᏎᏍᏗ ᎧᏃᎮᏛ ᎠᎴ ᏗᏕᏲᏗ ᎨᏒ ᏧᏂᎸᏫᏍᏓᏁᎯ.",
+    "verse_number": "17",
+    "lines": [
+      {
+        "line_crop": "line_crops/150517_line_00.png",
+        "stock_aligned": "17 ᎠᎴ ᏗᎨᎦᏁᎶᏗ ᏥᎩ ᎣᏍᏛ ᏧᏂ-",
+        "stock_raw_ocr": "17 ᎠᎴ ᏗᏏᎦᏁᎶᏗ ᏥᎩ ᎣᏍᏛ ᏧᏂ-",
+        "ftm_aligned": "17 ᎠᎴ ᏗᎨᎦᏁᎶᏗ ᏥᎩ ᎣᏍᏛ ᏧᏂ-",
+        "ftm_raw_ocr": "7 ᎠᎴ ᏗᎨᎦᏁᎶᏗ ᏥᎩ ᎣᏍᏛ ᏧᏂ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150517_line_01.png",
+        "stock_aligned": "ᎸᏫᏍᏓᏁᎯ ᏔᎵ ᎢᏳᏩᎫᏗ ᏕᏥᎸᏉ-",
+        "stock_raw_ocr": "ᎸᏄᏫᏍᏓᏁᎯ ᏔᎵ ᎢᏳᏣᏩᎫᏘ ᎦᏥᎸᏉ-",
+        "ftm_aligned": "ᎸᏫᏍᏓᏁᎯ ᏔᎵ ᎢᏳᏩᎫᏗ ᏕᏥᎸᏉ-",
+        "ftm_raw_ocr": "ᎸᏫᏍᏓᏁᎯ ᏔᎵ ᎢᏳᏩᎫᏗ ᏕᏥᎸᏉ-",
+        "ftm_confidence": 69.0
+      },
+      {
+        "line_crop": "line_crops/150517_line_02.png",
+        "stock_aligned": "ᏕᏍᏗ, ᎠᎴ ᎾᏍᎩ Ꮀ ᎤᎬᏫᏳᏎᏍᏗ Ꭷ-",
+        "stock_raw_ocr": "ᎦᏍᏗ, ᎠᎴ ᎾᏍᎩ Ꮀ ᎤᎬᏫᏳᏎᏍᏗ Ꭷ-",
+        "ftm_aligned": "ᏕᏍᏗ, ᎠᎴ ᎾᏍᎩ Ꮀ ᎤᎬᏫᏳᏎᏍᏗ Ꭷ-",
+        "ftm_raw_ocr": "ᏕᏍᏗ, ᎠᎴ ᎾᏍᎩ Ꮀ ᎤᎬᏫᏳᏎᏍᏗ Ꭷ-",
+        "ftm_confidence": 70.0
+      },
+      {
+        "line_crop": "line_crops/150517_line_03.png",
+        "stock_aligned": "ᏃᎮᏛ ᎠᎴ ᏗᏕᏲᏗ ᎨᏒ ᏧᏂᎸᏫᏍᏓᏁᎯ.",
+        "stock_raw_ocr": "ᏃᎮᏛ ᎠᎴ ᏗᏕᏲᏗ ᎨᎡᏒ ᏧᏂᎸᏫᏍᏓᏁᎯ.",
+        "ftm_aligned": "ᏃᎮᏛ ᎠᎴ ᏗᏕᏲᏗ ᎨᏒ ᏧᏂᎸᏫᏍᏓᏁᎯ.",
+        "ftm_raw_ocr": "ᏃᎮᏛ ᎠᎴ ᏗᏳᏲᏗ ᎨᏒ ᏧᏂᎸᏫᏍᏓᏁᎯ.",
+        "ftm_confidence": 72.0
+      }
+    ]
+  },
+  "150518": {
+    "image_path": "images/150518.png",
+    "cherokee_gt": "ᎯᎠᏰᏃ ᏂᎦᏛᎭ ᎦᎸᏉᏗ ᎪᏪᎵ; ᏞᏍᏗ ᏱᏲᏴᏑᎳᏁᏍᏗ ᏩᎦ ᎠᎦᏔᏙᎥᏗᏍᎩ; ᎠᎴ, ᎪᎱᏍᏗ ᎠᏛᏁᎯ ᎠᎦᎫᏴᎡᏗ ᎨᏐ ᏚᎸᏫᏍᏓᏁᎸᎢ.",
+    "verse_number": "18",
+    "lines": [
+      {
+        "line_crop": "line_crops/150518_line_00.png",
+        "stock_aligned": "18 ᎯᎠᏰᏃ ᏂᎦᏛᎭ ᎦᎸᏉᏗ ᎪᏪᎵ;",
+        "stock_raw_ocr": "18 ᎯᎠᏰᏃ ᏂᎦᏪᎭ ᎦᎸᏉᏗ ᎪᏪᎵ;",
+        "ftm_aligned": "18 ᎯᎠᏰᏃ ᏂᎦᏛᎭ ᎦᎸᏉᏗ ᎪᏪᎵ;",
+        "ftm_raw_ocr": "18 ᎯᎠᏰᏃ ᏂᎦᏪᎭ ᎦᎸᏉᏗ ᎪᏪᎵ;",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150518_line_01.png",
+        "stock_aligned": "ᏞᏍᏗ ᏱᏲᏴᏑᎳᏁᏍᏗ ᏩᎦ ᎠᎦᏔᏙᎥᏗ-",
+        "stock_raw_ocr": "ᏞᏍᏗ ᏱᏲᏴᏑᎳᏁᏍᏘ ᏩᎦ ᎠᎦᏔᏙᎥᏗ-Ꮕ",
+        "ftm_aligned": "ᏞᏍᏗ ᏱᏲᏴᏑᎳᏁᏍᏗ ᏩᎦ ᎠᎦᏔᏙᎥᏗ-",
+        "ftm_raw_ocr": "ᏞᏍᏗ ᏱᏲᏴᏑᎳᏁᏍᏗ ᏩᎦ ᎠᎦᏔᏙᎥᏗ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150518_line_02.png",
+        "stock_aligned": "ᏍᎩ; ᎠᎴ, ᎪᎱᏍᏗ ᎠᏛᏁᎯ ᎠᎦᎫᏴᎡᏗ",
+        "stock_raw_ocr": "ᏍᎩ; ᎠᎴ, ᎪᎱᏍᏗ ᎠᏛᏁᎯ ᎠᎦᎫᏴᎡᏗ",
+        "ftm_aligned": "ᏍᎩ; ᎠᎴ, ᎪᎱᏍᏗ ᎠᏛᏁᎯ ᎠᎦᎫᏴᎡᏗ",
+        "ftm_raw_ocr": "ᏍᎩ; ᎠᎴ, ᏙᎱᏍᏗ ᎠᏛᏁᎯ ᎠᎦᎫᏴᎡᏗ",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150518_line_03.png",
+        "stock_aligned": "ᎨᏐ ᏚᎸᏫᏍᏓᏁᎸᎢ.",
+        "stock_raw_ocr": "ᏂᏎ ᏚᎸᏫᏍᏓᏁᎸᎢ,.",
+        "ftm_aligned": "ᎨᏐ ᏚᎸᏫᏍᏓᏁᎸᎢ.",
+        "ftm_raw_ocr": "ᎨᏐ ᏚᎸᏫᏍᏓᏁᎸᎢ.",
+        "ftm_confidence": 62.0
+      }
+    ]
+  },
+  "150519": {
+    "image_path": "images/150519.png",
+    "cherokee_gt": "ᏣᎦᏁᎶᏗ ᎪᎱᏍᏗ ᎠᏥᎳᏫᏎᎲᎢ ᏞᏍᏗ ᏱᏣᏛᏓᏍᏗᏍᎨᏍᏗ ᎬᏂ ᎠᏂᏔᎵ ᎠᎴ ᎠᏂᏦᎢ ᎤᏂᏃᎮᏛ ᎨᏎᏍᏗ.",
+    "verse_number": "19",
+    "lines": [
+      {
+        "line_crop": "line_crops/150519_line_00.png",
+        "stock_aligned": "19 ᏣᎦᏁᎶᏗ ᎪᎱᏍᏗ ᎠᏥᎳᏫᏎᎲᎢ",
+        "stock_raw_ocr": "19 ᏣᎦᏁᎶᏗ ᎪᎱᏍᏗ ᎠᏥᎳᏫᏎᎲᎢ",
+        "ftm_aligned": "19 ᏣᎦᏁᎶᏗ ᎪᎱᏍᏗ ᎠᏥᎳᏫᏎᎲᎢ",
+        "ftm_raw_ocr": "19 ᏣᎦᏁᎶᏗ ᎪᎱᏍᏗ ᎠᏥᎳᏫᏎᎲᎢ",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150519_line_01.png",
+        "stock_aligned": "ᏞᏍᏗ ᏱᏣᏛᏓᏍᏗᏍᎨᏍᏗ ᎬᏂ ᎠᏂᏔᎵ",
+        "stock_raw_ocr": "ᏞᏍᏗ ᏱᏣᏛᏓᏍᏗᏍᎨᏍᏗ ᎬᏂ ᎠᏂᏔᎵ",
+        "ftm_aligned": "ᏞᏍᏗ ᏱᏣᏛᏓᏍᏗᏍᎨᏍᏗ ᎬᏂ ᎠᏂᏔᎵ",
+        "ftm_raw_ocr": "ᏞᏍᏗ ᏱᏣᏛᏓᏍᏗᏍᎨᏍᏗ ᎬᏂ ᎠᏂᏔᎵ",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150519_line_02.png",
+        "stock_aligned": "ᎠᎴ ᎠᏂᏦᎢ ᎤᏂᏃᎮᏛ ᎨᏎᏍᏗ.",
+        "stock_raw_ocr": "ᎠᎴ ᎠᏂᏦᎢ ᎤᏂᏃᎮᏛ ᎨᏎᏍᏗ.",
+        "ftm_aligned": "ᎠᎴ ᎠᏂᏦᎢ ᎤᏂᏃᎮᏛ ᎨᏎᏍᏗ.",
+        "ftm_raw_ocr": "ᎠᎴ ᎠᏂᏦᎢ ᎤᏂᏃᎮᏛ ᎨᏎᏍᏗ.",
+        "ftm_confidence": 90.0
+      }
+    ]
+  },
+  "150520": {
+    "image_path": "images/150520.png",
+    "cherokee_gt": "ᎾᏃ ᎠᏂᏍᎦᏅᎩ ᏕᎯᎬᏍᎪᎸᎥᏍᎨᏍᏗ ᏂᎦᏛ ᎠᏂᎦᏔᎲᎢ, ᎾᏍᎩ ᎠᏂᏐᎢ ᎾᏍᏉ ᎤᏂᎾᏰᏍᏗᏱ.",
+    "verse_number": "20",
+    "lines": [
+      {
+        "line_crop": "line_crops/150520_line_00.png",
+        "stock_aligned": "20 ᎾᏃ ᎠᏂᏍᎦᏅᎩ ᏕᎯᎬᏍᎪᎸᎥᏍᎨᏍᏗ",
+        "stock_raw_ocr": "20 ᎾᏃ ᎠᏂᏍᎦᏅᎩ ᏕᎯᎬᏍᎪᎸᏄᎥᏍᎨᎬᎨᎩᎹ",
+        "ftm_aligned": "20 ᎾᏃ ᎠᏂᏍᎦᏅᎩ ᏕᎯᎬᏍᎪᎸᎥᏍᎨ-",
+        "ftm_raw_ocr": "920 ᎾᏃ ᎠᏂᏍᎦᏅᎩ ᏕᎤᎯᎬᏍᎪᎸᎥᏍᎨ-",
+        "ftm_confidence": 59.0
+      },
+      {
+        "line_crop": "line_crops/150520_line_01.png",
+        "stock_aligned": "ᏂᎦᏛ ᎠᏂᎦᏔᎲᎢ, ᎾᏍᎩ ᎠᏂᏐᎢ",
+        "stock_raw_ocr": "ᎣᏗ ᏂᎦᏛ ᎠᏂᎦᏔᎲᎢ, ᎾᏍᎩ ᎠᏂᏐᎢ",
+        "ftm_aligned": "ᏍᏗ ᏂᎦᏛ ᎠᏂᎦᏔᎲᎢ, ᎾᏍᎩ ᎠᏂᏐᎢ",
+        "ftm_raw_ocr": "ᏍᏗ ᏂᎦᏛ ᎠᏂᎦᏔᎲᎢ, ᎾᏍᎩ ᎠᏂᏐᎢ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150520_line_02.png",
+        "stock_aligned": "ᎾᏍᏉ ᎤᏂᎾᏰᏍᏗᏱ.",
+        "stock_raw_ocr": "ᎧᏍᏉ ᎤᏂᎾᏰᏍᏗᏱ.",
+        "ftm_aligned": "ᎾᏍᏉ ᎤᏂᎾᏰᏍᏗᏱ.",
+        "ftm_raw_ocr": "ᎾᏍᏉ ᎤᏂᎾᏰᏍᏗᏱ.",
+        "ftm_confidence": 87.0
+      }
+    ]
+  },
+  "150521": {
+    "image_path": "images/150521.png",
+    "cherokee_gt": "ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ, ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎠᎴ ᎨᎦᏑᏰᏛ ᏗᏂᎧᎿᎭᏩᏗᏙᎯ ᎠᏂᎦᏔᎲᎢ, ᎯᎠ ᎾᏍᎩ ᏣᎦᏌᏯᏍᏙᏗᏱ ᎢᎬᏱ ᎦᏰᎯ ᏂᏚᎪᏗᏍᎬᎾ, ᎠᎴ ᏕᏣᎸᏫᏍᏓᏁᎲ ᎩᎶ ᏂᏯᎵᎪᏁᎲᎾ.",
+    "verse_number": "21",
+    "lines": [
+      {
+        "line_crop": "line_crops/150521_line_00.png",
+        "stock_aligned": "21 ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ,",
+        "stock_raw_ocr": "21 ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ,",
+        "ftm_aligned": "21 ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ,",
+        "ftm_raw_ocr": "21 ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ,",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150521_line_01.png",
+        "stock_aligned": "ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎠᎴ ᎨᎦ-",
+        "stock_raw_ocr": "ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎠᎴ ᎨᎦ-",
+        "ftm_aligned": "ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎠᎴ ᎨᎦ-",
+        "ftm_raw_ocr": "ᎠᎴ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎠᎴ ᎨᎦ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150521_line_02.png",
+        "stock_aligned": "ᏑᏰᏛ ᏗᏂᎧᎿᎭᏩᏗᏙᎯ ᎠᏂᎦᏔᎲᎢ, ᎯᎠ",
+        "stock_raw_ocr": "ᏈᏰᏛ ᏗᏂᎧᎿᏩᏗᏙᎯ ᎠᏂᎦᏔᎲᎢ;, ᎯᎠ",
+        "ftm_aligned": "ᏑᏰᏛ ᏗᏂᎧᎿᎭᏩᏗᏙᎯ ᎠᏂᎦᏔᎲᎢ, ᎯᎠ",
+        "ftm_raw_ocr": "ᏑᏰᏛ ᏗᏂᎧᎿᏩᏗᏙᎯ ᎠᏂᎦᏔᎲᎢ, ᎯᎠ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150521_line_03.png",
+        "stock_aligned": "ᎾᏍᎩ ᏣᎦᏌᏯᏍᏙᏗᏱ ᎢᎬᏱ ᎦᏰᎯ ᏂᏚ-",
+        "stock_raw_ocr": "ᎧᏍᎩ ᏣᎦᏌᏯᏍᏙᏗᏱ ᎢᎬᏱ ᎦᏰᎯ ᏂᏚ-",
+        "ftm_aligned": "ᎾᏍᎩ ᏣᎦᏌᏯᏍᏙᏗᏱ ᎢᎬᏱ ᎦᏰᎯ ᏂᏚ-",
+        "ftm_raw_ocr": "ᎾᏍᎩ ᏣᎦᏌᏯᏍᏙᏗᏱ ᎢᎬᏱ ᎦᏰᎯ ᏂᏚ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150521_line_04.png",
+        "stock_aligned": "ᎪᏗᏍᎬᎾ, ᎠᎴ ᏕᏣᎸᏫᏍᏓᏁᎲ ᎩᎶ Ꮒ-",
+        "stock_raw_ocr": "ᎪᏘᏍᎬᎾ, ᎠᎴ ᏕᎭᏖᏣᏄᏫᏍᏖᏁᎲ ᎩᎶ Ꮒ-",
+        "ftm_aligned": "ᎪᏗᏍᎬᎾ, ᎠᎴ ᏕᏣᎸᏫᏍᏓᏁᎲ ᎩᎶ Ꮒ-",
+        "ftm_raw_ocr": "ᎪᏗᏍᎬᎾ, ᎠᎴ ᏕᏣᏣᎸᏫᏍᏓᏁᎲ ᎩᎶ Ꮒ-",
+        "ftm_confidence": 71.0
+      },
+      {
+        "line_crop": "line_crops/150521_line_05.png",
+        "stock_aligned": "ᏯᎵᎪᏁᎲᎾ.",
+        "stock_raw_ocr": "ᏯᏝᎪᏁᎲᎾ.",
+        "ftm_aligned": "ᏯᎵᎪᏁᎲᎾ.",
+        "ftm_raw_ocr": "ᏯᎵᎪᏁᎲᎾ.",
+        "ftm_confidence": 73.0
+      }
+    ]
+  },
+  "150522": {
+    "image_path": "images/150522.png",
+    "cherokee_gt": "ᏞᏍᏗ ᎤᎵᏍᏗ ᏱᏘᏯᏏᏔᏕᏍᏗ ᎩᎶᎢ, ᎠᎴ ᏞᏍᏗ ᏯᏖᎳᏗᏍᎨᏍᏗ ᎩᎶ ᎠᏂᏍᎦᏅᎬᎢ.  ᏣᏓᎦᏌᏯᏍᏕᏍᏗ ᎯᎦᏓᎭ ᏂᎨᏒᎾ ᎨᏎᏍᏗ.",
+    "verse_number": "22",
+    "lines": [
+      {
+        "line_crop": "line_crops/150522_line_00.png",
+        "stock_aligned": "22 ᏞᏍᏗ ᎤᎵᏍᏗ ᏱᏘᏯᏏᏔᏕᏍᏗ",
+        "stock_raw_ocr": "99 ᏞᏍᏗ ᎤᎵᏍᏗ ᏱᏘᏯᏏᏔᏕᏍᏗ",
+        "ftm_aligned": "22 ᏞᏍᏗ ᎤᎵᏍᏗ ᏱᏘᏯᏏᏔᏕᏍᏗ",
+        "ftm_raw_ocr": "55 ᏞᏍᏗ ᎤᎵᏍᏗ ᏱᏗᏯᏏᏔᏕᏍᏗ",
+        "ftm_confidence": 67.0
+      },
+      {
+        "line_crop": "line_crops/150522_line_01.png",
+        "stock_aligned": "ᎩᎶᎢ, ᎠᎴ ᏞᏍᏗ ᏯᏖᎳᏗᏍᎨᏍᏗ",
+        "stock_raw_ocr": "ᎩᎶᎢ, ᎠᎴ ᏞᏍᏘ ᏯᏖᎳᏗᏍᎨᏍᏗ",
+        "ftm_aligned": "ᎩᎶᎢ, ᎠᎴ ᏞᏍᏗ ᏯᏖᎳᏗᏍᎨᏍᏗ",
+        "ftm_raw_ocr": "ᎩᎶᎢ, ᎠᎴ ᏞᏍᏗ ᏯᏖᎳᏗᏍᎨᏍᏗ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150522_line_02.png",
+        "stock_aligned": "ᎩᎶ ᎠᏂᏍᎦᏅᎬᎢ. ᏣᏓᎦᏌᏯᏍᏕᏍᏗ",
+        "stock_raw_ocr": "ᎩᎶ ᎠᏂᏍᎦᏅᎬᎢ. ᏣᏓᎦᏌᏯᏍᏅᏍᏗ",
+        "ftm_aligned": "ᎩᎶ ᎠᏂᏍᎦᏅᎬᎢ. ᏣᏓᎦᏌᏯᏍᏕᏍᏗ",
+        "ftm_raw_ocr": "ᎩᎶ ᎠᏂᏍᎦᏅᎬᎢ. ᏣᏓᎦᏌᏯᏍᏕᏍᏗ",
+        "ftm_confidence": 68.0
+      },
+      {
+        "line_crop": "line_crops/150522_line_03.png",
+        "stock_aligned": "ᎯᎦᏓᎭ ᏂᎨᏒᎾ ᎨᏎᏍᏗ.",
+        "stock_raw_ocr": "ᎯᎦᏓᎭ ᏂᎬᏑᏌᎡᏒᎾ ᎨᏎᏍᏗ.",
+        "ftm_aligned": "ᎯᎦᏓᎭ ᏂᎨᏒᎾ ᎨᏎᏍᏗ.",
+        "ftm_raw_ocr": "ᎯᎦᏓᎭ ᏂᎨᏒᎾ ᎨᏎᏍᏗ.",
+        "ftm_confidence": 81.0
+      }
+    ]
+  },
+  "150523": {
+    "image_path": "images/150523.png",
+    "cherokee_gt": "ᎿᎭᏉ ᏞᏍᏗ ᎠᎹᏉ ᏯᏗᏔᏍᎨᏍᏗ, ᎤᏍᏗᏍᎩᏂ ᎩᎦᎨ-ᎠᏗᏔᏍᏗ ᎭᏗᏔᏍᎨᏍᏗ, ᎪᎱᏍᏗ ᎭᎵᏍᏗᏍᎬ ᎢᏳᏍᏗ ᏦᎸᎯᏍᏗᏱ ᎠᎴ ᏯᏃᏉ ᏣᏢᏥᏰᏍᎬᎢ.",
+    "verse_number": "23",
+    "lines": [
+      {
+        "line_crop": "line_crops/150523_line_00.png",
+        "stock_aligned": "23 ᎿᎭᏉ ᏞᏍᏗ ᎠᎹᏉ ᏯᏗᏔᏍᎨᏍᏗ,",
+        "stock_raw_ocr": "98 ᎿᎹ ᏞᏍᏗ ᎠᎹᏉ ᏯᏗᏔᏍᎨᎬ”",
+        "ftm_aligned": "23 ᎿᎭᏉ ᏞᏍᏗ ᎠᎹᏉ ᏯᏗᏔᏍᎨ-",
+        "ftm_raw_ocr": "23 ᎿᏉ ᏞᏍᏗ ᎠᎹᏉ ᏯᏗᏔᏍᎨ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150523_line_01.png",
+        "stock_aligned": "ᎤᏍᏗᏍᎩᏂ ᎩᎦᎨ-ᎠᏗᏔᏍᏗ",
+        "stock_raw_ocr": "ᏍᏘ, ᎤᏍᏗᏍᎩᏂ ᎩᎦᎰᏢ-“ᎠᏗᏔᏍᏗ Ꭽ”",
+        "ftm_aligned": "ᏍᏗ, ᎤᏍᏗᏍᎩᏂ ᎩᎦᎨ-ᎠᏗᏔᏍᏗ Ꭽ-",
+        "ftm_raw_ocr": "ᏍᏗ, ᎤᏍᏗᏍᎩᏂ ᎩᎦᎨ-ᎠᏗᏔᏍᏗ Ꭽ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150523_line_02.png",
+        "stock_aligned": "ᎭᏗᏔᏍᎨᏍᏗ, ᎪᎱᏍᏗ ᎭᎵᏍᏗᏍᎬ",
+        "stock_raw_ocr": "ᏘᏔᏍᎨᏍᏘ, ᎪᎱᏍᏗ ᎭᎵᏍᏗᏍᎬ Ꭲ",
+        "ftm_aligned": "ᏗᏔᏍᎨᏍᏗ, ᎪᎱᏍᏗ ᎭᎵᏍᏗᏍᎬ Ꭲ-",
+        "ftm_raw_ocr": "ᏗᏔᏍᎨᏍᏗ, ᎪᎱᏍᏗ ᎭᎵᏍᏗᏍᎬ Ꭲ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150523_line_03.png",
+        "stock_aligned": "ᎢᏳᏍᏗ ᏦᎸᎯᏍᏗᏱ ᎠᎴ ᏯᏃᏉ ᏣᏢᏥ-",
+        "stock_raw_ocr": "ᏳᏍᏗ ᏦᎸᎯᏍᏗᏱ ᎠᎴ ᏯᏃᏉ ᏣᏢᏥ-",
+        "ftm_aligned": "ᏳᏍᏗ ᏦᎸᎯᏍᏗᏱ ᎠᎴ ᏯᏃᏉ ᏣᏢᏥ-",
+        "ftm_raw_ocr": "ᏳᏍᏗ ᏦᎸᎯᏍᏗᏱ ᎠᎴ ᏯᏃᏉ ᏣᎵᏥ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150523_line_04.png",
+        "stock_aligned": "ᏰᏍᎬᎢ.",
+        "stock_raw_ocr": "ᏰᏍᎬᎢ.",
+        "ftm_aligned": "ᏰᏍᎬᎢ.",
+        "ftm_raw_ocr": "ᏰᏍᎬᎢ.",
+        "ftm_confidence": 84.0
+      }
+    ]
+  },
+  "150524": {
+    "image_path": "images/150524.png",
+    "cherokee_gt": "ᎩᎶ ᎠᏂᏍᎦᏅᎬ ᎬᏂᎨᏒ ᎨᏐ ᎢᎬᏪᏅᏛ, ᎢᎬᏱ ᏫᎦᎷᎪ ᏗᎫᎪᏙᏗᏱ ᎨᏒᎢ, ᎩᎶᏃ ᎤᎨᏍᏓᏩᏕᎪᎢ.",
+    "verse_number": "24",
+    "lines": [
+      {
+        "line_crop": "line_crops/150524_line_00.png",
+        "stock_aligned": "24 ᎩᎶ ᎠᏂᏍᎦᏅᎬ ᎬᏂᎨᏒ ᎨᏐ",
+        "stock_raw_ocr": "9Ꮞ ᎩᎶ ᎠᏂᏍᎦᏅᎬ ᎬᏂᎨᏒ ᎰᎨᎭ",
+        "ftm_aligned": "24 ᎩᎶ ᎠᏂᏍᎦᏅᎬ ᎬᏂᎨᏒ ᎨᏐ",
+        "ftm_raw_ocr": "2Ꮞ ᎩᎶ ᎠᏂᏍᎦᏅᎬ ᎬᏂᎨᏒ ᎨᏐ",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150524_line_01.png",
+        "stock_aligned": "ᎢᎬᏪᏅᏛ, ᎢᎬᏱ ᏫᎦᎷᎪ ᏗᎫᎪᏙᏗᏱ",
+        "stock_raw_ocr": "ᎢᎬᏪᏅᏛ;, ᎢᎬᏱ ᏫᎦᎷᎪ ᏘᎫᎪᏙᏘᏱ",
+        "ftm_aligned": "ᎢᎬᏪᏅᏛ, ᎢᎬᏱ ᏫᎦᎷᎪ ᏗᎫᎪᏙᏗᏱ",
+        "ftm_raw_ocr": "ᎢᎬᏪᏅᏛ, ᎢᎬᏱ ᏫᎦᎷᎪ ᏗᎫᎪᏙᏗᏱ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150524_line_02.png",
+        "stock_aligned": "ᎨᏒᎢ, ᎩᎶᏃ ᎤᎨᏍᏓᏩᏕᎪᎢ.",
+        "stock_raw_ocr": "ᏥᎡᎢ;, ᎩᎶᏃ ᎤᎱᏍᏓᏩᏕᎵᎪᎢ.",
+        "ftm_aligned": "ᎨᏒᎢ, ᎩᎶᏃ ᎤᎨᏍᏓᏩᏕᎪᎢ.",
+        "ftm_raw_ocr": "ᎨᏒᎢ, ᎩᎶᏃ ᎤᎨᏍᏓᏩᏕᎪᎢ.",
+        "ftm_confidence": 39.0
+      }
+    ]
+  },
+  "150525": {
+    "image_path": "images/150525.png",
+    "cherokee_gt": "ᎾᏍᎩᏯ ᎾᏍᏉ ᎩᎶ ᎣᏍᏛ ᏚᏂᎸᏫᏍᏓᏁᎲ ᎬᏂᎨᏒ ᎨᏐ ᎢᎬᏪᏅᏛ; ᎩᎶᏃ ᎾᏍᎩ Ꮎ ᎯᎠ ᏄᏍᏛᎾ ᏱᎩ, ᎠᏎ Ꮭ ᎦᎬᏍᎦᎶᏗ ᏱᎨᏐᎢ.",
+    "verse_number": "25",
+    "lines": [
+      {
+        "line_crop": "line_crops/150525_line_00.png",
+        "stock_aligned": "25 ᎾᏍᎩᏯ ᎾᏍᏉ ᎩᎶ ᎣᏍᏛ ᏚᏂ-",
+        "stock_raw_ocr": "25 ᎾᏍᎩᏯ ᎾᏍᏉ ᎩᎶ ᎣᏍᏛ ᏚᏂ-",
+        "ftm_aligned": "25 ᎾᏍᎩᏯ ᎾᏍᏉ ᎩᎶ ᎣᏍᏛ ᏚᏂ-",
+        "ftm_raw_ocr": "25 ᎾᏍᎩᏯ ᎾᏍᏉ ᎩᎶ ᎣᏍᏛ ᏚᏂ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150525_line_01.png",
+        "stock_aligned": "ᎸᏫᏍᏓᏁᎲ ᎬᏂᎨᏒ ᎨᏐ ᎢᎬᏪᏅᏛ;",
+        "stock_raw_ocr": "ᎸᏄᏫᏍᏖᏁᎲ ᎬᏂᎨᏒ ᎨᏐ ᎢᎬᏪᏅᏛ :",
+        "ftm_aligned": "ᎸᏫᏍᏓᏁᎲ ᎬᏂᎨᏒ ᎨᏐ ᎢᎬᏪᏅᏛ;",
+        "ftm_raw_ocr": "ᎸᏫᏍᏓᏁᎲ ᎬᏂᎨᏒ ᎨᏐ ᎢᎬᏪᏅᏛ;",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150525_line_02.png",
+        "stock_aligned": "ᎩᎶᏃ ᎾᏍᎩ Ꮎ ᎯᎠ ᏄᏍᏛᎾ ᏱᎩ, ᎠᏎ",
+        "stock_raw_ocr": "ᎩᎶᏃ ᎾᏍᎩ Ꮎ ᎯᎠ ᏄᏍᏛᎾ ᏱᎩ, ᎠᏎ",
+        "ftm_aligned": "ᎩᎶᏃ ᎾᏍᎩ Ꮎ ᎯᎠ ᏄᏍᏛᎾ ᏱᎩ, ᎠᏎ",
+        "ftm_raw_ocr": "ᎩᎶᏃ ᎾᏍᎩ Ꮎ ᎯᎠ ᏄᏍᏛᎾ ᏱᎩ, ᎠᏎ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150525_line_03.png",
+        "stock_aligned": "Ꮭ ᎦᎬᏍᎦᎶᏗ ᏱᎨᏐᎢ.",
+        "stock_raw_ocr": "Ꮭ ᎦᎬᏍᎦᎶᏗ ᏱᎨᏐᎢ,.,",
+        "ftm_aligned": "Ꮭ ᎦᎬᏍᎦᎶᏗ ᏱᎨᏐᎢ.",
+        "ftm_raw_ocr": "Ꮭ ᎦᎬᏍᎦᎶᏗ ᏱᎨᏐᎢ.",
+        "ftm_confidence": 85.0
+      }
+    ]
+  },
+  "150601": {
+    "image_path": "images/150601.png",
+    "cherokee_gt": "ᎾᏂᎥ ᏗᎨᏥᎾᏝᎢ ᎾᏍᎩ ᏗᎨᏥᎩᎳᎾᎳ ᏥᎩ ᎤᏣᏘ ᏧᏂᎸᏉᏗᏳ ᎨᏎᏍᏗ ᏗᎬᏩᏂᎾᏝᎢ, ᎾᏍᎩ ᏚᏙᎥ ᎤᏁᎳᏅᎯ ᎠᎴ ᎤᏤᎵ ᏗᏕᏲᏗ ᎨᏒ ᎠᏐᏢᎯ ᎢᏳᎵᏍᏙᏗᏱ ᏂᎨᏒᎾ.",
+    "verse_number": "1",
+    "lines": [
+      {
+        "line_crop": "line_crops/150601_line_00.png",
+        "stock_aligned": "1 ᎾᏂᎥ ᏗᎨᏥᎾᏝᎢ ᎾᏍᎩ ᏗᎨᏥᎩᎳ-",
+        "stock_raw_ocr": "Ꭲ1 ᎾᏂᎥ ᏗᎨᏥᏮᏝᎢ ᎾᏍᎩ ᏗᎬᏥᎩᎳ-",
+        "ftm_aligned": "1 ᎾᏂᎥ ᏗᎨᏥᎾᏝᎢ ᎾᏍᎩ ᏗᎨᏥᎩᎳ-",
+        "ftm_raw_ocr": "1 ᎾᏂᎥ ᏗᎨᏥᎾᏝᎢ ᎾᏍᎩ ᏗᎨᏥᎩᎳ-",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150601_line_01.png",
+        "stock_aligned": "ᎾᎳ ᏥᎩ ᎤᏣᏘ ᏧᏂᎸᏉᏗᏳ ᎨᏎᏍᏗ",
+        "stock_raw_ocr": "ᎾᎳ ᏥᎩ ᎤᏣᏘ ᏧᏂᎸᏉᏘᏳ” ᎨᏎᏍᏘ",
+        "ftm_aligned": "ᎾᎳ ᏥᎩ ᎤᏣᏘ ᏧᏂᎸᏉᏗᏳ ᎨᏎᏍᏗ",
+        "ftm_raw_ocr": "ᎾᎳ ᏥᎩ ᎤᏣᏘ ᏧᏂᎸᏉᏗᏳ ᎨᏎᏍᏗ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150601_line_02.png",
+        "stock_aligned": "ᏗᎬᏩᏂᎾᏝᎢ, ᎾᏍᎩ ᏚᏙᎥ ᎤᏁᎳᏅᎯ",
+        "stock_raw_ocr": "ᏘᎬᏩᏂᏮᏝᎢ, .ᎾᏍᎩ ᏚᏙᎥ ᎤᏁᎳᏅᎯ",
+        "ftm_aligned": "ᏗᎬᏩᏂᎾᏝᎢ, ᎾᏍᎩ ᏚᏙᎥ ᎤᏁᎳᏅᎯ",
+        "ftm_raw_ocr": "ᏗᎬᏩᏂᎾᏝᎢ, ᎾᏍᎩ ᏚᏙᎥ ᎤᏁᎳᏅᎯ",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150601_line_03.png",
+        "stock_aligned": "ᎠᎴ ᎤᏤᎵ ᏗᏕᏲᏗ ᎨᏒ ᎠᏐᏢᎯ",
+        "stock_raw_ocr": "ᎠᎴ ᎤᏤᎵ ᏘᏕᏲᏘᏗ ᎰᎨᎡ ᎠᏐᏢᎯ ᎢᏳᏪ-",
+        "ftm_aligned": "ᎠᎴ ᎤᏤᎵ ᏗᏕᏲᏗ ᎨᏒ ᎠᏐᏢᎯ ᎢᏳᎵ-",
+        "ftm_raw_ocr": "ᎠᎴ ᎤᏤᎵ ᏗᏣᏳᏲᏗ ᎨᏴ ᎠᏐᏢᎯ ᎢᏳᎵ-",
+        "ftm_confidence": 69.0
+      },
+      {
+        "line_crop": "line_crops/150601_line_04.png",
+        "stock_aligned": "ᎢᏳᎵᏍᏙᏗᏱ ᏂᎨᏒᎾ.",
+        "stock_raw_ocr": "ᏍᏉᏙᏘᏱ ᏂᎨᎡᏒᎾ,",
+        "ftm_aligned": "ᏍᏙᏗᏱ ᏂᎨᏒᎾ.",
+        "ftm_raw_ocr": "ᏍᏙᏗᏱ ᏂᎨᏒᎾ.",
+        "ftm_confidence": 76.0
+      }
+    ]
+  },
+  "150602": {
+    "image_path": "images/150602.png",
+    "cherokee_gt": "ᎾᏃ ᎠᏃᎯᏳᎲᏍᎩ ᏗᎬᏩᏂᎾᏝᎢ ᎨᏒ ᏞᏍᏗ ᏱᏚᏂᏂᏆᏘᎴᏍᏗ ᏱᏅᏗᎦᎵᏍᏙᏗᏍᎨᏍᏗ ᎠᎾᎵᏅᏟ ᎨᏒᎢ, ᎪᎱᏍᏗᏍᎩᏂ ᏓᎾᏛᏁᎮᏍᏗ ᏅᏗᎦᎵᏍᏙᏗᏍᎨᏍᏗ ᎠᏃᎯᏳᎲᏍᎩ ᎠᎴ ᎨᏥᎨᏳᎢ ᎨᏒᎢ, ᎤᎾᏠᏯᏍᏗᏍᎩ ᎣᏍᏛ ᎾᎦᏛᏁᎸᎢ.  ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᏕᎭᏕᏲᎲᏍᎨᏍᏗ, ᎠᎴ ᏕᎯᏁᏤᎮᏍᏗ.",
+    "verse_number": "2",
+    "lines": [
+      {
+        "line_crop": "line_crops/150602_line_00.png",
+        "stock_aligned": "2 ᎾᏃ ᎠᏃᎯᏳᎲᏍᎩ ᏗᎬᏩᏂᎾᏝᎢ",
+        "stock_raw_ocr": "2 ᎾᏃ ᎠᏃᎯᏊᎲᏍᎩ ᏗᎬᏩᏂᏮᏝᎢ",
+        "ftm_aligned": "2 ᎾᏃ ᎠᏃᎯᏳᎲᏍᎩ ᏗᎬᏩᏂᎾᏝᎢ",
+        "ftm_raw_ocr": "2 ᎾᏃ ᎠᏃᎯᏳᎲᏍᎩ ᏗᎬᏩᏂᎾᏝᎢ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150602_line_01.png",
+        "stock_aligned": "ᎨᏒ ᏞᏍᏗ ᏱᏚᏂᏂᏆᏘᎴᏍᏗ ᏱᏅᏗᎦᎵ-",
+        "stock_raw_ocr": "ᎬᎡ ᏞᏍᏗ ᏱᏚᏂᏂᏆᏘᎴᏍᏗ ᏱᏅᏘᎦᎵ-",
+        "ftm_aligned": "ᎨᏒ ᏞᏍᏗ ᏱᏚᏂᏂᏆᏘᎴᏍᏗ ᏱᏅᏗᎦᎵ-",
+        "ftm_raw_ocr": "ᎨᏢ ᏞᏍᏗ ᏱᏚᏂᏂᏆᏘᎴᏍᏗ ᏱᏅᏗᎦᎵ-",
+        "ftm_confidence": 66.0
+      },
+      {
+        "line_crop": "line_crops/150602_line_02.png",
+        "stock_aligned": "ᏍᏙᏗᏍᎨᏍᏗ ᎠᎾᎵᏅᏟ ᎨᏒᎢ, ᎪᎱ-",
+        "stock_raw_ocr": "ᏍᏙᏘᏍᎨᏍᏗ ᎠᏮᎵᏅᏟᏣ ᎲᏥᎿᎨᎡᎢ, ᎪᎱ-",
+        "ftm_aligned": "ᏍᏙᏗᏍᎨᏍᏗ ᎠᎾᎵᏅᏟ ᎨᏒᎢ, ᎪᎱ-",
+        "ftm_raw_ocr": "ᏍᏙᏗᏍᎨᏍᏗ ᎠᎾᎵᏅᏣ ᎨᏒᎢ, ᎪᎱ-",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150602_line_03.png",
+        "stock_aligned": "ᏍᏗᏍᎩᏂ ᏓᎾᏛᏁᎮᏍᏗ ᏅᏗᎦᎵᏍᏙᏗ-",
+        "stock_raw_ocr": "ᏍᏘᏍᎩᏂ ᏖᎾᏛᏁᎮᏍᏗ ᏅᏗᎦᏝᏍᏉᏗ-",
+        "ftm_aligned": "ᏍᏗᏍᎩᏂ ᏓᎾᏛᏁᎮᏍᏗ ᏅᏗᎦᎵᏍᏙᏗ-",
+        "ftm_raw_ocr": "ᏍᏗᏍᎩᏂ ᏓᎾᏛᏁᎮᏍᏗ ᏅᏗᎦᎵᏍᏔᏙᏗ-",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150602_line_04.png",
+        "stock_aligned": "ᏍᎨᏍᏗ ᎠᏃᎯᏳᎲᏍᎩ ᎠᎴ ᎨᏥᎨᏳᎢ",
+        "stock_raw_ocr": "ᏍᎨᏍᏘ ᎠᏃᎯᏳᎲᏍᎩ ᎠᎴ ᎨᏥᎨᏳᎢ",
+        "ftm_aligned": "ᏍᎨᏍᏗ ᎠᏃᎯᏳᎲᏍᎩ ᎠᎴ ᎨᏥᎨᏳᎢ",
+        "ftm_raw_ocr": "ᏍᎨᏍᏗ ᎠᏃᎯᏳᎲᏍᎩ ᎠᎴ ᎨᏥᎨᏳᎢ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150602_line_05.png",
+        "stock_aligned": "ᎨᏒᎢ, ᎤᎾᏠᏯᏍᏗᏍᎩ ᎣᏍᏛ ᎾᎦᏛ-",
+        "stock_raw_ocr": "Ꭼ“ᎡᎢ, ᎤᎾᏠᏯᏍᏘᏍᎩ ᎣᏍᏛ ᏁᎦᏛ-",
+        "ftm_aligned": "ᎨᏒᎢ, ᎤᎾᏠᏯᏍᏗᏍᎩ ᎣᏍᏛ ᎾᎦᏛ-",
+        "ftm_raw_ocr": "ᎨᏒᎢ, ᎤᎾᏠᏯᏍᏗᏍᎩ ᎣᏍᏛ ᏁᎦᏛ-",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150602_line_06.png",
+        "stock_aligned": "ᏁᎸᎢ. ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᏕᎭ-",
+        "stock_raw_ocr": "ᏁᎸᎢ. ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏖᏍᏘ ᏕᎭ-",
+        "ftm_aligned": "ᏁᎸᎢ. ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᏕᎭ-",
+        "ftm_raw_ocr": "ᏁᎸᎢ. ᎾᏍᎩ ᎯᎠ ᏄᏍᏕᏍᏗ ᎤᎭ-",
+        "ftm_confidence": 65.0
+      },
+      {
+        "line_crop": "line_crops/150602_line_07.png",
+        "stock_aligned": "ᏕᏲᎲᏍᎨᏍᏗ, ᎠᎴ ᏕᎯᏁᏤᎮᏍᏗ.",
+        "stock_raw_ocr": "ᏕᏲᎲᏍᎨᏍᏘ, ᎠᎴ ᏕᎯᏁᏤᎮᏍᏘ,",
+        "ftm_aligned": "ᏕᏲᎲᏍᎨᏍᏗ, ᎠᎴ ᏕᎯᏁᏤᎮᏍᏗ.",
+        "ftm_raw_ocr": "ᏕᎤᏲᎲᏍᎨᏍᏗ, ᎠᎴ ᏕᎯᏁᏤᎮᏍᏗ.",
+        "ftm_confidence": 35.0
+      }
+    ]
+  },
+  "150603": {
+    "image_path": "images/150603.png",
+    "cherokee_gt": "ᎢᏳᏃ ᎩᎶ ᎤᏣᏘᏂ ᏂᎦᏪᏍᎨᏍᏗ ᏓᏕᏲᎲᏍᎨᏍᏗ, ᎠᎴ ᎣᏏ ᎾᏰᎸᏍᎬᎾ ᎢᎨᏎᏍᏗ ᎣᏍᏛ ᎤᏬᏂᏒ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ, ᎠᎴ ᏗᏕᏲᏗ ᎨᏒ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᏗᏂᎶᏙᏗ ᎨᏒ ᏥᏓᏕᏲᎲᏍᎦ;",
+    "verse_number": "3",
+    "lines": [
+      {
+        "line_crop": "line_crops/150603_line_00.png",
+        "stock_aligned": "3 ᎢᏳᏃ ᎩᎶ ᎤᏣᏘᏂ ᏂᎦᏪᏍᎨᏍᏗ",
+        "stock_raw_ocr": "Ᏸ ᎢᏯᏊᏃ ᎩᎶ ᎤᏣᏘᏂ ᏂᎦᏪᏍᎨᏍᏗ",
+        "ftm_aligned": "3 ᎢᏳᏃ ᎩᎶ ᎤᏣᏘᏂ ᏂᎦᏪᏍᎨᏍᏗ",
+        "ftm_raw_ocr": "8 ᎢᏳᏃ ᎩᎶ ᎤᏣᏘᏂ ᏂᎦᏪᏍᎨᏍᏗ",
+        "ftm_confidence": 77.0
+      },
+      {
+        "line_crop": "line_crops/150603_line_01.png",
+        "stock_aligned": "ᏓᏕᏲᎲᏍᎨᏍᏗ, ᎠᎴ ᎣᏏ ᎾᏰᎸᏍᎬᎾ",
+        "stock_raw_ocr": "ᏓᏖᏅᏕᏲᎲᏍᎨᏍᏘ, ᎠᎴ ᎣᏏ ᎾᏰᎸᏍᎬᎾ",
+        "ftm_aligned": "ᏓᏕᏲᎲᏍᎨᏍᏗ, ᎠᎴ ᎣᏏ ᎾᏰᎸᏍᎬᎾ",
+        "ftm_raw_ocr": "ᏓᎤᏲᎲᏍᎨᏍᏗ, ᎠᎴ ᎣᏏ ᎾᏰᎸᏍᎬᎾ",
+        "ftm_confidence": 67.0
+      },
+      {
+        "line_crop": "line_crops/150603_line_02.png",
+        "stock_aligned": "ᎢᎨᏎᏍᏗ ᎣᏍᏛ ᎤᏬᏂᏒ ᎢᎦᏤᎵ Ꭴ-",
+        "stock_raw_ocr": "ᎢᎨᏎᏍᏘᏗ. ᎣᏍᏛ ᎤᏬᏂᏞᏒ ᎢᎦᏤᏝ Ꭴ-",
+        "ftm_aligned": "ᎢᎨᏎᏍᏗ ᎣᏍᏛ ᎤᏬᏂᏒ ᎢᎦᏤᎵ Ꭴ-",
+        "ftm_raw_ocr": "ᎢᎨᏎᏍᏗ ᎣᏍᏛ ᎤᏬᏂᏒ ᎢᎦᏤᎵ Ꭴ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150603_line_03.png",
+        "stock_aligned": "ᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ, ᎠᎴ ᏗᏕᏲᏗ",
+        "stock_raw_ocr": "ᎬᏫᏳᎯ ᎰᎢᏛᏌ ᎦᎶᏁᏛ, ᎠᎴ ᏘᏗᏕᏲᏘ",
+        "ftm_aligned": "ᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ, ᎠᎴ ᏗᏕᏲᏗ",
+        "ftm_raw_ocr": "ᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ, ᎠᎴ ᏗᏕᏲᏗ",
+        "ftm_confidence": 70.0
+      },
+      {
+        "line_crop": "line_crops/150603_line_04.png",
+        "stock_aligned": "ᎨᏒ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᏗᏂᎶᏙᏗ ᎨᏒ",
+        "stock_raw_ocr": "ᎨᎠᏒ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᏗᏁᎶᏙᏘᏗ ᎨᏒᎡ",
+        "ftm_aligned": "ᎨᏒ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᏗᏂᎶᏙᏗ ᎨᏒ",
+        "ftm_raw_ocr": "ᎨᏒ ᎾᏍᎩ ᎤᏁᎳᏅᎯ ᏗᏁᎶᏙᏤᏗ ᎨᏒ",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150603_line_05.png",
+        "stock_aligned": "ᏥᏓᏕᏲᎲᏍᎦ;",
+        "stock_raw_ocr": "ᏥᏓᏕᏲᎲᏍᎦ 5",
+        "ftm_aligned": "ᏥᏓᏕᏲᎲᏍᎦ;",
+        "ftm_raw_ocr": "ᏥᏓᏕᏳᏲᎲᏍᎦ;",
+        "ftm_confidence": 10.0
+      }
+    ]
+  },
+  "150604": {
+    "image_path": "images/150604.png",
+    "cherokee_gt": "ᎾᏍᎩ Ꮎ ᎤᏢᏉᏗ, ᎪᎱᏍᏗ ᎾᎦᏔᎲᎾ, ᎤᎵᏰᏔᏁᎯ ᎦᏬᏂᎯᏍᏗ ᎨᏒ, ᎠᎴ ᏧᏘᏲᏌᏘ ᎠᎵᏃᎮᏍᎬᎢ, ᎾᎿᎭᏨᏗᏓᎴᎲᏍᎦ ᎠᏛᏳᎨᏗ ᎨᏒᎢ, ᎠᎴ ᎠᏗᏒᏍᏗ ᎨᏒᎢ, ᎠᎴ ᎠᏐᏢᎢᏍᏙᏗ ᎨᏒᎢ, ᎠᎴ ᎪᎱᏍᏗ ᏗᏓᏕᎵᏎᏗ ᎨᏒᎢ,",
+    "verse_number": "4",
+    "lines": [
+      {
+        "line_crop": "line_crops/150604_line_00.png",
+        "stock_aligned": "4 ᎾᏍᎩ Ꮎ ᎤᏢᏉᏗ, ᎪᎱᏍᏗ ᎾᎦᏔ-",
+        "stock_raw_ocr": "Ꮞ ᎾᏍᎩ Ꮎ ᎤᏢᏉᏘ, ᎪᎱᏍᏗ ᎾᎦᏔ-",
+        "ftm_aligned": "4 ᎾᏍᎩ Ꮎ ᎤᏢᏉᏗ, ᎪᎱᏍᏗ ᎾᎦᏔ-",
+        "ftm_raw_ocr": "Ꮞ ᎾᏍᎩ Ꮎ ᎤᏢᏉᏗ, ᎪᎱᏍᏗ ᎾᎦᏔ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150604_line_01.png",
+        "stock_aligned": "ᎲᎾ, ᎤᎵᏰᏔᏁᎯ ᎦᏬᏂᎯᏍᏗ ᎨᏒ, ᎠᎴ",
+        "stock_raw_ocr": "ᎲᎾ, ᎤᎵᏰᏔᏁᎯ ᎦᏬᏂᎯᏍᏘ ᎰᏦᏒ, ᎠᎴ",
+        "ftm_aligned": "ᎲᎾ, ᎤᎵᏰᏔᏁᎯ ᎦᏬᏂᎯᏍᏗ ᎨᏒ, ᎠᎴ",
+        "ftm_raw_ocr": "ᎲᎾ, ᎤᎵᏰᏔᏁᎯ ᎦᏬᏂᎯᏍᏗ ᎨᏒ, ᎠᎴ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150604_line_02.png",
+        "stock_aligned": "ᏧᏘᏲᏌᏘ ᎠᎵᏃᎮᏍᎬᎢ, ᎾᎿᎭᏨᏗᏓᎴᎲᏍᎦ",
+        "stock_raw_ocr": "ᏧᏘᏲᏌᏘ ᎠᎵᏃᎮᏍᎬᎢ, ᎾᎿ ᏨᏘᏓᎴᎲ-",
+        "ftm_aligned": "ᏧᏘᏲᏌᏘ ᎠᎵᏃᎮᏍᎬᎢ, ᎾᎿᎭᏨᏗᏓᎴᎲ-",
+        "ftm_raw_ocr": "ᏧᏘᏲᏌᏘ ᎠᎵᏃᎮᏍᎬᎢ, ᎾᎿ ᏨᏗᏓᎴᎲ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150604_line_03.png",
+        "stock_aligned": "ᎠᏛᏳᎨᏗ ᎨᏒᎢ, ᎠᎴ ᎠᏗᏒᏍᏗ",
+        "stock_raw_ocr": "ᏍᎦ ᎠᏛᏳᎨᏗ ᏥᎨᎡᎢ; ᎠᎴ ᎠᏘᏒᏍᏗ",
+        "ftm_aligned": "ᏍᎦ ᎠᏛᏳᎨᏗ ᎨᏒᎢ, ᎠᎴ ᎠᏗᏒᏍᏗ",
+        "ftm_raw_ocr": "ᏍᎦ ᎠᏛᏳᎨᏗ ᎨᏒᏥᎢ, ᎠᎴ ᎠᏗᏴᏍᏗ",
+        "ftm_confidence": 61.0
+      },
+      {
+        "line_crop": "line_crops/150604_line_04.png",
+        "stock_aligned": "ᎨᏒᎢ, ᎠᎴ ᎠᏐᏢᎢᏍᏙᏗ ᎨᏒᎢ, ᎠᎴ",
+        "stock_raw_ocr": "ᎨᏒᎢ, ᎠᎴ ᎠᏐᏢᎢᏍᏙᏘᏗ ᏦᏦᏒᎢ, ᎠᎴ",
+        "ftm_aligned": "ᎨᏒᎢ, ᎠᎴ ᎠᏐᏢᎢᏍᏙᏗ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_raw_ocr": "ᎨᏒᎢ, ᎠᎴ ᎠᏐᏢᎢᏍᏙᏗ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_confidence": 62.0
+      },
+      {
+        "line_crop": "line_crops/150604_line_05.png",
+        "stock_aligned": "ᎪᎱᏍᏗ ᏗᏓᏕᎵᏎᏗ ᎨᏒᎢ,",
+        "stock_raw_ocr": "ᎪᎱᏍᏗ ᏗᏓᏕᎵᏎᏗ ᎨᎬᏦᏒᎢ,",
+        "ftm_aligned": "ᎪᎱᏍᏗ ᏗᏓᏕᎵᏎᏗ ᎨᏒᎢ,",
+        "ftm_raw_ocr": "ᎪᎱᏍᏗ ᏗᏓᏕᎵᏎᏗ ᎨᏒᎢ,",
+        "ftm_confidence": 74.0
+      }
+    ]
+  },
+  "150605": {
+    "image_path": "images/150605.png",
+    "cherokee_gt": "ᎠᎴ ᎬᏍᎦᎢᏍᏓᎩ ᎤᏂᏬᏂᎯᏍᏗ ᎨᏒ ᏴᏫ ᎤᎪᏏᏛ ᏧᎾᏓᏅᏘ, ᎤᏂᏂᎩᏛ ᏚᏳᎪᏛᎢ, ᎨᏅᎢᏍᏗ ᎨᏒ ᎤᏁᎳᏅᎯ ᏗᏁᎶᏙᏗ ᎢᏧᎳᎭ ᎠᏁᎵᏍᎩ.  ᎾᏍᎩ ᎢᏳᎾᏍᏗ ᏕᎭᏓᏅᎡᎮᏍᏗ.",
+    "verse_number": "5",
+    "lines": [
+      {
+        "line_crop": "line_crops/150605_line_00.png",
+        "stock_aligned": "5 ᎠᎴ ᎬᏍᎦᎢᏍᏓᎩ ᎤᏂᏬᏂᎯᏍᏗ",
+        "stock_raw_ocr": "ᏱᏎᏄ ᎠᎴ ᎬᏍᎦᎢᏍᏓᎩ ᎤᏂᏬᏂᎯᏍᏗᏘ",
+        "ftm_aligned": "5 ᎠᎴ ᎬᏍᎦᎢᏍᏓᎩ ᎤᏂᏬᏂᎯᏍᏗ",
+        "ftm_raw_ocr": "5 ᎠᎴ ᎬᏍᎦᎢᏍᏓᎩ ᎤᏂᏬᏂᎯᏍᏗ",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150605_line_01.png",
+        "stock_aligned": "ᎨᏒ ᏴᏫ ᎤᎪᏏᏛ ᏧᎾᏓᏅᏘ, ᎤᏂᏂᎩᏛ",
+        "stock_raw_ocr": "ᎨᏒ ᏴᏫ ᎤᎪᏏᏛ ᏧᎾᏖᏅᏘ, ᎤᏂᏂᎩᏛ",
+        "ftm_aligned": "ᎨᏒ ᏴᏫ ᎤᎪᏏᏛ ᏧᎾᏓᏅᏘ, ᎤᏂᏂᎩᏛ",
+        "ftm_raw_ocr": "ᎨᏒ ᏴᏫ ᎤᎪᏏᏛ ᏧᎾᏓᏅᏘ, ᎤᏂᏂᎩᏛ",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150605_line_02.png",
+        "stock_aligned": "ᏚᏳᎪᏛᎢ, ᎨᏅᎢᏍᏗ ᎨᏒ ᎤᏁᎳᏅᎯ",
+        "stock_raw_ocr": "ᏚᏅᎪᏛᎢ, ᎨᎰᏅᎢᏍᏗ ᎨᏒ ᎤᏁᎳᏅᎯ",
+        "ftm_aligned": "ᏚᏳᎪᏛᎢ, ᎨᏅᎢᏍᏗ ᎨᏒ ᎤᏁᎳᏅᎯ",
+        "ftm_raw_ocr": "ᏚᏳᎪᏛᎢ, ᎨᏅᎢᏍᏗ ᎨᏒ ᎤᏁᎳᏅᎯ",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150605_line_03.png",
+        "stock_aligned": "ᏗᏁᎶᏙᏗ ᎢᏧᎳᎭ ᎠᏁᎵᏍᎩ. ᎾᏍᎩ",
+        "stock_raw_ocr": "ᏘᏁᎶᏙᏗ ᎢᏧᎳᎭ ᎠᏁᎵᏍᎩ. ᎾᏍᎩ",
+        "ftm_aligned": "ᏗᏁᎶᏙᏗ ᎢᏧᎳᎭ ᎠᏁᎵᏍᎩ. ᎾᏍᎩ",
+        "ftm_raw_ocr": "ᏗᏁᎶᏙᏗ ᎢᏧᎳᎭ ᎠᏁᎵᏍᎩ. ᎾᏍᎩ",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150605_line_04.png",
+        "stock_aligned": "ᎢᏳᎾᏍᏗ ᏕᎭᏓᏅᎡᎮᏍᏗ.",
+        "stock_raw_ocr": "ᎢᏳᎾᏍᏗ ᏕᎭᏓᏖᏅᎡᎮᏍᏗ,",
+        "ftm_aligned": "ᎢᏳᎾᏍᏗ ᏕᎭᏓᏅᎡᎮᏍᏗ.",
+        "ftm_raw_ocr": "ᎢᏳᎾᏍᏗ ᎤᎭᏓᏅᎡᎮᏍᏗ.",
+        "ftm_confidence": 61.0
+      }
+    ]
+  },
+  "150606": {
+    "image_path": "images/150606.png",
+    "cherokee_gt": "ᎤᏁᎳᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᎠᏓᏅᏓᏗᏍᏗ ᎨᏒ, ᎾᏍᎩ ᎤᏣᏘ ᎨᏅᎢᏍᏗ.",
+    "verse_number": "6",
+    "lines": [
+      {
+        "line_crop": "line_crops/150606_line_00.png",
+        "stock_aligned": "6 ᎤᏁᎳᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ",
+        "stock_raw_ocr": "Ꮾ ᎤᏁᎳᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ",
+        "ftm_aligned": "6 ᎤᏁᎳᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ",
+        "ftm_raw_ocr": "ᎾᏮ ᎤᏁᎳᏅᎯᏍᎩᏂ ᏗᏁᎶᏙᏗ ᎨᏒ",
+        "ftm_confidence": 65.0
+      },
+      {
+        "line_crop": "line_crops/150606_line_01.png",
+        "stock_aligned": "ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᎠᏓᏅᏓᏗᏍᏗ ᎨᏒ,",
+        "stock_raw_ocr": "ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᎠᏓᏅᏖᏘᏍᏘ ᎨᏥᏒ,",
+        "ftm_aligned": "ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᎠᏓᏅᏓᏗᏍᏗ ᎨᏒ,",
+        "ftm_raw_ocr": "ᎠᎴ ᏅᏩᏙᎯᏯᏛ ᎠᏓᏅᏓᏗᏍᏗ ᎨᏥ,",
+        "ftm_confidence": 65.0
+      },
+      {
+        "line_crop": "line_crops/150606_line_02.png",
+        "stock_aligned": "ᎾᏍᎩ ᎤᏣᏘ ᎨᏅᎢᏍᏗ.",
+        "stock_raw_ocr": "ᎧᏄᏍᎩ ᎤᏣᏘ ᎨᏏᎨᏅᎢᏍᏗ.",
+        "ftm_aligned": "ᎾᏍᎩ ᎤᏣᏘ ᎨᏅᎢᏍᏗ.",
+        "ftm_raw_ocr": "ᎾᏍᎩ ᎤᏣᏘ ᎨᏅᎢᏍᏗ.",
+        "ftm_confidence": 84.0
+      }
+    ]
+  },
+  "150607": {
+    "image_path": "images/150607.png",
+    "cherokee_gt": "ᏝᏰᏃ ᎪᎱᏍᏗ ᏱᎩᏲᎴ ᎠᏂ ᎡᎶᎯ, ᎠᎴ ᎬᏂᎨᏳᎢᏳ Ꮭ ᎪᎱᏍᏗ ᏴᎨᏗᏄᎪᏩ.",
+    "verse_number": "7",
+    "lines": [
+      {
+        "line_crop": "line_crops/150607_line_00.png",
+        "stock_aligned": "7 ᏝᏰᏃ ᎪᎱᏍᏗ ᏱᎩᏲᎴ ᎠᏂ ᎡᎶᎯ,",
+        "stock_raw_ocr": "7 ᏝᏰᏃ ᎪᎱᏍᏗ ᏱᎩᏲᎴ ᎠᏂ ᎡᎶᎯ,",
+        "ftm_aligned": "7 ᏝᏰᏃ ᎪᎱᏍᏗ ᏱᎩᏲᎴ ᎠᏂ ᎡᎶᎯ,",
+        "ftm_raw_ocr": "7 ᏝᏰᏃ ᎪᎱᏍᏗ ᏱᎩᏲᎴ ᎠᏂ ᎡᎶᎯ,",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150607_line_01.png",
+        "stock_aligned": "ᎠᎴ ᎬᏂᎨᏳᎢᏳ Ꮭ ᎪᎱᏍᏗ ᏴᎨᏗᏄ-",
+        "stock_raw_ocr": "ᎠᎴ ᎬᏂᎨᏒᎢᏳ’ Ꮭ ᎪᎱᏱᏗ ᏴᎨᏘᏄ-",
+        "ftm_aligned": "ᎠᎴ ᎬᏂᎨᏳᎢᏳ Ꮭ ᎪᎱᏍᏗ ᏴᎨᏗᏄ-",
+        "ftm_raw_ocr": "ᎠᎴ ᎬᏂᎨᏥᎢᏳ Ꮭ ᎪᎱᏍᏗ ᏴᎨᏗᏄ-",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150607_line_02.png",
+        "stock_aligned": "ᎪᏩ.",
+        "stock_raw_ocr": "ᎪᏩ;Ꮣ",
+        "ftm_aligned": "ᎪᏩ.",
+        "ftm_raw_ocr": "ᎪᏩ.",
+        "ftm_confidence": 26.0
+      }
+    ]
+  },
+  "150608": {
+    "image_path": "images/150608.png",
+    "cherokee_gt": "ᎢᏳᏃ ᏱᎩᎭ ᎠᎵᏍᏓᏴᏗ ᎠᎴ ᏗᎦᏄᏬ ᏱᏗᎩᎾᎠ, ᎾᏍᎩ ᏰᎵᏉ ᎢᎩᏰᎸᏎᏍᏗ.",
+    "verse_number": "8",
+    "lines": [
+      {
+        "line_crop": "line_crops/150608_line_00.png",
+        "stock_aligned": "8 ᎢᏳᏃ ᏱᎩᎭ ᎠᎵᏍᏓᏴᏗ ᎠᎴ",
+        "stock_raw_ocr": "Ꮪ ᎢᏊᏨᏃ ᏱᎩᎭ ᎠᎵᏍᏓᏴᏗ ᎠᎴ ᏗᏓ",
+        "ftm_aligned": "8 ᎢᏳᏃ ᏱᎩᎭ ᎠᎵᏍᏓᏴᏗ ᎠᎴ Ꮧ-",
+        "ftm_raw_ocr": "ᏚᎢᏳᏃ ᏱᎩᎭ ᎠᎵᏍᏓᏴᏗ ᎠᎴ Ꮧ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150608_line_01.png",
+        "stock_aligned": "ᏗᎦᏄᏬ ᏱᏗᎩᎾᎠ, ᎾᏍᎩ ᏰᎵᏉ",
+        "stock_raw_ocr": "ᎦᏄᏬ ᏱᏗᎩᎾᎠ, ᎾᏍᎩ ᏰᎵᏉ ᎢᎩᏰ”",
+        "ftm_aligned": "ᎦᏄᏬ ᏱᏗᎩᎾᎠ, ᎾᏍᎩ ᏰᎵᏉ ᎢᎩᏰ-",
+        "ftm_raw_ocr": "ᎦᏄᏬ ᏱᏗᎩᎾᎠ, ᎾᏍᎩ ᏰᎵᏉ ᎢᎩᏰ-",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150608_line_02.png",
+        "stock_aligned": "ᎢᎩᏰᎸᏎᏍᏗ.",
+        "stock_raw_ocr": "ᏄᏎᏍᏗ,",
+        "ftm_aligned": "ᎸᏎᏍᏗ.",
+        "ftm_raw_ocr": "ᏗᏎᏍᏗ.",
+        "ftm_confidence": 0.0
+      }
+    ]
+  },
+  "150609": {
+    "image_path": "images/150609.png",
+    "cherokee_gt": "ᎤᎾᏚᎵᏍᎩᏍᎩᏂ ᏥᎩ ᎤᏁᏅᎢᏍᏗᏱ, ᎤᏓᎴᎾᏍᏗᏱ ᎠᎴ ᎠᏌᏛ ᏫᏓᏂᏅᎪᎢ, ᎠᎴ ᎤᏣᏘ ᎢᏳᏓᎴᎩ ᎤᎵᏍᎦᏂᏍᏛ ᎠᎴ ᎤᏲ ᎢᏯᏓᏛᏁᎯ ᎠᎬᎥᎯᏍᏗ ᎨᏒᎢ; ᎾᏍᎩ ᏥᏚᏂᏃᏴᏘᏍᏗᎭ ᏴᏫ ᎾᎿᎭᎠᎩᎵᏲᎢᏍᏗ ᎨᏒ ᎠᎴ ᎠᏲᎱᎯᏍᏗ ᎨᏒᎢ.",
+    "verse_number": "9",
+    "lines": [
+      {
+        "line_crop": "line_crops/150609_line_00.png",
+        "stock_aligned": "9 ᎤᎾᏚᎵᏍᎩᏍᎩᏂ ᏥᎩ ᎤᏁᏅᎢ-",
+        "stock_raw_ocr": "9. ᎤᏮᏚᎵᏍᎩᏍᎩᏂ ᏥᎩ ᎤᏁᏅᎢ-",
+        "ftm_aligned": "9 ᎤᎾᏚᎵᏍᎩᏍᎩᏂ ᏥᎩ ᎤᏁᏅᎢ-",
+        "ftm_raw_ocr": "3 ᎤᎾᏚᎵᏍᎩᏍᎩᏂ ᏥᎩ ᎤᏁᏅᎢ-",
+        "ftm_confidence": 67.0
+      },
+      {
+        "line_crop": "line_crops/150609_line_01.png",
+        "stock_aligned": "ᏍᏗᏱ, ᎤᏓᎴᎾᏍᏗᏱ ᎠᎴ ᎠᏌᏛ ᏫᏓᏂ-",
+        "stock_raw_ocr": "ᏍᏘᏱ, ᎤᏓᎴᎾᏍᏘᏱ ᎠᎴ ᎠᏌᏛ ᏫᏓᏂᎴ-",
+        "ftm_aligned": "ᏍᏗᏱ, ᎤᏓᎴᎾᏍᏗᏱ ᎠᎴ ᎠᏌᏛ ᏫᏓᏂ-",
+        "ftm_raw_ocr": "ᏍᏗᏱ, ᎤᏓᎴᎾᏍᏗᏱ ᎠᎴ ᎠᏌᏛ ᏫᏓᏂ-",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150609_line_02.png",
+        "stock_aligned": "ᏅᎪᎢ, ᎠᎴ ᎤᏣᏘ ᎢᏳᏓᎴᎩ ᎤᎵᏍᎦᏂ-",
+        "stock_raw_ocr": "ᏅᎪᎢ; ᎠᎴ ᎤᏣᏘ ᎢᏳᏖᎴᎩ ᎤᎵᏍᎦᏂ-",
+        "ftm_aligned": "ᏅᎪᎢ, ᎠᎴ ᎤᏣᏘ ᎢᏳᏓᎴᎩ ᎤᎵᏍᎦᏂ-",
+        "ftm_raw_ocr": "ᏅᎪᎢ, ᎠᎴ ᎤᏣᏘ ᎢᏳᏓᎴᎩ ᎤᎵᏍᎦᏂ-",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150609_line_03.png",
+        "stock_aligned": "ᏍᏛ ᎠᎴ ᎤᏲ ᎢᏯᏓᏛᏁᎯ ᎠᎬᎥᎯᏍᏗ",
+        "stock_raw_ocr": "ᏍᏛ ᎠᎴ ᎤᏲ ᎢᏯᏓᏖᏛᏁᎯ ᎠᎬᎥᎯᏍᏘ",
+        "ftm_aligned": "ᏍᏛ ᎠᎴ ᎤᏲ ᎢᏯᏓᏛᏁᎯ ᎠᎬᎥᎯᏍᏗ",
+        "ftm_raw_ocr": "ᏍᏛ ᎠᎴ ᎤᏲ ᎢᏯᏓᏛᏁᎯ ᎠᎬᎥᎯᏍᏗ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150609_line_04.png",
+        "stock_aligned": "ᎨᏒᎢ; ᎾᏍᎩ ᏥᏚᏂᏃᏴᏘᏍᏗᎭ ᏴᏫ",
+        "stock_raw_ocr": "ᎨᏒᎢ” ᎾᏍᎩ ᏥᏚᏂᏃᏴᏘᏍᏗᎭ ᏴᏫ",
+        "ftm_aligned": "ᎨᏒᎢ; ᎾᏍᎩ ᏥᏚᏂᏃᏴᏘᏍᏗᎭ ᏴᏫ",
+        "ftm_raw_ocr": "ᎨᏒᎢ; ᎾᏍᎩ ᏥᏚᏂᏃᏴᏘᏍᏗᎭ ᏴᏫ",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150609_line_05.png",
+        "stock_aligned": "ᎾᎿᎭᎠᎩᎵᏲᎢᏍᏗ ᎨᏒ ᎠᎴ ᎠᏲᎱᎯᏍᏗ",
+        "stock_raw_ocr": "ᎾᎧᎿ ᎠᎩᎵᏲᎢᏍᏘᏗ ᎨᏒ ᎠᎴ ᎠᏲᎱᎯᏍᏗ",
+        "ftm_aligned": "ᎾᎿᎭᎠᎩᎵᏲᎢᏍᏗ ᎨᏒ ᎠᎴ ᎠᏲᎱᎯᏍᏗ",
+        "ftm_raw_ocr": "ᎾᎿ ᎠᎩᎵᏲᎢᏍᏗ ᎨᏒ ᎠᎴ ᎠᏲᎱᎯᏍᏗ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150609_line_06.png",
+        "stock_aligned": "ᎨᏒᎢ.",
+        "stock_raw_ocr": "",
+        "ftm_aligned": "ᎨᏒᎢ.",
+        "ftm_raw_ocr": "",
+        "ftm_confidence": 0.0
+      }
+    ]
+  },
+  "150610": {
+    "image_path": "images/150610.png",
+    "cherokee_gt": "ᎠᏕᎸᏰᏃ ᏗᎨᏳᏗ ᎨᏒ ᎾᎿᎭᏗᏓᎴᎲᏍᎦ ᏄᏓᎴᏒ ᎤᏲᎢ, ᎾᏍᎩ ᎩᎶ ᎤᏂᎬᎥᏍᎬᎢ ᎤᎾᏞᏒ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎤᏅᏒ ᏚᎾᏓᏘᏍᏔᏅ ᎤᏣᏘ ᎤᏲ ᎠᏓᏅᏓᏗᏍᏗ ᎨᏒᎢ.",
+    "verse_number": "10",
+    "lines": [
+      {
+        "line_crop": "line_crops/150610_line_00.png",
+        "stock_aligned": "10 ᎠᏕᎸᏰᏃ ᏗᎨᏳᏗ ᎨᏒ ᎾᎿᎭᏗᏓᎴᎲᏍᎦ",
+        "stock_raw_ocr": "10 ᎠᏕᎸᏰᏃ ᏘᎨᏳᏘ ᏥᎨᏒ ᎾᎿ ᏘᏖᏓ-",
+        "ftm_aligned": "10 ᎠᏕᎸᏰᏃ ᏗᎨᏳᏗ ᎨᏒ ᎾᎿᎭᏗᏓ-",
+        "ftm_raw_ocr": "10 ᎠᏕᎸᏰᏃ ᏗᎨᏳᏗ ᎨᏒ ᎾᎿ ᏗᏓ-",
+        "ftm_confidence": 62.0
+      },
+      {
+        "line_crop": "line_crops/150610_line_01.png",
+        "stock_aligned": "ᏄᏓᎴᏒ ᎤᏲᎢ, ᎾᏍᎩ ᎩᎶ ᎤᏂ-",
+        "stock_raw_ocr": "ᎴᎲᏍᎦ ᏄᏖᎴᏆᎡ ᎤᏲᎢ, ᎾᏍᎩ ᎩᎶ ᎤᏂᏑᎩ-",
+        "ftm_aligned": "ᎴᎲᏍᎦ ᏄᏓᎴᏒ ᎤᏲᎢ, ᎾᏍᎩ ᎩᎶ ᎤᏂ-",
+        "ftm_raw_ocr": "ᎴᎲᏍᎦ ᏄᏓᎴᏒ ᎤᏲᎢ, ᎾᏍᎩ ᎩᎶ ᎤᏂ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150610_line_02.png",
+        "stock_aligned": "ᎬᎥᏍᎬᎢ ᎤᎾᏞᏒ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ",
+        "stock_raw_ocr": "ᎬᎥᏍᎬᎢ ᎤᎾᏞᏒ ᎪᎯᏳᏘ ᏥᎷᏒᎢ, ᎠᎴ",
+        "ftm_aligned": "ᎬᎥᏍᎬᎢ ᎤᎾᏞᏒ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_raw_ocr": "ᎬᎥᏍᎬᎢ ᎤᎾᏞᏒ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_confidence": 77.0
+      },
+      {
+        "line_crop": "line_crops/150610_line_03.png",
+        "stock_aligned": "ᎤᏅᏒ ᏚᎾᏓᏘᏍᏔᏅ ᎤᏣᏘ ᎤᏲ ᎠᏓᏅᏓᏗᏍᏗ",
+        "stock_raw_ocr": "ᎤᏅᏝᏆ - ᏚᎾᏓᏘᏍᏔᏅ ᎤᏣᏘ ᎤᏲ ᎠᏓᏅᏅ”",
+        "ftm_aligned": "ᎤᏅᏒ ᏚᎾᏓᏘᏍᏔᏅ ᎤᏣᏘ ᎤᏲ ᎠᏓᏅ-",
+        "ftm_raw_ocr": "ᎤᏅᏴ ᏚᎾᏓᏘᏍᏔᏅ ᎤᏣᏘ ᎤᏰ ᎠᏓᏅ-",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150610_line_04.png",
+        "stock_aligned": "ᎨᏒᎢ.",
+        "stock_raw_ocr": "ᏓᏘᏍᏗ ᏥᎡᎢ.",
+        "ftm_aligned": "ᏓᏗᏍᏗ ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᏓᏗᏍᏗ ᎨᏒᎢ.",
+        "ftm_confidence": 85.0
+      }
+    ]
+  },
+  "150611": {
+    "image_path": "images/150611.png",
+    "cherokee_gt": "ᏂᎯᏍᎩᏂ ᎯᏍᎦᏯ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎦ ᎾᏍᎩ ᎯᎠ ᏕᎭᏓᏅᎡᎮᏍᏗ, ᎠᎴ ᏕᎯᏍᏓᏩᏗᏎᏍᏗ ᏚᏳᎪᏛ ᎨᏒᎢ, ᎠᎴ ᎤᏁᎳᏅᎯ ᎦᎾᏰᎯᏍᏗ ᎨᏒᎢ, ᎠᎴ ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎠᏓᎨᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎬᏂᏗᏳ ᎨᏒᎢ, ᎠᎴ ᎤᏓᏅᏘᏳ ᎨᏒᎢ.",
+    "verse_number": "11",
+    "lines": [
+      {
+        "line_crop": "line_crops/150611_line_00.png",
+        "stock_aligned": "11 ᏂᎯᏍᎩᏂ ᎯᏍᎦᏯ ᎤᏁᎳᏅᎯ",
+        "stock_raw_ocr": "11 ᏂᎯᏍᎩᏂ ᎯᏍᎦᏯ ᎤᏁᎳᏅᎯ",
+        "ftm_aligned": "11 ᏂᎯᏍᎩᏂ ᎯᏍᎦᏯ ᎤᏁᎳᏅᎯ",
+        "ftm_raw_ocr": "11 ᏂᎯᏍᎩᏂ ᎯᏍᎦᏯ ᎤᏁᎳᏅᎯ",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150611_line_01.png",
+        "stock_aligned": "ᎤᏤᎵᎦ ᎾᏍᎩ ᎯᎠ ᏕᎭᏓᏅᎡᎮᏍᏗ, ᎠᎴ",
+        "stock_raw_ocr": "ᎤᏤᎵᎦ ᎾᏍᎩ ᎯᎠ ᏕᎭᏓᏅᎡᎮᏍᏘ, ᎠᎴ",
+        "ftm_aligned": "ᎤᏤᎵᎦ ᎾᏍᎩ ᎯᎠ ᏕᎭᏓᏅᎡᎮᏍᏗ, ᎠᎴ",
+        "ftm_raw_ocr": "ᎤᏤᎵᎦ ᎾᏍᎩ ᎯᎠ ᏕᎤᎭᏓᏅᎡᎮᏍᏗ, ᎠᎴ",
+        "ftm_confidence": 68.0
+      },
+      {
+        "line_crop": "line_crops/150611_line_02.png",
+        "stock_aligned": "ᏕᎯᏍᏓᏩᏗᏎᏍᏗ ᏚᏳᎪᏛ ᎨᏒᎢ, ᎠᎴ",
+        "stock_raw_ocr": "ᏕᎯᏍᏓᏩᏘᏎᏍᏘ ᏚᏳᎪᏛ ᏥᎨᏒᎢ, ᎠᎴ",
+        "ftm_aligned": "ᏕᎯᏍᏓᏩᏗᏎᏍᏗ ᏚᏳᎪᏛ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_raw_ocr": "ᎤᎯᏍᏓᏩᏗᏎᏍᏗ ᏚᏳᎪᏛ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_confidence": 70.0
+      },
+      {
+        "line_crop": "line_crops/150611_line_03.png",
+        "stock_aligned": "ᎤᏁᎳᏅᎯ ᎦᎾᏰᎯᏍᏗ ᎨᏒᎢ, ᎠᎴ",
+        "stock_raw_ocr": "ᎤᏁᎳᏅᎯ ᎦᏮᏰᎯᏍᏗ ᎨᎡᏒᎢ, ᎠᎴ ᎪᏅᎨᏅ",
+        "ftm_aligned": "ᎤᏁᎳᏅᎯ ᎦᎾᏰᎯᏍᏗ ᎨᏒᎢ, ᎠᎴ Ꭺ-",
+        "ftm_raw_ocr": "ᎤᏁᎳᏅᎯ ᎦᎾᏰᎯᏍᏗ ᎨᏥᏒᎢ, ᎠᎴ Ꭺ-",
+        "ftm_confidence": 73.0
+      },
+      {
+        "line_crop": "line_crops/150611_line_04.png",
+        "stock_aligned": "ᎪᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎠᏓᎨᏳᏗ ᎨᏒᎢ,",
+        "stock_raw_ocr": "ᎯᏳᏘ ᎨᏒᎢ, ᎠᎴ ᎠᏓᎨᏳᏗ ᎨᏒᎢ,",
+        "ftm_aligned": "ᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎠᏓᎨᏳᏗ ᎨᏒᎢ,",
+        "ftm_raw_ocr": "ᎯᏳᏗ ᎨᏒᎢ, ᎠᎴ ᎠᏓᎨᏳᏗ ᎨᏒᎢ,",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150611_line_05.png",
+        "stock_aligned": "ᎠᎴ ᎬᏂᏗᏳ ᎨᏒᎢ, ᎠᎴ ᎤᏓᏅᏘᏳ",
+        "stock_raw_ocr": "ᎠᎴ ᎬᏂᏘᏳ ᎨᏒᎢ, ᎠᎴ ᎤᏓᏅᏘᏳ”",
+        "ftm_aligned": "ᎠᎴ ᎬᏂᏗᏳ ᎨᏒᎢ, ᎠᎴ ᎤᏓᏅᏘᏳ",
+        "ftm_raw_ocr": "ᎠᎴ ᎬᏂᏗᏳ ᎨᏒᎢ, ᎠᎴ ᎤᏓᏅᏘᏳ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150611_line_06.png",
+        "stock_aligned": "ᎨᏒᎢ.",
+        "stock_raw_ocr": "Ꮽ“ᎡᏒᎢ,",
+        "ftm_aligned": "ᎨᏒᎢ.",
+        "ftm_raw_ocr": "ᎨᏥᎢ.",
+        "ftm_confidence": 60.0
+      }
+    ]
+  },
+  "150612": {
+    "image_path": "images/150612.png",
+    "cherokee_gt": "ᎪᎯᏳᏗ ᎨᏒ ᎲᏗᏍᎨᏍᏗ ᎣᏍᏛ ᎠᎵᏍᏗ ᎨᏒ ᎭᎵᎮᏍᏗ.  ᎾᎵᏍᏆᏗᏍᎬᎾ ᎬᏂᏛ ᎨᏒ ᏘᏂᏴ, ᎾᎿᎭᎾᏍᏉ ᎡᏣᏯᏅᏛ ᏥᎩ, ᎠᎴ ᏣᏃᏅᎯ ᏥᎩ ᎣᏍᏛ ᎧᏃᎮᏗ ᎨᏒ ᎤᏂᏣᏘ ᎠᏂᎦᏔᎯ ᎠᏂᏚᏔᎲᎢ.",
+    "verse_number": "12",
+    "lines": [
+      {
+        "line_crop": "line_crops/150612_line_00.png",
+        "stock_aligned": "12 ᎪᎯᏳᏗ ᎨᏒ ᎲᏗᏍᎨᏍᏗ ᎣᏍᏛ",
+        "stock_raw_ocr": "129 ᎪᎯᏳᏘ ᎨᎬᏒ ᎲᏘᏍᎨᏍᏗ ᎣᏍᏛ",
+        "ftm_aligned": "12 ᎪᎯᏳᏗ ᎨᏒ ᎲᏗᏍᎨᏍᏗ ᎣᏍᏛ",
+        "ftm_raw_ocr": "12 ᎪᎯᏳᏗ ᎨᏴ ᎲᏗᏍᎨᏍᏗ ᎣᏍᏛ",
+        "ftm_confidence": 55.0
+      },
+      {
+        "line_crop": "line_crops/150612_line_01.png",
+        "stock_aligned": "ᎠᎵᏍᏗ ᎨᏒ ᎭᎵᎮᏍᏗ. ᎾᎵᏍᏆᏗ-",
+        "stock_raw_ocr": "ᎠᎵᏍᏗ ᎨᎢᏒ ᎭᏝᎮᏍᏗ. ᎾᎵᏍᏆᏗ-",
+        "ftm_aligned": "ᎠᎵᏍᏗ ᎨᏒ ᎭᎵᎮᏍᏗ. ᎾᎵᏍᏆᏗ-",
+        "ftm_raw_ocr": "ᎠᎵᏍᏗ ᎨᏒ ᎭᎵᎮᏍᏗ. ᎾᎵᏍᏆᏗ-",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150612_line_02.png",
+        "stock_aligned": "ᏍᎬᎾ ᎬᏂᏛ ᎨᏒ ᏘᏂᏴ, ᎾᎿᎭᎾᏍᏉ",
+        "stock_raw_ocr": "ᏍᎬᎾ ᎬᏂᏛ ᏥᎩᏒ ᏘᏂᏴ, ᎾᎿ ᎾᏍᏉ",
+        "ftm_aligned": "ᏍᎬᎾ ᎬᏂᏛ ᎨᏒ ᏘᏂᏴ, ᎾᎿᎭᎾᏍᏉ",
+        "ftm_raw_ocr": "ᏍᎬᎾ ᎬᏂᏛ ᎨᏒ ᏘᏂᏴ, ᎾᎿ ᎾᏍᏉ",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150612_line_03.png",
+        "stock_aligned": "ᎡᏣᏯᏅᏛ ᏥᎩ, ᎠᎴ ᏣᏃᏅᎯ ᏥᎩ",
+        "stock_raw_ocr": "ᎡᏣᏯᏅᏛ ᏥᎩ, ᎠᎴ ᏣᏃᏅᎯ ᏥᎩ Ꭳ“",
+        "ftm_aligned": "ᎡᏣᏯᏅᏛ ᏥᎩ, ᎠᎴ ᏣᏃᏅᎯ ᏥᎩ Ꭳ-",
+        "ftm_raw_ocr": "ᎡᏣᏯᏅᏛ ᏥᎩ, ᎠᎴ ᏣᏃᏅᎯ ᏥᎩ Ꭳ-",
+        "ftm_confidence": 90.0
+      },
+      {
+        "line_crop": "line_crops/150612_line_04.png",
+        "stock_aligned": "ᎣᏍᏛ ᎧᏃᎮᏗ ᎨᏒ ᎤᏂᏣᏘ ᎠᏂᎦᏔᎯ",
+        "stock_raw_ocr": "ᏍᏛ ᎧᏃᎮᏗ ᏥᎬᏌᎡ ᎤᏂᏣᏘ ᎠᏂᎦᏔᎯ ᎠᏅ",
+        "ftm_aligned": "ᏍᏛ ᎧᏃᎮᏗ ᎨᏒ ᎤᏂᏣᏘ ᎠᏂᎦᏔᎯ Ꭰ-",
+        "ftm_raw_ocr": "ᏍᏛ ᎧᏃᎮᏗ ᎨᏴ ᎤᏂᏣᏘ ᎠᏂᎦᏔᎯ Ꭰ-",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150612_line_05.png",
+        "stock_aligned": "ᎠᏂᏚᏔᎲᎢ.",
+        "stock_raw_ocr": "ᏂᎦᏔᎲᎢ.",
+        "ftm_aligned": "ᏂᏚᏔᎲᎢ.",
+        "ftm_raw_ocr": "ᏂᎦᏔᎲᎢ.",
+        "ftm_confidence": 51.0
+      }
+    ]
+  },
+  "150613": {
+    "image_path": "images/150613.png",
+    "cherokee_gt": "ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ, ᎾᏍᎩ ᏗᎬᏂᏗᏍᎩ ᏥᎩ ᏂᎦᎥ ᏄᎾᏓᎴᏒᎢ, ᎠᎴ ᎠᎦᏔᎲ ᏥᏌ ᎦᎶᏁᏛ ᎾᏍᎩ ᏆᏂᏗ ᏆᎴᏗ ᎠᎦᏔᎲ ᎤᏃᏅᎯ ᏥᎩ ᎣᏍᏛ ᎧᏃᎮᏛ ᎨᏒᎢ,",
+    "verse_number": "13",
+    "lines": [
+      {
+        "line_crop": "line_crops/150613_line_00.png",
+        "stock_aligned": "13 ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ,",
+        "stock_raw_ocr": "18 ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ;,",
+        "ftm_aligned": "13 ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ,",
+        "ftm_raw_ocr": "18 ᎬᏁᏤᎭ ᎤᏁᎳᏅᎯ ᎠᎦᏔᎲᎢ,",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150613_line_01.png",
+        "stock_aligned": "ᎾᏍᎩ ᏗᎬᏂᏗᏍᎩ ᏥᎩ ᏂᎦᎥ ᏄᎾᏓᎴᏒᎢ,",
+        "stock_raw_ocr": "ᎧᏄᏍᎩ ᏗᎬᏂᏘᏍᎩ ᏥᎩ ᏂᎦᎥ ᏄᎾᏓᎴ”",
+        "ftm_aligned": "ᎾᏍᎩ ᏗᎬᏂᏗᏍᎩ ᏥᎩ ᏂᎦᎥ ᏄᎾᏓᎴ-",
+        "ftm_raw_ocr": "ᎾᏍᎩ ᏗᎬᏂᏗᏍᎩ ᏥᎩ ᏂᎦᎥ ᏄᎾᏓᎴ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150613_line_02.png",
+        "stock_aligned": "ᎠᎴ ᎠᎦᏔᎲ ᏥᏌ ᎦᎶᏁᏛ ᎾᏍᎩ",
+        "stock_raw_ocr": "ᎡᎢ, ᎠᎴ ᎠᎦᏔᎲ ᎰᏢᎠᏌ ᎦᎶᏁᏛ ᎾᏍᎩ",
+        "ftm_aligned": "ᏒᎢ, ᎠᎴ ᎠᎦᏔᎲ ᏥᏌ ᎦᎶᏁᏛ ᎾᏍᎩ",
+        "ftm_raw_ocr": "ᏒᎢ, ᎠᎴ ᎠᎦᏔᎲ ᏥᏌ ᎦᎶᏁᏛ ᎾᏍᎩ",
+        "ftm_confidence": 77.0
+      },
+      {
+        "line_crop": "line_crops/150613_line_03.png",
+        "stock_aligned": "ᏆᏂᏗ ᏆᎴᏗ ᎠᎦᏔᎲ ᎤᏃᏅᎯ ᏥᎩ",
+        "stock_raw_ocr": "ᎥᏞᏂᏘ ᏆᎴᏘ ᎠᎦᏔᎲ ᎤᏃᏅᎯ ᏥᎩ “",
+        "ftm_aligned": "ᏆᏂᏗ ᏆᎴᏗ ᎠᎦᏔᎲ ᎤᏃᏅᎯ ᏥᎩ Ꭳ-",
+        "ftm_raw_ocr": "ᎠᏝᏂᏗ ᎠᎴᏗ ᎠᎦᏔᎲ ᎤᏃᏅᎯ ᏥᎩ Ꭳ-",
+        "ftm_confidence": 70.0
+      },
+      {
+        "line_crop": "line_crops/150613_line_04.png",
+        "stock_aligned": "ᎣᏍᏛ ᎧᏃᎮᏛ ᎨᏒᎢ,",
+        "stock_raw_ocr": "ᏍᏛ ᎧᏃᎮᏛ ᎰᎨ“ᏒᎢ,",
+        "ftm_aligned": "ᏍᏛ ᎧᏃᎮᏛ ᎨᏒᎢ,",
+        "ftm_raw_ocr": "ᏍᏛ ᎧᏃᎮᏛ ᎨᏒᎢ.,",
+        "ftm_confidence": 79.0
+      }
+    ]
+  },
+  "150614": {
+    "image_path": "images/150614.png",
+    "cherokee_gt": "ᎾᏍᎩ ᏣᏍᏆᏂᎪᏙᏗᏱ ᏗᎧᎿᎭᏩᏛᏍᏗ, ᏄᏓᏓᎸᎾ ᎠᎴ ᎪᎱᏍᏗ ᎦᏰᏤᎵᏎᏗ ᏂᎨᏒᎾ ᎢᏳᎵᏍᏙᏗᏱ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎦᎾᏄᎪᏥᎸ ᎬᏗᏍᎩ,",
+    "verse_number": "14",
+    "lines": [
+      {
+        "line_crop": "line_crops/150614_line_00.png",
+        "stock_aligned": "14 ᎾᏍᎩ ᏣᏍᏆᏂᎪᏙᏗᏱ ᏗᎧᎿᎭᏩᏛ-",
+        "stock_raw_ocr": "1Ꮞ ᎾᏍᎩ ᏣᏍᏆᏂᎪᏙᏘᏱ ᏘᎧᎿᏩᏛ-",
+        "ftm_aligned": "14 ᎾᏍᎩ ᏣᏍᏆᏂᎪᏙᏗᏱ ᏗᎧᎿᎭᏩᏛ-",
+        "ftm_raw_ocr": "1Ꮞ ᎾᏍᎩ ᏣᏍᏆᏂᎪᏙᏗᏱ ᏗᎧᎿᏩᏛ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150614_line_01.png",
+        "stock_aligned": "ᏍᏗ, ᏄᏓᏓᎸᎾ ᎠᎴ ᎪᎱᏍᏗ ᎦᏰᏤᎵᏎᏗ",
+        "stock_raw_ocr": "ᏍᏘ, ᏄᏓᏓᎸᎾ ᎠᎴ ᎪᎱᏍᏗ ᎦᏰᏤᎵᏝᏎᏘ",
+        "ftm_aligned": "ᏍᏗ, ᏄᏓᏓᎸᎾ ᎠᎴ ᎪᎱᏍᏗ ᎦᏰᏤᎵᏎᏗ",
+        "ftm_raw_ocr": "ᏍᏗ, ᏄᏓᏓᎸᎾ ᎠᎴ ᏙᎪᎱᏍᏗ ᎦᏰᏤᎵᏎᏗ",
+        "ftm_confidence": 74.0
+      },
+      {
+        "line_crop": "line_crops/150614_line_02.png",
+        "stock_aligned": "ᏂᎨᏒᎾ ᎢᏳᎵᏍᏙᏗᏱ ᎢᎦᏤᎵ ᎤᎬᏫ-",
+        "stock_raw_ocr": "ᏂᎨᏒᎾᎧ ᎢᏳᏝᏍᏙᏗᏱ ᎢᎦᏤᎵ ᎤᎬᏫ-",
+        "ftm_aligned": "ᏂᎨᏒᎾ ᎢᏳᎵᏍᏙᏗᏱ ᎢᎦᏤᎵ ᎤᎬᏫ-",
+        "ftm_raw_ocr": "ᏂᎨᏒᎾ ᎢᏳᎵᏍᏙᏗᏱ ᎢᎦᏤᎵ ᎤᎬᏫ-",
+        "ftm_confidence": 82.0
+      },
+      {
+        "line_crop": "line_crops/150614_line_03.png",
+        "stock_aligned": "ᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎦᎾᏄᎪᏥᎸ ᎬᏗᏍᎩ,",
+        "stock_raw_ocr": "ᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎦᎾᏄᎪᏥᎸ ᎬᏗᏍᎩ,",
+        "ftm_aligned": "ᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎦᎾᏄᎪᏥᎸ ᎬᏗᏍᎩ,",
+        "ftm_raw_ocr": "ᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎦᎾᏄᎪᏥᎸ ᎬᏗᏍᎩ,",
+        "ftm_confidence": 83.0
+      }
+    ]
+  },
+  "150615": {
+    "image_path": "images/150615.png",
+    "cherokee_gt": "ᎾᏍᎩ ᏨᎦᎾᏄᎪᏫᏏ ᎾᎯᏳ ᏧᎾᏄᎪᏫᏎᏗ ᎨᏒᎢ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ ᎤᏓᏅᏘ ᎠᎴ ᎤᏩᏒᎯ ᎤᎵᏂᎩᏛ ᎨᏒᎢ, ᎤᎬᏫᏳᎯ ᎤᏂᎬᏫᏳᎯ ᎠᏁᎲᎢ, ᎠᎴ ᎤᎬᏫᏳᏌᏕᎩ ᏄᏂᎬᏫᏳᏌᏕᎩ ᎠᏁᎲᎢ;",
+    "verse_number": "15",
+    "lines": [
+      {
+        "line_crop": "line_crops/150615_line_00.png",
+        "stock_aligned": "15 ᎾᏍᎩ ᏨᎦᎾᏄᎪᏫᏏ ᎾᎯᏳ ᏧᎾᏄ-",
+        "stock_raw_ocr": "19. ᎾᏍᎩ ᏨᎦᎾᏄᎪᏫᏏ ᎾᎯᏳ” ᏧᎾᏄ-",
+        "ftm_aligned": "15 ᎾᏍᎩ ᏨᎦᎾᏄᎪᏫᏏ ᎾᎯᏳ ᏧᎾᏄ-",
+        "ftm_raw_ocr": "155 ᎾᏍᎩ ᏨᎦᎾᏄᎪᏫᏏ ᎾᎯᏳ ᏧᎾᏄ-",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150615_line_01.png",
+        "stock_aligned": "ᎪᏫᏎᏗ ᎨᏒᎢ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ",
+        "stock_raw_ocr": "ᎪᏫᏎᏘ ᎨᏒᎢ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ Ꭴ",
+        "ftm_aligned": "ᎪᏫᏎᏗ ᎨᏒᎢ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ Ꭴ-",
+        "ftm_raw_ocr": "ᎪᏫᏎᏗ ᎨᏒᎢ, ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛ Ꭴ-",
+        "ftm_confidence": 85.0
+      },
+      {
+        "line_crop": "line_crops/150615_line_02.png",
+        "stock_aligned": "ᎤᏓᏅᏘ ᎠᎴ ᎤᏩᏒᎯ ᎤᎵᏂᎩᏛ ᎨᏒᎢ,",
+        "stock_raw_ocr": "ᏖᏅᏘ ᎠᎴ ᎤᏩᏒᎯ ᎤᎵᏝᏂᎩᏛ ᏥᎡᏒᎢ,;,",
+        "ftm_aligned": "ᏓᏅᏘ ᎠᎴ ᎤᏩᏒᎯ ᎤᎵᏂᎩᏛ ᎨᏒᎢ,",
+        "ftm_raw_ocr": "ᏓᏅᏘ ᎠᎴ ᎤᏩᏒᎯ ᎤᎵᏂᎩᏛ ᎨᏒᎢ,",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150615_line_03.png",
+        "stock_aligned": "ᎤᎬᏫᏳᎯ ᎤᏂᎬᏫᏳᎯ ᎠᏁᎲᎢ, ᎠᎴ",
+        "stock_raw_ocr": "ᎤᎬᏫᏳᎯ ᎤᏂᎬᏫᏳᎯ ᎠᏁᎲᎢ; ᎠᎴ",
+        "ftm_aligned": "ᎤᎬᏫᏳᎯ ᎤᏂᎬᏫᏳᎯ ᎠᏁᎲᎢ, ᎠᎴ",
+        "ftm_raw_ocr": "ᎤᎬᏫᏳᎯ ᎤᏂᎬᏫᏳᎯ ᎠᏁᎲᎢ, ᎠᎴ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150615_line_04.png",
+        "stock_aligned": "ᎤᎬᏫᏳᏌᏕᎩ ᏄᏂᎬᏫᏳᏌᏕᎩ ᎠᏁ-",
+        "stock_raw_ocr": "ᎤᎬᏫᏳᏌᎨᏅᎩ ᏄᏂᎬᏫᏳᏌᏕᎩ ᎠᏁ-",
+        "ftm_aligned": "ᎤᎬᏫᏳᏌᏕᎩ ᏄᏂᎬᏫᏳᏌᏕᎩ ᎠᏁ-",
+        "ftm_raw_ocr": "ᎤᎬᏫᏳᏌᏕᎩ ᏄᏂᎬᏫᏳᏌᏕᎩ ᎠᏁ-",
+        "ftm_confidence": 55.0
+      },
+      {
+        "line_crop": "line_crops/150615_line_05.png",
+        "stock_aligned": "ᎲᎢ;",
+        "stock_raw_ocr": "ᎲᎢ 3",
+        "ftm_aligned": "ᎲᎢ;",
+        "ftm_raw_ocr": "ᎲᎢ;",
+        "ftm_confidence": 38.0
+      }
+    ]
+  },
+  "150616": {
+    "image_path": "images/150616.png",
+    "cherokee_gt": "ᎾᏍᎩ ᎤᏩᏒᎯ ᎠᏲᎱᎯᏍᏗ ᏂᎨᏒᎾ ᎨᏒ ᎤᎯ, ᎢᎦᎦᏛ ᎡᎯ ᎨᏒᎢ, ᎾᏍᎩ ᎢᎦᎦᏛ ᎾᎿᎭᎩᎶ ᎬᏩᎷᎯᏍᏗ ᏂᎨᏒᎾ ᎨᏒᎢ, ᎾᏍᎩ ᎩᎶ ᎤᎪᎲᎩ ᏂᎨᏒᎾ, ᎠᎴ ᎬᏩᎪᏩᏛᏗ ᏂᎨᏒᎾ ᎨᏒᎢ; ᎾᏍᎩ ᎠᏥᎸᏉᏗᏳ ᎨᏎᏍᏗ ᎠᎴ ᎤᎵᏂᎩᏗ ᎨᏒ ᏫᎾᏍᏛᎾ ᎨᏎᏍᏗ.  ᎡᎺᏅ.",
+    "verse_number": "16",
+    "lines": [
+      {
+        "line_crop": "line_crops/150616_line_00.png",
+        "stock_aligned": "16 ᎾᏍᎩ ᎤᏩᏒᎯ ᎠᏲᎱᎯᏍᏗ ᏂᎨ-",
+        "stock_raw_ocr": "16 ᎾᏍᎩ ᎤᏩᏒᎯ ᎠᏲᎱᎯᏍᏗ ᏂᎨ-",
+        "ftm_aligned": "16 ᎾᏍᎩ ᎤᏩᏒᎯ ᎠᏲᎱᎯᏍᏗ ᏂᎨ-",
+        "ftm_raw_ocr": "16 ᎾᏍᎩ ᎤᏩᏒᎯ ᎠᏲᎱᎯᏍᏗ ᏂᎨ-",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150616_line_01.png",
+        "stock_aligned": "ᏒᎾ ᎨᏒ ᎤᎯ, ᎢᎦᎦᏛ ᎡᎯ ᎨᏒᎢ,",
+        "stock_raw_ocr": "ᏒᎾ ᎨᏒ ᎤᎯ, ᎢᎦᎦᏛ ᎡᎯ ᎨᏒᎢ; Ꮎ",
+        "ftm_aligned": "ᏒᎾ ᎨᏒ ᎤᎯ, ᎢᎦᎦᏛ ᎡᎯ ᎨᏒᎢ, Ꮎ-",
+        "ftm_raw_ocr": "ᎠᎾ ᎨᏒ ᎤᎯ, ᎢᎦᎦᏛ ᎡᎯ ᎨᏒᎢ, Ꮎ-",
+        "ftm_confidence": 81.0
+      },
+      {
+        "line_crop": "line_crops/150616_line_02.png",
+        "stock_aligned": "ᎾᏍᎩ ᎢᎦᎦᏛ ᎾᎿᎭᎩᎶ ᎬᏩᎷᎯᏍᏗ ᏂᎨᏒᎾ",
+        "stock_raw_ocr": "ᏍᎩ ᎢᎦᎦᏛ ᎾᎿ ᎩᎶ ᎬᏩᎷᎯᏍᏗ ᏂᎰᎨ”",
+        "ftm_aligned": "ᏍᎩ ᎢᎦᎦᏛ ᎾᎿᎭᎩᎶ ᎬᏩᎷᎯᏍᏗ ᏂᎨ-",
+        "ftm_raw_ocr": "ᏍᎩ ᎢᎦᎦᏛ ᎾᎿ ᎩᎶ ᎬᏩᎷᎯᏍᏗ ᏂᎨ-",
+        "ftm_confidence": 90.0
+      },
+      {
+        "line_crop": "line_crops/150616_line_03.png",
+        "stock_aligned": "ᎨᏒᎢ, ᎾᏍᎩ ᎩᎶ ᎤᎪᎲᎩ ᏂᎨᏒᎾ,",
+        "stock_raw_ocr": "ᎡᎾ ᎨᎡᎢ;, ᎾᏍᎩ ᎩᎶ ᎤᎪᎲᎯ ᏂᎨᏒᏮᎾ,",
+        "ftm_aligned": "ᏒᎾ ᎨᏒᎢ, ᎾᏍᎩ ᎩᎶ ᎤᎪᎲᎩ ᏂᎨᏒᎾ,",
+        "ftm_raw_ocr": "ᏒᎡᎾ ᎨᏒᎢ, ᎾᏍᎩ ᎩᎶ ᎤᎪᎲᎯ ᏂᎨᏒᎾ,",
+        "ftm_confidence": 75.0
+      },
+      {
+        "line_crop": "line_crops/150616_line_04.png",
+        "stock_aligned": "ᎠᎴ ᎬᏩᎪᏩᏛᏗ ᏂᎨᏒᎾ ᎨᏒᎢ; ᎾᏍᎩ",
+        "stock_raw_ocr": "ᎠᎴ ᎬᏩᎪᏩᏛᏗ ᏂᎨᏒᎧᎾ ᎨᏒᎢ 53 ᎾᏍᎩ",
+        "ftm_aligned": "ᎠᎴ ᎬᏩᎪᏩᏛᏗ ᏂᎨᏒᎾ ᎨᏒᎢ; ᎾᏍᎩ",
+        "ftm_raw_ocr": "ᎠᎴ ᎬᏩᎪᏩᏛᏗ ᏂᎨᏴᎾ ᎨᏒᎢ; ᎾᏍᎩ",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150616_line_05.png",
+        "stock_aligned": "ᎠᏥᎸᏉᏗᏳ ᎨᏎᏍᏗ ᎠᎴ ᎤᎵᏂᎩᏗ",
+        "stock_raw_ocr": "ᎠᏏᎸᏉᏗᏳ ᎨᏎᏍᏗ ᎠᎴ ᎤᎵᏝᏂᎩᏗ",
+        "ftm_aligned": "ᎠᏥᎸᏉᏗᏳ ᎨᏎᏍᏗ ᎠᎴ ᎤᎵᏂᎩᏗ",
+        "ftm_raw_ocr": "ᎠᏥᎸᏉᏗᏳ ᎨᏎᏍᏗ ᎠᎴ ᎤᎵᏂᎩᏗ",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150616_line_06.png",
+        "stock_aligned": "ᎨᏒ ᏫᎾᏍᏛᎾ ᎨᏎᏍᏗ. ᎡᎺᏅ.",
+        "stock_raw_ocr": "ᏌᏒ ᏫᎾᏍᏛᎾ ᎨᏎᏍᏗ.  ᎡᎴᏅ.",
+        "ftm_aligned": "ᎨᏒ ᏫᎾᏍᏛᎾ ᎨᏎᏍᏗ. ᎡᎺᏅ.",
+        "ftm_raw_ocr": "ᎨᏒ ᏫᎾᏍᏛᎾ ᎨᏎᏍᏗ. ᎡᎷᏅ.",
+        "ftm_confidence": 71.0
+      }
+    ]
+  },
+  "150617": {
+    "image_path": "images/150617.png",
+    "cherokee_gt": "ᎩᏁᏤᎮᏍᏗ ᏧᏁᎿᎭᎢ ᏥᎩ ᎠᏂ ᎡᎶᎯ ᎾᏍᎩ ᎤᎾᏢᏉᏗ ᏱᏉ ᏂᎨᏒᎾ, ᎠᎴ ᎤᎾᎵᏍᎦᏍᏙᏙᏗᏱ ᏂᎨᏒᎾ ᎤᏓᎵᏓᏍᏗ ᎨᏅᎢᏍᏗ ᎨᏒᎢ, ᎤᏁᎳᏅᎯᏍᎩᏂ ᎬᏂᏛ ᎠᎾᎵᏍᎦᏍᏙᏗᏍᎨᏍᏗ ᎾᏍᎩ ᎤᏣᏘ ᎢᎩᏁᎯ ᏥᎩ ᎾᎦᎥ ᏄᏓᎴᏒ ᎣᏍᏛ ᎢᎦᎵᏍᏓᏁᏗ.",
+    "verse_number": "17",
+    "lines": [
+      {
+        "line_crop": "line_crops/150617_line_00.png",
+        "stock_aligned": "17 ᎩᏁᏤᎮᏍᏗ ᏧᏁᎿᎭᎢ ᏥᎩ ᎠᏂ Ꭱ-",
+        "stock_raw_ocr": "17 ᎩᏁᏤᎮᏍᏗ ᏧᏁᎿᎢ ᏥᎩ ᎠᏂ Ꭱ-",
+        "ftm_aligned": "17 ᎩᏁᏤᎮᏍᏗ ᏧᏁᎿᎭᎢ ᏥᎩ ᎠᏂ Ꭱ-",
+        "ftm_raw_ocr": "17 ᎩᏁᏤᎮᏍᏗ ᏧᏁᎿᎢ ᏥᎩ ᎠᏂ Ꭱ-",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150617_line_01.png",
+        "stock_aligned": "ᎶᎯ ᎾᏍᎩ ᎤᎾᏢᏉᏗ ᏱᏉ ᏂᎨᏒᎾ, ᎠᎴ",
+        "stock_raw_ocr": "ᎶᎯ ᎾᏍᎩ ᎤᎾᏢᏉᏗ ᏱᏉ ᏂᎨᎡᎾ; ᎠᎴ",
+        "ftm_aligned": "ᎶᎯ ᎾᏍᎩ ᎤᎾᏢᏉᏗ ᏱᏉ ᏂᎨᏒᎾ, ᎠᎴ",
+        "ftm_raw_ocr": "ᎶᎯ ᎾᏍᎩ ᎤᎾᏢᏉᏗ ᏱᏉ ᏂᎨᏒᎾ, ᎠᎴ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150617_line_02.png",
+        "stock_aligned": "ᎤᎾᎵᏍᎦᏍᏙᏙᏗᏱ ᏂᎨᏒᎾ ᎤᏓᎵᏓᏍᏗ",
+        "stock_raw_ocr": "ᎤᎾᎵᏍᎦᏍᏙᏙᏗᏱ ᏂᎨᏒᎾ ᎤᏓᎵᏝᏓᏍᏗ",
+        "ftm_aligned": "ᎤᎾᎵᏍᎦᏍᏙᏙᏗᏱ ᏂᎨᏒᎾ ᎤᏓᎵᏓᏍᏗ",
+        "ftm_raw_ocr": "ᎤᎾᎵᏍᎦᏍᏙᏙᏗᏱ ᏂᎨᏒᎾ ᎤᏓᎵᏝᏓᏍᏗ",
+        "ftm_confidence": 60.0
+      },
+      {
+        "line_crop": "line_crops/150617_line_03.png",
+        "stock_aligned": "ᎨᏅᎢᏍᏗ ᎨᏒᎢ, ᎤᏁᎳᏅᎯᏍᎩᏂ Ꭼ-",
+        "stock_raw_ocr": "ᏢᎨᏅᎢᏍᏗ Ꭸ ᏒᎢ, ᎤᏁᎳᏅᎯᏍᎩᏂ Ꭼ-",
+        "ftm_aligned": "ᎨᏅᎢᏍᏗ ᎨᏒᎢ, ᎤᏁᎳᏅᎯᏍᎩᏂ Ꭼ-",
+        "ftm_raw_ocr": "ᎨᏅᎢᏍᏗ ᎨᏒᎢ, ᎤᏁᎳᏅᎯᏍᎩᏂ Ꭼ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150617_line_04.png",
+        "stock_aligned": "ᏂᏛ ᎠᎾᎵᏍᎦᏍᏙᏗᏍᎨᏍᏗ ᎾᏍᎩ Ꭴ-",
+        "stock_raw_ocr": "ᏂᏛ ᎠᎾᏝᏍᎦᏍᏙᏗᏍᎨᏍᏗ ᎾᏍᎩ Ꭴ-Ꮕ",
+        "ftm_aligned": "ᏂᏛ ᎠᎾᎵᏍᎦᏍᏙᏗᏍᎨᏍᏗ ᎾᏍᎩ Ꭴ-",
+        "ftm_raw_ocr": "ᏂᏛ ᎠᎾᎵᏍᎦᏍᏙᏗᏍᎨᏍᏗ ᎾᏍᎩ Ꭴ-",
+        "ftm_confidence": 86.0
+      },
+      {
+        "line_crop": "line_crops/150617_line_05.png",
+        "stock_aligned": "ᏣᏘ ᎢᎩᏁᎯ ᏥᎩ ᎾᎦᎥ ᏄᏓᎴᏒ ᎣᏍᏛ",
+        "stock_raw_ocr": "ᏣᏘ ᎢᎩᏁᎯ ᏥᎩ ᏂᎦᎥ ᏄᏓᎴᎸ ᎣᏍᏛ",
+        "ftm_aligned": "ᏣᏘ ᎢᎩᏁᎯ ᏥᎩ ᎾᎦᎥ ᏄᏓᎴᏒ ᎣᏍᏛ",
+        "ftm_raw_ocr": "ᏣᏘ ᎢᎩᏁᎯ ᏥᎩ ᏂᎦᎥ ᏄᏓᎴᏒ ᎣᏍᏛ",
+        "ftm_confidence": 89.0
+      },
+      {
+        "line_crop": "line_crops/150617_line_06.png",
+        "stock_aligned": "ᎢᎦᎵᏍᏓᏁᏗ.",
+        "stock_raw_ocr": "ᎢᎦᏝᏍᏓᏁᏗ.",
+        "ftm_aligned": "ᎢᎦᎵᏍᏓᏁᏗ.",
+        "ftm_raw_ocr": "ᎢᎦᎵᏍᏓᏁᏗ.",
+        "ftm_confidence": 85.0
+      }
+    ]
+  },
+  "150618": {
+    "image_path": "images/150618.png",
+    "cherokee_gt": "ᎠᎴ ᎣᏍᏛ ᎾᎾᏛᏁᎮᏍᏗ, ᎠᎴ ᎤᏁᎿᎭᎢᏳ ᎨᏎᏍᏗ ᎣᏍᏛ ᎾᎾᏛᏁᎲᎢ, ᎠᎴ ᎠᏂᎦᎵᏰᏍᏗ ᎤᎾᏓᏁᏗᏱ, ᎠᏂᏯᏙᎯᎯ ᎨᏎᏍᏗ ᎤᏂᎲᎢ,",
+    "verse_number": "18",
+    "lines": [
+      {
+        "line_crop": "line_crops/150618_line_00.png",
+        "stock_aligned": "18 ᎠᎴ ᎣᏍᏛ ᎾᎾᏛᏁᎮᏍᏗ, ᎠᎴ",
+        "stock_raw_ocr": "18 ᎠᎴ ᎣᏍᏛ ᎾᎧᎾᏛᏁᎮᏍᏘ;, ᎠᎴ Ꭴ“",
+        "ftm_aligned": "18 ᎠᎴ ᎣᏍᏛ ᎾᎾᏛᏁᎮᏍᏗ, ᎠᎴ Ꭴ-",
+        "ftm_raw_ocr": "1 ᎠᎴ ᎣᏍᏛ ᎾᎾᏛᏁᎮᏍᏗ, ᎠᎴ Ꭴ-",
+        "ftm_confidence": 77.0
+      },
+      {
+        "line_crop": "line_crops/150618_line_01.png",
+        "stock_aligned": "ᎤᏁᎿᎭᎢᏳ ᎨᏎᏍᏗ ᎣᏍᏛ ᎾᎾᏛᏁᎲᎢ,",
+        "stock_raw_ocr": "ᏁᎿᎢᏳ’ ᎨᏎᏍᏗ ᎣᏍᏛ ᎾᎾᏛᏁᎲᎢ;,",
+        "ftm_aligned": "ᏁᎿᎭᎢᏳ ᎨᏎᏍᏗ ᎣᏍᏛ ᎾᎾᏛᏁᎲᎢ,",
+        "ftm_raw_ocr": "ᏁᎿᎢᏳ ᎨᏎᏍᏗ ᎣᏍᏛ ᎾᎾᏛᏁᎲᎢ,",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150618_line_02.png",
+        "stock_aligned": "ᎠᎴ ᎠᏂᎦᎵᏰᏍᏗ ᎤᎾᏓᏁᏗᏱ, ᎠᏂᏯᏙ-",
+        "stock_raw_ocr": "ᎠᎴ ᎠᏂᎦᎵᏝᏰᏍᏘᏗ ᎤᎾᏓᏁᏗᏱ; ᎠᏂᏍᏙ-",
+        "ftm_aligned": "ᎠᎴ ᎠᏂᎦᎵᏰᏍᏗ ᎤᎾᏓᏁᏗᏱ, ᎠᏂᏯᏙ-",
+        "ftm_raw_ocr": "ᎠᎴ ᎠᏂᎦᎵᏰᏍᏗ ᎤᎾᏓᏁᏗᏱ, ᎠᏂᏍᏙ-",
+        "ftm_confidence": 83.0
+      },
+      {
+        "line_crop": "line_crops/150618_line_03.png",
+        "stock_aligned": "ᎯᎯ ᎨᏎᏍᏗ ᎤᏂᎲᎢ,",
+        "stock_raw_ocr": "ᎯᎯ ᏔᏏᏎᏍᏗ ᎤᏂᎲᎢ,",
+        "ftm_aligned": "ᎯᎯ ᎨᏎᏍᏗ ᎤᏂᎲᎢ,",
+        "ftm_raw_ocr": "ᎯᎯ ᎨᏎᏍᏗ ᎤᏂᎲᎢ,",
+        "ftm_confidence": 73.0
+      }
+    ]
+  },
+  "150619": {
+    "image_path": "images/150619.png",
+    "cherokee_gt": "ᎠᎾᏓᏁᎸᏍᎨᏍᏗ ᎤᏅᏒ ᎤᎾᏤᎵᎦ ᎣᏍᏛ ᎦᎫᏍᏛᏗ ᎠᏏ ᎾᏍᏆᎵᏍᎬᎾ ᎾᎯᏳ ᎤᏍᏆᎸᏗ ᏥᎩ, ᎾᏍᎩ ᎾᎵᏍᏆᏗᏍᎬᎾ ᎬᏂᏛ ᏗᎬᏩᏂᏂᏴᏗ ᎢᏳᎵᏍᏙᏗᏱ.",
+    "verse_number": "19",
+    "lines": [
+      {
+        "line_crop": "line_crops/150619_line_00.png",
+        "stock_aligned": "19 ᎠᎾᏓᏁᎸᏍᎨᏍᏗ ᎤᏅᏒ ᎤᎾᏤᎵᎦ",
+        "stock_raw_ocr": "“19 ᎠᎾᏮᏓᏁᏄᏍᎨᏍᏗ ᎤᏅᏒ ᎤᎾᏤᏝᎦ",
+        "ftm_aligned": "19 ᎠᎾᏓᏁᎸᏍᎨᏍᏗ ᎤᏅᏒ ᎤᎾᏤᎵᎦ",
+        "ftm_raw_ocr": "10 ᎠᎾᏓᏁᏄᏍᎨᏍᏗ ᎤᏅᏢ ᎤᎾᏤᏝᎦ",
+        "ftm_confidence": 57.0
+      },
+      {
+        "line_crop": "line_crops/150619_line_01.png",
+        "stock_aligned": "ᎣᏍᏛ ᎦᎫᏍᏛᏗ ᎠᏏ ᎾᏍᏆᎵᏍᎬᎾ ᎾᎯᏳ",
+        "stock_raw_ocr": "ᎣᏍᏛ ᎦᎫᏍᏛᏗ ᎠᏏ ᎾᏍᏆᎵᏍᎬᎾ ᎾᎯᏳ”",
+        "ftm_aligned": "ᎣᏍᏛ ᎦᎫᏍᏛᏗ ᎠᏏ ᎾᏍᏆᎵᏍᎬᎾ ᎾᎯᏳ",
+        "ftm_raw_ocr": "ᎣᏍᏛ ᎦᎫᏍᏛᏗ ᎠᏏ ᎾᏍᏆᎵᏍᎬᎾ ᎾᎯᏳ-",
+        "ftm_confidence": 84.0
+      },
+      {
+        "line_crop": "line_crops/150619_line_02.png",
+        "stock_aligned": "ᎤᏍᏆᎸᏗ ᏥᎩ, ᎾᏍᎩ ᎾᎵᏍᏆᏗᏍᎬᎾ",
+        "stock_raw_ocr": "ᎤᏍᏆᎸᏘ ᏥᎩ; ᎾᏍᎩ ᎾᎵᏍᏆᏗᏍᎬᎾ",
+        "ftm_aligned": "ᎤᏍᏆᎸᏗ ᏥᎩ, ᎾᏍᎩ ᎾᎵᏍᏆᏗᏍᎬᎾ",
+        "ftm_raw_ocr": "ᎤᏍᏆᎸᏗ ᏥᎩ, ᎾᏍᎩ ᎾᎵᏍᏆᏗᏍᎬᎾ",
+        "ftm_confidence": 87.0
+      },
+      {
+        "line_crop": "line_crops/150619_line_03.png",
+        "stock_aligned": "ᎬᏂᏛ ᏗᎬᏩᏂᏂᏴᏗ ᎢᏳᎵᏍᏙᏗᏱ.",
+        "stock_raw_ocr": "ᎬᏂᏛ ᏗᎬᏩᏂᏂᏴᏗ ᎢᏳᎵᏍᏙᏗᏱ.",
+        "ftm_aligned": "ᎬᏂᏛ ᏗᎬᏩᏂᏂᏴᏗ ᎢᏳᎵᏍᏙᏗᏱ.",
+        "ftm_raw_ocr": "ᎬᏂᏛ ᏗᎬᏩᏂᏂᏴᏗ ᎢᏳᎵᏍᏙᏗᏱ.",
+        "ftm_confidence": 86.0
+      }
+    ]
+  },
+  "150620": {
+    "image_path": "images/150620.png",
+    "cherokee_gt": "ᏗᎹᏗ, ᏣᏍᏆᏂᎪᏕᏍᏗ ᎾᏍᎩ ᏤᏣᎨᏅᏴ, ᎢᏴᏛ ᏅᏁᎮᏍᏗ ᎦᏪᏢᏗ ᎨᏒ ᎠᎴ ᎠᏎᏉᏉ ᎦᏬᏂᎯᏍᏗ ᎨᏒᎢ, ᎠᎴ ᎠᏗᏒᏍᏗ ᎨᏒ ᎠᎦᏙᎥᎯᏍᏗ ᏂᏚᏳᎪᏛᎾ ᏥᏚᏙᎥ;",
+    "verse_number": "20",
+    "lines": [
+      {
+        "line_crop": "line_crops/150620_line_00.png",
+        "stock_aligned": "20 ᏗᎹᏗ, ᏣᏍᏆᏂᎪᏕᏍᏗ ᎾᏍᎩ",
+        "stock_raw_ocr": "20 ᏗᎹᏘ, ᏣᏍᏆᏂᎪᏅᏍᏗ ᎾᎧᏍᎩ Ꮘ”",
+        "ftm_aligned": "20 ᏗᎹᏗ, ᏣᏍᏆᏂᎪᏕᏍᏗ ᎾᏍᎩ Ꮴ-",
+        "ftm_raw_ocr": "20 ᏗᎹᏗ, ᏣᏍᏆᏂᎪᏅᏍᏗ ᎾᏍᎩ Ꮴ-",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150620_line_01.png",
+        "stock_aligned": "ᏤᏣᎨᏅᏴ, ᎢᏴᏛ ᏅᏁᎮᏍᏗ ᎦᏪᏢᏗ ᎨᏒ",
+        "stock_raw_ocr": "ᏣᎨᏅᏴ,; ᎢᏴᏛ ᏅᏁᎮᏍᏗ ᎦᏪᏢᏗ ᎨᎬᎢᏐ",
+        "ftm_aligned": "ᏣᎨᏅᏴ, ᎢᏴᏛ ᏅᏁᎮᏍᏗ ᎦᏪᏢᏗ ᎨᏒ",
+        "ftm_raw_ocr": "ᏣᎨᏅᏴ, ᎢᏴᏛ ᏅᏁᎮᏍᏗ ᎦᏪᏢᏗ ᎨᏒ",
+        "ftm_confidence": 79.0
+      },
+      {
+        "line_crop": "line_crops/150620_line_02.png",
+        "stock_aligned": "ᎠᎴ ᎠᏎᏉᏉ ᎦᏬᏂᎯᏍᏗ ᎨᏒᎢ, ᎠᎴ",
+        "stock_raw_ocr": "ᎠᎴ ᎠᏎᏉᏉ ᎦᏬᏂᎯᏍᏗ ᎡᏥᎨᏒᎢ; ᎠᎴ",
+        "ftm_aligned": "ᎠᎴ ᎠᏎᏉᏉ ᎦᏬᏂᎯᏍᏗ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_raw_ocr": "ᎠᎴ ᎠᏎᏉᏉ ᎦᏬᏂᎯᏍᏗ ᎨᏒᎢ, ᎠᎴ",
+        "ftm_confidence": 88.0
+      },
+      {
+        "line_crop": "line_crops/150620_line_03.png",
+        "stock_aligned": "ᎠᏗᏒᏍᏗ ᎨᏒ ᎠᎦᏙᎥᎯᏍᏗ ᏂᏚᏳᎪᏛᎾ",
+        "stock_raw_ocr": "ᎠᏗᏒᏍᏘᏗ Ꭸ ᎠᎦᏙᎥᎯᏍᏗ ᏂᏚᏳᎪᏛᎾ",
+        "ftm_aligned": "ᎠᏗᏒᏍᏗ ᎨᏒ ᎠᎦᏙᎥᎯᏍᏗ ᏂᏚᏳᎪᏛᎾ",
+        "ftm_raw_ocr": "ᎠᏗᏒᏍᏗ ᎨᏒ ᎠᎦᏙᎥᎯᏍᏗ ᏂᏚᏳᎪᏛᎾ",
+        "ftm_confidence": 80.0
+      },
+      {
+        "line_crop": "line_crops/150620_line_04.png",
+        "stock_aligned": "ᏥᏚᏙᎥ;",
+        "stock_raw_ocr": "ᏥᏚᏙᎥᏎ 5",
+        "ftm_aligned": "ᏥᏚᏙᎥ;",
+        "ftm_raw_ocr": "ᏥᏚᏔᎥ ;",
+        "ftm_confidence": 37.0
+      }
+    ]
+  },
+  "150621": {
+    "image_path": "images/150621.png",
+    "cherokee_gt": "ᎾᏍᎩ ᎩᎶ ᎠᏂᏍᏓᏩᏗᏒ ᎤᎾᏞᏒ ᎪᎯᏳᏗ ᎨᏒᎢ.  [ᎤᏁᎳᏅᎯ] ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᏕᏣᎧᏩᏗᏙᎮᏍᏗ.  ᎡᎺᏅ.",
+    "verse_number": "21",
+    "lines": [
+      {
+        "line_crop": "line_crops/150621_line_00.png",
+        "stock_aligned": "21 ᎾᏍᎩ ᎩᎶ ᎠᏂᏍᏓᏩᏗᏒ ᎤᎾᏞᏒ",
+        "stock_raw_ocr": "Ꭷ91 ᎾᏍᎩ ᎩᎶ ᎠᏂᏍᏓᏩᏘᏒ ᎤᎾᏅ",
+        "ftm_aligned": "21 ᎾᏍᎩ ᎩᎶ ᎠᏂᏍᏓᏩᏗᏒ ᎤᎾ-",
+        "ftm_raw_ocr": "“1Ꭸ ᎾᏍᎩ ᎩᎶ ᎠᏂᏍᏓᏩᏗᏒ ᎤᎾ-",
+        "ftm_confidence": 68.0
+      },
+      {
+        "line_crop": "line_crops/150621_line_01.png",
+        "stock_aligned": "ᎪᎯᏳᏗ ᎨᏒᎢ. [ᎤᏁᎳᏅᎯ]",
+        "stock_raw_ocr": "ᏞᏒ ᎪᎯᏳᏗ ᎨᏒᎢ. (ᎢᎤᏁᎳᏅᎯ)",
+        "ftm_aligned": "ᏞᏒ ᎪᎯᏳᏗ ᎨᏒᎢ. [ᎤᏁᎳᏅᎯ]",
+        "ftm_raw_ocr": "ᏞᏒ ᎪᎯᏳᏗ ᎨᏒᎢ. ᎢᎤᏁᎳᏅᎯᎥ",
+        "ftm_confidence": 56.0
+      },
+      {
+        "line_crop": "line_crops/150621_line_02.png",
+        "stock_aligned": "ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᏕᏣᎧᏩᏗᏙᎮᏍᏗ.",
+        "stock_raw_ocr": "ᎤᏓᏙᏝᏍᏗ ᎨᏒ ᏕᏣᎧᎿᏩᏘᏙᎮᏍᏗ.",
+        "ftm_aligned": "ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᏕᏣᎧᏩᏗᏙᎮᏍᏗ.",
+        "ftm_raw_ocr": "ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᏕᏣᎧᎿᏩᏗᏙᎮᏍᏗ.",
+        "ftm_confidence": 62.0
+      },
+      {
+        "line_crop": "line_crops/150621_line_03.png",
+        "stock_aligned": "ᎡᎺᏅ.",
+        "stock_raw_ocr": "ᎫᎡᎶᏣᏅ-",
+        "ftm_aligned": "ᎡᎺᏅ.",
+        "ftm_raw_ocr": "ᎡᎶᏅ.",
+        "ftm_confidence": 0.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+Loaded file training_data/staged_tuning/run_21_step_mod_aug_output/chr_checkpoint, unpacking...
+Successfully restored trainer from training_data/staged_tuning/run_21_step_mod_aug_output/chr_checkpoint
+At iteration 2704/3200/3428, mean rms=1.556%, delta=4.352%, BCER train=16.402%, BWER train=33.568%, skip ratio=7.000%, wrote checkpoint.
+Finished! Selected model with minimal training error rate (BCER) = 16.402

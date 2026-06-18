@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cherokee NT Alignment Verification</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 20px; }
+        h1 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        th, td { padding: 12px; border: 1px solid #dee2e6; text-align: left; }
+        th { background-color: #343a40; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .crop-img { max-height: 60px; border: 1px solid #ccc; }
+        .ocr-raw { font-style: italic; color: #555; font-size: 0.9em; }
+        .aligned-text { font-weight: bold; color: #2b5c8f; font-size: 1.1em; }
+        .verse-num { background-color: #e9ecef; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Cherokee NT Alignment Verification Report</h1>
+    <p>Compare the line crop, the Tesseract raw OCR outputs, and the aligned ground-truth text segments.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Verse</th>
+                <th>Line Index</th>
+                <th>Crop Image</th>
+                <th>Stock Raw OCR</th>
+                <th>Stock Aligned GT</th>
+                <th>FTM Raw OCR</th>
+                <th>FTM Aligned GT</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            <tr>
+                <td><span class="verse-num">140101</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140101_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">1 ᏉᎳ, ᎠᎴ ᏌᏱᎳ, ᎠᎴ ᏗᎹᏘ,</td>
+                <td class="aligned-text">1 ᏉᎳ, ᎠᎴ ᏌᏱᎳ, ᎠᎴ ᏗᎹᏗ,</td>
+                <td class="ocr-raw">1ᏉᎳ, ᎠᎴ ᏌᏱᎳ, ᎠᎴ ᏗᎹᏗ,</td>
+                <td class="aligned-text">1 ᏉᎳ, ᎠᎴ ᏌᏱᎳ, ᎠᎴ ᏗᎹᏗ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140101</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140101_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏫᏨᏲᏪᎳᏏ ᏗᏣᏁᎶᏗ ᎢᏣᏓᏡᎬ ᎦᏏ-</td>
+                <td class="aligned-text">ᏫᏨᏲᏪᎳᏏ ᏗᏣᏁᎶᏗ ᎢᏣᏓᏡᎬ ᏕᏏ-</td>
+                <td class="ocr-raw">ᏫᏨᏲᏪᎳᏏ ᏗᏣᏁᎶᏗ ᎢᏣᏓᏡᎬ ᏕᏏ-</td>
+                <td class="aligned-text">ᏫᏨᏲᏪᎳᏏ ᏗᏣᏁᎶᏗ ᎢᏣᏓᏡᎬ ᏕᏏ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140101</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140101_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎶᏂᎦ ᎢᏤᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ</td>
+                <td class="aligned-text">ᎶᏂᎦ ᎢᏤᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ</td>
+                <td class="ocr-raw">ᎶᏂᎦ ᎢᏤᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ</td>
+                <td class="aligned-text">ᎶᏂᎦ ᎢᏤᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140101</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140101_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">(ᎧᏩᏍᎪᎴᏅᎩᎪ ᏙᏥᏳ ᏄᎴᎶ ᎪᏁᏱᏱ ᏩᎴ- ᏁᎾᏁᎣᏱᎢ.</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᏕᏣᏁᎶᏛᎢ.</td>
+                <td class="ocr-raw">ᎠᏝᎵᏍᎩᏅᏁ Ꮄ ᏄᏍᏙᏱᏱ ᏩᏅᏍ ᏁᏙᏍᏱᎢ</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᏕᏣᏁᎶᏛᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140102</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140102_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">2 ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᏥᏦᏒ ᎠᎴ</td>
+                <td class="aligned-text">2 ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎠᎴ</td>
+                <td class="ocr-raw">25 ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎠᎴ</td>
+                <td class="aligned-text">2 ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎠᎴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140102</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140102_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏅᏩᏙᎯᏯᏛ ᏕᏥᎧᎿᏩᏗᏙᎮᏍᏗ ᏅᏓᏅᏳ-</td>
+                <td class="aligned-text">ᏅᏩᏙᎯᏯᏛ ᏕᏥᎧᎿᎭᏩᏗᏙᎮᏍᏗ ᏅᏓᏳ-</td>
+                <td class="ocr-raw">ᏅᏩᏙᎯᏯᏛ ᏕᎤᏥᎧᎿᏩᏗᏙᎮᏍᏗ ᏅᏓᏳ-</td>
+                <td class="aligned-text">ᏅᏩᏙᎯᏯᏛ ᏕᏥᎧᎿᎭᏩᏗᏙᎮᏍᏗ ᏅᏓᏳ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140102</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140102_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎾᏮᎵᏝᏍᎪᎸᏔᏅᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏙᏖᏓ ᎠᎴ</td>
+                <td class="aligned-text">ᎾᎵᏍᎪᎸᏔᏅᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ</td>
+                <td class="ocr-raw">ᎾᎵᏍᎪᎸᏔᏅᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ</td>
+                <td class="aligned-text">ᎾᎵᏍᎪᎸᏔᏅᎯ ᎤᏁᎳᏅᎯ ᎢᎩᏙᏓ ᎠᎴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140102</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140102_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᎬᏫᎧᏳᎯ ᏥᏌ ᎦᎶᏁᏛ.</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ.</td>
+                <td class="ocr-raw">ᎤᎬᏫᏳᎯ ᏥᏌ ᏕᎾᏁᏛ.</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140103</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140103_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">8 ᎣᎦᏚᏓᎳ ᏂᎪᎯᎸ. ᎣᏣᎵᎡᎵᏤᏗᏱ</td>
+                <td class="aligned-text">3 ᎣᎦᏚᏓᎳ ᏂᎪᎯᎸ ᎣᏣᎵᎡᎵᏤᏗᏱ</td>
+                <td class="ocr-raw">8 ᎣᎦᏚᏓᎳ ᏂᎪᎯᎸ ᎣᏣᎵᎡᎵᏤᏗᏱ</td>
+                <td class="aligned-text">3 ᎣᎦᏚᏓᎳ ᏂᎪᎯᎸ ᎣᏣᎵᎡᎵᏤᏗᏱ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140103</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140103_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᏁᎳᏅᎯ ᏂᎯ ᎢᏓᏝᏅᏟ ᎤᎬᏩᎵ, Ꮵ-</td>
+                <td class="aligned-text">ᎤᏁᎳᏅᎯ ᏂᎯ ᎢᏓᎵᏅᏟ ᎤᎬᏩᎵ, Ꮵ-</td>
+                <td class="ocr-raw">ᎤᏁᎳᏅᎯ ᏂᎯ ᎢᏓᎵᏅᏮ ᎤᎬᏩᎵ, Ꮵ-</td>
+                <td class="aligned-text">ᎤᏁᎳᏅᎯ ᏂᎯ ᎢᏓᎵᏅᏟ ᎤᎬᏩᎵ, Ꮵ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140103</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140103_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏚᏳᎪᏘ ᎾᏍᎩ ᎢᏲᎦᏛᏁᏗᏱ, ᏅᏗᎦᎵ-</td>
+                <td class="aligned-text">ᏚᏳᎪᏗ ᎾᏍᎩ ᎢᏲᎦᏛᏁᏗᏱ, ᏅᏗᎦᎵ-</td>
+                <td class="ocr-raw">ᏚᏳᎪᏗ ᎾᏍᎩ ᎢᏲᎦᏛᏁᏗᏱ, ᏅᏗᎦᎵ-</td>
+                <td class="aligned-text">ᏚᏳᎪᏗ ᎾᏍᎩ ᎢᏲᎦᏛᏁᏗᏱ, ᏅᏗᎦᎵ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140103</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140103_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏙᏘᎭ ᎢᏦᎯᏳᎡᏒ ᎤᏣᏘ ᏣᏛᏍᎦ, ᎠᎴ</td>
+                <td class="aligned-text">ᏍᏙᏗᎭ ᎢᏦᎯᏳᏒ ᎤᏣᏘ ᏣᏛᏍᎦ, ᎠᎴ</td>
+                <td class="ocr-raw">ᏍᏙᏗᎭ ᎢᏦᎯᏳᏴ ᎤᏣᏘ ᏣᏛᏍᎦ, ᎠᎴ</td>
+                <td class="aligned-text">ᏍᏙᏗᎭ ᎢᏦᎯᏳᏒ ᎤᏣᏘ ᏣᏛᏍᎦ, ᎠᎴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140103</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140103_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏕᏣᏓᏖᎬᎶᏳᏒ ᏂᏥᎥ ᎢᏥᏏᏴᏫᎭ ᏥᎨᎡ Ꭴ-</td>
+                <td class="aligned-text">ᏕᏣᏓᎨᏳᏒ ᏂᏥᎥ ᎢᏥᏏᏴᏫᎭ ᎨᏒ Ꭴ-</td>
+                <td class="ocr-raw">ᏕᏣᏓᎨᏳᏒ ᏂᏥᎥ ᎢᏥᏏᏴᏫᎭ ᎨᏒ Ꭴ-</td>
+                <td class="aligned-text">ᏕᏣᏓᎨᏳᏒ ᏂᏥᎥ ᎢᏥᏏᏴᏫᎭ ᎨᏒ Ꭴ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140103</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140103_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏣᏘ ᏥᎧᏁᏉᎦ Ꭵ;</td>
+                <td class="aligned-text">ᏣᏘ ᏥᎧᏁᏉᎦ;</td>
+                <td class="ocr-raw">ᏣᏘ ᏥᎧᏁᏉᎦ ;Ꮆ</td>
+                <td class="aligned-text">ᏣᏘ ᏥᎧᏁᏉᎦ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140104</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140104_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮞ ᎾᏍᎩ ᎢᏳᏍᏘ ᎠᏴ ᎣᎬᏒᏈ ᎣᏳ-</td>
+                <td class="aligned-text">4 ᎾᏍᎩ ᎢᏳᏍᏗ ᎠᏴ ᎣᎬᏒ ᎣᏣ-</td>
+                <td class="ocr-raw">Ꮞ ᎾᏍᎩ ᎢᏳᏍᏗ ᎠᏴ ᎣᎬ ᎣᏣ-</td>
+                <td class="aligned-text">4 ᎾᏍᎩ ᎢᏳᏍᏗ ᎠᏴ ᎣᎬᏒ ᎣᏣ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140104</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140104_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏢᏈᏍᎦ ᎢᏨᏁᎢᏍᏗᏍᎬ ᏧᏮᏁᎶᏘᏗ ᏚᎾ-</td>
+                <td class="aligned-text">ᏢᏈᏍᎦ ᎢᏨᏁᎢᏍᏗᏍᎬ ᏧᎾᏁᎶᏗ ᏚᎾ-</td>
+                <td class="ocr-raw">ᏢᏈᏍᎦ ᎢᏨᏁᎢᏍᏗᏍᎬ ᏧᎾᏁᎶᏗ ᏚᎾ-</td>
+                <td class="aligned-text">ᏢᏈᏍᎦ ᎢᏨᏁᎢᏍᏗᏍᎬ ᏧᎾᏁᎶᏗ ᏚᎾ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140104</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140104_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏖᏡᏩᏘᏒ ᎤᏁᎳᏅᎯ ᏧᏤᎵᎦ, ᎾᏍᎩ</td>
+                <td class="aligned-text">ᏓᏡᏩᏗᏒ ᎤᏁᎳᏅᎯ ᏧᏤᎵᎦ, ᎾᏍᎩ</td>
+                <td class="ocr-raw">ᏓᏡᏩᏗᏒ ᎤᏁᎳᏅᎯ ᏧᏤᎵᎦ, ᎾᏍᎩ</td>
+                <td class="aligned-text">ᏓᏡᏩᏗᏒ ᎤᏁᎳᏅᎯ ᏧᏤᎵᎦ, ᎾᏍᎩ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140104</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140104_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏗᏨᏂᏘᏛᏳ ᏥᏒᎻᏒ ᎠᎴ ᎢᏦᎯᏳ ᏥᎨᎻᏒ</td>
+                <td class="aligned-text">ᏗᏨᏂᏗᏳ ᎨᏒ ᎠᎴ ᎢᏦᎯᏳ ᎨᏒ</td>
+                <td class="ocr-raw">ᏗᏨᏂᏗᏳ ᎨᏴ ᎠᎴ ᎢᏦᎯᏳ ᎨᏒᏥ</td>
+                <td class="aligned-text">ᏗᏨᏂᏗᏳ ᎨᏒ ᎠᎴ ᎢᏦᎯᏳ ᎨᏒ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140104</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140104_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏂᎦᎥ ᎤᏅᏍᏙᏗ ᎠᎴ ᎠᎩᎵᏯ ᎢᏥᎷᏓ-</td>
+                <td class="aligned-text">ᏂᎦᎥ ᎤᏕᏯᏙᏗ ᎠᎴ ᎠᎩᎵᏯ ᎢᏥᎷ-</td>
+                <td class="ocr-raw">ᏂᎦᎥ ᎤᎤᏍᏙᏗ ᎠᎴ ᎠᎩᎵᏯ ᎢᏥᎷ-</td>
+                <td class="aligned-text">ᏂᎦᎥ ᎤᏕᏯᏙᏗ ᎠᎴ ᎠᎩᎵᏯ ᎢᏥᎷ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140104</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140104_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏤᎲᎢ 5</td>
+                <td class="aligned-text">ᏤᎲᎢ;</td>
+                <td class="ocr-raw">ᏤᎲᎢ;</td>
+                <td class="aligned-text">ᏤᎲᎢ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140105</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140105_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">5 ᎾᏍᎩ ᎬᏂᎨᏒ ᎢᎬᏁᎯ ᏥᎩ ᎤᏁ-</td>
+                <td class="aligned-text">5 ᎾᏍᎩ ᎬᏂᎨᏒ ᎢᎬᏁᎯ ᏥᎩ ᎤᏁ-</td>
+                <td class="ocr-raw">5 ᎾᏍᎩ ᎬᏂᎨᏴ ᎢᎬᏁᎯ ᏥᎩ ᎤᏁ-</td>
+                <td class="aligned-text">5 ᎾᏍᎩ ᎬᏂᎨᏒ ᎢᎬᏁᎯ ᏥᎩ ᎤᏁ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140105</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140105_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎳᏅᎯ ᏕᏳᎪᏛ ᏧᏭᎪᏙᏗ ᎰᎨᏦᎡᎢ, ᎾᏍᎩ</td>
+                <td class="aligned-text">ᎳᏅᎯ ᏚᏳᎪᏛ ᏧᏭᎪᏛᏗ ᏧᏭᎪᏙᏗ ᎨᏒᎢ, ᎾᏍᎩ</td>
+                <td class="ocr-raw">ᎳᏅᎯ ᏚᏳᎪᏛ ᏧᏭᎪᏙᏗ ᎨᏒᎢ, ᎾᏍᎩ</td>
+                <td class="aligned-text">ᎳᏅᎯ ᏚᏳᎪᏛ ᏧᏭᎪᏛᏗ ᏧᏭᎪᏙᏗ ᎨᏒᎢ, ᎾᏍᎩ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140105</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140105_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏰᏁ ᎤᏁᎳᏅᎯ ᎤᏤᏝᎪᎯ ᎢᏤᎯ ᎡᏤᎵ-</td>
+                <td class="aligned-text">ᏰᎵ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎪᎯ ᎢᏤᎯ ᎡᏤᎵ-</td>
+                <td class="ocr-raw">ᏰᎵ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎪᎯ ᎢᏤᎯ ᎡᏤᎵ-</td>
+                <td class="aligned-text">ᏰᎵ ᎤᏁᎳᏅᎯ ᎤᏤᎵᎪᎯ ᎢᏤᎯ ᎡᏤᎵ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140105</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140105_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏎᏘᏱ, ᎾᏍᎩ ᎾᏍᏉ ᎤᎬᏩᏪᏝ ᏥᏥᎩ-</td>
+                <td class="aligned-text">ᏎᏗᏱ, ᎾᏍᎩ ᎾᏍᏉ ᎤᎬᏩᎵ ᏥᏥᎩ-</td>
+                <td class="ocr-raw">ᏎᏗᏱ, ᎾᏍᎩ ᎾᏍᏉ ᎤᎬᏩᎵ ᏥᏥᎩ-</td>
+                <td class="aligned-text">ᏎᏗᏱ, ᎾᏍᎩ ᎾᏍᏉ ᎤᎬᏩᎵ ᏥᏥᎩ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140105</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140105_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏝᏲᎦ.</td>
+                <td class="aligned-text">ᎵᏲᎦ.</td>
+                <td class="ocr-raw">ᎵᏲᎦ.</td>
+                <td class="aligned-text">ᎵᏲᎦ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140106</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140106_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮾ ᏅᏘᎦᎵᏍᏙᏗᎭ ᏚᏑᎲᎪᏛᎢ ᎤᏁ-</td>
+                <td class="aligned-text">6 ᏅᏗᎦᎵᏍᏙᏗᎭ ᏚᏳᎪᏛᎢ ᎤᏁ-</td>
+                <td class="ocr-raw">Ꮎ6 ᏅᏗᎦᎵᏍᏙᏗᎭ ᏚᏅᎪᏛᎢ ᎤᏁ-</td>
+                <td class="aligned-text">6 ᏅᏗᎦᎵᏍᏙᏗᎭ ᏚᏳᎪᏛᎢ ᎤᏁ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140106</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140106_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎳᏅᎯ ᏧᎫᏴᏓᏁᏗᏱ ᎠᎩᎵᏝᏲᎢᏍᏗᏘ ᎨᏒ</td>
+                <td class="aligned-text">ᎳᏅᎯ ᏧᎫᏴᏓᏁᏗᏱ ᎠᎩᎵᏲᎢᏍᏗ ᎨᏒ</td>
+                <td class="ocr-raw">ᎳᏅᎯ ᏧᎫᏴᏓᏁᏗᏱ ᎠᎩᎵᏲᎢᏍᏗ ᎨᏒ</td>
+                <td class="aligned-text">ᎳᏅᎯ ᏧᎫᏴᏓᏁᏗᏱ ᎠᎩᎵᏲᎢᏍᏗ ᎨᏒ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140106</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140106_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎧᏍᎩ Ꮎ ᎨᏥᎩᏭᏪᎵᏲᎢᏆᏗᏍᎩ :</td>
+                <td class="aligned-text">ᎾᏍᎩ Ꮎ ᎨᏥᎩᎵᏲᎢᏍᏗᏍᎩ;</td>
+                <td class="ocr-raw">ᎾᏍᎩ Ꮎ ᎨᏥᎩ ᎵᏝᏲᎢᏍᏗᏍᎩ ;</td>
+                <td class="aligned-text">ᎾᏍᎩ Ꮎ ᎨᏥᎩᎵᏲᎢᏍᏗᏍᎩ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140107</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140107_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">“7 ᏂᎯᏃ ᎡᏥᎩᏝᎵᏲᎢᏍᏗᏍᎩ, ᎠᏣᏪ-</td>
+                <td class="aligned-text">7 ᏂᎯᏃ ᎡᏥᎩᎵᏲᎢᏍᏗᏍᎩ, ᎠᏣᏪ-</td>
+                <td class="ocr-raw">7 ᏂᎯᏃ ᎡᏥᎩᎵᏲᎢᏍᏗᏍᎩ, ᎠᏣᏪ-</td>
+                <td class="aligned-text">7 ᏂᎯᏃ ᎡᏥᎩᎵᏲᎢᏍᏗᏍᎩ, ᎠᏣᏪ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140107</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140107_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏐᎸᏍᏙᏗ ᎨᏒ ᎡᎦᎫᏴᏓᏁᏗᏱ, ᎾᎯᏳ”</td>
+                <td class="aligned-text">ᏐᎸᏍᏙᏗ ᎨᏒ ᎡᎦᎫᏴᏓᏁᏗᏱ, ᎾᎯᏳ</td>
+                <td class="ocr-raw">ᏐᎸᏍᏔᏙᏗ ᎨᏒ ᎡᎦᎫᏴᏓᏁᏗᏱ, ᎾᎯᏳ</td>
+                <td class="aligned-text">ᏐᎸᏍᏙᏗ ᎨᏒ ᎡᎦᎫᏴᏓᏁᏗᏱ, ᎾᎯᏳ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140107</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140107_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᎬᏫᎧᏳᎯ ᏥᏌ ᎦᎸᏄᎶ ᏅᏓᏳᏓᏖᎴᏅᎯ</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎸᎶ ᏅᏓᏳᏓᎴᏅᎯ</td>
+                <td class="ocr-raw">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎸᎶ ᏅᏓᏳᏓᎴᏅᎯ</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎸᎶ ᏅᏓᏳᏓᎴᏅᎯ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140107</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140107_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎬᏂᎨᏒ ᎧᎬᏁᎸ Ꭽ ᎠᏁᎮᏍᏗ ᏧᎾᎵᏂᎩᏛ</td>
+                <td class="aligned-text">ᎬᏂᎨᏒ ᎾᎬᏁᎸᎭ ᎠᏁᎮᏍᏗ ᏧᎾᎵᏂᎩᏛ</td>
+                <td class="ocr-raw">ᎬᏂᎨᏒ ᎾᎬᏁᎸᎭ ᎠᏁᎮᏍᏗ ᏧᎾᎵᏂᎩᏛ</td>
+                <td class="aligned-text">ᎬᏂᎨᏒ ᎾᎬᏁᎸᎭ ᎠᏁᎮᏍᏗ ᏧᎾᎵᏂᎩᏛ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140107</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140107_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏧᏤᎵ ᏗᏂᎧᎿᏩᏘᏙᎯ,</td>
+                <td class="aligned-text">ᏧᏤᎵ ᏗᏂᎧᎿᎭᏩᏗᏙᎯ,</td>
+                <td class="ocr-raw">ᏧᏤᎵ ᏗᏂᎧᎿᏩᏗᏙᎯ,</td>
+                <td class="aligned-text">ᏧᏤᎵ ᏗᏂᎧᎿᎭᏩᏗᏙᎯ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140108</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140108_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮪ ᎠᏥᎸ ᎠᏓᏪᎵᎩᏍᎩ ᎤᏄᏬᏍᏕᏍᏗ</td>
+                <td class="aligned-text">8 ᎠᏥᎸ ᎠᏓᏪᎵᎩᏍᎩ ᎤᏄᏬᏍᏕᏍᏗ</td>
+                <td class="ocr-raw">Ꮪ ᎠᏥᎸ ᎠᏓᏪᎵᎩᏍᎩ ᎤᏄᏬᏍᏕᏍᏗ</td>
+                <td class="aligned-text">8 ᎠᏥᎸ ᎠᏓᏪᎵᎩᏍᎩ ᎤᏄᏬᏍᏕᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140108</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140108_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏓᎩᎵᏲᎢᏍᏗᏍᎨᏍᏗ ᎾᏍᎩ Ꮎ ᏂᎬᏩᎦ-</td>
+                <td class="aligned-text">ᏓᎩᎵᏲᎢᏍᏗᏍᎨᏍᏗ ᎾᏍᎩ Ꮎ ᏂᎬᏩᎦ-</td>
+                <td class="ocr-raw">ᏓᎩᎵᏲᎢᏍᏗᏍᎨᏍᏗ ᎾᏍᎩ Ꮎ ᏂᎬᏩᎦ-</td>
+                <td class="aligned-text">ᏓᎩᎵᏲᎢᏍᏗᏍᎨᏍᏗ ᎾᏍᎩ Ꮎ ᏂᎬᏩᎦ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140108</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140108_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏔᎲᎾ ᎤᏁᏖ’ᏙᏅᎯ, ᎠᎴ ᎸᏃᎯᏳ’ᏒᏴ”ᏧᎩᏏ-</td>
+                <td class="aligned-text">ᏔᎲᎾ ᎤᏁᎳᏅᎯ, ᎠᎴ ᏄᏃᎯᏳᏒᎾ</td>
+                <td class="ocr-raw">ᏔᎲᎾ ᎤᏁᎳᏅᎯ, ᎠᎴ ᏄᏃᎯᏳᏒᎾ Ꭳ-</td>
+                <td class="aligned-text">ᏔᎲᎾ ᎤᏁᎳᏅᎯ, ᎠᎴ ᏄᏃᎯᏳᏒᎾ Ꭳ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140108</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140108_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏛ ᎧᏃᎮᏛ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="aligned-text">ᎣᏍᏛ ᎧᏃᎮᏛ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="ocr-raw">ᏍᏛ ᎧᏃᎮᏛ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="aligned-text">ᏍᏛ ᎧᏃᎮᏛ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140108</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140108_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ ᎤᏤᎵᎦ.</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ ᎤᏤᎵᎦ.</td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ ᎤᏤᎵᎦ.</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ ᎤᏤᎵᎦ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140109</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140109_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">9. ᎾᏍᎩ ᎨᏥᏍᏛᏘᏍᏙᏗ ᎨᏎᏍᏗ</td>
+                <td class="aligned-text">9 ᎾᏍᎩ ᎨᏥᏍᏛᏗᏍᏙᏗ ᎨᏎᏍᏗ</td>
+                <td class="ocr-raw">9 ᎾᏍᎩ ᎨᏥᏍᏛᏗᏍᏙᏗ ᎨᏎᏍᏗ</td>
+                <td class="aligned-text">9 ᎾᏍᎩ ᎨᏥᏍᏛᏗᏍᏙᏗ ᎨᏎᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140109</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140109_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎬᏌᎬᏖᏁᏘ ᏫᎾᏍᏛᎾ ᎠᏓᏛᏗᏍᎩ ᎤᎬ-</td>
+                <td class="aligned-text">ᎨᎬᏓᏁᏗ ᏫᎾᏍᏛᎾ ᎠᏓᏛᏗᏍᎩ ᎤᎬ-</td>
+                <td class="ocr-raw">ᎨᎬᏓᏁᏗ ᏫᎾᏍᏛᎾ ᎠᏓᏛᏗᏍᎩ ᎤᎬ-</td>
+                <td class="aligned-text">ᎨᎬᏓᏁᏗ ᏫᎾᏍᏛᎾ ᎠᏓᏛᏗᏍᎩ ᎤᎬ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140109</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140109_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏫᏳᎯ ᎠᎦᏔᎲ ᏅᏖᏳᏓᎴᏅᎯ; ᎠᎴ ᎦᎸ-</td>
+                <td class="aligned-text">ᏫᏳᎯ ᎠᎦᏔᎲ ᏅᏓᏳᏓᎴᏅᎯ, ᎠᎴ ᎦᎸ-</td>
+                <td class="ocr-raw">ᏫᏳᎯ ᎠᎦᏔᎲ ᏅᏓᏳᏓᎴᏅᎯ, ᎠᎴ ᎦᎸ-</td>
+                <td class="aligned-text">ᏫᏳᎯ ᎠᎦᏔᎲ ᏅᏓᏳᏓᎴᏅᎯ, ᎠᎴ ᎦᎸ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140109</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140109_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏉᏘᏳ’ ᎤᎵᏂᎩᏘᏳ ᎨᏒᎢ,</td>
+                <td class="aligned-text">ᏉᏗᏳ ᎤᎵᏂᎩᏗᏳ ᎨᏒᎢ,</td>
+                <td class="ocr-raw">ᏉᏗᏳ ᎤᎵᏂᎩᏗᏳ ᎨᏒᎢ,</td>
+                <td class="aligned-text">ᏉᏗᏳ ᎤᎵᏂᎩᏗᏳ ᎨᏒᎢ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140110</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140110_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">10 ᎾᎯᏳ ᏧᏤᎵ ᎤᎾᏮᏖᏓᏅᏘ ᎬᏩᎸᏉ-</td>
+                <td class="aligned-text">10 ᎾᎯᏳ ᏧᏤᎵ ᎤᎾᏓᏅᏘ ᎬᏩᎸᏉ-</td>
+                <td class="ocr-raw">10 ᎾᎯᏳ ᏧᏤᎵ ᎤᎾᏓᏅᏘ ᎬᏩᎸᏉ-</td>
+                <td class="aligned-text">10 ᎾᎯᏳ ᏧᏤᎵ ᎤᎾᏓᏅᏘ ᎬᏩᎸᏉ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140110</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140110_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏙᏘᏱ ᎤᎬᏩᎵ ᎦᎷᏨᎭ, ᎠᎴ ᎤᏍᏆᏂ-</td>
+                <td class="aligned-text">ᏙᏗᏱ ᎤᎬᏩᎵ ᎦᎷᏨᎭ, ᎠᎴ ᎤᏍᏆᏂ-</td>
+                <td class="ocr-raw">ᏔᏙᏗᏱ ᎤᎬᏩᎵ ᎦᎷᏨᎭ, ᎠᎴ ᎤᏍᏆᏂ-</td>
+                <td class="aligned-text">ᏙᏗᏱ ᎤᎬᏩᎵ ᎦᎷᏨᎭ, ᎠᎴ ᎤᏍᏆᏂ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140110</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140110_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎪᏘ ᏧᏖᏅᏓᏘᏍᏙᏗᏱ ᎾᏂᎥ ᎾᏍᎩ Ꮎ Ꭼ-</td>
+                <td class="aligned-text">ᎪᏗ ᏧᏓᏅᏓᏗᏍᏙᏗᏱ ᎾᏂᎥ ᎾᏍᎩ Ꮎ Ꭼ-</td>
+                <td class="ocr-raw">ᎪᏗ ᏧᏓᏅᏓᏗᏍᏙᏗᏱ ᎾᏂᎥ ᎾᏍᎩ Ꮎ Ꭼ-</td>
+                <td class="aligned-text">ᎪᏗ ᏧᏓᏅᏓᏗᏍᏙᏗᏱ ᎾᏂᎥ ᎾᏍᎩ Ꮎ Ꭼ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140110</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140110_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏬᎯᏳᎲᏍᎩ ᎾᎯᏳ” ᎢᎦ ᎨᏎᏍᏘ; ᏅᏗ-</td>
+                <td class="aligned-text">ᏬᎯᏳᎲᏍᎩ ᎾᎯᏳ ᎢᎦ ᎨᏎᏍᏗ, ᏅᏗ-</td>
+                <td class="ocr-raw">ᏬᎯᏳᎲᏍᎩ ᎾᎯᏳ ᎢᎦ ᎨᏎᏍᏗ, ᏅᏗ-</td>
+                <td class="aligned-text">ᏬᎯᏳᎲᏍᎩ ᎾᎯᏳ ᎢᎦ ᎨᏎᏍᏗ, ᏅᏗ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140110</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140110_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᏝᏍᏙᏗᏍᎨᏍᏘ ᎪᎯᏳᏅᎯ ᎨᏒ ᎣᎩ-</td>
+                <td class="aligned-text">ᎦᎵᏍᏙᏗᏍᎨᏍᏗ ᎪᎯᏳᏅᎯ ᎨᏒ ᎣᎩ-</td>
+                <td class="ocr-raw">ᎦᎵᏍᏙᏗᏍᎨᏍᏗ ᎪᎯᏳᏅᎯ ᎨᏒ ᎣᎩ-</td>
+                <td class="aligned-text">ᎦᎵᏍᏙᏗᏍᎨᏍᏗ ᎪᎯᏳᏅᎯ ᎨᏒ ᎣᎩ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140110</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140110_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏃᎮᎸ. ᎢᏤᎲᎢ,.,</td>
+                <td class="aligned-text">ᏃᎮᎸ ᎢᏤᎲᎢ.</td>
+                <td class="ocr-raw">ᏃᎮᎸ ᎢᏤᎲᎢ.</td>
+                <td class="aligned-text">ᏃᎮᎸ ᎢᏤᎲᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140111</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140111_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꭲ1 ᎾᏍᎩ ᎢᏑᏨᏍᏘ ᎾᏍᏉ ᏂᎪᎯᎸ</td>
+                <td class="aligned-text">11 ᎾᏍᎩ ᎢᏳᏍᏗ ᎾᏍᏉ ᏂᎪᎯᎸ</td>
+                <td class="ocr-raw">11 ᎾᏍᎩ ᎢᏳᏍᏗ ᎾᏍᏉ ᏂᎪᎯᎸ</td>
+                <td class="aligned-text">11 ᎾᏍᎩ ᎢᏳᏍᏗ ᎾᏍᏉ ᏂᎪᎯᎸ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140111</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140111_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎣᏣᏖᏙᎵᏍᏗᏍᎪ ᎢᏨᏯᏅᏖᏘᏍᎪ, Ꮎ-</td>
+                <td class="aligned-text">ᎣᏣᏓᏙᎵᏍᏗᏍᎪ ᎢᏨᏯᏅᏓᏗᏍᎪ, Ꮎ-</td>
+                <td class="ocr-raw">ᎣᏣᏓᏙᎵᏍᏗᏍᎪ ᎢᏨᏯᏅᏓᏗᏍᎪ, Ꮎ-</td>
+                <td class="aligned-text">ᎣᏣᏓᏙᎵᏍᏗᏍᎪ ᎢᏨᏯᏅᏓᏗᏍᎪ, Ꮎ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140111</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140111_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᎩ ᎣᎦᏁᎳᏅᎯ ᎤᏓᏯᏅᏗ ᎨᏒ ᎢᏥ-</td>
+                <td class="aligned-text">ᏍᎩ ᎣᎦᏁᎳᏅᎯ ᎤᏓᏯᏅᏗ ᎨᏒ ᎢᏥ-</td>
+                <td class="ocr-raw">ᏍᎩ ᎣᎦᏁᎳᏅᎯ ᎤᏓᏯᏅᏗ ᎨᏒ ᎢᏥ-</td>
+                <td class="aligned-text">ᏍᎩ ᎣᎦᏁᎳᏅᎯ ᎤᏓᏯᏅᏗ ᎨᏒ ᎢᏥ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140111</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140111_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏯᏅᏔᏅᎯ ᎢᏳ-.ᏝᏍᏙᏗᏱ, ᎠᎴ ᎤᏍᏆ-</td>
+                <td class="aligned-text">ᏯᏅᏔᏅᎯ ᎢᏳᎵᏍᏙᏗᏱ, ᎠᎴ ᎤᏍᏆ-</td>
+                <td class="ocr-raw">ᏯᏅᏔᏅᎯ ᎢᏳᎵᏍᏙᏗᏱ, ᎠᎴ ᎤᏍᏆ-</td>
+                <td class="aligned-text">ᏯᏅᏔᏅᎯ ᎢᏳᎵᏍᏙᏗᏱ, ᎠᎴ ᎤᏍᏆ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140111</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140111_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏘᏍᏘᏗᏱ ᏂᎦᏛ ᎣᏍᏛ ᎤᏰᎸᏘ ᎨᏒ Ꮕ”</td>
+                <td class="aligned-text">ᏗᏍᏗᏱ ᏂᎦᏛ ᎣᏍᏛ ᎤᏰᎸᏗ ᎨᏒ</td>
+                <td class="ocr-raw">ᏗᏍᏗᏱ ᏂᎦᏛ ᎣᏍᏛ ᎤᏰᎸᏗ ᎨᏒ Ꮕ-</td>
+                <td class="aligned-text">ᏗᏍᏗᏱ ᏂᎦᏛ ᎣᏍᏛ ᎤᏰᎸᏗ ᎨᏒ Ꮕ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140111</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140111_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏖᏳᏨᏖᎴᏅᎯ ᎤᏖᏅᏘᏳ’ ᎨᏓᏐ…Ꭲ; ᎠᎴ ᎪᎯ-</td>
+                <td class="aligned-text">ᏅᏓᏳᏓᎴᏅᎯ ᎤᏓᏅᏘᏳ ᎨᏒᎢ, ᎠᎴ ᎪᎯ-</td>
+                <td class="ocr-raw">ᏓᏳᏓᎴᏅᎯ ᎤᏓᏅᏘᏳ ᎨᏒᎢ, ᎠᎴ ᎪᎯ-</td>
+                <td class="aligned-text">ᏓᏳᏓᎴᏅᎯ ᎤᏓᏅᏘᏳ ᎨᏒᎢ, ᎠᎴ ᎪᎯ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140111</span></td>
+                <td>6</td>
+                <td><img class="crop-img" src="book_14/line_crops/140111_line_06.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏳᏗ ᎨᏒ ᏧᎸᏫᏍᏖᏁᏗ ᎬᏔᏅᎯ ᎤᎵ-</td>
+                <td class="aligned-text">ᏳᏗ ᎨᏒ ᏧᎸᏫᏍᏓᏁᏗ ᎬᏔᏅᎯ ᎤᎵ-</td>
+                <td class="ocr-raw">ᏳᏗ ᎨᏒ ᏧᎸᏫᏍᏓᏁᏗ ᎬᏔᏅᎯ ᎤᎵ-</td>
+                <td class="aligned-text">ᏳᏗ ᎨᏒ ᏧᎸᏫᏍᏓᏁᏗ ᎬᏔᏅᎯ ᎤᎵ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140111</span></td>
+                <td>7</td>
+                <td><img class="crop-img" src="book_14/line_crops/140111_line_07.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏂᎩᏛ ᎨᏒᎢ;Ꮆ</td>
+                <td class="aligned-text">ᏂᎩᏛ ᎨᏒᎢ;</td>
+                <td class="ocr-raw">ᏂᎩᏛ ᎨᏒᎢ;</td>
+                <td class="aligned-text">ᏂᎩᏛ ᎨᏒᎢ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140112</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140112_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">12 ᎾᏍᎩ ᎢᏳᏩᏂᏐᏘᏱ ᏚᏙᎥ ᎢᎦᏤᎵ</td>
+                <td class="aligned-text">12 ᎾᏍᎩ ᎢᏳᏩᏂᏐᏗᏱ ᏚᏙᎥ ᎢᎦᏤᎵ</td>
+                <td class="ocr-raw">Ꮺ ᎾᏍᎩ ᎢᏳᏩᏂᏐᏗᏱ ᏚᏙᎥ ᎢᎦᏤᎵ</td>
+                <td class="aligned-text">12 ᎾᏍᎩ ᎢᏳᏩᏂᏐᏗᏱ ᏚᏙᎥ ᎢᎦᏤᎵ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140112</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140112_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎦᎸᏉᏘᏳ</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᏓᎶᏁᏛ ᎦᎸᏉᏗᏳ</td>
+                <td class="ocr-raw">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᎦᎸᏉᏗᏳ</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᏓᎶᏁᏛ ᎦᎸᏉᏗᏳ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140112</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140112_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᏳᏭᏝᏍᏙᏗᏱ ᏂᎯ ᎢᏨᏂᏌᏛ; ᎠᎴ ᏂᎯ</td>
+                <td class="aligned-text">ᎢᏳᎵᏍᏙᏗᏱ ᏂᎯ ᎢᏨᏂᏌᏛ, ᎠᎴ ᏂᎯ</td>
+                <td class="ocr-raw">ᎢᏳᎵᏍᏙᏗᏱ ᏂᎯ ᎢᏨᏂᏌᏛ, ᎠᎴ ᏂᎯ</td>
+                <td class="aligned-text">ᎢᏳᎵᏍᏙᏗᏱ ᏂᎯ ᎢᏨᏂᏌᏛ, ᎠᎴ ᏂᎯ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140112</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140112_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᎸᏉᏗᏳ” ᎢᏰᏨᏁᏗᏱ ᎾᏍᎩ ᎢᏳᏩᏂ-</td>
+                <td class="aligned-text">ᎦᎸᏉᏗᏳ ᎢᏰᏨᏁᏗᏱ ᎾᏍᎩ ᎢᏳᏩᏂ-</td>
+                <td class="ocr-raw">ᎦᎸᏉᏗᏳ ᎢᏰᏨᏁᏗᏱ ᎾᏍᎩ ᎢᏳᏩᏂ-</td>
+                <td class="aligned-text">ᎦᎸᏉᏗᏳ ᎢᏰᏨᏁᏗᏱ ᎾᏍᎩ ᎢᏳᏩᏂ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140112</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140112_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏌᏛ, ᎾᏍᎩᏯ ᏄᏍᏛ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏝ-</td>
+                <td class="aligned-text">ᏌᏛ, ᎾᏍᎩᏯ ᏄᏍᏛ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵ-</td>
+                <td class="ocr-raw">ᏌᏛ, ᎾᏍᎩᏯ ᏄᏍᏛ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵ-</td>
+                <td class="aligned-text">ᏌᏛ, ᎾᏍᎩᏯ ᏄᏍᏛ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140112</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140112_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏗ ᎨᏒ ᎢᎦᏁᎳᏅᎯ; ᎠᎴ ᎤᎬᏫᏳᎯ</td>
+                <td class="aligned-text">ᏍᏗ ᎨᏒ ᎢᎦᏁᎳᏅᎯ, ᎠᎴ ᎤᎬᏫᏳᎯ</td>
+                <td class="ocr-raw">ᏍᏗ ᎨᏒ ᎢᎦᏁᎳᏅᎯ, ᎠᎴ ᎤᎬᏫᏳᎯ</td>
+                <td class="aligned-text">ᏍᏗ ᎨᏒ ᎢᎦᏁᎳᏅᎯ, ᎠᎴ ᎤᎬᏫᏳᎯ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140112</span></td>
+                <td>6</td>
+                <td><img class="crop-img" src="book_14/line_crops/140112_line_06.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏥᏌ ᎦᎶᏁᏛ.</td>
+                <td class="aligned-text">ᏥᏌ ᎦᎶᏁᏛ.</td>
+                <td class="ocr-raw">ᏥᏌ ᎦᎶᏁᏛ.</td>
+                <td class="aligned-text">ᏥᏌ ᎦᎶᏁᏛ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140201</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140201_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">1 ᎾᏍᎩᏃ, ᎢᏓᎵᏅᏟ, ᎢᏨᏔᏲᏎᎭ</td>
+                <td class="aligned-text">1 ᎾᏍᎩᏃ, ᎢᏓᎵᏅᏟ, ᎢᏨᏔᏲᏎᎭ</td>
+                <td class="ocr-raw">1 ᎾᏍᎩᏃ, ᎢᏓᎵᏅᏟ, ᎢᏨᏔᏲᏎᎭ</td>
+                <td class="aligned-text">1 ᎾᏍᎩᏃ, ᎢᏓᎵᏅᏟ, ᎢᏨᏔᏲᏎᎭ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140201</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140201_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᎷᎯᏍᏘ ᎨᏒ ᎢᎦᏤᏝ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="aligned-text">ᎤᎷᎯᏍᏗ ᎨᏒ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="ocr-raw">ᎤᎷᎯᏍᏗ ᎨᏒ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="aligned-text">ᎤᎷᎯᏍᏗ ᎨᏒ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140201</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140201_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ, ᎠᎴ ᎾᏍᎩ ᎧᏓᏓᏟᏌᏁᏗ ᎨᏒ</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ, ᎠᎴ ᎾᏍᎩ ᏪᏓᏓᏟᏌᏁᏗ ᎨᏒ</td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ, ᎠᎴ ᎾᏍᎩ ᏪᏓᏓᏟᏌᏁᏗ ᎨᏒ</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ, ᎠᎴ ᎾᏍᎩ ᏪᏓᏓᏟᏌᏁᏗ ᎨᏒ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140201</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140201_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᎬᏩᎵ,</td>
+                <td class="aligned-text">ᎤᎬᏩᎵ,</td>
+                <td class="ocr-raw">ᎤᎬᏩᎵ,</td>
+                <td class="aligned-text">ᎤᎬᏩᎵ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140202</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140202_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮽ ᎾᏍᎩ ᏞᎩᏉ ᏤᏥᏖᎸᎧᏁᏘᏱ ᏂᏢᎨᎹ</td>
+                <td class="aligned-text">2 ᎾᏍᎩ ᏞᎩᏉ ᏤᏥᏖᎸᎾᏗᏱ ᏂᎨᏒᎾ</td>
+                <td class="ocr-raw">2 ᎾᏍᎩ ᏞᎩᏉ ᏤᏥᏖᎸᎾᏁᏗᏱ ᏂᎨ-</td>
+                <td class="aligned-text">2 ᎾᏍᎩ ᏞᎩᏉ ᏤᏥᏖᎸᎾᏗᏱ ᏂᎨ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140202</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140202_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎡᏮ ᏮᏣᏓᏖᏅᏛᎢ, ᎠᎴ ᎢᏣᏕᏍᏔᏁᏗᏱ</td>
+                <td class="aligned-text">ᏕᏣᏓᏅᏛᎢ, ᎠᎴ ᎢᏣᏕᏯᏔᏁᏗᏱ</td>
+                <td class="ocr-raw">ᎠᎾ ᏕᏣᏓᏅᏛᎢ, ᎠᎴ ᎢᏣᏕᏍᏔᏁᏗᏱ</td>
+                <td class="aligned-text">ᏒᎾ ᏕᏣᏓᏅᏛᎢ, ᎠᎴ ᎢᏣᏕᏯᏔᏁᏗᏱ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140202</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140202_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏂᎨᏒᎾ, ᎾᏍᏉ ᎠᏓᏅᏙ ᎬᏘ, ᎠᎴ ᎦᏬ-</td>
+                <td class="aligned-text">ᏂᎨᏒᎾ, ᎾᏍᏉ ᎠᏓᏅᏙ ᎬᏗ, ᎠᎴ ᎦᏬ-</td>
+                <td class="ocr-raw">ᏂᎨᏒᎾ, ᎾᏍᏉ ᎠᏓᏅᏙ ᎬᏗ, ᎠᎴ ᎦᏬ-</td>
+                <td class="aligned-text">ᏂᎨᏒᎾ, ᎾᏍᏉ ᎠᏓᏅᏙ ᎬᏗ, ᎠᎴ ᎦᏬ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140202</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140202_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏂᏒᎯ, ᎠᎴ ᎪᏪᏝ ᎪᏪᎳᏅᎯ ᎬᏘ ᎠᏴ</td>
+                <td class="aligned-text">ᏂᏒᎯ, ᎠᎴ ᎪᏪᎵ ᎪᏪᎳᏅᎯ ᎬᏗ ᎠᏴ</td>
+                <td class="ocr-raw">ᏂᏒᎯ, ᎠᎴ ᎪᏪᎵ ᎪᏪᎳᏅᎯ ᎬᏗ ᎠᏴ</td>
+                <td class="aligned-text">ᏂᏒᎯ, ᎠᎴ ᎪᏪᎵ ᎪᏪᎳᏅᎯ ᎬᏗ ᎠᏴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140202</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140202_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎣᎦᏖᏅᏏᏛ ᏥᎨᏐ ᎢᏳᏍᏗ; ᎾᏍᎩ Ꭷ-</td>
+                <td class="aligned-text">ᎣᎦᏓᏅᏏᏛ ᏥᎨᏐ ᎢᏳᏍᏗ; ᎾᏍᎩ Ꭶ-</td>
+                <td class="ocr-raw">ᎣᎦᏓᏅᏏᏛ ᏥᎨᏐ ᎢᏳᏍᏗ; ᎾᏍᎩ -</td>
+                <td class="aligned-text">ᎣᎦᏓᏅᏏᏛ ᏥᎨᏐ ᎢᏳᏍᏗ; ᎾᏍᎩ Ꭶ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140202</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140202_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎶᏁᏛ ᎤᏤᎵᏝ ᎢᎦ ᎤᏍᏆᎸᎯᎦᏅ ᏥᎨᏐ</td>
+                <td class="aligned-text">ᎶᏁᏛ ᎤᏤᎵ ᎢᎦ ᎤᏍᏆᎸᎯᏕᏅ ᏥᎨᏐ</td>
+                <td class="ocr-raw">ᎶᏁᏛ ᎤᏤᎵ ᎢᎦ ᎤᏍᏆᎸᎯᏕᏅ ᏥᎨᏐ</td>
+                <td class="aligned-text">ᎶᏁᏛ ᎤᏤᎵ ᎢᎦ ᎤᏍᏆᎸᎯᏕᏅ ᏥᎨᏐ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140202</span></td>
+                <td>6</td>
+                <td><img class="crop-img" src="book_14/line_crops/140202_line_06.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎾᏍᎩᏯᎢ.</td>
+                <td class="aligned-text">ᎾᏍᎩᏯᎢ.</td>
+                <td class="ocr-raw">ᎾᏍᎩᏯᎢ.</td>
+                <td class="aligned-text">ᎾᏍᎩᏯᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140203</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140203_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">8 ᎠᏎ ᏞᏍᏘ ᎩᎶ ᏱᏥᎵᏓᏍᏔᏁᏍᏘ;</td>
+                <td class="aligned-text">3 ᎠᏎ ᏞᏍᏗ ᎩᎶ ᏱᏥᎵᏓᏍᏔᏁᏍᏗ;</td>
+                <td class="ocr-raw">8 ᎠᏎ ᏞᏍᏗ ᎩᎶ ᏱᏥᎵᏓᏍᏔᏁᏍᏗ;</td>
+                <td class="aligned-text">3 ᎠᏎ ᏞᏍᏗ ᎩᎶ ᏱᏥᎵᏓᏍᏔᏁᏍᏗ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140203</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140203_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎥᏝᏰᏃ (ᎾᎯᏳ” ᎢᎦ ᎤᎵᏰᎢᎶᎯᏍᏗ ᏱᎩ1</td>
+                <td class="aligned-text">ᎥᏝᏰᏃ [ᎾᎯᏳ ᎢᎦ ᎤᎵᏰᎢᎶᎯᏍᏗ ᏱᎩ]</td>
+                <td class="ocr-raw">ᎥᏝᏰᏃ 16ᎯᏳ ᎢᎦ ᎤᎵᏰᎢᎶᎯᏍᏗ ᏱᎩ</td>
+                <td class="aligned-text">ᎥᏝᏰᏃ [ᎾᎯᏳ ᎢᎦ ᎤᎵᏰᎢᎶᎯᏍᏗ ᏱᎩ]</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140203</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140203_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎬᏂ ᎢᎬᏱ ᎠᏂᏑᎵᎪᎨᎬᏍᏘ, ᎠᎴ ᎾᏍᎩ</td>
+                <td class="aligned-text">ᎬᏂ ᎢᎬᏱ ᎠᏂᏑᎵᎪᎨᏍᏗ, ᎠᎴ ᎾᏍᎩ</td>
+                <td class="ocr-raw">ᎬᏂ ᎢᎬᏱ ᎠᏂᏑᎵᎪᎨᏍᏗ, ᎠᎴ ᎾᏍᎩ</td>
+                <td class="aligned-text">ᎬᏂ ᎢᎬᏱ ᎠᏂᏑᎵᎪᎨᏍᏗ, ᎠᎴ ᎾᏍᎩ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140203</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140203_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꭷ ᎠᏍᎦᏯ ᎠᏍᎦᎾ ᏧᏄᏫᏍᏖᏁᎯ ᎬᏂᎨᎢᎸ</td>
+                <td class="aligned-text">Ꮎ ᎠᏍᎦᏯ ᎠᏍᎦᎾ ᏧᎸᏫᏍᏓᏁᎯ ᎬᏂᎨᏒ</td>
+                <td class="ocr-raw">Ꮎ ᎠᏍᎦᏯ ᎠᏍᎦᎾ ᏧᎸᏫᏍᏓᏁᎯ ᎬᏂᎨᏒ</td>
+                <td class="aligned-text">Ꮎ ᎠᏍᎦᏯ ᎠᏍᎦᎾ ᏧᎸᏫᏍᏓᏁᎯ ᎬᏂᎨᏒ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140203</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140203_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎧᎬᏁᎸᎭ, ᎾᏍᎩ ᎠᏛᏗᏘᏍᎩ ᎤᏪᏥᎶ</td>
+                <td class="aligned-text">ᎾᎬᏁᎸᎭ, ᎾᏍᎩ ᎠᏛᏗᏍᎩ ᎤᏪᏥ;</td>
+                <td class="ocr-raw">ᎾᎬᏁᎸᎭ, ᎾᏍᎩ ᎠᏛᏗᏍᎩ ᎤᏪᏥ</td>
+                <td class="aligned-text">ᎾᎬᏁᎸᎭ, ᎾᏍᎩ ᎠᏛᏗᏍᎩ ᎤᏪᏥ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140204</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140204_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮞ ᎾᏍᎩ ᏥᏓᎦᏘᎴᎦ ᎠᎴ ᎦᏄᎳᏗᏢ</td>
+                <td class="aligned-text">4 ᎾᏍᎩ ᏥᏓᎦᏘᎴᎦ ᎠᎴ ᎦᎸᎳᏗᏢ</td>
+                <td class="ocr-raw">Ꮞ ᎾᏍᎩ ᏥᏓᎦᏘᎴᎦ ᎠᎴ ᎦᎸᎳᏗᏢ</td>
+                <td class="aligned-text">4 ᎾᏍᎩ ᏥᏓᎦᏘᎴᎦ ᎠᎴ ᎦᎸᎳᏗᏢ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140204</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140204_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏥᎾᏮᏖᏛᏁᎭ ᏂᎦᎥ ᎤᏁᎳᏅᎯ ᎨᎪᏎᏘ</td>
+                <td class="aligned-text">ᏥᎾᏓᏛᏁᎭ ᏂᎦᎥ ᎤᏁᎳᏅᎯ ᎨᎪᏎᏗ</td>
+                <td class="ocr-raw">ᏥᎾᏓᏛᏁᎭ ᏂᎦᎥ ᎤᏁᎳᏅᎯ ᎨᎪᏎᏗ</td>
+                <td class="aligned-text">ᏥᎾᏓᏛᏁᎭ ᏂᎦᎥ ᎤᏁᎳᏅᎯ ᎨᎪᏎᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140204</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140204_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏥᎩ; ᎠᎴ ᎨᎦᏓᏙᏝᏍᏓᏁᎯ ᏥᎩ Ꮆ ᎾᏍᎩ</td>
+                <td class="aligned-text">ᏥᎩ, ᎠᎴ ᎨᎦᏓᏙᎵᏍᏓᏁᎯ ᏥᎩ; ᎾᏍᎩ</td>
+                <td class="ocr-raw">ᏥᎩ, ᎠᎴ ᎨᎦᏓᏙᎵᏍᏓᏁᎯ ᏥᎩ; ᎾᏍᎩ</td>
+                <td class="aligned-text">ᏥᎩ, ᎠᎴ ᎨᎦᏓᏙᎵᏍᏓᏁᎯ ᏥᎩ; ᎾᏍᎩ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140204</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140204_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᏳᏍᏗ ᎤᏁᎳᏅᎯ ᎾᏍᎩᏯ ᎤᏬᎳ</td>
+                <td class="aligned-text">ᎢᏳᏍᏗ ᎤᏁᎳᏅᎯ ᎾᏍᎩᏯ ᎤᏬᎳ</td>
+                <td class="ocr-raw">ᎢᏳᏍᏗ ᎤᏁᎳᏅᎯ ᎾᏍᎩᏯ ᎤᏬᎳ</td>
+                <td class="aligned-text">ᎢᏳᏍᏗ ᎤᏁᎳᏅᎯ ᎾᏍᎩᏯ ᎤᏬᎳ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140204</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140204_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎠᏓᏁᎸᎢ, ᎤᏩᏞᏒ</td>
+                <td class="aligned-text">ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎠᏓᏁᎸᎢ, ᎤᏩᏒ</td>
+                <td class="ocr-raw">ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎠᏓᏁᎸᎢ, ᎤᏩᏒ</td>
+                <td class="aligned-text">ᎤᏁᎳᏅᎯ ᎤᏤᎵ ᎠᏓᏁᎸᎢ, ᎤᏩᏒ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140204</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140204_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎬᏂᎬᎡ ᎾᏖᏓᏛᏁᎭ ᎤᏁᎳᏅᎯ ᎨᏒᎢ.</td>
+                <td class="aligned-text">ᎬᏂᎨᏒ ᎾᏓᏛᏁᎭ ᎤᏁᎳᏅᎯ ᎨᏒᎢ.</td>
+                <td class="ocr-raw">ᎬᏂᎨᏒ ᎾᏓᏛᏁᎭ ᎤᏁᎳᏅᎯ ᎨᏒᎢ.</td>
+                <td class="aligned-text">ᎬᏂᎨᏒ ᎾᏓᏛᏁᎭ ᎤᏁᎳᏅᎯ ᎨᏒᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140205</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140205_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏊᏍ ᏄᎩ Ꮒ ᎠᎢ”</td>
+                <td class="aligned-text">5 ᏝᏍᎪ ᏱᏣᏅᏔ, ᎾᏍᎩ ᎠᏏ ᏥᏨᏰᎳᏗᏙᎲᎩ ᎾᏍᎩ ᎯᎠ ᎢᏨᏃᎮᎮᎸᎢ?</td>
+                <td class="ocr-raw">ᎵᏍ ᏱᎣᏚᎳ, ᎮᏍᎩ ᎠᏥᏃᏉ</td>
+                <td class="aligned-text">5 ᏝᏍᎪ ᏱᏣᏅᏔ, ᎾᏍᎩ ᎠᏏ ᏥᏨᏰᎳᏗᏙᎲᎩ ᎾᏍᎩ ᎯᎠ ᎢᏨᏃᎮᎮᎸᎢ?</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140206</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140206_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮾ ᎪᎯᏃ ᏥᎩ ᎢᏗᎦᏔᎭᏅ ᎢᏳᏍᏗᏘ</td>
+                <td class="aligned-text">6 ᎪᎯᏃ ᏥᎩ ᎢᏗᎦᏔᎭ ᎢᏳᏍᏗ</td>
+                <td class="ocr-raw">Ꮾ ᎪᎯᏃ ᏥᎩ ᎢᏗᎦᏔᎭ ᎢᏳᏍᏗ</td>
+                <td class="aligned-text">6 ᎪᎯᏃ ᏥᎩ ᎢᏗᎦᏔᎭ ᎢᏳᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140206</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140206_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎠᏲᏍᏙᏗᏍᎬ ᎬᏂᎨᏒ ᎢᏯᎬᏁᏗᏱ ᎾᏅ</td>
+                <td class="aligned-text">ᎠᏲᏍᏙᏗᏍᎬ ᎬᏂᎨᏒ ᎢᏯᎬᏁᏗᏱ</td>
+                <td class="ocr-raw">ᎠᏲᏍᏙᏗᏍᎬ ᎬᏂᎨᏒ ᎢᏯᎬᏁᏗᏱ Ꮎ-</td>
+                <td class="aligned-text">ᎠᏲᏍᏙᏗᏍᎬ ᎬᏂᎨᏒ ᎢᏯᎬᏁᏗᏱ Ꮎ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140206</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140206_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎯᏳ ᎬᏂᎨᏒ ᎢᏯᎬᏁᏘ ᎨᏒᎢ.</td>
+                <td class="aligned-text">ᎾᎯᏳ ᎬᏂᎨᏒ ᎢᏯᎬᏁᏗ ᎨᏒᎢ.</td>
+                <td class="ocr-raw">ᎯᏳ ᎬᏂᎨᏒ ᎢᏯᎬᏁᏗ ᎨᏒᎢ.</td>
+                <td class="aligned-text">ᎯᏳ ᎬᏂᎨᏒ ᎢᏯᎬᏁᏗ ᎨᏒᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140207</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140207_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">7 ᎤᏕᎵᏛᏰᏃ ᎠᏍᎦᎾ ᎦᏳᎳ ᏚᎸᏫ-</td>
+                <td class="aligned-text">7 ᎤᏕᎵᏛᏰᏃ ᎠᏍᎦᎾ ᎦᏳᎳ ᏚᎸᏫ-</td>
+                <td class="ocr-raw">7 ᎤᏳᎵᏛᏰᏃ ᎠᏍᎦᎾ ᎦᏳᎳ ᏚᎸᏫ-</td>
+                <td class="aligned-text">7 ᎤᏕᎵᏛᏰᏃ ᎠᏍᎦᎾ ᎦᏳᎳ ᏚᎸᏫ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140207</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140207_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏖᏁᎭ ;Ꮆ ᎪᎯᏍᎩᏂ ᎨᎬᏒᎡ ᎠᏲᏍᏙᏗᏍᎩ</td>
+                <td class="aligned-text">ᏍᏓᏁᎭ; ᎪᎯᏍᎩᏂ ᎨᏒ ᎠᏲᏍᏙᏗᏍᎩ</td>
+                <td class="ocr-raw">ᏍᏓᏁᎭ; ᎪᎯᏍᎩᏂ ᎨᏒ ᎠᏲᏍᏙᏗᏍᎩ</td>
+                <td class="aligned-text">ᏍᏓᏁᎭ; ᎪᎯᏍᎩᏂ ᎨᏒ ᎠᏲᏍᏙᏗᏍᎩ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140207</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140207_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏥᎩ ᎤᏲᏍᏙᏓᏁᎮᏍᏗ ᎬᏂ ᎠᏥᎧᎲ”</td>
+                <td class="aligned-text">ᏥᎩ ᎤᏲᏍᏙᏓᏁᎮᏍᏗ ᎬᏂ ᎠᏥᎧᎲᏒᎭ.</td>
+                <td class="ocr-raw">ᏥᎩ ᎤᏲᏍᏙᏓᏁᎮᏍᏗ ᎬᏂ ᎠᏥᎧᎲ-</td>
+                <td class="aligned-text">ᏥᎩ ᎤᏲᏍᏙᏓᏁᎮᏍᏗ ᎬᏂ ᎠᏥᎧᎲ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140207</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140207_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᎡᎿᎩᏤ,</td>
+                <td class="aligned-text"></td>
+                <td class="ocr-raw">ᏒᏅᎩ</td>
+                <td class="aligned-text">ᏒᎭ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140208</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140208_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">8 ᎾᎯᏳᏃ ᎾᏍᎩ Ꮎ ᎠᏍᎦᎾ ᎬᏂᎨᎢᏒ</td>
+                <td class="aligned-text">8 ᎾᎯᏳᏃ ᎾᏍᎩ Ꮎ ᎠᏍᎦᎾ ᎬᏂᎨᏒ</td>
+                <td class="ocr-raw">Ꭶ ᎾᎯᏳᏃ ᎾᏍᎩ Ꮎ ᎠᏍᎦᎾ ᎬᏂᎨᏒ</td>
+                <td class="aligned-text">8 ᎾᎯᏳᏃ ᎾᏍᎩ Ꮎ ᎠᏍᎦᎾ ᎬᏂᎨᏒ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140208</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140208_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᏚᏖᏰᎬᏁᎯ, ᎧᏍᎩ ᎤᎬᏫᏳᎯ ᏨᏛᏛ”</td>
+                <td class="aligned-text">ᏅᏓᏰᎬᏁᎵ, ᎾᏍᎩ ᎤᎬᏫᏳᎯ ᏨᏛᏛᏔᏂ</td>
+                <td class="ocr-raw">ᏅᏓᏰᎬᏁᎵ, ᎾᏍᎩ ᎤᎬᏫᏳᎯ ᏨᏛᏛ-</td>
+                <td class="aligned-text">ᏅᏓᏰᎬᏁᎵ, ᎾᏍᎩ ᎤᎬᏫᏳᎯ ᏨᏛᏛ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140208</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140208_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏔᏂ ᎠᏖᏅᏙ ᎠᎰᎵ ᏅᏓᏳᏓᎴᏅᎯ ᎬᏘᏗ,</td>
+                <td class="aligned-text">ᎠᏓᏅᏙ ᎠᎰᎵ ᏅᏓᏳᏓᎴᏅᎯ ᎬᏗ,</td>
+                <td class="ocr-raw">ᏔᏂ ᎠᏓᏅᏙ ᎠᎰᎵ ᏅᏓᏳᏓᎴᏅᎯ ᎬᏗ,</td>
+                <td class="aligned-text">ᏔᏂ ᎠᏓᏅᏙ ᎠᎰᎵ ᏅᏓᏳᏓᎴᏅᎯ ᎬᏗ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140208</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140208_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎠᎴ ᏨᏛᏛᏔᏂ ᏓᎬᏔᏂ ᎬᏂᎨᎡᏒ ᎾᎬᏑ</td>
+                <td class="aligned-text">ᎠᎴ ᏨᏛᏛᏔᏂ ᏓᎬᏔᏂ ᎬᏂᎨᏒ ᎾᎬᏁᎲ</td>
+                <td class="ocr-raw">ᎠᎴ ᏨᏛᏛᏔᏂ ᏓᎬᏔᏂ ᎬᏂᎨᏒ ᎾᎬ-</td>
+                <td class="aligned-text">ᎠᎴ ᏨᏛᏛᏔᏂ ᏓᎬᏔᏂ ᎬᏂᎨᏒ ᎾᎬ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140208</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140208_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏁᎲ ᎧᎯᏳ ᎦᎷᏨᎭᏤᎥ;</td>
+                <td class="aligned-text">ᎾᎯᏳ ᎦᎷᏨᎭ;</td>
+                <td class="ocr-raw">ᏁᎲ ᎾᎯᏳ ᎦᎷᏨᎭ ;</td>
+                <td class="aligned-text">ᏁᎲ ᎾᎯᏳ ᎦᎷᏨᎭ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140209</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140209_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">9 ᎾᏍᎩ 6 ᎤᎷᎯᏍᏘ ᎨᎢ ᎾᏍᎩᏯ</td>
+                <td class="aligned-text">9 ᎾᏍᎩ Ꮎ ᎤᎷᎯᏍᏗ ᎨᏒ ᎾᏍᎩᏯ</td>
+                <td class="ocr-raw">3 ᎾᏍᎩ Ꮎ ᎤᎷᎯᏍᏗ ᎨᏒ ᎾᏍᎩᏯ</td>
+                <td class="aligned-text">9 ᎾᏍᎩ Ꮎ ᎤᎷᎯᏍᏗ ᎨᏒ ᎾᏍᎩᏯ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140209</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140209_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏎᏖᏂ ᏧᏄᏫᏍᏓᏁᏗ ᏚᎸᏫᏍᏓᏁᎮᏍᏗ</td>
+                <td class="aligned-text">ᏎᏓᏂ ᏧᎸᏫᏍᏓᏁᏗ ᏚᎸᏫᏍᏓᏁᎮᏍᏗ</td>
+                <td class="ocr-raw">ᏎᏓᏂ ᏧᎸᏫᏍᏓᏁᏗ ᏚᎸᏫᏍᏓᏁᎮᏍᏗ</td>
+                <td class="aligned-text">ᏎᏓᏂ ᏧᎸᏫᏍᏓᏁᏗ ᏚᎸᏫᏍᏓᏁᎮᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140209</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140209_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮀ;ᏗᏜᎨᏍᏗ ᏬᏣᏘ ᎤᎵᏂᎩᏛ ᎨᏒᎢ;</td>
+                <td class="aligned-text">ᎬᏗᏍᎨᏍᏗ ᎤᏣᏘ ᎤᎵᏂᎩᏛ ᎨᏒᎢ,</td>
+                <td class="ocr-raw">ᎬᏗᏍᎨᏍᏗ ᎤᏣᏘ ᎤᎵᏂᎩᏛ ᎨᏒᎢ,</td>
+                <td class="aligned-text">ᎬᏗᏍᎨᏍᏗ ᎤᏣᏘ ᎤᎵᏂᎩᏛ ᎨᏒᎢ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140209</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140209_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎠᎴ ᎤᏍᏆᏂᎪᏘ ᎠᎴ ᎦᏰᎪᎩ ᎤᏰᎸᏛᎢ,</td>
+                <td class="aligned-text">ᎠᎴ ᎤᏍᏆᏂᎪᏗ ᎠᎴ ᎦᏰᎪᎩ ᎤᏰᎸᏛᎢ,</td>
+                <td class="ocr-raw">ᎠᎴ ᎤᏍᏆᏂᎪᏗ ᎠᎴ ᎦᏰᎪᎩ ᎤᏰᎸᏛᎢ,</td>
+                <td class="aligned-text">ᎠᎴ ᎤᏍᏆᏂᎪᏗ ᎠᎴ ᎦᏰᎪᎩ ᎤᏰᎸᏛᎢ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140210</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140210_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">10 ᎠᎴ ᎬᏗᏍᎨᏍᏗ ᎤᏣᏘ ᎤᏓᏝᏓ”-</td>
+                <td class="aligned-text">10 ᎠᎴ ᎬᏗᏍᎨᏍᏗ ᎤᏣᏘ ᎤᏓᎵᏓ-</td>
+                <td class="ocr-raw">10 ᎠᎴ ᎬᏗᏍᎨᏍᏗ ᎤᏣᏘ ᎤᏓᎵᏓ-</td>
+                <td class="aligned-text">10 ᎠᎴ ᎬᏗᏍᎨᏍᏗ ᎤᏣᏘ ᎤᏓᎵᏓ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140210</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140210_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏘ ᏂᎦᏅᎪᏛᎾ Ꭸ ᎠᏁᎲ ᎾᏍᎩ ᎨᏥ-”</td>
+                <td class="aligned-text">ᏍᏗ ᏂᏚᏳᎪᏛᎾ ᎨᏒ ᎠᏁᎲ ᎾᏍᎩ ᎨᏥ-</td>
+                <td class="ocr-raw">ᏍᏗ ᏂᏚᏳᎪᏛᎾ ᎨᏒ ᎠᏁᎲ ᎾᏍᎩ ᎨᏥ-</td>
+                <td class="aligned-text">ᏍᏗ ᏂᏚᏳᎪᏛᎾ ᎨᏒ ᎠᏁᎲ ᎾᏍᎩ ᎨᏥ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140210</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140210_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏛᏙᏗ, ᎨᏒᎢ 35 ᏅᏘᎦᎵᏍᏙᏗᏍᎬ ᏂᎦᎾ-</td>
+                <td class="aligned-text">ᏛᏙᏗ ᎨᏒᎢ; ᏅᏗᎦᎵᏍᏙᏗᏍᎬ ᏂᏚᎾ-</td>
+                <td class="ocr-raw">ᏛᏙᏗ ᎨᏒᎢ ;Ꮆ ᏅᏗᎦᎵᏍᏙᏗᏍᎬ ᏂᏚᎾ-</td>
+                <td class="aligned-text">ᏛᏙᏗ ᎨᏒᎢ; ᏅᏗᎦᎵᏍᏙᏗᏍᎬ ᏂᏚᎾ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140210</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140210_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏓᏂᎸᏨᎧᏮ Ꭸ .Ꭱ ᏚᏅᎪᏛ ᎠᎨᏳᏗ ᎨᏒᎢ;</td>
+                <td class="aligned-text">ᏓᏂᎸᏨᎾ ᎨᏒ ᏚᏳᎪᏛ ᎠᎨᏳᏗ ᎨᏒᎢ,</td>
+                <td class="ocr-raw">ᏓᏂᎸᏨᎾ ᎨᏒ ᏚᏳᎪᏛ ᎠᎨᏳᏗ ᎨᏒᎢ,</td>
+                <td class="aligned-text">ᏓᏂᎸᏨᎾ ᎨᏒ ᏚᏳᎪᏛ ᎠᎨᏳᏗ ᎨᏒᎢ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140210</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140210_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎧᏍᎩ ᎦᎨᏥᏍᏕᎸᏗ ᎢᏳᏝᏍᏙᏗᏱ.</td>
+                <td class="aligned-text">ᎾᏍᎩ ᎦᎨᏥᏍᏕᎸᏗ ᎢᏳᎵᏍᏙᏗᏱ.</td>
+                <td class="ocr-raw">ᎾᏍᎩ ᎦᎨᏥᏍᏕᎸᏗ ᎢᏳᎵᏍᏙᏗᏱ.</td>
+                <td class="aligned-text">ᎾᏍᎩ ᎦᎨᏥᏍᏕᎸᏗ ᎢᏳᎵᏍᏙᏗᏱ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140211</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140211_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">11 ᎠᎴ ᎧᏍᎩ ᎢᎹᏬᏍᏘ ᎤᏁᎳᏅᎯ</td>
+                <td class="aligned-text">11 ᎠᎴ ᎾᏍᎩ ᎢᏳᏍᏗ ᎤᏁᎳᏅᎯ</td>
+                <td class="ocr-raw">11 ᎠᎴ ᎾᏍᎩ ᎢᏳᏍᏗ ᎤᏁᎳᏅᎯ</td>
+                <td class="aligned-text">11 ᎠᎴ ᎾᏍᎩ ᎢᏳᏍᏗ ᎤᏁᎳᏅᎯ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140211</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140211_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᏖᏅᏍᏗ ᎨᏎᏍᏗ ᎤᏂᎷᏤᏘᏱ ᎤᎵᏂ-</td>
+                <td class="aligned-text">ᎤᏓᏅᏍᏗ ᎨᏎᏍᏗ ᎤᏂᎷᏤᏗᏱ ᎤᎵᏂ-</td>
+                <td class="ocr-raw">ᎤᏓᏅᏍᏗ ᎨᏎᏍᏗ ᎤᏂᎷᏤᏗᏱ ᎤᎵᏂ-</td>
+                <td class="aligned-text">ᎤᏓᏅᏍᏗ ᎨᏎᏍᏗ ᎤᏂᎷᏤᏗᏱ ᎤᎵᏂ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140211</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140211_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎩᏛ ᎤᏂᎶᏄᎮᏍᎩ ᎾᏍᎩ ᎢᏳᏩᏂᏐᏗ</td>
+                <td class="aligned-text">ᎩᏛ ᎤᏂᎶᏄᎮᏍᎩ ᎾᏍᎩ ᎢᏳᏩᏂᏐᏗ</td>
+                <td class="ocr-raw">ᎩᏛ ᎤᏂᎶᏄᎮᏍᎩ ᎾᏍᎩ ᎢᏳᏩᏂᏐᏗ</td>
+                <td class="aligned-text">ᎩᏛ ᎤᏂᎶᏄᎮᏍᎩ ᎾᏍᎩ ᎢᏳᏩᏂᏐᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140211</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140211_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎧᏃᎯᏳᏘᏱ ᎦᏰᎪᎩ ᎨᏒᎢ 53</td>
+                <td class="aligned-text">ᎤᏃᎯᏳᏗᏱ ᎦᏰᎪᎩ ᎨᏒᎢ;</td>
+                <td class="ocr-raw">ᎤᏃᎯᏳᏗᏱ ᎦᏰᎪᎩ ᎨᏒᎢ;</td>
+                <td class="aligned-text">ᎤᏃᎯᏳᏗᏱ ᎦᏰᎪᎩ ᎨᏒᎢ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140212</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140212_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">19 ᎾᏍᎩ ᏗᎬᏩᏮᏚᎪᏖᏁᏗ ᎢᏳᎲ-</td>
+                <td class="aligned-text">12 ᎾᏍᎩ ᏗᎬᏩᎾᏚᎪᏓᏁᏗ ᎢᏳᎵ-</td>
+                <td class="ocr-raw">Ꮉ ᎾᏍᎩ ᏗᎬᏩᎾᏚᎪᏓᏁᏗ ᎢᏳᎵ-</td>
+                <td class="aligned-text">12 ᎾᏍᎩ ᏗᎬᏩᎾᏚᎪᏓᏁᏗ ᎢᏳᎵ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140212</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140212_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏙᏘᏱ ᎾᏂᎥ ᎾᏍᎩ Ꮎ ᎾᏃᎯᏳᎲᏍᎬᎾ</td>
+                <td class="aligned-text">ᏍᏙᏗᏱ ᎾᏂᎥ ᎾᏍᎩ Ꮎ ᎾᏃᎯᏳᎲᏍᎬᎾ</td>
+                <td class="ocr-raw">ᏍᏙᏗᏱ ᎾᏂᎥ ᎾᏍᎩ Ꮎ ᎾᏃᎯᏳᎲᏍᎬᎾ</td>
+                <td class="aligned-text">ᏍᏙᏗᏱ ᎾᏂᎥ ᎾᏍᎩ Ꮎ ᎾᏃᎯᏳᎲᏍᎬᎾ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140212</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140212_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏚᏳᎪᏛ ᎨᏒᎢ; ᏂᏚᏅᏳᎪᏛᎾᏍᎩᏂ ᎨᏒ</td>
+                <td class="aligned-text">ᏚᏳᎪᏛ ᎨᏒᎢ, ᏂᏚᏳᎪᏛᎾᏍᎩᏂ ᎨᏒ</td>
+                <td class="ocr-raw">ᏚᏳᎪᏛ ᎨᏒᎢ, ᏂᏚᏳᎪᏛᎾᏍᎩᏂ ᎨᏒ</td>
+                <td class="aligned-text">ᏚᏳᎪᏛ ᎨᏒᎢ, ᏂᏚᏳᎪᏛᎾᏍᎩᏂ ᎨᏒ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140212</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140212_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎠᏃᎯᏳᎲᏍᎩ.</td>
+                <td class="aligned-text">ᎠᏃᎯᏳᎲᏍᎩ.</td>
+                <td class="ocr-raw">ᎠᏃᎯᏳᎲᏍᎩ.</td>
+                <td class="aligned-text">ᎠᏃᎯᏳᎲᏍᎩ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140213</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140213_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">18 ᎠᏎᏃ ᎣᎦᏚᏖᎳ ᏂᎪᎯᎸ ᎣᏣᎵ”</td>
+                <td class="aligned-text">13 ᎠᏎᏃ ᎣᎦᏚᏓᎳ ᏂᎪᎯᎸ</td>
+                <td class="ocr-raw">13 ᎠᏎᏃ ᎣᎦᏚᏓᎳ ᏂᎪᎯᎸ ᎣᏣᎵ-</td>
+                <td class="aligned-text">13 ᎠᏎᏃ ᎣᎦᏚᏓᎳ ᏂᎪᎯᎸ ᎣᏣᎵ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140213</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140213_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎡᎵᏤᏘᏱ ᎤᏁᎳᏅᎯ ᏂᎯ ᎨᏒᎡ ᎤᎬ-</td>
+                <td class="aligned-text">ᎣᏣᎵᎡᎵᏤᏗᏱ ᎤᏁᎳᏅᎯ ᏂᎯ ᎨᏒ ᎤᎬ-</td>
+                <td class="ocr-raw">ᎡᎵᏤᏗᏱ ᎤᏁᎳᏅᎯ ᏂᎯ ᎨᏒ ᎤᎬ-</td>
+                <td class="aligned-text">ᎡᎵᏤᏗᏱ ᎤᏁᎳᏅᎯ ᏂᎯ ᎨᏒ ᎤᎬ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140213</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140213_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏩᎵ, ᎢᏓᎵᏅᏣ ᎤᎬᏫᏳᎯ ᎢᏥᎨᏳᎯ,</td>
+                <td class="aligned-text">ᏩᎵ, ᎢᏓᎵᏅᏟ ᎤᎬᏫᏳᎯ ᎢᏥᎨᏳᎯ,</td>
+                <td class="ocr-raw">ᏩᎵ, ᎢᏓᎵᏅᏣ ᎤᎬᏫᏳᎯ ᎢᏥᎨᏳᎯ,</td>
+                <td class="aligned-text">ᏩᎵ, ᎢᏓᎵᏅᏟ ᎤᎬᏫᏳᎯ ᎢᏥᎨᏳᎯ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140213</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140213_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">():Ꮧ!ᏕᎥ’ᏍᏙᏗᎭ ᎤᏁᎳᏅᎯ ᏧᏓᎴᏅᎲ</td>
+                <td class="aligned-text">ᏅᏗᎦᎵᏍᏙᏗᎭ ᎤᏁᎳᏅᎯ ᏧᏓᎴᏅᎲ</td>
+                <td class="ocr-raw">ᏅᏗᎦᎵᏍᏙᏗᎭ ᎤᏁᎳᏅᎯ ᏧᏓᎴᏅᎲ</td>
+                <td class="aligned-text">ᏅᏗᎦᎵᏍᏙᏗᎭ ᎤᏁᎳᏅᎯ ᏧᏓᎴᏅᎲ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140213</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140213_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮾ-ᏖᎬᏩᏖᎴᏅᏛ ᎢᏣᏑᏰᏒᎡ ᎡᏥᏍᏕᎸᏗᏱ</td>
+                <td class="aligned-text">ᏅᏓᎬᏩᏓᎴᏅᏛ ᎢᏣᏑᏰᏒ ᎡᏥᏍᏕᎸᏗᏱ</td>
+                <td class="ocr-raw">ᏅᏓᎬᏩᏓᎴᏅᏛ ᎢᏣᏑᏰᎡ ᎡᏥᏍᏕᎸᏗᏱ</td>
+                <td class="aligned-text">ᏅᏓᎬᏩᏓᎴᏅᏛ ᎢᏣᏑᏰᏒ ᎡᏥᏍᏕᎸᏗᏱ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140213</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140213_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎬᏙᏗᏱ ᎠᏓᏅᏙ ᎢᏥᏅᎦᎵᏍᎬᎢ, ᎠᎴ</td>
+                <td class="aligned-text">ᎬᏙᏗᏱ ᎠᏓᏅᏙ ᎢᏥᏅᎦᎵᏍᎬᎢ, ᎠᎴ</td>
+                <td class="ocr-raw">ᎬᏙᏗᏱ ᎠᏓᏅᏙ ᎢᏥᏅᎦᎵᏍᎬᎢ, ᎠᎴ</td>
+                <td class="aligned-text">ᎬᏙᏗᏱ ᎠᏓᏅᏙ ᎢᏥᏅᎦᎵᏍᎬᎢ, ᎠᎴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140213</span></td>
+                <td>6</td>
+                <td><img class="crop-img" src="book_14/line_crops/140213_line_06.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᏦᎯᏳᎡ ᎤᏙᎯᏳᎯ ᎨᏒᎢ Ꮆ</td>
+                <td class="aligned-text">ᎢᏦᎯᏳᏒ ᎤᏙᎯᏳᎯ ᎨᏒᎢ;</td>
+                <td class="ocr-raw">ᎢᏦᎯᏳᏒ ᎤᏙᎯᏳᎯ ᎨᏒᎢ;</td>
+                <td class="aligned-text">ᎢᏦᎯᏳᏒ ᎤᏙᎯᏳᎯ ᎨᏒᎢ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140214</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140214_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">1Ꮞ ᎾᎿ ᏥᏕᏥᎧᏅ ᎣᏍᏛ ᎧᏃᎮᏛ</td>
+                <td class="aligned-text">14 ᎾᎿᎭᏥᏕᏲᎧᏅ ᎣᏍᏛ ᎧᏃᎮᏛ</td>
+                <td class="ocr-raw">1Ꮞ ᎾᎿ ᏥᏕᏥᎧᏅ ᎣᏍᏛ ᎧᏃᎮᏛ</td>
+                <td class="aligned-text">14 ᎾᎿᎭᏥᏕᏲᎧᏅ ᎣᏍᏛ ᎧᏃᎮᏛ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140214</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140214_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎣᎦᏤᎵᏝ ᏥᏥᏯᏅᏔᏅ;, ᎢᏥᏩᏛᏗᏱ ᎦᎸ-</td>
+                <td class="aligned-text">ᎣᎦᏤᎵ ᏥᏥᏯᏅᏔᏅ, ᎢᏥᏩᏛᏗᏱ ᎦᎸ-</td>
+                <td class="ocr-raw">ᎣᎦᏤᎵ ᏥᏥᏯᏅᏔᏅ, ᎢᏥᏩᏛᏗᏱ ᎦᎸ-</td>
+                <td class="aligned-text">ᎣᎦᏤᎵ ᏥᏥᏯᏅᏔᏅ, ᎢᏥᏩᏛᏗᏱ ᎦᎸ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140214</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140214_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏉᏗᏳ ᎨᏒ ᎢᎦᏤᎵᏝ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="aligned-text">ᏉᏗᏳ ᎨᏒ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="ocr-raw">ᏉᏗᏳ ᎨᏒ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="aligned-text">ᏉᏗᏳ ᎨᏒ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140214</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140214_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ ᎤᏤᎵᏝᎦ.</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ ᎤᏤᎵᎦ.</td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ ᎤᏤᎵᎦ.</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ ᎤᏤᎵᎦ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140215</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140215_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">15 ᎾᏍᎩ ᎢᏳᏍᏘ, ᎢᏓᎵᏝᏅᏟ; ᎤᏝ-</td>
+                <td class="aligned-text">15 ᎾᏍᎩ ᎢᏳᏍᏗ, ᎢᏓᎵᏅᏟ, ᎤᎵ-</td>
+                <td class="ocr-raw">15 ᎾᏍᎩ ᎢᏳᏍᏗ, ᎢᏓᎵᏅᏟ, ᎤᎵ-</td>
+                <td class="aligned-text">15 ᎾᏍᎩ ᎢᏳᏍᏗ, ᎢᏓᎵᏅᏟ, ᎤᎵ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140215</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140215_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏂᎩᏛ ᎦᏫᏥᏙᎨᏍᏗ, ᎠᎴ ᏕᏥᏂᏴᏎᏍᏗ</td>
+                <td class="aligned-text">ᏂᎩᏛ ᏕᏥᏙᎨᏍᏗ, ᎠᎴ ᏕᏥᏂᏴᏎᏍᏗ</td>
+                <td class="ocr-raw">ᏂᎩᏛ ᏕᏥᏙᎨᏍᏗ, ᎠᎴ ᏕᏥᏂᏴᏎᏍᏗ</td>
+                <td class="aligned-text">ᏂᎩᏛ ᏕᏥᏙᎨᏍᏗ, ᎠᎴ ᏕᏥᏂᏴᏎᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140215</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140215_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏗᏕᏲᏗ ᎨᏒ ᎾᏍᎩ ᏄᏍᏛ ᎡᏤᏲᏅᎢ;</td>
+                <td class="aligned-text">ᏗᏕᏲᏗ ᎨᏒ ᎾᏍᎩ ᏄᏍᏛ ᎡᏤᏲᏅᎢ,</td>
+                <td class="ocr-raw">ᏗᏅᏲᏗ ᎨᏒ ᎾᏍᎩ ᏄᏍᏛ ᎡᏤᏲᏅᎢ,</td>
+                <td class="aligned-text">ᏗᏕᏲᏗ ᎨᏒ ᎾᏍᎩ ᏄᏍᏛ ᎡᏤᏲᏅᎢ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140215</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140215_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎧᏍᏉ ᎦᏬᏂᏒᎯᏉ ᏱᎩ, ᎠᎴ ᏫᏨᏲᏪ-</td>
+                <td class="aligned-text">ᎾᏍᏉ ᎦᏬᏂᏒᎯᏉ ᏱᎩ, ᎠᎴ ᏫᏨᏲᏪ-</td>
+                <td class="ocr-raw">ᎾᏍᏉ ᎦᏬᏂᏒᎯᏉ ᏱᎩ, ᎠᎴ ᏫᏨᏲᏪ-</td>
+                <td class="aligned-text">ᎾᏍᏉ ᎦᏬᏂᏒᎯᏉ ᏱᎩ, ᎠᎴ ᏫᏨᏲᏪ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140215</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140215_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎳᏁᎸᎯ ᏱᎩ.</td>
+                <td class="aligned-text">ᎳᏁᎸᎯ ᏱᎩ.</td>
+                <td class="ocr-raw">ᎳᏁᎸᎯ ᏱᎩ.</td>
+                <td class="aligned-text">ᎳᏁᎸᎯ ᏱᎩ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140216</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140216_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">16 ᎾᏍᎩᏃ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᎠᏥᏌ</td>
+                <td class="aligned-text">16 ᎾᏍᎩᏃ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="ocr-raw">16 ᎾᏍᎩᏃ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="aligned-text">16 ᎾᏍᎩᏃ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140216</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140216_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ ᎤᏩᎥᏒ, ᎠᎴ ᎤᏁᎳᏅᎯ, ᎾᏍᎩ</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ ᎤᏩᏒ, ᎠᎴ ᎤᏁᎳᏅᎯ, ᎾᏍᎩ</td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ ᎤᏩᏒ, ᎠᎴ ᎤᏁᎳᏅᎯ, ᎾᏍᎩ</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ ᎤᏩᏒ, ᎠᎴ ᎤᏁᎳᏅᎯ, ᎾᏍᎩ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140216</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140216_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᎩᏙᏓ, ᎧᏍᎩ ᎢᎩᎨᏳᎯᏳ ᏥᎨᏒᎩ;</td>
+                <td class="aligned-text">ᎢᎩᏙᏓ, ᎾᏍᎩ ᎢᎩᎨᏳᎯᏳ ᏥᎨᏒᎩ,</td>
+                <td class="ocr-raw">ᎢᎩᏙᏓ, ᎾᏍᎩ ᎢᎩᎨᏳᎯᏳ ᏥᎨᏒᎩ,</td>
+                <td class="aligned-text">ᎢᎩᏙᏓ, ᎾᏍᎩ ᎢᎩᎨᏳᎯᏳ ᏥᎨᏒᎩ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140216</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140216_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎠᎴ ᏥᎩᏁᎸ ᎤᎵᏍᏆᏘᏍᏗ ᏂᎨᎡᏒᎾ Ꭰ-</td>
+                <td class="aligned-text">ᎠᎴ ᏥᎩᏁᎸ ᎤᎵᏍᏆᏗᏍᏗ ᏂᎨᏒᎾ Ꭰ-</td>
+                <td class="ocr-raw">ᎠᎴ ᏥᎩᏁᎸ ᎤᎵᏍᏆᏗᏍᏗ ᏂᎨᏒᎾ Ꭰ-</td>
+                <td class="aligned-text">ᎠᎴ ᏥᎩᏁᎸ ᎤᎵᏍᏆᏗᏍᏗ ᏂᎨᏒᎾ Ꭰ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140216</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140216_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏓᎦᏝᏍᏓᏘᏍᎩ, ᎠᎴ ᎣᏍᏛ ᎤᏚᎩ ᎬᏘ</td>
+                <td class="aligned-text">ᏓᎦᎵᏍᏓᏗᏍᎩ, ᎠᎴ ᎣᏍᏛ ᎤᏚᎩ ᎬᏗ</td>
+                <td class="ocr-raw">ᏓᎦᎵᏍᏓᏗᏍᎩ, ᎠᎴ ᎣᏍᏛ ᎤᏚᎩ ᎬᏗ</td>
+                <td class="aligned-text">ᏓᎦᎵᏍᏓᏗᏍᎩ, ᎠᎴ ᎣᏍᏛ ᎤᏚᎩ ᎬᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140216</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140216_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎬᏌᎠᏒ ᏅᏓᏳᏓᎴᏅᎯ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵ-</td>
+                <td class="aligned-text">ᎨᏒ ᏅᏓᏳᏓᎴᏅᎯ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵ-</td>
+                <td class="ocr-raw">ᎨᏴ ᏅᏓᏳᏓᎴᏅᎯ ᎬᏩᎦᏘᏯ ᎤᏓᏤᎵ-</td>
+                <td class="aligned-text">ᎨᏒ ᏅᏓᏳᏓᎴᏅᎯ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140216</span></td>
+                <td>6</td>
+                <td><img class="crop-img" src="book_14/line_crops/140216_line_06.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏗ ᎨᏒᎢ,</td>
+                <td class="aligned-text">ᏍᏗ ᎨᏒᎢ,</td>
+                <td class="ocr-raw">ᏍᏗ ᎨᏒᎢ,</td>
+                <td class="aligned-text">ᏍᏗ ᎨᏒᎢ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140217</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140217_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">17 ᎾᏍᎩ ᏗᏥᎦᎵᏍᏓᏕᏅᏘ ᎨᏎᏍᏗ</td>
+                <td class="aligned-text">17 ᎾᏍᎩ ᏗᏥᎦᎵᏍᏓᏕᏗ ᎨᏎᏍᏗ</td>
+                <td class="ocr-raw">17 ᎾᏍᎩ ᏗᏥᎦᎵᏍᏓᏕᏗ ᎨᏎᏍᏗ</td>
+                <td class="aligned-text">17 ᎾᏍᎩ ᏗᏥᎦᎵᏍᏓᏕᏗ ᎨᏎᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140217</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140217_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏗᏥᎾᏫ, ᎠᎴ ᏗᏣᎵᏂᎪᎯᏍᏙᏗ ᎬᏏᏎᏍᏗ</td>
+                <td class="aligned-text">ᏗᏥᎾᏫ, ᎠᎴ ᏗᏣᎵᏂᎪᎯᏍᏙᏗ ᎨᏎᏍᏗ</td>
+                <td class="ocr-raw">ᏗᏥᎾᏫ, ᎠᎴ ᏗᏣᎵᏂᎪᎯᏍᏙᏗ ᎨᏎᏍᏗ</td>
+                <td class="aligned-text">ᏗᏥᎾᏫ, ᎠᎴ ᏗᏣᎵᏂᎪᎯᏍᏙᏗ ᎨᏎᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140217</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140217_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏂᎦᎥ ᎣᏍᏛ ᎨᎢ ᎢᏥᏬᏂᎯᏍᏗᏱ ᎠᎴ</td>
+                <td class="aligned-text">ᏂᎦᎥ ᎣᏍᏛ ᎨᏒ ᎢᏥᏬᏂᎯᏍᏗᏱ ᎠᎴ</td>
+                <td class="ocr-raw">ᏂᎦᎥ ᎣᏍᏛ ᎨᏒ ᎢᏥᏬᏂᎯᏍᏗᏱ ᎠᎴ</td>
+                <td class="aligned-text">ᏂᎦᎥ ᎣᏍᏛ ᎨᏒ ᎢᏥᏬᏂᎯᏍᏗᏱ ᎠᎴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140217</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140217_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏗᏥᎸᏫᏍᏓᏁᏗᏱ,</td>
+                <td class="aligned-text">ᏗᏥᎸᏫᏍᏓᏁᏗᏱ.</td>
+                <td class="ocr-raw">ᏗᏥᎸᏫᏍᏓᏁᏗᏱ.</td>
+                <td class="aligned-text">ᏗᏥᎸᏫᏍᏓᏁᏗᏱ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140301</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140301_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">1 ᎤᎵᏍᏆᎸᏗᏃ ᎨᏒᎢ, ᎢᏓᎵᏝᏅᏟ,</td>
+                <td class="aligned-text">1 ᎤᎵᏍᏆᎸᏗᏃ ᎨᏒᎢ, ᎢᏓᎵᏅᏟ,</td>
+                <td class="ocr-raw">1 ᎤᎵᏍᏆᎸᏗᏃ ᎨᏒᎢ, ᎢᏓᏝᏅᏟ,</td>
+                <td class="aligned-text">1 ᎤᎵᏍᏆᎸᏗᏃ ᎨᏒᎢ, ᎢᏓᎵᏅᏟ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140301</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140301_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᏣᏓᏙᎵᏍᏗᏍᎨᏍᏗ ᎠᏴ ᏍᎩᏯᏅᏓᏗ-</td>
+                <td class="aligned-text">ᎢᏣᏓᏙᎵᏍᏗᏍᎨᏍᏗ ᎠᏴ ᏍᎩᏯᏅᏓᏗ-</td>
+                <td class="ocr-raw">ᎢᏣᏓᏙᎵᏍᏗᏍᎨᏍᏗ ᎠᏴ ᏍᎩᏯᏅᏓᏗ-</td>
+                <td class="aligned-text">ᎢᏣᏓᏙᎵᏍᏗᏍᎨᏍᏗ ᎠᏴ ᏍᎩᏯᏅᏓᏗ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140301</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140301_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᎨᏍᏗ, ᎾᏍᎩ ᎧᏃᎮᏛ ᎤᎬᏫᏳᎯ Ꭴ-</td>
+                <td class="aligned-text">ᏍᎨᏍᏗ, ᎾᏍᎩ ᎧᏃᎮᏛ ᎤᎬᏫᏳᎯ Ꭴ-</td>
+                <td class="ocr-raw">ᏍᎨᏍᏗ, ᎾᏍᎩ ᎧᏃᎮᏛ ᎤᎬᏫᏳᎯ Ꭴ-</td>
+                <td class="aligned-text">ᏍᎨᏍᏗ, ᎾᏍᎩ ᎧᏃᎮᏛ ᎤᎬᏫᏳᎯ Ꭴ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140301</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140301_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏤᏝᎦ ᎤᏰᎵᎯᏍᏘᏱ, ᎠᎴ ᎦᎸᏉᏗᏘᏳ</td>
+                <td class="aligned-text">ᏤᎵᎦ ᎤᏰᎵᎯᏍᏗᏱ, ᎠᎴ ᎦᎸᏉᏗᏳ</td>
+                <td class="ocr-raw">ᏤᎵᎦ ᎤᏰᎵᎯᏍᏗᏱ, ᎠᎴ ᎦᎸᏉᏗᏳ</td>
+                <td class="aligned-text">ᏤᎵᎦ ᎤᏰᎵᎯᏍᏗᏱ, ᎠᎴ ᎦᎸᏉᏗᏳ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140301</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140301_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᏳᎵᏍᏙᏗᏱ, ᎾᏍᎩᏯ ᏥᏄᏍᏗ ᏂᎯ</td>
+                <td class="aligned-text">ᎢᏳᎵᏍᏙᏗᏱ, ᎾᏍᎩᏯ ᏥᏄᏍᏗ ᏂᎯ</td>
+                <td class="ocr-raw">ᎢᏳᎵᏍᏙᏗᏱ, ᎾᏍᎩᏯ ᏥᏄᏍᏗ ᏂᎯ</td>
+                <td class="aligned-text">ᎢᏳᎵᏍᏙᏗᏱ, ᎾᏍᎩᏯ ᏥᏄᏍᏗ ᏂᎯ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140301</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140301_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᏤᎲᎢ 35</td>
+                <td class="aligned-text">ᎢᏤᎲᎢ;</td>
+                <td class="ocr-raw">ᎢᏤᎲᎢ;</td>
+                <td class="aligned-text">ᎢᏤᎲᎢ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140302</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140302_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">2. ᎠᎴ ᎧᏍᎩ ᏦᏣᏚᏖᎳᎡᏗᏱ ᎤᏂᏲ</td>
+                <td class="aligned-text">2 ᎠᎴ ᎾᏍᎩ ᏦᏣᏚᏓᎳᎡᏗᏱ ᎤᏂᏲ</td>
+                <td class="ocr-raw">2 ᎠᎴ ᎾᏍᎩ ᏦᏣᏚᏓᎳᎡᏗᏱ ᎤᏂᏲ</td>
+                <td class="aligned-text">2 ᎠᎴ ᎾᏍᎩ ᏦᏣᏚᏓᎳᎡᏗᏱ ᎤᏂᏲ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140302</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140302_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎠᎴ ᎠᏂᏍᎦᎾ ᎠᏂᏍᎦᏯ ;Ꭵ ᎥᏝᏰᏃ ᎾᏂᎥ</td>
+                <td class="aligned-text">ᎠᎴ ᎠᏂᏍᎦᎾ ᎠᏂᏍᎦᏯ; ᎥᏝᏰᏃ ᎾᏂᎥ</td>
+                <td class="ocr-raw">ᎠᎴ ᎠᏂᏍᎦᎾ ᎠᏂᏍᎦᏯ ,Ꮾ, ᎥᏝᏰᏃ ᎾᏂᎥ</td>
+                <td class="aligned-text">ᎠᎴ ᎠᏂᏍᎦᎾ ᎠᏂᏍᎦᏯ; ᎥᏝᏰᏃ ᎾᏂᎥ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140302</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140302_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎪᎯᏳᏘ ᏥᎳᏒ. ᏳᏁᏣᎤᏤᎭ.</td>
+                <td class="aligned-text">ᎪᎯᏳᏗ ᎨᏒ ᏳᏁᎭ.</td>
+                <td class="ocr-raw">ᎪᎯᏳᏗ ᎨᏉᏴ ᏳᏁᎭ.</td>
+                <td class="aligned-text">ᎪᎯᏳᏗ ᎨᏒ ᏳᏁᎭ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140303</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140303_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">8. ᎤᎬᏫᏳᎯᏍᎩᏂ ᏄᏓᏖᎵᏓᏍᏛᎾ, Ꮎ-</td>
+                <td class="aligned-text">3 ᎤᎬᏫᏳᎯᏍᎩᏂ ᏄᏓᎵᏓᏍᏛᎾ, Ꮎ-</td>
+                <td class="ocr-raw">3 ᎤᎬᏫᏳᎯᏍᎩᏂ ᏄᏓᎵᏓᏍᏛᎾ, Ꮎ-</td>
+                <td class="aligned-text">3 ᎤᎬᏫᏳᎯᏍᎩᏂ ᏄᏓᎵᏓᏍᏛᎾ, Ꮎ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140303</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140303_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᎩ ᏨᏖᏓᏣᎵᏂᎪᎯᏍᏔᏂ, ᎠᎴ ᏨᏪᎵᏥᏲ-</td>
+                <td class="aligned-text">ᏍᎩ ᏨᏓᏣᎵᏂᎪᎯᏍᏔᏂ, ᎠᎴ ᏨᎵᏥᏲ-</td>
+                <td class="ocr-raw">ᏍᎩ ᏨᏓᏣᎵᏂᎪᎯᏍᏔᏂ, ᎠᎴ ᏨᎵᏥᏲ-</td>
+                <td class="aligned-text">ᏍᎩ ᏨᏓᏣᎵᏂᎪᎯᏍᏔᏂ, ᎠᎴ ᏨᎵᏥᏲ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140303</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140303_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏙᏖᏁᎵ ᎤᏲ ᎢᏣᏛᏁᏗᏱ.</td>
+                <td class="aligned-text">ᏍᏙᏓᏁᎵ ᎤᏲ ᎢᏣᏛᏁᏗᏱ.</td>
+                <td class="ocr-raw">ᏍᏙᏓᏁᎵ ᎤᏲ ᎢᏣᏛᏁᏗᏱ.</td>
+                <td class="aligned-text">ᏍᏙᏓᏁᎵ ᎤᏲ ᎢᏣᏛᏁᏗᏱ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140304</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140304_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮞ ᎠᎴ ᎣᏣᎵᏍᎦᏍᏙᏘ ᎤᎬᏫᏳᎯ ᏂᎯ</td>
+                <td class="aligned-text">4 ᎠᎴ ᎣᏣᎵᏍᎦᏍᏙᏗ ᎤᎬᏫᏳᎯ ᏂᎯ</td>
+                <td class="ocr-raw">Ꮞ ᎠᎴ ᎣᏣᎵᏍᎦᏍᏙᏗ ᎤᎬᏫᏳᎯ ᏂᎯ</td>
+                <td class="aligned-text">4 ᎠᎴ ᎣᏣᎵᏍᎦᏍᏙᏗ ᎤᎬᏫᏳᎯ ᏂᎯ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140304</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140304_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎨᎠᏞ ᎤᎬᏩᎵ, ᎾᏍᎩ ᏂᏣᏛᏁᎲᎢ, ᎠᎴ</td>
+                <td class="aligned-text">ᎨᏒ ᎤᎬᏩᎵ, ᎾᏍᎩ ᏂᏣᏛᏁᎲᎢ, ᎠᎴ</td>
+                <td class="ocr-raw">ᎨᏴ ᎤᎬᏩᎵ, ᎾᏍᎩ ᏂᏣᏛᏁᎲᎢ, ᎠᎴ</td>
+                <td class="aligned-text">ᎨᏒ ᎤᎬᏩᎵ, ᎾᏍᎩ ᏂᏣᏛᏁᎲᎢ, ᎠᎴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140304</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140304_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎠᏎ ᎾᏍᎩ ᎢᏣᏛᏁᏗ ᎨᏒ ᏄᏍᏛ ᎢᏨ-Ꭹ-</td>
+                <td class="aligned-text">ᎠᏎ ᎾᏍᎩ ᎢᏣᏛᏁᏗ ᎨᏒ ᏄᏍᏛ ᎢᏨ-</td>
+                <td class="ocr-raw">ᎠᏎ ᎾᏍᎩ ᎢᏣᏛᏁᏗ ᎨᏒ ᏄᏍᏛ ᎢᏨ-</td>
+                <td class="aligned-text">ᎠᏎ ᎾᏍᎩ ᎢᏣᏛᏁᏗ ᎨᏒ ᏄᏍᏛ ᎢᏨ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140304</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140304_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏁᏤᎲᎢ ,.</td>
+                <td class="aligned-text">ᏁᏤᎲᎢ.</td>
+                <td class="ocr-raw">ᏁᏤᎲᎢ.</td>
+                <td class="aligned-text">ᏁᏤᎲᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140305</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140305_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">5 ᎠᎴ ᎤᎬᏫᎧᏳᎯ ᏧᏎᎮᏘ ᎨᏎᏍᏘ</td>
+                <td class="aligned-text">5 ᎠᎴ ᎤᎬᏫᏳᎯ ᏧᏎᎮᏗ ᎨᏎᏍᏗ</td>
+                <td class="ocr-raw">5 ᎠᎴ ᎤᎬᏫᏳᎯ ᏧᏎᎮᏗ ᎨᏎᏍᏗ</td>
+                <td class="aligned-text">5 ᎠᎴ ᎤᎬᏫᏳᎯ ᏧᏎᎮᏗ ᎨᏎᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140305</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140305_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏗᏥᏮᏫ ᎡᏥᎨᏳᎢ ᎢᏳᎵᏍᏙᏗᏱ ᎤᏁ-</td>
+                <td class="aligned-text">ᏗᏥᎾᏫ ᎡᏥᎨᏳᎢ ᎢᏳᎵᏍᏙᏗᏱ ᎤᏁ-</td>
+                <td class="ocr-raw">ᏗᏥᎾᏫ ᎡᏥᎨᏳᎢ ᎢᏳᎵᏍᏙᏗᏱ ᎤᏁ-</td>
+                <td class="aligned-text">ᏗᏥᎾᏫ ᎡᏥᎨᏳᎢ ᎢᏳᎵᏍᏙᏗᏱ ᎤᏁ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140305</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140305_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎳᏅᎯ, ᎠᎴ ᏗᏨᏂᏘᏳ ᎢᏳᏝᏍᏙᏗᏱ</td>
+                <td class="aligned-text">ᎳᏅᎯ, ᎠᎴ ᏗᏨᏂᏗᏳ ᎢᏳᎵᏍᏙᏗᏱ</td>
+                <td class="ocr-raw">ᎳᏅᎯ, ᎠᎴ ᏗᏨᏂᏗᏳ ᎢᏳᎵᏍᏉᏙᏗᏱ</td>
+                <td class="aligned-text">ᎳᏅᎯ, ᎠᎴ ᏗᏨᏂᏗᏳ ᎢᏳᎵᏍᏙᏗᏱ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140305</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140305_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ ᎾᏍᎩᏯᎢ.</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ ᎾᏍᎩᏯᎢ.</td>
+                <td class="ocr-raw">ᏕᎶᏁᏛ ᎾᏍᎩᏯᎢ.</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ ᎾᏍᎩᏯᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140306</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140306_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮾ ᎿᏉᏃ ᎢᏨᏁᏤᎭ, ᎢᏓᎵᏝᏅᏟ, Ꭳ-</td>
+                <td class="aligned-text">6 ᎿᎭᏉᏃ ᎢᏨᏁᏤᎭ, ᎢᏓᎵᏅᏟ, Ꭳ-</td>
+                <td class="ocr-raw">6 ᎿᏉᏃ ᎢᏨᏁᏤᎭ, ᎢᏓᎵᏅᏟ, Ꭳ-</td>
+                <td class="aligned-text">6 ᎿᎭᏉᏃ ᎢᏨᏁᏤᎭ, ᎢᏓᎵᏅᏟ, Ꭳ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140306</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140306_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏨᏘᎭ ᏚᏙᎥ ᎢᎦᏤᎵ ᎤᎬᏫᏊᎯ ᏥᏌ</td>
+                <td class="aligned-text">ᏨᏗᎭ ᏚᏙᎥ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="ocr-raw">ᏨᏗᎭ ᏚᏙᎥ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+                <td class="aligned-text">ᏨᏗᎭ ᏚᏙᎥ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140306</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140306_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ, ᎾᏍᎩ ᏗᏣᏓᏓᎴᏓᏁᏗᏱ ᎾᏂᎥ</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ, ᎾᏍᎩ ᏗᏣᏓᏓᎴᏓᏁᏗᏱ ᎾᏂᎥ</td>
+                <td class="ocr-raw">ᎦᎶᏁᏛ, ᎾᏍᎩ ᏗᏣᏓᏓᎴᏓᏁᏗᏱ ᎾᏂᎥ</td>
+                <td class="aligned-text">ᎦᎶᏁᏛ, ᎾᏍᎩ ᏗᏣᏓᏓᎴᏓᏁᏗᏱ ᎾᏂᎥ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140306</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140306_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎠᎾᎵᏅᏟ ᎤᏣᏘᏂ ᎢᏯᎾᏛᏁᏝᏙᎯ, ᎠᎴ</td>
+                <td class="aligned-text">ᎠᎾᎵᏅᏟ ᎤᏣᏘᏂ ᎢᏯᎾᏛᏁᎵᏙᎯ, ᎠᎴ</td>
+                <td class="ocr-raw">ᎠᎾᎵᏅᏟ ᎤᏣᏘᏂ ᎢᏯᎾᏛᏁᎵᏙᎯ, ᎠᎴ</td>
+                <td class="aligned-text">ᎠᎾᎵᏅᏟ ᎤᏣᏘᏂ ᎢᏯᎾᏛᏁᎵᏙᎯ, ᎠᎴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140306</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140306_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏂᏓᏂᎧᎿᏩᏕᎬᎾᎧ ᏗᏕᏲᏘ ᏥᎨᎡᏒ ᎠᏴ ᏗᎪ-</td>
+                <td class="aligned-text">ᏂᏓᏂᎧᎿᎭᏩᏕᎬᎾ ᏗᏕᏲᏗ ᎨᏒ ᎠᏴ ᏗᎪ-</td>
+                <td class="ocr-raw">ᏂᏓᏂᎧᎿᏩᏕᎬᎾ ᏗᏅᏲᏗ ᎨᏒ ᎠᏴ ᏗᎪ-</td>
+                <td class="aligned-text">ᏂᏓᏂᎧᎿᎭᏩᏕᎬᎾ ᏗᏕᏲᏗ ᎨᏒ ᎠᏴ ᏗᎪ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140306</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140306_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᏓᏂᎸᏤᎸᎯ,</td>
+                <td class="aligned-text">ᎦᏓᏂᎸᏤᎸᎯ,</td>
+                <td class="ocr-raw">ᎦᏓᏂᎸᏤᎸᎯ,</td>
+                <td class="aligned-text">ᎦᏓᏂᎸᏤᎸᎯ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140307</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140307_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">“7 ᎢᏊᏒᏰᏃ ᎢᏥᎦᏔᎭ ᎢᏣᏛᏁᏗᏱ</td>
+                <td class="aligned-text">7 ᎢᏳᏒᏰᏃ ᎢᏥᎦᏔᎭ ᎢᏣᏛᏁᏗᏱ</td>
+                <td class="ocr-raw">7 ᎢᏨᏒᏰᏃ ᎢᏥᎦᏔᎭ ᎢᏣᏛᏁᏗᏱ</td>
+                <td class="aligned-text">7 ᎢᏳᏒᏰᏃ ᎢᏥᎦᏔᎭ ᎢᏣᏛᏁᏗᏱ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140307</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140307_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᎩᏍᏓᏩᏛᏍᏗᏱ : ᎥᏝᏰᏃ ᎤᏣᏘᏂ ᏱᎹ”</td>
+                <td class="aligned-text">ᏍᎩᏍᏓᏩᏛᏍᏗᏱ; ᎥᏝᏰᏃ ᎤᏣᏘᏂ</td>
+                <td class="ocr-raw">ᏍᎩᏍᏓᏩᏛᏍᏗᏱ; ᎥᏝᏰᏃ ᎤᏣᏘᏂ Ᏹ-</td>
+                <td class="aligned-text">ᏍᎩᏍᏓᏩᏛᏍᏗᏱ; ᎥᏝᏰᏃ ᎤᏣᏘᏂ Ᏹ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140307</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140307_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏃᏣᏛᏁᎵᏙᎮ ᎢᏨᏰᎳᏘᏗᏘᏙᎲᎢ :</td>
+                <td class="aligned-text">ᏱᏃᏣᏛᏁᎵᏙᎮ ᎢᏨᏰᎳᏗᏙᎲᎢ;</td>
+                <td class="ocr-raw">ᏃᏣᏛᏁᎵᏙᎮ ᎢᏨᏰᎳᏗᏙᎲᎢ ;</td>
+                <td class="aligned-text">ᏃᏣᏛᏁᎵᏙᎮ ᎢᏨᏰᎳᏗᏙᎲᎢ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140307</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140307_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">“</td>
+                <td class="aligned-text"></td>
+                <td class="ocr-raw">Ꮞ</td>
+                <td class="aligned-text"></td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140308</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140308_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">Ꮪ ᎥᏝᏮ ᎠᎴ ᎩᎶ ᎠᏎᏉ ᏲᏣᎵᏝᏍᏓᏴᎾ-</td>
+                <td class="aligned-text">8 ᎥᏝ ᎠᎴ ᎩᎶ ᎠᏎᏉ ᏲᏣᎵᏍᏓᏴᎾ-</td>
+                <td class="ocr-raw">8 ᎥᏝ ᎠᎴ ᎩᎶ ᎠᏎᏉ ᏲᏣᎵᏍᏓᏴᎾ-</td>
+                <td class="aligned-text">8 ᎥᏝ ᎠᎴ ᎩᎶ ᎠᏎᏉ ᏲᏣᎵᏍᏓᏴᎾ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140308</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140308_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏁᎮᎢ , ᏙᎩᎸᏫᏍᏓᏁᎲᎩᏍᎩᏂ ᎠᎴ ᏉᏙ-</td>
+                <td class="aligned-text">ᏁᎮᎢ; ᏙᎩᎸᏫᏍᏓᏁᎲᎩᏍᎩᏂ ᎠᎴ Ꮩ-</td>
+                <td class="ocr-raw">ᏁᎮᎢ; ᏙᎩᎸᏫᏍᏓᏁᎲᎩᏍᎩᏂ ᎠᎴ ᎲᏅ</td>
+                <td class="aligned-text">ᏁᎮᎢ; ᏙᎩᎸᏫᏍᏓᏁᎲᎩᏍᎩᏂ ᎠᎴ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140308</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140308_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎩᏯᏪᏥᏙᎲᎩ ᎬᏩᎩᏨᏘ, ᏃᎦᏚᎵᏍᎬᎾ</td>
+                <td class="aligned-text">ᎩᏯᏪᏥᏙᎲᎩ ᎬᏩᎩᏨᏗ, ᏃᎦᏚᎵᏍᎬᎾ</td>
+                <td class="ocr-raw">ᎩᏯᏪᏥᏙᎲᎩ ᎬᏩᎩᏨᏗ, ᏃᎦᏚᎵᏍᎬᎾ</td>
+                <td class="aligned-text">ᏙᎩᏯᏪᏥᏙᎲᎩ ᎬᏩᎩᏨᏗ, ᏃᎦᏚᎵᏍᎬᎾ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140308</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140308_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏎᏥ. ᎢᏅᏍᏗ ᎠᏴ ᎠᏏᏴᏫ ᏂᏣᏛᏅ</td>
+                <td class="aligned-text">ᎨᏒ ᎢᏳᏍᏗ ᎠᏴ ᎠᏏᏴᏫ ᏂᏣᏛᏅ</td>
+                <td class="ocr-raw">ᎨᏒᏢ ᎢᏳᏍᏗ ᎠᏴ ᎠᏏᏴᏫ ᏂᏣᏛᏅ</td>
+                <td class="aligned-text">ᎨᏒ ᎢᏳᏍᏗ ᎠᏴ ᎠᏏᏴᏫ ᏂᏣᏛᏅ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140308</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140308_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎦᎬᏛ ᎢᏲᏨᏴᏁᏗᏱ 53</td>
+                <td class="aligned-text">ᎦᎨᏛ ᎢᏲᏨᏴᏁᏗᏱ;</td>
+                <td class="ocr-raw">ᎦᎨᏛ ᎢᏲᏨᏴᏁᏗᏱ;</td>
+                <td class="aligned-text">ᎦᎨᏛ ᎢᏲᏨᏴᏁᏗᏱ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140309</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140309_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">9 ᎥᏝ ᏃᎩᎲᎾ ᎬᎡ ᎢᏅᏩᏓᎴ ᎢᏲᎦᏛ-</td>
+                <td class="aligned-text">9 ᎥᏝ ᏃᎩᎲᎾ ᎨᏒ [ᏅᏩᏓᎴ ᎢᏲᎦᏛ-</td>
+                <td class="ocr-raw">9 Ꭵ6 ᏃᎩᎲᎾ ᎨᏒ ᏅᏩᏓᎴ ᎢᏲᎦᏛ-</td>
+                <td class="aligned-text">9 ᎥᏝ ᏃᎩᎲᎾ ᎨᏒ [ᏅᏩᏓᎴ ᎢᏲᎦᏛ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140309</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140309_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏁᏘᏱ) ᏱᏅᏗᎦᎵᏝᏍᏙᏗᏍᎨᎢ, ᏗᏣᏟᎶ-</td>
+                <td class="aligned-text">ᏁᏗᏱ] ᏱᏅᏗᎦᎵᏍᏙᏗᏍᎨᎢ, ᏗᏣᏟᎶ-</td>
+                <td class="ocr-raw">ᏁᏗᏱ) ᏱᏅᏗᎦᎵᏍᏙᏗᏍᎨᎢ, ᏗᏣᏟᎶ-</td>
+                <td class="aligned-text">ᏁᏗᏱ] ᏱᏅᏗᎦᎵᏍᏙᏗᏍᎨᎢ, ᏗᏣᏟᎶ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140309</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140309_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏙᏗᏍᎩᏂ ᏃᏣᏓᏛᏁᎲ ᎠᏴ ᏍᎩᏍᏓᏛ”</td>
+                <td class="aligned-text">ᏍᏙᏗᏍᎩᏂ ᏃᏣᏓᏛᏁᎲ ᎠᏴ ᏍᎩᏍᏓᏩᏛᏍᏗᏱ</td>
+                <td class="ocr-raw">ᏍᏙᏗᏍᎩᏂ ᏃᏣᏓᏛᏁᎲ ᎠᏴ ᏍᎩᏍᏓ-</td>
+                <td class="aligned-text">ᏍᏙᏗᏍᎩᏂ ᏃᏣᏓᏛᏁᎲ ᎠᏴ ᏍᎩᏍᏓ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140309</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140309_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏩᏛᏍᏘᏱ ᏅᏓᎦᎵᏍᏙᏗᏍᎬᎩ.</td>
+                <td class="aligned-text">ᏅᏓᎦᎵᏍᏙᏗᏍᎬᎩ.</td>
+                <td class="ocr-raw">ᏩᏛᏍᏗᏱ ᏅᏓᎦᎵᏍᏙᏗᏍᎬᎩ.</td>
+                <td class="aligned-text">ᏩᏛᏍᏗᏱ ᏅᏓᎦᎵᏍᏙᏗᏍᎬᎩ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140310</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140310_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">10. ᎾᎯᏳᏑᏰᏃ ᏥᏨᏰᎳᏗᏙᎲᎩ, ᎯᎠ</td>
+                <td class="aligned-text">10 ᎾᎯᏳᏰᏃ ᏥᏨᏰᎳᏗᏙᎲᎩ, ᎯᎠ</td>
+                <td class="ocr-raw">10 ᎾᎯᏳᏰᏃ ᏥᏨᏰᎳᏗᏙᎲᎩ, ᎯᎠ</td>
+                <td class="aligned-text">10 ᎾᎯᏳᏰᏃ ᏥᏨᏰᎳᏗᏙᎲᎩ, ᎯᎠ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140310</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140310_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎾᏍᎩ ᏄᏍᏛᎩ ᎢᏨᏁᏤᎸᎩ, ᎾᏍᎩ Ꭲ”“</td>
+                <td class="aligned-text">ᎾᏍᎩ ᏄᏍᏛᎩ ᎢᏨᏁᏤᎸᎩ, ᎾᏍᎩ</td>
+                <td class="ocr-raw">ᎾᏍᎩ ᏄᏍᏛᎩ ᎢᏨᏁᏤᎸᎩ, ᎾᏍᎩ Ꭲ-</td>
+                <td class="aligned-text">ᎾᏍᎩ ᏄᏍᏛᎩ ᎢᏨᏁᏤᎸᎩ, ᎾᏍᎩ Ꭲ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140310</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140310_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏳᏃ ᎩᎶ ᏄᏚᎵᏍᎬᎾ ᏱᎩ, ᏧᎸᏫᏍᏓᏁ-</td>
+                <td class="aligned-text">ᎢᏳᏃ ᎩᎶ ᏄᏚᎵᏍᎬᎾ ᏱᎩ, ᏧᎸᏫᏍᏓᏁ-</td>
+                <td class="ocr-raw">ᏳᏃ ᎩᎶ ᏄᏚᎵᏍᎬᎾ ᏱᎩ, ᏧᎸᏫᏍᏓᏁ-</td>
+                <td class="aligned-text">ᏳᏃ ᎩᎶ ᏄᏚᎵᏍᎬᎾ ᏱᎩ, ᏧᎸᏫᏍᏓᏁ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140310</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140310_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏘᏱ ᎾᏍᏉ ᎤᎵᏝᏍᏓᏴᏗᏱ ᏂᏂᎨᎡᎾ ᎰᏅ</td>
+                <td class="aligned-text">ᏗᏱ ᎾᏍᏉ ᎤᎵᏍᏓᏴᏗᏱ ᏂᎨᏒᎾ</td>
+                <td class="ocr-raw">ᏗᏱ ᎾᏍᏉ ᎤᎵᏍᏓᏴᏗᏱ ᏂᎨᏒᎾ Ꭸ-</td>
+                <td class="aligned-text">ᏗᏱ ᎾᏍᏉ ᎤᎵᏍᏓᏴᏗᏱ ᏂᎨᏒᎾ Ꭸ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140310</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140310_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏧᎱᎳᎷᏒ</td>
+                <td class="aligned-text">ᎨᏒᎢ.</td>
+                <td class="ocr-raw">ᎠᎢ.</td>
+                <td class="aligned-text">ᏒᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140311</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140311_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">11 ᎣᏣᏛᎩᎭᏰᏃ ᎾᏍᎩ ᎩᎶ ᎰᏅ-</td>
+                <td class="aligned-text">11 ᎣᏣᏛᎩᎭᏰᏃ ᎾᏍᎩ ᎩᎶ</td>
+                <td class="ocr-raw">11 ᎣᏣᏛᎩᎭᏰᏃ ᎾᏍᎩ ᎩᎶ Ꭸ-</td>
+                <td class="aligned-text">11 ᎣᏣᏛᎩᎭᏰᏃ ᎾᏍᎩ ᎩᎶ Ꭸ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140311</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140311_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏣᏓᏑᏴ ᎤᏣᏘᏂ ᎾᎾᏛᏁᎵᏙᎲᎢ, ᎪᎱ-</td>
+                <td class="aligned-text">ᎨᏣᏓᏑᏴ ᎤᏣᏘᏂ ᎾᎾᏛᏁᎵᏙᎲᎢ, ᎪᎱ-</td>
+                <td class="ocr-raw">ᏣᏓᏑᏴ ᎤᏣᏘᏂ ᎾᎾᏛᏁᎵᏙᎲᎢ, ᎪᎱ-</td>
+                <td class="aligned-text">ᏣᏓᏑᏴ ᎤᏣᏘᏂ ᎾᎾᏛᏁᎵᏙᎲᎢ, ᎪᎱ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140311</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140311_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏘ ᎾᎧᎾᏛᏁᎲᎾ, ᎠᏎᏃ ᎠᎾᏛᏁᎵᏝᏙᎯ</td>
+                <td class="aligned-text">ᏍᏗ ᎾᎾᏛᏁᎲᎾ, ᎠᏎᏃ ᎠᎾᏛᏁᎵᏙᎯ</td>
+                <td class="ocr-raw">ᏍᏗ ᎾᎾᏛᏁᎲᎾ, ᎠᏎᏃ ᎠᎾᏛᏁᎵᏙᎯ</td>
+                <td class="aligned-text">ᏍᏗ ᎾᎾᏛᏁᎲᎾ, ᎠᏎᏃ ᎠᎾᏛᏁᎵᏙᎯ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140311</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140311_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᎩ,</td>
+                <td class="aligned-text">ᎢᎩ.</td>
+                <td class="ocr-raw">ᏉᎢᎩ.,</td>
+                <td class="aligned-text">ᎢᎩ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140312</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140312_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">19 ᎾᏍᎩᏃ ᎢᏳᎾᏍᏘ ᏥᎨᏒᎢ, ᏙᏥ-</td>
+                <td class="aligned-text">12 ᎾᏍᎩᏃ ᎢᏳᎾᏍᏗ ᎨᏒᎢ, ᏙᏥ-</td>
+                <td class="ocr-raw">Ꮺ ᎾᏍᎩᏃ ᎢᏳᎾᏍᏗ ᎨᏒᎢ, ᏙᏥ-</td>
+                <td class="aligned-text">12 ᎾᏍᎩᏃ ᎢᏳᎾᏍᏗ ᎨᏒᎢ, ᏙᏥ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140312</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140312_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏁᏤᎭ ᎠᎴ ᏙᏥᏍᏘᏰᏘᎭ ᏙᏥᏁᎢᏍᏓ-</td>
+                <td class="aligned-text">ᏁᏤᎭ ᎠᎴ ᏙᏥᏍᏗᏰᏗᎭ ᏙᏥᏁᎢᏍᏓ-</td>
+                <td class="ocr-raw">ᏁᏤᎭ ᎠᎴ ᏙᏥᏍᏗᏰᏗᎭ ᏙᏥᏁᎢᏍᏓ-</td>
+                <td class="aligned-text">ᏁᏤᎭ ᎠᎴ ᏙᏥᏍᏗᏰᏗᎭ ᏙᏥᏁᎢᏍᏓ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140312</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140312_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏁᎭ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ,</td>
+                <td class="aligned-text">ᏁᎭ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ,</td>
+                <td class="ocr-raw">ᏁᎭ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ,</td>
+                <td class="aligned-text">ᏁᎭ ᎢᎦᏤᎵ ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140312</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140312_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎾᏍᎩ ᏙᎯᏉ ᏧᏂᎸᏫᏍᏓᏁᏘᏱ, ᎠᎴ Ꭴ-Ꮕ</td>
+                <td class="aligned-text">ᎾᏍᎩ ᏙᎯᏉ ᏧᏂᎸᏫᏍᏓᏁᏗᏱ, ᎠᎴ Ꭴ-</td>
+                <td class="ocr-raw">ᎾᏍᎩ ᏙᎯᏉ ᏧᏂᎸᏫᏍᏓᏁᏗᏱ, ᎠᎴ Ꭴ-</td>
+                <td class="aligned-text">ᎾᏍᎩ ᏙᎯᏉ ᏧᏂᎸᏫᏍᏓᏁᏗᏱ, ᎠᎴ Ꭴ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140312</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140312_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏅᎠ. ᎤᎾᏤᏰᏝ ᎠᎵᏝᏍᏓᏴᏘ ᎤᎾᏮᎵᏍᏖᏴᏙ-</td>
+                <td class="aligned-text">ᏅᏒ ᎤᎾᏤᎵ ᎠᎵᏍᏓᏴᏗ ᎤᎾᎵᏍᏓᏴᏙ-</td>
+                <td class="ocr-raw">ᏅᏒ ᎤᎾᏤᎵ ᎠᎵᏍᏓᏴᏗ ᎤᎾᎵᏍᏓᏴᏙ-</td>
+                <td class="aligned-text">ᏅᏒ ᎤᎾᏤᎵ ᎠᎵᏍᏓᏴᏗ ᎤᎾᎵᏍᏓᏴᏙ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140312</span></td>
+                <td>5</td>
+                <td><img class="crop-img" src="book_14/line_crops/140312_line_05.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏘᏱ.</td>
+                <td class="aligned-text">ᏗᏱ.</td>
+                <td class="ocr-raw">ᏗᏱ.</td>
+                <td class="aligned-text">ᏗᏱ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140313</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140313_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">13. ᏂᎯᏍᎩᏂ, ᎢᏓᎵᏅᏟ, ᏞᏍᏘ Ᏹ-</td>
+                <td class="aligned-text">13 ᏂᎯᏍᎩᏂ, ᎢᏓᎵᏅᏟ, ᏞᏍᏗ Ᏹ-</td>
+                <td class="ocr-raw">13 ᎠᏂᎯᏍᎩᏂ, ᎢᏓᎵᏅᏟ, ᏞᏍᏗ Ᏹ-</td>
+                <td class="aligned-text">13 ᏂᎯᏍᎩᏂ, ᎢᏓᎵᏅᏟ, ᏞᏍᏗ Ᏹ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140313</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140313_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏗᏥᏯᏪᏥᏍᏗ ᎣᏍᏛ ᏕᏥᎸᏫᏍᏓᏁᎩ-</td>
+                <td class="aligned-text">ᏗᏥᏯᏪᎨᏍᏗ ᎣᏍᏛ ᏕᏥᎸᏫᏍᏓᏁᎲᎢ.</td>
+                <td class="ocr-raw">ᏗᏥᏯᏪᎨᏍᏗ ᎣᏍᏛ ᏕᏥᎸᏫᏍᏓᏁ-</td>
+                <td class="aligned-text">ᏗᏥᏯᏪᎨᏍᏗ ᎣᏍᏛ ᏕᏥᎸᏫᏍᏓᏁ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140313</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140313_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏬᏔᏆ,</td>
+                <td class="aligned-text"></td>
+                <td class="ocr-raw">Ꭹ.</td>
+                <td class="aligned-text">ᎲᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140314</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140314_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">1Ꮞ ᎢᏯᏊᏃ ᎩᎶ ᏂᎪᎯᏳᎲᏍᎬᎾ ᎢᎰ”-</td>
+                <td class="aligned-text">14 ᎢᏳᏃ ᎩᎶ ᏂᎪᎯᏳᎲᏍᎬᎾ ᎢᎨ-</td>
+                <td class="ocr-raw">1Ꮞ ᎢᏳᏃ ᎩᎶ ᏂᎪᎯᏳᎲᏍᎬᎾ ᎢᎨ-</td>
+                <td class="aligned-text">14 ᎢᏳᏃ ᎩᎶ ᏂᎪᎯᏳᎲᏍᎬᎾ ᎢᎨ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140314</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140314_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏎᏍᏗ ᎣᏥᏬᏂᏍᎬ ᎠᏂ ᎣᏦᏪᎵᏍᎬᎢ,</td>
+                <td class="aligned-text">ᏎᏍᏗ ᎣᏥᏬᏂᏍᎬ ᎠᏂ ᎣᏦᏪᎵᏍᎬᎢ,</td>
+                <td class="ocr-raw">ᏎᏍᏗ ᎣᏥᏬᏂᏍᎬ ᎠᏂ ᎣᏦᏪᎵᏍᎬᎢ,</td>
+                <td class="aligned-text">ᏎᏍᏗ ᎣᏥᏬᏂᏍᎬ ᎠᏂ ᎣᏦᏪᎵᏍᎬᎢ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140314</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140314_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎬᏂᎨᏒᎢᏒ ᏁᏨᏁᎸ.Ꭽ ᎾᏍᎩ, ᎠᎴ ᏞᏍᏗ</td>
+                <td class="aligned-text">ᎬᏂᎨᏒ ᏁᏨᏁᎸᎭ ᎾᏍᎩ, ᎠᎴ ᏞᏍᏗ</td>
+                <td class="ocr-raw">ᎬᏂᎨᏒᏢ ᏁᏨᏁᎸᎭ ᎾᏍᎩ, ᎠᎴ ᏞᏍᏗ</td>
+                <td class="aligned-text">ᎬᏂᎨᏒ ᏁᏨᏁᎸᎭ ᎾᏍᎩ, ᎠᎴ ᏞᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140314</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140314_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᏧᎳᎭ ᎢᏤᏙᎸᎩ, ᎾᏍᎩ ᎬᏩᏕᎰᎯᏍᏗ</td>
+                <td class="aligned-text">ᎢᏧᎳᎭ ᎢᏤᏙᎸᎩ, ᎾᏍᎩ ᎬᏩᏕᎰᎯᏍᏗ</td>
+                <td class="ocr-raw">ᎢᏧᎳᎭ ᎢᏤᏙᎸᎩ, ᎾᏍᎩ ᎬᏩᏕᎨᎯᏍᏗ</td>
+                <td class="aligned-text">ᎢᏧᎳᎭ ᎢᏤᏙᎸᎩ, ᎾᏍᎩ ᎬᏩᏕᎰᎯᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140314</span></td>
+                <td>4</td>
+                <td><img class="crop-img" src="book_14/line_crops/140314_line_04.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎸᎢ ᏛᏍ” Ꮎ .ᎣᎪᏣᎳ ᏈᏡᏈᎿ</td>
+                <td class="aligned-text">ᎢᏳᎵᏍᏙᏗᏱ.</td>
+                <td class="ocr-raw">ᎠᏛᏍᎾ ᎪᎢᎡ</td>
+                <td class="aligned-text">ᎢᏳᎵᏍᏙᏗᏱ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140315</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140315_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">15 ᎠᏘᏮ ᏞᏍᏗ ᎡᏥᏍᎦᎩ ᎢᏨᏍᏗᏘ</td>
+                <td class="aligned-text">15 ᎠᏗᎾ ᏞᏍᏗ ᎡᏥᏍᎦᎩ ᎢᏳᏍᏗ</td>
+                <td class="ocr-raw">5 ᎠᏗᎾ ᏞᏍᏗ ᎡᏥᏍᎦᎩ ᎢᏳᏍᏗ</td>
+                <td class="aligned-text">15 ᎠᏗᎾ ᏞᏍᏗ ᎡᏥᏍᎦᎩ ᎢᏳᏍᏗ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140315</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140315_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏰᏣᏖᏅᏖᏍᎨᏍᏗ, ᎡᏥᎬᏍᎪᏄᎥᏍᎰᏅᎹ</td>
+                <td class="aligned-text">ᏰᏣᏓᏅᏖᏍᎨᏍᏗ, ᎡᏥᎬᏍᎪᎸᎥᏍᎨᏍᏗᏍᎩᏂ</td>
+                <td class="ocr-raw">ᏰᏣᏓᏅᏖᏍᎨᏍᏗ, ᎡᏥᎬᏍᎪᎸᎥᏍᎨ-</td>
+                <td class="aligned-text">ᏰᏣᏓᏅᏖᏍᎨᏍᏗ, ᎡᏥᎬᏍᎪᎸᎥᏍᎨ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140315</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140315_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏍᏘᏍᎩᏂ ᎢᏣᏓᏅᏟ ᎾᏍᎩᏯᎢ.</td>
+                <td class="aligned-text">ᎢᏣᏓᏅᏟ ᎾᏍᎩᏯᎢ.</td>
+                <td class="ocr-raw">ᏍᏗᏍᎩᏂ ᎢᏣᏓᏅᏟ ᎾᏍᎩᏯᎢ.</td>
+                <td class="aligned-text">ᏍᏗᏍᎩᏂ ᎢᏣᏓᏅᏟ ᎾᏍᎩᏯᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140316</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140316_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">16 ᎤᎬᎧᎾᏳᎯᏃ ᏅᏩᏙᎯᏯᏛ ᎤᏪᎯ</td>
+                <td class="aligned-text">16 ᎤᎬᏫᏳᎯᏃ ᏅᏩᏙᎯᏯᏛ ᎤᏪᎯ</td>
+                <td class="ocr-raw">16 ᎤᎬᏫᏳᎯᏃ ᏅᏩᏙᎯᏯᏛ ᎤᏪᎯ</td>
+                <td class="aligned-text">16 ᎤᎬᏫᏳᎯᏃ ᏅᏩᏙᎯᏯᏛ ᎤᏪᎯ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140316</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140316_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᏩᏞᏒ ᎠᏎ ᎢᏥᏁᏘ ᎨᏎᏍᏘ ᏅᏩᏙᎯ-</td>
+                <td class="aligned-text">ᎤᏩᏒ ᎠᏎ ᎢᏥᏁᏗ ᎨᏎᏍᏗ ᏅᏩᏙᎯ-</td>
+                <td class="ocr-raw">ᎤᏩᏴ ᎠᏎ ᎢᏥᏁᏗ ᎨᏎᏍᏗ ᏅᏩᏙᎯ-</td>
+                <td class="aligned-text">ᎤᏩᏒ ᎠᏎ ᎢᏥᏁᏗ ᎨᏎᏍᏗ ᏅᏩᏙᎯ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140316</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140316_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏯᏛ ᏂᎪᎯᎸᎢ, ᎤᎬᏫᎧᏳᎯ ᏂᏥᎥ: ᏕᏥ-</td>
+                <td class="aligned-text">ᏯᏛ ᏂᎪᎯᎸᎢ. ᎤᎬᏫᏳᎯ ᏂᏥᎥ ᏕᏥ-</td>
+                <td class="ocr-raw">ᏯᏛ ᏂᎪᎯᎸᎢ. ᎤᎬᏫᏳᎯ ᏂᏥᎥ ᎡᏥ-</td>
+                <td class="aligned-text">ᏯᏛ ᏂᎪᎯᎸᎢ. ᎤᎬᏫᏳᎯ ᏂᏥᎥ ᏕᏥ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140316</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140316_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎧᎿᏘᏗᏙᎮᏍᏗ.</td>
+                <td class="aligned-text">ᎧᎿᎭᏗᏙᎮᏍᏗ.</td>
+                <td class="ocr-raw">ᎧᎿᏗᏙᎮᏍᏗ.</td>
+                <td class="aligned-text">ᎧᎿᎭᏗᏙᎮᏍᏗ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140317</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140317_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">17 ᎠᏰ ᏉᎳ ᎠᏆᏓᏲᎵᏍᏗ ᏥᎡ</td>
+                <td class="aligned-text">17 ᎠᏴ ᏉᎳ ᎠᏆᏓᏲᎵᏍᏗ ᎨᏒ</td>
+                <td class="ocr-raw">7 ᎠᏰ ᏉᎳ ᎠᏆᏓᏲᎵᏍᏗ ᎨᏒ</td>
+                <td class="aligned-text">17 ᎠᏴ ᏉᎳ ᎠᏆᏓᏲᎵᏍᏗ ᎨᏒ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140317</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140317_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎠᎦᏒᎡᎠ ᎠᏉᏰᏂ ᎠᎦᏔᏅᎯ ᎠᏉᏪᎳᏅᎯ,</td>
+                <td class="aligned-text">ᎠᏋᏒ ᎠᏉᏰᏂ ᎠᏋᏔᏅᎯ ᎠᏉᏪᎳᏅᎯ,</td>
+                <td class="ocr-raw">ᎠᎦᏴ ᎠᏉᏰᏂ ᎠᎦᏔᏅᎯ ᎠᏉᏪᎳᏅᎯ,</td>
+                <td class="aligned-text">ᎠᏋᏒ ᎠᏉᏰᏂ ᎠᏋᏔᏅᎯ ᎠᏉᏪᎳᏅᎯ,</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140317</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140317_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎾᏍᎩ ᏗᎪᎵᏍᏙᏗ ᏥᎩ ᏂᎦᏛ ᎪᏪᎵ;</td>
+                <td class="aligned-text">ᎾᏍᎩ ᏗᎪᎵᏍᏙᏗ ᏥᎩ ᏂᎦᏛ ᎪᏪᎵ;</td>
+                <td class="ocr-raw">ᎾᏍᎩ ᏗᎪᎵᏍᏙᏗ ᏥᎩ ᏂᎦᏛ ᎪᏪᎵ;</td>
+                <td class="aligned-text">ᎾᏍᎩ ᏗᎪᎵᏍᏙᏗ ᏥᎩ ᏂᎦᏛ ᎪᏪᎵ;</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140317</span></td>
+                <td>3</td>
+                <td><img class="crop-img" src="book_14/line_crops/140317_line_03.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎾᏍᎩᏯ ᏂᎬᏁᎰ ᎪᏪᎵᏍᎪᎢ.</td>
+                <td class="aligned-text">ᎾᏍᎩᏯ ᏂᎬᏁᎰ ᎪᏪᎵᏍᎪᎢ.</td>
+                <td class="ocr-raw">ᎾᏍᎩᏯ ᏂᎬᏁᎰ ᎪᏪᎵᏍᎪᎢ.</td>
+                <td class="aligned-text">ᎾᏍᎩᏯ ᏂᎬᏁᎰ ᎪᏪᎵᏍᎪᎢ.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140318</span></td>
+                <td>0</td>
+                <td><img class="crop-img" src="book_14/line_crops/140318_line_00.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎢᏚ ᎬᏩᎦᏘᏯ ᎤᏓᏙᎴᏍᏗ ᎨᏒ ᎢᎦᏤᎵ</td>
+                <td class="aligned-text">18 ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎢᎦᏤᎵ</td>
+                <td class="ocr-raw">18 ᎬᎾᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎢᎦᏤᎵ</td>
+                <td class="aligned-text">18 ᎬᏩᎦᏘᏯ ᎤᏓᏙᎵᏍᏗ ᎨᏒ ᎢᎦᏤᎵ</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140318</span></td>
+                <td>1</td>
+                <td><img class="crop-img" src="book_14/line_crops/140318_line_01.png" alt="crop" /></td>
+                <td class="ocr-raw">ᎤᎬᏫᎧᏳᎯ ᏥᏌ ᎦᏩᏁᏛ ᏕᏥᎧᎿᏩᏗᏅ</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᏕᏥᎧᎿᎭᏩᏗᏙᎮᏍᏗ</td>
+                <td class="ocr-raw">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᏩᏁᏛ ᏕᏥᎧᎿᏩᏗ-</td>
+                <td class="aligned-text">ᎤᎬᏫᏳᎯ ᏥᏌ ᎦᎶᏁᏛ ᏕᏥᎧᎿᎭᏩᏗ-</td>
+            </tr>
+        
+            <tr>
+                <td><span class="verse-num">140318</span></td>
+                <td>2</td>
+                <td><img class="crop-img" src="book_14/line_crops/140318_line_02.png" alt="crop" /></td>
+                <td class="ocr-raw">ᏙᎮᏍᏗ ᏂᏥᎥᎢ. ᎡᏘᎷᏅ-</td>
+                <td class="aligned-text">ᏂᏥᎥᎢ. ᎡᎺᏅ.</td>
+                <td class="ocr-raw">ᏙᎮᏍᏗ ᏂᏥᎥᎢ. ᎡᎷᏅ.</td>
+                <td class="aligned-text">ᏙᎮᏍᏗ ᏂᏥᎥᎢ. ᎡᎺᏅ.</td>
+            </tr>
+        
+        </tbody>
+    </table>
+</body>
+</html>
+    

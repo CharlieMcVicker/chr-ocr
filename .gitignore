@@ -14,6 +14,10 @@ training_data*/*output/
 training_data/cnt/book*/line_crops/
 training_data/cnt/book*/images/
 
+training_data/staged_tuning/*temp_epoch/
+training_data/staged_tuning/*output/*.checkpoint
+training_data/staged_tuning/*output/chr_checkpoint
+
 .DS_Store
 dataset/
 foo

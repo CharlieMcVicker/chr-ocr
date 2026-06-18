@@ -1,0 +1,4 @@
+Loaded file training_data/staged_tuning/run_mixture_50_50_hard_output/chr_checkpoint, unpacking...
+Successfully restored trainer from training_data/staged_tuning/run_mixture_50_50_hard_output/chr_checkpoint
+At iteration 2975/4400/4797, mean rms=1.398%, delta=4.116%, BCER train=14.260%, BWER train=28.164%, skip ratio=9.400%, wrote checkpoint.
+Finished! Selected model with minimal training error rate (BCER) = 14.26

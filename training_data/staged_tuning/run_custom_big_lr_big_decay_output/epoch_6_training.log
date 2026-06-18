@@ -1,0 +1,23 @@
+Loaded file training_data/staged_tuning/run_custom_big_lr_big_decay_output/chr_checkpoint, unpacking...
+Successfully restored trainer from training_data/staged_tuning/run_custom_big_lr_big_decay_output/chr_checkpoint
+Encoding of string failed! Failure bytes: 34 20 e1 8e a2 e1 8f a8 e1 8f b2 e1 8f 8e e1 8f b0 e1 8f 83 20 e1 8e a4 e1 8f 82 e1 8f a3 e1 8f 9b e1 8e a9 20 e1 8e a0 e1 8e be e1 8f 99 e1 8e b4 e1 8e b0 2d
+Can't encode transcription: '24 ᎢᏨᏲᏎᏰᏃ ᎤᏂᏣᏛᎩ ᎠᎾᏙᎴᎰ-' in language ''
+Encoding of string failed! Failure bytes: ea ad be e1 8f 99 e1 8e af 2c
+Can't encode transcription: 'ᏂᎨᏒᎾ ᎢᏤᎳᏗꭾᏙᎯ,' in language ''
+Encoding of string failed! Failure bytes: 56 2e
+Can't encode transcription: 'ᎹᏚ. ᎠᏯᏙᎸᎢ V.' in language ''
+Encoding of string failed! Failure bytes: e1 8f b6 20 e1 8e a0 e1 8e be e1 8e ab e1 8f b1 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97
+Can't encode transcription: 'ᎨᏎᏍᏗ, ᎢᏳᏃ ᎢᎬᏪᏅᏛ᏶ ᎠᎾᎫᏱᏍᎨᏍᏗ' in language ''
+2 Percent improvement time=116, best error was 22.269 @ 684
+At iteration 800/1100/1207, mean rms=1.685%, delta=5.340%, BCER train=19.978%, BWER train=36.962%, skip ratio=10.200%, New best BCER = 19.978 wrote best model:training_data/staged_tuning/run_custom_big_lr_big_decay_output/chr_19.978_800_1100.checkpoint wrote checkpoint.
+Encoding of string failed! Failure bytes: 3f
+Can't encode transcription: 'ᏍᏙᏗᏱ; ᎠᏎᏃ ᏂᎯ ᎦᏙ ᎭᏗᎭ?' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8f 80 e1 8f 8d e1 8e a9 e1 8f 83 20 e1 8e af e1 8e a0 20 e1 8f a3 e1 8f 82 20 e1 8e a4 e1 8f 85 e1 8f a9 e1 8e a1 20 e1 8f 90 e1 8f 88 e1 8e b5 20 e1 8e a6 e1 8f 90 e1 8f 86 e1 8f 97 20 e1 8e a4 2d
+Can't encode transcription: '4. ᏀᏍᎩᏃ ᎯᎠ ᏣᏂ ᎤᏅᏩᎡ ᏐᏈᎵ ᎦᏐᏆᏗ Ꭴ-' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a9 e1 8e b6 20 e1 8e a0 e1 8f 82 e1 8f 8d e1 8e a6 e1 8f 85 e1 8e ac 20 e1 8e ac e1 8f 82 e1 8e a8 e1 8f 92 20 e1 8e a8 e1 8f 90
+Can't encode transcription: '24 ᎩᎶ ᎠᏂᏍᎦᏅᎬ ᎬᏂᎨᏒ ᎨᏐ' in language ''
+Empty truth string!
+Can't encode transcription: '' in language ''
+2 Percent improvement time=130, best error was 21.482 @ 738
+At iteration 868/1200/1311, mean rms=1.654%, delta=5.288%, BCER train=19.380%, BWER train=35.814%, skip ratio=9.600%, New best BCER = 19.380 wrote checkpoint.
+Finished! Selected model with minimal training error rate (BCER) = 19.38

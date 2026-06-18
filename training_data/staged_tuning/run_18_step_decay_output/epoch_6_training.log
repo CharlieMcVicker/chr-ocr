@@ -1,0 +1,4 @@
+Loaded file training_data/staged_tuning/run_18_step_decay_output/chr_checkpoint, unpacking...
+Successfully restored trainer from training_data/staged_tuning/run_18_step_decay_output/chr_checkpoint
+At iteration 2828/3200/3411, mean rms=1.814%, delta=5.618%, BCER train=21.446%, BWER train=41.797%, skip ratio=7.100%, wrote checkpoint.
+Finished! Selected model with minimal training error rate (BCER) = 21.446

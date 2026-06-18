@@ -1,0 +1,29 @@
+Loaded file training_data/staged_tuning/run_mixture_90_10_output/chr_checkpoint, unpacking...
+Successfully restored trainer from training_data/staged_tuning/run_mixture_90_10_output/chr_checkpoint
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+Encoding of string failed! Failure bytes: 49 49 49 2e
+Can't encode transcription: 'ᎹᏚ. ᎠᏯᏙᎸᎢ III.' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8f 9a e1 8f 82 e1 8f 83 e1 8f 97 2c 20 31 38 32 35 2e
+Can't encode transcription: 'ᎢᏤ ᎦᏚᎲ, 14 ᏚᏂᏃᏗ, 1825.' in language ''
+Empty truth string!
+Can't encode transcription: '' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8f 80 e1 8f 8d e1 8e a9 e1 8f 83 20 e1 8e af e1 8e a0 20 e1 8f a3 e1 8f 82 20 e1 8e a4 e1 8f 85 e1 8f a9 e1 8e a1 20 e1 8f 90 e1 8f 88 e1 8e b5 20 e1 8e a6 e1 8f 90 e1 8f 86 e1 8f 97 20 e1 8e a4 2d
+Can't encode transcription: '4. ᏀᏍᎩᏃ ᎯᎠ ᏣᏂ ᎤᏅᏩᎡ ᏐᏈᎵ ᎦᏐᏆᏗ Ꭴ-' in language ''
+Encoding of string failed! Failure bytes: ea ad bc e1 8f b2 e1 8e af e1 8f 8d e1 8f 93 20 e1 8e aa e1 8f aa e1 8e b5 20 e1 8f a7 e1 8f b2 2d
+Can't encode transcription: 'ᏃᏆᎴᏬ ᎥᎠᏂᏁᎩ ᎿᏉ ᎠᏂꭼᏲᎯᏍᏓ ᎪᏪᎵ ᏧᏲ-' in language ''
+2 Percent improvement time=261, best error was 33.581 @ 929
+At iteration 1190/1300/1397, mean rms=2.265%, delta=8.399%, BCER train=29.945%, BWER train=53.420%, skip ratio=7.600%, New best BCER = 29.945 wrote best model:training_data/staged_tuning/run_mixture_90_10_output/chr_29.945_1190_1300.checkpoint wrote checkpoint.
+Encoding of string failed! Failure bytes: ea ad b4 20 e1 8f a6 e1 8f 8d e1 8f 93 e1 8f 91 e1 8f b0 e1 8f 9b 20 e1 8f ab e1 8f 97 e1 8f 99 e1 8e a9 e1 8f 84 e1 8e aa 2d
+Can't encode transcription: 'ᏗᎾᏗᏰᎢᎵᏙᎯ ᎣᎩᏅᏒᏉꭴ ᏦᏍᏓᏑᏰᏛ ᏫᏗᏙᎩᏄᎪ-' in language ''
+Encoding of string failed! Failure bytes: e1 8f 8b e1 8f 97 20 e1 8e a0 e1 8f 95 e1 8e b3 e1 8e a6 e1 8f 98 e1 8f af 2c 20 e1 8e a0 e1 8f 8d e1 8e aa e1 8e af e1 8f a7 e1 8f 88 20 e1 8e a0 e1 8f 95 2d
+Can't encode transcription: 'ᏍᎩ ᎤᎾᎫᏴᏓᏁᎮᏋᏗ ᎠᏕᎳᎦᏘᏯ, ᎠᏍᎪᎯᏧᏈ ᎠᏕ-' in language ''
+Encoding of string failed! Failure bytes: 5b e1 8e a3 e1 8e a6 e1 8e b4 e1 8f 85 e1 8f 9b 20 e1 8e a0 e1 8f 8f 20 e1 8f 99 e1 8f a5 e1 8e b4 e1 8f b4 e1 8f 97 2e 5d
+Can't encode transcription: '[ᎣᎦᎴᏅᏛ ᎠᏏ ᏙᏥᎴᏴᏗ.]' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8f 9a e1 8f 82 e1 8f 83 e1 8f 97 2c 20 31 38 32 35 2e
+Can't encode transcription: 'ᎢᏤ ᎦᏚᎲ, 14 ᏚᏂᏃᏗ, 1825.' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8f 9d e1 8e a9 e1 8f b3 20 e1 8e a4 e1 8f 9b e1 8f 83 e1 8e af 20 e1 8f 95 e1 8e a6 e1 8e b3 e1 8f ab e1 8e a5 20 e1 8e ac e1 8f a9 e1 8f 96 e1 8e b3 e1 8f 97 e1 8f 8d e1 8f 97 e1 8e a2 2c
+Can't encode transcription: '4. ᏝᎩᏳ ᎤᏛᏃᎯ ᏕᎦᎳᏫᎥ ᎬᏩᏖᎳᏗᏍᏗᎢ,' in language ''
+2 Percent improvement time=260, best error was 31.773 @ 1014
+At iteration 1274/1400/1502, mean rms=2.222%, delta=8.107%, BCER train=29.168%, BWER train=52.642%, skip ratio=7.400%, New best BCER = 29.168 wrote checkpoint.
+Finished! Selected model with minimal training error rate (BCER) = 29.168

@@ -1,0 +1,35 @@
+Loaded file training_data/staged_tuning/run_custom_big_lr_big_decay_dr6_mx4_output/chr_checkpoint, unpacking...
+Successfully restored trainer from training_data/staged_tuning/run_custom_big_lr_big_decay_dr6_mx4_output/chr_checkpoint
+Empty truth string!
+Can't encode transcription: '' in language ''
+Encoding of string failed! Failure bytes: 34 39 20 e1 8e be e1 8e a5 e1 8f 83 20 e1 8e a0 e1 8f 81 e1 8f 99 e1 8e af 20 e1 8e a4 e1 8e be e1 8f 99 e1 8e b4 e1 8e b0 e1 8f 92 20 e1 8f 84 e1 8f 8d e1 8f 9b
+Can't encode transcription: '49 ᎾᎥᏃ ᎠᏁᏙᎯ ᎤᎾᏙᎴᎰᏒ ᏄᏍᏛ' in language ''
+Encoding of string failed! Failure bytes: 34 31 20 e1 8f b4 e1 8f ab 20 e1 8e ac e1 8e a9 e1 8e b8 e1 8f 89 e1 8f 97 e1 8f 8d e1 8e ac 20 e1 8e a5 e1 8f 9d 20 e1 8f b1 e1 8f 97 e1 8e a6 e1 8f 93 2d
+Can't encode transcription: '41 ᏴᏫ ᎬᎩᎸᏉᏗᏍᎬ ᎥᏝ ᏱᏗᎦᏓ-' in language ''
+Encoding of string failed! Failure bytes: 3f
+Can't encode transcription: 'ᎠᏰᎵ ᎪᏢᏒ ᏙᏛᎯᏁᎵ ᎢᏏᎵ?' in language ''
+Encoding of string failed! Failure bytes: ea ae 8f e1 8e b8 2d e1 8e a8 e1 8e b6 e1 8e af 20 e1 8f 82 2d
+Can't encode transcription: 'ᏥᎩ, ᎾᏍᎩ ᏄᎬᏫᏳᏒ ᎠꮏᎸ-ᎨᎶᎯ Ꮒ-' in language ''
+2 Percent improvement time=252, best error was 18.058 @ 780
+At iteration 1032/1500/1661, mean rms=1.510%, delta=4.601%, BCER train=16.001%, BWER train=31.080%, skip ratio=12.300%, New best BCER = 16.001 wrote best model:training_data/staged_tuning/run_custom_big_lr_big_decay_dr6_mx4_output/chr_16.001_1032_1500.checkpoint wrote checkpoint.
+Encoding of string failed! Failure bytes: 34 20 e1 8e a0 e1 8f 8f e1 8f b4 e1 8f ab e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8e a0 e1 8f af e1 8f ab e1 8f 8d e1 8e a9 2c 20 e1 8f 97 e1 8f 93 2d
+Can't encode transcription: '34 ᎠᏏᏴᏫᏍᎩᏂ ᎠᏯᏫᏍᎩ, ᏗᏓ-' in language ''
+Empty truth string!
+Can't encode transcription: '' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a2 e1 8f a5 e1 8e aa e1 8f a9 e1 8f 98 e1 8f 8d e1 8e a8 e1 8f 8d e1 8f 97 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8e a4 e1 8f 8d e1 8e a6 e1 8e a2 2d
+Can't encode transcription: '14 ᎢᏥᎪᏩᏘᏍᎨᏍᏗᏍᎩᏂ ᎤᏍᎦᎢ-' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a2 e1 8f b3 e1 8f 83 20 e1 8e a9 e1 8e b6 20 e1 8f 82 e1 8e aa e1 8e af e1 8f b3 e1 8e b2 e1 8f 8d e1 8e ac e1 8e be 20 e1 8e a2 e1 8e a8 2d
+Can't encode transcription: '14 ᎢᏳᏃ ᎩᎶ ᏂᎪᎯᏳᎲᏍᎬᎾ ᎢᎨ-' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8f 9d e1 8e a9 e1 8f b3 20 e1 8e a4 e1 8f 9b e1 8f 83 e1 8e af 20 e1 8f 95 e1 8e a6 e1 8e b3 e1 8f ab e1 8e a5 20 e1 8e ac e1 8f a9 e1 8f 96 e1 8e b3 e1 8f 97 e1 8f 8d e1 8f 97 e1 8e a2 2c
+Can't encode transcription: '4. ᏝᎩᏳ ᎤᏛᏃᎯ ᏕᎦᎳᏫᎥ ᎬᏩᏖᎳᏗᏍᏗᎢ,' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e af e1 8e a0 e1 8f 83 20 e1 8f 84 e1 8e b5 e1 8f 8d e1 8f 94 e1 8f 81 e1 8e a2 20 e1 8e be e1 8f 8d e1 8e a9 20 e1 8e a4 e1 8f a3 e1 8f 98
+Can't encode transcription: '4 ᎯᎠᏃ ᏄᎵᏍᏔᏁᎢ ᎾᏍᎩ ᎤᏣᏘ' in language ''
+Encoding of string failed! Failure bytes: 34 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8e a6 e1 8f 99 20 e1 8e a0 e1 8f 97 e1 8e ad 20 e1 8e a4 e1 8f 81 e1 8e b3 e1 8f 85 e1 8e af 20 e1 8e a4 2d
+Can't encode transcription: '4 ᎠᏎᏃ ᎦᏙ ᎠᏗᎭ ᎤᏁᎳᏅᎯ Ꭴ-' in language ''
+Encoding of string failed! Failure bytes: 3f 20 e1 8f 88 e1 8e b5 e1 8e a9 20 e1 8e af e1 8e a0 20 e1 8f 84 e1 8f aa e1 8f 8e e1 8e b8 e1 8e a9 3b 20 e1 8e a2 2d
+Can't encode transcription: 'ᎾᏎᎵᏗ? ᏈᎵᎩ ᎯᎠ ᏄᏪᏎᎸᎩ; Ꭲ-' in language ''
+Encoding of string failed! Failure bytes: 34 2e 20 e1 8e a0 e1 8f 8e e1 8f 83 20 e1 8f a3 e1 8f 82 20 e1 8f 9a e1 8e b5 e1 8f ab e1 8f 8e e1 8e b4 e1 8f 89 2c 20 e1 8e a0 e1 8f b4 e1 8f 8d e1 8e a9 e1 8f 82 20 e1 8f b1 e1 8f 8d e1 8f 86 2d
+Can't encode transcription: '14. ᎠᏎᏃ ᏣᏂ ᏚᎵᏫᏎᎴᏉ, ᎠᏴᏍᎩᏂ ᏱᏍᏆ-' in language ''
+2 Percent improvement time=305, best error was 18.058 @ 780
+At iteration 1085/1600/1770, mean rms=1.470%, delta=4.370%, BCER train=15.439%, BWER train=30.166%, skip ratio=11.500%, New best BCER = 15.439 wrote best model:training_data/staged_tuning/run_custom_big_lr_big_decay_dr6_mx4_output/chr_15.439_1085_1600.checkpoint wrote checkpoint.
+Finished! Selected model with minimal training error rate (BCER) = 15.439

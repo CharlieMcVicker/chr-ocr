@@ -1,0 +1,26 @@
+Loaded file training_data/dataset/model/chr.lstm, unpacking...
+Warning: LSTMTrainer deserialized an LSTMRecognizer!
+Code range changed from 103 to 104!
+Num (Extended) outputs,weights in Series:
+  1,36,0,1:1, 0
+Num (Extended) outputs,weights in Series:
+  C3,3:9, 0
+  Ft16:16, 160
+Total weights = 160
+  [C3,3Ft16]:16, 160
+  Mp3,3:16, 0
+  TxyLfys48:48, 12480
+  Lfx96:96, 55680
+  RxLrx96:96, 74112
+  Lfx128:128, 115200
+  Fc104:104, 13416
+Total weights = 271048
+Previous null char=102 mapped to 103
+Continuing from training_data/dataset/model/chr.lstm
+Set learning rate to 0.002000
+Encoding of string failed! Failure bytes: 56 2e
+Can't encode transcription: 'ᎹᏚ. ᎠᏯᏙᎸᎢ V.' in language ''
+Encoding of string failed! Failure bytes: e1 8f 8b e1 8f 81 e1 8e ae e1 8f 8d e1 8f 97 20 e1 8f b4 e1 8f ab
+Can't encode transcription: '32 ᎩᎶᏰᏃ ᎬᏂᎨᏒ ᎾᏋᏁᎮᏍᏗ ᏴᏫ' in language ''
+Encoding of string failed! Failure bytes: 5b e1 8e a5 e1 8e a6 e1 8f a5 e1 8e aa e1 8e a5 e1 8e a9 5d 20 e1 8f 85 e1 8e a9 2d
+Can't encode transcription: 'ᎨᏒᎩ; ᎠᎴ ᎾᏍᎩ Ꮎ [ᎥᎦᏥᎪᎥᎩ] ᏅᎩ-' in language ''
