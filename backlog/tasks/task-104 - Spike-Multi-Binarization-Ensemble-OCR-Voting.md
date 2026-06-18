@@ -1,9 +1,11 @@
 ---
 id: TASK-104
 title: 'Spike: Multi-Binarization Ensemble OCR Voting'
-status: To Do
-assignee: []
+status: Done
+assignee:
+  - '@agent'
 created_date: '2026-06-18 15:05'
+updated_date: '2026-06-18 15:44'
 labels: []
 dependencies: []
 ordinal: 118000
@@ -17,9 +19,15 @@ Create a throwaway script (scripts/spike_ensemble_ocr.py) to test if we can lowe
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Create scripts/spike_ensemble_ocr.py
-- [ ] #2 Load 100 random test crops and their ground truths
-- [ ] #3 Generate 3 image variations and run PyTesseract inference
-- [ ] #4 Implement character-level majority voting via sequence alignment
-- [ ] #5 Print CER evaluation comparing Ensemble vs Grayscale baseline
+- [x] #1 Create scripts/spike_ensemble_ocr.py
+- [x] #2 Load 100 random test crops and their ground truths
+- [x] #3 Generate 3 image variations and run PyTesseract inference
+- [x] #4 Implement character-level majority voting via sequence alignment
+- [x] #5 Print CER evaluation comparing Ensemble vs Grayscale baseline
 <!-- AC:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Created spike_ensemble_ocr.py to test a 3-way multi-binarization character-level majority vote OCR ensemble. \n\nResults (using pure unaugmented test/base images):\n- Base Grayscale CER: 6.628%\n- Ensemble Voting CER: 8.489%\n\nConclusion: The ensemble voting underperformed the base grayscale baseline. This indicates that the binarizations (Sauvola and Wolf) reduce OCR accuracy sufficiently to drag down the majority vote. Therefore, a pure voting ensemble using these specific binarizations is not recommended for inference at this time.
+<!-- SECTION:FINAL_SUMMARY:END -->
