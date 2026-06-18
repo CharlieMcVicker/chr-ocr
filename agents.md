@@ -35,12 +35,12 @@ Agent behavior is deeply customized using Markdown rule files located in `.agent
 - **`supervisor-planner.md`**: Guidelines for the Supervisor Planner agent when breaking down complex work.
 - **`task-implementation-subagent.md`**: Guidelines for Task Implementor subagents.
 
-## Python Virtual Environment (`.venv`)
+## Python Environment Management (`uv`)
 
-To run Python files or execute scripts, agents **MUST** use the local virtual environment:
-- **Never** invoke bare `python` or `pip` commands as they will run against the system Python or fail.
-- **Explicit Executable Paths**: Use `.venv/bin/python` for executing scripts and `.venv/bin/pip` for package management.
-- **Activation Alternative**: Or run `source .venv/bin/activate && python ...` inside a shell invocation.
-- **Dependency Missing Issues**: New worktrees or checkouts may sometimes have incomplete dependency sets. If imports like `cv2` or `PIL` fail, explicitly install them using `.venv/bin/pip install`.
+To run Python files, manage dependencies, or execute scripts, agents **MUST** use `uv`:
+- **Never** invoke bare `python` or `pip` commands, and do **not** manually run `source .venv/bin/activate`.
+- **Always** use `uv run <command>` for executing Python scripts, Flask servers, or other CLI tools (e.g., `uv run scripts/train_staged.py`).
+- **Always** use `uv add <package>` (or `uv remove <package>`) for installing/managing dependencies.
+- **Always** run `uv sync` to ensure the project virtual environment matches the lockfile.
 
 *If you are an AI agent reading this, please ensure you review and strictly adhere to the guidelines provided in the `.agents/rules/` directory.*

@@ -2,13 +2,13 @@
 set -e
 
 echo "Running split_train_test.py to stratify the dataset..."
-.venv/bin/python scripts/split_train_test.py
+uv run python scripts/split_train_test.py
 
 echo "Running prepare_splits.sh to generate .lstmf..."
 bash scripts/prepare_splits.sh
 
 echo "Running train_staged.py with network expansion (FULL RUN)..."
-.venv/bin/python scripts/train_staged.py \
+uv run python scripts/train_staged.py \
   --total-epochs 12 \
   --iterations-per-epoch 200 \
   --learning-rate 0.0005 \

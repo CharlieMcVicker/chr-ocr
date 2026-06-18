@@ -22,8 +22,8 @@ brew install imagemagick
 brew install tesseract
 brew install llama.cpp
 
-# Python Dependencies
-pip install surya-ocr pillow numpy scipy
+# Python Setup
+uv sync
 ```
 
 - Ensure the Cherokee training data file `chr.traineddata` (available from [Tesseract OCR Tessdata Repository](https://github.com/tesseract-ocr/tessdata/blob/main/chr.traineddata)) is placed in your system's `tessdata` directory.
@@ -47,20 +47,14 @@ The web app provides a visual UI to upload document images, preprocess them usin
 
 ### Setup and Running Local Server
 
-1. **Create and Activate Virtual Environment**:
+1. **Setup and Synchronize Virtual Environment**:
    ```zsh
-   python3 -m venv .venv
-   source .venv/bin/activate
+   uv sync
    ```
 
-2. **Install Dependencies**:
+2. **Start the Flask Server**:
    ```zsh
-   pip install -r server/requirements.txt
-   ```
-
-3. **Start the Flask Server**:
-   ```zsh
-   PORT=5001 python server/app.py
+   PORT=5001 uv run python server/app.py
    ```
 
 4. Open your browser and go to: `http://localhost:5001`

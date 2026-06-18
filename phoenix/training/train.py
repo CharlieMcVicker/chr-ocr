@@ -214,9 +214,8 @@ def run_staged_training(config: TrainingConfig):
             print(f"Generated epoch {epoch} manifest at {manifest_to_use}")
             print(f"Train set: {train_phoenix_count} Phoenix lines, {train_cnt_count} CNT lines. Actual Phoenix Ratio: {actual_ratio:.4f} (Target: {config.mixture_ratio:.4f})")
             
-        print("Generating fresh dynamic augmentations...")
         cmd_aug = [
-            ".venv/bin/python",
+            sys.executable,
             "-u",
             "scripts/augment_dynamic.py",
             "--manifest", manifest_to_use,

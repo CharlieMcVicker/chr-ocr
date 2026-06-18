@@ -3,14 +3,13 @@ trigger: model_decision
 description: Use this rule when writing or executing python code
 ---
 
-# Python Virtual Environment Usage
+# Python Environment Management with `uv`
 
-When working with Python in this project, you MUST always use the local virtual environment located at `.venv`. 
+When working with Python in this project, you MUST always use `uv`.
 
-The global `python` and `pip` commands are not available and will fail.
+For all Python invocations and package management, you must:
+1. Run Python scripts and tools using: `uv run <command>` (e.g., `uv run python scripts/my_script.py` or `uv run my_script.py`).
+2. Manage dependencies using `uv add <package>` or `uv remove <package>`.
+3. Keep the environment synchronized using `uv sync`.
 
-For all Python invocations and package management, you must either:
-1. Use the full path to the executable: `.venv/bin/python` or `.venv/bin/pip`
-2. Or activate the virtual environment first in your command: `source .venv/bin/activate && python ...`
-
-Failure to follow this rule will result in 'command not found' errors or installing dependencies in the wrong location.
+Failure to follow this rule and using raw `pip` or activating standard `.venv` scripts will bypass lockfile tracking.

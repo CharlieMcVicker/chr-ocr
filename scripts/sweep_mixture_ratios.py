@@ -58,7 +58,7 @@ def main():
         exp_config.save_to_json(config_path)
         
         cmd = [
-            ".venv/bin/python",
+            sys.executable,
             "scripts/train_staged.py",
             "--config", config_path
         ]
@@ -89,7 +89,7 @@ def main():
                 
                 # Now evaluate the temporary model using evaluate_mixed_model.py
                 eval_cmd = [
-                    ".venv/bin/python",
+                    sys.executable,
                     "scripts/evaluate_mixed_model.py",
                     "--model-dir", run_output_dir,
                     "--lang", "chr_eval_temp",

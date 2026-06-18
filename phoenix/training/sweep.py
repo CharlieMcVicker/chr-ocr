@@ -155,7 +155,7 @@ def run_meta_parameter_sweep(sweep_config: SweepConfig, test_dir: str, trainedda
         exp_config.save_to_json(config_path)
         
         cmd = [
-            ".venv/bin/python",
+            sys.executable,
             "scripts/train_staged.py",
             "--config", config_path
         ]
