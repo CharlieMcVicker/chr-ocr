@@ -131,6 +131,17 @@ def main():
     # Binarization algorithms used dynamically
     bin_methods = ["otsu", "sauvola", "wolf", "grayscale"]
 
+    # Load rare characters list
+    rare_chars = set()
+    rare_chars_path = "training_data/rare_characters.json"
+    if os.path.exists(rare_chars_path):
+        try:
+            with open(rare_chars_path, "r", encoding="utf-8") as f:
+                rare_chars = set(json.load(f))
+            print(f"[Dynamic Augmentation] Loaded {len(rare_chars)} rare characters from {rare_chars_path}.")
+        except Exception as e:
+            print(f"Warning: Failed to load rare characters: {e}")
+
     for idx, item in enumerate(train_items):
         image_path = os.path.join("training_data", item["image_path"])
         img = cv2.imread(image_path)
@@ -142,7 +153,11 @@ def main():
 
         skip_bin = should_skip_binarization(item)
 
-        for var_idx in range(args.variations_per_image):
+        # Double variations if the line contains a rare character
+        has_rare = any(c in label for c in rare_chars)
+        variations = args.variations_per_image * 2 if has_rare else args.variations_per_image
+
+        for var_idx in range(variations):
             if skip_bin:
                 # Apply high-intensity Albumentations noise pipeline to CNT images but bypass dynamic binarization/bleedthrough
                 augmented = cnt_pipeline(image=img)["image"]

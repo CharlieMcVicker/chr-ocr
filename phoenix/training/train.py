@@ -161,14 +161,49 @@ def run_staged_training(config: TrainingConfig):
                                 "line": line
                             })
             
+            # Load rare characters list
+            rare_chars = set()
+            rare_chars_path = "training_data/rare_characters.json"
+            if os.path.exists(rare_chars_path):
+                try:
+                    with open(rare_chars_path, "r", encoding="utf-8") as f:
+                        rare_chars = set(json.load(f))
+                    print(f"Loaded {len(rare_chars)} rare characters for CNT oversampling.")
+                except Exception as e:
+                    print(f"Warning: Failed to load rare characters: {e}")
+
             # Seeding with epoch ensures a different but deterministic subset per epoch
             seed_str = f"cnt_batch_salt_epoch_{epoch}"
             rng = random.Random(seed_str)
             
             if n_cnt > 0 and len(all_valid_cnt_lines) > 0:
+                # Separate CNT lines into those containing rare characters and those that don't
+                rare_cnt_lines = []
+                common_cnt_lines = []
+                for x in all_valid_cnt_lines:
+                    text = x["line"].get("ftm_aligned", "")
+                    if any(c in text for c in rare_chars):
+                        rare_cnt_lines.append(x)
+                    else:
+                        common_cnt_lines.append(x)
+
+                print(f"CNT Lines breakdown: {len(rare_cnt_lines)} with rare characters, {len(common_cnt_lines)} with common characters.")
+
                 # Sample exactly n_cnt lines (cap to size of all_valid_cnt_lines if needed)
                 sampled_count = min(n_cnt, len(all_valid_cnt_lines))
-                sampled_lines = rng.sample(all_valid_cnt_lines, sampled_count)
+
+                # Shuffle both groups using rng
+                rng.shuffle(rare_cnt_lines)
+                rng.shuffle(common_cnt_lines)
+
+                # Prioritize rare CNT lines first, then fill with common CNT lines
+                if len(rare_cnt_lines) >= sampled_count:
+                    sampled_lines = rare_cnt_lines[:sampled_count]
+                else:
+                    needed = sampled_count - len(rare_cnt_lines)
+                    sampled_lines = rare_cnt_lines + common_cnt_lines[:needed]
+
+                print(f"Sampled {len(sampled_lines)} total CNT lines (including {min(len(rare_cnt_lines), sampled_count)} rare lines).")
                 
                 for item_info in sampled_lines:
                     book_idx = item_info["book_idx"]

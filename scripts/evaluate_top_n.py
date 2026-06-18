@@ -5,7 +5,7 @@ import shutil
 import tempfile
 
 
-def compile_model(checkpoint_path):
+def compile_model(checkpoint_path, traineddata_path="dataset/model/chr.traineddata"):
     """
     compile the model into a temp file to do eval with
     """
@@ -18,7 +18,7 @@ def compile_model(checkpoint_path):
             "--continue_from",
             checkpoint_path,
             "--traineddata",
-            "dataset/model/chr.traineddata",
+            traineddata_path,
             "--model_output",
             temp_model_path,
         ]
@@ -26,13 +26,13 @@ def compile_model(checkpoint_path):
     return temp_model_path
 
 
-def run_eval(model_path):
-    temp_model_path = compile_model(model_path)
+def run_eval(model_path, traineddata_path="dataset/model/chr.traineddata"):
+    temp_model_path = compile_model(model_path, traineddata_path)
     
     with tempfile.TemporaryDirectory() as tmpdir:
         # Tesseract expects a directory containing {lang}.traineddata
-        traineddata_path = os.path.join(tmpdir, "chr.traineddata")
-        shutil.move(temp_model_path, traineddata_path)
+        target_traineddata_path = os.path.join(tmpdir, "chr.traineddata")
+        shutil.move(temp_model_path, target_traineddata_path)
         
         print("Running eval on model: " + model_path)
         subprocess.run(
@@ -51,6 +51,7 @@ if __name__ == "__main__":
     # Get args from dir for the folder w model checkpoints
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-dir", type=str, required=True)
+    parser.add_argument("--traineddata", type=str, default="dataset/model/chr.traineddata")
     args = parser.parse_args()
 
     checkpoints = [
@@ -66,4 +67,4 @@ if __name__ == "__main__":
     top_n = 5
 
     for checkpoint in checkpoints_sorted[-top_n:]:
-        run_eval(checkpoint)
+        run_eval(checkpoint, args.traineddata)
