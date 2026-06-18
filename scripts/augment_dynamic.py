@@ -126,7 +126,7 @@ def main():
     )
 
     # Binarization algorithms used dynamically
-    bin_methods = ["otsu", "su", "sauvola", "wolf"]
+    bin_methods = ["otsu", "sauvola", "wolf"]
 
     for idx, item in enumerate(train_items):
         image_path = os.path.join("training_data", item["image_path"])
@@ -157,13 +157,9 @@ def main():
                 algo = random.choice(bin_methods)
                 if algo == "otsu":
                     bin_res = binarize(augmented, "otsu", {})
-                elif algo == "su":
-                    w = random.choice([15, 25, 35, 45])
-                    bin_res = binarize(augmented, "su", {"window": w})
                 elif algo == "sauvola":
                     w = random.choice([15, 25, 35, 45])
-                    k = random.choice([0.1, 0.2, 0.3])
-                    bin_res = binarize(augmented, "sauvola", {"window": w, "k": k})
+                    bin_res = binarize(augmented, "sauvola", {"window": w, "k": 0.1})
                 elif algo == "wolf":
                     w = random.choice([15, 25, 35, 45])
                     k = random.choice([0.1, 0.2, 0.3])

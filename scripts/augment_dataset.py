@@ -86,9 +86,8 @@ def main():
     # Build evaluation grid
     binarization_grid = [("otsu", {})]
     for w in [15, 25, 35, 45]:
-        binarization_grid.append((f"su_w{w}", {"algo": "su", "window": w}))
+        binarization_grid.append((f"sauvola_w{w}_k0.1", {"algo": "sauvola", "window": w, "k": 0.1}))
         for k in [0.1, 0.2, 0.3]:
-            binarization_grid.append((f"sauvola_w{w}_k{k}", {"algo": "sauvola", "window": w, "k": k}))
             binarization_grid.append((f"wolf_w{w}_k{k}", {"algo": "wolf", "window": w, "k": k}))
 
     test_dirs = {}
@@ -133,19 +132,15 @@ def main():
             else:
                 # 1. Otsu
                 bin_otsu = binarize(aug_img, "otsu", {})
-                # 2. Su (random w)
-                w_su = random.choice([15, 25, 35, 45])
-                bin_su = binarize(aug_img, "su", {"algo": "su", "window": w_su})
-                # 3. Sauvola (random w, k)
+                # 2. Sauvola (random w, k < 0.2)
                 w_sv = random.choice([15, 25, 35, 45])
-                k_sv = random.choice([0.1, 0.2, 0.3])
-                bin_sv = binarize(aug_img, "sauvola", {"algo": "sauvola", "window": w_sv, "k": k_sv})
-                # 4. Wolf (random w, k)
+                bin_sv = binarize(aug_img, "sauvola", {"algo": "sauvola", "window": w_sv, "k": 0.1})
+                # 3. Wolf (random w, k)
                 w_w = random.choice([15, 25, 35, 45])
                 k_w = random.choice([0.1, 0.2, 0.3])
                 bin_wolf = binarize(aug_img, "wolf", {"algo": "wolf", "window": w_w, "k": k_w})
                 
-                for alg_name, bin_res in [("otsu", bin_otsu), ("su", bin_su), ("sauvola", bin_sv), ("wolf", bin_wolf)]:
+                for alg_name, bin_res in [("otsu", bin_otsu), ("sauvola", bin_sv), ("wolf", bin_wolf)]:
                     norm_img = normalize_height(bin_res, pad_y=args.pad_y)
                     h, w = norm_img.shape[:2]
                     
