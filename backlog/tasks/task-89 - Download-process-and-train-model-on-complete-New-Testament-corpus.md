@@ -1,11 +1,11 @@
 ---
 id: TASK-89
 title: 'Download, process, and train model on complete New Testament corpus'
-status: In Progress
+status: Done
 assignee:
   - '@antigravity'
 created_date: '2026-06-17 14:09'
-updated_date: '2026-06-17 19:03'
+updated_date: '2026-06-18 02:48'
 labels: []
 dependencies: []
 ordinal: 94000
@@ -21,10 +21,12 @@ Download all 27 books of the Cherokee New Testament from cherokeedictionary.net,
 <!-- AC:BEGIN -->
 - [x] #1 All 27 New Testament books (01-27) are successfully scraped
 - [x] #2 Line images are extracted and aligned to ground truth text for all downloaded books
-- [ ] #3 The combined dataset (Phoenix + New Testament) is integrated into the training manifest with augmentation
-- [ ] #4 OCR model can be trained on combined dataset without overwriting Phoenix-only checkpoints
-- [ ] #5 OCR model is trained on the combined dataset and outputs separate checkpoints
+- [x] #3 The combined dataset (Phoenix + New Testament) is integrated into the training manifest with augmentation
+- [x] #4 OCR model can be trained on combined dataset without overwriting Phoenix-only checkpoints
+- [x] #5 OCR model is trained on the combined dataset and outputs separate checkpoints
 <!-- AC:END -->
+
+
 
 ## Implementation Notes
 

@@ -1,11 +1,11 @@
 ---
 id: TASK-83.1
 title: Scrape Cherokee New Testament images and transcriptions
-status: In Progress
+status: Done
 assignee:
   - '@antigravity'
 created_date: '2026-06-17 12:55'
-updated_date: '2026-06-17 12:59'
+updated_date: '2026-06-18 02:48'
 labels:
   - cnt-ocr
 dependencies: []
@@ -21,6 +21,6 @@ Download all images and transcriptions for each verse of each book from https://
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Implement a robust scraper script to download verse pages/images
-- [ ] #2 Store raw images and verse transcriptions systematically on disk
+- [x] #1 Implement a robust scraper script to download verse pages/images
+- [x] #2 Store raw images and verse transcriptions systematically on disk
 <!-- AC:END -->
