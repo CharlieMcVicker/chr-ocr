@@ -1,0 +1,67 @@
+{
+  "experiments": [
+    {
+      "id": "run_mixture_90_10",
+      "config": {
+        "total_epochs": 10,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 3,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 3,
+        "mixture_ratio": 0.90,
+        "use_dynamic_cnt": true,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25
+      },
+      "eval_epochs": [5, 8, 10]
+    },
+    {
+      "id": "run_mixture_80_20",
+      "config": {
+        "total_epochs": 10,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 3,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 3,
+        "mixture_ratio": 0.80,
+        "use_dynamic_cnt": true,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25
+      },
+      "eval_epochs": [5, 8, 10]
+    },
+    {
+      "id": "run_mixture_70_30",
+      "config": {
+        "total_epochs": 10,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 3,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.5,
+        "lr_decay_epochs": 3,
+        "mixture_ratio": 0.70,
+        "use_dynamic_cnt": true,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25
+      },
+      "eval_epochs": [5, 8, 10]
+    }
+  ]
+}

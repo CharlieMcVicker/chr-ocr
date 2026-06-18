@@ -44701,7 +44701,7 @@
     ],
     "initial_ocr": "GZ ᏰᏢ ᎢᎨᏣᏛᏁᏘ ᎨᏎᏍᏘ, ᎢᏧᎳ ᏘᏗᎦᏬᏂᎯ-) Ꮵ",
     "label": "",
-    "status": "unlabeled",
+    "status": "nasty_crop",
     "predicted_lang": "Cherokee",
     "ftm_ocr": "ᏳᏃ ᏰᎵ ᎢᎨᏣᏛᏁᏗ ᎨᏎᏍᏗ, ᎢᏧᎳ ᏗᎦᏬᏂᎯ-Ꮵ",
     "ftm_confidence": 73.67

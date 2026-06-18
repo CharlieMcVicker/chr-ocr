@@ -1,0 +1,47 @@
+{
+  "experiments": [
+    {
+      "id": "run_mixture_50_50_hard",
+      "config": {
+        "total_epochs": 36,
+        "iterations_per_epoch": 200,
+        "variations_per_image": 3,
+        "error_rate": 0.05,
+        "learning_rate": 0.0005,
+        "lr_schedule": "step",
+        "lr_decay_rate": 0.7,
+        "lr_decay_epochs": 5,
+        "mixture_ratio": 0.5,
+        "use_dynamic_cnt": true,
+        "blur_prob": 0.4,
+        "shadow_prob": 0.3,
+        "distortion_prob": 0.4,
+        "dropout_prob": 0.3,
+        "bleedthrough_prob": 0.25,
+        "cnt_noise": {
+          "blur": {
+            "prob": 0.6,
+            "limit_min": 3,
+            "limit_max": 5
+          },
+          "shadow": {
+            "prob": 0.5,
+            "dimension": 6
+          },
+          "distortion": {
+            "prob": 0.5,
+            "limit": 0.15
+          },
+          "dropout": {
+            "prob": 0.5,
+            "holes_min": 1,
+            "holes_max": 4,
+            "size_min": 4,
+            "size_max": 10
+          }
+        }
+      },
+      "eval_epochs": [14, 18, 22, 24, 26, 30, 36]
+    }
+  ]
+}
