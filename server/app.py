@@ -339,5 +339,71 @@ def update_training_item():
     return {"success": True}
 
 
+@app.route("/training/columns")
+def training_columns():
+    """
+    Renders the column-level labeling view for low-confidence text columns.
+    """
+    from server.column_utils import get_low_confidence_columns
+    
+    threshold = float(request.args.get("threshold", 75.0))
+    columns = get_low_confidence_columns(TRAINING_MANIFEST_PATH, threshold=threshold)
+    
+    # Calculate some aggregated column-level stats for display
+    total_cols = len(columns)
+    unlabeled_cols = sum(1 for col in columns if col["unlabeled_count"] > 0)
+    fully_labeled_cols = total_cols - unlabeled_cols
+    
+    col_stats = {
+        "total": total_cols,
+        "unlabeled": unlabeled_cols,
+        "labeled": fully_labeled_cols
+    }
+    
+    selected_id = request.args.get("col_id")
+    selected_col = None
+    if selected_id:
+        selected_col = next((c for c in columns if c["id"] == selected_id), None)
+    elif columns:
+        # Default to first column with unlabeled items, or first column overall
+        selected_col = next((c for c in columns if c["unlabeled_count"] > 0), columns[0])
+        
+    return render_template(
+        "columns.html",
+        columns=columns,
+        col_stats=col_stats,
+        selected_col=selected_col,
+        threshold=threshold
+    )
+
+
+@app.route("/training/columns/save", methods=["POST"])
+def save_column_updates():
+    """
+    Saves bulk labeling corrections for multiple lines in a column.
+    """
+    data = request.json
+    if not data or "updates" not in data:
+        return {"error": "Missing updates data"}, 400
+        
+    updates = data["updates"]
+    manifest = load_training_manifest()
+    
+    updated_count = 0
+    for line_id, update_info in updates.items():
+        if line_id in manifest:
+            if "label" in update_info:
+                manifest[line_id]["label"] = update_info["label"]
+            if "status" in update_info:
+                manifest[line_id]["status"] = update_info["status"]
+            updated_count += 1
+            
+    if updated_count > 0:
+        save_training_manifest(manifest)
+        
+    return {"success": True, "updated_count": updated_count}
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=PORT, debug=True)
+

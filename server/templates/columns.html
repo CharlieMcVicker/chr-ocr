@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Confidence Column Labeling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --border-card: rgba(255, 255, 255, 0.08);
+            --accent-glow: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 60%);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --primary-color: #8b5cf6;
+            --primary-hover: #7c3aed;
+            --success-color: #10b981;
+            --success-hover: #059669;
+            --danger-color: #ef4444;
+            --danger-hover: #dc2626;
+            --warning-color: #f59e0b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            height: 100vh;
+            max-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background-image: var(--accent-glow);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Top Navigation Bar */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: rgba(10, 10, 15, 0.7);
+            border-bottom: 1px solid var(--border-card);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .header-title-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title-container h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-card);
+            background: var(--bg-card);
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+            border-color: var(--primary-color);
+            background: rgba(139, 92, 246, 0.1);
+            transform: translateY(-1px);
+        }
+
+        /* Stats Row */
+        .stats-row {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .stat-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            border: 1px solid var(--border-card);
+            background: var(--bg-card);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stat-badge .count {
+            color: var(--text-primary);
+            font-family: monospace;
+            font-size: 0.85rem;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 0.05rem 0.35rem;
+            border-radius: 4px;
+        }
+
+        /* Layout Container */
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Sidebar - Columns List */
+        .sidebar {
+            width: 320px;
+            min-width: 320px;
+            border-right: 1px solid var(--border-card);
+            background: rgba(10, 10, 15, 0.5);
+            backdrop-filter: blur(8px);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .sidebar-search-container {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-card);
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .search-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            padding: 0.6rem 0.75rem;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-color);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .sidebar-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        /* Column Cards */
+        .col-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 10px;
+            padding: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .col-card:hover {
+            border-color: rgba(139, 92, 246, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-1px);
+        }
+
+        .col-card.active {
+            border-color: var(--primary-color);
+            background: rgba(139, 92, 246, 0.08);
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.1);
+        }
+
+        .col-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.4rem;
+        }
+
+        .col-card-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 170px;
+        }
+
+        .col-card-badge {
+            font-size: 0.7rem;
+            font-family: monospace;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .badge-low-conf {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #f87171;
+        }
+
+        .badge-med-conf {
+            background: rgba(245, 158, 11, 0.15);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            color: #fbbf24;
+        }
+
+        .col-card-meta {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .col-card-progress {
+            height: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 2px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+
+        .col-card-progress-bar {
+            height: 100%;
+            background: var(--primary-color);
+            border-radius: 2px;
+            transition: width 0.3s;
+        }
+
+        /* Workspace Panels */
+        .workspace {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        /* Left Panel - Vertical Column Crop Preview */
+        .column-crop-panel {
+            width: 320px;
+            min-width: 320px;
+            border-right: 1px solid var(--border-card);
+            background: rgba(5, 5, 8, 0.6);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .panel-header {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-card);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .column-stack-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1px; /* Align tight to look like a single block */
+            background: #121214;
+        }
+
+        .stack-line-wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0.25rem 0;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+            cursor: pointer;
+        }
+
+        .stack-line-wrapper:hover, .stack-line-wrapper.highlighted {
+            background-color: rgba(139, 92, 246, 0.15);
+        }
+
+        .stack-line-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            filter: invert(1) brightness(0.9) contrast(1.2); /* Invert to match dark mode */
+        }
+
+        .stack-line-num {
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            padding: 0.05rem 0.25rem;
+            font-family: monospace;
+        }
+
+        /* Right Panel - Form */
+        .transcription-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .form-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Line Input Card */
+        .line-edit-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 1rem;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .line-edit-card:hover, .line-edit-card.focused {
+            border-color: rgba(139, 92, 246, 0.3);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .line-edit-card.focused {
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.05);
+        }
+
+        .line-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .line-card-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-family: monospace;
+        }
+
+        .line-card-badge {
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        .line-image-preview {
+            background: #1e1e20;
+            padding: 0.4rem;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .preview-img {
+            max-height: 32px;
+            max-width: 100%;
+            height: auto;
+            filter: invert(1) brightness(0.9) contrast(1.2);
+        }
+
+        .ocr-hint-row {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .ocr-hint-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .ocr-hint-text {
+            font-family: sans-serif;
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.02);
+            padding: 0.35rem 0.5rem;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .input-row {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .transcribe-input {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            padding: 0.65rem 0.75rem;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            font-weight: 600;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .transcribe-input:focus {
+            border-color: var(--primary-color);
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        /* Status Controls */
+        .status-button-group {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .btn-status {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-card);
+            color: var(--text-secondary);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.4rem 0.6rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-status:hover {
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-status.active[data-status="labeled"] {
+            background: rgba(16, 185, 129, 0.15);
+            border-color: var(--success-color);
+            color: #34d399;
+        }
+
+        .btn-status.active[data-status="not_cherokee"] {
+            background: rgba(59, 130, 246, 0.15);
+            border-color: #3b82f6;
+            color: #60a5fa;
+        }
+
+        .btn-status.active[data-status="nasty_crop"] {
+            background: rgba(239, 68, 68, 0.15);
+            border-color: var(--danger-color);
+            color: #f87171;
+        }
+
+        /* Action Bar */
+        .actions-panel {
+            padding: 1rem 1.5rem;
+            background: rgba(10, 10, 15, 0.8);
+            border-top: 1px solid var(--border-card);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.65rem 1.25rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            outline: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            color: var(--text-secondary);
+        }
+
+        .btn-secondary:hover {
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            border: 1px solid transparent;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.35);
+            transform: translateY(-1px);
+        }
+
+        .btn-success {
+            background: var(--success-color);
+            border: 1px solid transparent;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+        }
+
+        .btn-success:hover {
+            background: var(--success-hover);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.35);
+            transform: translateY(-1px);
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* No selection placeholder */
+        .no-selection {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            gap: 1rem;
+        }
+
+        .no-selection h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-title-container">
+            <a href="/training" class="nav-link">← Single Line Correction</a>
+            <h1>Low-Confidence Column Review</h1>
+        </div>
+        
+        <div class="stats-row">
+            <div class="stat-badge">Total Cols <span class="count">{{ col_stats.total }}</span></div>
+            <div class="stat-badge">Unlabeled Cols <span class="count">{{ col_stats.unlabeled }}</span></div>
+            <div class="stat-badge">Fully Labeled <span class="count">{{ col_stats.labeled }}</span></div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar: list of columns -->
+        <div class="sidebar">
+            <div class="sidebar-search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Filter columns by scan name...">
+            </div>
+            <div class="sidebar-list" id="sidebar-list">
+                {% for col in columns %}
+                {% set progress_percent = (col.labeled_count / col.total_lines * 100) | int if col.total_lines > 0 else 0 %}
+                <a href="/training/columns?col_id={{ col.id }}&threshold={{ threshold }}" 
+                   class="col-card {% if selected_col and selected_col.id == col.id %}active{% endif %}"
+                   data-search="{{ col.source_scan | lower }}">
+                    <div class="col-card-header">
+                        <div class="col-card-title" title="{{ col.source_scan }}">col {{ col.column_index }} ({{ col.source_scan.split('/')[-1] }})</div>
+                        <span class="col-card-badge {% if col.mean_confidence < 50 %}badge-low-conf{% else %}badge-med-conf{% endif %}">
+                            {{ col.mean_confidence }}%
+                        </span>
+                    </div>
+                    <div class="col-card-meta">
+                        <span>{{ col.total_lines }} lines</span>
+                        <span>{{ col.unlabeled_count }} left</span>
+                    </div>
+                    <div class="col-card-progress">
+                        <div class="col-card-progress-bar" style="width: {{ progress_percent }}%;"></div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Workspace Panel -->
+        <div class="workspace">
+            {% if selected_col %}
+            <!-- Left panel: Whole column preview (stacked line crops) -->
+            <div class="column-crop-panel">
+                <div class="panel-header" style="flex-direction: column; align-items: flex-start; gap: 0.5rem; height: auto;">
+                    <div style="display: flex; justify-content: space-between; width: 100%;">
+                        <span>Column Visual Preview</span>
+                        <span style="font-size: 0.75rem; color: var(--text-secondary);">col {{ selected_col.column_index }}</span>
+                    </div>
+                    <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; color: var(--text-secondary); cursor: pointer; user-select: none; font-weight: normal; margin-top: 0.25rem;">
+                        <input type="checkbox" id="invert-toggle" checked style="accent-color: var(--primary-color); cursor: pointer;">
+                        Inverted Colors (Better for dark UI)
+                    </label>
+                </div>
+                <div class="column-stack-container" id="column-stack">
+                    {% for line in selected_col.lines %}
+                    <div class="stack-line-wrapper" data-line-id="{{ line.id }}" onclick="scrollToField('{{ line.id }}')">
+                        <span class="stack-line-num">#{{ line.line_index }}</span>
+                        <img class="stack-line-img" src="/training_data/{{ line.image_path }}" alt="Line crop">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Right panel: Interactive transcription form -->
+            <div class="transcription-panel">
+                <div class="panel-header">
+                    <span style="font-family: monospace; font-size: 0.85rem;">{{ selected_col.source_scan }}</span>
+                </div>
+                
+                <div class="form-container" id="form-container">
+                    {% for line in selected_col.lines %}
+                    <div class="line-edit-card" id="card-{{ line.id }}" data-line-id="{{ line.id }}">
+                        <div class="line-card-header">
+                            <span class="line-card-title">Line #{{ line.line_index }} (ID: {{ line.id }})</span>
+                            <span class="line-card-badge {% if line.ftm_confidence and line.ftm_confidence < 75 %}badge-low-conf{% else %}badge-med-conf{% endif %}">
+                                Conf: {{ line.ftm_confidence | round(1) if line.ftm_confidence else '0.0' }}%
+                            </span>
+                        </div>
+
+                        <!-- Zoomed Preview for context -->
+                        <div class="line-image-preview">
+                            <img class="preview-img" src="/training_data/{{ line.image_path }}" alt="Line image">
+                        </div>
+
+                        <!-- Contextual OCR hint -->
+                        <div class="ocr-hint-row">
+                            <span class="ocr-hint-label">FTM OCR Guess</span>
+                            <div class="ocr-hint-text">{{ line.ftm_ocr or line.initial_ocr or 'No OCR output' }}</div>
+                        </div>
+
+                        <!-- Transcription input + Quick status actions -->
+                        <div class="input-row">
+                            <input type="text" 
+                                   class="transcribe-input" 
+                                   id="input-{{ line.id }}" 
+                                   value="{{ line.label or '' }}" 
+                                   placeholder="Type correct Cherokee transcription..."
+                                   onfocus="onFieldFocus('{{ line.id }}')"
+                                   onblur="onFieldBlur('{{ line.id }}')"
+                                   onkeydown="handleKeydown(event, '{{ line.id }}')">
+                            
+                            <div class="status-button-group">
+                                <button type="button" 
+                                        class="btn-status {% if line.status == 'labeled' or (line.label and line.status != 'not_cherokee' and line.status != 'nasty_crop') %}active{% endif %}" 
+                                        data-status="labeled" 
+                                        onclick="setLineStatus('{{ line.id }}', 'labeled')" 
+                                        title="Mark as Labeled">Chr</button>
+                                <button type="button" 
+                                        class="btn-status {% if line.status == 'not_cherokee' %}active{% endif %}" 
+                                        data-status="not_cherokee" 
+                                        onclick="setLineStatus('{{ line.id }}', 'not_cherokee')" 
+                                        title="Mark as Not Cherokee">Not Chr</button>
+                                <button type="button" 
+                                        class="btn-status {% if line.status == 'nasty_crop' %}active{% endif %}" 
+                                        data-status="nasty_crop" 
+                                        onclick="setLineStatus('{{ line.id }}', 'nasty_crop')" 
+                                        title="Mark as Nasty Crop">Bad Crop</button>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Action Bar -->
+                <div class="actions-panel">
+                    <button class="btn btn-secondary" onclick="skipColumn()">Skip Column</button>
+                    <button class="btn btn-success" id="btn-save-column" onclick="saveColumn()">Save Column Corrections</button>
+                </div>
+            </div>
+            {% else %}
+            <div class="no-selection">
+                <h3>No low-confidence columns found</h3>
+                <p>All columns are currently above the threshold or fully annotated!</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        // Store lines data for Javascript manipulation
+        const linesData = {
+            {% if selected_col %}
+                {% for line in selected_col.lines %}
+                "{{ line.id }}": {
+                    id: "{{ line.id }}",
+                    initial_status: "{{ line.status or 'unlabeled' }}",
+                    status: "{{ line.status or 'unlabeled' }}",
+                    original_label: "{{ line.label or '' }}"
+                },
+                {% endfor %}
+            {% endif %}
+        };
+
+        // Filter sidebar list
+        document.getElementById('search-input').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.col-card');
+            cards.forEach(card => {
+                const searchVal = card.getAttribute('data-search');
+                if (searchVal.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Sync vertical visual stack highlight with field focus
+        function onFieldFocus(lineId) {
+            // Highlight stack line crop
+            const stackWrapper = document.querySelector(`.stack-line-wrapper[data-line-id="${lineId}"]`);
+            if (stackWrapper) {
+                stackWrapper.classList.add('highlighted');
+                stackWrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            // Highlight form card
+            const editCard = document.getElementById(`card-${lineId}`);
+            if (editCard) editCard.classList.add('focused');
+        }
+
+        function onFieldBlur(lineId) {
+            const stackWrapper = document.querySelector(`.stack-line-wrapper[data-line-id="${lineId}"]`);
+            if (stackWrapper) stackWrapper.classList.remove('highlighted');
+            
+            const editCard = document.getElementById(`card-${lineId}`);
+            if (editCard) editCard.classList.remove('focused');
+        }
+
+        function scrollToField(lineId) {
+            const editCard = document.getElementById(`card-${lineId}`);
+            if (editCard) {
+                editCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                const inputField = document.getElementById(`input-${lineId}`);
+                if (inputField) inputField.focus();
+            }
+        }
+
+        function setLineStatus(lineId, status) {
+            if (!linesData[lineId]) return;
+            linesData[lineId].status = status;
+            
+            // Update button UI active classes
+            const card = document.getElementById(`card-${lineId}`);
+            if (card) {
+                const buttons = card.querySelectorAll('.btn-status');
+                buttons.forEach(btn => {
+                    if (btn.getAttribute('data-status') === status) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        // Navigate with up/down arrow or enter keys
+        function handleKeydown(event, lineId) {
+            const keys = Object.keys(linesData);
+            const index = keys.indexOf(lineId);
+            
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                // When pressing Enter, if they've typed something, automatically set status to 'labeled' if not set
+                const inputVal = document.getElementById(`input-${lineId}`).value.trim();
+                if (inputVal && linesData[lineId].status === 'unlabeled') {
+                    setLineStatus(lineId, 'labeled');
+                }
+                
+                // Go to next input field
+                if (index < keys.length - 1) {
+                    scrollToField(keys[index + 1]);
+                } else {
+                    // Last field: focus save button
+                    document.getElementById('btn-save-column').focus();
+                }
+            } else if (event.key === 'ArrowDown') {
+                if (index < keys.length - 1) {
+                    event.preventDefault();
+                    scrollToField(keys[index + 1]);
+                }
+            } else if (event.key === 'ArrowUp') {
+                if (index > 0) {
+                    event.preventDefault();
+                    scrollToField(keys[index - 1]);
+                }
+            }
+        }
+
+        // Save current column transcription modifications
+        async function saveColumn() {
+            const btnSave = document.getElementById('btn-save-column');
+            btnSave.disabled = true;
+            btnSave.innerText = 'Saving...';
+
+            const updates = {};
+            for (const lineId in linesData) {
+                const inputVal = document.getElementById(`input-${lineId}`).value.trim();
+                let status = linesData[lineId].status;
+                
+                // If label was added/modified but status is still unlabeled, auto-set to labeled
+                if (inputVal && status === 'unlabeled') {
+                    status = 'labeled';
+                }
+
+                updates[lineId] = {
+                    label: inputVal,
+                    status: status
+                };
+            }
+
+            try {
+                const response = await fetch('/training/columns/save', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ updates })
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    // Navigate to next unlabeled column or reload
+                    skipColumn();
+                } else {
+                    alert('Error saving data: ' + (result.error || 'unknown error'));
+                    btnSave.disabled = false;
+                    btnSave.innerText = 'Save Column Corrections';
+                }
+            } catch (err) {
+                alert('Connection error. Failed to save column updates.');
+                btnSave.disabled = false;
+                btnSave.innerText = 'Save Column Corrections';
+            }
+        }
+
+        function skipColumn() {
+            // Find next card after active card in sidebar list, or just go to first
+            const activeCard = document.querySelector('.col-card.active');
+            let nextCard = null;
+            if (activeCard) {
+                nextCard = activeCard.nextElementSibling;
+                while (nextCard && nextCard.style.display === 'none') {
+                    nextCard = nextCard.nextElementSibling;
+                }
+            }
+            
+            if (nextCard) {
+                nextCard.click();
+            } else {
+                // No more, refresh/redirect to start
+                window.location.href = "/training/columns?threshold={{ threshold }}";
+            }
+        }
+
+        // Focus first field on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const keys = Object.keys(linesData);
+            if (keys.length > 0) {
+                scrollToField(keys[0]);
+            }
+
+            // Image inversion toggle
+            const invertToggle = document.getElementById('invert-toggle');
+            if (invertToggle) {
+                invertToggle.addEventListener('change', function(e) {
+                    const checked = e.target.checked;
+                    const images = document.querySelectorAll('.stack-line-img, .preview-img');
+                    images.forEach(img => {
+                        if (checked) {
+                            img.style.filter = 'invert(1) brightness(0.9) contrast(1.2)';
+                        } else {
+                            img.style.filter = 'none';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
