@@ -126,7 +126,7 @@ def main():
     )
 
     # Binarization algorithms used dynamically
-    bin_methods = ["otsu", "sauvola", "wolf"]
+    bin_methods = ["otsu", "sauvola", "wolf", "grayscale"]
 
     for idx, item in enumerate(train_items):
         image_path = os.path.join("training_data", item["image_path"])
@@ -164,6 +164,8 @@ def main():
                     w = random.choice([15, 25, 35, 45])
                     k = random.choice([0.1, 0.2, 0.3])
                     bin_res = binarize(augmented, "wolf", {"window": w, "k": k})
+                elif algo == "grayscale":
+                    bin_res = cv2.cvtColor(augmented, cv2.COLOR_BGR2GRAY) if len(augmented.shape) == 3 else augmented
 
             # 4. Normalize height
             norm_img = normalize_height(bin_res, pad_y=args.pad_y)

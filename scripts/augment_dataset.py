@@ -139,8 +139,10 @@ def main():
                 w_w = random.choice([15, 25, 35, 45])
                 k_w = random.choice([0.1, 0.2, 0.3])
                 bin_wolf = binarize(aug_img, "wolf", {"algo": "wolf", "window": w_w, "k": k_w})
+                # 4. Grayscale (native/unbinarized)
+                gray_res = cv2.cvtColor(aug_img, cv2.COLOR_BGR2GRAY) if len(aug_img.shape) == 3 else aug_img
                 
-                for alg_name, bin_res in [("otsu", bin_otsu), ("sauvola", bin_sv), ("wolf", bin_wolf)]:
+                for alg_name, bin_res in [("otsu", bin_otsu), ("sauvola", bin_sv), ("wolf", bin_wolf), ("grayscale", gray_res)]:
                     norm_img = normalize_height(bin_res, pad_y=args.pad_y)
                     h, w = norm_img.shape[:2]
                     
