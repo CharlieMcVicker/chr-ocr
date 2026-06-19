@@ -40,6 +40,18 @@ def main():
     test_dir = args.dataset_dir
     traineddata_path = "training_data/dataset/model/chr.traineddata"
 
+    # Derive master pool prefix and clean up old pools before starting
+    sweep_name = os.path.splitext(os.path.basename(args.sweep_config))[0]
+    master_pool_prefix = f"master_pool_{sweep_name}"
+    
+    import shutil
+    print(f"Cleaning up existing master pool directories for prefix '{master_pool_prefix}'...")
+    for epoch in range(1, 100):
+        pool_dir = f"training_data/staged_tuning/{master_pool_prefix}_epoch_{epoch}"
+        if os.path.exists(pool_dir):
+            print(f"Removing old master pool: {pool_dir}")
+            shutil.rmtree(pool_dir)
+
     print(f"=== Starting Mixture Ratio Sweep ({len(experiments)} experiments) ===")
     for i, exp in enumerate(experiments, 1):
         exp_id = exp.id
@@ -57,6 +69,7 @@ def main():
         exp_config.continue_from = "training_data/dataset/model/chr.lstm"
         exp_config.model_dir = "training_data/dataset/model"
         exp_config.old_traineddata = "training_data/dataset/model/chr.traineddata"
+        exp_config.master_pool_prefix = master_pool_prefix
         
         os.makedirs(run_output_dir, exist_ok=True)
         config_path = os.path.join(run_output_dir, "config.json")

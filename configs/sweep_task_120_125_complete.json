@@ -1,0 +1,152 @@
+{
+  "base": {
+    "config": {
+      "total_epochs": 12,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 3,
+      "error_rate": 0.05,
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "mixture_ratio": 0.6,
+      "learning_rate": 0.001,
+      "lr_schedule": "step",
+      "lr_decay_rate": 0.5,
+      "lr_decay_epochs": 4,
+      "blur_prob": 0.4,
+      "shadow_prob": 0.3,
+      "distortion_prob": 0.4,
+      "dropout_prob": 0.3,
+      "bleedthrough_prob": 0.25,
+      "cnt_noise": {
+        "blur": {
+          "prob": 0.5,
+          "limit_min": 3,
+          "limit_max": 5
+        },
+        "shadow": {
+          "prob": 0.4,
+          "dimension": 6
+        },
+        "distortion": {
+          "prob": 0.4,
+          "limit": 0.15,
+          "elastic_alpha": 1.5,
+          "elastic_sigma": 12.0,
+          "use_multi_scale": true
+        },
+        "dropout": {
+          "prob": 0.4,
+          "holes_min": 1,
+          "holes_max": 4,
+          "size_min": 4,
+          "size_max": 10
+        },
+        "micro_dropout": {
+          "prob": 0.3,
+          "holes_min": 20,
+          "holes_max": 60,
+          "size_min": 1,
+          "size_max": 2
+        },
+        "smudge": {
+          "prob": 0.3,
+          "intensity": 0.3
+        },
+        "page_curl": {
+          "prob": 0.3,
+          "direction": "random",
+          "bending_factor": 0.08,
+          "compression_factor": 0.4,
+          "width_ratio": 0.25
+        }
+      },
+      "mixture_schedule": {
+        "enabled": false,
+        "start_ratio": 0.5,
+        "end_ratio": 0.9,
+        "start_epoch": 1,
+        "end_epoch": 12
+      }
+    },
+    "eval_epochs": [4, 8, 12]
+  },
+  "experiments": [
+    {
+      "id": "sweep_120_125_baseline_shared",
+      "config": {
+        "description": "Balanced baseline using the shared pool with moderate, well-distributed noise probabilities."
+      }
+    },
+    {
+      "id": "sweep_120_125_heavy_physical_distortion",
+      "config": {
+        "description": "Focused on paper deformation: high probability of multi-scale elastic/grid distortion and complex page-curl/spine curvature.",
+        "cnt_noise": {
+          "distortion": {
+            "prob": 0.7,
+            "limit": 0.25,
+            "elastic_alpha": 2.5,
+            "elastic_sigma": 15.0
+          },
+          "page_curl": {
+            "prob": 0.7,
+            "bending_factor": 0.15,
+            "compression_factor": 0.6,
+            "width_ratio": 0.35
+          }
+        }
+      }
+    },
+    {
+      "id": "sweep_120_125_heavy_ink_degradation",
+      "config": {
+        "description": "Focused on ink aging and paper mold/smudges: heavy ink-wash blurs, intense smudging, and extensive high-frequency micro-dropout.",
+        "cnt_noise": {
+          "blur": {
+            "prob": 0.7,
+            "limit_min": 4,
+            "limit_max": 7
+          },
+          "smudge": {
+            "prob": 0.6,
+            "intensity": 0.5
+          },
+          "micro_dropout": {
+            "prob": 0.6,
+            "holes_min": 40,
+            "holes_max": 100,
+            "size_min": 1,
+            "size_max": 3
+          }
+        }
+      }
+    },
+    {
+      "id": "sweep_120_125_mixture_decay_aggressive",
+      "config": {
+        "description": "Uses dynamic mixture schedule: starts with high-volume noisy CNT data (30% Phoenix / 70% CNT) and rapidly converges to 90% Phoenix to freeze the OCR weights on high-fidelity target scans.",
+        "mixture_schedule": {
+          "enabled": true,
+          "start_ratio": 0.3,
+          "end_ratio": 0.9,
+          "start_epoch": 1,
+          "end_epoch": 8
+        }
+      }
+    },
+    {
+      "id": "sweep_120_125_mixture_decay_gradual",
+      "config": {
+        "description": "Uses dynamic mixture schedule: more gradual, linear decay from 50% Phoenix up to 85% Phoenix across the entire training process.",
+        "mixture_schedule": {
+          "enabled": true,
+          "start_ratio": 0.5,
+          "end_ratio": 0.85,
+          "start_epoch": 1,
+          "end_epoch": 12
+        }
+      }
+    }
+  ]
+}

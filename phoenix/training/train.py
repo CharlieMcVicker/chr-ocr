@@ -90,7 +90,8 @@ def run_staged_training(config: TrainingConfig):
         # Step B & C: Generate and compile train inputs
         list_train_path = os.path.join(config.output_dir, "list.train")
         if config.use_shared_pool:
-            master_pool_dir = f"training_data/staged_tuning/master_pool_epoch_{epoch}"
+            pool_name = f"{config.master_pool_prefix}_epoch_{epoch}" if config.master_pool_prefix else f"master_pool_epoch_{epoch}"
+            master_pool_dir = f"training_data/staged_tuning/{pool_name}"
             master_index_path = os.path.join(master_pool_dir, "metadata_index.json")
             
             if not os.path.exists(master_index_path):
@@ -151,6 +152,62 @@ def run_staged_training(config: TrainingConfig):
                                     "line_idx": line_idx,
                                     "line": line
                                 })
+                
+                # Dynamically calculate maximum CNT samples needed in the master pool
+                n_phoenix = len(phoenix_train_items)
+                min_ratio = config.mixture_ratio
+                sched = getattr(config, "mixture_schedule", {})
+                if sched.get("enabled", False):
+                    min_ratio = min(min_ratio, sched.get("start_ratio", 0.5), sched.get("end_ratio", 1.0))
+                
+                if min_ratio <= 0.05:
+                    min_ratio = 0.05
+                    
+                max_needed_cnt = int(n_phoenix * (1.0 - min_ratio) / min_ratio)
+                
+                max_cnt_samples = getattr(config, "max_cnt_samples", None)
+                if max_cnt_samples is not None:
+                    max_needed_cnt = min(max_needed_cnt, max_cnt_samples)
+                
+                # Add 20% safety margin and clamp to [500, 2000]
+                max_needed_cnt = int(max_needed_cnt * 1.2)
+                max_needed_cnt = max(500, min(max_needed_cnt, 2000))
+                
+                # Load rare characters list for priority sampling
+                rare_chars = set()
+                rare_chars_path = "training_data/rare_characters.json"
+                if os.path.exists(rare_chars_path):
+                    try:
+                        with open(rare_chars_path, "r", encoding="utf-8") as f:
+                            rare_chars = set(json.load(f))
+                    except Exception:
+                        pass
+
+                import random
+                seed_str = f"cnt_master_pool_salt_epoch_{epoch}"
+                rng = random.Random(seed_str)
+                
+                rare_cnt_lines = []
+                common_cnt_lines = []
+                for x in all_valid_cnt_lines:
+                    text = x["line"].get("ftm_aligned", "")
+                    if any(c in text for c in rare_chars):
+                        rare_cnt_lines.append(x)
+                    else:
+                        common_cnt_lines.append(x)
+                
+                rng.shuffle(rare_cnt_lines)
+                rng.shuffle(common_cnt_lines)
+                
+                sampled_count = min(max_needed_cnt, len(all_valid_cnt_lines))
+                if len(rare_cnt_lines) >= sampled_count:
+                    all_valid_cnt_lines = rare_cnt_lines[:sampled_count]
+                else:
+                    needed = sampled_count - len(rare_cnt_lines)
+                    all_valid_cnt_lines = rare_cnt_lines + common_cnt_lines[:needed]
+                
+                print(f"Master Pool: Calculated max needed CNT lines is {max_needed_cnt} (min_ratio={min_ratio:.4f}, n_phoenix={n_phoenix}).")
+                print(f"Master Pool: Reduced CNT lines from 32,231 to {len(all_valid_cnt_lines)} (prioritizing rare characters) to accelerate pool generation.")
                 
                 epoch_data = {}
                 for item in phoenix_train_items:
@@ -515,6 +572,79 @@ def run_staged_training(config: TrainingConfig):
             with open(list_train_path, "w", encoding="utf-8") as list_f:
                 for lstmf_path in lstmf_paths:
                     list_f.write(lstmf_path + "\n")
+
+        # Step D: Determine continue_from model checkpoint
+        continue_model = None
+        if epoch == 1:
+            if config.continue_from:
+                continue_model = config.continue_from
+            else:
+                # Check if there is an existing checkpoint in train_output_dir
+                latest = get_latest_checkpoint(config.train_output_dir)
+                if latest:
+                    continue_model = latest
+                else:
+                    continue_model = base_lstm_path
+        else:
+            latest = get_latest_checkpoint(config.train_output_dir)
+            if latest:
+                continue_model = latest
+            else:
+                print("Warning: No checkpoint found from previous epoch! Falling back to base model.", file=sys.stderr)
+                continue_model = base_lstm_path
+
+        # Determine current learning rate based on schedule
+        current_lr = config.learning_rate
+        if config.lr_schedule == "step":
+            decay_steps = (epoch - 1) // config.lr_decay_epochs
+            current_lr = config.learning_rate * (config.lr_decay_rate ** decay_steps)
+        elif config.lr_schedule == "exp":
+            current_lr = config.learning_rate * (config.lr_decay_rate ** (epoch - 1))
+            
+        print(f"Continuing training from: {continue_model}")
+        print(f"Current Epoch {epoch} Learning Rate: {current_lr:.8f} (schedule: {config.lr_schedule})")
+
+        # Step E: Run lstmtraining
+        # max_iterations grows cumulative-wise for continuing training
+        max_iterations = epoch * config.iterations_per_epoch
+        print(f"Running lstmtraining for up to {max_iterations} total iterations...")
+        
+        log_file_path = os.path.join(config.train_output_dir, f"epoch_{epoch}_training.log")
+        
+        cmd_train = [
+            "lstmtraining",
+            "--continue_from", continue_model,
+            "--model_output", os.path.join(config.train_output_dir, "chr"),
+            "--traineddata", traineddata_path,
+            "--train_listfile", list_train_path,
+            "--max_iterations", str(max_iterations),
+            "--learning_rate", str(current_lr)
+        ]
+        if config.old_traineddata:
+            cmd_train.extend(["--old_traineddata", config.old_traineddata])
+            
+        if current_lr != 0.001:
+            cmd_train.append("--reset_learning_rate")
+        
+        with open(log_file_path, "w", encoding="utf-8") as log_f:
+            subprocess.run(cmd_train, stdout=log_f, stderr=subprocess.STDOUT, check=True)
+
+        print(f"Epoch {epoch} training complete! Log written to: {log_file_path}")
+
+        # Step F: Clean up temporary epoch augmented images and .lstmf files to preserve disk space
+        print(f"Cleaning up temporary epoch files in {config.output_dir}...")
+        # Save manifest_epoch_{epoch}.json to train_output_dir for verification
+        if config.use_dynamic_cnt:
+            if 'manifest_to_use' in locals() and manifest_to_use and os.path.exists(manifest_to_use):
+                shutil.copy2(manifest_to_use, os.path.join(config.train_output_dir, f"manifest_epoch_{epoch}.json"))
+            elif config.use_shared_pool:
+                pool_name = f"{config.master_pool_prefix}_epoch_{epoch}" if config.master_pool_prefix else f"master_pool_epoch_{epoch}"
+                master_manifest = os.path.join(f"training_data/staged_tuning/{pool_name}", f"master_manifest_epoch_{epoch}.json")
+                if os.path.exists(master_manifest):
+                    shutil.copy2(master_manifest, os.path.join(config.train_output_dir, f"manifest_epoch_{epoch}.json"))
+        
+        if os.path.exists(config.output_dir):
+            shutil.rmtree(config.output_dir)
 
     print("\n=== Staged Epoch Loop finished successfully! ===")
     print(f"Final checkpoints and epoch training logs are in: {config.train_output_dir}")

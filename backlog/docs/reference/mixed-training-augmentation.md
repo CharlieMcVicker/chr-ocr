@@ -145,39 +145,78 @@ Where $M$ is the total size of the unique dataset pool.
 
 ---
 
-## 4. Noise Augmentation Parameter Blocks
+### 4. Noise Augmentation Parameter Blocks
 
 To simulate ink splatter, bleed-through, paper degradation, and historical scanning artifacts, we execute structured noise injection using pre-calibrated parameter blocks within an Albumentations pipeline.
 
+### Morphological Ink Simulation
+
+To simulate physical print variations (e.g. ink press pressure, ink bleeding, and fading), we implement a custom Morphological Ink Simulation that alters glyph stroke weight on binarized images.
+
+#### Custom Binarization Pre-Check
+Because morphological operations behave unpredictably on non-binary images, we first perform a pixel-level check. Let $I$ be the grayscale input image of size $H \times W$. The image is considered binary if more than 90% of its pixels are at extreme values ($0$ or $255$):
+
+$$\frac{\sum_{i=1}^{H} \sum_{j=1}^{W} \mathbb{I}(I_{i,j} = 0 \lor I_{i,j} = 255)}{H \times W} \ge 0.90$$
+
+If this condition is met, the image undergoes morphological variations; otherwise, it is bypassed to prevent geometric distortion of grayscale fields.
+
+#### Mathematical Formulation
+The morphological operations are defined using a structured rectangular kernel $K$ of size $k \times k$ where $k \in \{2, 3\}$ is chosen randomly at runtime.
+
+1. **Ink Bleed (Erosion)**: Simulates wet ink expanding into paper fibers, thickening the text characters:
+   
+   $$(I \ominus K)(x,y) = \min_{(s,t) \in K} I(x+s, y+t)$$
+   
+   Two distinct eroded variations are appended to the dataset with randomly chosen kernel sizes.
+
+2. **Ink Fade (Dilation)**: Simulates physical print-head degradation or starvation, thinning the text characters:
+   
+   $$(I \oplus K)(x,y) = \max_{(s,t) \in K} I(x-s, y-t)$$
+   
+   Two distinct dilated variations are appended with randomly chosen kernel sizes.
+
+---
+
 ### Ink Wash and Pixel-Level Blur (Smudging) Noise
 
-This method simulates physical wet-ink bleeding, smudging, and spot-mold deterioration on historical paper, which is particularly common in historical Cherokee scan sources like the Cherokee New Testament (CNT). 
+This method simulates physical wet-ink bleeding, smudging, and spot-mold deterioration on historical paper, which is particularly common in historical Cherokee scan sources like the Cherokee New Testament (CNT).
 
 #### Mathematical Formulation
 
-Let $I_{i,j}$ be the pixel intensity of the image at coordinate $(i, j)$ in a grayscale or color image. Let $p \in [0, 1.0]$ be the probability of applying the noise, and let $\lambda \in [0, 1.0]$ be the intensity scale.
+Let $I_{i,j}$ be the pixel intensity of the image at coordinate $(i, j)$ in a grayscale or color image of size $H \times W$. Let $\lambda \in [0, 1.0]$ be the intensity scale.
 
-1.  **Salt and Pepper Injection**:
-    We compute the total number of affected pixels $N = \lfloor H \times W \times \lambda \times 0.05 \rfloor$.
-    - A set of $N$ coordinates is randomly selected and set to black ($[0, 0, 0]$ or $0$) to simulate ink splatter, ink bleed, or spot-mold.
-    - A separate set of $\lfloor N / 2 \rfloor$ coordinates is randomly selected and set to white ($[255, 255, 255]$ or $255$) to simulate physical wear, paper fiber spots, or fading.
+1. **Salt and Pepper Injection**:
+   We compute the total number of affected dark ("pepper") pixels $N_{\text{pepper}}$ and light ("salt") pixels $N_{\text{salt}}$:
+   
+   $$N_{\text{pepper}} = \lfloor H \times W \times \lambda \times 0.05 \rfloor$$
+   
+   $$N_{\text{salt}} = \lfloor N_{\text{pepper}} / 2 \rfloor$$
+   
+   - A random set of $N_{\text{pepper}}$ coordinates is selected and set to black ($0$ or $[0,0,0]$) to simulate dark mold spots or physical ink splatter.
+   - A random set of $N_{\text{salt}}$ coordinates is selected and set to white ($255$ or $[255,255,255]$) to simulate print fading or paper fiber highlights.
 
-2.  **GaussianBlur Smudging**:
-    To simulate the physical bleeding of wet ink into neighboring paper fibers, we apply a Gaussian filter to the noisy image:
-    
-    $$I_{\text{blurred}} = I_{\text{noisy}} * G_{\sigma}$$
-    
-    where the kernel size $k$ of the filter $G$ is dynamically scaled with the intensity:
-    
-    $$k = \begin{cases} 
-    3 \times 3, & \text{if } \lambda < 0.5 \\
-    5 \times 5, & \text{if } \lambda \ge 0.5 
-    \end{cases}$$
+2. **GaussianBlur Smudging**:
+   To simulate the physical bleeding of wet ink into neighboring paper fibers, we apply a Gaussian filter to the noisy image:
+   
+   $$I_{\text{blurred}} = I_{\text{noisy}} * G_k$$
+   
+   where the kernel size $k$ of the filter $G_k$ is dynamically scaled with the intensity:
+   
+   $$k = \begin{cases} 
+   3 \times 3, & \text{if } \lambda < 0.5 \\
+   5 \times 5, & \text{if } \lambda \ge 0.5 
+   \end{cases}$$
+   
+   (ensuring $k$ is always odd and at least $3$).
 
-3.  **Intensity Blending**:
-    The final smudged image $I_{\text{final}}$ is a linear interpolation of the blurred image and the original image:
-    
-    where the blending coefficient $\alpha = \max(0.1, \min(0.9, \lambda))$ maps the intensity parameter directly to blending weight.
+3. **Intensity Blending**:
+   The final smudged image $I_{\text{final}}$ is a linear interpolation of the blurred image and the original image:
+   
+   $$I_{\text{final}} = \alpha \cdot I_{\text{blurred}} + (1.0 - \alpha) \cdot I_{\text{original}}$$
+   
+   where the blending coefficient $\alpha = \max(0.1, \min(0.9, \lambda))$ maps the intensity parameter directly to the blending weight.
+
+---
 
 ### Pixel-Level Coarse Dropout (Micro-Erasures) Noise
 
@@ -194,6 +233,8 @@ Let $R_k = [y_k - \lfloor h_k/2 \rfloor, y_k + \lceil h_k/2 \rceil] \times [x_k 
 For any pixel $(i, j)$ lying inside any rectangular region $R_k$, the intensity is set to the background fill value (typically $255$ for light backgrounds):
 
 $$I_{\text{final}, i, j} = \begin{cases} 255, & \text{if } (i, j) \in \bigcup_{k=1}^{N_H} R_k \text{ with probability } p \\ I_{i, j}, & \text{otherwise} \end{cases}$$
+
+---
 
 ### Staged Multi-Scale Elastic and Grid Distortion
 
@@ -222,21 +263,23 @@ Let $I(x, y)$ be the input pixel intensity at coordinate $(x, y)$.
    
    This ensures that local character skewing and shearing effects compound naturally on top of large-scale undulating page curvature, preserving character legibility while maximizing geometric training robustness.
 
+---
+
 ### Page Curl and Spine Curvature Distortion
 
-To simulate the non-rigid spatial warp typical of book spines or page margins in historical document scans, we implement a custom OpenCV-based coordinate-mapping utility. This distortion vertically curves the text lines and horizontally compresses (squishes) text as it approaches the left or right image margin.
+To simulate the non-rigid spatial warp typical of book spines or page margins in historical document scans, we implement a custom OpenCV-based coordinate-mapping utility (`PageCurl` class wrapping `apply_page_curl`). This distortion vertically curves the text lines and horizontally compresses (squishes) text as it approaches the left or right image margin.
 
 #### Mathematical Formulation
 
-Let $I(x, y)$ be the input pixel intensity at coordinate $(x, y)$ of size $H 	imes W$. Let $w_{\text{curl}}$ be the width of the active distortion region, computed as $w_{\text{curl}} = \lfloor W \cdot r_{\text{curl}} \rfloor$ where $r_{\text{curl}} \in (0, 0.5]$ is the curl width ratio.
+Let $I(x, y)$ be the input pixel intensity at coordinate $(x, y)$ of size $H \times W$. Let $w_{\text{curl}}$ be the width of the active distortion region, computed as $w_{\text{curl}} = \max(1, \lfloor W \cdot r_{\text{curl}} \rfloor)$ where $r_{\text{curl}} \in (0, 0.5]$ is the curl width ratio.
 
 We compute the normalized margin distance $t(x) \in [0, 1.0]$ representing how close pixel $x$ is to the affected edge:
 
 $$\text{If direction is left: } t(x) = \max\left(0.0, 1.0 - \frac{x}{w_{\text{curl}}}\right)$$
 
-$$\text{If direction is right: } t(x) = \max\left(0.0, 1.0 - (W - 1.0 - x) / w_{\text{curl}}\right)$$
+$$\text{If direction is right: } t(x) = \max\left(0.0, 1.0 - \frac{W - 1.0 - x}{w_{\text{curl}}}\right)$$
 
-##### 1. Vertical Curvature (Bending)
+##### 1. Vertical Bending (Bending)
 
 Vertical curvature is modeled as a parabolic displacement applied to the $y$-coordinates. Let $b \in \mathbb{R}$ be the bending factor:
 
@@ -268,72 +311,101 @@ The final distorted pixel coordinate $(x_{\text{src}}, y_{\text{src}})$ is mappe
 
 $$I_{\text{distorted}}(x, y) = I(x_{\text{src}}, y_{\text{src}})$$
 
-### Configuration Specification (YAML)
-
-```yaml
-augmentation_pipeline:
-  seed: 42
-  stages:
-    - name: ink_degradation
-      probability: 0.8
-      parameters:
-        erosion_kernel_min: 1
-        erosion_kernel_max: 3
-        dilation_kernel_min: 1
-        dilation_kernel_max: 2
-    - name: spatial_distortion
-      probability: 0.5
-      parameters:
-        alpha: 35.0
-        sigma: 4.5
-        alpha_affine: 1.5
-    - name: noise_injection
-      probability: 0.7
-      parameters:
-        gaussian_var_limit_min: 10.0
-        gaussian_var_limit_max: 50.0
-        salt_pepper_amount: 0.008
-```
-
-### Python Implementation
-
-```python
-import albumentations as A
-import numpy as np
-import cv2
-
-def get_historical_degradation_pipeline(cfg: dict) -> A.Compose:
-    return A.Compose([
-        # Simulate Ink Bleed & Erosion via Morphological ops wrapped in Lambda or standard ops
-        A.OneOf([
-            A.Dilate(scale=(1, cfg["stages"][0]["parameters"]["dilation_kernel_max"]), p=0.5),
-            A.Erode(scale=(1, cfg["stages"][0]["parameters"]["erosion_kernel_max"]), p=0.5),
-        ], p=cfg["stages"][0]["probability"]),
-        
-        # Simulate paper warping and non-rigid physical distress
-        A.ElasticTransform(
-            alpha=cfg["stages"][1]["parameters"]["alpha"],
-            sigma=cfg["stages"][1]["parameters"]["sigma"],
-            alpha_affine=cfg["stages"][1]["parameters"]["alpha_affine"],
-            border_mode=cv2.BORDER_CONSTANT,
-            value=255,
-            p=cfg["stages"][1]["probability"]
-        ),
-        
-        # Add sensor and historical printing noise
-        A.OneOf([
-            A.GaussNoise(var_limit=(cfg["stages"][2]["parameters"]["gaussian_var_limit_min"], 
-                                   cfg["stages"][2]["parameters"]["gaussian_var_limit_max"]), p=0.5),
-            A.CoarseDropout(max_holes=8, max_height=8, max_width=8, fill_value=0, p=0.5),
-        ], p=cfg["stages"][2]["probability"])
-    ])
-```
+This is executed in PyTorch / Albumentations via:
+- `PageCurl(curl_width_ratio=0.3, max_bending_factor=0.15, max_compression_factor=0.5, direction="random", p=0.5)`
 
 ---
 
-## 5. Binarization Bypasses
+### Mixup-based Bleed-Through Noise
 
-Document pre-processing systems frequently utilize global or adaptive binarization (e.g., Otsu's thresholding, Sauvola binarization) to convert images to strict binary black-and-white. However, physical degradation and ink bleed often lead to catastrophic information loss when binarized deterministically before inference.
+To simulate print-through or bleed-through of text from the reverse side of paper (highly common in thin historical Bible pages), we implement a localized mixup-based bleedthrough.
+
+#### Implementation Workflow
+Given a primary line crop image $I_{\text{primary}}$:
+1. Select a random background text line image $I_{\text{background}}$ from the training pool.
+2. Resize $I_{\text{background}}$ to match the exact dimensions of $I_{\text{primary}}$ using area interpolation.
+3. Compute the blended image using linear weighted summation with a randomly chosen low opacity $\beta \in [0.05, 0.15]$:
+
+$$I_{\text{blended}} = (1.0 - \beta) \cdot I_{\text{primary}} + \beta \cdot I_{\text{background}}$$
+
+---
+
+### Configuration Specification (YAML & CLI Parameters)
+
+The dynamic augmentation pipeline exposes complete parameter controls for both standard datasets and highly degraded datasets (such as Cherokee New Testament). Below is the parameter specification and defaults:
+
+| Augmentation Parameter | General Pipeline Default | CNT Pipeline Default | Description |
+| :--- | :---: | :---: | :--- |
+| **Blur Probability** | `0.5` | `0.6` | Chance to apply Gauss/Motion/Median blur |
+| **Blur Kernel Limits** | `(3, 5)` | `(3, 5)` | Min and max kernel sizes for blur filters |
+| **Shadow Probability** | `0.4` | `0.5` | Chance to inject simulated page fold shadow |
+| **Shadow Dimension** | `5` | `6` | Maximum size of the simulated shadow region |
+| **Distortion Probability** | `0.45` | `0.5` | Chance to apply grid and elastic distortions |
+| **Distortion Limit** | `0.05` | `0.15` | Maximum grid distortion warp limit |
+| **Elastic Alpha** | `1.0` | `1.0` | Scaling factor of the elastic transform displacement |
+| **Elastic Sigma** | `15.0` | `15.0` | Gaussian standard deviation for elastic smoothing |
+| **Page Curl Probability** | `0.0` | `0.0` | Chance to warp text near the page margins |
+| **Dropout Probability** | `0.4` | `0.5` | Chance to drop random large rectangular regions |
+| **Dropout Holes** | `(1, 4)` | `(1, 4)` | Number of holes injected per image |
+| **Dropout Size** | `(4, 10)` | `(4, 10)` | Maximum height/width of dropout holes in pixels |
+| **Micro-Dropout Prob** | `0.0` | `0.4` | High-frequency tiny holes (print-fade) |
+| **Micro-Dropout Holes** | `(20, 60)` | `(20, 60)` | Dense grid of pixel-level micro-holes |
+| **Micro-Dropout Size** | `(1, 2)` | `(1, 2)` | Dimensions of micro-holes (1-2 pixels) |
+| **Smudge Probability** | `0.0` | `0.4` | Chance to apply ink wash/spot-mold blur |
+| **Smudge Intensity** | `0.0` | `0.3` | Multiplicative factor for ink wash smudging scale |
+| **Bleed-through Prob** | `0.25` | `0.25` | Chance to mix in secondary background lines |
+| **Multi-Scale Mode** | `False` | `True` | If `True`, compounds grid + elastic; otherwise chooses `OneOf` |
+
+---
+
+## 5. Binarization and Bypasses
+
+### Binarization Algorithms
+
+The pipeline integrates both global and local adaptive binarization techniques via `doxapy` to convert degraded grayscale text lines to strict binary black-and-white.
+
+#### 1. Otsu's Global Thresholding
+Otsu's thresholding calculates an optimal global threshold $t^*$ that divides the image histogram into foreground and background classes by maximizing the between-class variance:
+
+$$\sigma_B^2(t) = \omega_0(t) \omega_1(t) \left[ \mu_0(t) - \mu_1(t) \right]^2$$
+
+Where:
+*   $\omega_0(t), \omega_1(t)$ are the probabilities of the foreground and background classes separated by threshold $t$.
+*   $\mu_0(t), \mu_1(t)$ are the respective class mean intensities.
+
+#### 2. Sauvola's Local Adaptive Binarization
+Sauvola's method computes a local threshold $T(x,y)$ dynamically within a window of size $W \times W$ (clamped to the maximum possible dimension based on image bounds to prevent outer-bound errors). It is optimal for handling uneven illumination and page staining:
+
+$$T(x,y) = m(x,y) \cdot \left[ 1 + k \cdot \left( \frac{s(x,y)}{R} - 1 \right) \right]$$
+
+Where:
+*   $m(x,y)$ is the local mean intensity within the window.
+*   $s(x,y)$ is the local standard deviation.
+*   $R$ is the dynamic range of standard deviation ($128$ for 8-bit grayscale).
+*   $k \in [0.1, 0.5]$ is the control parameter (typically $0.2$) adjusting the threshold sensitivity.
+
+#### 3. Su's Adaptive Contrast Binarization
+Su's method computes a local threshold using the local image contrast defined at stroke edges:
+
+$$C(x,y) = \frac{I_{\max}(x,y) - I_{\min}(x,y)}{I_{\max}(x,y) + I_{\min}(x,y) + \epsilon}$$
+
+Where $I_{\max}(x,y)$ and $I_{\min}(x,y)$ are the maximum and minimum pixel values within the local neighborhood, and $\epsilon$ is a small stabilization constant. A threshold map is built by interpolating intensities of high-contrast edge pixels.
+
+#### 4. Wolf's Local Adaptive Binarization
+Wolf's method modifies Sauvola's formulation to address cases where local contrast is extremely weak (e.g., heavily faded print characters):
+
+$$T(x,y) = (1 - k) \cdot m(x,y) + k \cdot M_{\min} + k \cdot \frac{s(x,y)}{S_{\max}} \cdot (m(x,y) - M_{\min})$$
+
+Where:
+*   $M_{\min}$ is the minimum gray level of the entire input image.
+*   $S_{\max}$ is the maximum local standard deviation over all local windows across the image.
+*   $k$ is a parameter (typically $0.5$).
+
+---
+
+### Binarization Bypass Strategy
+
+Document pre-processing systems frequently utilize global or adaptive binarization to convert images to strict binary black-and-white. However, physical degradation and ink bleed often lead to catastrophic information loss when binarized deterministically before inference.
 
 ```
 Raw Gray-scale Image  ──► [ Sauvola Binarization ] ──► Broken Glyphs (Information Loss)
@@ -342,10 +414,10 @@ Raw Gray-scale Image  ──► [ Sauvola Binarization ] ──► Broken Glyphs
  [ Grayscale Augmentations ] ──► [ CNN/ViT Encoder ] ──► Soft Probability Threshold Maps
 ```
 
-### Bypass Strategy
+#### Bypass Strategy
 
-1.  **Continuous Grayscale Training**: Models are trained directly on raw 8-bit grayscale images containing varying illumination fields. The feature extractor learns a robust boundary definition instead of delegating thresholding to hand-crafted heuristic formulas.
-2.  **Differentiable Thresholding Layers**: We introduce an optional threshold bypass layer inside the PyTorch forward pass:
+1. **Continuous Grayscale Training**: Models are trained directly on raw 8-bit grayscale images containing varying illumination fields. The feature extractor learns a robust boundary definition instead of delegating thresholding to hand-crafted heuristic formulas.
+2. **Differentiable Thresholding Layers**: We introduce an optional threshold bypass layer inside the PyTorch forward pass:
 
 $$\tilde{I}_{i,j} = \sigma\left(\frac{I_{i,j} - T_{i,j}}{\tau}\right)$$
 
@@ -510,3 +582,15 @@ C_{\text{rare}} \cup C_{\text{common}}[:n_c - |C_{\text{rare}}|], & \text{otherw
 ### Performance Benefits
 
 By reusing the pre-compiled `.lstmf` files across experiments, the setup time for subsequent sweep runs is reduced from **minutes to milliseconds** ($O(1)$ setup time), enabling extremely fast, scalable hyperparameter search.
+
+---
+
+## 8. 1-bit TIFF Intermediate Format Compression
+
+To minimize the disk space footprint of intermediate generated binarized line crops and speed up compilation setup, the augmentation pipeline natively uses **1-bit compressed TIFF format** with **CCITT Group 4** compression instead of raw PNG.
+
+### Advantages of CCITT Group 4 TIFF:
+1. **Extreme Compression**: CCITT Group 4 is designed specifically for binarized images (black and white document pages) and achieves **60%-70% disk space savings** compared to standard PNG.
+2. **Seamless Tesseract Integration**: Tesseract natively consumes TIFF files with zero translation overhead, ensuring extremely fast `.lstmf` compilation.
+3. **No Quality Loss**: Because Group 4 is a lossless compression algorithm tailored for 1-bit images, OCR accuracy (CER/WER) remains 100% identical to uncompressed or PNG pipelines.
+

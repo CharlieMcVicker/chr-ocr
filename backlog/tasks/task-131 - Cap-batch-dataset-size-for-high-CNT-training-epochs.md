@@ -1,7 +1,7 @@
 ---
 id: TASK-131
 title: Cap batch/dataset size for high % CNT training epochs
-status: In Progress
+status: Done
 assignee:
   - '@subagent'
 created_date: '2026-06-19 16:20'

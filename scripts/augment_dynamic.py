@@ -11,6 +11,8 @@ import cv2
 import numpy as np
 import argparse
 import sys
+from PIL import Image
+
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
@@ -142,7 +144,8 @@ def generate_variations_worker(item, train_img_paths, args, rare_chars):
         out_name = f"{item_id}_dyn_{var_idx}_{algo}"
         out_base = os.path.join(args.output_dir, out_name)
 
-        cv2.imwrite(out_base + ".png", norm_img)
+        pil_img = Image.fromarray(norm_img).convert('1')
+        pil_img.save(out_base + ".tiff", compression="group4")
         with open(out_base + ".gt.txt", "w", encoding="utf-8") as f:
             f.write(normalized_final_label + "\n")
         generate_box_file(out_base + ".box", normalized_final_label, w, h)
@@ -151,7 +154,7 @@ def generate_variations_worker(item, train_img_paths, args, rare_chars):
             "id": item_id,
             "dataset": item.get("dataset", "phoenix"),
             "variation_id": out_name,
-            "png_path": os.path.abspath(out_base + ".png"),
+            "tiff_path": os.path.abspath(out_base + ".tiff"),
             "gt_path": os.path.abspath(out_base + ".gt.txt"),
             "box_path": os.path.abspath(out_base + ".box"),
             "lstmf_path": None,
@@ -171,7 +174,7 @@ def main():
     parser.add_argument("--pad-y", type=int, default=3, help="Y padding")
     parser.add_argument("--variations-per-image", type=int, default=3, help="Number of variations per image")
     parser.add_argument("--error-rate", type=float, default=0.05, help="Transcription error injection rate")
-    parser.add_argument("--compile-lstmf", action="store_true", help="Compile generated PNGs to .lstmf files")
+    parser.add_argument("--compile-lstmf", action="store_true", help="Compile generated TIFFs to .lstmf files")
     parser.add_argument("--model-dir", default="training_data/dataset/model", help="Directory where chr.traineddata is located")
     parser.add_argument("--metadata-index", default=None, help="Path to write the metadata index JSON")
     
@@ -311,7 +314,7 @@ def main():
                     metadata_records.extend(records)
                     if args.compile_lstmf:
                         for r in records:
-                            comp_fut = compile_executor.submit(compile_image, r["png_path"], args.model_dir)
+                            comp_fut = compile_executor.submit(compile_image, r["tiff_path"], args.model_dir)
                             compilation_futures.append((r, comp_fut))
             except Exception as e:
                 print(f"Error generating variation: {e}", file=sys.stderr)
@@ -326,7 +329,7 @@ def main():
                     lstmf_path = comp_fut.result()
                     record["lstmf_path"] = lstmf_path
                 except Exception as e:
-                    print(f"Error compiling {record['png_path']}: {e}", file=sys.stderr)
+                    print(f"Error compiling {record['tiff_path']}: {e}", file=sys.stderr)
                 
                 if (idx + 1) % 100 == 0 or (idx + 1) == len(compilation_futures):
                     print(f"Compilation Progress: {idx + 1}/{len(compilation_futures)} compiled.")

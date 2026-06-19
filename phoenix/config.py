@@ -31,6 +31,7 @@ class TrainingConfig:
         "end_epoch": 12,
     })
     max_cnt_samples: Optional[int] = None
+    master_pool_prefix: Optional[str] = None
 
     
     # Learning rate options
