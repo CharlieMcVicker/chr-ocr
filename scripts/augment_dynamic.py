@@ -25,6 +25,29 @@ from phoenix.training.augment import (
 )
 from phoenix.text.normalization import normalize_truth
 
+def compile_image(img_path, model_dir):
+    """
+    Compiles a single PNG image to .lstmf using tesseract.
+    """
+    import subprocess
+    import glob
+    base = os.path.splitext(img_path)[0]
+    # Find the correct path of lstm.train inside homebrew directory
+    lstm_train_config = "/opt/homebrew/share/tessdata/configs/lstm.train"
+    if not os.path.exists(lstm_train_config):
+        # fallback to Cellar path
+        matches = glob.glob("/opt/homebrew/Cellar/tesseract/*/share/tessdata/configs/lstm.train")
+        if matches:
+            lstm_train_config = matches[0]
+
+    subprocess.run(
+        ["tesseract", img_path, base, "--tessdata-dir", model_dir, "-l", "chr", "--oem", "1", "--psm", "13", lstm_train_config],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        check=True
+    )
+    return os.path.abspath(base + ".lstmf")
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", default="training_data/manifest_w_lang.json")
@@ -33,6 +56,9 @@ def main():
     parser.add_argument("--pad-y", type=int, default=3, help="Y padding")
     parser.add_argument("--variations-per-image", type=int, default=3, help="Number of variations per image")
     parser.add_argument("--error-rate", type=float, default=0.05, help="Transcription error injection rate")
+    parser.add_argument("--compile-lstmf", action="store_true", help="Compile generated PNGs to .lstmf files")
+    parser.add_argument("--model-dir", default="training_data/dataset/model", help="Directory where chr.traineddata is located")
+    parser.add_argument("--metadata-index", default=None, help="Path to write the metadata index JSON")
     
     # Augmentation options
     parser.add_argument("--blur-prob", type=float, default=0.5)
@@ -189,6 +215,8 @@ def main():
         except Exception as e:
             print(f"Warning: Failed to load rare characters: {e}")
 
+    metadata_records = []
+
     for idx, item in enumerate(train_items):
         image_path = os.path.join("training_data", item["image_path"])
         img = cv2.imread(image_path)
@@ -249,10 +277,47 @@ def main():
             # Note that we use normalized_final_label here
             cv2.imwrite(out_base + ".png", norm_img)
             with open(out_base + ".gt.txt", "w", encoding="utf-8") as f:
-                f.write(normalized_final_label + "\n")
+                f.write(normalized_final_label + "
+")
             generate_box_file(out_base + ".box", normalized_final_label, w, h)
 
+            metadata_records.append({
+                "id": item_id,
+                "dataset": item.get("dataset", "phoenix"),
+                "variation_id": out_name,
+                "png_path": os.path.abspath(out_base + ".png"),
+                "gt_path": os.path.abspath(out_base + ".gt.txt"),
+                "box_path": os.path.abspath(out_base + ".box"),
+                "lstmf_path": None,
+                "label": normalized_final_label,
+                "has_rare": has_rare,
+                "algo": algo,
+                "variation": var_idx,
+                "error_rate": args.error_rate
+            })
+
     print(f"Dynamic augmentation complete. Generated variations in {args.output_dir}")
+
+    # Compile images to .lstmf if requested
+    if args.compile_lstmf and metadata_records:
+        print(f"Compiling generated PNGs to .lstmf using model dir: {args.model_dir}...")
+        from concurrent.futures import ThreadPoolExecutor
+        png_paths = [r["png_path"] for r in metadata_records]
+        max_workers = os.cpu_count() or 4
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            lstmf_paths = list(executor.map(lambda p: compile_image(p, args.model_dir), png_paths))
+            
+        for r, lstmf_p in zip(metadata_records, lstmf_paths):
+            r["lstmf_path"] = lstmf_p
+
+    # Write metadata index
+    metadata_index_path = args.metadata_index
+    if not metadata_index_path:
+        metadata_index_path = os.path.join(args.output_dir, "metadata_index.json")
+        
+    with open(metadata_index_path, "w", encoding="utf-8") as f:
+        json.dump(metadata_records, f, indent=2, ensure_ascii=False)
+    print(f"Wrote metadata index containing {len(metadata_records)} records to {metadata_index_path}")
 
 if __name__ == "__main__":
     main()
