@@ -22,6 +22,13 @@ class TrainingConfig:
     cnt_fraction: float = 0.1
     cnt_dir: str = "training_data/cnt"
     mixture_ratio: float = 0.8
+    mixture_schedule: dict = field(default_factory=lambda: {
+        "enabled": False,
+        "start_ratio": 0.5,
+        "end_ratio": 1.0,
+        "start_epoch": 1,
+        "end_epoch": 12,
+    })
     
     # Learning rate options
     learning_rate: float = 0.0005
