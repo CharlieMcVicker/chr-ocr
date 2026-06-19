@@ -263,6 +263,11 @@ def run_staged_training(config: TrainingConfig):
             "--dropout-prob", str(config.dropout_prob),
             "--bleedthrough-prob", str(config.bleedthrough_prob),
             "--distortion-limit", str(config.distortion_limit),
+            "--page-curl-prob", str(config.page_curl_prob),
+            "--page-curl-direction", str(config.page_curl_direction),
+            "--page-curl-bending-factor", str(config.page_curl_bending_factor),
+            "--page-curl-compression-factor", str(config.page_curl_compression_factor),
+            "--page-curl-width-ratio", str(config.page_curl_width_ratio),
             "--cnt-blur-prob", str(config.cnt_noise["blur"]["prob"]),
             "--cnt-shadow-prob", str(config.cnt_noise["shadow"]["prob"]),
             "--cnt-distortion-prob", str(config.cnt_noise["distortion"]["prob"]),
@@ -284,7 +289,12 @@ def run_staged_training(config: TrainingConfig):
             "--cnt-micro-dropout-size-min", str(config.cnt_noise.get("micro_dropout", {"size_min": 1})["size_min"]),
             "--cnt-micro-dropout-size-max", str(config.cnt_noise.get("micro_dropout", {"size_max": 2})["size_max"]),
             "--cnt-smudge-prob", str(config.cnt_noise.get("smudge", {"prob": 0.4})["prob"]),
-            "--cnt-smudge-intensity", str(config.cnt_noise.get("smudge", {"intensity": 0.3})["intensity"])
+            "--cnt-smudge-intensity", str(config.cnt_noise.get("smudge", {"intensity": 0.3})["intensity"]),
+            "--cnt-page-curl-prob", str(config.cnt_noise.get("page_curl", {}).get("prob", 0.0)),
+            "--cnt-page-curl-direction", str(config.cnt_noise.get("page_curl", {}).get("direction", "random")),
+            "--cnt-page-curl-bending-factor", str(config.cnt_noise.get("page_curl", {}).get("bending_factor", 0.15)),
+            "--cnt-page-curl-compression-factor", str(config.cnt_noise.get("page_curl", {}).get("compression_factor", 0.5)),
+            "--cnt-page-curl-width-ratio", str(config.cnt_noise.get("page_curl", {}).get("width_ratio", 0.3))
         ]
         subprocess.run(cmd_aug, check=True)
 

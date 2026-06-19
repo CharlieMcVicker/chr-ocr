@@ -36,6 +36,11 @@ class TrainingConfig:
     dropout_prob: float = 0.4
     bleedthrough_prob: float = 0.25
     distortion_limit: float = 0.05
+    page_curl_prob: float = 0.0
+    page_curl_direction: str = "random"
+    page_curl_bending_factor: float = 0.15
+    page_curl_compression_factor: float = 0.5
+    page_curl_width_ratio: float = 0.3
 
     # CNT high-noise probabilities and intensity levels
     cnt_noise: dict = field(default_factory=lambda: {

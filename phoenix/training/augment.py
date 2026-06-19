@@ -265,6 +265,11 @@ def get_albumentations_pipeline(
     elastic_alpha=1.0,
     elastic_sigma=15.0,
     use_multi_scale=False,
+    page_curl_prob=0.0,
+    page_curl_direction="random",
+    page_curl_bending_factor=0.15,
+    page_curl_compression_factor=0.5,
+    page_curl_width_ratio=0.3,
 ):
     """
     Constructs a sophisticated Albumentations pipeline for text line perturbation.
@@ -288,6 +293,14 @@ def get_albumentations_pipeline(
             A.GridDistortion(num_steps=5, distort_limit=distortion_limit, border_mode=cv2.BORDER_REPLICATE, p=1.0),
             A.ElasticTransform(alpha=elastic_alpha, sigma=elastic_sigma, border_mode=cv2.BORDER_REPLICATE, p=1.0),
         ], p=distortion_prob),
+        
+        PageCurl(
+            curl_width_ratio=page_curl_width_ratio,
+            max_bending_factor=page_curl_bending_factor,
+            max_compression_factor=page_curl_compression_factor,
+            direction=page_curl_direction,
+            p=page_curl_prob,
+        ),
         
         # 3. Occlusion
         A.CoarseDropout(
@@ -384,3 +397,107 @@ def apply_ink_wash_smudge(image, intensity=0.3):
     res = cv2.addWeighted(blurred, alpha, image, 1.0 - alpha, 0)
     return res
 
+def apply_page_curl(image, direction, bending_factor, compression_factor, curl_width_ratio):
+    """
+    Applies custom vertical curvature and horizontal compression near the left or right image margins.
+    Simulates the page-curl and vertical compression artifacts of book spines.
+    """
+    height, width = image.shape[:2]
+    if height <= 1 or width <= 1:
+        return image
+
+    curl_width = max(1, int(width * curl_width_ratio))
+
+    base_x, base_y = np.meshgrid(
+        np.arange(width, dtype=np.float32),
+        np.arange(height, dtype=np.float32)
+    )
+
+    if direction == "left":
+        t = np.clip(1.0 - base_x / curl_width, 0.0, 1.0)
+    elif direction == "right":
+        t = np.clip(1.0 - (width - 1.0 - base_x) / curl_width, 0.0, 1.0)
+    else:
+        t = np.zeros_like(base_x)
+
+    # 1. Vertical Bending: parabolic y-displacement decaying from the edge
+    dy = bending_factor * height * (t ** 2)
+    map_y = (base_y + dy).astype(np.float32)
+
+    # 2. Horizontal Compression: fractional power mapping of x near the edge
+    gamma = 1.0 / (1.0 + max(0.0, compression_factor))
+    
+    if direction == "left":
+        u = base_x / curl_width
+        map_x = np.where(
+            base_x < curl_width,
+            curl_width * (np.maximum(u, 1e-9) ** gamma),
+            base_x
+        ).astype(np.float32)
+    elif direction == "right":
+        u = (width - 1.0 - base_x) / curl_width
+        map_x = np.where(
+            base_x > (width - 1.0 - curl_width),
+            (width - 1.0) - curl_width * (np.maximum(u, 1e-9) ** gamma),
+            base_x
+        ).astype(np.float32)
+    else:
+        map_x = base_x.copy()
+
+    map_x = np.clip(map_x, 0.0, width - 1.0)
+    map_y = np.clip(map_y, 0.0, height - 1.0)
+
+    warped = cv2.remap(
+        image, map_x, map_y,
+        interpolation=cv2.INTER_CUBIC,
+        borderMode=cv2.BORDER_REPLICATE
+    )
+    return warped
+
+class PageCurl(A.ImageOnlyTransform):
+    """
+    Albumentations-compatible transform for simulating page-curl and spine-curvature distortion.
+    """
+    def __init__(
+        self,
+        curl_width_ratio=0.3,
+        max_bending_factor=0.15,
+        max_compression_factor=0.5,
+        direction="random",
+        always_apply=None,
+        p=0.5,
+    ):
+        super().__init__(p=p)
+        self.curl_width_ratio = curl_width_ratio
+        self.max_bending_factor = max_bending_factor
+        self.max_compression_factor = max_compression_factor
+        self.direction = direction
+
+    def apply(self, img, bending_factor=0.0, compression_factor=0.0, direction="left", **params):
+        return apply_page_curl(
+            img,
+            direction=direction,
+            bending_factor=bending_factor,
+            compression_factor=compression_factor,
+            curl_width_ratio=self.curl_width_ratio,
+        )
+
+    def get_params(self):
+        direction = self.direction
+        if direction == "random":
+            direction = random.choice(["left", "right"])
+        bending_factor = random.uniform(-self.max_bending_factor, self.max_bending_factor)
+        compression_factor = random.uniform(0.0, self.max_compression_factor)
+        return {
+            "bending_factor": bending_factor,
+            "compression_factor": compression_factor,
+            "direction": direction,
+        }
+
+    def get_transform_init_args_names(self):
+        return (
+            "curl_width_ratio",
+            "max_bending_factor",
+            "max_compression_factor",
+            "direction",
+        )

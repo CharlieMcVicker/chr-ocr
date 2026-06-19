@@ -45,6 +45,13 @@ def main():
     parser.add_argument("--elastic-sigma", type=float, default=15.0)
     parser.add_argument("--use-multi-scale", type=lambda x: (str(x).lower() == "true"), default=False)
     
+    # Page Curl options
+    parser.add_argument("--page-curl-prob", type=float, default=0.0)
+    parser.add_argument("--page-curl-direction", type=str, default="random")
+    parser.add_argument("--page-curl-bending-factor", type=float, default=0.15)
+    parser.add_argument("--page-curl-compression-factor", type=float, default=0.5)
+    parser.add_argument("--page-curl-width-ratio", type=float, default=0.3)
+    
     # CNT Augmentation options
     parser.add_argument("--cnt-blur-prob", type=float, default=0.6)
     parser.add_argument("--cnt-shadow-prob", type=float, default=0.5)
@@ -68,6 +75,13 @@ def main():
     parser.add_argument("--cnt-elastic-alpha", type=float, default=1.0)
     parser.add_argument("--cnt-elastic-sigma", type=float, default=15.0)
     parser.add_argument("--cnt-use-multi-scale", type=lambda x: (str(x).lower() == "true"), default=True)
+    
+    # CNT Page Curl options
+    parser.add_argument("--cnt-page-curl-prob", type=float, default=0.0)
+    parser.add_argument("--cnt-page-curl-direction", type=str, default="random")
+    parser.add_argument("--cnt-page-curl-bending-factor", type=float, default=0.15)
+    parser.add_argument("--cnt-page-curl-compression-factor", type=float, default=0.5)
+    parser.add_argument("--cnt-page-curl-width-ratio", type=float, default=0.3)
     args = parser.parse_args()
 
     if not os.path.exists(args.manifest):
@@ -131,6 +145,11 @@ def main():
         elastic_alpha=args.elastic_alpha,
         elastic_sigma=args.elastic_sigma,
         use_multi_scale=args.use_multi_scale,
+        page_curl_prob=args.page_curl_prob,
+        page_curl_direction=args.page_curl_direction,
+        page_curl_bending_factor=args.page_curl_bending_factor,
+        page_curl_compression_factor=args.page_curl_compression_factor,
+        page_curl_width_ratio=args.page_curl_width_ratio,
     )
 
     cnt_pipeline = get_albumentations_pipeline(
@@ -149,6 +168,11 @@ def main():
         elastic_alpha=args.cnt_elastic_alpha,
         elastic_sigma=args.cnt_elastic_sigma,
         use_multi_scale=args.cnt_use_multi_scale,
+        page_curl_prob=args.cnt_page_curl_prob,
+        page_curl_direction=args.cnt_page_curl_direction,
+        page_curl_bending_factor=args.cnt_page_curl_bending_factor,
+        page_curl_compression_factor=args.cnt_page_curl_compression_factor,
+        page_curl_width_ratio=args.cnt_page_curl_width_ratio,
     )
 
     # Binarization algorithms used dynamically
