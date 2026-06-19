@@ -386,7 +386,40 @@ Assuming $\eta_0 = 10^{-3}$, $\gamma = 0.5$, and $S = 20$:
 
 ---
 
-## 7. Execution Commands with `uv`
+## 7. Dynamic Linear Mixture Decay Schedule
+
+To balance the high structural diversity of Cherokee New Testament (CNT) images with the target high-fidelity of the Phoenix dataset, we employ a **Dynamic Linear Mixture Decay Schedule**. During early stages, we blend in a large fraction of degraded CNT samples to train robust feature extraction. As training converges, we decay the proportion of CNT lines down to zero, allowing the model to focus purely on high-fidelity target domain samples.
+
+### Mathematical Formulation
+
+Let $e$ represent the current epoch ($1 \le e \le E$, where $E$ is the total number of training epochs). Let $M(e)$ represent the target Phoenix ratio in the training mixture at epoch $e$.
+
+The decay schedule is parameterized by:
+- $M_{\text{start}}$: The starting Phoenix ratio (e.g., $0.5$).
+- $M_{\text{end}}$: The final Phoenix ratio (e.g., $1.0$).
+- $e_{\text{start}}$: The epoch at which linear decay begins (e.g., $1$).
+- $e_{\text{end}}$: The epoch at which linear decay ends (e.g., $E$).
+
+For any epoch $e$, the dynamic mixture ratio $M(e)$ is defined as:
+
+$$M(e) = \begin{cases}
+M_{\text{start}}, & \text{if } e \le e_{\text{start}} \\
+M_{\text{end}}, & \text{if } e \ge e_{\text{end}} \\
+M_{\text{start}} + (M_{\text{end}} - M_{\text{start}}) \cdot \frac{e - e_{\text{start}}}{e_{\text{end}} - e_{\text{start}}}, & \text{if } e_{\text{start}} < e < e_{\text{end}}
+\end{cases}$$
+
+### Dataset Split Sizes
+
+Let $N_{\text{phoenix}}$ be the number of unique Phoenix training samples available. The required number of Cherokee New Testament (CNT) lines $N_{\text{cnt}}(e)$ to sample for epoch $e$ is calculated dynamically as:
+
+$$N_{\text{cnt}}(e) = \begin{cases}
+0, & \text{if } M(e) = 1.0 \\
+\lfloor N_{\text{phoenix}} \cdot \frac{1.0 - M(e)}{M(e)} \rfloor, & \text{if } 0 < M(e) < 1.0
+\end{cases}$$
+
+---
+
+## 8. Execution Commands with `uv`
 
 All pipeline operations, training tasks, and dependency resolutions must be executed using `uv` to maintain system virtual environment reproducibility.
 
