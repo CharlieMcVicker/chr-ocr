@@ -1,11 +1,11 @@
 ---
 id: TASK-82.3
 title: Execute model fine-tuning with updated unicharset and verify convergence
-status: In Progress
+status: Done
 assignee:
   - '@agent'
 created_date: '2026-06-18 02:52'
-updated_date: '2026-06-18 12:39'
+updated_date: '2026-06-19 15:04'
 labels: []
 dependencies: []
 parent_task_id: TASK-82
@@ -20,7 +20,7 @@ Run Tesseract OCR model fine-tuning using the updated traineddata (which include
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Configure and launch training run (using train_staged.py or train_v2.sh) specifying --old_traineddata
-- [ ] #2 Confirm the training loop completes successfully and generates new checkpoints
-- [ ] #3 Verify the character error rate (CER) behaves as expected and the new characters are learnable
+- [x] #1 Configure and launch training run (using train_staged.py or train_v2.sh) specifying --old_traineddata
+- [x] #2 Confirm the training loop completes successfully and generates new checkpoints
+- [x] #3 Verify the character error rate (CER) behaves as expected and the new characters are learnable
 <!-- AC:END -->

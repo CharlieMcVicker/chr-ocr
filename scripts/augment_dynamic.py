@@ -48,6 +48,121 @@ def compile_image(img_path, model_dir):
     )
     return os.path.abspath(base + ".lstmf")
 
+def generate_variations_worker(item, train_img_paths, args, rare_chars):
+    """
+    Worker function to process a single item's variations.
+    Writes PNG, gt.txt, and box files to disk.
+    Returns a list of metadata records.
+    """
+    cv2.setNumThreads(0)
+    pipeline = get_albumentations_pipeline(
+        blur_prob=args.blur_prob,
+        shadow_prob=args.shadow_prob,
+        distortion_prob=args.distortion_prob,
+        dropout_prob=args.dropout_prob,
+        distortion_limit=args.distortion_limit,
+        elastic_alpha=args.elastic_alpha,
+        elastic_sigma=args.elastic_sigma,
+        use_multi_scale=args.use_multi_scale,
+        page_curl_prob=args.page_curl_prob,
+        page_curl_direction=args.page_curl_direction,
+        page_curl_bending_factor=args.page_curl_bending_factor,
+        page_curl_compression_factor=args.page_curl_compression_factor,
+        page_curl_width_ratio=args.page_curl_width_ratio,
+    )
+
+    cnt_pipeline = get_albumentations_pipeline(
+        blur_prob=args.cnt_blur_prob,
+        shadow_prob=args.cnt_shadow_prob,
+        distortion_prob=args.cnt_distortion_prob,
+        dropout_prob=args.cnt_dropout_prob,
+        blur_limit=(args.cnt_blur_limit_min, args.cnt_blur_limit_max),
+        shadow_dimension=args.cnt_shadow_dimension,
+        distortion_limit=args.cnt_distortion_limit,
+        dropout_holes_range=(args.cnt_dropout_holes_min, args.cnt_dropout_holes_max),
+        dropout_size_range=(args.cnt_dropout_size_min, args.cnt_dropout_size_max),
+        micro_dropout_prob=args.cnt_micro_dropout_prob,
+        micro_dropout_holes_range=(args.cnt_micro_dropout_holes_min, args.cnt_micro_dropout_holes_max),
+        micro_dropout_size_range=(args.cnt_micro_dropout_size_min, args.cnt_micro_dropout_size_max),
+        elastic_alpha=args.cnt_elastic_alpha,
+        elastic_sigma=args.cnt_elastic_sigma,
+        use_multi_scale=args.cnt_use_multi_scale,
+        page_curl_prob=args.cnt_page_curl_prob,
+        page_curl_direction=args.cnt_page_curl_direction,
+        page_curl_bending_factor=args.cnt_page_curl_bending_factor,
+        page_curl_compression_factor=args.cnt_page_curl_compression_factor,
+        page_curl_width_ratio=args.cnt_page_curl_width_ratio,
+    )
+
+    bin_methods = ["otsu", "sauvola", "wolf", "grayscale"]
+
+    image_path = os.path.join("training_data", item["image_path"])
+    img = cv2.imread(image_path)
+    if img is None:
+        return []
+
+    label = normalize_truth(item["label"])
+    item_id = item["id"]
+
+    skip_bin = (item.get("dataset") == "cnt")
+    has_rare = any(c in label for c in rare_chars)
+    variations = args.variations_per_image * 2 if has_rare else args.variations_per_image
+
+    records = []
+    for var_idx in range(variations):
+        if skip_bin:
+            augmented = cnt_pipeline(image=img)["image"]
+            if random.random() < args.cnt_smudge_prob:
+                augmented = apply_ink_wash_smudge(augmented, intensity=args.cnt_smudge_intensity)
+            gray = cv2.cvtColor(augmented, cv2.COLOR_BGR2GRAY) if len(augmented.shape) == 3 else augmented
+            bin_res = gray
+            algo = "native"
+        else:
+            augmented = apply_mixup_bleedthrough(img, train_img_paths, p=args.bleedthrough_prob)
+            augmented = pipeline(image=augmented)["image"]
+            algo = random.choice(bin_methods)
+            if algo == "otsu":
+                bin_res = binarize(augmented, "otsu", {})
+            elif algo == "sauvola":
+                w = random.choice([15, 25, 35, 45])
+                bin_res = binarize(augmented, "sauvola", {"window": w, "k": 0.1})
+            elif algo == "wolf":
+                w = random.choice([15, 25, 35, 45])
+                k = random.choice([0.1, 0.2, 0.3])
+                bin_res = binarize(augmented, "wolf", {"window": w, "k": k})
+            elif algo == "grayscale":
+                bin_res = cv2.cvtColor(augmented, cv2.COLOR_BGR2GRAY) if len(augmented.shape) == 3 else augmented
+
+        norm_img = normalize_height(bin_res, pad_y=args.pad_y)
+        h, w = norm_img.shape[:2]
+
+        final_label = inject_synthetic_errors(label, error_rate=args.error_rate)
+        normalized_final_label = normalize_truth(final_label)
+
+        out_name = f"{item_id}_dyn_{var_idx}_{algo}"
+        out_base = os.path.join(args.output_dir, out_name)
+
+        cv2.imwrite(out_base + ".png", norm_img)
+        with open(out_base + ".gt.txt", "w", encoding="utf-8") as f:
+            f.write(normalized_final_label + "\n")
+        generate_box_file(out_base + ".box", normalized_final_label, w, h)
+
+        records.append({
+            "id": item_id,
+            "dataset": item.get("dataset", "phoenix"),
+            "variation_id": out_name,
+            "png_path": os.path.abspath(out_base + ".png"),
+            "gt_path": os.path.abspath(out_base + ".gt.txt"),
+            "box_path": os.path.abspath(out_base + ".box"),
+            "lstmf_path": None,
+            "label": normalized_final_label,
+            "has_rare": has_rare,
+            "algo": algo,
+            "variation": var_idx,
+            "error_rate": args.error_rate
+        })
+    return records
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", default="training_data/manifest_w_lang.json")
@@ -162,48 +277,6 @@ def main():
         if os.path.exists(path):
             train_img_paths.append(path)
 
-    pipeline = get_albumentations_pipeline(
-        blur_prob=args.blur_prob,
-        shadow_prob=args.shadow_prob,
-        distortion_prob=args.distortion_prob,
-        dropout_prob=args.dropout_prob,
-        distortion_limit=args.distortion_limit,
-        elastic_alpha=args.elastic_alpha,
-        elastic_sigma=args.elastic_sigma,
-        use_multi_scale=args.use_multi_scale,
-        page_curl_prob=args.page_curl_prob,
-        page_curl_direction=args.page_curl_direction,
-        page_curl_bending_factor=args.page_curl_bending_factor,
-        page_curl_compression_factor=args.page_curl_compression_factor,
-        page_curl_width_ratio=args.page_curl_width_ratio,
-    )
-
-    cnt_pipeline = get_albumentations_pipeline(
-        blur_prob=args.cnt_blur_prob,
-        shadow_prob=args.cnt_shadow_prob,
-        distortion_prob=args.cnt_distortion_prob,
-        dropout_prob=args.cnt_dropout_prob,
-        blur_limit=(args.cnt_blur_limit_min, args.cnt_blur_limit_max),
-        shadow_dimension=args.cnt_shadow_dimension,
-        distortion_limit=args.cnt_distortion_limit,
-        dropout_holes_range=(args.cnt_dropout_holes_min, args.cnt_dropout_holes_max),
-        dropout_size_range=(args.cnt_dropout_size_min, args.cnt_dropout_size_max),
-        micro_dropout_prob=args.cnt_micro_dropout_prob,
-        micro_dropout_holes_range=(args.cnt_micro_dropout_holes_min, args.cnt_micro_dropout_holes_max),
-        micro_dropout_size_range=(args.cnt_micro_dropout_size_min, args.cnt_micro_dropout_size_max),
-        elastic_alpha=args.cnt_elastic_alpha,
-        elastic_sigma=args.cnt_elastic_sigma,
-        use_multi_scale=args.cnt_use_multi_scale,
-        page_curl_prob=args.cnt_page_curl_prob,
-        page_curl_direction=args.cnt_page_curl_direction,
-        page_curl_bending_factor=args.cnt_page_curl_bending_factor,
-        page_curl_compression_factor=args.cnt_page_curl_compression_factor,
-        page_curl_width_ratio=args.cnt_page_curl_width_ratio,
-    )
-
-    # Binarization algorithms used dynamically
-    bin_methods = ["otsu", "sauvola", "wolf", "grayscale"]
-
     # Load rare characters list
     rare_chars = set()
     rare_chars_path = "training_data/rare_characters.json"
@@ -217,97 +290,48 @@ def main():
 
     metadata_records = []
 
-    for idx, item in enumerate(train_items):
-        image_path = os.path.join("training_data", item["image_path"])
-        img = cv2.imread(image_path)
-        if img is None:
-            continue
-
-        label = normalize_truth(item["label"])
-        item_id = item["id"]
-
-        skip_bin = should_skip_binarization(item)
-
-        # Double variations if the line contains a rare character
-        has_rare = any(c in label for c in rare_chars)
-        variations = args.variations_per_image * 2 if has_rare else args.variations_per_image
-
-        for var_idx in range(variations):
-            if skip_bin:
-                # Apply high-intensity Albumentations noise pipeline to CNT images but bypass dynamic binarization/bleedthrough
-                augmented = cnt_pipeline(image=img)["image"]
-                if random.random() < args.cnt_smudge_prob:
-                    augmented = apply_ink_wash_smudge(augmented, intensity=args.cnt_smudge_intensity)
-                gray = cv2.cvtColor(augmented, cv2.COLOR_BGR2GRAY) if len(augmented.shape) == 3 else augmented
-                bin_res = gray
-                algo = "native"
-            else:
-                # 1. Apply Mixup bleed-through
-                augmented = apply_mixup_bleedthrough(img, train_img_paths, p=args.bleedthrough_prob)
+    print(f"Processing and compiling {len(train_items)} train items in a pipelined architecture...")
+    from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor, as_completed
+    
+    num_cores = os.cpu_count() or 4
+    
+    with ProcessPoolExecutor(max_workers=num_cores) as gen_executor, \
+         ThreadPoolExecutor(max_workers=num_cores * 2) as compile_executor:
+         
+        compilation_futures = []
+        generation_futures = {
+            gen_executor.submit(generate_variations_worker, item, train_img_paths, args, rare_chars): item
+            for item in train_items
+        }
+        
+        for idx, fut in enumerate(as_completed(generation_futures)):
+            try:
+                records = fut.result()
+                if records:
+                    metadata_records.extend(records)
+                    if args.compile_lstmf:
+                        for r in records:
+                            comp_fut = compile_executor.submit(compile_image, r["png_path"], args.model_dir)
+                            compilation_futures.append((r, comp_fut))
+            except Exception as e:
+                print(f"Error generating variation: {e}", file=sys.stderr)
                 
-                # 2. Apply Albumentations pipeline
-                augmented = pipeline(image=augmented)["image"]
+            if (idx + 1) % 50 == 0 or (idx + 1) == len(train_items):
+                print(f"Generation Progress: {idx + 1}/{len(train_items)} items processed.")
                 
-                # 3. Dynamic Binarization selection
-                algo = random.choice(bin_methods)
-                if algo == "otsu":
-                    bin_res = binarize(augmented, "otsu", {})
-                elif algo == "sauvola":
-                    w = random.choice([15, 25, 35, 45])
-                    bin_res = binarize(augmented, "sauvola", {"window": w, "k": 0.1})
-                elif algo == "wolf":
-                    w = random.choice([15, 25, 35, 45])
-                    k = random.choice([0.1, 0.2, 0.3])
-                    bin_res = binarize(augmented, "wolf", {"window": w, "k": k})
-                elif algo == "grayscale":
-                    bin_res = cv2.cvtColor(augmented, cv2.COLOR_BGR2GRAY) if len(augmented.shape) == 3 else augmented
-
-            # 4. Normalize height
-            norm_img = normalize_height(bin_res, pad_y=args.pad_y)
-            h, w = norm_img.shape[:2]
-
-            # 5. Weakly-supervised transcription error injection
-            final_label = inject_synthetic_errors(label, error_rate=args.error_rate)
-            normalized_final_label = normalize_truth(final_label)
-
-            # 6. Save assets
-            out_name = f"{item_id}_dyn_{var_idx}_{algo}"
-            out_base = os.path.join(args.output_dir, out_name)
-
-            # Note that we use normalized_final_label here
-            cv2.imwrite(out_base + ".png", norm_img)
-            with open(out_base + ".gt.txt", "w", encoding="utf-8") as f:
-                f.write(normalized_final_label + "\n")
-            generate_box_file(out_base + ".box", normalized_final_label, w, h)
-
-            metadata_records.append({
-                "id": item_id,
-                "dataset": item.get("dataset", "phoenix"),
-                "variation_id": out_name,
-                "png_path": os.path.abspath(out_base + ".png"),
-                "gt_path": os.path.abspath(out_base + ".gt.txt"),
-                "box_path": os.path.abspath(out_base + ".box"),
-                "lstmf_path": None,
-                "label": normalized_final_label,
-                "has_rare": has_rare,
-                "algo": algo,
-                "variation": var_idx,
-                "error_rate": args.error_rate
-            })
+        if compilation_futures:
+            print(f"Waiting for {len(compilation_futures)} compilation tasks to finish...")
+            for idx, (record, comp_fut) in enumerate(compilation_futures):
+                try:
+                    lstmf_path = comp_fut.result()
+                    record["lstmf_path"] = lstmf_path
+                except Exception as e:
+                    print(f"Error compiling {record['png_path']}: {e}", file=sys.stderr)
+                
+                if (idx + 1) % 100 == 0 or (idx + 1) == len(compilation_futures):
+                    print(f"Compilation Progress: {idx + 1}/{len(compilation_futures)} compiled.")
 
     print(f"Dynamic augmentation complete. Generated variations in {args.output_dir}")
-
-    # Compile images to .lstmf if requested
-    if args.compile_lstmf and metadata_records:
-        print(f"Compiling generated PNGs to .lstmf using model dir: {args.model_dir}...")
-        from concurrent.futures import ThreadPoolExecutor
-        png_paths = [r["png_path"] for r in metadata_records]
-        max_workers = os.cpu_count() or 4
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            lstmf_paths = list(executor.map(lambda p: compile_image(p, args.model_dir), png_paths))
-            
-        for r, lstmf_p in zip(metadata_records, lstmf_paths):
-            r["lstmf_path"] = lstmf_p
 
     # Write metadata index
     metadata_index_path = args.metadata_index
