@@ -1,0 +1,24 @@
+---
+id: TASK-125
+title: Implement Unified Shared-Pool Sweep Augmentation
+status: To Do
+assignee: []
+created_date: '2026-06-19 13:15'
+labels: []
+dependencies: []
+ordinal: 139000
+---
+
+## Description
+
+<!-- SECTION:DESCRIPTION:BEGIN -->
+Optimize hyperparameter sweeps by generating a single master pool of augmented images and compiled .lstmf files per epoch, and dynamically sampling from this pool to build experiment-specific train.list files.
+<!-- SECTION:DESCRIPTION:END -->
+
+## Acceptance Criteria
+<!-- AC:BEGIN -->
+- [ ] #1 Design and implement a master-pool generator in scripts/augment_dynamic.py that saves pre-compiled .lstmf files and writes a metadata index tracking applied augmentations.
+- [ ] #2 Develop a Sweep Sampler utility that reads the metadata index and filters/samples .lstmf files to construct a unique train.list matching each experiment's target probabilities.
+- [ ] #3 Update the sweep runner script to run the master generation once per epoch, bypassing both image processing and Tesseract compilation for individual models.
+- [ ] #4 Verify that multiple models in a sweep train successfully on different train.list files drawn from the same master pool.
+<!-- AC:END -->
