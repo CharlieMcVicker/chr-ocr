@@ -317,3 +317,52 @@ def apply_mixup_bleedthrough(img, train_images, p=0.25):
     opacity = random.uniform(0.05, 0.15)
     blended = cv2.addWeighted(img, 1.0 - opacity, bg_resized, opacity, 0)
     return blended
+
+def apply_ink_wash_smudge(image, intensity=0.3):
+    """
+    Applies pixel-level ink smudging and spot-mold/noise effects combined with subtle blur.
+    
+    This simulates wet ink bleed and paper deterioration.
+    
+    Args:
+        image: Input OpenCV image.
+        intensity: Float between 0 and 1 controlling the amount of noise and smudge.
+        
+    Returns:
+        The augmented image.
+    """
+    if intensity <= 0:
+        return image
+        
+    h, w = image.shape[:2]
+    img_copy = image.copy()
+    
+    # Calculate number of noise pixels based on intensity (up to 5% of pixels at intensity=1.0)
+    num_pixels = int(h * w * intensity * 0.05)
+    if num_pixels > 0:
+        # Dark pepper spots (simulating wet ink smudge / bleed / mold)
+        y_coords = np.random.randint(0, h, num_pixels)
+        x_coords = np.random.randint(0, w, num_pixels)
+        if len(img_copy.shape) == 3:
+            img_copy[y_coords, x_coords] = [0, 0, 0]
+        else:
+            img_copy[y_coords, x_coords] = 0
+            
+        # Light salt spots (simulating fading / wear / paper fiber spots)
+        y_coords_light = np.random.randint(0, h, num_pixels // 2)
+        x_coords_light = np.random.randint(0, w, num_pixels // 2)
+        if len(img_copy.shape) == 3:
+            img_copy[y_coords_light, x_coords_light] = [255, 255, 255]
+        else:
+            img_copy[y_coords_light, x_coords_light] = 255
+            
+    # Apply a subtle blur to smudge the noise and blend it
+    k_size = 3 if intensity < 0.5 else 5
+    k_size = max(3, k_size | 1)
+    blurred = cv2.GaussianBlur(img_copy, (k_size, k_size), 0)
+    
+    # Blend with original image to control intensity smoothly
+    alpha = max(0.1, min(0.9, intensity))
+    res = cv2.addWeighted(blurred, alpha, image, 1.0 - alpha, 0)
+    return res
+

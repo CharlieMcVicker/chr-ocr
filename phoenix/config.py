@@ -48,7 +48,8 @@ class TrainingConfig:
             "holes_max": 4,
             "size_min": 4,
             "size_max": 10
-        }
+        },
+        "smudge": {"prob": 0.4, "intensity": 0.3}
     })
 
     def to_dict(self) -> dict:

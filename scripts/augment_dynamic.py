@@ -20,7 +20,8 @@ from phoenix.training.augment import (
     inject_synthetic_errors,
     binarize,
     get_albumentations_pipeline,
-    apply_mixup_bleedthrough
+    apply_mixup_bleedthrough,
+    apply_ink_wash_smudge
 )
 from phoenix.text.normalization import normalize_truth
 
@@ -54,6 +55,8 @@ def main():
     parser.add_argument("--cnt-dropout-holes-max", type=int, default=4)
     parser.add_argument("--cnt-dropout-size-min", type=int, default=4)
     parser.add_argument("--cnt-dropout-size-max", type=int, default=10)
+    parser.add_argument("--cnt-smudge-prob", type=float, default=0.4)
+    parser.add_argument("--cnt-smudge-intensity", type=float, default=0.3)
     args = parser.parse_args()
 
     if not os.path.exists(args.manifest):
@@ -161,6 +164,8 @@ def main():
             if skip_bin:
                 # Apply high-intensity Albumentations noise pipeline to CNT images but bypass dynamic binarization/bleedthrough
                 augmented = cnt_pipeline(image=img)["image"]
+                if random.random() < args.cnt_smudge_prob:
+                    augmented = apply_ink_wash_smudge(augmented, intensity=args.cnt_smudge_intensity)
                 gray = cv2.cvtColor(augmented, cv2.COLOR_BGR2GRAY) if len(augmented.shape) == 3 else augmented
                 bin_res = gray
                 algo = "native"

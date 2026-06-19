@@ -149,6 +149,38 @@ Where $M$ is the total size of the unique dataset pool.
 
 To simulate ink splatter, bleed-through, paper degradation, and historical scanning artifacts, we execute structured noise injection using pre-calibrated parameter blocks within an Albumentations pipeline.
 
+### Ink Wash and Pixel-Level Blur (Smudging) Noise
+
+This method simulates physical wet-ink bleeding, smudging, and spot-mold deterioration on historical paper, which is particularly common in historical Cherokee scan sources like the Cherokee New Testament (CNT). 
+
+#### Mathematical Formulation
+
+Let $I_{i,j}$ be the pixel intensity of the image at coordinate $(i, j)$ in a grayscale or color image. Let $p \in [0, 1.0]$ be the probability of applying the noise, and let $\lambda \in [0, 1.0]$ be the intensity scale.
+
+1.  **Salt and Pepper Injection**:
+    We compute the total number of affected pixels $N = \lfloor H \times W \times \lambda \times 0.05 \rfloor$.
+    - A set of $N$ coordinates is randomly selected and set to black ($[0, 0, 0]$ or $0$) to simulate ink splatter, ink bleed, or spot-mold.
+    - A separate set of $\lfloor N / 2 \rfloor$ coordinates is randomly selected and set to white ($[255, 255, 255]$ or $255$) to simulate physical wear, paper fiber spots, or fading.
+
+2.  **GaussianBlur Smudging**:
+    To simulate the physical bleeding of wet ink into neighboring paper fibers, we apply a Gaussian filter to the noisy image:
+    
+    $$I_{\text{blurred}} = I_{\text{noisy}} * G_{\sigma}$$
+    
+    where the kernel size $k$ of the filter $G$ is dynamically scaled with the intensity:
+    
+    $$k = \begin{cases} 
+    3 \times 3, & \text{if } \lambda < 0.5 \\
+    5 \times 5, & \text{if } \lambda \ge 0.5 
+    \end{cases}$$
+
+3.  **Intensity Blending**:
+    The final smudged image $I_{\text{final}}$ is a linear interpolation of the blurred image and the original image:
+    
+    $$I_{\text{final}} = \alpha \cdot I_{\text{blurred}} + (1 - \alpha) \cdot I_{\text{orig}}$$
+    
+    where the blending coefficient $\alpha = \max(0.1, \min(0.9, \lambda))$ maps the intensity parameter directly to blending weight.
+
 ### Configuration Specification (YAML)
 
 ```yaml

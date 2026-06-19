@@ -274,7 +274,9 @@ def run_staged_training(config: TrainingConfig):
             "--cnt-dropout-holes-min", str(config.cnt_noise["dropout"]["holes_min"]),
             "--cnt-dropout-holes-max", str(config.cnt_noise["dropout"]["holes_max"]),
             "--cnt-dropout-size-min", str(config.cnt_noise["dropout"]["size_min"]),
-            "--cnt-dropout-size-max", str(config.cnt_noise["dropout"]["size_max"])
+            "--cnt-dropout-size-max", str(config.cnt_noise["dropout"]["size_max"]),
+            "--cnt-smudge-prob", str(config.cnt_noise.get("smudge", {"prob": 0.4})["prob"]),
+            "--cnt-smudge-intensity", str(config.cnt_noise.get("smudge", {"intensity": 0.3})["intensity"])
         ]
         subprocess.run(cmd_aug, check=True)
 
