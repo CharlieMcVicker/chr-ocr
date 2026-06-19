@@ -68,6 +68,50 @@ def evaluate_and_update_best(config, config_path, top_n=5):
         print(f"  CNT CER:      {metrics['cnt_CER']}%  (WER: {metrics['cnt_WER']}%)")
         print(f"  Weighted CER: {metrics['weighted_CER']}%  (WER: {metrics['weighted_WER']}%)")
 
+        # Parse epoch and log epoch-level metrics to CSV
+        try:
+            import re
+            import csv
+            import time
+            
+            epoch = idx  # Default fallback
+            # Extract cumulative iterations from checkpoint filename (e.g. chr_29.917_1517_1600.checkpoint)
+            nums = re.findall(r"\d+", os.path.basename(checkpoint))
+            if nums:
+                max_iter = int(nums[-1])
+                if getattr(config, "iterations_per_epoch", 0) > 0:
+                    epoch = round(max_iter / config.iterations_per_epoch)
+            
+            epoch_metrics_path = os.path.join(config.train_output_dir, "epoch_metrics.csv")
+            file_exists = os.path.exists(epoch_metrics_path)
+            
+            with open(epoch_metrics_path, "a", newline="", encoding="utf-8") as csv_f:
+                writer = csv.writer(csv_f)
+                if not file_exists:
+                    writer.writerow([
+                        "epoch",
+                        "wall_time",
+                        "phoenix_CER",
+                        "phoenix_WER",
+                        "cnt_CER",
+                        "cnt_WER",
+                        "weighted_CER",
+                        "weighted_WER"
+                    ])
+                writer.writerow([
+                    epoch,
+                    time.time(),
+                    metrics.get("phoenix_CER", 0.0),
+                    metrics.get("phoenix_WER", 0.0),
+                    metrics.get("cnt_CER", 0.0),
+                    metrics.get("cnt_WER", 0.0),
+                    metrics.get("weighted_CER", 0.0),
+                    metrics.get("weighted_WER", 0.0)
+                ])
+            print(f"  Logged epoch {epoch} metrics to {epoch_metrics_path}")
+        except Exception as csv_err:
+            print(f"  Error logging epoch metrics: {csv_err}", file=sys.stderr)
+
         # Check Phoenix CER best
         p_cer = metrics["phoenix_CER"]
         if p_cer is not None and p_cer < min_run_phoenix_cer:

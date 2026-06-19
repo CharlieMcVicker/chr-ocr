@@ -22,6 +22,7 @@ dependencies = [
     "python-dotenv==1.2.2",
     "python-levenshtein>=0.27.3",
     "scipy>=1.17.1",
+    "streamlit>=1.58.0",
     "surya-ocr>=0.20.0",
     "tesserocr>=2.10.0",
     "werkzeug==3.1.8",

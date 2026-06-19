@@ -631,6 +631,69 @@ def run_staged_training(config: TrainingConfig):
 
         print(f"Epoch {epoch} training complete! Log written to: {log_file_path}")
 
+        # Parse and log training metrics from the log file
+        try:
+            import re
+            import csv
+            import time
+            
+            iteration_metrics_path = os.path.join(config.train_output_dir, "iteration_metrics.csv")
+            file_exists = os.path.exists(iteration_metrics_path)
+            
+            parsed_rows = []
+            if os.path.exists(log_file_path):
+                with open(log_file_path, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if line.startswith("At iteration "):
+                            try:
+                                iter_match = re.search(r"At iteration (\d+)", line)
+                                if not iter_match:
+                                    continue
+                                iteration = int(iter_match.group(1))
+                                
+                                def get_float(pattern, text):
+                                    m = re.search(pattern, text)
+                                    return float(m.group(1)) if m else 0.0
+
+                                mean_rms = get_float(r"mean rms=([\d.-]+)%", line)
+                                delta = get_float(r"delta=([\d.-]+)%", line)
+                                bcer_train = get_float(r"BCER train=([\d.-]+)%", line)
+                                bwer_train = get_float(r"BWER train=([\d.-]+)%", line)
+                                skip_ratio = get_float(r"skip ratio=([\d.-]+)%", line)
+                                
+                                parsed_rows.append([
+                                    epoch,
+                                    iteration,
+                                    time.time(),
+                                    mean_rms,
+                                    delta,
+                                    bcer_train,
+                                    bwer_train,
+                                    skip_ratio
+                                ])
+                            except Exception as parse_err:
+                                print(f"Error parsing training log line: {parse_err}", file=sys.stderr)
+            
+            if parsed_rows:
+                with open(iteration_metrics_path, "a", newline="", encoding="utf-8") as csv_f:
+                    writer = csv.writer(csv_f)
+                    if not file_exists:
+                        writer.writerow([
+                            "epoch",
+                            "iteration",
+                            "wall_time",
+                            "train_loss",
+                            "delta",
+                            "bcer_train",
+                            "bwer_train",
+                            "skip_ratio"
+                        ])
+                    writer.writerows(parsed_rows)
+                print(f"Logged {len(parsed_rows)} iteration metrics to {iteration_metrics_path}")
+        except Exception as csv_err:
+            print(f"Error logging training metrics to CSV: {csv_err}", file=sys.stderr)
+
         # Step F: Clean up temporary epoch augmented images and .lstmf files to preserve disk space
         print(f"Cleaning up temporary epoch files in {config.output_dir}...")
         # Save manifest_epoch_{epoch}.json to train_output_dir for verification
