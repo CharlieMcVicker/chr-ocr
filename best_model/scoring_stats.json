@@ -1,0 +1,9 @@
+{
+  "phoenix_CER": 6.24,
+  "phoenix_WER": 23.94,
+  "cnt_CER": 3.13,
+  "cnt_WER": 9.64,
+  "weighted_CER": 3.35,
+  "weighted_WER": 10.62,
+  "checkpoint_path": "training_data/staged_tuning/run_unicharset_finetune_output/chr_10.092_2573_4600.checkpoint"
+}
