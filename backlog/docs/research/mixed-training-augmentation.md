@@ -222,6 +222,52 @@ Let $I(x, y)$ be the input pixel intensity at coordinate $(x, y)$.
    
    This ensures that local character skewing and shearing effects compound naturally on top of large-scale undulating page curvature, preserving character legibility while maximizing geometric training robustness.
 
+### Page Curl and Spine Curvature Distortion
+
+To simulate the non-rigid spatial warp typical of book spines or page margins in historical document scans, we implement a custom OpenCV-based coordinate-mapping utility. This distortion vertically curves the text lines and horizontally compresses (squishes) text as it approaches the left or right image margin.
+
+#### Mathematical Formulation
+
+Let $I(x, y)$ be the input pixel intensity at coordinate $(x, y)$ of size $H 	imes W$. Let $w_{\text{curl}}$ be the width of the active distortion region, computed as $w_{\text{curl}} = \lfloor W \cdot r_{\text{curl}} \rfloor$ where $r_{\text{curl}} \in (0, 0.5]$ is the curl width ratio.
+
+We compute the normalized margin distance $t(x) \in [0, 1.0]$ representing how close pixel $x$ is to the affected edge:
+
+$$\text{If direction is left: } t(x) = \max\left(0.0, 1.0 - \frac{x}{w_{\text{curl}}}\right)$$
+
+$$\text{If direction is right: } t(x) = \max\left(0.0, 1.0 - (W - 1.0 - x) / w_{\text{curl}}\right)$$
+
+##### 1. Vertical Curvature (Bending)
+
+Vertical curvature is modeled as a parabolic displacement applied to the $y$-coordinates. Let $b \in \mathbb{R}$ be the bending factor:
+
+$$y_{\text{src}} = y + b \cdot H \cdot t(x)^2$$
+
+This creates a parabolic vertical bend that decays quadratically to zero at a distance $w_{\text{curl}}$ from the margin.
+
+##### 2. Horizontal Compression (Squishing)
+
+Horizontal compression is modeled by mapping normalized coordinates in the active region using a fractional power function. Let $c \in [0, 1.0)$ be the compression intensity, and let $\gamma = \frac{1.0}{1.0 + c}$. 
+
+We map target $x$-coordinates to source $x_{\text{src}}$-coordinates as follows:
+
+*   **For direction left ($x < w_{\text{curl}}$):**
+    
+    $$x_{\text{src}} = w_{\text{curl}} \cdot \left(\frac{x}{w_{\text{curl}}}\right)^\gamma$$
+
+*   **For direction right ($x > W - 1.0 - w_{\text{curl}}$):**
+    
+    $$x_{\text{src}} = (W - 1.0) - w_{\text{curl}} \cdot \left(\frac{W - 1.0 - x}{w_{\text{curl}}}\right)^\gamma$$
+
+*   **Outside active regions ($t(x) = 0$):**
+    
+    $$x_{\text{src}} = x$$
+
+Since $\gamma \le 1.0$, the derivative $\frac{d x_{\text{src}}}{d x} > 1.0$ near the edge, forcing a wider interval of original content in the source image to compress into a narrower target interval near the margins, simulating 3D cylindrical foreshortening.
+
+The final distorted pixel coordinate $(x_{\text{src}}, y_{\text{src}})$ is mapped using bicubic interpolation with replicate border mode:
+
+$$I_{\text{distorted}}(x, y) = I(x_{\text{src}}, y_{\text{src}})$$
+
 ### Configuration Specification (YAML)
 
 ```yaml
