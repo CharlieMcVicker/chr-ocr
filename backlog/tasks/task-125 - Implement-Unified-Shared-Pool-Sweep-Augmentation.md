@@ -1,12 +1,15 @@
 ---
 id: TASK-125
 title: Implement Unified Shared-Pool Sweep Augmentation
-status: To Do
-assignee: []
+status: In Progress
+assignee:
+  - '@subagent'
 created_date: '2026-06-19 13:15'
-updated_date: '2026-06-19 13:54'
+updated_date: '2026-06-19 14:41'
 labels: []
 dependencies: []
+modified_files:
+  - phoenix/training/sweep.py
 ordinal: 139000
 ---
 

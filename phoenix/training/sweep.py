@@ -288,7 +288,12 @@ class SweepSampler:
         elif mixture_ratio <= 0.0:
             n_cnt = len(cnt_unique_ids)
         else:
-            n_cnt = int(n_phoenix * (1.0 - mixture_ratio) / mixture_ratio)
+            if n_phoenix == 0:
+                n_cnt = int(len(cnt_unique_ids) * (1.0 - mixture_ratio))
+                if n_cnt == 0 and cnt_unique_ids:
+                    n_cnt = 1
+            else:
+                n_cnt = int(n_phoenix * (1.0 - mixture_ratio) / mixture_ratio)
 
         # Seeded stable sampling of CNT lines
         seed_str = f"cnt_batch_salt_epoch_{epoch}"
