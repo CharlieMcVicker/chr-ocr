@@ -92,19 +92,45 @@ class ExperimentConfig:
             eval_epochs=data["eval_epochs"]
         )
 
+def deep_merge(base: dict, overrides: dict) -> dict:
+    import copy
+    result = copy.deepcopy(base)
+    for k, v in overrides.items():
+        if k in result and isinstance(result[k], dict) and isinstance(v, dict):
+            result[k] = deep_merge(result[k], v)
+        else:
+            result[k] = copy.deepcopy(v)
+    return result
+
+
 @dataclass
 class SweepConfig:
     experiments: List[ExperimentConfig] = field(default_factory=list)
+    base_config: Optional[dict] = None
 
     def to_dict(self) -> dict:
-        return {
+        data = {
             "experiments": [e.to_dict() for e in self.experiments]
         }
+        if self.base_config:
+            data["base"] = self.base_config
+        return data
 
     @classmethod
     def from_dict(cls, data: dict) -> 'SweepConfig':
+        base_dict = data.get("base")
+        experiments_data = data.get("experiments", [])
+        
+        experiments = []
+        for exp_data in experiments_data:
+            exp_data_copy = dict(exp_data)
+            if base_dict and "config" in exp_data_copy:
+                exp_data_copy["config"] = deep_merge(base_dict, exp_data_copy["config"])
+            experiments.append(ExperimentConfig.from_dict(exp_data_copy))
+            
         return cls(
-            experiments=[ExperimentConfig.from_dict(e) for e in data.get("experiments", [])]
+            experiments=experiments,
+            base_config=base_dict
         )
 
     def save_to_json(self, path: str):
