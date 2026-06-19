@@ -4,11 +4,25 @@ This repository contains the end-to-end pipeline, scripts, and web applications 
 
 ## Documentation Index
 
-We have a comprehensive documentation system to help you navigate the codebase, understand the ML pipeline, and collaborate with AI agents.
+We maintain a structured documentation system designed to guide you through operations, reference systems, and project history.
 
-- **[Operations Guide](./backlog/docs/guides/ocr-operations/doc-13%20-%20Cherokee-OCR-Operations-Guide.md)**: The master manual for the Cherokee Phoenix OCR project. It details the workflow from processing raw page scans to fine-tuning the Tesseract LSTM model, managing annotations, and deploying the model for inference in the labeling interface.
-- **[AI Agents Guide](./agents.md)**: Instructions and context on how AI agents (like Antigravity) are integrated into this project, including how they use the Backlog CLI and Semantic Search.
-- **Backlog Docs**: Detailed research notes, experiments, and technical specs are maintained in the `backlog/docs/` directory. Use the `backlog` CLI to search for specific topics.
+### 📖 Operational Guides
+*   **[Operations Guide](./backlog/docs/guides/ocr-operations/doc-13%20-%20Cherokee-OCR-Operations-Guide.md)**: The master manual for the Cherokee Phoenix OCR project. Details end-to-end workflows from raw page scans to model deployment.
+*   **[Active Learning & Labeling](./backlog/docs/guides/active-learning-labeling.md)**: Playbook for human-in-the-loop manual labeling, web endpoints, and template architectures.
+*   **[Cherokee New Testament (CNT) Integration](./backlog/docs/guides/cnt-integration.md)**: Reference for dynamic programming alignments, hyphenation heuristics, and multi-source corpus mixing.
+*   **[Text Normalization & Unicharset Guide](./backlog/docs/guides/normalization-unicharset.md)**: Technical specifications for standardizing text, compiling `traineddata`, and rare character class balancing.
+*   **[Local Model Rebuild Runbook](./backlog/docs/guides/doc-12%20-%20How-to-Rebuild-Local-Model-and-Regenerate-FTM-Predictions.md)**: Concise runbook on rebuilding local models and regenerating labeling interface predictions.
+
+### 📐 Technical References
+*   **[Mixed Training & Augmentation Spec](./backlog/docs/reference/mixed-training-augmentation.md)**: Operational specification for stable seeded sampling, elastic distortions, ink smudge models, and noise injection.
+*   **[Sweeps & Validation Architecture](./backlog/docs/reference/sweeps-evaluation.md)**: Architecture, config structures, and metrics execution rules for automated training sweeps.
+*   **[Grayscale & Binarization Optimization](./backlog/docs/reference/binarization-grayscale-optimization.md)**: Deep mathematical and empirical evaluation of image preprocessing, thresholding algorithms, and DP ensemble voting.
+
+### 🤖 AI Agent Systems
+*   **[AI Agents Guide](./agents.md)**: Standard protocols, tools (Ember, Backlog CLI), and behavioral rules for AI assistants collaborating on this codebase.
+
+### 🗄️ Historical Archive
+*   All older specifications, training run trackers, completed migration plans, and specific evaluation metrics from past iterations are isolated in the **[Historical Archive](./backlog/docs/archive/)** to ensure our contemporary workflow resources remain clear and focused.
 
 ---
 
