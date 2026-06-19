@@ -131,12 +131,35 @@ def run_staged_training(config: TrainingConfig):
             ]
             n_phoenix = len(phoenix_train_items)
             
-            # Calculate required CNT lines based on mixture_ratio
-            if config.mixture_ratio <= 0.0 or config.mixture_ratio >= 1.0:
-                raise ValueError(f"mixture_ratio must be between 0 and 1, got {config.mixture_ratio}")
+            # Calculate required CNT lines based on mixture_ratio or dynamic mixture schedule
+            current_ratio = config.mixture_ratio
+            sched = getattr(config, "mixture_schedule", {})
+            if sched.get("enabled", False):
+                start_ratio = sched.get("start_ratio", 0.5)
+                end_ratio = sched.get("end_ratio", 1.0)
+                start_epoch = sched.get("start_epoch", 1)
+                end_epoch = sched.get("end_epoch", config.total_epochs)
+                
+                if epoch <= start_epoch:
+                    current_ratio = start_ratio
+                elif epoch >= end_epoch:
+                    current_ratio = end_ratio
+                else:
+                    # Linear interpolation
+                    fraction = (epoch - start_epoch) / (end_epoch - start_epoch)
+                    current_ratio = start_ratio + fraction * (end_ratio - start_ratio)
+                
+                print(f"Dynamic Mixture Schedule: Epoch {epoch} target ratio = {current_ratio:.4f} (Start: {start_ratio:.2f} @ Epoch {start_epoch}, End: {end_ratio:.2f} @ Epoch {end_epoch})")
             
-            n_cnt = int(n_phoenix * (1.0 - config.mixture_ratio) / config.mixture_ratio)
-            print(f"Computed batch mixture: Phoenix train samples = {n_phoenix}, target CNT samples = {n_cnt} (ratio = {config.mixture_ratio:.2f})")
+            if current_ratio <= 0.0 or current_ratio > 1.0:
+                raise ValueError(f"Calculated mixture ratio must be in (0, 1], got {current_ratio}")
+            
+            if current_ratio == 1.0:
+                n_cnt = 0
+            else:
+                n_cnt = int(n_phoenix * (1.0 - current_ratio) / current_ratio)
+            
+            print(f"Computed batch mixture: Phoenix train samples = {n_phoenix}, target CNT samples = {n_cnt} (ratio = {current_ratio:.4f})")
             
             # Now, gather all valid CNT lines across all books
             all_valid_cnt_lines = []
@@ -247,7 +270,7 @@ def run_staged_training(config: TrainingConfig):
             train_cnt_count = sum(1 for item in epoch_data.values() if item.get("split") == "train" and item.get("dataset") == "cnt")
             actual_ratio = train_phoenix_count / (train_phoenix_count + train_cnt_count) if (train_phoenix_count + train_cnt_count) > 0 else 0.0
             print(f"Generated epoch {epoch} manifest at {manifest_to_use}")
-            print(f"Train set: {train_phoenix_count} Phoenix lines, {train_cnt_count} CNT lines. Actual Phoenix Ratio: {actual_ratio:.4f} (Target: {config.mixture_ratio:.4f})")
+            print(f"Train set: {train_phoenix_count} Phoenix lines, {train_cnt_count} CNT lines. Actual Phoenix Ratio: {actual_ratio:.4f} (Target: {current_ratio:.4f})")
             
         cmd_aug = [
             sys.executable,
