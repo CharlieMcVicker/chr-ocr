@@ -277,8 +277,7 @@ def main():
             # Note that we use normalized_final_label here
             cv2.imwrite(out_base + ".png", norm_img)
             with open(out_base + ".gt.txt", "w", encoding="utf-8") as f:
-                f.write(normalized_final_label + "
-")
+                f.write(normalized_final_label + "\n")
             generate_box_file(out_base + ".box", normalized_final_label, w, h)
 
             metadata_records.append({
