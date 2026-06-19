@@ -1,0 +1,117 @@
+{
+  "base": {
+    "config": {
+      "total_epochs": 12,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 3,
+      "error_rate": 0.05,
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "mixture_ratio": 0.8,
+      "max_cnt_samples": 1500,
+      "learning_rate": 0.0005,
+      "lr_schedule": "step",
+      "lr_decay_rate": 0.5,
+      "lr_decay_epochs": 4,
+      "blur_prob": 0.5,
+      "shadow_prob": 0.3,
+      "distortion_prob": 0.4,
+      "dropout_prob": 0.3,
+      "bleedthrough_prob": 0.25,
+      "cnt_noise": {
+        "blur": {
+          "prob": 0.6,
+          "limit_min": 3,
+          "limit_max": 5
+        },
+        "shadow": {
+          "prob": 0.5,
+          "dimension": 6
+        },
+        "distortion": {
+          "prob": 0.5,
+          "limit": 0.15,
+          "elastic_alpha": 1.0,
+          "elastic_sigma": 15.0,
+          "use_multi_scale": true
+        },
+        "dropout": {
+          "prob": 0.5,
+          "holes_min": 1,
+          "holes_max": 4,
+          "size_min": 4,
+          "size_max": 10
+        },
+        "micro_dropout": {
+          "prob": 0.3,
+          "holes_min": 20,
+          "holes_max": 60,
+          "size_min": 1,
+          "size_max": 2
+        },
+        "smudge": {
+          "prob": 0.3,
+          "intensity": 0.3
+        }
+      },
+      "mixture_schedule": {
+        "enabled": false,
+        "start_ratio": 0.5,
+        "end_ratio": 1.0,
+        "start_epoch": 1,
+        "end_epoch": 12
+      }
+    },
+    "eval_epochs": [4, 8, 12]
+  },
+  "experiments": [
+    {
+      "id": "best_optimum_baseline",
+      "config": {
+        "description": "Replicates the exact local optimum baseline (0.8 mixture ratio, 1500 max CNT samples, 0.0005 learning rate) using the fast shared pool structure."
+      }
+    },
+    {
+      "id": "best_optimum_mixture_0.85",
+      "config": {
+        "description": "Slightly higher Phoenix ratio (85% Phoenix, 15% CNT) to see if more clean target focus reduces the Phoenix error rate further.",
+        "mixture_ratio": 0.85
+      }
+    },
+    {
+      "id": "best_optimum_mixture_0.75",
+      "config": {
+        "description": "Slightly more CNT data (75% Phoenix, 25% CNT) to provide more text variety while remaining near the optimal zone.",
+        "mixture_ratio": 0.75
+      }
+    },
+    {
+      "id": "best_optimum_lr_0.00075",
+      "config": {
+        "description": "Faster learning rate (0.00075) to see if convergence can be accelerated near the optimum.",
+        "learning_rate": 0.00075
+      }
+    },
+    {
+      "id": "best_optimum_decay_0.7_to_0.9",
+      "config": {
+        "description": "Dynamic mixture decay schedule centered precisely around the 0.8 optimum: starts at 70% Phoenix and converges to 90% Phoenix by epoch 10.",
+        "mixture_schedule": {
+          "enabled": true,
+          "start_ratio": 0.7,
+          "end_ratio": 0.9,
+          "start_epoch": 1,
+          "end_epoch": 10
+        }
+      }
+    },
+    {
+      "id": "best_optimum_capping_1000",
+      "config": {
+        "description": "Stricter CNT dataset capping (max 1000 CNT lines) to prioritize rare characters even more and keep epoch sizes small.",
+        "max_cnt_samples": 1000
+      }
+    }
+  ]
+}
