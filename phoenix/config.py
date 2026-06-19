@@ -121,11 +121,16 @@ class SweepConfig:
         base_dict = data.get("base")
         experiments_data = data.get("experiments", [])
         
+        base_config_dict = base_dict.get("config", {}) if base_dict else None
+        base_eval_epochs = base_dict.get("eval_epochs") if base_dict else None
+        
         experiments = []
         for exp_data in experiments_data:
             exp_data_copy = dict(exp_data)
-            if base_dict and "config" in exp_data_copy:
-                exp_data_copy["config"] = deep_merge(base_dict, exp_data_copy["config"])
+            if base_config_dict and "config" in exp_data_copy:
+                exp_data_copy["config"] = deep_merge(base_config_dict, exp_data_copy["config"])
+            if base_eval_epochs is not None and "eval_epochs" not in exp_data_copy:
+                exp_data_copy["eval_epochs"] = base_eval_epochs
             experiments.append(ExperimentConfig.from_dict(exp_data_copy))
             
         return cls(
