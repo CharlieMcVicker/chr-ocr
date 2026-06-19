@@ -49,6 +49,13 @@ class TrainingConfig:
             "size_min": 4,
             "size_max": 10
         },
+        "micro_dropout": {
+            "prob": 0.4,
+            "holes_min": 20,
+            "holes_max": 60,
+            "size_min": 1,
+            "size_max": 2
+        },
         "smudge": {"prob": 0.4, "intensity": 0.3}
     })
 

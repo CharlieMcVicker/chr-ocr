@@ -4,6 +4,7 @@ title: Implement Staged Multi-Scale Elastic and Grid Distortion
 status: To Do
 assignee: []
 created_date: '2026-06-19 13:13'
+updated_date: '2026-06-19 13:54'
 labels: []
 dependencies: []
 ordinal: 137000
@@ -21,4 +22,5 @@ Add support for multi-scale geometric distortions by combining local high-freque
 - [ ] #2 Expose parameters for multi-pass configuration or customizable alpha/sigma scales in the cnt_noise config.
 - [ ] #3 Forward the geometric distortion arguments from train.py to scripts/augment_dynamic.py.
 - [ ] #4 Verify that augmented images contain compounding wavy page distortions without breaking character readability.
+- [ ] #5 Update the mathematical specification of Staged Multi-Scale Elastic and Grid Distortion in backlog/docs/research/mixed-training-augmentation.md
 <!-- AC:END -->

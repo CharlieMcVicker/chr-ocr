@@ -55,6 +55,11 @@ def main():
     parser.add_argument("--cnt-dropout-holes-max", type=int, default=4)
     parser.add_argument("--cnt-dropout-size-min", type=int, default=4)
     parser.add_argument("--cnt-dropout-size-max", type=int, default=10)
+    parser.add_argument("--cnt-micro-dropout-prob", type=float, default=0.4)
+    parser.add_argument("--cnt-micro-dropout-holes-min", type=int, default=20)
+    parser.add_argument("--cnt-micro-dropout-holes-max", type=int, default=60)
+    parser.add_argument("--cnt-micro-dropout-size-min", type=int, default=1)
+    parser.add_argument("--cnt-micro-dropout-size-max", type=int, default=2)
     parser.add_argument("--cnt-smudge-prob", type=float, default=0.4)
     parser.add_argument("--cnt-smudge-intensity", type=float, default=0.3)
     args = parser.parse_args()
@@ -129,6 +134,9 @@ def main():
         distortion_limit=args.cnt_distortion_limit,
         dropout_holes_range=(args.cnt_dropout_holes_min, args.cnt_dropout_holes_max),
         dropout_size_range=(args.cnt_dropout_size_min, args.cnt_dropout_size_max),
+        micro_dropout_prob=args.cnt_micro_dropout_prob,
+        micro_dropout_holes_range=(args.cnt_micro_dropout_holes_min, args.cnt_micro_dropout_holes_max),
+        micro_dropout_size_range=(args.cnt_micro_dropout_size_min, args.cnt_micro_dropout_size_max),
     )
 
     # Binarization algorithms used dynamically

@@ -4,6 +4,7 @@ title: Implement Custom Page Curl and Spine Curvature Distortion
 status: To Do
 assignee: []
 created_date: '2026-06-19 13:14'
+updated_date: '2026-06-19 13:54'
 labels: []
 dependencies: []
 ordinal: 138000
@@ -21,4 +22,5 @@ Develop a custom coordinate-mapping distortion in phoenix/training/augment.py th
 - [ ] #2 Integrate this page-curl transform into the dynamic augmentation pipeline (get_albumentations_pipeline or augment_dynamic.py).
 - [ ] #3 Expose page-curl probability, direction (left/right/random), and bending/compression intensity factors in the configuration JSON.
 - [ ] #4 Verify that output line crops visually match the book spine edge curve and squishing artifacts.
+- [ ] #5 Update the mathematical specification and implementation description of Page Curl and Spine Curvature Distortion in backlog/docs/research/mixed-training-augmentation.md
 <!-- AC:END -->

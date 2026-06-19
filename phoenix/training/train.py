@@ -275,6 +275,11 @@ def run_staged_training(config: TrainingConfig):
             "--cnt-dropout-holes-max", str(config.cnt_noise["dropout"]["holes_max"]),
             "--cnt-dropout-size-min", str(config.cnt_noise["dropout"]["size_min"]),
             "--cnt-dropout-size-max", str(config.cnt_noise["dropout"]["size_max"]),
+            "--cnt-micro-dropout-prob", str(config.cnt_noise.get("micro_dropout", {"prob": 0.4})["prob"]),
+            "--cnt-micro-dropout-holes-min", str(config.cnt_noise.get("micro_dropout", {"holes_min": 20})["holes_min"]),
+            "--cnt-micro-dropout-holes-max", str(config.cnt_noise.get("micro_dropout", {"holes_max": 60})["holes_max"]),
+            "--cnt-micro-dropout-size-min", str(config.cnt_noise.get("micro_dropout", {"size_min": 1})["size_min"]),
+            "--cnt-micro-dropout-size-max", str(config.cnt_noise.get("micro_dropout", {"size_max": 2})["size_max"]),
             "--cnt-smudge-prob", str(config.cnt_noise.get("smudge", {"prob": 0.4})["prob"]),
             "--cnt-smudge-intensity", str(config.cnt_noise.get("smudge", {"intensity": 0.3})["intensity"])
         ]

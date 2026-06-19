@@ -4,6 +4,7 @@ title: Implement Unified Shared-Pool Sweep Augmentation
 status: To Do
 assignee: []
 created_date: '2026-06-19 13:15'
+updated_date: '2026-06-19 13:54'
 labels: []
 dependencies: []
 ordinal: 139000
@@ -21,4 +22,5 @@ Optimize hyperparameter sweeps by generating a single master pool of augmented i
 - [ ] #2 Develop a Sweep Sampler utility that reads the metadata index and filters/samples .lstmf files to construct a unique train.list matching each experiment's target probabilities.
 - [ ] #3 Update the sweep runner script to run the master generation once per epoch, bypassing both image processing and Tesseract compilation for individual models.
 - [ ] #4 Verify that multiple models in a sweep train successfully on different train.list files drawn from the same master pool.
+- [ ] #5 Update the architectural and operational documentation of the Unified Shared-Pool Sweep Augmentation in backlog/docs/research/mixed-training-augmentation.md
 <!-- AC:END -->

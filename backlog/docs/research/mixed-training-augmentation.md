@@ -177,9 +177,23 @@ Let $I_{i,j}$ be the pixel intensity of the image at coordinate $(i, j)$ in a gr
 3.  **Intensity Blending**:
     The final smudged image $I_{\text{final}}$ is a linear interpolation of the blurred image and the original image:
     
-    $$I_{\text{final}} = \alpha \cdot I_{\text{blurred}} + (1 - \alpha) \cdot I_{\text{orig}}$$
-    
     where the blending coefficient $\alpha = \max(0.1, \min(0.9, \lambda))$ maps the intensity parameter directly to blending weight.
+
+### Pixel-Level Coarse Dropout (Micro-Erasures) Noise
+
+To simulate dry-type ink starvation and physical print-fade (often observed in historical Bible and New Testament print sources like the CNT), we apply high-frequency coarse dropout at a very fine pixel scale.
+
+#### Mathematical Formulation
+
+Let $I_{i, j}$ be the pixel intensity at coordinate $(i, j)$ of a grayscale image. Let $N_H$ be the number of holes, randomly sampled from a range $[h_{\text{min}}, h_{\text{max}}]$ (typically $[20, 60]$ for high-frequency density).
+
+For each hole $k \in \{1, 2, \dots, N_H\}$, we sample a random height $h_k$ and width $w_k$ from the size range $[s_{\text{min}}, s_{\text{max}}]$ (typically $[1, 2]$ pixels for micro-level details) and a random center coordinate $(y_k, x_k)$.
+
+Let $R_k = [y_k - \lfloor h_k/2 \rfloor, y_k + \lceil h_k/2 \rceil] \times [x_k - \lfloor w_k/2 \rfloor, x_k + \lceil w_k/2 \rceil]$ be the rectangular region defined by hole $k$.
+
+For any pixel $(i, j)$ lying inside any rectangular region $R_k$, the intensity is set to the background fill value (typically $255$ for light backgrounds):
+
+$$I_{\text{final}, i, j} = \begin{cases} 255, & \text{if } (i, j) \in \bigcup_{k=1}^{N_H} R_k \text{ with probability } p \\ I_{i, j}, & \text{otherwise} \end{cases}$$
 
 ### Configuration Specification (YAML)
 

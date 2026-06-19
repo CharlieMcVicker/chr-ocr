@@ -259,6 +259,9 @@ def get_albumentations_pipeline(
     distortion_limit=0.05,
     dropout_holes_range=(1, 4),
     dropout_size_range=(4, 10),
+    micro_dropout_prob=0.0,
+    micro_dropout_holes_range=(20, 60),
+    micro_dropout_size_range=(1, 2),
 ):
     """
     Constructs a sophisticated Albumentations pipeline for text line perturbation.
@@ -287,6 +290,15 @@ def get_albumentations_pipeline(
             hole_width_range=dropout_size_range,
             fill=255, # fill with white for light background
             p=dropout_prob
+        ),
+
+        # 4. Pixel-Level Micro-coarse dropout (Dry Ink Starvation / Print-fade)
+        A.CoarseDropout(
+            num_holes_range=micro_dropout_holes_range,
+            hole_height_range=micro_dropout_size_range,
+            hole_width_range=micro_dropout_size_range,
+            fill=255, # fill with white for light background
+            p=micro_dropout_prob
         )
     ])
 
