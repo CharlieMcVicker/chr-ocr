@@ -1,31 +1,32 @@
 {
-  "total_epochs": 36,
+  "total_epochs": 20,
   "iterations_per_epoch": 200,
-  "variations_per_image": 3,
+  "variations_per_image": 7,
   "error_rate": 0.05,
   "train_manifest": "training_data/manifest_w_lang.json",
-  "output_dir": "training_data/staged_tuning/run_custom_big_lr_big_decay_dr6_mx4_temp_epoch",
-  "model_dir": "training_data/dataset/model/starter/chr",
-  "train_output_dir": "training_data/staged_tuning/run_custom_big_lr_big_decay_dr6_mx4_output",
+  "output_dir": "training_data/staged_tuning/run_dr05_v7_temp_epoch",
+  "model_dir": "training_data/dataset/model",
+  "train_output_dir": "training_data/staged_tuning/run_dr05_v7_output",
   "continue_from": "training_data/dataset/model/chr.lstm",
   "old_traineddata": "training_data/dataset/model/chr.traineddata",
   "max_workers": null,
   "use_dynamic_cnt": true,
   "cnt_fraction": 0.1,
   "cnt_dir": "training_data/cnt",
-  "mixture_ratio": 0.4,
+  "mixture_ratio": 0.3,
   "learning_rate": 0.002,
   "lr_schedule": "step",
-  "lr_decay_rate": 0.6,
+  "lr_decay_rate": 0.5,
   "lr_decay_epochs": 3,
   "blur_prob": 0.4,
   "shadow_prob": 0.3,
   "distortion_prob": 0.4,
   "dropout_prob": 0.3,
   "bleedthrough_prob": 0.25,
+  "distortion_limit": 0.05,
   "cnt_noise": {
     "blur": {
-      "prob": 0.6,
+      "prob": 0.7,
       "limit_min": 3,
       "limit_max": 5
     },
@@ -34,8 +35,8 @@
       "dimension": 6
     },
     "distortion": {
-      "prob": 0.6,
-      "limit": 0.15
+      "prob": 0.8,
+      "limit": 0.25
     },
     "dropout": {
       "prob": 0.5,

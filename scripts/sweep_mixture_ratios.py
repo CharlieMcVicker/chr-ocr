@@ -21,19 +21,24 @@ def main():
     parser = argparse.ArgumentParser(description="Sweep and tune Phoenix/CNT mixture ratios")
     parser.add_argument("--sweep-config", default="configs/sweep_mixture_ratio.json")
     parser.add_argument("--dataset-dir", default="training_data/dataset")
-    parser.add_argument("--results-file", default="training_data/sweep_mixture_results.json")
+    parser.add_argument("--results-file", default=None, help="Path to save results (auto-derived from sweep-config if omitted)")
     args = parser.parse_args()
 
     if not os.path.exists(args.sweep_config):
         print(f"Error: Sweep config file not found at {args.sweep_config}")
         sys.exit(1)
 
+    if args.results_file is None:
+        base_name = os.path.basename(args.sweep_config)
+        name_without_ext = os.path.splitext(base_name)[0]
+        args.results_file = f"training_data/{name_without_ext}_results.json"
+
     sweep_config = SweepConfig.load_from_json(args.sweep_config)
     experiments = sweep_config.experiments
     all_results = []
 
     test_dir = args.dataset_dir
-    traineddata_path = "training_data/dataset/model/starter/chr/chr.traineddata"
+    traineddata_path = "training_data/dataset/model/chr.traineddata"
 
     print(f"=== Starting Mixture Ratio Sweep ({len(experiments)} experiments) ===")
     for i, exp in enumerate(experiments, 1):
@@ -50,7 +55,7 @@ def main():
         exp_config.train_output_dir = run_output_dir
         exp_config.output_dir = run_temp_epoch_dir
         exp_config.continue_from = "training_data/dataset/model/chr.lstm"
-        exp_config.model_dir = "training_data/dataset/model/starter/chr"
+        exp_config.model_dir = "training_data/dataset/model"
         exp_config.old_traineddata = "training_data/dataset/model/chr.traineddata"
         
         os.makedirs(run_output_dir, exist_ok=True)
@@ -95,6 +100,13 @@ def main():
                     "--lang", "chr_eval_temp",
                     "--dataset-dir", test_dir
                 ]
+                
+                # Print a clear, prominent header identifying the epoch/checkpoint being evaluated
+                print(f"\n==================================================")
+                print(f" EVALUATING CHECKPOINT FOR EPOCH {epoch}")
+                print(f" Checkpoint: {os.path.basename(checkpoint)}")
+                print(f"==================================================")
+                
                 res = subprocess.run(eval_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
                 
                 # Parse output to find Phoenix and CNT metrics
@@ -165,7 +177,9 @@ def main():
         
         # Save best config as configs/train_mixed.json
         best_exp = next(e for e in experiments if e.id == best_run['parent_id'])
-        best_exp.config.save_to_json("configs/train_mixed.json")
+        best_config = best_exp.config
+        best_config.total_epochs = best_run['epochs']
+        best_config.save_to_json("configs/train_mixed.json")
         print("Updated configs/train_mixed.json with the optimal sweep parameters.")
 
 if __name__ == "__main__":
