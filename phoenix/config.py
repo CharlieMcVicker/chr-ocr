@@ -30,6 +30,8 @@ class TrainingConfig:
         "start_epoch": 1,
         "end_epoch": 12,
     })
+    max_cnt_samples: Optional[int] = None
+
     
     # Learning rate options
     learning_rate: float = 0.0005

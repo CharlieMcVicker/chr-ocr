@@ -260,7 +260,8 @@ def run_staged_training(config: TrainingConfig):
                 metadata_index_path=master_index_path,
                 output_list_path=list_train_path,
                 mixture_ratio=current_ratio,
-                epoch=epoch
+                epoch=epoch,
+                max_cnt_samples=getattr(config, "max_cnt_samples", None)
             )
         else:
             # Original Step B: Generate fresh random dynamic augmentations (only train split)
@@ -334,6 +335,11 @@ def run_staged_training(config: TrainingConfig):
                     n_cnt = 0
                 else:
                     n_cnt = int(n_phoenix * (1.0 - current_ratio) / current_ratio)
+                
+                # Cap by max_cnt_samples if specified
+                max_cnt_samples = getattr(config, "max_cnt_samples", None)
+                if max_cnt_samples is not None:
+                    n_cnt = min(n_cnt, max_cnt_samples)
                 
                 print(f"Computed batch mixture: Phoenix train samples = {n_phoenix}, target CNT samples = {n_cnt} (ratio = {current_ratio:.4f})")
                 
@@ -499,12 +505,12 @@ def run_staged_training(config: TrainingConfig):
 
             # Step C: Compile augmented images to .lstmf files and create list.train
             print("Compiling images to .lstmf files...")
-            png_files = glob.glob(os.path.join(config.output_dir, "*.png"))
-            if not png_files:
-                raise RuntimeError("Error: No augmented PNGs generated!")
+            tiff_files = glob.glob(os.path.join(config.output_dir, "*.tiff"))
+            if not tiff_files:
+                raise RuntimeError("Error: No augmented TIFFs generated!")
 
             with ThreadPoolExecutor(max_workers=config.max_workers) as executor:
-                lstmf_paths = list(executor.map(lambda f: compile_image(f, config.model_dir), png_files))
+                lstmf_paths = list(executor.map(lambda f: compile_image(f, config.model_dir), tiff_files))
 
             with open(list_train_path, "w", encoding="utf-8") as list_f:
                 for lstmf_path in lstmf_paths:

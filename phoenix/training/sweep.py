@@ -71,11 +71,11 @@ def evaluate_checkpoint(checkpoint_path, test_dir, traineddata_path):
         
         # Ensure list.test exists
         if not os.path.exists(list_test_path):
-            png_files = glob.glob(os.path.join(algo_dir, "*.png"))
-            if not png_files:
+            img_files = glob.glob(os.path.join(algo_dir, "*.png")) + glob.glob(os.path.join(algo_dir, "*.tiff"))
+            if not img_files:
                 continue
             with open(list_test_path, "w", encoding="utf-8") as list_f:
-                for img in png_files:
+                for img in img_files:
                     base = os.path.splitext(img)[0]
                     lstmf_path = base + ".lstmf"
                     if not os.path.exists(lstmf_path):
@@ -250,10 +250,11 @@ class SweepSampler:
     target probabilities.
     """
     @staticmethod
-    def sample_to_list(metadata_index_path: str, output_list_path: str, mixture_ratio: float, epoch: int):
+    def sample_to_list(metadata_index_path: str, output_list_path: str, mixture_ratio: float, epoch: int, max_cnt_samples: Optional[int] = None):
         import json
         import random
         import os
+        from typing import Optional
 
         if not os.path.exists(metadata_index_path):
             raise FileNotFoundError(f"Metadata index not found at: {metadata_index_path}")
@@ -295,7 +296,12 @@ class SweepSampler:
             else:
                 n_cnt = int(n_phoenix * (1.0 - mixture_ratio) / mixture_ratio)
 
+        # Cap by max_cnt_samples if specified
+        if max_cnt_samples is not None:
+            n_cnt = min(n_cnt, max_cnt_samples)
+
         # Seeded stable sampling of CNT lines
+
         seed_str = f"cnt_batch_salt_epoch_{epoch}"
         rng = random.Random(seed_str)
 
