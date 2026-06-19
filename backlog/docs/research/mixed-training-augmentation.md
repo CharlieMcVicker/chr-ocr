@@ -195,6 +195,33 @@ For any pixel $(i, j)$ lying inside any rectangular region $R_k$, the intensity 
 
 $$I_{\text{final}, i, j} = \begin{cases} 255, & \text{if } (i, j) \in \bigcup_{k=1}^{N_H} R_k \text{ with probability } p \\ I_{i, j}, & \text{otherwise} \end{cases}$$
 
+### Staged Multi-Scale Elastic and Grid Distortion
+
+Historically printed text documents exhibit multi-scale spatial deformations, which we model using a compound, dual-scale transformation to simulate both localized high-frequency paper warp (elastic transform) and wide-range low-frequency page page-folds and camera skew (grid distortion).
+
+#### Mathematical Formulation
+
+Let $I(x, y)$ be the input pixel intensity at coordinate $(x, y)$.
+
+1. **Local High-Frequency Elastic Distortion**:
+   Localized physical warps, paper fiber unevenness, and physical handling distress are modeled using a randomized, smoothed vector field $\Phi_{\text{elastic}}(x, y) = (x + \Delta x_e, y + \Delta y_e)$. The displacement field components $\Delta x_e$ and $\Delta y_e$ are computed by convolving random noise fields with a Gaussian kernel:
+   
+   $$\Delta x_e = \alpha \cdot (\eta_x * G_{\sigma}), \quad \Delta y_e = \alpha \cdot (\eta_y * G_{\sigma})$$
+   
+   where $\eta_x, \eta_y \sim \mathcal{N}(0, \mathbf{I})$ represent independent random Gaussian fields, $G_{\sigma}$ is a 2D Gaussian filter with standard deviation $\sigma$ (representing spatial scale), and $\alpha$ is the scaling factor (controlling amplitude).
+
+2. **Wide-Range Low-Frequency Grid Distortion**:
+   Large-scale page curvature and binding spine distortion are modeled using a displacement field $\Phi_{\text{grid}}(x, y) = (x + \Delta x_g, y + \Delta y_g)$. The input image domain is divided into a regular grid of size $M \times N$ control cells. Random displacement vectors are sampled at cell vertices and smoothly interpolated across the domain using bicubic splines:
+   
+   $$\Phi_{\text{grid}}(x, y) = \text{BicubicSpline}(\mathcal{V}_{M, N})$$
+
+3. **Compound Multi-Scale Distortion Flow**:
+   In the multi-scale configuration, rather than selecting one distortion type at random, both transforms are applied sequentially (compounded) to simulate realistic paper distress:
+   
+   $$I_{\text{distorted}}(x, y) = I\left( \Phi_{\text{elastic}}\left( \Phi_{\text{grid}}(x, y) \right) \right)$$
+   
+   This ensures that local character skewing and shearing effects compound naturally on top of large-scale undulating page curvature, preserving character legibility while maximizing geometric training robustness.
+
 ### Configuration Specification (YAML)
 
 ```yaml
