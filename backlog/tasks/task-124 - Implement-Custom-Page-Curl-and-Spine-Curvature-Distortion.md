@@ -1,0 +1,24 @@
+---
+id: TASK-124
+title: Implement Custom Page Curl and Spine Curvature Distortion
+status: To Do
+assignee: []
+created_date: '2026-06-19 13:14'
+labels: []
+dependencies: []
+ordinal: 138000
+---
+
+## Description
+
+<!-- SECTION:DESCRIPTION:BEGIN -->
+Develop a custom coordinate-mapping distortion in phoenix/training/augment.py that simulates the page-curl and cylindrical vertical compression/bending artifacts typical of book spines or bent scan edges.
+<!-- SECTION:DESCRIPTION:END -->
+
+## Acceptance Criteria
+<!-- AC:BEGIN -->
+- [ ] #1 Implement a custom OpenCV coordinate-mapping utility in phoenix/training/augment.py that vertically curves and horizontally squishes lines near the left or right image margins.
+- [ ] #2 Integrate this page-curl transform into the dynamic augmentation pipeline (get_albumentations_pipeline or augment_dynamic.py).
+- [ ] #3 Expose page-curl probability, direction (left/right/random), and bending/compression intensity factors in the configuration JSON.
+- [ ] #4 Verify that output line crops visually match the book spine edge curve and squishing artifacts.
+<!-- AC:END -->
