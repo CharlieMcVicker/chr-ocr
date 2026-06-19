@@ -459,3 +459,54 @@ To verify the deterministic nature of the dataset splits:
 # Verify data distribution split using stable salted sampling
 uv run scripts/verify_splits.py --dataset-dir data/raw --salt "phoenix_ocr_split_v1"
 ```
+
+---
+
+## 9. Unified Shared-Pool Sweep Augmentation
+
+To scale hyperparameter sweeps across multiple mixture ratios and augmentation settings, we utilize a **Unified Shared-Pool Sweep Augmentation** architecture. 
+
+### Architecture Overview
+
+Traditional hyperparameter sweeps run independent pipelines for each experimental configuration, resulting in $O(N 	imes E 	imes M)$ visual augmentation and Tesseract OCR compilation steps (where $N$ is sample size, $E$ is epoch count, and $M$ is the number of experimental runs).
+
+The Shared-Pool architecture decouples **Augmentation Generation** from **Experiment Sampling**:
+1. **Master Pool Generation (Once per Epoch)**: At the start of an epoch $e$, a master pool of fully augmented images is generated under `training_data/staged_tuning/master_pool_epoch_{e}`. All generated variations are compiled to `.lstmf` files in parallel using Tesseract. A metadata index (`metadata_index.json`) tracks the properties of each variation (dataset origin, sample ID, presence of rare characters, binarization algorithm, etc.).
+2. **Dynamic Sweep Sampling (Per Experiment)**: When an individual model experiment runs, it completely bypasses both image processing and Tesseract compilation. Instead, the `SweepSampler` utility parses `metadata_index.json`, partitions the pool, and uses seeded stable sampling to construct a custom `list.train` file containing only the specific mixture subset matching the target ratio.
+
+```mermaid
+graph TD
+    A[Start Epoch] --> B{Master Pool Exist?}
+    B -- No --> C[Generate Master Augmentations]
+    C --> D[Tesseract Multithreaded Compile]
+    D --> E[Write metadata_index.json]
+    B -- Yes --> F[Bypass Generation & Compile]
+    E --> G[SweepSampler]
+    F --> G
+    G --> H[Stable Mixture Sampling]
+    H --> I[Write Custom list.train]
+    I --> J[Run lstmtraining]
+```
+
+### Dynamic Sweep Sampling Formulation
+
+Let $P$ be the set of unique Phoenix samples in the master pool, and $C$ be the set of unique CNT samples. The target mixture ratio is $\mu \in [0.0, 1.0]$ representing the proportion of Phoenix lines.
+
+The required number of unique CNT samples to select, $n_c$, is computed as:
+
+$$n_c = \lfloor |P| \cdot \frac{1.0 - \mu}{\mu} \rfloor$$
+
+If no Phoenix samples are present (such as in dry-runs or test environments), we fallback to fraction-based CNT selection:
+
+$$n_c = \lfloor |C| \cdot (1.0 - \mu) \rfloor$$
+
+We partition $C$ into $C_{\text{rare}}$ (samples containing at least one rare character) and $C_{\text{common}}$. To address character imbalance, we prioritize rare samples:
+
+$$\text{Sampled } C = \begin{cases}
+C_{\text{rare}}[:n_c], & \text{if } |C_{\text{rare}}| \ge n_c \\
+C_{\text{rare}} \cup C_{\text{common}}[:n_c - |C_{\text{rare}}|], & \text{otherwise}
+\end{cases}$$
+
+### Performance Benefits
+
+By reusing the pre-compiled `.lstmf` files across experiments, the setup time for subsequent sweep runs is reduced from **minutes to milliseconds** ($O(1)$ setup time), enabling extremely fast, scalable hyperparameter search.
