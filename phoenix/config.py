@@ -41,7 +41,13 @@ class TrainingConfig:
     cnt_noise: dict = field(default_factory=lambda: {
         "blur": {"prob": 0.6, "limit_min": 3, "limit_max": 5},
         "shadow": {"prob": 0.5, "dimension": 6},
-        "distortion": {"prob": 0.5, "limit": 0.15},
+        "distortion": {
+            "prob": 0.5,
+            "limit": 0.15,
+            "elastic_alpha": 1.0,
+            "elastic_sigma": 15.0,
+            "use_multi_scale": True
+        },
         "dropout": {
             "prob": 0.5,
             "holes_min": 1,
