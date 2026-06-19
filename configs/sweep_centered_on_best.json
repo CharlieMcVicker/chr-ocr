@@ -8,30 +8,30 @@
       "use_dynamic_cnt": true,
       "use_shared_pool": true,
       "cnt_fraction": 0.1,
-      "mixture_ratio": 0.8,
+      "mixture_ratio": 0.3,
       "max_cnt_samples": 1500,
-      "learning_rate": 0.0005,
+      "learning_rate": 0.002,
       "lr_schedule": "step",
-      "lr_decay_rate": 0.5,
-      "lr_decay_epochs": 4,
-      "blur_prob": 0.5,
+      "lr_decay_rate": 0.6,
+      "lr_decay_epochs": 3,
+      "blur_prob": 0.4,
       "shadow_prob": 0.3,
       "distortion_prob": 0.4,
       "dropout_prob": 0.3,
       "bleedthrough_prob": 0.25,
       "cnt_noise": {
         "blur": {
-          "prob": 0.6,
+          "prob": 0.7,
           "limit_min": 3,
           "limit_max": 5
         },
         "shadow": {
-          "prob": 0.5,
+          "prob": 0.7,
           "dimension": 6
         },
         "distortion": {
-          "prob": 0.5,
-          "limit": 0.15,
+          "prob": 0.8,
+          "limit": 0.25,
           "elastic_alpha": 1.0,
           "elastic_sigma": 15.0,
           "use_multi_scale": true
@@ -57,8 +57,8 @@
       },
       "mixture_schedule": {
         "enabled": false,
-        "start_ratio": 0.5,
-        "end_ratio": 1.0,
+        "start_ratio": 0.3,
+        "end_ratio": 0.8,
         "start_epoch": 1,
         "end_epoch": 12
       }
@@ -67,50 +67,50 @@
   },
   "experiments": [
     {
-      "id": "best_optimum_baseline",
+      "id": "true_best_baseline",
       "config": {
-        "description": "Replicates the exact local optimum baseline (0.8 mixture ratio, 1500 max CNT samples, 0.0005 learning rate) using the fast shared pool structure."
+        "description": "Replicates the exact local optimum baseline (0.3 mixture ratio, 1500 max CNT, 0.002 learning rate, 0.6/3 step decay) using the fast shared pool structure."
       }
     },
     {
-      "id": "best_optimum_mixture_0.85",
+      "id": "true_best_mixture_0.4",
       "config": {
-        "description": "Slightly higher Phoenix ratio (85% Phoenix, 15% CNT) to see if more clean target focus reduces the Phoenix error rate further.",
-        "mixture_ratio": 0.85
+        "description": "Evaluates a slightly higher Phoenix ratio (40% Phoenix, 60% CNT) near the optimum zone.",
+        "mixture_ratio": 0.4
       }
     },
     {
-      "id": "best_optimum_mixture_0.75",
+      "id": "true_best_mixture_0.2",
       "config": {
-        "description": "Slightly more CNT data (75% Phoenix, 25% CNT) to provide more text variety while remaining near the optimal zone.",
-        "mixture_ratio": 0.75
+        "description": "Evaluates a higher CNT ratio (20% Phoenix, 80% CNT) to see if more aggressive regularizing data helps.",
+        "mixture_ratio": 0.2
       }
     },
     {
-      "id": "best_optimum_lr_0.00075",
+      "id": "true_best_lr_0.001",
       "config": {
-        "description": "Faster learning rate (0.00075) to see if convergence can be accelerated near the optimum.",
-        "learning_rate": 0.00075
+        "description": "Evaluates a slightly more conservative learning rate (0.001) near the optimum.",
+        "learning_rate": 0.001
       }
     },
     {
-      "id": "best_optimum_decay_0.7_to_0.9",
+      "id": "true_best_lr_0.003",
       "config": {
-        "description": "Dynamic mixture decay schedule centered precisely around the 0.8 optimum: starts at 70% Phoenix and converges to 90% Phoenix by epoch 10.",
+        "description": "Evaluates a slightly faster learning rate (0.003) to test optimization speed.",
+        "learning_rate": 0.003
+      }
+    },
+    {
+      "id": "true_best_decay_0.3_to_0.8",
+      "config": {
+        "description": "Dynamic mixture decay starting at the true optimal ratio of 0.3 (70% CNT) and decaying to 0.8 (20% CNT) by epoch 12 to freeze weights on targets.",
         "mixture_schedule": {
           "enabled": true,
-          "start_ratio": 0.7,
-          "end_ratio": 0.9,
+          "start_ratio": 0.3,
+          "end_ratio": 0.8,
           "start_epoch": 1,
-          "end_epoch": 10
+          "end_epoch": 12
         }
-      }
-    },
-    {
-      "id": "best_optimum_capping_1000",
-      "config": {
-        "description": "Stricter CNT dataset capping (max 1000 CNT lines) to prioritize rare characters even more and keep epoch sizes small.",
-        "max_cnt_samples": 1000
       }
     }
   ]
