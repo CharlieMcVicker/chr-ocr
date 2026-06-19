@@ -41,6 +41,9 @@ def main():
     parser.add_argument("--dropout-prob", type=float, default=0.4)
     parser.add_argument("--bleedthrough-prob", type=float, default=0.25)
     parser.add_argument("--distortion-limit", type=float, default=0.05)
+    parser.add_argument("--elastic-alpha", type=float, default=1.0)
+    parser.add_argument("--elastic-sigma", type=float, default=15.0)
+    parser.add_argument("--use-multi-scale", type=lambda x: (str(x).lower() == "true"), default=False)
     
     # CNT Augmentation options
     parser.add_argument("--cnt-blur-prob", type=float, default=0.6)
@@ -62,6 +65,9 @@ def main():
     parser.add_argument("--cnt-micro-dropout-size-max", type=int, default=2)
     parser.add_argument("--cnt-smudge-prob", type=float, default=0.4)
     parser.add_argument("--cnt-smudge-intensity", type=float, default=0.3)
+    parser.add_argument("--cnt-elastic-alpha", type=float, default=1.0)
+    parser.add_argument("--cnt-elastic-sigma", type=float, default=15.0)
+    parser.add_argument("--cnt-use-multi-scale", type=lambda x: (str(x).lower() == "true"), default=True)
     args = parser.parse_args()
 
     if not os.path.exists(args.manifest):
@@ -121,7 +127,10 @@ def main():
         shadow_prob=args.shadow_prob,
         distortion_prob=args.distortion_prob,
         dropout_prob=args.dropout_prob,
-        distortion_limit=args.distortion_limit
+        distortion_limit=args.distortion_limit,
+        elastic_alpha=args.elastic_alpha,
+        elastic_sigma=args.elastic_sigma,
+        use_multi_scale=args.use_multi_scale,
     )
 
     cnt_pipeline = get_albumentations_pipeline(
@@ -137,6 +146,9 @@ def main():
         micro_dropout_prob=args.cnt_micro_dropout_prob,
         micro_dropout_holes_range=(args.cnt_micro_dropout_holes_min, args.cnt_micro_dropout_holes_max),
         micro_dropout_size_range=(args.cnt_micro_dropout_size_min, args.cnt_micro_dropout_size_max),
+        elastic_alpha=args.cnt_elastic_alpha,
+        elastic_sigma=args.cnt_elastic_sigma,
+        use_multi_scale=args.cnt_use_multi_scale,
     )
 
     # Binarization algorithms used dynamically
