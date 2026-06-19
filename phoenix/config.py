@@ -19,6 +19,7 @@ class TrainingConfig:
     old_traineddata: Optional[str] = None
     max_workers: Optional[int] = None
     use_dynamic_cnt: bool = False
+    use_shared_pool: bool = False
     cnt_fraction: float = 0.1
     cnt_dir: str = "training_data/cnt"
     mixture_ratio: float = 0.8
