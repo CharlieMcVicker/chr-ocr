@@ -1,0 +1,54 @@
+[
+  {
+    "id": "run_dr05_v7_epoch_14",
+    "parent_id": "run_dr05_v7",
+    "epochs": 14,
+    "mixture_ratio": 0.3,
+    "phoenix_CER": 8.0,
+    "phoenix_WER": 27.3,
+    "cnt_CER": 3.05,
+    "cnt_WER": 9.04,
+    "weighted_CER": 3.39,
+    "weighted_WER": 10.3,
+    "checkpoint": "training_data/staged_tuning/run_dr05_v7_output/chr_9.327_1653_2700.checkpoint"
+  },
+  {
+    "id": "run_dr05_v7_epoch_16",
+    "parent_id": "run_dr05_v7",
+    "epochs": 16,
+    "mixture_ratio": 0.3,
+    "phoenix_CER": 8.15,
+    "phoenix_WER": 29.3,
+    "cnt_CER": 3.29,
+    "cnt_WER": 10.26,
+    "weighted_CER": 3.63,
+    "weighted_WER": 11.57,
+    "checkpoint": "training_data/staged_tuning/run_dr05_v7_output/chr_8.518_1896_3200.checkpoint"
+  },
+  {
+    "id": "run_dr05_v7_epoch_18",
+    "parent_id": "run_dr05_v7",
+    "epochs": 18,
+    "mixture_ratio": 0.3,
+    "phoenix_CER": 7.74,
+    "phoenix_WER": 27.61,
+    "cnt_CER": 3.21,
+    "cnt_WER": 9.89,
+    "weighted_CER": 3.52,
+    "weighted_WER": 11.11,
+    "checkpoint": "training_data/staged_tuning/run_dr05_v7_output/chr_8.162_1946_3300.checkpoint"
+  },
+  {
+    "id": "run_dr05_v7_epoch_20",
+    "parent_id": "run_dr05_v7",
+    "epochs": 20,
+    "mixture_ratio": 0.3,
+    "phoenix_CER": 7.74,
+    "phoenix_WER": 27.61,
+    "cnt_CER": 3.21,
+    "cnt_WER": 9.89,
+    "weighted_CER": 3.52,
+    "weighted_WER": 11.11,
+    "checkpoint": "training_data/staged_tuning/run_dr05_v7_output/chr_8.162_1946_3300.checkpoint"
+  }
+]
