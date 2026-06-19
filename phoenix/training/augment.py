@@ -262,6 +262,9 @@ def get_albumentations_pipeline(
     micro_dropout_prob=0.0,
     micro_dropout_holes_range=(20, 60),
     micro_dropout_size_range=(1, 2),
+    elastic_alpha=1.0,
+    elastic_sigma=15.0,
+    use_multi_scale=False,
 ):
     """
     Constructs a sophisticated Albumentations pipeline for text line perturbation.
@@ -278,9 +281,12 @@ def get_albumentations_pipeline(
         A.RandomShadow(num_shadows_limit=(1, 2), shadow_dimension=shadow_dimension, p=shadow_prob),
         
         # 2. Spatial Distortions
-        A.OneOf([
+        A.Compose([
+            A.ElasticTransform(alpha=elastic_alpha, sigma=elastic_sigma, border_mode=cv2.BORDER_REPLICATE, p=1.0),
             A.GridDistortion(num_steps=5, distort_limit=distortion_limit, border_mode=cv2.BORDER_REPLICATE, p=1.0),
-            A.ElasticTransform(alpha=1, sigma=15, border_mode=cv2.BORDER_REPLICATE, p=1.0),
+        ], p=distortion_prob) if use_multi_scale else A.OneOf([
+            A.GridDistortion(num_steps=5, distort_limit=distortion_limit, border_mode=cv2.BORDER_REPLICATE, p=1.0),
+            A.ElasticTransform(alpha=elastic_alpha, sigma=elastic_sigma, border_mode=cv2.BORDER_REPLICATE, p=1.0),
         ], p=distortion_prob),
         
         # 3. Occlusion
