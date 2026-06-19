@@ -75,10 +75,15 @@ def evaluate_and_update_best(config, config_path, top_n=5):
             import time
             
             epoch = idx  # Default fallback
+            iteration = 0  # Default fallback
             # Extract cumulative iterations from checkpoint filename (e.g. chr_29.917_1517_1600.checkpoint)
             nums = re.findall(r"\d+", os.path.basename(checkpoint))
             if nums:
                 max_iter = int(nums[-1])
+                if len(nums) >= 2:
+                    iteration = int(nums[-2])
+                else:
+                    iteration = max_iter
                 if getattr(config, "iterations_per_epoch", 0) > 0:
                     epoch = round(max_iter / config.iterations_per_epoch)
             
@@ -90,6 +95,7 @@ def evaluate_and_update_best(config, config_path, top_n=5):
                 if not file_exists:
                     writer.writerow([
                         "epoch",
+                        "iteration",
                         "wall_time",
                         "phoenix_CER",
                         "phoenix_WER",
@@ -100,6 +106,7 @@ def evaluate_and_update_best(config, config_path, top_n=5):
                     ])
                 writer.writerow([
                     epoch,
+                    iteration,
                     time.time(),
                     metrics.get("phoenix_CER", 0.0),
                     metrics.get("phoenix_WER", 0.0),
@@ -108,7 +115,7 @@ def evaluate_and_update_best(config, config_path, top_n=5):
                     metrics.get("weighted_CER", 0.0),
                     metrics.get("weighted_WER", 0.0)
                 ])
-            print(f"  Logged epoch {epoch} metrics to {epoch_metrics_path}")
+            print(f"  Logged epoch {epoch} (iteration {iteration}) metrics to {epoch_metrics_path}")
         except Exception as csv_err:
             print(f"  Error logging epoch metrics: {csv_err}", file=sys.stderr)
 
@@ -190,8 +197,10 @@ def main():
     print(f"Loading configuration from JSON: {args.config}")
     config = TrainingConfig.load_from_json(args.config)
 
-    run_staged_training(config)
-    evaluate_and_update_best(config, args.config)
+    if getattr(config, "skip_final_eval", False):
+        print("Skipping final evaluation from the training run itself as skip_final_eval is True.")
+    else:
+        evaluate_and_update_best(config, args.config)
 
 if __name__ == "__main__":
     main()

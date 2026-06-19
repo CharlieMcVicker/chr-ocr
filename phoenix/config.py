@@ -32,7 +32,7 @@ class TrainingConfig:
     })
     max_cnt_samples: Optional[int] = None
     master_pool_prefix: Optional[str] = None
-
+    skip_final_eval: bool = False
     
     # Learning rate options
     learning_rate: float = 0.0005
@@ -41,11 +41,11 @@ class TrainingConfig:
     lr_decay_epochs: int = 4
     
     # Augmentation probabilities
-    blur_prob: float = 0.5
-    shadow_prob: float = 0.4
-    distortion_prob: float = 0.45
-    dropout_prob: float = 0.4
-    bleedthrough_prob: float = 0.25
+    blur_prob: float = 0.1
+    shadow_prob: float = 0.1
+    distortion_prob: float = 0.4
+    dropout_prob: float = 0.1
+    bleedthrough_prob: float = 0.1
     distortion_limit: float = 0.05
     page_curl_prob: float = 0.0
     page_curl_direction: str = "random"

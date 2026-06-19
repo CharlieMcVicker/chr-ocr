@@ -10,6 +10,7 @@ import glob
 import subprocess
 import json
 import re
+import shutil
 
 from typing import Optional
 from phoenix.config import SweepConfig, TrainingConfig
@@ -93,6 +94,14 @@ def run_meta_parameter_sweep(
         run_output_dir = f"training_data/staged_tuning/{exp_id}_output"
         run_temp_epoch_dir = f"training_data/staged_tuning/{exp_id}_temp_epoch"
         
+        # Clean up existing run directories to start completely fresh (and delete old logs, metrics, checkpoints)
+        if os.path.exists(run_output_dir):
+            print(f"Cleaning existing run output directory: {run_output_dir}")
+            shutil.rmtree(run_output_dir)
+        if os.path.exists(run_temp_epoch_dir):
+            print(f"Cleaning existing run temp epoch directory: {run_temp_epoch_dir}")
+            shutil.rmtree(run_temp_epoch_dir)
+        
         # Override paths to run in isolation
         exp_config.train_output_dir = run_output_dir
         exp_config.output_dir = run_temp_epoch_dir
@@ -104,6 +113,9 @@ def run_meta_parameter_sweep(
             exp_config.old_traineddata = "training_data/dataset/model/chr.traineddata"
         if master_pool_prefix:
             exp_config.master_pool_prefix = master_pool_prefix
+        
+        # Skip final evaluation during sweep as the sweeper itself coordinates it
+        exp_config.skip_final_eval = True
             
         os.makedirs(run_output_dir, exist_ok=True)
         config_path = os.path.join(run_output_dir, "config.json")
@@ -173,6 +185,51 @@ def run_meta_parameter_sweep(
                                 "checkpoint": checkpoint
                             }
                             all_results.append(res_item)
+                            
+                            # Log metrics to CSV on disk
+                            import csv
+                            import time
+                            iteration = 0
+                            nums = re.findall(r"\d+", os.path.basename(checkpoint))
+                            if nums:
+                                max_iter = int(nums[-1])
+                                if len(nums) >= 2:
+                                    iteration = int(nums[-2])
+                                else:
+                                    iteration = max_iter
+                            
+                            epoch_metrics_path = os.path.join(exp_config.train_output_dir, "epoch_metrics.csv")
+                            file_exists = os.path.exists(epoch_metrics_path)
+                            try:
+                                with open(epoch_metrics_path, "a", newline="", encoding="utf-8") as csv_f:
+                                    writer = csv.writer(csv_f)
+                                    if not file_exists:
+                                        writer.writerow([
+                                            "epoch",
+                                            "iteration",
+                                            "wall_time",
+                                            "phoenix_CER",
+                                            "phoenix_WER",
+                                            "cnt_CER",
+                                            "cnt_WER",
+                                            "weighted_CER",
+                                            "weighted_WER"
+                                        ])
+                                    writer.writerow([
+                                        epoch,
+                                        iteration,
+                                        time.time(),
+                                        metrics.get("phoenix_CER", 0.0),
+                                        metrics.get("phoenix_WER", 0.0),
+                                        metrics.get("cnt_CER", 0.0),
+                                        metrics.get("cnt_WER", 0.0),
+                                        metrics.get("weighted_CER", 0.0),
+                                        metrics.get("weighted_WER", 0.0)
+                                    ])
+                                print(f"  Logged sweep epoch {epoch} (iteration {iteration}) metrics to {epoch_metrics_path}")
+                            except Exception as csv_err:
+                                print(f"  Error logging sweep epoch metrics: {csv_err}", file=sys.stderr)
+                                
                             print(f"Epoch {epoch} -> Phoenix CER: {metrics.get('phoenix_CER') or 0.0:.2f}%, CNT CER: {metrics.get('cnt_CER') or 0.0:.2f}%, Weighted CER: {metrics.get('weighted_CER') or 0.0:.2f}%")
                         else:
                             print(f"Error: Evaluation produced no metrics for epoch {epoch}.")
