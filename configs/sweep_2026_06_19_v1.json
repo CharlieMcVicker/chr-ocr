@@ -1,0 +1,77 @@
+{
+  "base": {
+    "config": {
+      "total_epochs": 18,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 7,
+      "error_rate": 0.05,
+      "use_dynamic_cnt": true,
+      "cnt_fraction": 0.1,
+      "mixture_ratio": 0.3,
+      "learning_rate": 0.002,
+      "lr_schedule": "step",
+      "lr_decay_rate": 0.5,
+      "lr_decay_epochs": 3,
+      "blur_prob": 0.4,
+      "shadow_prob": 0.3,
+      "distortion_prob": 0.4,
+      "dropout_prob": 0.3,
+      "bleedthrough_prob": 0.25,
+      "cnt_noise": {
+        "blur": {
+          "prob": 0.7,
+          "limit_min": 3,
+          "limit_max": 5
+        },
+        "shadow": {
+          "prob": 0.7,
+          "dimension": 6
+        },
+        "distortion": {
+          "prob": 0.8,
+          "limit": 0.25
+        },
+        "dropout": {
+          "prob": 0.5,
+          "holes_min": 1,
+          "holes_max": 4,
+          "size_min": 4,
+          "size_max": 10
+        }
+      }
+    },
+    "eval_epochs": [12, 14, 16, 18]
+  },
+  "experiments": [
+    {
+      "id": "2026_06_19_v1_001",
+      "config": {
+        "cnt_noise": {
+          "bleedthrough": {
+            "prob": 0.8
+          },
+          "blur": {
+            "prob": 0.7,
+            "limit_min": 3,
+            "limit_max": 5
+          },
+          "shadow": {
+            "prob": 0.7,
+            "dimension": 6
+          },
+          "distortion": {
+            "prob": 1.0,
+            "limit": 0.35
+          },
+          "dropout": {
+            "prob": 0.5,
+            "holes_min": 3,
+            "holes_max": 8,
+            "size_min": 4,
+            "size_max": 10
+          }
+        }
+      }
+    }
+  ]
+}
