@@ -1,0 +1,124 @@
+{
+  "base": {
+    "config": {
+      "total_epochs": 12,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 3,
+      "error_rate": 0.05,
+      "train_manifest": "training_data/manifest_w_lang.json",
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "max_cnt_samples": 1500,
+      "learning_rate": 0.002,
+      "lr_schedule": "step",
+      "lr_decay_rate": 0.6,
+      "lr_decay_epochs": 3,
+      "blur_prob": 0.1,
+      "shadow_prob": 0.1,
+      "distortion_prob": 0.4,
+      "dropout_prob": 0.1,
+      "bleedthrough_prob": 0.1,
+      "cnt_noise": {
+        "blur": {
+          "prob": 0.7,
+          "limit_min": 3,
+          "limit_max": 5
+        },
+        "shadow": {
+          "prob": 0.7,
+          "dimension": 6
+        },
+        "distortion": {
+          "prob": 0.8,
+          "limit": 0.25,
+          "elastic_alpha": 1.0,
+          "elastic_sigma": 15.0,
+          "use_multi_scale": true
+        },
+        "dropout": {
+          "prob": 0.5,
+          "holes_min": 1,
+          "holes_max": 4,
+          "size_min": 4,
+          "size_max": 10
+        },
+        "micro_dropout": {
+          "prob": 0.4,
+          "holes_min": 40,
+          "holes_max": 90,
+          "size_max": 3
+        },
+        "smudge": {
+          "prob": 0.4,
+          "intensity": 0.5
+        },
+        "page_curl": {
+          "prob": 0.4,
+          "bending_factor": 0.08
+        }
+      },
+      "mixture_schedule": {
+        "enabled": true,
+        "start_ratio": 0.3,
+        "end_ratio": 0.99,
+        "start_epoch": 1,
+        "end_epoch": 5
+      }
+    },
+    "eval_iterations": [800, 1600, 2400]
+  },
+  "experiments": [
+    {
+      "id": "base_optimal_replicate",
+      "config": {
+        "description": "Baseline replicate of the optimal 5.96% Phoenix CER run.",
+        "variations_per_image": 3,
+        "learning_rate": 0.002
+      }
+    },
+    {
+      "id": "high_variations_5",
+      "config": {
+        "description": "Increase variations per image from 3 to 5 to check if larger augmented dataset size aids generalization.",
+        "variations_per_image": 5
+      }
+    },
+    {
+      "id": "reduced_phoenix_noise",
+      "config": {
+        "description": "Test reduced noise probabilities on Phoenix scans to see if they are too blurry/distorted.",
+        "blur_prob": 0.05,
+        "shadow_prob": 0.05,
+        "distortion_prob": 0.2,
+        "dropout_prob": 0.05,
+        "bleedthrough_prob": 0.05
+      }
+    },
+    {
+      "id": "increased_phoenix_noise",
+      "config": {
+        "description": "Test increased noise probabilities on Phoenix scans to force heavier regularization.",
+        "blur_prob": 0.2,
+        "shadow_prob": 0.2,
+        "distortion_prob": 0.5,
+        "dropout_prob": 0.2,
+        "bleedthrough_prob": 0.2
+      }
+    },
+    {
+      "id": "learning_rate_high_0.003",
+      "config": {
+        "description": "Increase base learning rate to 0.003 for faster adaptation.",
+        "learning_rate": 0.003
+      }
+    },
+    {
+      "id": "learning_rate_low_0.001",
+      "config": {
+        "description": "Decrease base learning rate to 0.001 to evaluate more conservative fine-tuning steps.",
+        "learning_rate": 0.001
+      }
+    }
+  ]
+}
