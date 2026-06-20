@@ -27,11 +27,10 @@ def get_latest_checkpoint(checkpoint_dir):
     checkpoints.sort(key=os.path.getmtime)
     return checkpoints[-1]
 
-def get_checkpoint_for_epoch(checkpoint_dir, epoch, iterations_per_epoch):
+def get_checkpoint_for_iteration(checkpoint_dir, target_iter):
     """
-    Returns the checkpoint corresponding to the target epoch/iteration, or the closest one.
+    Returns the checkpoint corresponding to the target iteration, or the closest one.
     """
-    target_iter = epoch * iterations_per_epoch
     checkpoints = glob.glob(os.path.join(checkpoint_dir, f"*_{target_iter}.checkpoint"))
     if checkpoints:
         return checkpoints[0]
@@ -47,7 +46,7 @@ def get_checkpoint_for_epoch(checkpoint_dir, epoch, iterations_per_epoch):
         # Checkpoint filenames look like: chr_<error>_<iteration>_<maxiterations>.checkpoint
         match = re.search(r"_(\d+)_(\d+)\.checkpoint$", cp)
         if match:
-            cp_iter = int(match.group(2))
+            cp_iter = int(match.group(1))
             diff = abs(cp_iter - target_iter)
             if diff < min_diff:
                 min_diff = diff
@@ -129,19 +128,19 @@ def run_meta_parameter_sweep(
         
         if dry_run:
             print(f"[DRY-RUN] Would run command: {' '.join(cmd)}")
-            for epoch in exp.eval_epochs:
+            for target_iter in exp.eval_iterations:
                 all_results.append({
-                    "id": f"{exp_id}_epoch_{epoch}",
+                    "id": f"{exp_id}_iter_{target_iter}",
                     "parent_id": exp_id,
-                    "epochs": epoch,
+                    "iterations": target_iter,
                     "mixture_ratio": exp_config.mixture_ratio,
-                    "phoenix_CER": 10.0 - (0.2 * i) - (0.05 * epoch),
-                    "phoenix_WER": 30.0 - (0.5 * i) - (0.1 * epoch),
-                    "cnt_CER": 15.0 - (0.3 * i) - (0.07 * epoch),
-                    "cnt_WER": 40.0 - (0.8 * i) - (0.2 * epoch),
-                    "weighted_CER": 12.0 - (0.25 * i) - (0.06 * epoch),
-                    "weighted_WER": 35.0 - (0.6 * i) - (0.15 * epoch),
-                    "checkpoint": f"{run_output_dir}/dummy_epoch_{epoch}.checkpoint"
+                    "phoenix_CER": 10.0 - (0.2 * i) - (0.005 * target_iter),
+                    "phoenix_WER": 30.0 - (0.5 * i) - (0.01 * target_iter),
+                    "cnt_CER": 15.0 - (0.3 * i) - (0.007 * target_iter),
+                    "cnt_WER": 40.0 - (0.8 * i) - (0.02 * target_iter),
+                    "weighted_CER": 12.0 - (0.25 * i) - (0.006 * target_iter),
+                    "weighted_WER": 35.0 - (0.6 * i) - (0.015 * target_iter),
+                    "checkpoint": f"{run_output_dir}/dummy_iter_{target_iter}.checkpoint"
                 })
             continue
             
@@ -149,16 +148,16 @@ def run_meta_parameter_sweep(
         try:
             subprocess.run(cmd, check=True)
             
-            # Evaluate all requested sub-epochs
-            for epoch in exp.eval_epochs:
-                print(f"Locating checkpoint for epoch {epoch} (target iterations: {epoch * exp_config.iterations_per_epoch})...")
-                checkpoint = get_checkpoint_for_epoch(run_output_dir, epoch, exp_config.iterations_per_epoch)
+            # Evaluate all requested sub-iterations
+            for target_iter in exp.eval_iterations:
+                print(f"Locating checkpoint for target iterations: {target_iter}...")
+                checkpoint = get_checkpoint_for_iteration(run_output_dir, target_iter)
                 
                 if checkpoint:
                     print(f"Evaluating checkpoint: {checkpoint}")
-                    # Print a clear, prominent header identifying the epoch/checkpoint being evaluated
+                    # Print a clear, prominent header identifying the checkpoint being evaluated
                     print(f"\n==================================================")
-                    print(f" EVALUATING CHECKPOINT FOR EPOCH {epoch}")
+                    print(f" EVALUATING CHECKPOINT FOR ITERATION {target_iter}")
                     print(f" Checkpoint: {os.path.basename(checkpoint)}")
                     print(f"==================================================")
                     
@@ -172,9 +171,9 @@ def run_meta_parameter_sweep(
                         )
                         if metrics:
                             res_item = {
-                                "id": f"{exp_id}_epoch_{epoch}",
+                                "id": f"{exp_id}_iter_{target_iter}",
                                 "parent_id": exp_id,
-                                "epochs": epoch,
+                                "iterations": target_iter,
                                 "mixture_ratio": exp_config.mixture_ratio,
                                 "phoenix_CER": metrics.get("phoenix_CER"),
                                 "phoenix_WER": metrics.get("phoenix_WER"),
@@ -198,27 +197,31 @@ def run_meta_parameter_sweep(
                                 else:
                                     iteration = max_iter
                             
-                            epoch_metrics_path = os.path.join(exp_config.train_output_dir, "epoch_metrics.csv")
-                            file_exists = os.path.exists(epoch_metrics_path)
+                            metrics_path = os.path.join(exp_config.train_output_dir, "metrics.csv")
+                            file_exists = os.path.exists(metrics_path)
                             try:
-                                with open(epoch_metrics_path, "a", newline="", encoding="utf-8") as csv_f:
+                                with open(metrics_path, "a", newline="", encoding="utf-8") as csv_f:
                                     writer = csv.writer(csv_f)
                                     if not file_exists:
                                         writer.writerow([
-                                            "epoch",
                                             "iteration",
                                             "wall_time",
-                                            "phoenix_CER",
-                                            "phoenix_WER",
-                                            "cnt_CER",
-                                            "cnt_WER",
-                                            "weighted_CER",
-                                            "weighted_WER"
+                                            "train_loss",
+                                            "delta",
+                                            "bcer_train",
+                                            "bwer_train",
+                                            "skip_ratio",
+                                            "phoenix_cer",
+                                            "phoenix_wer",
+                                            "cnt_cer",
+                                            "cnt_wer",
+                                            "weighted_cer",
+                                            "weighted_wer"
                                         ])
                                     writer.writerow([
-                                        epoch,
                                         iteration,
                                         time.time(),
+                                        "", "", "", "", "",  # Empty fields for training metrics
                                         metrics.get("phoenix_CER", 0.0),
                                         metrics.get("phoenix_WER", 0.0),
                                         metrics.get("cnt_CER", 0.0),
@@ -226,20 +229,20 @@ def run_meta_parameter_sweep(
                                         metrics.get("weighted_CER", 0.0),
                                         metrics.get("weighted_WER", 0.0)
                                     ])
-                                print(f"  Logged sweep epoch {epoch} (iteration {iteration}) metrics to {epoch_metrics_path}")
+                                print(f"  Logged sweep iteration {iteration} metrics to {metrics_path}")
                             except Exception as csv_err:
-                                print(f"  Error logging sweep epoch metrics: {csv_err}", file=sys.stderr)
+                                print(f"  Error logging sweep evaluation metrics: {csv_err}", file=sys.stderr)
                                 
-                            print(f"Epoch {epoch} -> Phoenix CER: {metrics.get('phoenix_CER') or 0.0:.2f}%, CNT CER: {metrics.get('cnt_CER') or 0.0:.2f}%, Weighted CER: {metrics.get('weighted_CER') or 0.0:.2f}%")
+                            print(f"Iteration {iteration} -> Phoenix CER: {metrics.get('phoenix_CER') or 0.0:.2f}%, CNT CER: {metrics.get('cnt_CER') or 0.0:.2f}%, Weighted CER: {metrics.get('weighted_CER') or 0.0:.2f}%")
                         else:
-                            print(f"Error: Evaluation produced no metrics for epoch {epoch}.")
+                            print(f"Error: Evaluation produced no metrics for iteration {target_iter}.")
                         
                         if os.path.exists(temp_traineddata):
                             os.remove(temp_traineddata)
                     else:
-                        print(f"Error: Failed to compile checkpoint for epoch {epoch}.")
+                        print(f"Error: Failed to compile checkpoint for iteration {target_iter}.")
                 else:
-                    print(f"Error: No checkpoint found for epoch {epoch}.")
+                    print(f"Error: No checkpoint found for iteration {target_iter}.")
                     
         except Exception as e:
             print(f"Error executing experiment {exp_id}: {e}")
@@ -259,7 +262,7 @@ def run_meta_parameter_sweep(
         print("\n=== Best Mixture Ratio Sweep Run ===")
         print(f"Run ID: {best_run['id']}")
         print(f"Mixture ratio: {best_run['mixture_ratio']}")
-        print(f"Epoch: {best_run['epochs']}")
+        print(f"Iteration: {best_run['iterations']}")
         print(f"Phoenix CER: {best_run['phoenix_CER']}%")
         print(f"CNT CER: {best_run['cnt_CER']}%")
         print(f"Weighted CER: {best_run['weighted_CER']}%")
@@ -268,7 +271,8 @@ def run_meta_parameter_sweep(
         best_exp = next((e for e in experiments if e.id == best_run['parent_id']), None)
         if best_exp:
             best_config = best_exp.config
-            best_config.total_epochs = best_run['epochs']
+            if getattr(best_config, "iterations_per_epoch", 0) > 0:
+                best_config.total_epochs = round(best_run['iterations'] / best_config.iterations_per_epoch)
             
             # Make sure target dir for best config exists
             os.makedirs(os.path.dirname(os.path.abspath(best_config_path)), exist_ok=True)

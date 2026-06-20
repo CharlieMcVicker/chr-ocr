@@ -1,0 +1,133 @@
+{
+  "base": {
+    "config": {
+      "total_epochs": 12,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 3,
+      "error_rate": 0.05,
+      "train_manifest": "training_data/manifest_w_lang.json",
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "max_cnt_samples": 1500,
+      "learning_rate": 0.002,
+      "lr_schedule": "step",
+      "lr_decay_rate": 0.6,
+      "lr_decay_epochs": 3,
+      "blur_prob": 0.1,
+      "shadow_prob": 0.1,
+      "distortion_prob": 0.4,
+      "dropout_prob": 0.1,
+      "bleedthrough_prob": 0.1,
+      "cnt_noise": {
+        "blur": {
+          "prob": 0.7,
+          "limit_min": 3,
+          "limit_max": 5
+        },
+        "shadow": {
+          "prob": 0.7,
+          "dimension": 6
+        },
+        "distortion": {
+          "prob": 0.8,
+          "limit": 0.25,
+          "elastic_alpha": 1.0,
+          "elastic_sigma": 15.0,
+          "use_multi_scale": true
+        },
+        "dropout": {
+          "prob": 0.5,
+          "holes_min": 1,
+          "holes_max": 4,
+          "size_min": 4,
+          "size_max": 10
+        },
+        "micro_dropout": {
+          "prob": 0.4,
+          "holes_min": 40,
+          "holes_max": 90,
+          "size_max": 3
+        },
+        "smudge": {
+          "prob": 0.4,
+          "intensity": 0.5
+        },
+        "page_curl": {
+          "prob": 0.4,
+          "bending_factor": 0.08
+        }
+      },
+      "mixture_schedule": {
+        "enabled": true,
+        "start_ratio": 0.3,
+        "end_ratio": 0.95,
+        "start_epoch": 1,
+        "end_epoch": 8
+      }
+    },
+    "eval_iterations": [800, 1600, 2400]
+  },
+  "experiments": [
+    {
+      "id": "decay_finish_epoch_5_ratio_0.97",
+      "config": {
+        "description": "End decay early at epoch 5 (1000 iterations), maintaining a tiny 3% CNT regularizing noise.",
+        "mixture_schedule": {
+          "end_epoch": 5,
+          "end_ratio": 0.97
+        }
+      }
+    },
+    {
+      "id": "decay_finish_epoch_5_ratio_0.99",
+      "config": {
+        "description": "End decay early at epoch 5 (1000 iterations), maintaining a tiny 1% CNT regularizing noise.",
+        "mixture_schedule": {
+          "end_epoch": 5,
+          "end_ratio": 0.99
+        }
+      }
+    },
+    {
+      "id": "decay_finish_epoch_6_ratio_0.97",
+      "config": {
+        "description": "End decay at epoch 6 (1200 iterations) - our peak epoch, maintaining a tiny 3% CNT regularizing noise.",
+        "mixture_schedule": {
+          "end_epoch": 6,
+          "end_ratio": 0.97
+        }
+      }
+    },
+    {
+      "id": "decay_finish_epoch_6_ratio_0.99",
+      "config": {
+        "description": "End decay at epoch 6 (1200 iterations) - our peak epoch, maintaining a tiny 1% CNT regularizing noise.",
+        "mixture_schedule": {
+          "end_epoch": 6,
+          "end_ratio": 0.99
+        }
+      }
+    },
+    {
+      "id": "decay_finish_epoch_7_ratio_0.97",
+      "config": {
+        "description": "End decay at epoch 7 (1400 iterations), maintaining a tiny 3% CNT regularizing noise.",
+        "mixture_schedule": {
+          "end_epoch": 7,
+          "end_ratio": 0.97
+        }
+      }
+    },
+    {
+      "id": "decay_finish_epoch_7_ratio_0.99",
+      "config": {
+        "description": "End decay at epoch 7 (1400 iterations), maintaining a tiny 1% CNT regularizing noise.",
+        "mixture_schedule": {
+          "end_epoch": 7,
+          "end_ratio": 0.99
+        }
+      }
+    }
+  ]
+}

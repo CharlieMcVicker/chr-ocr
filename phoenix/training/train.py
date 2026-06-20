@@ -272,13 +272,14 @@ def run_staged_training(config: TrainingConfig):
                     "--cnt-dropout-holes-max", str(config.cnt_noise["dropout"]["holes_max"]),
                     "--cnt-dropout-size-min", str(config.cnt_noise["dropout"]["size_min"]),
                     "--cnt-dropout-size-max", str(config.cnt_noise["dropout"]["size_max"]),
-                    "--cnt-micro-dropout-prob", str(config.cnt_noise.get("micro_dropout", {"prob": 0.4})["prob"]),
-                    "--cnt-micro-dropout-holes-min", str(config.cnt_noise.get("micro_dropout", {"holes_min": 20})["holes_min"]),
-                    "--cnt-micro-dropout-holes-max", str(config.cnt_noise.get("micro_dropout", {"holes_max": 60})["holes_max"]),
-                    "--cnt-micro-dropout-size-min", str(config.cnt_noise.get("micro_dropout", {"size_min": 1})["size_min"]),
-                    "--cnt-micro-dropout-size-max", str(config.cnt_noise.get("micro_dropout", {"size_max": 2})["size_max"]),
-                    "--cnt-smudge-prob", str(config.cnt_noise.get("smudge", {"prob": 0.4})["prob"]),
-                    "--cnt-smudge-intensity", str(config.cnt_noise.get("smudge", {"intensity": 0.3})["intensity"]),
+                    "--cnt-micro-dropout-prob", str(config.cnt_noise.get("micro_dropout", {}).get("prob", 0.4)),
+                    "--cnt-micro-dropout-holes-min", str(config.cnt_noise.get("micro_dropout", {}).get("holes_min", 20)),
+                    "--cnt-micro-dropout-holes-max", str(config.cnt_noise.get("micro_dropout", {}).get("holes_max", 60)),
+                    "--cnt-micro-dropout-size-min", str(config.cnt_noise.get("micro_dropout", {}).get("size_min", 1)),
+                    "--cnt-micro-dropout-size-max", str(config.cnt_noise.get("micro_dropout", {}).get("size_max", 2)),
+                    "--cnt-smudge-prob", str(config.cnt_noise.get("smudge", {}).get("prob", 0.4)),
+                    "--cnt-smudge-intensity", str(config.cnt_noise.get("smudge", {}).get("intensity", 0.3)),
+
                     "--cnt-page-curl-prob", str(config.cnt_noise.get("page_curl", {}).get("prob", 0.0)),
                     "--cnt-page-curl-direction", str(config.cnt_noise.get("page_curl", {}).get("direction", "random")),
                     "--cnt-page-curl-bending-factor", str(config.cnt_noise.get("page_curl", {}).get("bending_factor", 0.15)),
@@ -637,8 +638,8 @@ def run_staged_training(config: TrainingConfig):
             import csv
             import time
             
-            iteration_metrics_path = os.path.join(config.train_output_dir, "iteration_metrics.csv")
-            file_exists = os.path.exists(iteration_metrics_path)
+            metrics_path = os.path.join(config.train_output_dir, "metrics.csv")
+            file_exists = os.path.exists(metrics_path)
             
             parsed_rows = []
             if os.path.exists(log_file_path):
@@ -655,7 +656,7 @@ def run_staged_training(config: TrainingConfig):
                                 def get_float(pattern, text):
                                     m = re.search(pattern, text)
                                     return float(m.group(1)) if m else 0.0
-
+ 
                                 mean_rms = get_float(r"mean rms=([\d.-]+)%", line)
                                 delta = get_float(r"delta=([\d.-]+)%", line)
                                 bcer_train = get_float(r"BCER train=([\d.-]+)%", line)
@@ -663,34 +664,39 @@ def run_staged_training(config: TrainingConfig):
                                 skip_ratio = get_float(r"skip ratio=([\d.-]+)%", line)
                                 
                                 parsed_rows.append([
-                                    epoch,
                                     iteration,
                                     time.time(),
                                     mean_rms,
                                     delta,
                                     bcer_train,
                                     bwer_train,
-                                    skip_ratio
+                                    skip_ratio,
+                                    "", "", "", "", "", ""
                                 ])
                             except Exception as parse_err:
                                 print(f"Error parsing training log line: {parse_err}", file=sys.stderr)
             
             if parsed_rows:
-                with open(iteration_metrics_path, "a", newline="", encoding="utf-8") as csv_f:
+                with open(metrics_path, "a", newline="", encoding="utf-8") as csv_f:
                     writer = csv.writer(csv_f)
                     if not file_exists:
                         writer.writerow([
-                            "epoch",
                             "iteration",
                             "wall_time",
                             "train_loss",
                             "delta",
                             "bcer_train",
                             "bwer_train",
-                            "skip_ratio"
+                            "skip_ratio",
+                            "phoenix_cer",
+                            "phoenix_wer",
+                            "cnt_cer",
+                            "cnt_wer",
+                            "weighted_cer",
+                            "weighted_wer"
                         ])
                     writer.writerows(parsed_rows)
-                print(f"Logged {len(parsed_rows)} iteration metrics to {iteration_metrics_path}")
+                print(f"Logged {len(parsed_rows)} iteration metrics to {metrics_path}")
         except Exception as csv_err:
             print(f"Error logging training metrics to CSV: {csv_err}", file=sys.stderr)
 

@@ -1,0 +1,135 @@
+{
+  "base": {
+    "config": {
+      "total_epochs": 12,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 3,
+      "error_rate": 0.05,
+      "train_manifest": "training_data/manifest_w_lang.json",
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "max_cnt_samples": 1500,
+      "learning_rate": 0.002,
+      "lr_schedule": "step",
+      "lr_decay_rate": 0.6,
+      "lr_decay_epochs": 3,
+      "blur_prob": 0.1,
+      "shadow_prob": 0.1,
+      "distortion_prob": 0.4,
+      "dropout_prob": 0.1,
+      "bleedthrough_prob": 0.1,
+      "cnt_noise": {
+        "blur": {
+          "prob": 0.7,
+          "limit_min": 3,
+          "limit_max": 5
+        },
+        "shadow": {
+          "prob": 0.7,
+          "dimension": 6
+        },
+        "distortion": {
+          "prob": 0.8,
+          "limit": 0.25,
+          "elastic_alpha": 1.0,
+          "elastic_sigma": 15.0,
+          "use_multi_scale": true
+        },
+        "dropout": {
+          "prob": 0.5,
+          "holes_min": 1,
+          "holes_max": 4,
+          "size_min": 4,
+          "size_max": 10
+        },
+        "micro_dropout": {
+          "prob": 0.4,
+          "holes_min": 40,
+          "holes_max": 90,
+          "size_max": 3
+        },
+        "smudge": {
+          "prob": 0.4,
+          "intensity": 0.5
+        },
+        "page_curl": {
+          "prob": 0.4,
+          "bending_factor": 0.08
+        }
+      },
+      "mixture_schedule": {
+        "enabled": true,
+        "start_ratio": 0.3,
+        "end_ratio": 0.95,
+        "start_epoch": 1,
+        "end_epoch": 8
+      }
+    },
+    "eval_iterations": [800, 1600, 2400]
+  },
+  "experiments": [
+    {
+      "id": "decay_end_ratio_0.90",
+      "config": {
+        "description": "Sweeps a more conservative mixture decay, ending at 0.90 Phoenix ratio by epoch 8, maintaining a 10% CNT regularizing signal through the end.",
+        "mixture_schedule": {
+          "end_ratio": 0.90
+        }
+      }
+    },
+    {
+      "id": "decay_end_ratio_0.98",
+      "config": {
+        "description": "Sweeps a very high final Phoenix ratio (0.98) by epoch 8, leaving only 2% CNT background data to maximize pure-target scan tuning.",
+        "mixture_schedule": {
+          "end_ratio": 0.98
+        }
+      }
+    },
+    {
+      "id": "decay_end_ratio_1.00",
+      "config": {
+        "description": "Decays completely to 1.0 (pure Phoenix target scans) by epoch 8, allowing the last 4 epochs to execute pure, zero-auxiliary finetuning.",
+        "mixture_schedule": {
+          "end_ratio": 1.00
+        }
+      }
+    },
+    {
+      "id": "decay_finish_epoch_6",
+      "config": {
+        "description": "Aggressive slope: reaches the 0.95 Phoenix optimum earlier by epoch 6, testing if a longer period of pure target finetuning (epochs 7-12) improves convergence.",
+        "mixture_schedule": {
+          "end_epoch": 6
+        }
+      }
+    },
+    {
+      "id": "decay_finish_epoch_10",
+      "config": {
+        "description": "Gradual slope: stretches mixture decay to reach the 0.95 optimum at epoch 10, leaving only the final 2 epochs for pure target tuning.",
+        "mixture_schedule": {
+          "end_epoch": 10
+        }
+      }
+    },
+    {
+      "id": "phoenix_zero_destructive_noise",
+      "config": {
+        "description": "Zeroes out all destructive noise (blur, shadow, coarse dropout, bleedthrough) on Phoenix target scans, leaving only spatial elastic warping (0.4) as a regularizer.",
+        "blur_prob": 0.0,
+        "shadow_prob": 0.0,
+        "dropout_prob": 0.0,
+        "bleedthrough_prob": 0.0
+      }
+    },
+    {
+      "id": "phoenix_elastic_prob_0.20",
+      "config": {
+        "description": "Reduces Phoenix spatial elastic warping probability from 0.40 to 0.20 to evaluate if milder warping reduces target-level OCR character distortion.",
+        "distortion_prob": 0.2
+      }
+    }
+  ]
+}

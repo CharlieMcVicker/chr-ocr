@@ -55,16 +55,18 @@ def discover_runs(base_dir="training_data"):
         return runs
     
     for root, dirs, files in os.walk(base_dir):
+        has_metrics = "metrics.csv" in files
         has_iter = "iteration_metrics.csv" in files
-        has_epoch = "epoch_metrics.csv" in files
-        if has_iter or has_epoch:
+        has_eval = "evaluation_metrics.csv" in files
+        if has_metrics or has_iter or has_eval:
             rel_path = os.path.relpath(root, base_dir)
             if rel_path == ".":
                 rel_path = "root_run"
             runs[rel_path] = {
                 "dir": root,
+                "metrics": os.path.join(root, "metrics.csv") if has_metrics else None,
                 "iteration_metrics": os.path.join(root, "iteration_metrics.csv") if has_iter else None,
-                "epoch_metrics": os.path.join(root, "epoch_metrics.csv") if has_epoch else None
+                "evaluation_metrics": os.path.join(root, "evaluation_metrics.csv") if has_eval else None
             }
     return runs
 
@@ -76,10 +78,10 @@ def generate_demo_data():
     iterations = np.arange(10, 510, 10)
     train_loss = 0.5 * np.exp(-iterations / 150) + 0.05 * np.random.randn(len(iterations)) + 0.05
     train_loss = np.clip(train_loss, 0.01, None)
-    bcer_train = 0.8 * np.exp(-iterations / 120) + 0.04 * np.random.randn(len(iterations)) + 0.02
-    bcer_train = np.clip(bcer_train, 0.0, 1.0)
-    bwer_train = 0.9 * np.exp(-iterations / 140) + 0.05 * np.random.randn(len(iterations)) + 0.05
-    bwer_train = np.clip(bwer_train, 0.0, 1.0)
+    bcer_train = (0.8 * np.exp(-iterations / 120) + 0.04 * np.random.randn(len(iterations)) + 0.02) * 100
+    bcer_train = np.clip(bcer_train, 0.0, 100.0)
+    bwer_train = (0.9 * np.exp(-iterations / 140) + 0.05 * np.random.randn(len(iterations)) + 0.05) * 100
+    bwer_train = np.clip(bwer_train, 0.0, 100.0)
     
     iter_df = pd.DataFrame({
         "iteration": iterations,
@@ -91,22 +93,23 @@ def generate_demo_data():
         "skip_ratio": np.zeros(len(iterations))
     })
     
-    # 2. Epoch metrics (e.g. 10 epochs)
-    epochs = np.arange(1, 11)
-    phoenix_cer = 0.45 * np.exp(-epochs / 3) + 0.02 * np.random.randn(len(epochs)) + 0.01
-    phoenix_cer = np.clip(phoenix_cer, 0.005, 1.0)
-    cnt_cer = 0.55 * np.exp(-epochs / 2.5) + 0.02 * np.random.randn(len(epochs)) + 0.02
-    cnt_cer = np.clip(cnt_cer, 0.01, 1.0)
+    # 2. Evaluation metrics (e.g. checkpoints at intervals)
+    eval_iters = np.arange(100, 1100, 100)
+    phoenix_cer = (0.45 * np.exp(-eval_iters / 300) + 0.02 * np.random.randn(len(eval_iters)) + 0.01) * 100
+    phoenix_cer = np.clip(phoenix_cer, 0.5, 100.0)
+    cnt_cer = (0.55 * np.exp(-eval_iters / 250) + 0.02 * np.random.randn(len(eval_iters)) + 0.02) * 100
+    cnt_cer = np.clip(cnt_cer, 1.0, 100.0)
     weighted_cer = phoenix_cer * 0.7 + cnt_cer * 0.3
     
-    epoch_df = pd.DataFrame({
-        "epoch": epochs,
+    eval_df = pd.DataFrame({
+        "iteration": eval_iters,
         "phoenix_CER": phoenix_cer,
         "cnt_CER": cnt_cer,
         "weighted_CER": weighted_cer
     })
     
-    return iter_df, epoch_df
+    return iter_df, eval_df
+
 
 # Title (stays static)
 st.title("📊 Cherokee Phoenix OCR Training Monitor")
@@ -142,55 +145,86 @@ refresh_interval = st.sidebar.slider("Refresh Interval (seconds)", min_value=5, 
 def render_dashboard_content(run_name, is_demo):
     # Load Data based on selection
     if is_demo:
-        iter_df, epoch_df = generate_demo_data()
-        status_text = "🟢 Active (Demo Simulation)"
+        iter_df, eval_df = generate_demo_data()
+        status_text = "Running Demo Mode"
     else:
         run_info = runs[run_name]
-        status_text = f"🟢 Connected to: `{run_name}`"
         
-        # Load iteration metrics
-        if run_info["iteration_metrics"] and os.path.exists(run_info["iteration_metrics"]):
+        # Infer status
+        status_text = "Completed / Idle"
+        if os.path.exists(run_info["dir"]):
+            logs = [f for f in os.listdir(run_info["dir"]) if f.endswith(".log")]
+            if logs:
+                status_text = f"Active ({len(logs)} log files)"
+                
+        # Load metrics (consolidated first, legacy files as fallback)
+        iter_df = pd.DataFrame()
+        eval_df = pd.DataFrame()
+        has_consolidated = False
+        
+        if run_info.get("metrics") and os.path.exists(run_info["metrics"]):
             try:
-                iter_df = pd.read_csv(run_info["iteration_metrics"])
-                # Normalize common columns
-                if "mean_rms" in iter_df.columns and "train_loss" not in iter_df.columns:
-                    iter_df["train_loss"] = iter_df["mean_rms"]
-                elif "train_loss" in iter_df.columns and "mean_rms" not in iter_df.columns:
-                    iter_df["mean_rms"] = iter_df["train_loss"]
+                df = pd.read_csv(run_info["metrics"])
+                df.columns = [c.lower() for c in df.columns]
+                
+                # Split training metrics
+                train_cols = ["train_loss", "mean_rms", "delta", "bcer_train", "bwer_train", "skip_ratio"]
+                valid_train_cols = [c for c in train_cols if c in df.columns]
+                if valid_train_cols:
+                    iter_df = df.dropna(subset=valid_train_cols, how="all").copy()
+                    if "mean_rms" in iter_df.columns and "train_loss" not in iter_df.columns:
+                        iter_df["train_loss"] = iter_df["mean_rms"]
+                
+                # Split evaluation metrics
+                eval_cols = ["phoenix_cer", "phoenix_wer", "cnt_cer", "cnt_wer", "weighted_cer", "weighted_wer"]
+                valid_eval_cols = [c for c in eval_cols if c in df.columns]
+                if valid_eval_cols:
+                    eval_df = df.dropna(subset=valid_eval_cols, how="all").copy()
+                    # Normalize common casing
+                    c_map = {c.lower(): c for c in eval_df.columns}
+                    for target in ["phoenix_cer", "cnt_cer", "weighted_cer"]:
+                        if target in c_map and target not in eval_df.columns:
+                            eval_df[target] = eval_df[c_map[target]]
+                
+                has_consolidated = True
             except Exception as e:
-                st.error(f"Error loading iteration metrics: {e}")
-                iter_df = pd.DataFrame()
-        else:
-            iter_df = pd.DataFrame()
-            
-        # Load epoch metrics
-        if run_info["epoch_metrics"] and os.path.exists(run_info["epoch_metrics"]):
-            try:
-                epoch_df = pd.read_csv(run_info["epoch_metrics"])
-                # Normalize common casing
-                c_map = {c.lower(): c for c in epoch_df.columns}
-                for target in ["phoenix_cer", "cnt_cer", "weighted_cer"]:
-                    if target in c_map and target not in epoch_df.columns:
-                        epoch_df[target] = epoch_df[c_map[target]]
-            except Exception as e:
-                st.error(f"Error loading epoch metrics: {e}")
-                epoch_df = pd.DataFrame()
-        else:
-            epoch_df = pd.DataFrame()
+                st.error(f"Error loading consolidated metrics: {e}")
+
+        if not has_consolidated:
+            # Load iteration metrics fallback
+            if run_info.get("iteration_metrics") and os.path.exists(run_info["iteration_metrics"]):
+                try:
+                    iter_df = pd.read_csv(run_info["iteration_metrics"])
+                    iter_df.columns = [c.lower() for c in iter_df.columns]
+                    if "mean_rms" in iter_df.columns and "train_loss" not in iter_df.columns:
+                        iter_df["train_loss"] = iter_df["mean_rms"]
+                except Exception as e:
+                    st.error(f"Error loading legacy iteration metrics: {e}")
+                
+            # Load evaluation metrics fallback
+            if run_info.get("evaluation_metrics") and os.path.exists(run_info["evaluation_metrics"]):
+                try:
+                    eval_df = pd.read_csv(run_info["evaluation_metrics"])
+                    # Normalize common casing
+                    c_map = {c.lower(): c for c in eval_df.columns}
+                    for target in ["phoenix_cer", "cnt_cer", "weighted_cer"]:
+                        if target in c_map and target not in eval_df.columns:
+                            eval_df[target] = eval_df[c_map[target]]
+                except Exception as e:
+                    st.error(f"Error loading legacy evaluation metrics: {e}")
 
     # Quick sanity check/handling of empty files
-    if iter_df.empty and epoch_df.empty:
-        st.warning("⚠️ Selected run does not contain any valid metrics in `iteration_metrics.csv` or `epoch_metrics.csv` yet.")
+    if iter_df.empty and eval_df.empty:
+        st.warning("⚠️ Selected run does not contain any valid metrics in `metrics.csv` (or legacy files) yet.")
         st.info("Check back soon or start training to view statistics.")
         return
 
     # Compute Key Metrics for Display Cards
-    last_epoch = "N/A"
     last_iteration = "N/A"
     best_phoenix_cer = "N/A"
-    best_phoenix_epoch = "N/A"
+    best_phoenix_iter = "N/A"
     best_weighted_cer = "N/A"
-    best_weighted_epoch = "N/A"
+    best_weighted_iter = "N/A"
     current_loss = "N/A"
 
     if not iter_df.empty:
@@ -199,25 +233,22 @@ def render_dashboard_content(run_name, is_demo):
         if "train_loss" in iter_df.columns:
             current_loss = f"{iter_df['train_loss'].iloc[-1]:.4f}"
 
-    if not epoch_df.empty:
-        if "epoch" in epoch_df.columns:
-            last_epoch = int(epoch_df["epoch"].iloc[-1])
-        
-        p_cer_cols = [c for c in epoch_df.columns if c.lower() == "phoenix_cer"]
-        if p_cer_cols and "epoch" in epoch_df.columns:
+    if not eval_df.empty:
+        p_cer_cols = [c for c in eval_df.columns if c.lower() == "phoenix_cer"]
+        if p_cer_cols and "iteration" in eval_df.columns:
             col = p_cer_cols[0]
-            best_idx = epoch_df[col].idxmin()
-            best_p_val = epoch_df[col].loc[best_idx]
-            best_phoenix_cer = f"{best_p_val * 100:.2f}%"
-            best_phoenix_epoch = int(epoch_df["epoch"].loc[best_idx])
+            best_idx = eval_df[col].idxmin()
+            best_p_val = eval_df[col].loc[best_idx]
+            best_phoenix_cer = f"{best_p_val:.2f}%"
+            best_phoenix_iter = int(eval_df["iteration"].loc[best_idx])
             
-        w_cer_cols = [c for c in epoch_df.columns if c.lower() == "weighted_cer"]
-        if w_cer_cols and "epoch" in epoch_df.columns:
+        w_cer_cols = [c for c in eval_df.columns if c.lower() == "weighted_cer"]
+        if w_cer_cols and "iteration" in eval_df.columns:
             col = w_cer_cols[0]
-            best_idx = epoch_df[col].idxmin()
-            best_w_val = epoch_df[col].loc[best_idx]
-            best_weighted_cer = f"{best_w_val * 100:.2f}%"
-            best_weighted_epoch = int(epoch_df["epoch"].loc[best_idx])
+            best_idx = eval_df[col].idxmin()
+            best_w_val = eval_df[col].loc[best_idx]
+            best_weighted_cer = f"{best_w_val:.2f}%"
+            best_weighted_iter = int(eval_df["iteration"].loc[best_idx])
 
     # Render Key Metrics Cards in row
     col1, col2, col3, col4 = st.columns(4)
@@ -226,7 +257,7 @@ def render_dashboard_content(run_name, is_demo):
         st.markdown(f"""
         <div class="metric-card">
             <div class="metric-label">Status & Progress</div>
-            <div class="metric-value">Epoch {last_epoch}</div>
+            <div class="metric-value">Active</div>
             <div class="metric-sub">Iteration: {last_iteration} | {status_text}</div>
         </div>
         """, unsafe_allow_html=True)
@@ -236,7 +267,7 @@ def render_dashboard_content(run_name, is_demo):
         <div class="metric-card" style="border-left-color: #10b981;">
             <div class="metric-label">Best Phoenix CER</div>
             <div class="metric-value">{best_phoenix_cer}</div>
-            <div class="metric-sub">Achieved at Epoch {best_phoenix_epoch}</div>
+            <div class="metric-sub">Achieved at Iteration {best_phoenix_iter}</div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -245,7 +276,7 @@ def render_dashboard_content(run_name, is_demo):
         <div class="metric-card" style="border-left-color: #8b5cf6;">
             <div class="metric-label">Best Weighted CER</div>
             <div class="metric-value">{best_weighted_cer}</div>
-            <div class="metric-sub">Achieved at Epoch {best_weighted_epoch}</div>
+            <div class="metric-sub">Achieved at Iteration {best_weighted_iter}</div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -281,21 +312,21 @@ def render_dashboard_content(run_name, is_demo):
                 st.info("No iteration metrics to plot.")
                 
         with col_chart2:
-            st.subheader("2. Epoch-Level Evaluation Stats")
-            if not epoch_df.empty:
+            st.subheader("2. Checkpoint-Level Evaluation Stats")
+            if not eval_df.empty:
                 cols_to_plot = []
                 for target in ["phoenix_cer", "cnt_cer", "weighted_cer"]:
-                    found = [c for c in epoch_df.columns if c.lower() == target]
+                    found = [c for c in eval_df.columns if c.lower() == target]
                     if found:
                         cols_to_plot.append(found[0])
                 
-                if cols_to_plot and "epoch" in epoch_df.columns:
-                    chart_df = epoch_df.set_index("epoch")[cols_to_plot]
+                if cols_to_plot and "iteration" in eval_df.columns:
+                    chart_df = eval_df.set_index("iteration")[cols_to_plot]
                     st.line_chart(chart_df, height=350)
                 else:
-                    st.info("Missing phoenix_CER, cnt_CER, or weighted_CER columns in epoch metrics.")
+                    st.info("Missing phoenix_CER, cnt_CER, or weighted_CER columns in evaluation metrics.")
             else:
-                st.info("No epoch metrics to plot.")
+                st.info("No evaluation metrics to plot.")
 
     with tab2:
         col_t1, col_t2 = st.columns(2)
@@ -306,11 +337,11 @@ def render_dashboard_content(run_name, is_demo):
             else:
                 st.info("No iteration data loaded.")
         with col_t2:
-            st.subheader("Epoch CSV Data")
-            if not epoch_df.empty:
-                st.dataframe(epoch_df, use_container_width=True)
+            st.subheader("Evaluation CSV Data")
+            if not eval_df.empty:
+                st.dataframe(eval_df, use_container_width=True)
             else:
-                st.info("No epoch data loaded.")
+                st.info("No evaluation data loaded.")
 
     with tab3:
         st.subheader("Configuration & Directories")

@@ -30,7 +30,7 @@ def evaluate_and_update_best(config, config_path, top_n=5):
         print(f"No checkpoints found in {config.train_output_dir} to evaluate.")
         return
 
-    print(f"\nEvaluating the last {len(checkpoints)} epochs/checkpoints for run peak performers...")
+    print(f"\nEvaluating the last {len(checkpoints)} checkpoints for run peak performers...")
 
     best_run_phoenix_metrics = None
     best_run_phoenix_cp = None
@@ -74,7 +74,6 @@ def evaluate_and_update_best(config, config_path, top_n=5):
             import csv
             import time
             
-            epoch = idx  # Default fallback
             iteration = 0  # Default fallback
             # Extract cumulative iterations from checkpoint filename (e.g. chr_29.917_1517_1600.checkpoint)
             nums = re.findall(r"\d+", os.path.basename(checkpoint))
@@ -84,30 +83,32 @@ def evaluate_and_update_best(config, config_path, top_n=5):
                     iteration = int(nums[-2])
                 else:
                     iteration = max_iter
-                if getattr(config, "iterations_per_epoch", 0) > 0:
-                    epoch = round(max_iter / config.iterations_per_epoch)
             
-            epoch_metrics_path = os.path.join(config.train_output_dir, "epoch_metrics.csv")
-            file_exists = os.path.exists(epoch_metrics_path)
+            metrics_path = os.path.join(config.train_output_dir, "metrics.csv")
+            file_exists = os.path.exists(metrics_path)
             
-            with open(epoch_metrics_path, "a", newline="", encoding="utf-8") as csv_f:
+            with open(metrics_path, "a", newline="", encoding="utf-8") as csv_f:
                 writer = csv.writer(csv_f)
                 if not file_exists:
                     writer.writerow([
-                        "epoch",
                         "iteration",
                         "wall_time",
-                        "phoenix_CER",
-                        "phoenix_WER",
-                        "cnt_CER",
-                        "cnt_WER",
-                        "weighted_CER",
-                        "weighted_WER"
+                        "train_loss",
+                        "delta",
+                        "bcer_train",
+                        "bwer_train",
+                        "skip_ratio",
+                        "phoenix_cer",
+                        "phoenix_wer",
+                        "cnt_cer",
+                        "cnt_wer",
+                        "weighted_cer",
+                        "weighted_wer"
                     ])
                 writer.writerow([
-                    epoch,
                     iteration,
                     time.time(),
+                    "", "", "", "", "",  # Empty fields for training loss convergence metrics
                     metrics.get("phoenix_CER", 0.0),
                     metrics.get("phoenix_WER", 0.0),
                     metrics.get("cnt_CER", 0.0),
@@ -115,9 +116,9 @@ def evaluate_and_update_best(config, config_path, top_n=5):
                     metrics.get("weighted_CER", 0.0),
                     metrics.get("weighted_WER", 0.0)
                 ])
-            print(f"  Logged epoch {epoch} (iteration {iteration}) metrics to {epoch_metrics_path}")
+            print(f"  Logged iteration {iteration} metrics to {metrics_path}")
         except Exception as csv_err:
-            print(f"  Error logging epoch metrics: {csv_err}", file=sys.stderr)
+            print(f"  Error logging evaluation metrics: {csv_err}", file=sys.stderr)
 
         # Check Phoenix CER best
         p_cer = metrics["phoenix_CER"]
@@ -197,10 +198,14 @@ def main():
     print(f"Loading configuration from JSON: {args.config}")
     config = TrainingConfig.load_from_json(args.config)
 
+    run_staged_training(config)
+
     if getattr(config, "skip_final_eval", False):
         print("Skipping final evaluation from the training run itself as skip_final_eval is True.")
     else:
         evaluate_and_update_best(config, args.config)
+
+
 
 if __name__ == "__main__":
     main()

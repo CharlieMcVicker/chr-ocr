@@ -105,21 +105,27 @@ class TrainingConfig:
 class ExperimentConfig:
     id: str
     config: TrainingConfig
-    eval_epochs: List[int]
+    eval_iterations: List[int]
 
     def to_dict(self) -> dict:
         return {
             "id": self.id,
             "config": self.config.to_dict(),
-            "eval_epochs": self.eval_epochs
+            "eval_iterations": self.eval_iterations
         }
 
     @classmethod
     def from_dict(cls, data: dict) -> 'ExperimentConfig':
+        config_obj = TrainingConfig.from_dict(data["config"])
+        eval_iterations = data.get("eval_iterations")
+        if eval_iterations is None:
+            eval_epochs = data.get("eval_epochs", [])
+            iter_per_epoch = getattr(config_obj, "iterations_per_epoch", 200)
+            eval_iterations = [epoch * iter_per_epoch for epoch in eval_epochs]
         return cls(
             id=data["id"],
-            config=TrainingConfig.from_dict(data["config"]),
-            eval_epochs=data["eval_epochs"]
+            config=config_obj,
+            eval_iterations=eval_iterations
         )
 
 def deep_merge(base: dict, overrides: dict) -> dict:
@@ -152,6 +158,7 @@ class SweepConfig:
         experiments_data = data.get("experiments", [])
         
         base_config_dict = base_dict.get("config", {}) if base_dict else None
+        base_eval_iterations = base_dict.get("eval_iterations") if base_dict else None
         base_eval_epochs = base_dict.get("eval_epochs") if base_dict else None
         
         experiments = []
@@ -159,8 +166,11 @@ class SweepConfig:
             exp_data_copy = dict(exp_data)
             if base_config_dict and "config" in exp_data_copy:
                 exp_data_copy["config"] = deep_merge(base_config_dict, exp_data_copy["config"])
-            if base_eval_epochs is not None and "eval_epochs" not in exp_data_copy:
-                exp_data_copy["eval_epochs"] = base_eval_epochs
+            if "eval_iterations" not in exp_data_copy:
+                if base_eval_iterations is not None:
+                    exp_data_copy["eval_iterations"] = base_eval_iterations
+                elif base_eval_epochs is not None and "eval_epochs" not in exp_data_copy:
+                    exp_data_copy["eval_epochs"] = base_eval_epochs
             experiments.append(ExperimentConfig.from_dict(exp_data_copy))
             
         return cls(

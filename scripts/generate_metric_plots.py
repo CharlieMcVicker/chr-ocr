@@ -4,7 +4,7 @@ generate_metric_plots.py
 
 Generates premium, high-resolution performance plots from training run metrics CSVs:
   - iteration_metrics.csv (loss, BCER, BWER, skip ratio)
-  - epoch_metrics.csv (Phoenix CER, CNT CER, Weighted CER)
+  - evaluation_metrics.csv (Phoenix CER, CNT CER, Weighted CER)
 
 Supports:
   1. Single Run Mode: Generates consolidated plots and saves them to the run directory.
@@ -57,42 +57,66 @@ def find_run_dir(run_identifier):
 
 def load_metrics(run_dir):
     """
-    Loads iteration and epoch metrics from a run directory, normalising column headers.
+    Loads iteration and evaluation metrics from a run directory, normalising column headers.
+    Supports consolidated metrics.csv with backward-compatible legacy fallback.
     """
+    metrics_path = os.path.join(run_dir, "metrics.csv")
     iter_path = os.path.join(run_dir, "iteration_metrics.csv")
-    epoch_path = os.path.join(run_dir, "epoch_metrics.csv")
+    eval_path = os.path.join(run_dir, "evaluation_metrics.csv")
     
     iter_df = None
-    epoch_df = None
+    eval_df = None
     
-    if os.path.exists(iter_path):
+    if os.path.exists(metrics_path):
+        try:
+            df = pd.read_csv(metrics_path)
+            df.columns = [c.lower() for c in df.columns]
+            
+            # Extract training metrics (rows where train_loss or mean_rms or delta is not null)
+            train_cols = ["train_loss", "mean_rms", "delta", "bcer_train", "bwer_train", "skip_ratio"]
+            valid_train_cols = [c for c in train_cols if c in df.columns]
+            if valid_train_cols:
+                # Drop rows where all valid training metrics are null/empty
+                iter_df = df.dropna(subset=valid_train_cols, how="all").copy()
+                if "mean_rms" in iter_df.columns and "train_loss" not in iter_df.columns:
+                    iter_df["train_loss"] = iter_df["mean_rms"]
+            
+            # Extract evaluation metrics (rows where phoenix_cer or cnt_cer or weighted_cer is not null)
+            eval_cols = ["phoenix_cer", "phoenix_wer", "cnt_cer", "cnt_wer", "weighted_cer", "weighted_wer"]
+            valid_eval_cols = [c for c in eval_cols if c in df.columns]
+            if valid_eval_cols:
+                # Drop rows where all valid evaluation metrics are null/empty
+                eval_df = df.dropna(subset=valid_eval_cols, how="all").copy()
+        except Exception as e:
+            print(f"Warning: Failed to load consolidated {metrics_path}: {e}", file=sys.stderr)
+            
+    # Legacy fallbacks
+    if iter_df is None and os.path.exists(iter_path):
         try:
             iter_df = pd.read_csv(iter_path)
-            # Normalize casing
             iter_df.columns = [c.lower() for c in iter_df.columns]
             if "mean_rms" in iter_df.columns and "train_loss" not in iter_df.columns:
                 iter_df["train_loss"] = iter_df["mean_rms"]
         except Exception as e:
             print(f"Warning: Failed to load {iter_path}: {e}", file=sys.stderr)
             
-    if os.path.exists(epoch_path):
+    if eval_df is None and os.path.exists(eval_path):
         try:
-            epoch_df = pd.read_csv(epoch_path)
-            # Normalize casing
-            epoch_df.columns = [c.lower() for c in epoch_df.columns]
+            eval_df = pd.read_csv(eval_path)
+            eval_df.columns = [c.lower() for c in eval_df.columns]
         except Exception as e:
-            print(f"Warning: Failed to load {epoch_path}: {e}", file=sys.stderr)
+            print(f"Warning: Failed to load {eval_path}: {e}", file=sys.stderr)
             
-    return iter_df, epoch_df
+    return iter_df, eval_df
 
 def plot_single_run(run_dir, output_dir=None):
     """
     Generates beautiful plots for a single run and saves them to disk.
     """
     run_name = os.path.basename(os.path.normpath(run_dir))
-    iter_df, epoch_df = load_metrics(run_dir)
+    iter_df, eval_df = load_metrics(run_dir)
     
-    if iter_df is None and epoch_df is None:
+    if iter_df is None and eval_df is None:
         print(f"Error: No valid metrics files found in {run_dir}", file=sys.stderr)
         return
     
@@ -143,30 +167,30 @@ def plot_single_run(run_dir, output_dir=None):
         plt.close()
         print(f"Generated: {out_path}")
         
-    # 2. Epoch Metrics Plot
-    if epoch_df is not None and not epoch_df.empty:
+    # 2. Evaluation Metrics Plot
+    if eval_df is not None and not eval_df.empty:
         fig, ax = plt.subplots(figsize=(10, 6))
-        fig.suptitle(f"Epoch Validation CER - {run_name}", y=0.98)
+        fig.suptitle(f"Validation CER - {run_name}", y=0.98)
         
-        x_col = "epoch" if "epoch" in epoch_df.columns else "iteration" if "iteration" in epoch_df.columns else None
+        x_col = "iteration" if "iteration" in eval_df.columns else None
         
         if x_col:
             # We want to check for lowercase normalised names
-            if "phoenix_cer" in epoch_df.columns:
-                ax.plot(epoch_df[x_col], epoch_df["phoenix_cer"], color=colors['phoenix'], marker='o', linewidth=2, label="Phoenix CER")
-            if "cnt_cer" in epoch_df.columns:
-                ax.plot(epoch_df[x_col], epoch_df["cnt_cer"], color=colors['cnt'], marker='s', linewidth=2, label="CNT CER")
-            if "weighted_cer" in epoch_df.columns:
-                ax.plot(epoch_df[x_col], epoch_df["weighted_cer"], color=colors['weighted'], marker='^', linewidth=2, label="Weighted CER")
+            if "phoenix_cer" in eval_df.columns:
+                ax.plot(eval_df[x_col], eval_df["phoenix_cer"], color=colors['phoenix'], marker='o', linewidth=2, label="Phoenix CER")
+            if "cnt_cer" in eval_df.columns:
+                ax.plot(eval_df[x_col], eval_df["cnt_cer"], color=colors['cnt'], marker='s', linewidth=2, label="CNT CER")
+            if "weighted_cer" in eval_df.columns:
+                ax.plot(eval_df[x_col], eval_df["weighted_cer"], color=colors['weighted'], marker='^', linewidth=2, label="Weighted CER")
                 
             ax.set_ylabel("Character Error Rate (CER %)")
-            ax.set_xlabel(x_col.capitalize())
+            ax.set_xlabel("Iteration")
             ax.set_title("Evaluation Performance by Checkpoint")
             ax.grid(True)
             ax.legend()
             
             plt.tight_layout()
-            out_path = os.path.join(dest_dir, "epoch_metrics.png")
+            out_path = os.path.join(dest_dir, "evaluation_metrics.png")
             plt.savefig(out_path, dpi=300, bbox_inches='tight')
             plt.close()
             print(f"Generated: {out_path}")
@@ -179,11 +203,11 @@ def plot_comparison(run_dirs, output_path):
     runs_data = []
     for r_dir in run_dirs:
         run_name = os.path.basename(os.path.normpath(r_dir))
-        iter_df, epoch_df = load_metrics(r_dir)
+        iter_df, eval_df = load_metrics(r_dir)
         runs_data.append({
             'name': run_name,
             'iter': iter_df,
-            'epoch': epoch_df
+            'eval': eval_df
         })
         
     # We will create a combined figure with multiple subplots to compare key metrics
@@ -207,14 +231,14 @@ def plot_comparison(run_dirs, output_path):
     # 3. Compare Phoenix Validation CER (bottom-left)
     ax_phoenix = axes[1, 0]
     ax_phoenix.set_title("Validation Phoenix CER")
-    ax_phoenix.set_xlabel("Epoch / Evaluation Step")
+    ax_phoenix.set_xlabel("Iteration")
     ax_phoenix.set_ylabel("CER (%)")
     ax_phoenix.grid(True)
     
     # 4. Compare Weighted Validation CER (bottom-right)
     ax_weighted = axes[1, 1]
     ax_weighted.set_title("Validation Weighted CER")
-    ax_weighted.set_xlabel("Epoch / Evaluation Step")
+    ax_weighted.set_xlabel("Iteration")
     ax_weighted.set_ylabel("Weighted CER (%)")
     ax_weighted.grid(True)
     
@@ -222,7 +246,7 @@ def plot_comparison(run_dirs, output_path):
     for run in runs_data:
         name = run['name']
         iter_df = run['iter']
-        epoch_df = run['epoch']
+        eval_df = run['eval']
         
         # Plot iteration level metrics
         if iter_df is not None and not iter_df.empty:
@@ -232,14 +256,14 @@ def plot_comparison(run_dirs, output_path):
                 if "bcer_train" in iter_df.columns:
                     ax_bcer.plot(iter_df["iteration"], iter_df["bcer_train"], label=name, linewidth=1.5)
                     
-        # Plot epoch level metrics
-        if epoch_df is not None and not epoch_df.empty:
-            x_col = "epoch" if "epoch" in epoch_df.columns else "iteration" if "iteration" in epoch_df.columns else None
+        # Plot evaluation level metrics
+        if eval_df is not None and not eval_df.empty:
+            x_col = "iteration" if "iteration" in eval_df.columns else None
             if x_col:
-                if "phoenix_cer" in epoch_df.columns:
-                    ax_phoenix.plot(epoch_df[x_col], epoch_df["phoenix_cer"], marker='o', label=name, linewidth=2)
-                if "weighted_cer" in epoch_df.columns:
-                    ax_weighted.plot(epoch_df[x_col], epoch_df["weighted_cer"], marker='^', label=name, linewidth=2)
+                if "phoenix_cer" in eval_df.columns:
+                    ax_phoenix.plot(eval_df[x_col], eval_df["phoenix_cer"], marker='o', label=name, linewidth=2)
+                if "weighted_cer" in eval_df.columns:
+                    ax_weighted.plot(eval_df[x_col], eval_df["weighted_cer"], marker='^', label=name, linewidth=2)
 
     # Add legends
     ax_loss.legend()
