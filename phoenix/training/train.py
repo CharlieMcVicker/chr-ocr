@@ -160,18 +160,28 @@ def run_staged_training(config: TrainingConfig):
                 if sched.get("enabled", False):
                     min_ratio = min(min_ratio, sched.get("start_ratio", 0.5), sched.get("end_ratio", 1.0))
                 
-                if min_ratio <= 0.05:
-                    min_ratio = 0.05
-                    
-                max_needed_cnt = int(n_phoenix * (1.0 - min_ratio) / min_ratio)
+                if min_ratio < 0.0 or min_ratio > 1.0:
+                    raise ValueError(f"Mixture ratio must be in [0, 1], got {min_ratio}")
+                
+                if min_ratio == 0.0:
+                    pretrain_cap = getattr(config, "pretrain_cnt_cap", None)
+                    if pretrain_cap is not None:
+                        max_needed_cnt = pretrain_cap
+                    else:
+                        max_needed_cnt = 32231
+                else:
+                    if min_ratio <= 0.05:
+                        min_ratio = 0.05
+                    max_needed_cnt = int(n_phoenix * (1.0 - min_ratio) / min_ratio)
                 
                 max_cnt_samples = getattr(config, "max_cnt_samples", None)
                 if max_cnt_samples is not None:
                     max_needed_cnt = min(max_needed_cnt, max_cnt_samples)
                 
-                # Add 20% safety margin and clamp to [500, 2000]
-                max_needed_cnt = int(max_needed_cnt * 1.2)
-                max_needed_cnt = max(500, min(max_needed_cnt, 2000))
+                # Add 20% safety margin and clamp to [500, 2000] if not pure pretraining
+                if min_ratio > 0.0:
+                    max_needed_cnt = int(max_needed_cnt * 1.2)
+                    max_needed_cnt = max(500, min(max_needed_cnt, 2000))
                 
                 # Load rare characters list for priority sampling
                 rare_chars = set()
@@ -233,8 +243,13 @@ def run_staged_training(config: TrainingConfig):
                     }
                 
                 master_manifest_to_use = os.path.join(master_pool_dir, f"master_manifest_epoch_{epoch}.json")
+                if config.use_cached_cnt:
+                    manifest_for_augmentation = {k: v for k, v in epoch_data.items() if v.get("dataset") != "cnt"}
+                else:
+                    manifest_for_augmentation = epoch_data
+
                 with open(master_manifest_to_use, "w", encoding="utf-8") as f:
-                    json.dump(epoch_data, f, ensure_ascii=False, indent=2)
+                    json.dump(manifest_for_augmentation, f, ensure_ascii=False, indent=2)
                 
                 print(f"Generated master manifest with {len(epoch_data)} lines ({len(phoenix_train_items)} Phoenix, {len(all_valid_cnt_lines)} CNT).")
                 
@@ -291,6 +306,40 @@ def run_staged_training(config: TrainingConfig):
                 ]
                 print(f"Running augment_dynamic.py to generate master pool...")
                 subprocess.run(cmd_aug, check=True)
+
+                if config.use_cached_cnt:
+                    cache_manifest_path = os.path.join(config.cnt_cache_dir, "cnt_cache_manifest.json")
+                    if not os.path.exists(cache_manifest_path):
+                        raise FileNotFoundError(f"CNT cache manifest not found at {cache_manifest_path}. Please run scripts/pre_augment_cnt.py first.")
+                    with open(cache_manifest_path, "r", encoding="utf-8") as f:
+                        cnt_cache = json.load(f)
+                    
+                    with open(master_index_path, "r", encoding="utf-8") as f:
+                        metadata_records = json.load(f)
+                    
+                    print("Loading pre-augmented and cached CNT records into master pool...")
+                    cached_cnt_added = 0
+                    for item_info in all_valid_cnt_lines:
+                        item_id = f"cnt_{item_info['book_idx']:02d}_{item_info['verse_key']}_line_{item_info['line_idx']:02d}"
+                        if item_id in cnt_cache:
+                            for var_rec in cnt_cache[item_id]:
+                                lstmf = var_rec.get("lstmf_path")
+                                if not lstmf or not os.path.exists(lstmf):
+                                    tiff_path = var_rec.get("tiff_path")
+                                    if tiff_path and os.path.exists(tiff_path):
+                                        try:
+                                            lstmf = compile_image(tiff_path, config.model_dir)
+                                            var_rec["lstmf_path"] = lstmf
+                                        except Exception as e:
+                                            print(f"Error compiling cached tiff {tiff_path}: {e}")
+                                metadata_records.append(var_rec)
+                                cached_cnt_added += 1
+                        else:
+                            print(f"Warning: Cached records for {item_id} not found in cache manifest!")
+                    
+                    with open(master_index_path, "w", encoding="utf-8") as f:
+                        json.dump(metadata_records, f, indent=2, ensure_ascii=False)
+                    print(f"Added {cached_cnt_added} cached CNT variation records to master pool index.")
             else:
                 print(f"Master pool already exists at {master_pool_dir}. Reusing compiled master pool.")
             
@@ -392,7 +441,11 @@ def run_staged_training(config: TrainingConfig):
                 if current_ratio == 1.0:
                     n_cnt = 0
                 elif current_ratio == 0.0:
-                    n_cnt = 999999
+                    pretrain_cap = getattr(config, "pretrain_cnt_cap", None)
+                    if pretrain_cap is not None:
+                        n_cnt = pretrain_cap
+                    else:
+                        n_cnt = 9999999
                 else:
                     n_cnt = int(n_phoenix * (1.0 - current_ratio) / current_ratio)
                 
@@ -506,8 +559,13 @@ def run_staged_training(config: TrainingConfig):
                         epoch_data[k] = v
                 
                 manifest_to_use = os.path.join(config.output_dir, f"manifest_epoch_{epoch}.json")
+                if config.use_cached_cnt:
+                    manifest_for_augmentation = {k: v for k, v in epoch_data.items() if v.get("dataset") != "cnt"}
+                else:
+                    manifest_for_augmentation = epoch_data
+
                 with open(manifest_to_use, "w", encoding="utf-8") as f:
-                    json.dump(epoch_data, f, ensure_ascii=False, indent=2)
+                    json.dump(manifest_for_augmentation, f, ensure_ascii=False, indent=2)
                 
                 # Verify exact ratio of Phoenix to CNT lines in the train set
                 train_phoenix_count = sum(1 for item in epoch_data.values() if item.get("split") == "train" and item.get("dataset") != "cnt")
@@ -568,11 +626,44 @@ def run_staged_training(config: TrainingConfig):
             # Step C: Compile augmented images to .lstmf files and create list.train
             print("Compiling images to .lstmf files...")
             tiff_files = glob.glob(os.path.join(config.output_dir, "*.tiff"))
-            if not tiff_files:
+            if not tiff_files and not config.use_cached_cnt:
                 raise RuntimeError("Error: No augmented TIFFs generated!")
 
             with ThreadPoolExecutor(max_workers=config.max_workers) as executor:
                 lstmf_paths = list(executor.map(lambda f: compile_image(f, config.model_dir), tiff_files))
+
+            if config.use_cached_cnt:
+                cache_manifest_path = os.path.join(config.cnt_cache_dir, "cnt_cache_manifest.json")
+                if not os.path.exists(cache_manifest_path):
+                    raise FileNotFoundError(f"CNT cache manifest not found at {cache_manifest_path}. Please run scripts/pre_augment_cnt.py first.")
+                with open(cache_manifest_path, "r", encoding="utf-8") as f:
+                    cnt_cache = json.load(f)
+                    
+                # Append cached CNT lstmf paths
+                cached_cnt_lstmf_paths = []
+                for item_info in sampled_lines:
+                    item_id = f"cnt_{item_info['book_idx']:02d}_{item_info['verse_key']}_line_{item_info['line_idx']:02d}"
+                    if item_id in cnt_cache:
+                        for var_rec in cnt_cache[item_id]:
+                            lstmf = var_rec.get("lstmf_path")
+                            if lstmf and os.path.exists(lstmf):
+                                cached_cnt_lstmf_paths.append(lstmf)
+                            else:
+                                # If lstmf is not pre-compiled or not found, compile it now from the cached tiff
+                                tiff_path = var_rec.get("tiff_path")
+                                if tiff_path and os.path.exists(tiff_path):
+                                    print(f"Compiling cached tiff {tiff_path} to lstmf...")
+                                    try:
+                                        compiled = compile_image(tiff_path, config.model_dir)
+                                        cached_cnt_lstmf_paths.append(compiled)
+                                        var_rec["lstmf_path"] = compiled
+                                    except Exception as e:
+                                        print(f"Error compiling cached tiff {tiff_path}: {e}")
+                    else:
+                        print(f"Warning: Cached records for {item_id} not found in cache manifest!")
+                        
+                print(f"Adding {len(cached_cnt_lstmf_paths)} cached CNT lstmf files to training list.")
+                lstmf_paths.extend(cached_cnt_lstmf_paths)
 
             with open(list_train_path, "w", encoding="utf-8") as list_f:
                 for lstmf_path in lstmf_paths:
