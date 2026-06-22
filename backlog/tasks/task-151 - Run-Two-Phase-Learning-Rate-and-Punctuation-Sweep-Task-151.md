@@ -1,10 +1,10 @@
 ---
 id: TASK-151
 title: Run Two-Phase Learning Rate and Punctuation Sweep (Task 151)
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-06-22 13:02'
-updated_date: '2026-06-22 13:02'
+updated_date: '2026-06-22 13:12'
 labels: []
 dependencies: []
 priority: high
