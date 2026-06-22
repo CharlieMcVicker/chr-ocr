@@ -114,5 +114,10 @@
       },
       "eval_epochs": [8, 12, 14, 16]
     }
-  ]
+  ],
+  "base": {
+    "config": {
+      "skip_cnt_eval": true
+    }
+  }
 }

@@ -109,6 +109,7 @@ def main():
     parser.add_argument("--model-dir", default="training_data/dataset/model", help="Tessdata directory containing the model")
     parser.add_argument("--lang", default="chr", help="Language model prefix to use (default: chr)")
     parser.add_argument("--dataset-dir", default="training_data/dataset", help="Dataset root directory")
+    parser.add_argument("--skip-cnt", action="store_true", help="Skip evaluating on the CNT test split")
     args = parser.parse_args()
 
     # Determine paths
@@ -120,7 +121,7 @@ def main():
     print(f"Language model: {args.lang}")
 
     phoenix_stats = evaluate_directory(phoenix_test_dir, args.model_dir, args.lang)
-    cnt_stats = evaluate_directory(cnt_test_dir, args.model_dir, args.lang)
+    cnt_stats = None if args.skip_cnt else evaluate_directory(cnt_test_dir, args.model_dir, args.lang)
 
     print("\n================ EVALUATION SUMMARY ================")
     

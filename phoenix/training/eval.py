@@ -83,7 +83,7 @@ def compile_checkpoint(checkpoint_path: str, traineddata_path: str, output_path:
         print(f"Failed to compile checkpoint {checkpoint_path} to {output_path}: {e}")
         return False
 
-def evaluate_checkpoint(checkpoint_path: str, traineddata_path: str, train_output_dir: str, lang: str) -> dict:
+def evaluate_checkpoint(checkpoint_path: str, traineddata_path: str, train_output_dir: str, lang: str, skip_cnt: bool = False) -> dict:
     """
     Evaluates a compiled .traineddata model on the test splits and parses its performance metrics.
     """
@@ -94,6 +94,8 @@ def evaluate_checkpoint(checkpoint_path: str, traineddata_path: str, train_outpu
         "--model-dir", train_output_dir,
         "--lang", lang
     ]
+    if skip_cnt:
+        eval_cmd.append("--skip-cnt")
     try:
         res = subprocess.run(eval_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
         eval_stdout = res.stdout

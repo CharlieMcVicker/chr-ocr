@@ -36,6 +36,7 @@ class TrainingConfig:
     cnt_cache_dir: str = "training_data/cnt_cache"
     master_pool_prefix: Optional[str] = None
     skip_final_eval: bool = False
+    skip_cnt_eval: bool = False
     
     # Learning rate options
     learning_rate: float = 0.0005

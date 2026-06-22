@@ -214,7 +214,8 @@ def run_meta_parameter_sweep(
                             checkpoint_path=checkpoint,
                             traineddata_path=temp_traineddata,
                             train_output_dir=run_output_dir,
-                            lang="chr_eval_temp"
+                            lang="chr_eval_temp",
+                            skip_cnt=getattr(exp_config, "skip_cnt_eval", False)
                         )
                         if metrics:
                             res_item = {

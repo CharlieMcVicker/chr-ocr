@@ -57,7 +57,13 @@ def evaluate_and_update_best(config, config_path, top_n=5):
         if not compile_checkpoint(checkpoint, traineddata_path, temp_traineddata):
             continue
 
-        metrics = evaluate_checkpoint(checkpoint, traineddata_path, config.train_output_dir, f"chr_eval_temp_{idx}")
+        metrics = evaluate_checkpoint(
+            checkpoint,
+            traineddata_path,
+            config.train_output_dir,
+            f"chr_eval_temp_{idx}",
+            skip_cnt=getattr(config, "skip_cnt_eval", False)
+        )
         if not metrics:
             if os.path.exists(temp_traineddata):
                 os.remove(temp_traineddata)
