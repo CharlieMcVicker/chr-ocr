@@ -31,6 +31,9 @@ class TrainingConfig:
         "end_epoch": 12,
     })
     max_cnt_samples: Optional[int] = None
+    pretrain_cnt_cap: Optional[int] = None
+    use_cached_cnt: bool = False
+    cnt_cache_dir: str = "training_data/cnt_cache"
     master_pool_prefix: Optional[str] = None
     skip_final_eval: bool = False
     
