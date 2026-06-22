@@ -1,10 +1,10 @@
 ---
 id: TASK-151
 title: Run Two-Phase Learning Rate and Punctuation Sweep (Task 151)
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-06-22 13:02'
-updated_date: '2026-06-22 13:12'
+updated_date: '2026-06-22 17:16'
 labels: []
 dependencies: []
 priority: high
@@ -19,12 +19,14 @@ Execute the newly proposed two-phase sweep configuration at 'configs/sweep_two_s
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Execute the sweep using the newly implemented two-phase runner
-- [ ] #2 Confirm that CNT pre-training is skipped on subsequent runs if the foundational checkpoint is on disk
-- [ ] #3 Analyze the resulting CER metrics for learning rates 0.004 and 0.005 to identify the new adaptation limit
+- [x] #1 Execute the sweep using the newly implemented two-phase runner
+- [x] #2 Confirm that CNT pre-training is skipped on subsequent runs if the foundational checkpoint is on disk
+- [x] #3 Analyze the resulting CER metrics for learning rates 0.004 and 0.005 to identify the new adaptation limit
 - [ ] #4 Check the deletion rate of brackets '[' and ']' in the 3% mixture runs to see if targeted regularization resolved the bracket dropping issue
-- [ ] #5 Write the champion configuration to best_config.json and best_checkpoint.checkpoint
+- [x] #5 Write the champion configuration to best_config.json and best_checkpoint.checkpoint
 <!-- AC:END -->
+
+
 
 ## Implementation Plan
 
@@ -49,3 +51,9 @@ We have created the configuration file at `configs/sweep_two_stage_lr_punctuatio
   4. `two_stage_punc_heavy_lr_003`: Testing 3% residual CNT noise containing high density bracket samples with `lr = 0.003` to combat `[` and `]` deletion.
   5. `two_stage_punc_heavy_lr_004`: Testing 3% residual noise with `lr = 0.004` to balance aggressive adaptation and punctuation retention.
 <!-- SECTION:PLAN:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Successfully merged 'improve-cnt-pretraining-pipeline' and deleted the worktree. Updated the unicharsets to include 'Ꮐ' (nah) and target characters. Created 'configs/sweep_two_stage_lr_punctuation_3k.json' with pretrain_cnt_cap set to 3000 and new folder paths. Kicked off the updated two-stage sweep.
+<!-- SECTION:NOTES:END -->
