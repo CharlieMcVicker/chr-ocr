@@ -162,6 +162,7 @@ def run_meta_parameter_sweep(
         
         # Skip final evaluation during sweep as the sweeper itself coordinates it
         exp_config.skip_final_eval = True
+        exp_config.skip_cnt_eval = True
             
         os.makedirs(run_output_dir, exist_ok=True)
         config_path = os.path.join(run_output_dir, "config.json")
