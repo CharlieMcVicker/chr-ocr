@@ -87,6 +87,7 @@ def run_meta_parameter_sweep(
             os.makedirs(pt_phase.output_dir, exist_ok=True)
             
             # Serialize pre-training config to config.json
+            pt_phase.config.train_output_dir = pt_phase.output_dir
             pt_phase.config.save_to_json(pt_config_path)
             
             cmd = [

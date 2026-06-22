@@ -109,12 +109,16 @@ def update_traineddata(traineddata_path, unicharset_path, unicharset_type):
 
 def main():
     # 1. Update files
-    update_unicharset("dataset/model/chr.lstm-unicharset")
+    if os.path.exists("dataset/model/chr.lstm-unicharset"):
+        update_unicharset("dataset/model/chr.lstm-unicharset")
+    update_unicharset("training_data/dataset/model/chr.lstm-unicharset")
     update_unicharset("training_data/dataset/model/starter/chr/chr.lstm-unicharset")
     update_unicharset("training_data/dataset/model/starter/chr/chr.unicharset")
     
     # 2. Update traineddata
-    update_traineddata("dataset/model/chr.traineddata", "dataset/model/chr.lstm-unicharset", "lstm-unicharset")
+    if os.path.exists("dataset/model/chr.traineddata"):
+        update_traineddata("dataset/model/chr.traineddata", "dataset/model/chr.lstm-unicharset", "lstm-unicharset")
+    update_traineddata("training_data/dataset/model/chr.traineddata", "training_data/dataset/model/chr.lstm-unicharset", "lstm-unicharset")
     update_traineddata("training_data/dataset/model/starter/chr/chr.traineddata", "training_data/dataset/model/starter/chr/chr.lstm-unicharset", "lstm-unicharset")
     update_traineddata("training_data/dataset/model/starter/chr/chr.traineddata", "training_data/dataset/model/starter/chr/chr.unicharset", "unicharset")
     

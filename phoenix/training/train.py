@@ -386,11 +386,13 @@ def run_staged_training(config: TrainingConfig):
                     
                     print(f"Dynamic Mixture Schedule: Epoch {epoch} target ratio = {current_ratio:.4f} (Start: {start_ratio:.2f} @ Epoch {start_epoch}, End: {end_ratio:.2f} @ Epoch {end_epoch})")
                 
-                if current_ratio <= 0.0 or current_ratio > 1.0:
-                    raise ValueError(f"Calculated mixture ratio must be in (0, 1], got {current_ratio}")
+                if current_ratio < 0.0 or current_ratio > 1.0:
+                    raise ValueError(f"Calculated mixture ratio must be in [0, 1], got {current_ratio}")
                 
                 if current_ratio == 1.0:
                     n_cnt = 0
+                elif current_ratio == 0.0:
+                    n_cnt = 999999
                 else:
                     n_cnt = int(n_phoenix * (1.0 - current_ratio) / current_ratio)
                 
@@ -496,6 +498,8 @@ def run_staged_training(config: TrainingConfig):
                 epoch_data = {}
                 for k, v in mixed_data.items():
                     if v.get("split") == "train":
+                        if current_ratio == 0.0 and v.get("dataset") != "cnt":
+                            continue
                         epoch_data[k] = v
                     elif v.get("split") == "test":
                         # Keep test items in manifest if they are needed for reference, but train listfile will only compile train items

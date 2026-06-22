@@ -53,6 +53,13 @@
         "smudge": {
           "prob": 0.3,
           "intensity": 0.3
+        },
+        "page_curl": {
+          "prob": 0.0,
+          "direction": "random",
+          "bending_factor": 0.08,
+          "compression_factor": 0.4,
+          "width_ratio": 0.25
         }
       },
       "mixture_schedule": {
@@ -63,7 +70,7 @@
         "end_epoch": 12
       }
     },
-    "eval_epochs": [4, 8, 12]
+    "eval_iterations": [800, 1600, 2400]
   },
   "experiments": [
     {
@@ -73,43 +80,130 @@
       }
     },
     {
-      "id": "true_best_mixture_0.4",
+      "id": "sweep_aug_light_noise",
       "config": {
-        "description": "Evaluates a slightly higher Phoenix ratio (40% Phoenix, 60% CNT) near the optimum zone.",
-        "mixture_ratio": 0.4
+        "description": "Sweeps lighter ranges of the newly introduced physical distortion and ink degradation parameters near the local optimum.",
+        "cnt_noise": {
+          "micro_dropout": {
+            "prob": 0.2,
+            "holes_min": 15,
+            "holes_max": 45
+          },
+          "smudge": {
+            "prob": 0.2,
+            "intensity": 0.2
+          },
+          "page_curl": {
+            "prob": 0.2,
+            "bending_factor": 0.05,
+            "compression_factor": 0.3
+          }
+        }
       }
     },
     {
-      "id": "true_best_mixture_0.2",
+      "id": "sweep_aug_heavy_noise",
       "config": {
-        "description": "Evaluates a higher CNT ratio (20% Phoenix, 80% CNT) to see if more aggressive regularizing data helps.",
-        "mixture_ratio": 0.2
+        "description": "Sweeps more aggressive ranges of physical distortions, micro-dropout, ink wash, and page curl to evaluate model robustness.",
+        "cnt_noise": {
+          "distortion": {
+            "prob": 0.6,
+            "elastic_alpha": 2.0,
+            "elastic_sigma": 12.0
+          },
+          "micro_dropout": {
+            "prob": 0.5,
+            "holes_min": 35,
+            "holes_max": 80,
+            "size_max": 3
+          },
+          "smudge": {
+            "prob": 0.5,
+            "intensity": 0.45
+          },
+          "page_curl": {
+            "prob": 0.5,
+            "bending_factor": 0.12,
+            "compression_factor": 0.55
+          }
+        }
       }
     },
     {
-      "id": "true_best_lr_0.001",
+      "id": "sweep_decay_gradual_to_0.9",
       "config": {
-        "description": "Evaluates a slightly more conservative learning rate (0.001) near the optimum.",
-        "learning_rate": 0.001
-      }
-    },
-    {
-      "id": "true_best_lr_0.003",
-      "config": {
-        "description": "Evaluates a slightly faster learning rate (0.003) to test optimization speed.",
-        "learning_rate": 0.003
-      }
-    },
-    {
-      "id": "true_best_decay_0.3_to_0.8",
-      "config": {
-        "description": "Dynamic mixture decay starting at the true optimal ratio of 0.3 (70% CNT) and decaying to 0.8 (20% CNT) by epoch 12 to freeze weights on targets.",
+        "description": "Gradually decays CNT ratio by increasing Phoenix ratio from the 0.3 optimum up to 0.9 across 12 epochs, with moderate new augmentations.",
         "mixture_schedule": {
           "enabled": true,
           "start_ratio": 0.3,
-          "end_ratio": 0.8,
+          "end_ratio": 0.9,
           "start_epoch": 1,
           "end_epoch": 12
+        },
+        "cnt_noise": {
+          "micro_dropout": { "prob": 0.3 },
+          "smudge": { "prob": 0.3 },
+          "page_curl": {
+            "prob": 0.3,
+            "bending_factor": 0.08
+          }
+        }
+      }
+    },
+    {
+      "id": "sweep_decay_aggressive_to_0.95",
+      "config": {
+        "description": "Aggressively decays CNT ratio starting from 0.3 up to 0.95 by epoch 8 (leaving epochs 9-12 as high-fidelity fine-tuning on purely target Phoenix scans), combined with robust physical and ink augmentations.",
+        "mixture_schedule": {
+          "enabled": true,
+          "start_ratio": 0.3,
+          "end_ratio": 0.95,
+          "start_epoch": 1,
+          "end_epoch": 8
+        },
+        "cnt_noise": {
+          "distortion": {
+            "prob": 0.5,
+            "elastic_alpha": 1.8
+          },
+          "micro_dropout": { "prob": 0.4 },
+          "smudge": { "prob": 0.4 },
+          "page_curl": {
+            "prob": 0.4,
+            "bending_factor": 0.1
+          }
+        }
+      }
+    },
+    {
+      "id": "sweep_page_curl_ranges",
+      "config": {
+        "description": "Isolated sweep of page curl bending factor range near the optimum to identify the threshold where text line warping begins to degrade OCR performance.",
+        "cnt_noise": {
+          "page_curl": {
+            "prob": 0.6,
+            "bending_factor": 0.15,
+            "compression_factor": 0.6,
+            "width_ratio": 0.35
+          }
+        }
+      }
+    },
+    {
+      "id": "sweep_ink_degradation_ranges",
+      "config": {
+        "description": "Isolated sweep on ink degradation ranges (smudges and dense high-frequency micro-dropout) to find the limit of training regularizer density.",
+        "cnt_noise": {
+          "micro_dropout": {
+            "prob": 0.4,
+            "holes_min": 40,
+            "holes_max": 90,
+            "size_max": 3
+          },
+          "smudge": {
+            "prob": 0.4,
+            "intensity": 0.5
+          }
         }
       }
     }

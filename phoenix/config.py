@@ -89,6 +89,18 @@ class TrainingConfig:
         # Filter out keys that aren't fields of TrainingConfig
         valid_keys = cls.__dataclass_fields__.keys()
         filtered_data = {k: v for k, v in data.items() if k in valid_keys}
+        
+        # Merge dict fields (like cnt_noise) with default values
+        if "cnt_noise" in filtered_data and isinstance(filtered_data["cnt_noise"], dict):
+            default_noise = cls.__dataclass_fields__["cnt_noise"].default_factory()
+            merged_noise = default_noise.copy()
+            for k, v in filtered_data["cnt_noise"].items():
+                if isinstance(v, dict) and k in merged_noise and isinstance(merged_noise[k], dict):
+                    merged_noise[k] = {**merged_noise[k], **v}
+                else:
+                    merged_noise[k] = v
+            filtered_data["cnt_noise"] = merged_noise
+            
         return cls(**filtered_data)
 
     def save_to_json(self, path: str):
