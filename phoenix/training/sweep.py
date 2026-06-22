@@ -71,11 +71,51 @@ def run_meta_parameter_sweep(
     print(f"=== Staged Epoch Loop Hyperparameter Retuning ===")
     print(f"Total experiments to execute: {len(experiments)}")
     
+    # Process pre_training_phase if present
+    if sweep_config.pre_training_phase:
+        pt_phase = sweep_config.pre_training_phase
+        print(f"\n=== Pre-Training Phase ===")
+        print(f"Target pre-trained checkpoint path: {pt_phase.checkpoint_path}")
+        
+        # 1. Check if pre-trained checkpoint already exists; skip if it does
+        if os.path.exists(pt_phase.checkpoint_path):
+            print(f"Pre-trained checkpoint already exists at: {pt_phase.checkpoint_path}")
+            print("Skipping pre-training phase.")
+        else:
+            print(f"Pre-trained checkpoint NOT found. Running pre-training phase...")
+            pt_config_path = os.path.join(pt_phase.output_dir, "config.json")
+            os.makedirs(pt_phase.output_dir, exist_ok=True)
+            
+            # Serialize pre-training config to config.json
+            pt_phase.config.save_to_json(pt_config_path)
+            
+            cmd = [
+                sys.executable,
+                "scripts/train_staged.py",
+                "--config", pt_config_path
+            ]
+            
+            if dry_run:
+                print(f"[DRY-RUN] Would run command: {' '.join(cmd)}")
+                print(f"[DRY-RUN] Would copy the latest checkpoint to: {pt_phase.checkpoint_path}")
+            else:
+                # Run scripts/train_staged.py
+                print(f"Executing: {' '.join(cmd)}")
+                subprocess.run(cmd, check=True)
+                
+                # Copy the latest checkpoint from the pre-training run to pt_phase.checkpoint_path
+                latest_cp = get_latest_checkpoint(pt_phase.output_dir)
+                if latest_cp:
+                    print(f"Copying latest checkpoint from {latest_cp} to {pt_phase.checkpoint_path}")
+                    os.makedirs(os.path.dirname(os.path.abspath(pt_phase.checkpoint_path)), exist_ok=True)
+                    shutil.copy2(latest_cp, pt_phase.checkpoint_path)
+                else:
+                    raise FileNotFoundError(f"Error: Pre-training run completed, but no checkpoint was found in {pt_phase.output_dir}")
+
     # Derive master pool prefix and clean up old pools before starting
     master_pool_prefix = None
     if sweep_name:
         master_pool_prefix = f"master_pool_{sweep_name}"
-        import shutil
         print(f"Cleaning up existing master pool directories for prefix '{master_pool_prefix}'...")
         for epoch in range(1, 100):
             pool_dir = f"training_data/staged_tuning/{master_pool_prefix}_epoch_{epoch}"
@@ -104,8 +144,14 @@ def run_meta_parameter_sweep(
         # Override paths to run in isolation
         exp_config.train_output_dir = run_output_dir
         exp_config.output_dir = run_temp_epoch_dir
-        if not exp_config.continue_from:
+        
+        # Configure subsequent sweep experiments to continue_from the pre-trained checkpoint
+        if sweep_config.pre_training_phase:
+            exp_config.continue_from = sweep_config.pre_training_phase.checkpoint_path
+            print(f"Continuing from pre-trained checkpoint: {exp_config.continue_from}")
+        elif not exp_config.continue_from:
             exp_config.continue_from = "training_data/dataset/model/chr.lstm"
+            
         if not exp_config.model_dir:
             exp_config.model_dir = "training_data/dataset/model"
         if not exp_config.old_traineddata:

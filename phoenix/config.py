@@ -140,9 +140,32 @@ def deep_merge(base: dict, overrides: dict) -> dict:
 
 
 @dataclass
+class PreTrainingPhaseConfig:
+    config: TrainingConfig
+    output_dir: str
+    checkpoint_path: str
+
+    def to_dict(self) -> dict:
+        return {
+            "config": self.config.to_dict(),
+            "output_dir": self.output_dir,
+            "checkpoint_path": self.checkpoint_path
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict) -> 'PreTrainingPhaseConfig':
+        return cls(
+            output_dir=data["output_dir"],
+            checkpoint_path=data["checkpoint_path"],
+            config=TrainingConfig.from_dict(data["config"])
+        )
+
+
+@dataclass
 class SweepConfig:
     experiments: List[ExperimentConfig] = field(default_factory=list)
     base_config: Optional[dict] = None
+    pre_training_phase: Optional[PreTrainingPhaseConfig] = None
 
     def to_dict(self) -> dict:
         data = {
@@ -150,13 +173,20 @@ class SweepConfig:
         }
         if self.base_config:
             data["base"] = self.base_config
+        if self.pre_training_phase:
+            data["pre_training_phase"] = self.pre_training_phase.to_dict()
         return data
 
     @classmethod
     def from_dict(cls, data: dict) -> 'SweepConfig':
         base_dict = data.get("base")
         experiments_data = data.get("experiments", [])
+        pre_training_phase_data = data.get("pre_training_phase")
         
+        pre_training_phase = None
+        if pre_training_phase_data:
+            pre_training_phase = PreTrainingPhaseConfig.from_dict(pre_training_phase_data)
+            
         base_config_dict = base_dict.get("config", {}) if base_dict else None
         base_eval_iterations = base_dict.get("eval_iterations") if base_dict else None
         base_eval_epochs = base_dict.get("eval_epochs") if base_dict else None
@@ -175,7 +205,8 @@ class SweepConfig:
             
         return cls(
             experiments=experiments,
-            base_config=base_dict
+            base_config=base_dict,
+            pre_training_phase=pre_training_phase
         )
 
     def save_to_json(self, path: str):

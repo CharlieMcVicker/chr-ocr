@@ -1,0 +1,101 @@
+{
+  "pre_training_phase": {
+    "output_dir": "training_data/staged_tuning/pretrain_cnt_foundation",
+    "checkpoint_path": "training_data/staged_tuning/pretrain_cnt_foundation/cnt_foundation.checkpoint",
+    "config": {
+      "total_epochs": 10,
+      "iterations_per_epoch": 250,
+      "variations_per_image": 3,
+      "learning_rate": 0.002,
+      "use_dynamic_cnt": true,
+      "cnt_fraction": 1.0,
+      "mixture_ratio": 0.0,
+      "blur_prob": 0.5,
+      "shadow_prob": 0.4,
+      "distortion_prob": 0.6,
+      "dropout_prob": 0.4,
+      "bleedthrough_prob": 0.3,
+      "cnt_noise": {
+        "distortion": {
+          "prob": 0.6,
+          "elastic_alpha": 1.5,
+          "elastic_sigma": 15.0
+        },
+        "dropout": {
+          "prob": 0.6,
+          "holes_min": 2,
+          "holes_max": 6,
+          "size_max": 12
+        },
+        "micro_dropout": {
+          "prob": 0.5,
+          "holes_min": 30,
+          "holes_max": 80
+        },
+        "smudge": {
+          "prob": 0.4,
+          "intensity": 0.4
+        }
+      }
+    }
+  },
+  "base": {
+    "config": {
+      "total_epochs": 8,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 3,
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "mixture_ratio": 0.99,
+      "max_cnt_samples": 500,
+      "blur_prob": 0.1,
+      "shadow_prob": 0.1,
+      "distortion_prob": 0.2,
+      "dropout_prob": 0.1,
+      "bleedthrough_prob": 0.1
+    },
+    "eval_iterations": [400, 800, 1200, 1600]
+  },
+  "experiments": [
+    {
+      "id": "two_stage_lr_003_baseline",
+      "config": {
+        "description": "Baseline fine-tuning using the best learning rate from previous sweeps (0.003) and 1% CNT residual noise.",
+        "learning_rate": 0.003
+      }
+    },
+    {
+      "id": "two_stage_lr_004",
+      "config": {
+        "description": "Fine-tuning with a slightly higher learning rate (0.004) to test if we can accelerate adaptation further.",
+        "learning_rate": 0.004
+      }
+    },
+    {
+      "id": "two_stage_lr_005",
+      "config": {
+        "description": "Fine-tuning with a higher learning rate (0.005) to push the upper boundary of adaptation velocity.",
+        "learning_rate": 0.005
+      }
+    },
+    {
+      "id": "two_stage_punc_heavy_lr_003",
+      "config": {
+        "description": "Fine-tuning with optimal learning rate (0.003) and a slightly higher CNT residual noise (3%) containing bracket-heavy lines to combat [ ] deletion.",
+        "learning_rate": 0.003,
+        "mixture_ratio": 0.97,
+        "max_cnt_samples": 800
+      }
+    },
+    {
+      "id": "two_stage_punc_heavy_lr_004",
+      "config": {
+        "description": "Fine-tuning with higher learning rate (0.004) and 3% CNT residual noise to balance aggressive learning with strong punctuation regularization.",
+        "learning_rate": 0.004,
+        "mixture_ratio": 0.97,
+        "max_cnt_samples": 800
+      }
+    }
+  ]
+}

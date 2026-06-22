@@ -1,0 +1,43 @@
+{
+  "pre_training_phase": {
+    "output_dir": "training_data/staged_tuning/pretrain_example_foundation",
+    "checkpoint_path": "training_data/staged_tuning/pretrain_example_foundation/example_foundation.checkpoint",
+    "config": {
+      "total_epochs": 2,
+      "iterations_per_epoch": 100,
+      "variations_per_image": 3,
+      "learning_rate": 0.001,
+      "use_dynamic_cnt": true,
+      "cnt_fraction": 1.0,
+      "mixture_ratio": 0.0
+    }
+  },
+  "base": {
+    "config": {
+      "total_epochs": 3,
+      "iterations_per_epoch": 100,
+      "variations_per_image": 3,
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "mixture_ratio": 0.95
+    },
+    "eval_iterations": [100, 200, 300]
+  },
+  "experiments": [
+    {
+      "id": "example_fine_tune_lr_001",
+      "config": {
+        "description": "Example fine-tuning experiment with learning rate 0.001",
+        "learning_rate": 0.001
+      }
+    },
+    {
+      "id": "example_fine_tune_lr_002",
+      "config": {
+        "description": "Example fine-tuning experiment with learning rate 0.002",
+        "learning_rate": 0.002
+      }
+    }
+  ]
+}
