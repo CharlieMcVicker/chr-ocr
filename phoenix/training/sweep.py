@@ -113,16 +113,28 @@ def run_meta_parameter_sweep(
                 else:
                     raise FileNotFoundError(f"Error: Pre-training run completed, but no checkpoint was found in {pt_phase.output_dir}")
 
-    # Derive master pool prefix and clean up old pools before starting
-    master_pool_prefix = None
+    # Clean up old pools matching the sweep name prefix before starting
     if sweep_name:
-        master_pool_prefix = f"master_pool_{sweep_name}"
-        print(f"Cleaning up existing master pool directories for prefix '{master_pool_prefix}'...")
-        for epoch in range(1, 100):
-            pool_dir = f"training_data/staged_tuning/{master_pool_prefix}_epoch_{epoch}"
-            if os.path.exists(pool_dir):
-                print(f"Removing old master pool: {pool_dir}")
-                shutil.rmtree(pool_dir)
+        staged_tuning_dir = "training_data/staged_tuning"
+        if os.path.exists(staged_tuning_dir):
+            prefix = f"master_pool_{sweep_name}"
+            print(f"Cleaning up existing master pool directories starting with '{prefix}'...")
+            for entry in os.listdir(staged_tuning_dir):
+                if entry.startswith(prefix):
+                    pool_dir = os.path.join(staged_tuning_dir, entry)
+                    if os.path.isdir(pool_dir):
+                        print(f"Removing old master pool: {pool_dir}")
+                        shutil.rmtree(pool_dir, ignore_errors=True)
+    
+    # Calculate the maximum variations_per_image across all experiments in this sweep
+    max_vars = 0
+    for exp in experiments:
+        v = getattr(exp.config, "variations_per_image", None)
+        if v is not None:
+            max_vars = max(max_vars, v)
+    if max_vars == 0:
+        max_vars = 7  # fallback / default
+    print(f"Calculated maximum variations across sweep: {max_vars}")
     
     for i, exp in enumerate(experiments, 1):
         exp_id = exp.id
@@ -157,8 +169,10 @@ def run_meta_parameter_sweep(
             exp_config.model_dir = "training_data/dataset/model"
         if not exp_config.old_traineddata:
             exp_config.old_traineddata = "training_data/dataset/model/chr.traineddata"
-        if master_pool_prefix:
-            exp_config.master_pool_prefix = master_pool_prefix
+        if sweep_name:
+            exp_config.master_pool_prefix = f"master_pool_{sweep_name}"
+            exp_config.master_pool_variations = max_vars
+        
         
         # Skip final evaluation during sweep as the sweeper itself coordinates it
         exp_config.skip_final_eval = True
@@ -337,7 +351,7 @@ class SweepSampler:
     target probabilities.
     """
     @staticmethod
-    def sample_to_list(metadata_index_path: str, output_list_path: str, mixture_ratio: float, epoch: int, max_cnt_samples: Optional[int] = None):
+    def sample_to_list(metadata_index_path: str, output_list_path: str, mixture_ratio: float, epoch: int, max_cnt_samples: Optional[int] = None, target_vars: Optional[int] = None):
         import json
         import random
         import os
@@ -419,13 +433,23 @@ class SweepSampler:
         
         # All phoenix variations
         for item_id in phoenix_unique_ids:
-            for r in phoenix_records[item_id]:
+            recs = phoenix_records[item_id]
+            if target_vars is not None:
+                has_rare = any(v.get("has_rare", False) for v in recs)
+                limit = target_vars * 2 if has_rare else target_vars
+                recs = recs[:limit]
+            for r in recs:
                 if r.get("lstmf_path"):
                     selected_lstmf_paths.append(r["lstmf_path"])
 
         # Sampled CNT variations
         for item_id in sampled_cnt_ids:
-            for r in cnt_records[item_id]:
+            recs = cnt_records[item_id]
+            if target_vars is not None:
+                has_rare = any(v.get("has_rare", False) for v in recs)
+                limit = target_vars * 2 if has_rare else target_vars
+                recs = recs[:limit]
+            for r in recs:
                 if r.get("lstmf_path"):
                     selected_lstmf_paths.append(r["lstmf_path"])
 

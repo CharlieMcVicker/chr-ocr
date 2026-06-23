@@ -259,7 +259,7 @@ def run_staged_training(config: TrainingConfig):
                     "scripts/augment_dynamic.py",
                     "--manifest", master_manifest_to_use,
                     "--output-dir", master_pool_dir,
-                    "--variations-per-image", str(config.variations_per_image),
+                    "--variations-per-image", str(getattr(config, "master_pool_variations", None) or config.variations_per_image),
                     "--error-rate", str(config.error_rate),
                     "--blur-prob", str(config.blur_prob),
                     "--shadow-prob", str(config.shadow_prob),
@@ -368,7 +368,8 @@ def run_staged_training(config: TrainingConfig):
                 output_list_path=list_train_path,
                 mixture_ratio=current_ratio,
                 epoch=epoch,
-                max_cnt_samples=getattr(config, "max_cnt_samples", None)
+                max_cnt_samples=getattr(config, "max_cnt_samples", None),
+                target_vars=getattr(config, "variations_per_image", None)
             )
         else:
             # Original Step B: Generate fresh random dynamic augmentations (only train split)

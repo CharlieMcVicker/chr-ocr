@@ -35,6 +35,7 @@ class TrainingConfig:
     use_cached_cnt: bool = False
     cnt_cache_dir: str = "training_data/cnt_cache"
     master_pool_prefix: Optional[str] = None
+    master_pool_variations: Optional[int] = None
     skip_final_eval: bool = False
     skip_cnt_eval: bool = False
     
