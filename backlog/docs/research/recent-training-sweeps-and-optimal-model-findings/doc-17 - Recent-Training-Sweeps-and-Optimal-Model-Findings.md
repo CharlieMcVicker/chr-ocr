@@ -120,6 +120,14 @@ graph TD
 
 ---
 
+### Phase 10: Cosine Annealing with Warmup (Task 162)
+- **Objective**: Implement a Cosine Annealing learning rate schedule with linear warmup to smooth learning rate decay and prevent abrupt step transitions. Expose parameters via configuration and verify using a 6-epoch training sweep.
+- **Key Findings**:
+  - **Smooth Linear Warmup & Annealing**: Successfully verified linear warmup for first 2 epochs followed by cosine decay down to `eta_min` (1e-5).
+  - **Adaptation Stability**: The smooth curve prevented abrupt training steps, achieving a solid local optimum of **9.99% Phoenix CER** very early at iteration 400.
+
+---
+
 ## 📋 3. Trend Summarization Matrix
 
 | Parameter Group | Tested Range | Impact on Phoenix CER | Trend / Actionable Insight |

@@ -41,9 +41,12 @@ class TrainingConfig:
     
     # Learning rate options
     learning_rate: float = 0.0005
-    lr_schedule: str = "constant"  # constant, step, exp
+    lr_schedule: str = "constant"  # constant, step, exp, cosine_warmup
     lr_decay_rate: float = 0.5
     lr_decay_epochs: int = 4
+    lr_warmup_epochs: int = 2
+    lr_t_max: Optional[int] = None
+    lr_eta_min: float = 1e-6
     
     # Augmentation probabilities
     blur_prob: float = 0.1

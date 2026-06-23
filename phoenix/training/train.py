@@ -5,6 +5,7 @@ Orchestrates Tesseract training epoch-by-epoch while maintaining a low disk foot
 
 import os
 import sys
+import math
 import glob
 import subprocess
 import shutil
@@ -697,6 +698,22 @@ def run_staged_training(config: TrainingConfig):
             current_lr = config.learning_rate * (config.lr_decay_rate ** decay_steps)
         elif config.lr_schedule == "exp":
             current_lr = config.learning_rate * (config.lr_decay_rate ** (epoch - 1))
+        elif config.lr_schedule == "cosine_warmup":
+            warmup_epochs = config.lr_warmup_epochs
+            if epoch <= warmup_epochs:
+                if warmup_epochs > 0:
+                    current_lr = config.learning_rate * (epoch / warmup_epochs)
+                else:
+                    current_lr = config.learning_rate
+            else:
+                t_max = config.lr_t_max if config.lr_t_max is not None else (config.total_epochs - warmup_epochs)
+                t = epoch - warmup_epochs
+                eta_min = config.lr_eta_min
+                if t_max > 0:
+                    t = min(t, t_max)
+                    current_lr = eta_min + 0.5 * (config.learning_rate - eta_min) * (1 + math.cos(math.pi * t / t_max))
+                else:
+                    current_lr = eta_min
             
         print(f"Continuing training from: {continue_model}")
         print(f"Current Epoch {epoch} Learning Rate: {current_lr:.8f} (schedule: {config.lr_schedule})")
