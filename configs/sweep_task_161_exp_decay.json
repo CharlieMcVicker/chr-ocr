@@ -1,0 +1,94 @@
+{
+  "pre_training_phase": {
+    "output_dir": "training_data/staged_tuning/pretrain_cnt_foundation_3k",
+    "checkpoint_path": "training_data/staged_tuning/pretrain_cnt_foundation_3k/cnt_foundation.checkpoint",
+    "config": {
+      "total_epochs": 10,
+      "iterations_per_epoch": 250,
+      "variations_per_image": 3,
+      "learning_rate": 0.002,
+      "use_dynamic_cnt": true,
+      "cnt_fraction": 1.0,
+      "mixture_ratio": 0.0,
+      "pretrain_cnt_cap": 3000,
+      "blur_prob": 0.5,
+      "shadow_prob": 0.4,
+      "distortion_prob": 0.6,
+      "dropout_prob": 0.4,
+      "bleedthrough_prob": 0.3,
+      "cnt_noise": {
+        "distortion": {
+          "prob": 0.6,
+          "elastic_alpha": 1.5,
+          "elastic_sigma": 15.0
+        },
+        "dropout": {
+          "prob": 0.6,
+          "holes_min": 2,
+          "holes_max": 6,
+          "size_max": 12
+        },
+        "micro_dropout": {
+          "prob": 0.5,
+          "holes_min": 30,
+          "holes_max": 80
+        },
+        "smudge": {
+          "prob": 0.4,
+          "intensity": 0.4
+        }
+      }
+    }
+  },
+  "base": {
+    "config": {
+      "total_epochs": 16,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 3,
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "mixture_ratio": 0.99,
+      "max_cnt_samples": 500,
+      "blur_prob": 0.1,
+      "shadow_prob": 0.1,
+      "distortion_prob": 0.2,
+      "dropout_prob": 0.1,
+      "bleedthrough_prob": 0.1,
+      "lr_schedule": "exp",
+      "lr_decay_rate": 0.85,
+      "lr_decay_epochs": 1
+    },
+    "eval_iterations": [400, 800, 1200, 1600, 2000, 2400, 2800, 3200]
+  },
+  "experiments": [
+    {
+      "id": "two_stage_lr_0006_exp_decay",
+      "config": {
+        "description": "Fine-tuning using lower learning rate 0.0006 with exp decay, starting from 3k CNT foundation.",
+        "learning_rate": 0.0006
+      }
+    },
+    {
+      "id": "two_stage_lr_0008_exp_decay",
+      "config": {
+        "description": "Fine-tuning using lower learning rate 0.0008 with exp decay, starting from 3k CNT foundation.",
+        "learning_rate": 0.0008
+      }
+    },
+    {
+      "id": "two_stage_lr_0010_exp_decay",
+      "config": {
+        "description": "Fine-tuning using lower learning rate 0.001 with exp decay, starting from 3k CNT foundation.",
+        "learning_rate": 0.001
+      }
+    },
+    {
+      "id": "two_stage_lr_0012_exp_decay",
+      "config": {
+        "description": "Fine-tuning using lower learning rate 0.0012 with exp decay, starting from 3k CNT foundation.",
+        "learning_rate": 0.0012
+      }
+    }
+  ]
+}
