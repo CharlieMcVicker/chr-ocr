@@ -271,6 +271,75 @@ def extract_columns(pil_img: Image.Image) -> list:
     """
     return extract_columns_batch([pil_img])[0]
 
+def split_merged_crop_by_projection(crop_img, bbox, target_height=30) -> list:
+    """
+    Split a merged line crop using secondary horizontal projection profile analysis.
+    Converts the crop image region defined by bbox to grayscale, binarizes it,
+    computes row sums to find white-space valleys between text lines, and
+    calculates split boundaries.
+    
+    Returns a list of absolute sub-bboxes relative to the coordinate space of crop_img.
+    """
+    xmin, ymin, xmax, ymax = bbox
+    xmin, ymin, xmax, ymax = int(xmin), int(ymin), int(xmax), int(ymax)
+    
+    width = max(1, xmax - xmin)
+    height = max(1, ymax - ymin)
+    
+    # Crop the merged region from the image
+    line_crop = crop_img.crop((xmin, ymin, xmax, ymax))
+    img_gray = np.array(line_crop.convert("L"))
+    
+    # Binarize so text pixels are 255 and background pixels are 0
+    if np.mean(img_gray) > 127:
+        _, thresh = cv2.threshold(img_gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+    else:
+        _, thresh = cv2.threshold(img_gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        
+    row_sums = np.sum(thresh, axis=1)
+    
+    # Identify valleys. A row is a valley if its sum is very low (e.g. less than 1% of max possible sum)
+    threshold = width * 255 * 0.01
+    active_rows = np.where(row_sums > threshold)[0]
+    
+    if len(active_rows) == 0:
+        return [bbox]
+        
+    # Group consecutive active rows into text line blocks
+    blocks = []
+    start = active_rows[0]
+    for i in range(1, len(active_rows)):
+        if active_rows[i] > active_rows[i-1] + 1:
+            blocks.append((start, active_rows[i-1]))
+            start = active_rows[i]
+    blocks.append((start, active_rows[-1]))
+    
+    # Filter out blocks that are too thin to be a real line (e.g. < 5 pixels high)
+    valid_blocks = [b for b in blocks if (b[1] - b[0] + 1) >= 5]
+    if not valid_blocks:
+        valid_blocks = blocks
+        
+    if len(valid_blocks) <= 1:
+        return [bbox]
+        
+    # Calculate split boundaries at the midpoints of valleys between consecutive blocks
+    splits = []
+    for i in range(len(valid_blocks) - 1):
+        end_current = valid_blocks[i][1]
+        start_next = valid_blocks[i+1][0]
+        splits.append(int((end_current + start_next) // 2))
+        
+    # Construct sub-bboxes in the absolute coordinates of crop_img
+    sub_bboxes = []
+    current_ymin = int(ymin)
+    for s in splits:
+        split_y = int(ymin + s)
+        sub_bboxes.append([int(xmin), int(current_ymin), int(xmax), int(split_y)])
+        current_ymin = split_y
+    sub_bboxes.append([int(xmin), int(current_ymin), int(xmax), int(ymax)])
+    
+    return sub_bboxes
+
 def crop_pad_normalize_line(image, bbox, padding_x, padding_y, target_height_range=(30, 33)):
     """
     Crop a line from an image with padding, and normalize its height.
@@ -358,16 +427,37 @@ def extract_lines_from_images_batch(pil_imgs: list, padding_x: int = 5, padding_
 
         detected_lines = sorted(pred.bboxes, key=lambda b: b.bbox[1])
         lines_data = []
-        for line_idx, line in enumerate(detected_lines):
-            line_crop, padded_bbox = crop_pad_normalize_line(
-                crop_img, line.bbox, padding_x, padding_y
-            )
-            lines_data.append({
-                "image": line_crop,
-                "bbox": padded_bbox,
-                "confidence": line.confidence,
-                "index": line_idx
-            })
+        line_idx_counter = 0
+        for line in detected_lines:
+            lx1, ly1, lx2, ly2 = line.bbox
+            unpadded_height = max(1, int(ly2) - int(ly1))
+            target_height = 30
+            
+            if unpadded_height > 1.5 * target_height:
+                # Merge crop too tall, apply horizontal projection splitting
+                sub_bboxes = split_merged_crop_by_projection(crop_img, line.bbox, target_height=target_height)
+                for sub_bbox in sub_bboxes:
+                    line_crop, padded_bbox = crop_pad_normalize_line(
+                        crop_img, sub_bbox, padding_x, padding_y
+                    )
+                    lines_data.append({
+                        "image": line_crop,
+                        "bbox": padded_bbox,
+                        "confidence": line.confidence,
+                        "index": line_idx_counter
+                    })
+                    line_idx_counter += 1
+            else:
+                line_crop, padded_bbox = crop_pad_normalize_line(
+                    crop_img, line.bbox, padding_x, padding_y
+                )
+                lines_data.append({
+                    "image": line_crop,
+                    "bbox": padded_bbox,
+                    "confidence": line.confidence,
+                    "index": line_idx_counter
+                })
+                line_idx_counter += 1
             
         if not is_full_page:
             batch_results[img_idx].append({
