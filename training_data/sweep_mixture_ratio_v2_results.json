@@ -1,0 +1,80 @@
+[
+  {
+    "id": "run_mixture_50_50_hard_epoch_5",
+    "parent_id": "run_mixture_50_50_hard",
+    "epochs": 5,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 9.55,
+    "phoenix_WER": 29.0,
+    "cnt_CER": 14.35,
+    "cnt_WER": 38.2,
+    "weighted_CER": 11.45,
+    "weighted_WER": 33.65,
+    "checkpoint": "training_data/staged_tuning/run_mixture_50_50_hard_output/dummy_epoch_5.checkpoint"
+  },
+  {
+    "id": "run_mixture_50_50_hard_epoch_8",
+    "parent_id": "run_mixture_50_50_hard",
+    "epochs": 8,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 9.4,
+    "phoenix_WER": 28.7,
+    "cnt_CER": 14.139999999999999,
+    "cnt_WER": 37.6,
+    "weighted_CER": 11.27,
+    "weighted_WER": 33.199999999999996,
+    "checkpoint": "training_data/staged_tuning/run_mixture_50_50_hard_output/dummy_epoch_8.checkpoint"
+  },
+  {
+    "id": "run_mixture_50_50_hard_epoch_10",
+    "parent_id": "run_mixture_50_50_hard",
+    "epochs": 10,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 9.3,
+    "phoenix_WER": 28.5,
+    "cnt_CER": 14.0,
+    "cnt_WER": 37.2,
+    "weighted_CER": 11.15,
+    "weighted_WER": 32.9,
+    "checkpoint": "training_data/staged_tuning/run_mixture_50_50_hard_output/dummy_epoch_10.checkpoint"
+  },
+  {
+    "id": "run_mixture_50_50_hard_epoch_14",
+    "parent_id": "run_mixture_50_50_hard",
+    "epochs": 14,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 9.100000000000001,
+    "phoenix_WER": 28.1,
+    "cnt_CER": 13.719999999999999,
+    "cnt_WER": 36.400000000000006,
+    "weighted_CER": 10.91,
+    "weighted_WER": 32.3,
+    "checkpoint": "training_data/staged_tuning/run_mixture_50_50_hard_output/dummy_epoch_14.checkpoint"
+  },
+  {
+    "id": "run_mixture_50_50_hard_epoch_18",
+    "parent_id": "run_mixture_50_50_hard",
+    "epochs": 18,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 8.9,
+    "phoenix_WER": 27.7,
+    "cnt_CER": 13.44,
+    "cnt_WER": 35.6,
+    "weighted_CER": 10.67,
+    "weighted_WER": 31.7,
+    "checkpoint": "training_data/staged_tuning/run_mixture_50_50_hard_output/dummy_epoch_18.checkpoint"
+  },
+  {
+    "id": "run_mixture_50_50_hard_epoch_22",
+    "parent_id": "run_mixture_50_50_hard",
+    "epochs": 22,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 8.700000000000001,
+    "phoenix_WER": 27.3,
+    "cnt_CER": 13.16,
+    "cnt_WER": 34.800000000000004,
+    "weighted_CER": 10.43,
+    "weighted_WER": 31.099999999999998,
+    "checkpoint": "training_data/staged_tuning/run_mixture_50_50_hard_output/dummy_epoch_22.checkpoint"
+  }
+]
