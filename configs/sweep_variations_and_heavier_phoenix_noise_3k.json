@@ -1,0 +1,149 @@
+{
+  "pre_training_phase": {
+    "output_dir": "training_data/staged_tuning/pretrain_cnt_foundation_3k",
+    "checkpoint_path": "training_data/staged_tuning/pretrain_cnt_foundation_3k/cnt_foundation.checkpoint",
+    "config": {
+      "total_epochs": 10,
+      "iterations_per_epoch": 250,
+      "variations_per_image": 3,
+      "learning_rate": 0.002,
+      "use_dynamic_cnt": true,
+      "cnt_fraction": 1.0,
+      "mixture_ratio": 0.0,
+      "pretrain_cnt_cap": 3000,
+      "blur_prob": 0.5,
+      "shadow_prob": 0.4,
+      "distortion_prob": 0.6,
+      "dropout_prob": 0.4,
+      "bleedthrough_prob": 0.3
+    }
+  },
+  "base": {
+    "config": {
+      "total_epochs": 8,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 3,
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "mixture_ratio": 0.99,
+      "max_cnt_samples": 500,
+      "blur_prob": 0.1,
+      "shadow_prob": 0.1,
+      "distortion_prob": 0.4,
+      "dropout_prob": 0.1,
+      "bleedthrough_prob": 0.1,
+      "learning_rate": 0.003
+    },
+    "eval_iterations": [400, 800, 1200, 1600]
+  },
+  "experiments": [
+    {
+      "id": "two_stage_var_5_baseline_3k",
+      "config": {
+        "description": "Fine-tuning with 5 variations per image and baseline Phoenix noise.",
+        "variations_per_image": 5
+      }
+    },
+    {
+      "id": "two_stage_var_7_baseline_3k",
+      "config": {
+        "description": "Fine-tuning with 7 variations per image and baseline Phoenix noise.",
+        "variations_per_image": 7
+      }
+    },
+    {
+      "id": "two_stage_var_5_heavy_blur_bleed_3k",
+      "config": {
+        "description": "Fine-tuning with 5 variations per image and heavier blur/bleedthrough, zeroing coarse dropout to protect strokes.",
+        "variations_per_image": 5,
+        "blur_prob": 0.3,
+        "bleedthrough_prob": 0.3,
+        "dropout_prob": 0.0
+      }
+    },
+    {
+      "id": "two_stage_var_7_heavy_blur_bleed_3k",
+      "config": {
+        "description": "Fine-tuning with 7 variations per image and heavier blur/bleedthrough, zeroing coarse dropout to protect strokes.",
+        "variations_per_image": 7,
+        "blur_prob": 0.3,
+        "bleedthrough_prob": 0.3,
+        "dropout_prob": 0.0
+      }
+    },
+    {
+      "id": "two_stage_var_5_heavy_distortion_3k",
+      "config": {
+        "description": "Fine-tuning with 5 variations per image and heavier spatial elastic/grid distortions, zeroing coarse dropout.",
+        "variations_per_image": 5,
+        "distortion_prob": 0.6,
+        "distortion_limit": 0.08,
+        "dropout_prob": 0.0
+      }
+    },
+    {
+      "id": "two_stage_var_5_heavy_combined_3k",
+      "config": {
+        "description": "Fine-tuning with 5 variations and combined heavy blur, bleedthrough, and distortions, zeroing coarse dropout.",
+        "variations_per_image": 5,
+        "blur_prob": 0.3,
+        "bleedthrough_prob": 0.3,
+        "distortion_prob": 0.6,
+        "distortion_limit": 0.08,
+        "dropout_prob": 0.0
+      }
+    },
+    {
+      "id": "two_stage_var_7_heavy_combined_3k",
+      "config": {
+        "description": "Fine-tuning with 7 variations and combined heavy blur, bleedthrough, and distortions, zeroing coarse dropout.",
+        "variations_per_image": 7,
+        "blur_prob": 0.3,
+        "bleedthrough_prob": 0.3,
+        "distortion_prob": 0.6,
+        "distortion_limit": 0.08,
+        "dropout_prob": 0.0
+      }
+    },
+    {
+      "id": "two_stage_var_5_heavy_combined_lr_002_3k",
+      "config": {
+        "description": "Fine-tuning with 5 variations, combined heavy noise (no dropout), and lower learning rate 0.002.",
+        "variations_per_image": 5,
+        "blur_prob": 0.3,
+        "bleedthrough_prob": 0.3,
+        "distortion_prob": 0.6,
+        "distortion_limit": 0.08,
+        "dropout_prob": 0.0,
+        "learning_rate": 0.002
+      }
+    },
+    {
+      "id": "two_stage_var_7_heavy_combined_lr_002_3k",
+      "config": {
+        "description": "Fine-tuning with 7 variations, combined heavy noise (no dropout), and lower learning rate 0.002.",
+        "variations_per_image": 7,
+        "blur_prob": 0.3,
+        "bleedthrough_prob": 0.3,
+        "distortion_prob": 0.6,
+        "distortion_limit": 0.08,
+        "dropout_prob": 0.0,
+        "learning_rate": 0.002
+      }
+    },
+    {
+      "id": "two_stage_var_5_heavy_combined_lr_001_3k",
+      "config": {
+        "description": "Fine-tuning with 5 variations, combined heavy noise (no dropout), and lower learning rate 0.001.",
+        "variations_per_image": 5,
+        "blur_prob": 0.3,
+        "bleedthrough_prob": 0.3,
+        "distortion_prob": 0.6,
+        "distortion_limit": 0.08,
+        "dropout_prob": 0.0,
+        "learning_rate": 0.001
+      }
+    }
+  ]
+}
