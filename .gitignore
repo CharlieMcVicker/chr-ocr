@@ -41,4 +41,6 @@ tmp_dawg_test/
 tmp_ensemble/
 training_data/extracted_low_confidence_crops/
 training_data/staged_tuning/*_output/
+training_data/staged_tuning/pretrain_cnt_foundation*/
+
 
