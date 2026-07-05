@@ -208,13 +208,13 @@ function App() {
                 const isSearchMatch = searchMatches.some(m => m.lineId === line.id)
                 const isActiveSearchMatch = activeMatchIdx >= 0 && searchMatches[activeMatchIdx]?.lineId === line.id
 
-                let borderStyle = '1px dashed #cccccc'
+                let borderStyle = '1px solid transparent'
                 if (isActiveSearchMatch) {
-                  borderStyle = '2.5px solid var(--active-highlight)'
+                  borderStyle = '2.5px solid #ffeb3b'
                 } else if (isHovered) {
-                  borderStyle = '2px solid var(--active-highlight)'
+                  borderStyle = '2px solid #03a9f4'
                 } else if (isSearchMatch) {
-                  borderStyle = '1.5px solid #000000'
+                  borderStyle = '1.5px solid #ffc107'
                 }
 
                 return (
@@ -227,27 +227,41 @@ function App() {
                       width: `${width}px`,
                       height: `${height}px`,
                       border: borderStyle,
-                      backgroundColor: isActiveSearchMatch 
-                        ? 'rgba(0, 0, 0, 0.1)' 
-                        : isHovered 
-                        ? 'rgba(0, 0, 0, 0.04)' 
-                        : isSearchMatch 
-                        ? 'rgba(0, 0, 0, 0.02)' 
-                        : 'transparent'
                     }}
                     onMouseEnter={() => setHoveredLineId(line.id)}
                     onMouseLeave={() => setHoveredLineId(null)}
                   >
-                    <span 
-                      className="scan-line-text"
+                    {/* The original scan crop image */}
+                    <img 
+                      src={`/line_crops/${line.id}.png`} 
+                      alt="" 
                       style={{ 
-                        fontSize: `${height * 0.55}px`,
-                        fontFamily: 'Georgia, serif',
-                        opacity: 0.8
+                        width: '100%', 
+                        height: '100%', 
+                        objectFit: 'fill', 
+                        display: 'block' 
+                      }} 
+                    />
+                    
+                    {/* Visual Hover & Search Match Highlights Overlay */}
+                    <div
+                      style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        pointerEvents: 'none',
+                        backgroundColor: isActiveSearchMatch 
+                          ? 'rgba(255, 235, 59, 0.35)' 
+                          : isHovered 
+                          ? 'rgba(3, 169, 244, 0.15)' 
+                          : isSearchMatch 
+                          ? 'rgba(255, 235, 59, 0.2)' 
+                          : 'transparent',
+                        transition: 'background-color 0.15s ease'
                       }}
-                    >
-                      {line.text.slice(0, 15)}...
-                    </span>
+                    />
                   </div>
                 )
               })}
