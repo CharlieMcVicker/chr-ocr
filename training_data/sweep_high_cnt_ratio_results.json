@@ -1,0 +1,54 @@
+[
+  {
+    "id": "two_stage_high_ratio_low_lr_reg_iter_400",
+    "parent_id": "two_stage_high_ratio_low_lr_reg",
+    "iterations": 400,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 9.99,
+    "phoenix_WER": 33.73,
+    "cnt_CER": 3.42,
+    "cnt_WER": 11.03,
+    "weighted_CER": 3.87,
+    "weighted_WER": 12.59,
+    "checkpoint": "training_data/staged_tuning/two_stage_high_ratio_low_lr_reg_output/chr_30.485_355_400.checkpoint"
+  },
+  {
+    "id": "two_stage_high_ratio_low_lr_reg_iter_800",
+    "parent_id": "two_stage_high_ratio_low_lr_reg",
+    "iterations": 800,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 10.14,
+    "phoenix_WER": 34.17,
+    "cnt_CER": 3.46,
+    "cnt_WER": 11.0,
+    "weighted_CER": 3.92,
+    "weighted_WER": 12.59,
+    "checkpoint": "training_data/staged_tuning/two_stage_high_ratio_low_lr_reg_output/chr_21.007_789_1000.checkpoint"
+  },
+  {
+    "id": "two_stage_high_ratio_low_lr_reg_iter_1200",
+    "parent_id": "two_stage_high_ratio_low_lr_reg",
+    "iterations": 1200,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 11.73,
+    "phoenix_WER": 41.91,
+    "cnt_CER": 3.29,
+    "cnt_WER": 10.12,
+    "weighted_CER": 3.87,
+    "weighted_WER": 12.31,
+    "checkpoint": "training_data/staged_tuning/two_stage_high_ratio_low_lr_reg_output/chr_13.685_869_1200.checkpoint"
+  },
+  {
+    "id": "two_stage_high_ratio_low_lr_reg_iter_1600",
+    "parent_id": "two_stage_high_ratio_low_lr_reg",
+    "iterations": 1600,
+    "mixture_ratio": 0.5,
+    "phoenix_CER": 11.73,
+    "phoenix_WER": 41.91,
+    "cnt_CER": 3.29,
+    "cnt_WER": 10.12,
+    "weighted_CER": 3.87,
+    "weighted_WER": 12.31,
+    "checkpoint": "training_data/staged_tuning/two_stage_high_ratio_low_lr_reg_output/chr_13.685_869_1200.checkpoint"
+  }
+]

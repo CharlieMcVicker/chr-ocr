@@ -1,0 +1,80 @@
+{
+  "pre_training_phase": {
+    "output_dir": "training_data/staged_tuning/pretrain_cnt_foundation_3k",
+    "checkpoint_path": "training_data/staged_tuning/pretrain_cnt_foundation_3k/cnt_foundation.checkpoint",
+    "config": {
+      "total_epochs": 10,
+      "iterations_per_epoch": 250,
+      "variations_per_image": 3,
+      "learning_rate": 0.002,
+      "use_dynamic_cnt": true,
+      "cnt_fraction": 1.0,
+      "mixture_ratio": 0.0,
+      "pretrain_cnt_cap": 3000,
+      "blur_prob": 0.5,
+      "shadow_prob": 0.4,
+      "distortion_prob": 0.6,
+      "dropout_prob": 0.4,
+      "bleedthrough_prob": 0.3,
+      "cnt_noise": {
+        "distortion": {
+          "prob": 0.6,
+          "elastic_alpha": 1.5,
+          "elastic_sigma": 15.0
+        },
+        "dropout": {
+          "prob": 0.6,
+          "holes_min": 2,
+          "holes_max": 6,
+          "size_max": 12
+        },
+        "micro_dropout": {
+          "prob": 0.5,
+          "holes_min": 30,
+          "holes_max": 80
+        },
+        "smudge": {
+          "prob": 0.4,
+          "intensity": 0.4
+        }
+      }
+    }
+  },
+  "base": {
+    "config": {
+      "total_epochs": 8,
+      "iterations_per_epoch": 200,
+      "variations_per_image": 3,
+      "use_dynamic_cnt": true,
+      "use_shared_pool": true,
+      "cnt_fraction": 0.1,
+      "mixture_ratio": 0.5,
+      "max_cnt_samples": 1500,
+      "blur_prob": 0.2,
+      "shadow_prob": 0.15,
+      "distortion_prob": 0.35,
+      "dropout_prob": 0.2,
+      "bleedthrough_prob": 0.15,
+      "lr_schedule": "step",
+      "lr_decay_rate": 0.6,
+      "lr_decay_epochs": 3,
+      "mixture_schedule": {
+        "enabled": true,
+        "start_ratio": 0.5,
+        "end_ratio": 0.9,
+        "start_epoch": 1,
+        "end_epoch": 8
+      }
+    },
+    "eval_iterations": [400, 800, 1200, 1600]
+  },
+  "experiments": [
+    {
+      "id": "two_stage_high_ratio_low_lr_reg",
+      "config": {
+        "description": "Fine-tuning with learning rate 0.001, increased regularization (higher blur, shadow, distortion, dropout, bleedthrough probabilities), and mixture ratio decay starting from 0.5 to 0.9.",
+        "learning_rate": 0.001
+      }
+    }
+  ]
+}
