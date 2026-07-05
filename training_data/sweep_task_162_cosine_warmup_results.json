@@ -1,0 +1,41 @@
+[
+  {
+    "id": "two_stage_lr_001_cosine_warmup_iter_200",
+    "parent_id": "two_stage_lr_001_cosine_warmup",
+    "iterations": 200,
+    "mixture_ratio": 0.99,
+    "phoenix_CER": 13.24,
+    "phoenix_WER": 42.95,
+    "cnt_CER": null,
+    "cnt_WER": null,
+    "weighted_CER": 13.24,
+    "weighted_WER": 42.95,
+    "checkpoint": "training_data/staged_tuning/two_stage_lr_001_cosine_warmup_output/chr_29.899_97_100.checkpoint"
+  },
+  {
+    "id": "two_stage_lr_001_cosine_warmup_iter_400",
+    "parent_id": "two_stage_lr_001_cosine_warmup",
+    "iterations": 400,
+    "mixture_ratio": 0.99,
+    "phoenix_CER": 9.99,
+    "phoenix_WER": 33.85,
+    "cnt_CER": null,
+    "cnt_WER": null,
+    "weighted_CER": 9.99,
+    "weighted_WER": 33.85,
+    "checkpoint": "training_data/staged_tuning/two_stage_lr_001_cosine_warmup_output/chr_27.083_418_500.checkpoint"
+  },
+  {
+    "id": "two_stage_lr_001_cosine_warmup_iter_600",
+    "parent_id": "two_stage_lr_001_cosine_warmup",
+    "iterations": 600,
+    "mixture_ratio": 0.99,
+    "phoenix_CER": 10.08,
+    "phoenix_WER": 33.23,
+    "cnt_CER": null,
+    "cnt_WER": null,
+    "weighted_CER": 10.08,
+    "weighted_WER": 33.23,
+    "checkpoint": "training_data/staged_tuning/two_stage_lr_001_cosine_warmup_output/chr_24.611_490_600.checkpoint"
+  }
+]
