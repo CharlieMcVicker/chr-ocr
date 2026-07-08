@@ -2,7 +2,7 @@ import os
 import json
 
 def main():
-    manifest_path = "training_data/manifest.json"
+    manifest_path = "training_data/manifest_w_lang.json"
     if not os.path.exists(manifest_path):
         print(f"Error: {manifest_path} not found.")
         return
