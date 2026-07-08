@@ -43,4 +43,6 @@ training_data/extracted_low_confidence_crops/
 training_data/staged_tuning/*_output/
 training_data/staged_tuning/pretrain_cnt_foundation*/
 
-
+frontend/dist
+frontend/node_modules
+scratch/
