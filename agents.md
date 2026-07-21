@@ -44,3 +44,90 @@ To run Python files, manage dependencies, or execute scripts, agents **MUST** us
 - **Always** run `uv sync` to ensure the project virtual environment matches the lockfile.
 
 *If you are an AI agent reading this, please ensure you review and strictly adhere to the guidelines provided in the `.agents/rules/` directory.*
+
+## Code structure
+
+Most code is inside the `phoenix` module, with the following structure
+
+```
+phoenix
+├── __init__.py
+├── config.py
+├── layout
+│   ├── __init__.py
+│   ├── classification.py
+│   ├── classify_layout.py
+│   ├── extract_lines.py
+│   ├── extract_low_confidence_rare_crops.py
+│   ├── find_line_class_params.py
+│   ├── ocr.py
+│   ├── segmentation.py
+│   └── test_layout_migration.py
+├── manifest
+│   ├── __init__.py
+│   ├── add_predicted_lang_to_manifest.py
+│   ├── build_frontend_index.py
+│   ├── crops.py
+│   ├── enrich_manifest_with_ftm.py
+│   ├── filter_manifest.py
+│   ├── operations.py
+│   └── test_manifest_migration.py
+├── text
+│   ├── __init__.py
+│   ├── align_verses.py
+│   ├── normalization.py
+│   ├── segment_verses.py
+│   ├── test_normalization.py
+│   ├── test_text_migration.py
+│   └── update_unicharsets.py
+├── tools
+│   ├── __init__.py
+│   ├── analyze_dataset_character_frequencies.py
+│   ├── analyze_ocr_discrepancies.py
+│   ├── apply_space_corrections.py
+│   ├── download_scans.py
+│   ├── evaluate_lang_classification.py
+│   ├── find_missing_spaces.py
+│   ├── integrate_cnt.py
+│   ├── package_cnt_test_data.py
+│   ├── prepare_training_data.py
+│   ├── prepare_v2_training_data.py
+│   ├── process_all_cnt.py
+│   ├── process_all_scans.py
+│   ├── scrape_all_cnt.py
+│   ├── test_tools_migration.py
+│   └── test_training_routes.py
+├── training
+│   ├── __init__.py
+│   ├── augment.py
+│   ├── augment_dataset.py
+│   ├── augment_dynamic.py
+│   ├── charset.py
+│   ├── eval.py
+│   ├── evaluate_checkpoints.py
+│   ├── evaluate_mixed_model.py
+│   ├── mix_datasets.py
+│   ├── pre_augment_cnt.py
+│   ├── sweep.py
+│   ├── test_mixture_schedule.py
+│   ├── test_pretraining_config.py
+│   ├── test_sweep_checkpoint.py
+│   ├── train.py
+│   ├── train_staged.py
+│   └── tune_meta_parameters.py
+└── visualization
+    ├── __init__.py
+    ├── diagnose_columns.py
+    ├── generate_binarization_graphs.py
+    ├── generate_cnt_viewer.py
+    ├── generate_column_confidence_histogram.py
+    ├── generate_confidence_heatmaps.py
+    ├── generate_confusion_matrix.py
+    ├── generate_metric_plots.py
+    ├── generate_performance_graphs.py
+    ├── metrics_dashboard.py
+    ├── plot_layout.py
+    ├── preview_bounding_boxes.py
+    ├── test_visualization_migration.py
+    └── visualize_confusion.py
+```
