@@ -77,6 +77,13 @@ def run_staged_training(config: TrainingConfig):
             check=True
         )
 
+    # Validate mandatory character set on model unicharset
+    from phoenix.training.charset import validate_unicharset
+    unicharset_path = os.path.join(config.model_dir, "chr.lstm-unicharset")
+    if os.path.exists(unicharset_path):
+        validate_unicharset(unicharset_path)
+        print(f"Validated required character set in {unicharset_path}")
+
     # 3. Main Staged Epoch Loop
     print(f"\n=== Starting Staged Epoch Loop: {config.total_epochs} epochs, {config.iterations_per_epoch} iterations per epoch ===")
     
@@ -830,3 +837,37 @@ def run_staged_training(config: TrainingConfig):
 
     print("\n=== Staged Epoch Loop finished successfully! ===")
     print(f"Final checkpoints and epoch training logs are in: {config.train_output_dir}")
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Cherokee Phoenix Tesseract OCR Training Pipeline")
+    parser.add_argument("--config", type=str, help="Path to JSON config file (e.g. configs/best_config.json)")
+    parser.add_argument("--continue-from", type=str, dest="continue_from", help="Checkpoint path to resume training from")
+    parser.add_argument("--total-epochs", type=int, dest="total_epochs", help="Total training epochs")
+    parser.add_argument("--iterations-per-epoch", type=int, dest="iterations_per_epoch", help="Iterations per epoch")
+    parser.add_argument("--learning-rate", type=float, dest="learning_rate", help="Learning rate")
+    parser.add_argument("--model-dir", type=str, dest="model_dir", help="Model directory")
+    parser.add_argument("--train-output-dir", type=str, dest="train_output_dir", help="Training output directory")
+
+    args = parser.parse_args()
+
+    if args.config:
+        config = TrainingConfig.load_from_json(args.config)
+    else:
+        config = TrainingConfig()
+
+    if args.continue_from is not None:
+        config.continue_from = args.continue_from
+    if args.total_epochs is not None:
+        config.total_epochs = args.total_epochs
+    if args.iterations_per_epoch is not None:
+        config.iterations_per_epoch = args.iterations_per_epoch
+    if args.learning_rate is not None:
+        config.learning_rate = args.learning_rate
+    if args.model_dir is not None:
+        config.model_dir = args.model_dir
+    if args.train_output_dir is not None:
+        config.train_output_dir = args.train_output_dir
+
+    run_staged_training(config)
