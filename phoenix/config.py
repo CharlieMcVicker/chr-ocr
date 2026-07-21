@@ -132,7 +132,9 @@ class TrainingConfig:
         d["train_output_dir"] = self.train_output_dir
         d["checkpoint_dir"] = self.checkpoint_dir
         d["cnt_cache_dir"] = self.cnt_cache_dir
-        return d
+        # Filter out internal private keys (starting with '_') and keys with None values
+        return {k: v for k, v in d.items() if v is not None and not k.startswith('_')}
+
 
     @classmethod
     def from_dict(cls, data: dict) -> 'TrainingConfig':
