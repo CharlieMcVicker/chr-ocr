@@ -46,3 +46,8 @@ training_data/staged_tuning/pretrain_cnt_foundation*/
 frontend/dist
 frontend/node_modules
 scratch/
+
+*.box
+*.tiff
+*.gt.txt
+*.safetensors
