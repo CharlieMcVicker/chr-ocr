@@ -12,6 +12,7 @@ import numpy as np
 import argparse
 import sys
 from PIL import Image
+from tqdm import tqdm
 
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
@@ -307,7 +308,7 @@ def main():
             for item in train_items
         }
         
-        for idx, fut in enumerate(as_completed(generation_futures)):
+        for idx, fut in tqdm(enumerate(as_completed(generation_futures)), desc="Augmenting images", total=len(train_items)):
             try:
                 records = fut.result()
                 if records:
@@ -319,21 +320,15 @@ def main():
             except Exception as e:
                 print(f"Error generating variation: {e}", file=sys.stderr)
                 
-            if (idx + 1) % 50 == 0 or (idx + 1) == len(train_items):
-                print(f"Generation Progress: {idx + 1}/{len(train_items)} items processed.")
-                
         if compilation_futures:
             print(f"Waiting for {len(compilation_futures)} compilation tasks to finish...")
-            for idx, (record, comp_fut) in enumerate(compilation_futures):
+            for idx, (record, comp_fut) in tqdm(enumerate(compilation_futures), desc="Compiling lstmf files", total=len(compilation_futures)):
                 try:
                     lstmf_path = comp_fut.result()
                     record["lstmf_path"] = lstmf_path
                 except Exception as e:
                     print(f"Error compiling {record['tiff_path']}: {e}", file=sys.stderr)
                 
-                if (idx + 1) % 100 == 0 or (idx + 1) == len(compilation_futures):
-                    print(f"Compilation Progress: {idx + 1}/{len(compilation_futures)} compiled.")
-
     print(f"Dynamic augmentation complete. Generated variations in {args.output_dir}")
 
     # Write metadata index
