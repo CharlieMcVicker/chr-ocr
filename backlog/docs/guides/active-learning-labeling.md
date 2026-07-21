@@ -44,10 +44,10 @@ To generate or update these predictions, run the enrichment script:
 
 ```bash
 # Process only new entries without existing FTM predictions
-uv run scripts/enrich_manifest_with_ftm.py
+uv run python -m phoenix.manifest.enrich_manifest_with_ftm
 
 # Force regeneration/overwrite of all existing predictions (e.g., after deploying a new model version)
-uv run scripts/enrich_manifest_with_ftm.py --force
+uv run python -m phoenix.manifest.enrich_manifest_with_ftm --force
 ```
 
 ### JSON Schema Additions
@@ -85,7 +85,7 @@ The targeted crop extractor locates and exports line crops meeting specific crit
 Run the script from the root directory using `uv`:
 
 ```bash
-uv run scripts/extract_low_confidence_rare_crops.py \
+uv run python -m phoenix.layout.extract_low_confidence_rare_crops \
   --manifest training_data/manifest_w_lang.json \
   --output-dir training_data/extracted_low_confidence_crops \
   --max-confidence 85.0 \
@@ -118,11 +118,11 @@ To analyze model performance at a page-level and column-level, two visualization
 
 ### A. Heatmaps with Column Offsets
 
-The script `generate_confidence_heatmaps.py` renders high-DPI overlays of segmented lines on top of the original historical scans. Bounding boxes are colored based on their OCR confidence scores, making spatial error patterns (such as page borders, ink bleed, or physical tears) immediately visible.
+The module `phoenix.visualization.generate_confidence_heatmaps` renders high-DPI overlays of segmented lines on top of the original historical scans. Bounding boxes are colored based on their OCR confidence scores, making spatial error patterns (such as page borders, ink bleed, or physical tears) immediately visible.
 
 #### Handling Column Offsets
 Line bounding boxes inside `manifest_w_lang.json` are often stored in coordinates *relative to their detected parent column crop*. To overlay them accurately on the original full-page scan, the visualization engine:
-1.  Invokes layout analysis (`extract_columns` from `server/layout`) on the full-page scan.
+1.  Invokes layout analysis (`extract_columns` from `phoenix.layout`) on the full-page scan.
 2.  Retrieves the absolute coordinates (`c_xmin`, `c_ymin`) of each column.
 3.  Calculates the absolute page-level coordinates of each line bounding box:
     $$\text{abs\_xmin} = \text{bbox\_xmin} + (\text{c\_xmin} - 20)$$
@@ -137,12 +137,12 @@ The bounding boxes are color-coded using the **`RdYlGn`** (Red-Yellow-Green) col
 
 ```bash
 # Generate confidence heatmaps for selected key scans
-uv run scripts/generate_confidence_heatmaps.py
+uv run python -m phoenix.visualization.generate_confidence_heatmaps
 ```
 
 ### B. Column-Mean Histograms
 
-The script `generate_column_confidence_histogram.py` aggregates OCR performance to identify structurally weak columns. This is useful for identifying columns affected by global issues like localized camera defocus or ink fading.
+The module `phoenix.visualization.generate_column_confidence_histogram` aggregates OCR performance to identify structurally weak columns. This is useful for identifying columns affected by global issues like localized camera defocus or ink fading.
 
 1.  It groups lines by column key: `(source_scan, column_index)`.
 2.  It filters out non-Cherokee text blocks and skips zero-confidence edge cases.
@@ -152,7 +152,7 @@ The script `generate_column_confidence_histogram.py` aggregates OCR performance 
 
 ```bash
 # Generate the distribution histogram
-uv run scripts/generate_column_confidence_histogram.py
+uv run python -m phoenix.visualization.generate_column_confidence_histogram
 ```
 
 ---

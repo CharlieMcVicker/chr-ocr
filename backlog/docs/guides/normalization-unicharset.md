@@ -111,7 +111,7 @@ combine_tessdata -d chr.traineddata
 
 ## 4. Dynamic Programming (DP) Alignment Confusion Matrix
 
-To precisely identify OCR systematic errors (where the model confuses look-alike Cherokee characters), the script `scripts/generate_confusion_matrix.py` performs a character-by-character alignment of the normalized ground truth and OCR prediction using a Dynamic Programming (DP) edit distance algorithm.
+To precisely identify OCR systematic errors (where the model confuses look-alike Cherokee characters), the module `phoenix.tools.generate_confusion_matrix` performs a character-by-character alignment of the normalized ground truth and OCR prediction using a Dynamic Programming (DP) edit distance algorithm.
 
 ### Mathematical Formulation
 
@@ -158,14 +158,14 @@ Cherokee texts have highly skewed syllable frequency distributions, causing stan
 ```mermaid
 flowchart TD
     subgraph Stage 1: Frequency Analysis
-        A[Base Training Manifest] --> B[scripts/analyze_dataset_character_frequencies.py]
+        A[Base Training Manifest] --> B[phoenix.manifest.analyze_dataset_character_frequencies]
         B --> C[Identify Cherokee Characters]
         C --> D[Identify Bottom 20% Characters]
         D --> E[training_data/rare_characters.json]
     end
 
     subgraph Stage 2: Offline Dataset Mixing
-        E --> F[scripts/mix_datasets.py]
+        E --> F[phoenix.manifest.mix_datasets]
         G[Cherokee Phoenix Base] --> F
         H[Cherokee New Testament CNT] --> F
         F --> I[Force-Include Lines with Rare Characters 4, brackets, Ꮐ]
@@ -174,24 +174,24 @@ flowchart TD
     end
 
     subgraph Stage 3: Online Dynamic Balancing
-        K --> L[phoenix/training/train.py]
+        K --> L[phoenix.training.train_staged]
         E --> L
         L --> M[Separate CNT lines into Rare vs Common sets]
         M --> N[Oversample/Prioritize Rare CNT lines in Epoch training]
-        N --> O[scripts/augment_dynamic.py]
+        N --> O[phoenix.training.augment]
         O --> P[Double Augmentation Variations for Rare Characters]
         P --> Q[Tesseract Staged Epoch Fine-Tuning]
     end
 ```
 
 ### Stage 1: Frequency Analysis and Identification
-* The script `scripts/analyze_dataset_character_frequencies.py` scans all labeled Cherokee entries within the active training manifest.
+* The module `phoenix.manifest.analyze_dataset_character_frequencies` scans all labeled Cherokee entries within the active training manifest.
 * It filters out non-Cherokee characters, focusing exclusively on the Cherokee Unicode blocks (`0x13A0` to `0x13FF` and `0xAB70` to `0xABFF`).
 * It sorts unique Cherokee characters in ascending order of frequency. The bottom 20% of under-represented characters are designated as "rare characters" and saved to `training_data/rare_characters.json`.
 
 ### Stage 2: Offline Dataset Mixing and Stable Sampling
-* The script `scripts/mix_datasets.py` blends the Cherokee Phoenix base training dataset with a 10% subset of the Cherokee New Testament (CNT) dataset.
-* To prevent rare characters from being omitted during random sampling, the script force-includes all valid lines containing:
+* The module `phoenix.manifest.mix_datasets` blends the Cherokee Phoenix base training dataset with a 10% subset of the Cherokee New Testament (CNT) dataset.
+* To prevent rare characters from being omitted during random sampling, the module force-includes all valid lines containing:
   * The numeric identifier `'4'`.
   * The punctuation brackets `'['` and `']'`.
   * The historic Cherokee syllable `'Ꮐ'` (nah).
@@ -199,5 +199,5 @@ flowchart TD
 
 ### Stage 3: Online Dynamic Balancing & Heavier Augmentation
 During active model fine-tuning within the Staged Epoch Loop:
-1. **Dynamic Oversampling**: `phoenix/training/train.py` reads `rare_characters.json` and splits available CNT lines into "rare-containing" and "common" lists. When assembling the dynamic dataset for each training epoch, lines containing rare characters are shuffled and prioritized first to fill the allocated dynamic sample size (`n_cnt`), ensuring high representation.
-2. **Double Augmentation Variations**: In `scripts/augment_dynamic.py`, any training crop that contains one or more rare characters receives double the target dynamic augmentations (`variations = target * 2`). This forces the training engine to observe twice as many deformed, binarized, and noise-injected samples of rare characters, accelerating the convergence of rare softmax logit weights.
+1. **Dynamic Oversampling**: `phoenix.training.train_staged` reads `rare_characters.json` and splits available CNT lines into "rare-containing" and "common" lists. When assembling the dynamic dataset for each training epoch, lines containing rare characters are shuffled and prioritized first to fill the allocated dynamic sample size (`n_cnt`), ensuring high representation.
+2. **Double Augmentation Variations**: In `phoenix.training.augment`, any training crop that contains one or more rare characters receives double the target dynamic augmentations (`variations = target * 2`). This forces the training engine to observe twice as many deformed, binarized, and noise-injected samples of rare characters, accelerating the convergence of rare softmax logit weights.

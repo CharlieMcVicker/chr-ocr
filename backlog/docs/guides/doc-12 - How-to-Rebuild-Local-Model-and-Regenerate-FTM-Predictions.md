@@ -24,28 +24,18 @@ When you fine-tune a new Tesseract model, you must package the best checkpoint a
 
 ## Phase 1: Rebuild the Trained Local Model
 
-All python scripts must be executed using the project's local virtual environment (`.venv`).
+All python scripts must be executed using `uv run`.
 
 ### Step 1: Run Training
 
-You can choose between a standard training script or the staged epoch loop pipeline.
+Run the staged epoch loop pipeline (`phoenix.training.train_staged`), which dynamically applies augmentations (like elastic distortions and ink bleeding simulation) epoch-by-epoch while maintaining a low disk footprint.
 
-#### Option A: Staged Epoch Loop (Recommended for Production)
-The staged epoch loop dynamically applies augmentations (like elastic distortions and ink bleeding simulation) epoch-by-epoch while maintaining a low disk footprint.
-
-Run the supervisor script:
 ```bash
-.venv/bin/python scripts/train_staged.py \
+uv run python -m phoenix.training.train_staged \
   --total-epochs 8 \
   --iterations-per-epoch 120 \
   --variations-per-image 3 \
   --error-rate 0.05
-```
-
-#### Option B: Standard Training Run
-For a quick, fixed-iteration run without dynamic staged epochs:
-```bash
-./scripts/train_v2.sh 100
 ```
 
 ---
@@ -57,42 +47,42 @@ Tesseract outputs intermediate model checkpoints (`.checkpoint` files) during tr
 ```bash
 lstmtraining \
   --stop_training \
-  --continue_from training_data_v2/dataset_staged_output/chr_checkpoint \
-  --traineddata training_data_v2/dataset/model/chr.traineddata \
-  --model_output training_data_v2/dataset/model/chr_best_finetuned.traineddata
+  --continue_from training_data/dataset_staged_output/chr_checkpoint \
+  --traineddata training_data/dataset/model/chr.traineddata \
+  --model_output training_data/dataset/model/chr_best_finetuned.traineddata
 ```
 
 > [!NOTE]
-> Ensure the output is named exactly `chr_best_finetuned.traineddata` and is saved in `training_data_v2/dataset/model/`, as this is the path and model name hardcoded in the enrichment script.
+> Ensure the output is named exactly `chr_best_finetuned.traineddata` and is saved in `training_data/dataset/model/`, as this is the path and model name configured in the enrichment pipeline.
 
 ---
 
 ## Phase 2: Regenerate FTM Predictions
 
-Once the new `chr_best_finetuned.traineddata` model is packaged, you must update the master manifest file (`training_data_v2/manifest_w_lang.json`) with new predictions.
+Once the new `chr_best_finetuned.traineddata` model is packaged, you must update the master manifest file (`training_data/manifest_w_lang.json`) with new predictions.
 
-### Step 1: Run the Enrichment Script
+### Step 1: Run the Enrichment Module
 
-Run the enrichment script to process the images and write the updated predictions and confidence scores to the manifest.
+Run `phoenix.manifest.enrich_manifest_with_ftm` to process the images and write the updated predictions and confidence scores to the manifest.
 
-By default, the script is **restartable** and will skip entries that already have `ftm_ocr` and `ftm_confidence` populated. To force a full regeneration of all predictions (recommended when deploying a new model), pass the `--force` flag:
+By default, the module is **restartable** and will skip entries that already have `ftm_ocr` and `ftm_confidence` populated. To force a full regeneration of all predictions (recommended when deploying a new model), pass the `--force` flag:
 
 ```bash
 # Force regeneration of all predictions:
-.venv/bin/python scripts/enrich_manifest_with_ftm.py --force
+uv run python -m phoenix.manifest.enrich_manifest_with_ftm --force
 ```
 
 If you only want to process new entries that do not yet have predictions:
 
 ```bash
 # Process only entries without existing predictions:
-.venv/bin/python scripts/enrich_manifest_with_ftm.py
+uv run python -m phoenix.manifest.enrich_manifest_with_ftm
 ```
 
-This script will:
+This pipeline will:
 - Load the manifest `manifest_w_lang.json`.
 - Execute PyTesseract OCR on each Cherokee image using the new `chr_best_finetuned` model.
 - Calculate the mean word-level confidence.
 - Periodically save progress and output final statistics, including the lowest-confidence entries.
 
-Once the script completes, restart your web/labeling server (if running) so the labeling interface reflects the new predictions.
+Once the process completes, restart your web/labeling server (if running) so the labeling interface reflects the new predictions.
