@@ -37,6 +37,8 @@ training_data/dataset_staged_output_*/
 training_data/dataset_epoch_mixed/
 
 # Temp and active learning / test outputs
+data_temp/
+checkpoints/
 tmp_dawg_test/
 tmp_ensemble/
 training_data/extracted_low_confidence_crops/

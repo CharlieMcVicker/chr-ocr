@@ -115,7 +115,7 @@ def run_meta_parameter_sweep(
 
     # Clean up old pools matching the sweep name prefix before starting
     if sweep_name:
-        staged_tuning_dir = "training_data/staged_tuning"
+        staged_tuning_dir = "data_temp/staged_tuning"
         if os.path.exists(staged_tuning_dir):
             prefix = f"master_pool_{sweep_name}"
             print(f"Cleaning up existing master pool directories starting with '{prefix}'...")
@@ -143,8 +143,8 @@ def run_meta_parameter_sweep(
         print(f"\n--- Experiment {i}/{len(experiments)}: {exp_id} ---")
         print(f"Mixture ratio: {exp_config.mixture_ratio}")
         
-        run_output_dir = f"training_data/staged_tuning/{exp_id}_output"
-        run_temp_epoch_dir = f"training_data/staged_tuning/{exp_id}_temp_epoch"
+        run_output_dir = f"data_temp/staged_tuning/{exp_id}_output"
+        run_temp_epoch_dir = f"data_temp/staged_tuning/{exp_id}_temp_epoch"
         
         # Clean up existing run directories to start completely fresh (and delete old logs, metrics, checkpoints)
         if os.path.exists(run_output_dir):
@@ -213,7 +213,7 @@ def run_meta_parameter_sweep(
             # Evaluate all requested sub-iterations
             for target_iter in exp.eval_iterations:
                 print(f"Locating checkpoint for target iterations: {target_iter}...")
-                checkpoint = get_checkpoint_for_iteration(run_output_dir, target_iter)
+                checkpoint = get_checkpoint_for_iteration(exp_config.checkpoint_dir, target_iter)
                 
                 if checkpoint:
                     print(f"Evaluating checkpoint: {checkpoint}")

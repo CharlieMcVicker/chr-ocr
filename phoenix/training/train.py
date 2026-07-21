@@ -60,6 +60,7 @@ def run_staged_training(config: TrainingConfig):
     # 1. Directories setup
     os.makedirs(config.model_dir, exist_ok=True)
     os.makedirs(config.train_output_dir, exist_ok=True)
+    os.makedirs(config.checkpoint_dir, exist_ok=True)
 
     # 2. Download and extract base models if needed
     traineddata_path = os.path.join(config.model_dir, "chr.traineddata")
@@ -99,7 +100,7 @@ def run_staged_training(config: TrainingConfig):
         list_train_path = os.path.join(config.output_dir, "list.train")
         if config.use_shared_pool:
             pool_name = f"{config.master_pool_prefix}_epoch_{epoch}" if config.master_pool_prefix else f"master_pool_epoch_{epoch}"
-            master_pool_dir = f"training_data/staged_tuning/{pool_name}"
+            master_pool_dir = f"data_temp/staged_tuning/{pool_name}"
             master_index_path = os.path.join(master_pool_dir, "metadata_index.json")
             
             if not os.path.exists(master_index_path):
@@ -684,14 +685,14 @@ def run_staged_training(config: TrainingConfig):
             if config.continue_from:
                 continue_model = config.continue_from
             else:
-                # Check if there is an existing checkpoint in train_output_dir
-                latest = get_latest_checkpoint(config.train_output_dir)
+                # Check if there is an existing checkpoint in checkpoint_dir
+                latest = get_latest_checkpoint(config.checkpoint_dir)
                 if latest:
                     continue_model = latest
                 else:
                     continue_model = base_lstm_path
         else:
-            latest = get_latest_checkpoint(config.train_output_dir)
+            latest = get_latest_checkpoint(config.checkpoint_dir)
             if latest:
                 continue_model = latest
             else:
@@ -735,7 +736,7 @@ def run_staged_training(config: TrainingConfig):
         cmd_train = [
             "lstmtraining",
             "--continue_from", continue_model,
-            "--model_output", os.path.join(config.train_output_dir, "chr"),
+            "--model_output", os.path.join(config.checkpoint_dir, "chr"),
             "--traineddata", traineddata_path,
             "--train_listfile", list_train_path,
             "--max_iterations", str(max_iterations),
@@ -828,7 +829,7 @@ def run_staged_training(config: TrainingConfig):
                 shutil.copy2(manifest_to_use, os.path.join(config.train_output_dir, f"manifest_epoch_{epoch}.json"))
             elif config.use_shared_pool:
                 pool_name = f"{config.master_pool_prefix}_epoch_{epoch}" if config.master_pool_prefix else f"master_pool_epoch_{epoch}"
-                master_manifest = os.path.join(f"training_data/staged_tuning/{pool_name}", f"master_manifest_epoch_{epoch}.json")
+                master_manifest = os.path.join(f"data_temp/staged_tuning/{pool_name}", f"master_manifest_epoch_{epoch}.json")
                 if os.path.exists(master_manifest):
                     shutil.copy2(master_manifest, os.path.join(config.train_output_dir, f"manifest_epoch_{epoch}.json"))
         

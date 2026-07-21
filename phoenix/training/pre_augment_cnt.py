@@ -133,7 +133,7 @@ def augment_worker(item_info, output_dir, variations, config_noise, compile_lstm
 def main():
     parser = argparse.ArgumentParser(description="Pre-augment and cache CNT samples.")
     parser.add_argument("--config", default=None, help="Path to TrainingConfig JSON to fetch cnt_noise config")
-    parser.add_argument("--output-dir", default="training_data/cnt_cache", help="Output cache directory")
+    parser.add_argument("--output-dir", default="data_temp/cnt_cache", help="Output cache directory")
     parser.add_argument("--cnt-dir", default="training_data/cnt", help="Directory where book_XX aligned manifests live")
     parser.add_argument("--variations-per-image", type=int, default=3, help="Variations per CNT image")
     parser.add_argument("--compile-lstmf", action="store_true", help="Compile augmented images to .lstmf")

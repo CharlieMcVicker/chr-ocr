@@ -10,11 +10,48 @@ class TrainingConfig:
     variations_per_image: int = 3
     error_rate: float = 0.05
     
+    # Experiment / Run Identification
+    slug: str = "default"
+
     # Paths / Directories
     train_manifest: str = "training_data/manifest_w_lang.json"
-    output_dir: str = "training_data/dataset_epoch"
     model_dir: str = "training_data/dataset/model"
-    train_output_dir: str = "training_data/dataset_staged_output"
+    _output_dir: Optional[str] = None
+    _train_output_dir: Optional[str] = None
+    _checkpoint_dir: Optional[str] = None
+    _cnt_cache_dir: Optional[str] = None
+
+    @property
+    def output_dir(self) -> str:
+        return self._output_dir if self._output_dir else f"data_temp/{self.slug}/dataset_epoch"
+
+    @output_dir.setter
+    def output_dir(self, val: str):
+        self._output_dir = val
+
+    @property
+    def train_output_dir(self) -> str:
+        return self._train_output_dir if self._train_output_dir else f"data_temp/{self.slug}/dataset_staged_output"
+
+    @train_output_dir.setter
+    def train_output_dir(self, val: str):
+        self._train_output_dir = val
+
+    @property
+    def checkpoint_dir(self) -> str:
+        return self._checkpoint_dir if self._checkpoint_dir else f"checkpoints/{self.slug}"
+
+    @checkpoint_dir.setter
+    def checkpoint_dir(self, val: str):
+        self._checkpoint_dir = val
+
+    @property
+    def cnt_cache_dir(self) -> str:
+        return self._cnt_cache_dir if self._cnt_cache_dir else f"data_temp/{self.slug}/cnt_cache"
+
+    @cnt_cache_dir.setter
+    def cnt_cache_dir(self, val: str):
+        self._cnt_cache_dir = val
     continue_from: Optional[str] = None
     old_traineddata: Optional[str] = None
     max_workers: Optional[int] = None
@@ -33,7 +70,7 @@ class TrainingConfig:
     max_cnt_samples: Optional[int] = None
     pretrain_cnt_cap: Optional[int] = None
     use_cached_cnt: bool = False
-    cnt_cache_dir: str = "training_data/cnt_cache"
+    cnt_cache_dir: str = "data_temp/cnt_cache"
     master_pool_prefix: Optional[str] = None
     master_pool_variations: Optional[int] = None
     skip_final_eval: bool = False
@@ -90,14 +127,29 @@ class TrainingConfig:
     })
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        d = asdict(self)
+        d["output_dir"] = self.output_dir
+        d["train_output_dir"] = self.train_output_dir
+        d["checkpoint_dir"] = self.checkpoint_dir
+        d["cnt_cache_dir"] = self.cnt_cache_dir
+        return d
 
     @classmethod
     def from_dict(cls, data: dict) -> 'TrainingConfig':
         # Filter out keys that aren't fields of TrainingConfig
-        valid_keys = cls.__dataclass_fields__.keys()
+        valid_keys = set(cls.__dataclass_fields__.keys())
         filtered_data = {k: v for k, v in data.items() if k in valid_keys}
         
+        # Handle explicit override path keys from JSON data
+        if "output_dir" in data:
+            filtered_data["_output_dir"] = data["output_dir"]
+        if "train_output_dir" in data:
+            filtered_data["_train_output_dir"] = data["train_output_dir"]
+        if "checkpoint_dir" in data:
+            filtered_data["_checkpoint_dir"] = data["checkpoint_dir"]
+        if "cnt_cache_dir" in data:
+            filtered_data["_cnt_cache_dir"] = data["cnt_cache_dir"]
+
         # Merge dict fields (like cnt_noise) with default values
         if "cnt_noise" in filtered_data and isinstance(filtered_data["cnt_noise"], dict):
             default_noise = cls.__dataclass_fields__["cnt_noise"].default_factory()
