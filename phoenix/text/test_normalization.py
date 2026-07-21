@@ -20,6 +20,11 @@ class TestNormalization(unittest.TestCase):
         expected = "HELLO WORLD CHEROKEE"
         self.assertEqual(normalize_truth(text), expected)
 
+    def test_quote_normalization(self):
+        text = "“CHEROKEE” ‘TEST’ `WORD`"
+        expected = '"CHEROKEE" \'TEST\' \'WORD\''
+        self.assertEqual(normalize_truth(text), expected)
+
     def test_empty_string(self):
         self.assertEqual(normalize_truth(""), "")
         self.assertEqual(normalize_truth(None), "")
