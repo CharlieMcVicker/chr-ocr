@@ -264,7 +264,7 @@ def run_staged_training(config: TrainingConfig):
                 cmd_aug = [
                     sys.executable,
                     "-u",
-                    "scripts/augment_dynamic.py",
+                    "phoenix/training/augment_dynamic.py",
                     "--manifest", master_manifest_to_use,
                     "--output-dir", master_pool_dir,
                     "--variations-per-image", str(getattr(config, "master_pool_variations", None) or config.variations_per_image),
@@ -318,7 +318,7 @@ def run_staged_training(config: TrainingConfig):
                 if config.use_cached_cnt:
                     cache_manifest_path = os.path.join(config.cnt_cache_dir, "cnt_cache_manifest.json")
                     if not os.path.exists(cache_manifest_path):
-                        raise FileNotFoundError(f"CNT cache manifest not found at {cache_manifest_path}. Please run scripts/pre_augment_cnt.py first.")
+                        raise FileNotFoundError(f"CNT cache manifest not found at {cache_manifest_path}. Please run phoenix/training/pre_augment_cnt.py first.")
                     with open(cache_manifest_path, "r", encoding="utf-8") as f:
                         cnt_cache = json.load(f)
                     
@@ -586,7 +586,7 @@ def run_staged_training(config: TrainingConfig):
             cmd_aug = [
                 sys.executable,
                 "-u",
-                "scripts/augment_dynamic.py",
+                "phoenix/training/augment_dynamic.py",
                 "--manifest", manifest_to_use,
                 "--output-dir", config.output_dir,
                 "--variations-per-image", str(config.variations_per_image),
@@ -644,7 +644,7 @@ def run_staged_training(config: TrainingConfig):
             if config.use_cached_cnt:
                 cache_manifest_path = os.path.join(config.cnt_cache_dir, "cnt_cache_manifest.json")
                 if not os.path.exists(cache_manifest_path):
-                    raise FileNotFoundError(f"CNT cache manifest not found at {cache_manifest_path}. Please run scripts/pre_augment_cnt.py first.")
+                    raise FileNotFoundError(f"CNT cache manifest not found at {cache_manifest_path}. Please run phoenix/training/pre_augment_cnt.py first.")
                 with open(cache_manifest_path, "r", encoding="utf-8") as f:
                     cnt_cache = json.load(f)
                     

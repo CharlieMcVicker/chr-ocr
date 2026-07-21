@@ -92,7 +92,7 @@ def run_meta_parameter_sweep(
             
             cmd = [
                 sys.executable,
-                "scripts/train_staged.py",
+                "phoenix/training/train_staged.py",
                 "--config", pt_config_path
             ]
             
@@ -100,7 +100,7 @@ def run_meta_parameter_sweep(
                 print(f"[DRY-RUN] Would run command: {' '.join(cmd)}")
                 print(f"[DRY-RUN] Would copy the latest checkpoint to: {pt_phase.checkpoint_path}")
             else:
-                # Run scripts/train_staged.py
+                # Run phoenix/training/train_staged.py
                 print(f"Executing: {' '.join(cmd)}")
                 subprocess.run(cmd, check=True)
                 
@@ -184,7 +184,7 @@ def run_meta_parameter_sweep(
         
         cmd = [
             sys.executable,
-            "scripts/train_staged.py",
+            "phoenix/training/train_staged.py",
             "--config", config_path
         ]
         

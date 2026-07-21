@@ -90,7 +90,7 @@ def evaluate_checkpoint(checkpoint_path: str, traineddata_path: str, train_outpu
     # Run evaluate_mixed_model.py
     eval_cmd = [
         sys.executable,
-        "scripts/evaluate_mixed_model.py",
+        "phoenix/training/evaluate_mixed_model.py",
         "--model-dir", train_output_dir,
         "--lang", lang
     ]

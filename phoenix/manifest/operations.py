@@ -19,14 +19,9 @@ from concurrent.futures import ThreadPoolExecutor
 
 # We import classify_line_image dynamically or directly depending on sys.path
 try:
-    from scripts.classify_layout import classify_line_image
+    from phoenix.layout import classify_line_image
 except ImportError:
-    # Fallback to make sure we can import even if run from different cwd
-    sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-    try:
-        from scripts.classify_layout import classify_line_image
-    except ImportError:
-        classify_line_image = None
+    classify_line_image = None
 
 
 def is_cherokee_char(c: str) -> bool:

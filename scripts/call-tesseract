@@ -1,2 +1,0 @@
-#!/bin/bash
-tesseract --dpi 300 -l chr $1 out-$1 hocr
