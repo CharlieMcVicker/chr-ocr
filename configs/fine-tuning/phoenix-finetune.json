@@ -6,7 +6,7 @@
   "slug": "phoenix_finetune",
   "train_manifest": "training_data/manifest_w_lang.json",
   "model_dir": "training_data/dataset/model",
-  "continue_from": "checkpoints/cnt_pretrain/chr_best.checkpoint",
+  "continue_from": "checkpoints/cnt_pretrain/chr_9.166_1562_2400.checkpoint",
   "use_dynamic_cnt": true,
   "use_shared_pool": false,
   "cnt_fraction": 0.1,
