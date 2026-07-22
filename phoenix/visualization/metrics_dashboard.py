@@ -49,7 +49,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Discover Runs
-def discover_runs(base_dir="training_data"):
+def discover_runs(base_dir="data_temp"):
     runs = {}
     if not os.path.exists(base_dir):
         return runs
